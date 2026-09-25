@@ -19,6 +19,7 @@ This is a compressed scientific genealogy, not a full version history.
 | 0.832 | Recovery-measurement interference and path-conditioned warrant. | Recovered visibility = recovered baseline. |
 | 0.833 | Ordinary-regime transport, support withdrawal, supported autonomy. | Ordinary = unsupported; support dependence = person failure. |
 | 0.834 | Shared causation, attribution typing, accommodation counterfactuals. | Cause = credit/blame; fixed-sum responsibility; support-did-it vs person-did-it as exclusive stories. |
+| 0.835 | Attribution persistence, dependency-preserving derivation, use-relative compression and sealed provenance. | Derived record = person property; visible thinness = no dependency; same number = same warrant; new record ID = independent evidence. |
 
 ## Recurrent return-to-core question
 
