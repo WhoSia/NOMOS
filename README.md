@@ -35,6 +35,9 @@ The executable layer validates research representations and detects structural o
 - uncertainty may legitimately terminate in nonidentification
 - responsibility is not a conserved scalar
 - assistance does not cancel authorship
+- derived record ≠ person property
+- compression validity is use-relative
+- visible thinness may coexist with sealed, reopenable provenance
 
 ## Repository map
 
@@ -57,11 +60,14 @@ Whenever a result would require collapsing heterogeneous normative questions int
 
 ```bash
 PYTHONPATH=src python -m nomos examples/shared_success.json
+PYTHONPATH=src python -m nomos examples/derived_record_valid.json --trace r1
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.834 — Support Attribution, Shared Causation, Accommodation Counterfactuals, Credit–Responsibility Allocation — CLOSED.**
+**NOMOS-0.835 — Attribution Persistence, Success Appropriation, Failure Externalization, Dependency Erasure — CLOSED.**
 
-Next title only: **NOMOS-0.835 — Attribution Persistence, Success Appropriation, Failure Externalization, Dependency Erasure...**
+Executable kernel: **v0.2.0** — derived-record dependency manifests, sealed provenance, validated-scope portability, lineage tracing, and attribution-compression guards.
+
+Next title only: **NOMOS-0.836 — Provenance Rehydration at Use-Time, Context-On-Demand, Derived-Record Portability, Sealed Dependency Disclosure...**
