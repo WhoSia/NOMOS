@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass, asdict
 from typing import Any
 
+from .lineage import derived_record_findings
+
 
 @dataclass(frozen=True)
 class Finding:
@@ -31,8 +33,9 @@ def audit_case(case: dict[str, Any]) -> list[Finding]:
     evidence = _by_id(case.get("evidence", []))
     supports = _by_id(case.get("supports", []))
     institutions = _by_id(case.get("institutions", []))
+    derived = _by_id(case.get("derived_records", []))
 
-    valid_ids = set(nodes) | set(claims) | set(evidence) | set(supports) | set(institutions)
+    valid_ids = set(nodes) | set(claims) | set(evidence) | set(supports) | set(institutions) | set(derived)
     for edge in edges:
         src, dst = str(edge.get("source", "")), str(edge.get("target", ""))
         if src not in valid_ids or dst not in valid_ids:
@@ -162,5 +165,8 @@ def audit_case(case: dict[str, Any]) -> list[Finding]:
                     "Person-predicate authority is attached to a claim of a different scope.",
                     (cid,),
                 ))
+
+    for code, severity, message, refs in derived_record_findings(case):
+        findings.append(Finding(code, severity, message, refs))
 
     return findings
