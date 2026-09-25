@@ -1,4 +1,4 @@
-# NOMOS Case Graph 0.1
+# NOMOS Case Graph 0.2
 
 The Case Graph is a JSON representation for research and audit.
 
@@ -126,7 +126,7 @@ When several institutions jointly produce a consequential judgment, provide a `r
 These are research guards, not legal rules.
 
 
-## Derived records — 0.2
+## Derived records
 
 A derived record is a score, credential, summary, flag, profile feature or other token produced from earlier evidence.
 
