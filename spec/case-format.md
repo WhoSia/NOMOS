@@ -15,6 +15,7 @@ It is intentionally not a prediction format.
   "supports": [],
   "evidence": [],
   "claims": [],
+  "derived_records": [],
   "edges": [],
   "attributions": [],
   "allocations": [],
@@ -123,3 +124,52 @@ When several institutions jointly produce a consequential judgment, provide a `r
 - `N011` — person-predicate authority attached to a differently scoped claim
 
 These are research guards, not legal rules.
+
+
+## Derived records — 0.2
+
+A derived record is a score, credential, summary, flag, profile feature or other token produced from earlier evidence.
+
+```json
+{
+  "id": "r1",
+  "kind": "score",
+  "subject": "person1",
+  "person_only": true,
+  "source_outcome": "event1",
+  "dependencies": ["ev1", "support1"],
+  "provenance_visibility": "sealed",
+  "reopenable": true,
+  "provenance_ref": "lineage:r1",
+  "portable": true,
+  "semantic_equivalence": true,
+  "validated_scopes": ["bounded_action"],
+  "public_metadata": []
+}
+```
+
+Rules:
+
+- `dependencies` preserve inputs and causal/support relations material to interpretation.
+- `provenance_visibility: sealed` is allowed; provenance persistence does not require public flagging.
+- sealed provenance requires both `reopenable: true` and a live `provenance_ref`.
+- `portable: true` for a support-dependent record requires either `semantic_equivalence: true` or an explicit `interpretation_limit`.
+- `validated_scopes` bounds the claim types a derivative may support without a fresh bridge.
+- public exposure of sensitive support/institution metadata should carry a `disclosure_basis`.
+
+### 0.835 invariant codes
+
+- `N012` — derived record has no dependency manifest
+- `N013` — jointly produced outcome compressed into person-only record while contributor dependencies disappear
+- `N014` — sealed provenance has no live reopening route
+- `N015` — portable support-dependent record lacks semantic-equivalence evidence or interpretation limit
+- `N016` — derived record used beyond validated claim scope without fresh bridge
+- `N017` — warning: public record exposes sensitive dependency metadata without stated disclosure basis
+
+### Trace command
+
+```bash
+PYTHONPATH=src python -m nomos examples/derived_record_valid.json --trace r1
+```
+
+The trace operation returns the transitive dependency closure of a derived record. It is a provenance aid, not a person inference.
