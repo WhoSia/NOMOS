@@ -1,0 +1,20 @@
+{
+  "case_id":"dependency-erasure",
+  "title":"Jointly produced outcome compressed into an overbroad person record",
+  "target_environment":{"id":"ordinary","zero_support":false},
+  "nodes":[{"id":"event1","kind":"event"},{"id":"person1","kind":"person"}],
+  "supports":[{"id":"s1","kind":"support","class":"S0","sensitive":true}],
+  "evidence":[{"id":"ev1","kind":"observation","regime":"supported","provenance":["event1"]}],
+  "claims":[{"id":"c1","scope":"person_predicate","regime":"supported","target":"current"}],
+  "edges":[{"source":"r1","target":"c1","kind":"supports"}],
+  "attributions":[
+    {"actor":"person1","outcome":"event1","mode":"credit","causal_contribution":"performance","normative_basis":["participation"]},
+    {"actor":"s1","outcome":"event1","mode":"credit","causal_contribution":"enabling","normative_basis":["enabled access"]}
+  ],
+  "derived_records":[{
+    "id":"r1","kind":"score","subject":"person1","person_only":true,"source_outcome":"event1",
+    "dependencies":["ev1"],"provenance_visibility":"sealed","reopenable":false,
+    "portable":true,"validated_scopes":["bounded_action"],"public_metadata":[]
+  }],
+  "allocations":[],"withdrawals":[],"institutions":[],"consequences":[]
+}
