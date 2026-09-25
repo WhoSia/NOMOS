@@ -1,55 +1,71 @@
-# Current Research Head — NOMOS-0.834
+# Current Research Head — NOMOS-0.835
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-How should an institution attribute success, failure, risk or responsibility when the relevant outcome is jointly produced by a person and supports, tools, people or institutional structures around them?
+What happens when a jointly produced outcome is compressed into a person-only record, score, credential or defect after supports and institutional contributions disappear from view?
 
 ## Core rules
 
-- **CAUSAL CONTRIBUTION ≠ CREDIT ≠ BLAME ≠ PERSON-PREDICATE AUTHORITY**
-- **RESPONSIBILITY IS NOT A CONSERVATION LAW**
-- **CAUSAL BEARER ≠ NORMATIVE BEARER**
-- **COUNTERFACTUAL AVAILABILITY ≠ NORMATIVE BASELINE AUTHORITY**
-- **ASSISTANCE DOES NOT CANCEL AUTHORSHIP**
-- **AUTHORSHIP DOES NOT CANCEL ENABLEMENT**
+- **DERIVED RECORD ≠ PERSON PROPERTY**
+- **COMPRESSION VALIDITY IS USE-RELATIVE**
+- **AUDITABILITY ≠ PUBLIC FLAGGING**
+- **SAME VISIBLE RECORD CAN HIDE DIFFERENT WARRANT**
+- **PROVENANCE PERSISTENCE MAY BE SEALED**
+- **A PERSON-ONLY DERIVATIVE MAY NOT GAIN AUTHORITY BY ERASING LOAD-BEARING DEPENDENCIES**
 
-## Shared-causation modes
+## Compression model
 
-- C0 — triggering contribution
-- C1 — enabling contribution
-- C2 — constitutive contribution
-- C3 — maintaining contribution
-- C4 — blocking/barrier contribution
-- C5 — interpretive/visibility contribution
+Let a relational source state be:
 
-A single outcome may contain several modes simultaneously.
+**G = {person, event, supports, institutions, opportunities, barriers, regimes, interpretations, provenance}**
 
-## Attribution vector
+and let:
 
-For actor/component x and outcome Y:
+**r = κ(G)**
 
-**A(x,Y) = ⟨causal role, knowledge, control, role/duty, agency, alternatives, repair capacity, provenance⟩**
+be a derived record.
 
-The vector is deliberately not reduced to one score.
+The relevant question is not whether κ loses information. Every practical record does.
 
-## Accommodation counterfactual
+The question is whether κ removes a distinction that changes the warrant for a downstream use of r.
 
-The contrast between supported and unsupported performance can identify support sensitivity.
+## D0–D4 derivative states
 
-It does not automatically answer whether the unsupported world is the legitimate target environment, who deserves credit or blame, or what broader person predicate is warranted.
+- D0 — trace-preserving derivative
+- D1 — semantically certified thin derivative
+- D2 — bounded-loss derivative with interpretation limit and reopening route
+- D3 — provenance-orphan derivative
+- D4 — laundered person derivative
 
-## Social-physics return
+## Positive privacy result
 
-0.834 explicitly reconnects to the project origin.
+**VISIBLE THINNESS CAN COEXIST WITH EPISTEMIC THICKNESS.**
 
-The literal two-field mechanics remain retired.
+Sensitive support or accommodation details need not be publicly displayed when:
+- the visible interpretation remains warranted;
+- dependency lineage remains preserved;
+- authorized rehydration is possible when a new use makes context relevant.
 
-The mature replacement is a typed relational causal hypergraph in which material, social and institutional conditions may jointly produce an outcome and later disappear from the person-level record.
+## Executable kernel
+
+Repository version: **v0.2.0**
+
+Added:
+- `derived_records` to the Case Graph;
+- dependency manifests;
+- sealed/reopenable provenance;
+- semantic-equivalence or interpretation-limit checks;
+- validated-scope portability;
+- transitive lineage tracing;
+- source-impact queries;
+- N012–N017 attribution-persistence guards;
+- valid and dependency-erasure fixtures;
+- CI regression coverage.
 
 ## Next title only
 
-**NOMOS-0.835 — Attribution Persistence, Success Appropriation, Failure Externalization, Dependency Erasure & the Primitive Question of What Happens When a Jointly Produced Outcome Is Later Compressed into a Person-Only Record, Score, Credential or Defect after the Supports and Institutional Contributions That Helped Produce It Disappear from View**
+**NOMOS-0.836 — Provenance Rehydration at Use-Time, Context-On-Demand, Derived-Record Portability, Sealed Dependency Disclosure & the Primitive Question of When a Thin Person-Record Must Reopen Its Hidden Relational History before It May Be Used for a New Decision, Domain or Consequence**
 
 **TITLE-LOCKED / NOT OPENED.**
