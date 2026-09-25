@@ -5,18 +5,25 @@ import json
 from pathlib import Path
 
 from .audit import audit_case
+from .lineage import trace_record
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
         prog="nomos",
-        description="Validate a NOMOS Case Graph without producing person verdicts.",
+        description="Validate and trace a NOMOS Case Graph without producing person verdicts.",
     )
     parser.add_argument("case", type=Path, help="Path to a NOMOS JSON case")
     parser.add_argument("--json", action="store_true", dest="as_json", help="Emit JSON findings")
+    parser.add_argument("--trace", metavar="RECORD_ID", help="Trace a derived record's dependency closure")
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.trace:
+        print(json.dumps(trace_record(data, args.trace), ensure_ascii=False, indent=2))
+        return 0
+
     findings = audit_case(data)
 
     if args.as_json:
