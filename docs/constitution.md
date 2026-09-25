@@ -114,3 +114,34 @@ Who caused a state, who can repair it, who may act, and who owes an explanation 
 Before compressing a result into a person predicate, restore all materially relevant supports, barriers, interventions, opportunity constraints, observation regimes and shared causal contributors to view.
 
 If the person claim disappears when the relational system is made visible, it was never adequately warranted.
+
+
+## C19 — Derived record is not person property
+
+A score, credential, profile feature, summary, flag or other derivative remains a record produced from a relational history.
+
+Attaching the record to a person does not convert its dependencies into intrinsic person properties.
+
+## C20 — Compression validity is use-relative
+
+Every practical record loses information.
+
+Compression is legitimate only when the distinctions it erases do not change the warrant for the downstream use, or when those distinctions remain recoverable before the decision.
+
+## C21 — Auditability does not require public flagging
+
+Sensitive accommodation, support or institutional-dependency information may remain sealed.
+
+Sealed provenance is legitimate only when a live, authorized reopening route exists and visible absence is not misrepresented as evidence that no dependency existed.
+
+## C22 — Portability requires semantic warrant
+
+A support-dependent derivative may travel beyond its source context only within validated claim scopes.
+
+If semantic equivalence is not established, the derivative requires an explicit interpretation limit or fresh bridge.
+
+## C23 — Attribution must persist through derivation
+
+Compression may not remember person agency for failure while erasing it for success, nor remember institutional support for success while erasing institutional barriers for failure.
+
+Outcome valence does not license a change in causal ontology.
