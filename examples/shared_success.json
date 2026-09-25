@@ -1,0 +1,48 @@
+{
+  "case_id": "synthetic-supported-success",
+  "title": "Supported success without person-authority inflation",
+  "target_environment": {
+    "id": "ordinary-school",
+    "zero_support": false,
+    "description": "Ordinary environment includes standard accessibility and feedback supports."
+  },
+  "nodes": [
+    {"id": "event1", "kind": "event", "label": "Task completed successfully."},
+    {"id": "person1", "kind": "person", "label": "Participant"}
+  ],
+  "supports": [
+    {"id": "s1", "kind": "support", "class": "S0", "label": "Ordinary accessibility tool", "legitimate_in_target": true},
+    {"id": "s2", "kind": "support", "class": "S1", "label": "Temporary coaching", "legitimate_in_target": false}
+  ],
+  "evidence": [
+    {"id": "ev1", "kind": "observation", "origin": "recovery", "regime": "supported", "provenance": ["event1"], "label": "Observed successful performance"}
+  ],
+  "claims": [
+    {"id": "c1", "text": "The participant currently succeeds under the supported regime.", "scope": "bounded_action", "regime": "supported", "target": "current"}
+  ],
+  "edges": [
+    {"source": "ev1", "target": "c1", "kind": "supports"}
+  ],
+  "attributions": [
+    {
+      "actor": "person1",
+      "outcome": "event1",
+      "mode": "credit",
+      "causal_contribution": "performance",
+      "normative_basis": ["skilled participation", "effort under available conditions"]
+    },
+    {
+      "actor": "s1",
+      "outcome": "event1",
+      "mode": "credit",
+      "causal_contribution": "enabling",
+      "normative_basis": ["enabled access; does not negate participant contribution"]
+    }
+  ],
+  "allocations": [
+    {"id": "a1", "scheme": "typed_vector", "dimensions": ["causal_contribution", "control", "role", "knowledge"]}
+  ],
+  "withdrawals": [],
+  "institutions": [],
+  "consequences": []
+}

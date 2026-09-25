@@ -1,0 +1,49 @@
+{
+  "case_id": "synthetic-invalid-withdrawal",
+  "title": "Invalid support stripping and person inference",
+  "target_environment": {
+    "id": "ordinary",
+    "zero_support": false,
+    "description": "The ordinary target includes the support."
+  },
+  "nodes": [
+    {"id": "event1", "kind": "event", "label": "Performance deteriorated after support removal."},
+    {"id": "person1", "kind": "person", "label": "Participant"}
+  ],
+  "supports": [
+    {"id": "s1", "kind": "support", "class": "S0", "label": "Ordinary accessibility support", "legitimate_in_target": true}
+  ],
+  "evidence": [
+    {
+      "id": "ev1",
+      "kind": "withdrawal_outcome",
+      "direction": "deterioration",
+      "origin": "withdrawal",
+      "regime": "unsupported",
+      "provenance": ["event1"]
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "The participant is inherently incapable.",
+      "scope": "person_predicate",
+      "regime": "unsupported",
+      "target": "current"
+    }
+  ],
+  "edges": [
+    {"source": "ev1", "target": "c1", "kind": "supports"}
+  ],
+  "attributions": [],
+  "allocations": [],
+  "withdrawals": [
+    {
+      "support": "s1",
+      "used_for_person_inference": true,
+      "independently_authorized": false
+    }
+  ],
+  "institutions": [],
+  "consequences": []
+}
