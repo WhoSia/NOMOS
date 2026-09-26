@@ -33,11 +33,12 @@ Each safeguard declares the dependency dimensions it materially breaks.
 
 The analyzer never interprets these fields as person scores.
 
-## Escalation
+## Routing and escalation
 
 ```json
 {
   "entrypoints": ["review_unit"],
+  "routing_authority": "appeal_router",
   "escalations": [
     {"source": "review_unit", "target": "remedy_panel"}
   ],
@@ -49,7 +50,8 @@ The graph audit asks:
 
 - which authority-changing nodes are reachable;
 - whether escalation cycles exist;
-- whether multiple terminal authorities lack reassembly.
+- whether multiple terminal authorities lack reassembly;
+- which actor controls routing/reassembly.
 
 ## Inclusion-minimal break sets
 
@@ -60,23 +62,32 @@ A safeguard set is returned by `minimal_break_sets` when:
 
 This is a structural explanation object, not an automatic institutional recommendation.
 
-## Redundancy
+## Redundancy classes
 
-The analyzer distinguishes:
+The analyzer separates:
 
-- **coverage redundancy** — a safeguard appears in no inclusion-minimal coverage set;
-- **common-mode exposure** — safeguards covering the same dimension share one controller or a declared common dependency.
+- `coverage_redundant_safeguards` — safeguards with no unique live failure-mode coverage in the full architecture;
+- `equivalent_redundancy_groups` — safeguards with the same breaks, controller, declared common dependencies and authority-changing status;
+- `resilience_redundancy_candidates` — coverage-redundant safeguards that nevertheless provide a structurally different controller/dependency route.
 
-Coverage redundancy is not automatically useless. It may still provide resilience against safeguard failure when its failure route is genuinely diverse.
+Thus **coverage redundancy is not the same as uselessness**.
+
+## Common-mode exposure
+
+`common_mode_exposures` records dimensions for which duplicated safeguards share one controller or one declared common dependency.
+
+`capture_cut_candidates` identifies a controller or declared common dependency whose safeguards collectively span every live failure dimension.
+
+These are structural warnings, not probabilities.
 
 ## Calibration states
 
 - `UNDERSEPARATED` — a required break is missing or no authority-changing node is reachable.
-- `COVERED_WITH_COMMON_MODE_EXPOSURE` — required dimensions are covered but duplicated review shares a controller/common dependency.
+- `COVERED_WITH_COMMON_MODE_EXPOSURE` — coverage exists but a declared common-mode/capture-cut warning remains.
 - `FRAGMENTATION_RISK` — multiple authority-changing terminal branches exist without a reassembly authority.
 - `CALIBRATED_CANDIDATE` — declared live failure modes are covered, an authority-changing path is reachable, and no declared common-mode/fragmentation warning is detected.
 
-`CALIBRATED_CANDIDATE` is not a moral, legal, or person verdict. It is a structural status for the submitted topology.
+`CALIBRATED_CANDIDATE` is not a moral, legal, person, or institutional-quality verdict. It is a structural status for the submitted topology.
 
 ## Run
 
