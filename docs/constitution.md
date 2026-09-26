@@ -60,8 +60,6 @@ A support must be shown to fall outside the legitimate target environment before
 
 ## C10 — Support dependence is not person failure
 
-Support can be constitutive ordinary support, transitional scaffold, protective support, epistemic support, or artificial probe support.
-
 Dependence on a legitimate support identifies a relation before it identifies a defect.
 
 ## C11 — Withdrawal is an intervention
@@ -100,11 +98,6 @@ instead of forcing a verdict.
 
 The same structural explanations must remain available for favorable and adverse results.
 
-Forbidden patterns include:
-
-- success → support caused it; failure → person caused it;
-- favorable recovery → mere reactivity; adverse recovery → true trait revealed.
-
 ## C17 — Repair responsibility is separately allocated
 
 Who caused a state, who can repair it, who may act, and who owes an explanation can be different actors.
@@ -115,33 +108,54 @@ Before compressing a result into a person predicate, restore all materially rele
 
 If the person claim disappears when the relational system is made visible, it was never adequately warranted.
 
-
 ## C19 — Derived record is not person property
 
 A score, credential, profile feature, summary, flag or other derivative remains a record produced from a relational history.
-
-Attaching the record to a person does not convert its dependencies into intrinsic person properties.
 
 ## C20 — Compression validity is use-relative
 
 Every practical record loses information.
 
-Compression is legitimate only when the distinctions it erases do not change the warrant for the downstream use, or when those distinctions remain recoverable before the decision.
+Compression is legitimate only when the distinctions it erases do not change the warrant for downstream use, or when those distinctions remain recoverable before the decision.
 
 ## C21 — Auditability does not require public flagging
 
-Sensitive accommodation, support or institutional-dependency information may remain sealed.
-
-Sealed provenance is legitimate only when a live, authorized reopening route exists and visible absence is not misrepresented as evidence that no dependency existed.
+Sensitive dependency information may remain sealed when a live authorized reopening route exists.
 
 ## C22 — Portability requires semantic warrant
 
-A support-dependent derivative may travel beyond its source context only within validated claim scopes.
-
-If semantic equivalence is not established, the derivative requires an explicit interpretation limit or fresh bridge.
+A support-dependent derivative may travel only within validated claim scopes unless a fresh bridge or interpretation limit is supplied.
 
 ## C23 — Attribution must persist through derivation
 
-Compression may not remember person agency for failure while erasing it for success, nor remember institutional support for success while erasing institutional barriers for failure.
+Compression may not remember person agency, support, barrier or institutional contribution selectively according to outcome valence.
 
-Outcome valence does not license a change in causal ontology.
+## C24 — Review independence is failure-mode relative
+
+Independence is not reviewer count or organizational distance.
+
+A review architecture should break the query, evidence, model, incentive, authority or override-cost dependencies that are materially live for the challenged claim.
+
+## C25 — Redundancy earns value through diversity or remedy
+
+Duplicated review is epistemically valuable when it breaks a residual dependency, provides a distinct failure route against common-mode error, or creates practically usable remedy reach.
+
+Nominal duplication alone does not create a fresh warrant.
+
+## C26 — More review is not monotonically better
+
+Once live failure modes are covered and a usable corrective path exists, further separation must justify its marginal corrective role.
+
+Extra review can create delay, stale evidence, repeated person burden or recursive ratification.
+
+## C27 — Independent branches require reassembly
+
+Multiple review paths that can change authority must have a traceable way to reconcile incompatible results.
+
+Reassembly may not silently reinstall the original captured authority.
+
+## C28 — The router is also an authority
+
+An actor that assigns cases, selects review paths, triggers escalation or terminates review exercises meta-authority.
+
+Distributed review does not eliminate capture if all routes remain controlled by one unreviewable allocator.
