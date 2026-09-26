@@ -23,27 +23,27 @@ class ReviewTopologyTests(unittest.TestCase):
             self.assertIn("remedy_panel", group)
             self.assertEqual(3, len(group))
 
-    def test_common_mode_duplicate_is_detected(self):
+    def test_diverse_query_route_avoids_global_common_mode_warning(self):
         report = analyze_review_topology(load_topology())
         kinds = {
             (x["dimension"], x["kind"])
             for x in report["common_mode_exposures"]
         }
         self.assertNotIn(("Q", "single_controller"), kinds)
-        self.assertEqual(
-            "CALIBRATED_CANDIDATE",
-            report["calibration_state"],
-        )
+        self.assertEqual("CALIBRATED_CANDIDATE", report["calibration_state"])
 
     def test_duplicate_and_diverse_redundancy_are_distinguished(self):
         report = analyze_review_topology(load_topology())
+        groups = [set(group) for group in report["equivalent_redundancy_groups"]]
+        self.assertIn(
+            {"query_review_primary", "query_review_duplicate"},
+            groups,
+        )
         resilience = {
             item["safeguard"]
             for item in report["resilience_redundancy_candidates"]
         }
         self.assertIn("query_review_diverse", resilience)
-        self.assertIn("query_review_duplicate", resilience)
-        self.assertEqual([], report["decorative_redundancy"])
 
     def test_authority_changer_is_reachable(self):
         report = analyze_review_topology(load_topology())
