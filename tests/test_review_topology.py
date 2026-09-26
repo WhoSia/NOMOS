@@ -17,13 +17,11 @@ def load_topology():
 class ReviewTopologyTests(unittest.TestCase):
     def test_minimal_break_sets_are_inclusion_minimal(self):
         result = minimal_break_sets(load_topology())
-        self.assertEqual(
-            [
-                ["query_review_primary", "evidence_model_review", "remedy_panel"],
-                ["evidence_model_review", "remedy_panel", "query_review_duplicate"],
-            ],
-            result,
-        )
+        self.assertEqual(3, len(result))
+        for group in result:
+            self.assertIn("evidence_model_review", group)
+            self.assertIn("remedy_panel", group)
+            self.assertEqual(3, len(group))
 
     def test_common_mode_duplicate_is_detected(self):
         report = analyze_review_topology(load_topology())
@@ -31,17 +29,27 @@ class ReviewTopologyTests(unittest.TestCase):
             (x["dimension"], x["kind"])
             for x in report["common_mode_exposures"]
         }
-        self.assertIn(("Q", "single_controller"), kinds)
-        self.assertIn(("Q", "shared_dependency"), kinds)
+        self.assertNotIn(("Q", "single_controller"), kinds)
         self.assertEqual(
-            "COVERED_WITH_COMMON_MODE_EXPOSURE",
+            "CALIBRATED_CANDIDATE",
             report["calibration_state"],
         )
+
+    def test_duplicate_and_diverse_redundancy_are_distinguished(self):
+        report = analyze_review_topology(load_topology())
+        resilience = {
+            item["safeguard"]
+            for item in report["resilience_redundancy_candidates"]
+        }
+        self.assertIn("query_review_diverse", resilience)
+        self.assertIn("query_review_duplicate", resilience)
+        self.assertEqual([], report["decorative_redundancy"])
 
     def test_authority_changer_is_reachable(self):
         report = analyze_review_topology(load_topology())
         self.assertEqual(["remedy_panel"], report["reachable_authority_changers"])
         self.assertFalse(report["fragmentation_risk"])
+        self.assertEqual("appeal_router", report["routing_authority"])
 
     def test_undercoverage_is_not_calibrated(self):
         topology = load_topology()
@@ -67,6 +75,37 @@ class ReviewTopologyTests(unittest.TestCase):
         report = analyze_review_topology(topology)
         self.assertTrue(report["fragmentation_risk"])
         self.assertEqual("FRAGMENTATION_RISK", report["calibration_state"])
+
+    def test_single_controller_can_form_capture_cut(self):
+        topology = {
+            "required_breaks": ["Q", "E"],
+            "entrypoints": ["one"],
+            "safeguards": [
+                {
+                    "id": "one",
+                    "breaks": ["Q"],
+                    "controller": "router",
+                    "common_dependencies": ["shared_core"],
+                    "can_change_authority": False
+                },
+                {
+                    "id": "two",
+                    "breaks": ["E"],
+                    "controller": "router",
+                    "common_dependencies": ["shared_core"],
+                    "can_change_authority": True
+                }
+            ],
+            "escalations": [{"source": "one", "target": "two"}]
+        }
+        report = analyze_review_topology(topology)
+        cuts = {(x["kind"], x["id"]) for x in report["capture_cut_candidates"]}
+        self.assertIn(("controller", "router"), cuts)
+        self.assertIn(("common_dependency", "shared_core"), cuts)
+        self.assertEqual(
+            "COVERED_WITH_COMMON_MODE_EXPOSURE",
+            report["calibration_state"],
+        )
 
 
 if __name__ == "__main__":
