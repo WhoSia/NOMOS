@@ -1,53 +1,82 @@
-# Current Research Head — NOMOS-0.837
+# Current Research Head — NOMOS-0.840
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-What happens when an institution reopens only the parts of a person's hidden relational history that support its preferred decision while leaving contrary dependencies, corrections or alternative contexts sealed?
+How much structural independence does review actually need before additional separation stops improving epistemic correctability and starts creating delay, fragmentation or unaccountable meta-authority?
 
 ## Core rules
 
-- **SELECTIVE DISCLOSURE ≠ SELECTIVE EVIDENCE LICENSE**
-- **STANDING PRECEDES WEIGHT**
-- **ADMISSION SYMMETRY ≠ WEIGHT SYMMETRY**
-- **TRUE DISCLOSED FACTS CAN STILL FORM A MISLEADING PORTFOLIO**
-- **ANCESTOR WITHOUT LIVE DEFEAT STATUS IS NOT COMPLETE PROVENANCE**
+- **MORE REVIEW ≠ MORE INDEPENDENCE**
+- **DIFFERENT REVIEWER ≠ DIFFERENT EPISTEMIC PATH**
+- **REDUNDANCY EARNS VALUE THROUGH DIVERSITY OR REMEDY, NOT COUNT**
+- **A LONGER APPEAL PATH IS NOT A DEEPER EPISTEMIC PATH**
+- **DISTRIBUTED REVIEW CAN CENTRALIZE POWER ONE LEVEL UP**
+- **MINIMAL SUFFICIENT INDEPENDENCE IS CLAIM-RELATIVE**
 
-## Selection model
+## Formal core
 
-For proposed use (u), let:
+For the live failure-mode set:
 
-**πᵤ : L(r) → Cᵤ**
+**F* ⊆ {Q, E, M, I, A, C}**
 
-select which hidden context is rehydrated.
+each safeguard s declares:
 
-The question is not only whether (Cᵤ) is minimal. It is whether the selection rule would admit an equally relevant item that weakens, undercuts or re-scopes the preferred claim.
+**B(s) ⊆ F***
 
-## Defeater-complete minimality
+An architecture first seeks an inclusion-minimal set of safeguards whose break sets cover F*.
 
-A minimal slice is legitimate only when it remains open to:
-- rebutting defeaters;
-- undercutting defeaters;
-- re-scoping evidence;
-- correction, withdrawal, supersession and expiry states.
+Coverage alone is insufficient.
 
-This does not require equal weight. It requires symmetric admission standing.
+The architecture must also test:
+- common-mode controller/dependency exposure;
+- usable reach to authority change;
+- escalation cycles;
+- terminal fragmentation;
+- reassembly;
+- routing/meta-authority.
 
-## Dual provenance
+## Redundancy distinction
 
-NOMOS now distinguishes:
-1. **record provenance** — where the record and its dependencies came from;
-2. **selection provenance** — who queried, what was filtered, what was omitted and why.
+**coverage redundancy** can still be useful when it creates a materially different failure route.
 
-## Kernel status
+Therefore NOMOS distinguishes:
+- equivalent duplicated safeguards;
+- resilience redundancy candidates;
+- common-mode redundancy.
 
-Repository kernel remains **v0.2.0**.
+## Executable materialization
 
-0.837 adds theory and documentation only; no new executable guard is forced yet.
+Repository version: **v0.3.0**
+
+Added:
+- `src/nomos/review_topology.py`;
+- Review Topology 0.1 spec;
+- inclusion-minimal break-set enumeration;
+- equivalent redundancy groups;
+- resilience redundancy candidates;
+- common-mode exposure;
+- capture-cut candidates;
+- escalation-cycle and reachability analysis;
+- fragmentation/reassembly diagnostics;
+- `--calibrate-review` CLI;
+- synthetic calibration fixture;
+- regression and CI coverage.
+
+The analyzer evaluates **review architecture**, never person merit, morality, blame, risk or truth.
+
+## Drive state
+
+The five 0.839 donor papers expected to be normalized in canonical commons did not surface through connector title/DOI search or the first 400 paginated canonical metadata records during 0.840.
+
+Status: **DRIVE CONNECTOR RETRIEVAL/INDEX PENDING — NOT TREATED AS USER FAILURE OR FILE ABSENCE.**
+
+0.840 donor already located in Drive:
+- Knight & Leveson (1986), **An Experimental Evaluation of the Assumption of Independence in Multiversion Programming**, DOI 10.1109/TSE.1986.6312924.
 
 ## Next title only
 
-**NOMOS-0.838 — Context-Selection Contestability, Query Reconstruction, Counter-Rehydration Rights, Independent Review & the Primitive Question of What a Person or Reviewer Must Be Able to Challenge When the Institutional Decision Depends Not Only on Which Records Exist but on Which Hidden Context the Institution Chose to Reopen**
+**NOMOS-0.841 — Review-Router Authority, Case Assignment, Escalation Trigger Selection, Meta-Reviewer Capture & the Primitive Question of Who May Decide Which Independent Path a Contested Person-Judgment Is Sent Through When the Architecture of Review Itself Changes What Can Be Seen, Challenged and Corrected**
 
 **TITLE-LOCKED / NOT OPENED.**
