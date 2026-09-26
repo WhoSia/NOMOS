@@ -21,7 +21,10 @@ This is a compressed scientific genealogy, not a full version history.
 | 0.834 | Shared causation, attribution typing, accommodation counterfactuals. | Cause = credit/blame; fixed-sum responsibility; support-did-it vs person-did-it as exclusive stories. |
 | 0.835 | Attribution persistence, dependency-preserving derivation, use-relative compression and sealed provenance. | Derived record = person property; visible thinness = no dependency; same number = same warrant; new record ID = independent evidence. |
 | 0.836 | Use-time provenance rehydration and reversible compression. | Thin record = context-free record; new use automatically inherits old portability; need for context = right to all context. |
-| 0.837 | Selection provenance, defeater-complete minimality and rehydration-symmetry. | Selective disclosure = license to select favorable evidence; unanimous disclosed context = robust warrant; privacy = defeater suppression. |
+| 0.837 | Selection provenance, defeater-complete minimality and rehydration symmetry. | Selective disclosure = license to select favorable evidence; unanimous disclosed context = robust warrant. |
+| 0.838 | Query reconstruction, counter-rehydration and selection-operation contestability. | Explanation = contestability; human review = independent review. |
+| 0.839 | Dependency-topological reviewer independence and override friction. | Different reviewer = different warrant; repeated affirmance = independent convergence. |
+| 0.840 | Claim-relative review calibration, minimal dependency-break covers, diversity-aware redundancy and escalation topology. | More review = more independence; more separation = monotonically more correctability. |
 
 ## Recurrent return-to-core question
 
@@ -29,10 +32,12 @@ Every branch must eventually answer a version of:
 
 > What makes a situated episode legitimate evidence about its bearer, and what additional authority is required before that evidence governs the person?
 
-If a line becomes mostly administrative machinery without changing the answer to that question, it is not active mainline work.
+0.840 adds a second operational return:
+
+> Which dependencies in the institutional path must actually be broken before a claimed correction mechanism is more than another surface through which the same judgment reproduces itself?
 
 ## Why the genealogy matters to code
 
-A validator rule should enter the kernel only if it blocks a recurrent category error, preserves provenance, prevents authority inflation, preserves defeatability, protects transport distinctions, or is required to reconstruct a distributed judgment chain.
+A validator rule or analyzer should enter the kernel only if it blocks a recurrent category error, preserves provenance, prevents authority inflation, preserves defeatability, protects transport distinctions, reconstructs a distributed judgment chain, or exposes a materially hidden dependency topology.
 
 The kernel is a compressed theory of **what NOMOS has learned not to collapse**.
