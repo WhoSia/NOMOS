@@ -1,0 +1,42 @@
+{
+  "topology_id": "nomos-0840-calibration-demo",
+  "title": "Review independence calibration with nominally duplicated query review",
+  "required_breaks": ["Q", "E", "M", "C"],
+  "entrypoints": ["query_review_primary"],
+  "reassembly_authority": "remedy_panel",
+  "safeguards": [
+    {
+      "id": "query_review_primary",
+      "breaks": ["Q"],
+      "controller": "review_unit_a",
+      "common_dependencies": ["shared_query_service"],
+      "can_change_authority": false
+    },
+    {
+      "id": "evidence_model_review",
+      "breaks": ["E", "M"],
+      "controller": "review_unit_b",
+      "common_dependencies": ["raw_source_access"],
+      "can_change_authority": false
+    },
+    {
+      "id": "remedy_panel",
+      "breaks": ["C"],
+      "controller": "independent_panel",
+      "common_dependencies": ["remedy_rulebook"],
+      "can_change_authority": true
+    },
+    {
+      "id": "query_review_duplicate",
+      "breaks": ["Q"],
+      "controller": "review_unit_a",
+      "common_dependencies": ["shared_query_service"],
+      "can_change_authority": false
+    }
+  ],
+  "escalations": [
+    {"source": "query_review_primary", "target": "evidence_model_review"},
+    {"source": "evidence_model_review", "target": "remedy_panel"},
+    {"source": "query_review_duplicate", "target": "evidence_model_review"}
+  ]
+}
