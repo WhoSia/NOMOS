@@ -6,19 +6,30 @@ from pathlib import Path
 
 from .audit import audit_case
 from .lineage import trace_record
+from .review_topology import analyze_review_topology
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
         prog="nomos",
-        description="Validate and trace a NOMOS Case Graph without producing person verdicts.",
+        description="Audit NOMOS research structures without producing person verdicts.",
     )
-    parser.add_argument("case", type=Path, help="Path to a NOMOS JSON case")
+    parser.add_argument("case", type=Path, help="Path to a NOMOS JSON case or review topology")
     parser.add_argument("--json", action="store_true", dest="as_json", help="Emit JSON findings")
     parser.add_argument("--trace", metavar="RECORD_ID", help="Trace a derived record's dependency closure")
+    parser.add_argument(
+        "--calibrate-review",
+        action="store_true",
+        help="Analyze review-topology dependency breaks, redundancy and escalation structure",
+    )
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.calibrate_review:
+        topology = data.get("review_topology", data)
+        print(json.dumps(analyze_review_topology(topology), ensure_ascii=False, indent=2))
+        return 0
 
     if args.trace:
         print(json.dumps(trace_record(data, args.trace), ensure_ascii=False, indent=2))
