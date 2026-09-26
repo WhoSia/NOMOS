@@ -3,6 +3,7 @@
   "title": "Review independence calibration with nominally duplicated query review",
   "required_breaks": ["Q", "E", "M", "C"],
   "entrypoints": ["query_review_primary"],
+  "routing_authority": "appeal_router",
   "reassembly_authority": "remedy_panel",
   "safeguards": [
     {
@@ -32,11 +33,19 @@
       "controller": "review_unit_a",
       "common_dependencies": ["shared_query_service"],
       "can_change_authority": false
+    },
+    {
+      "id": "query_review_diverse",
+      "breaks": ["Q"],
+      "controller": "external_query_reviewer",
+      "common_dependencies": ["independent_query_snapshot"],
+      "can_change_authority": false
     }
   ],
   "escalations": [
     {"source": "query_review_primary", "target": "evidence_model_review"},
     {"source": "evidence_model_review", "target": "remedy_panel"},
-    {"source": "query_review_duplicate", "target": "evidence_model_review"}
+    {"source": "query_review_duplicate", "target": "evidence_model_review"},
+    {"source": "query_review_diverse", "target": "evidence_model_review"}
   ]
 }
