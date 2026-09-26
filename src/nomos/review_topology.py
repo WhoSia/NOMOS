@@ -85,6 +85,82 @@ def _reachable(entrypoints: list[str], edges: list[tuple[str, str]]) -> set[str]
     return seen
 
 
+def _resilience_redundancy_candidates(
+    safeguards: list[dict[str, Any]],
+    required: set[str],
+    coverage_redundant: set[str],
+) -> list[dict[str, Any]]:
+    """Find coverage-redundant safeguards that diversify controller/dependency routes."""
+    out: list[dict[str, Any]] = []
+    for safeguard in safeguards:
+        sid = str(safeguard["id"])
+        if sid not in coverage_redundant:
+            continue
+        own_breaks = _sets(safeguard.get("breaks")) & required
+        if not own_breaks:
+            continue
+
+        own_controller = safeguard.get("controller")
+        own_dependencies = _sets(safeguard.get("common_dependencies"))
+        diverse_dims: list[str] = []
+
+        for dimension in sorted(own_breaks):
+            peers = [
+                peer for peer in safeguards
+                if peer is not safeguard and dimension in _sets(peer.get("breaks"))
+            ]
+            if any(
+                peer.get("controller") != own_controller
+                or not (own_dependencies & _sets(peer.get("common_dependencies")))
+                for peer in peers
+            ):
+                diverse_dims.append(dimension)
+
+        if diverse_dims:
+            out.append({"safeguard": sid, "diversifies": diverse_dims})
+    return out
+
+
+def _capture_cut_candidates(
+    safeguards: list[dict[str, Any]],
+    required: set[str],
+) -> list[dict[str, Any]]:
+    """
+    Return declared controller/common-dependency candidates whose capture spans
+    every live failure dimension. This is a structural warning, not a probability.
+    """
+    if not required:
+        return []
+
+    controller_coverage: dict[str, set[str]] = {}
+    dependency_coverage: dict[str, set[str]] = {}
+
+    for safeguard in safeguards:
+        breaks = _sets(safeguard.get("breaks")) & required
+        controller = safeguard.get("controller")
+        if controller:
+            controller_coverage.setdefault(str(controller), set()).update(breaks)
+        for dep in _sets(safeguard.get("common_dependencies")):
+            dependency_coverage.setdefault(dep, set()).update(breaks)
+
+    out: list[dict[str, Any]] = []
+    for controller, coverage in sorted(controller_coverage.items()):
+        if required <= coverage:
+            out.append({
+                "kind": "controller",
+                "id": controller,
+                "covers": sorted(coverage),
+            })
+    for dependency, coverage in sorted(dependency_coverage.items()):
+        if required <= coverage:
+            out.append({
+                "kind": "common_dependency",
+                "id": dependency,
+                "covers": sorted(coverage),
+            })
+    return out
+
+
 def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
     """Analyze review architecture; never infer person merit, blame, risk or truth."""
     safeguards = _safeguards(topology)
@@ -101,11 +177,11 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
     missing = sorted(required - covered)
     minimal = minimal_break_sets(topology)
     in_any_minimal = {sid for group in minimal for sid in group}
-    coverage_redundant = sorted(
+    coverage_redundant = {
         str(safeguard["id"])
         for safeguard in safeguards
         if str(safeguard["id"]) not in in_any_minimal
-    )
+    }
 
     unique_breaks: dict[str, list[str]] = {}
     for safeguard in safeguards:
@@ -150,6 +226,19 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
                 "safeguards": sorted(str(guard["id"]) for guard in guards),
             })
 
+    resilience_candidates = _resilience_redundancy_candidates(
+        safeguards, required, coverage_redundant
+    )
+    resilience_ids = {item["safeguard"] for item in resilience_candidates}
+    decorative_redundancy = sorted(
+        sid for sid in coverage_redundant
+        if sid not in resilience_ids
+        and not next(
+            (s for s in safeguards if str(s["id"]) == sid),
+            {},
+        ).get("can_change_authority", False)
+    )
+
     edges = [
         (str(edge.get("source")), str(edge.get("target")))
         for edge in topology.get("escalations", [])
@@ -172,13 +261,16 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
     )
 
     reassembly = topology.get("reassembly_authority")
+    routing_authority = topology.get("routing_authority")
     fragmentation_risk = len(authority_terminals) > 1 and not reassembly
+
+    capture_cuts = _capture_cut_candidates(safeguards, required)
 
     if missing or not reachable_authority:
         calibration = "UNDERSEPARATED"
     elif fragmentation_risk:
         calibration = "FRAGMENTATION_RISK"
-    elif common_mode:
+    elif common_mode or capture_cuts:
         calibration = "COVERED_WITH_COMMON_MODE_EXPOSURE"
     else:
         calibration = "CALIBRATED_CANDIDATE"
@@ -188,12 +280,16 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
         "covered_breaks": sorted(required & covered),
         "missing_breaks": missing,
         "minimal_break_sets": minimal,
-        "coverage_redundant_safeguards": coverage_redundant,
+        "coverage_redundant_safeguards": sorted(coverage_redundant),
+        "resilience_redundancy_candidates": resilience_candidates,
+        "decorative_redundancy": decorative_redundancy,
         "unique_breaks": unique_breaks,
         "common_mode_exposures": common_mode,
+        "capture_cut_candidates": capture_cuts,
         "escalation_cycles": _cycles(edges),
         "reachable_authority_changers": reachable_authority,
         "reachable_authority_terminals": authority_terminals,
+        "routing_authority": routing_authority,
         "reassembly_authority": reassembly,
         "fragmentation_risk": fragmentation_risk,
         "calibration_state": calibration,
