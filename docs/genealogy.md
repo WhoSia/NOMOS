@@ -20,6 +20,8 @@ This is a compressed scientific genealogy, not a full version history.
 | 0.833 | Ordinary-regime transport, support withdrawal, supported autonomy. | Ordinary = unsupported; support dependence = person failure. |
 | 0.834 | Shared causation, attribution typing, accommodation counterfactuals. | Cause = credit/blame; fixed-sum responsibility; support-did-it vs person-did-it as exclusive stories. |
 | 0.835 | Attribution persistence, dependency-preserving derivation, use-relative compression and sealed provenance. | Derived record = person property; visible thinness = no dependency; same number = same warrant; new record ID = independent evidence. |
+| 0.836 | Use-time provenance rehydration and reversible compression. | Thin record = context-free record; new use automatically inherits old portability; need for context = right to all context. |
+| 0.837 | Selection provenance, defeater-complete minimality and rehydration-symmetry. | Selective disclosure = license to select favorable evidence; unanimous disclosed context = robust warrant; privacy = defeater suppression. |
 
 ## Recurrent return-to-core question
 
