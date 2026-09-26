@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import defaultdict
 from itertools import combinations
 from typing import Any
 
@@ -85,21 +86,51 @@ def _reachable(entrypoints: list[str], edges: list[tuple[str, str]]) -> set[str]
     return seen
 
 
+def _signature(safeguard: dict[str, Any]) -> tuple[Any, ...]:
+    return (
+        tuple(sorted(_sets(safeguard.get("breaks")))),
+        str(safeguard.get("controller", "")),
+        tuple(sorted(_sets(safeguard.get("common_dependencies")))),
+        bool(safeguard.get("can_change_authority")),
+    )
+
+
+def _equivalent_redundancy_groups(
+    safeguards: list[dict[str, Any]],
+    required: set[str],
+) -> list[list[str]]:
+    groups: dict[tuple[Any, ...], list[str]] = defaultdict(list)
+    for safeguard in safeguards:
+        if not (_sets(safeguard.get("breaks")) & required):
+            continue
+        groups[_signature(safeguard)].append(str(safeguard["id"]))
+
+    return [
+        sorted(ids)
+        for ids in groups.values()
+        if len(ids) > 1
+    ]
+
+
 def _resilience_redundancy_candidates(
     safeguards: list[dict[str, Any]],
     required: set[str],
     coverage_redundant: set[str],
+    equivalent_groups: list[list[str]],
 ) -> list[dict[str, Any]]:
-    """Find coverage-redundant safeguards that diversify controller/dependency routes."""
+    """
+    Find coverage-redundant safeguards that provide a structurally distinct
+    controller/dependency route rather than exact duplicated review.
+    """
+    equivalent_ids = {sid for group in equivalent_groups for sid in group}
     out: list[dict[str, Any]] = []
+
     for safeguard in safeguards:
         sid = str(safeguard["id"])
-        if sid not in coverage_redundant:
-            continue
-        own_breaks = _sets(safeguard.get("breaks")) & required
-        if not own_breaks:
+        if sid not in coverage_redundant or sid in equivalent_ids:
             continue
 
+        own_breaks = _sets(safeguard.get("breaks")) & required
         own_controller = safeguard.get("controller")
         own_dependencies = _sets(safeguard.get("common_dependencies"))
         diverse_dims: list[str] = []
@@ -109,7 +140,7 @@ def _resilience_redundancy_candidates(
                 peer for peer in safeguards
                 if peer is not safeguard and dimension in _sets(peer.get("breaks"))
             ]
-            if any(
+            if peers and all(
                 peer.get("controller") != own_controller
                 or not (own_dependencies & _sets(peer.get("common_dependencies")))
                 for peer in peers
@@ -118,6 +149,7 @@ def _resilience_redundancy_candidates(
 
         if diverse_dims:
             out.append({"safeguard": sid, "diversifies": diverse_dims})
+
     return out
 
 
@@ -176,12 +208,6 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
 
     missing = sorted(required - covered)
     minimal = minimal_break_sets(topology)
-    in_any_minimal = {sid for group in minimal for sid in group}
-    coverage_redundant = {
-        str(safeguard["id"])
-        for safeguard in safeguards
-        if str(safeguard["id"]) not in in_any_minimal
-    }
 
     unique_breaks: dict[str, list[str]] = {}
     for safeguard in safeguards:
@@ -190,7 +216,21 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
         for other in safeguards:
             if other is not safeguard:
                 other_breaks |= _sets(other.get("breaks"))
-        unique_breaks[sid] = sorted(_sets(safeguard.get("breaks")) - other_breaks)
+        unique_breaks[sid] = sorted(
+            (_sets(safeguard.get("breaks")) & required) - other_breaks
+        )
+
+    coverage_redundant = {
+        sid for sid, dims in unique_breaks.items()
+        if not dims and (_sets(next(s for s in safeguards if str(s["id"]) == sid).get("breaks")) & required)
+    }
+    equivalent_groups = _equivalent_redundancy_groups(safeguards, required)
+    resilience_candidates = _resilience_redundancy_candidates(
+        safeguards,
+        required,
+        coverage_redundant,
+        equivalent_groups,
+    )
 
     common_mode: list[dict[str, Any]] = []
     for dimension in sorted(required & covered):
@@ -225,19 +265,6 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
                 "dependencies": sorted(shared_dependencies),
                 "safeguards": sorted(str(guard["id"]) for guard in guards),
             })
-
-    resilience_candidates = _resilience_redundancy_candidates(
-        safeguards, required, coverage_redundant
-    )
-    resilience_ids = {item["safeguard"] for item in resilience_candidates}
-    decorative_redundancy = sorted(
-        sid for sid in coverage_redundant
-        if sid not in resilience_ids
-        and not next(
-            (s for s in safeguards if str(s["id"]) == sid),
-            {},
-        ).get("can_change_authority", False)
-    )
 
     edges = [
         (str(edge.get("source")), str(edge.get("target")))
@@ -281,8 +308,8 @@ def analyze_review_topology(topology: dict[str, Any]) -> dict[str, Any]:
         "missing_breaks": missing,
         "minimal_break_sets": minimal,
         "coverage_redundant_safeguards": sorted(coverage_redundant),
+        "equivalent_redundancy_groups": equivalent_groups,
         "resilience_redundancy_candidates": resilience_candidates,
-        "decorative_redundancy": decorative_redundancy,
         "unique_breaks": unique_breaks,
         "common_mode_exposures": common_mode,
         "capture_cut_candidates": capture_cuts,
