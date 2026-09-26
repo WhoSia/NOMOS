@@ -2,6 +2,7 @@
 
 from .audit import Finding, audit_case
 from .lineage import dependency_closure, impacted_derived_records, trace_record
+from .review_topology import analyze_review_topology, minimal_break_sets
 
 __all__ = [
     "Finding",
@@ -9,5 +10,7 @@ __all__ = [
     "dependency_closure",
     "impacted_derived_records",
     "trace_record",
+    "analyze_review_topology",
+    "minimal_break_sets",
 ]
-__version__ = "0.2.0"
+__version__ = "0.3.0"
