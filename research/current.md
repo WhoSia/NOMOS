@@ -1,71 +1,53 @@
-# Current Research Head — NOMOS-0.835
+# Current Research Head — NOMOS-0.837
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-What happens when a jointly produced outcome is compressed into a person-only record, score, credential or defect after supports and institutional contributions disappear from view?
+What happens when an institution reopens only the parts of a person's hidden relational history that support its preferred decision while leaving contrary dependencies, corrections or alternative contexts sealed?
 
 ## Core rules
 
-- **DERIVED RECORD ≠ PERSON PROPERTY**
-- **COMPRESSION VALIDITY IS USE-RELATIVE**
-- **AUDITABILITY ≠ PUBLIC FLAGGING**
-- **SAME VISIBLE RECORD CAN HIDE DIFFERENT WARRANT**
-- **PROVENANCE PERSISTENCE MAY BE SEALED**
-- **A PERSON-ONLY DERIVATIVE MAY NOT GAIN AUTHORITY BY ERASING LOAD-BEARING DEPENDENCIES**
+- **SELECTIVE DISCLOSURE ≠ SELECTIVE EVIDENCE LICENSE**
+- **STANDING PRECEDES WEIGHT**
+- **ADMISSION SYMMETRY ≠ WEIGHT SYMMETRY**
+- **TRUE DISCLOSED FACTS CAN STILL FORM A MISLEADING PORTFOLIO**
+- **ANCESTOR WITHOUT LIVE DEFEAT STATUS IS NOT COMPLETE PROVENANCE**
 
-## Compression model
+## Selection model
 
-Let a relational source state be:
+For proposed use (u), let:
 
-**G = {person, event, supports, institutions, opportunities, barriers, regimes, interpretations, provenance}**
+**πᵤ : L(r) → Cᵤ**
 
-and let:
+select which hidden context is rehydrated.
 
-**r = κ(G)**
+The question is not only whether (Cᵤ) is minimal. It is whether the selection rule would admit an equally relevant item that weakens, undercuts or re-scopes the preferred claim.
 
-be a derived record.
+## Defeater-complete minimality
 
-The relevant question is not whether κ loses information. Every practical record does.
+A minimal slice is legitimate only when it remains open to:
+- rebutting defeaters;
+- undercutting defeaters;
+- re-scoping evidence;
+- correction, withdrawal, supersession and expiry states.
 
-The question is whether κ removes a distinction that changes the warrant for a downstream use of r.
+This does not require equal weight. It requires symmetric admission standing.
 
-## D0–D4 derivative states
+## Dual provenance
 
-- D0 — trace-preserving derivative
-- D1 — semantically certified thin derivative
-- D2 — bounded-loss derivative with interpretation limit and reopening route
-- D3 — provenance-orphan derivative
-- D4 — laundered person derivative
+NOMOS now distinguishes:
+1. **record provenance** — where the record and its dependencies came from;
+2. **selection provenance** — who queried, what was filtered, what was omitted and why.
 
-## Positive privacy result
+## Kernel status
 
-**VISIBLE THINNESS CAN COEXIST WITH EPISTEMIC THICKNESS.**
+Repository kernel remains **v0.2.0**.
 
-Sensitive support or accommodation details need not be publicly displayed when:
-- the visible interpretation remains warranted;
-- dependency lineage remains preserved;
-- authorized rehydration is possible when a new use makes context relevant.
-
-## Executable kernel
-
-Repository version: **v0.2.0**
-
-Added:
-- `derived_records` to the Case Graph;
-- dependency manifests;
-- sealed/reopenable provenance;
-- semantic-equivalence or interpretation-limit checks;
-- validated-scope portability;
-- transitive lineage tracing;
-- source-impact queries;
-- N012–N017 attribution-persistence guards;
-- valid and dependency-erasure fixtures;
-- CI regression coverage.
+0.837 adds theory and documentation only; no new executable guard is forced yet.
 
 ## Next title only
 
-**NOMOS-0.836 — Provenance Rehydration at Use-Time, Context-On-Demand, Derived-Record Portability, Sealed Dependency Disclosure & the Primitive Question of When a Thin Person-Record Must Reopen Its Hidden Relational History before It May Be Used for a New Decision, Domain or Consequence**
+**NOMOS-0.838 — Context-Selection Contestability, Query Reconstruction, Counter-Rehydration Rights, Independent Review & the Primitive Question of What a Person or Reviewer Must Be Able to Challenge When the Institutional Decision Depends Not Only on Which Records Exist but on Which Hidden Context the Institution Chose to Reopen**
 
 **TITLE-LOCKED / NOT OPENED.**
