@@ -15,59 +15,91 @@ What survived is a stricter research program in **relational person-judgment and
 
 NOMOS is **not** a moral scoring engine and **not** an automated judge.
 
-It is a typed case-description and audit kernel for studying when evidence, causal claims, person predicates, institutional authority, supports, provenance, and consequences are being illegitimately collapsed.
+It is a typed research kernel for studying when evidence, causal claims, person predicates, supports, provenance, review paths and institutional authority are being illegitimately collapsed.
 
-The executable layer validates research representations and detects structural overreach; it does not output a verdict about a person.
+The executable layer audits structures. It never outputs a verdict about a person.
 
 ## Active kernel
 
 - dual explanatory layers, not dual physical universes
 - event-to-person bridge burden
 - causal contribution ≠ blame ≠ person authority
-- action authority ≠ thick person-predicate authority
 - provenance persists through transformation
-- policy-conditioned evidence stays policy-conditioned
 - recovered visibility ≠ recovered baseline
 - ordinary regime ≠ zero-support regime
 - support dependence ≠ person failure
-- withdrawal is an intervention
-- distributed production requires reassemblable accountability
-- uncertainty may legitimately terminate in nonidentification
 - responsibility is not a conserved scalar
-- assistance does not cancel authorship
 - derived record ≠ person property
-- compression validity is use-relative
 - visible thinness may coexist with sealed, reopenable provenance
+- record provenance ≠ selection provenance
+- explanation ≠ contestability
+- different reviewer ≠ different epistemic path
+- more review ≠ more independence
+- redundancy earns value through diversity or remedy, not count
+- review independence is calibrated to live failure topology
+
+## Executable research surfaces
+
+### Case Graph
+
+Audits person-judgment structure, provenance, transport and derived-record overreach.
+
+### Review Topology
+
+Audits review architecture over the typed dependence dimensions:
+
+- `Q` query / selection
+- `E` evidence access
+- `M` model / relevance
+- `I` incentives
+- `A` authority / remedy
+- `C` override cost
+
+It can identify:
+
+- inclusion-minimal dependency-break sets;
+- coverage redundancy;
+- equivalent duplicated safeguards;
+- resilience redundancy candidates;
+- common-mode exposure;
+- capture-cut candidates;
+- escalation cycles;
+- authority-changing reachability;
+- fragmentation without reassembly.
+
+These are **architecture diagnostics**, never person scores.
 
 ## Repository map
 
-- `docs/origin.md` — the social-physics origin and what NOMOS deliberately destroyed.
-- `docs/constitution.md` — current research constitution and anti-overreach rules.
+- `docs/origin.md` — social-physics origin and deliberate self-destruction.
+- `docs/constitution.md` — current research constitution.
 - `docs/genealogy.md` — compressed active genealogy.
-- `spec/case-format.md` — NOMOS Case Graph specification.
-- `src/nomos/` — executable validator and audit kernel.
-- `examples/` — synthetic cases.
-- `tests/` — regression tests for constitutional invariants.
-- `research/current.md` — current conceptual head in compact research form.
+- `spec/case-format.md` — Case Graph specification.
+- `spec/review-topology.md` — Review Topology specification.
+- `src/nomos/` — executable research kernel.
+- `examples/` — synthetic research fixtures.
+- `tests/` — regression tests.
+- `research/current.md` — current conceptual head.
 
 ## Design rule
 
-The repository encodes **constraints on warranted inference**, not a universal scalar of truth, blame, risk, morality, or personhood.
+The repository encodes **constraints on warranted inference**, not a universal scalar of truth, blame, risk, morality, personhood, or institutional quality.
 
-Whenever a result would require collapsing heterogeneous normative questions into one number, the kernel should prefer a typed vector, explicit bridge, or HOLD.
+Whenever a result would require collapsing heterogeneous questions into one number, NOMOS prefers typed structure, explicit bridges, provenance, or HOLD.
 
 ## Run
 
 ```bash
 PYTHONPATH=src python -m nomos examples/shared_success.json
 PYTHONPATH=src python -m nomos examples/derived_record_valid.json --trace r1
+PYTHONPATH=src python -m nomos examples/review_topology_calibration.json --calibrate-review
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.835 — Attribution Persistence, Success Appropriation, Failure Externalization, Dependency Erasure — CLOSED.**
+**NOMOS-0.840 — Review-Independence Calibration, Minimal Dependency Breaks, Redundant Safeguards & Escalation Topologies — CLOSED.**
 
-Executable kernel: **v0.2.0** — derived-record dependency manifests, sealed provenance, validated-scope portability, lineage tracing, and attribution-compression guards.
+Executable kernel: **v0.3.0** — Case Graph 0.2 + derived-record lineage + Review Topology 0.1.
 
-Next title only: **NOMOS-0.836 — Provenance Rehydration at Use-Time, Context-On-Demand, Derived-Record Portability, Sealed Dependency Disclosure...**
+Next title only: **NOMOS-0.841 — Review-Router Authority, Case Assignment, Escalation Trigger Selection, Meta-Reviewer Capture...**
