@@ -1,82 +1,76 @@
-# Current Research Head — NOMOS-0.840
+# Current Research Head — NOMOS-0.841
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-How much structural independence does review actually need before additional separation stops improving epistemic correctability and starts creating delay, fragmentation or unaccountable meta-authority?
+Who may decide which independent review path a contested person-judgment is sent through when path choice itself changes what can be seen, challenged and corrected?
 
-## Core rules
+## Core theorem
 
-- **MORE REVIEW ≠ MORE INDEPENDENCE**
-- **DIFFERENT REVIEWER ≠ DIFFERENT EPISTEMIC PATH**
-- **REDUNDANCY EARNS VALUE THROUGH DIVERSITY OR REMEDY, NOT COUNT**
-- **A LONGER APPEAL PATH IS NOT A DEEPER EPISTEMIC PATH**
-- **DISTRIBUTED REVIEW CAN CENTRALIZE POWER ONE LEVEL UP**
-- **MINIMAL SUFFICIENT INDEPENDENCE IS CLAIM-RELATIVE**
+**ROUTING IS AN EPISTEMIC INTERVENTION WHEN ROUTE CHOICE CHANGES WHAT CAN BE SEEN, WHICH DEPENDENCIES CAN BE BROKEN, OR WHICH REMEDIES CAN BE REACHED.**
 
-## Formal core
+## Route effect profile
 
-For the live failure-mode set:
+For route r:
 
-**F* ⊆ {Q, E, M, I, A, C}**
+**Φ(r) = ⟨V(r), B(r), D(r), M(r)⟩**
 
-each safeguard s declares:
+- V — accessible context/visibility
+- B — dependency breaks
+- D — defeater/counter-query capacity
+- M — remedy reach
 
-**B(s) ⊆ F***
+When two eligible routes differ materially in Φ, selecting one is authority-bearing.
 
-An architecture first seeks an inclusion-minimal set of safeguards whose break sets cover F*.
+## Five router authorities
 
-Coverage alone is insufficient.
+1. eligibility authority
+2. assignment authority
+3. trigger authority
+4. termination authority
+5. reassembly authority
 
-The architecture must also test:
-- common-mode controller/dependency exposure;
-- usable reach to authority change;
-- escalation cycles;
-- terminal fragmentation;
-- reassembly;
-- routing/meta-authority.
+**PATH PLURALITY ≠ ACCESS PLURALITY.**
 
-## Redundancy distinction
+A system may contain many independent branches while one unreviewable router controls practical access to all of them.
 
-**coverage redundancy** can still be useful when it creates a materially different failure route.
+## Counter-routing
 
-Therefore NOMOS distinguishes:
-- equivalent duplicated safeguards;
-- resilience redundancy candidates;
-- common-mode redundancy.
+A challenger does not gain a right to choose any reviewer.
+
+They require a bounded route to contest a material assignment when routing changes visibility, dependency-breaking capacity or remedy reach.
 
 ## Executable materialization
 
-Repository version: **v0.3.0**
+Repository version: **v0.4.0**
 
 Added:
-- `src/nomos/review_topology.py`;
-- Review Topology 0.1 spec;
-- inclusion-minimal break-set enumeration;
-- equivalent redundancy groups;
-- resilience redundancy candidates;
-- common-mode exposure;
-- capture-cut candidates;
-- escalation-cycle and reachability analysis;
-- fragmentation/reassembly diagnostics;
-- `--calibrate-review` CLI;
-- synthetic calibration fixture;
-- regression and CI coverage.
+- `src/nomos/router.py`
+- Router Authority 0.1 spec
+- `--audit-router` CLI
+- contestable and captured router fixtures
+- routing provenance audit
+- material route-effect comparison
+- counter-route diagnostics
+- trigger-precommitment/provenance checks
+- outcome-sensitive routing detection
+- unreviewable router-concentration detection
+- CI integration
 
-The analyzer evaluates **review architecture**, never person merit, morality, blame, risk or truth.
+Manual frozen-fixture replay:
+- contestable fixture → **ROUTING_CONTESTABLE_CANDIDATE**, findings 0
+- capture fixture → **META_AUTHORITY_CAPTURE_RISK**, with the expected seven structural findings
 
-## Drive state
+## Drive intake receipt
 
-The five 0.839 donor papers expected to be normalized in canonical commons did not surface through connector title/DOI search or the first 400 paginated canonical metadata records during 0.840.
+`00_INTAKE — Literature Radar` is empty after this stage.
 
-Status: **DRIVE CONNECTOR RETRIEVAL/INDEX PENDING — NOT TREATED AS USER FAILURE OR FILE ABSENCE.**
-
-0.840 donor already located in Drive:
-- Knight & Leveson (1986), **An Experimental Evaluation of the Assumption of Independence in Multiversion Programming**, DOI 10.1109/TSE.1986.6312924.
+- nine identified papers were canonically renamed and moved to `10_PAPERS — Canonical Literature Commons`;
+- a duplicate copy of Knight & Leveson (1986) was isolated in `90_ARCHIVE`, preserving the existing canonical copy.
 
 ## Next title only
 
-**NOMOS-0.841 — Review-Router Authority, Case Assignment, Escalation Trigger Selection, Meta-Reviewer Capture & the Primitive Question of Who May Decide Which Independent Path a Contested Person-Judgment Is Sent Through When the Architecture of Review Itself Changes What Can Be Seen, Challenged and Corrected**
+**NOMOS-0.842 — Routing-Rule Revision, Learned Triage, Load-Adaptive Escalation, Feedback Coupling & the Primitive Question of When a Review Router May Legitimately Change Its Own Case-Assignment Policy after Observing Which Cases Are Reversed, Remanded or Escalated without Turning Institutional Learning into a Self-Confirming Selection Loop**
 
 **TITLE-LOCKED / NOT OPENED.**
