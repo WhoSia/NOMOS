@@ -1,0 +1,61 @@
+{
+  "router_id": "appeal_router",
+  "router_controls_assignment": true,
+  "router_controls_triggers": true,
+  "router_controls_termination": false,
+  "router_controls_reassembly": false,
+  "router_reviewable": true,
+  "router_review_route": "meta_review",
+  "routes": [
+    {
+      "id": "ordinary_review",
+      "visibility": ["decision_record", "selected_context"],
+      "breaks": ["Q"],
+      "remedies": ["affirm", "narrow"]
+    },
+    {
+      "id": "deep_review",
+      "visibility": ["decision_record", "selected_context", "sealed_lineage", "corrections"],
+      "breaks": ["Q", "E", "M", "C"],
+      "remedies": ["affirm", "narrow", "remand", "reverse"]
+    },
+    {
+      "id": "meta_review",
+      "visibility": ["routing_log", "trigger_log"],
+      "breaks": ["I"],
+      "remedies": ["reroute", "remand"]
+    }
+  ],
+  "routing_rules": [
+    {
+      "id": "default_rule",
+      "trigger": "default",
+      "precommitted": true
+    },
+    {
+      "id": "high_consequence_rule",
+      "trigger": "high_consequence",
+      "precommitted": true,
+      "trigger_provenance": "consequence-class ledger"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "case_a",
+      "eligible_routes": ["ordinary_review", "deep_review"],
+      "selected_route": "ordinary_review",
+      "rule": "default_rule",
+      "selection_provenance": "routing receipt case_a",
+      "counter_route_available": true,
+      "exclusion_reason": "no live E/M/C failure trigger"
+    },
+    {
+      "id": "case_b",
+      "eligible_routes": ["ordinary_review", "deep_review"],
+      "selected_route": "deep_review",
+      "rule": "high_consequence_rule",
+      "selection_provenance": "routing receipt case_b",
+      "counter_route_available": true
+    }
+  ]
+}
