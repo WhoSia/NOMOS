@@ -15,91 +15,60 @@ What survived is a stricter research program in **relational person-judgment and
 
 NOMOS is **not** a moral scoring engine and **not** an automated judge.
 
-It is a typed research kernel for studying when evidence, causal claims, person predicates, supports, provenance, review paths and institutional authority are being illegitimately collapsed.
+It is a typed research kernel for studying when evidence, causal claims, person predicates, supports, provenance, review paths, routing decisions and institutional authority are being illegitimately collapsed.
 
 The executable layer audits structures. It never outputs a verdict about a person.
-
-## Active kernel
-
-- dual explanatory layers, not dual physical universes
-- event-to-person bridge burden
-- causal contribution ≠ blame ≠ person authority
-- provenance persists through transformation
-- recovered visibility ≠ recovered baseline
-- ordinary regime ≠ zero-support regime
-- support dependence ≠ person failure
-- responsibility is not a conserved scalar
-- derived record ≠ person property
-- visible thinness may coexist with sealed, reopenable provenance
-- record provenance ≠ selection provenance
-- explanation ≠ contestability
-- different reviewer ≠ different epistemic path
-- more review ≠ more independence
-- redundancy earns value through diversity or remedy, not count
-- review independence is calibrated to live failure topology
 
 ## Executable research surfaces
 
 ### Case Graph
-
 Audits person-judgment structure, provenance, transport and derived-record overreach.
 
 ### Review Topology
+Audits Q/E/M/I/A/C dependency breaks, redundancy, common-mode exposure, escalation and reassembly.
 
-Audits review architecture over the typed dependence dimensions:
+### Router Authority
+Audits the meta-authority that decides which review path is entered.
 
-- `Q` query / selection
-- `E` evidence access
-- `M` model / relevance
-- `I` incentives
-- `A` authority / remedy
-- `C` override cost
+A routing choice is material when eligible routes differ in:
+- visibility;
+- dependency breaks;
+- remedy reach.
 
-It can identify:
+The router analyzer detects:
+- material route assignment;
+- routing-provenance gaps;
+- missing counter-routing;
+- unexplained exclusion of materially broader routes;
+- outcome-sensitive routing rules;
+- unfrozen trigger rules;
+- trigger-provenance gaps;
+- unreviewable concentration of assignment/trigger/termination/reassembly authority.
 
-- inclusion-minimal dependency-break sets;
-- coverage redundancy;
-- equivalent duplicated safeguards;
-- resilience redundancy candidates;
-- common-mode exposure;
-- capture-cut candidates;
-- escalation cycles;
-- authority-changing reachability;
-- fragmentation without reassembly.
-
-These are **architecture diagnostics**, never person scores.
-
-## Repository map
-
-- `docs/origin.md` — social-physics origin and deliberate self-destruction.
-- `docs/constitution.md` — current research constitution.
-- `docs/genealogy.md` — compressed active genealogy.
-- `spec/case-format.md` — Case Graph specification.
-- `spec/review-topology.md` — Review Topology specification.
-- `src/nomos/` — executable research kernel.
-- `examples/` — synthetic research fixtures.
-- `tests/` — regression tests.
-- `research/current.md` — current conceptual head.
+These are architecture diagnostics, never person scores.
 
 ## Design rule
 
 The repository encodes **constraints on warranted inference**, not a universal scalar of truth, blame, risk, morality, personhood, or institutional quality.
 
-Whenever a result would require collapsing heterogeneous questions into one number, NOMOS prefers typed structure, explicit bridges, provenance, or HOLD.
+**PATH PLURALITY ≠ ACCESS PLURALITY.**
+
+Many independent review branches do not create meaningful plurality if one unreviewable router controls which branch a contested judgment may enter.
 
 ## Run
 
 ```bash
 PYTHONPATH=src python -m nomos examples/shared_success.json
-PYTHONPATH=src python -m nomos examples/derived_record_valid.json --trace r1
 PYTHONPATH=src python -m nomos examples/review_topology_calibration.json --calibrate-review
+PYTHONPATH=src python -m nomos examples/router_contestable.json --audit-router
+PYTHONPATH=src python -m nomos examples/router_capture.json --audit-router
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.840 — Review-Independence Calibration, Minimal Dependency Breaks, Redundant Safeguards & Escalation Topologies — CLOSED.**
+**NOMOS-0.841 — Review-Router Authority, Case Assignment, Escalation Trigger Selection & Meta-Reviewer Capture — CLOSED.**
 
-Executable kernel: **v0.3.0** — Case Graph 0.2 + derived-record lineage + Review Topology 0.1.
+Executable kernel: **v0.4.0** — Case Graph + Review Topology + Router Authority.
 
-Next title only: **NOMOS-0.841 — Review-Router Authority, Case Assignment, Escalation Trigger Selection, Meta-Reviewer Capture...**
+Next title only: **NOMOS-0.842 — Routing-Rule Revision, Learned Triage, Load-Adaptive Escalation, Feedback Coupling...**
