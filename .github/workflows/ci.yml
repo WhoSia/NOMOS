@@ -20,6 +20,8 @@ jobs:
       - run: PYTHONPATH=src python -m nomos examples/review_topology_calibration.json --calibrate-review
       - run: PYTHONPATH=src python -m nomos examples/router_contestable.json --audit-router
       - run: PYTHONPATH=src python -m nomos examples/router_capture.json --audit-router
+      - run: PYTHONPATH=src python -m nomos examples/routing_learning_self_sealing.json --audit-routing-learning
+      - run: PYTHONPATH=src python -m nomos examples/routing_learning_audited.json --audit-routing-learning
       - run: |
           if PYTHONPATH=src python -m nomos examples/invalid_person_inference.json; then
             echo "invalid person-inference fixture unexpectedly passed"
