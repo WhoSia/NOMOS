@@ -1,6 +1,6 @@
 # NOMOS Research Constitution
 
-This document defines the active structural invariants of the research kernel. NOMOS does not provide a universal moral, blame, risk, truth or person score.
+This document defines the active structural invariants of the research kernel. NOMOS does not provide a universal moral, blame, risk, truth, person, reviewer, or institutional-quality score.
 
 ## C1 — Type the claim before evaluating it
 Event fact, causal claim, bounded action claim, prediction, person predicate, moral attribution, action authority, historical claim and repair duty remain distinct.
@@ -93,16 +93,40 @@ If eligible routes differ in visible context, dependency breaks, defeater access
 Many independent review branches do not create practical plurality when one actor controls access to all materially distinct paths.
 
 ## C31 — Material routing requires provenance
-For materially different eligible routes, preserve the rule/version, trigger state, eligible set, selected route, exclusions and selector sufficient for later audit.
+For materially different eligible routes, preserve rule/version, trigger state, eligible set, selected route, exclusions and selector sufficient for later audit.
 
 ## C32 — Material routing requires a live counter-routing route
-A challenger need not choose their preferred reviewer, but must have a bounded way to contest a route assignment that changes visibility, break capacity or remedy reach.
+A challenger need not choose a preferred reviewer, but must have a bounded route to contest an assignment that changes visibility, break capacity or remedy reach.
 
 ## C33 — Escalation triggers must not be silently outcome-selected
 Dynamic routing is permitted. Trigger changes and exceptions require provenance; desired decision direction is not by itself a routing warrant.
 
 ## C34 — Router authority cannot close its own boundary without review
-A router that jointly controls assignment, trigger recognition, termination or reassembly requires a live higher-order challenge path when those controls materially affect review access.
+A router that materially controls assignment, trigger recognition, termination or reassembly requires a live higher-order challenge route.
 
 ## C35 — Unavailable routes cannot become person evidence
-Failure to produce evidence or defeat through a route the institution did not make legitimately accessible cannot later be redescribed as evidence about the person.
+Failure to produce evidence or defeat through a route the institution did not legitimately make accessible cannot later be redescribed as evidence about the person.
+
+## C36 — Feedback support is part of evidence provenance
+A correction signal must carry the routing exposure and observation process under which it became observable.
+
+## C37 — Correction count is not correction prevalence
+When correction opportunity changes, raw reversal/remand counts do not identify whether the underlying correctable-error rate changed.
+
+## C38 — Operational adaptation is not epistemic validation
+Load, queue, staffing or capacity may justify temporary routing changes without proving that deeper review is unnecessary or the underlying person-judgment became more accurate.
+
+## C39 — On-policy feedback needs an independent defeat route
+A routing policy may learn from its own outcomes, but authority-expanding or authority-preserving revisions cannot rely solely on signals whose observability the same policy controls when live alternatives remain untested.
+
+## C40 — Rule revision requires transition provenance
+Adaptive routing rules retain policy version, revision signal, exposure map, affected routes, independent validation channel, rollback/reopening condition and residual uncertainty.
+
+## C41 — Unvisited-path debt is claim-relative
+Lack of data from an unselected review route matters when that route intersects a live defeat set for the claim or policy revision. NOMOS does not require universal exhaustive review.
+
+## C42 — Learning value does not authorize harmful exploration
+Institutional desire to learn cannot justify withholding an already-entitled or independently required review merely to obtain counterfactual labels.
+
+## C43 — Self-confirming policy improvement requires an exterior check
+If a policy reduces the opportunities through which its own mistakes can be observed and then cites the resulting decline in observed mistakes as evidence of improvement, revision authority is held pending an exterior, shadow, natural-overlap, off-policy or otherwise independently justified check.
