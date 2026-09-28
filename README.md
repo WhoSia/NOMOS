@@ -5,17 +5,15 @@
 
 NOMOS studies a recurring transformation:
 
-**situated event → interpretation → person attribution → authority → consequence → correction**
+**situated event → interpretation → person attribution → authority → consequence → correction → institutional learning**
 
-The project began from a social-physics intuition: material/sensory constraints and normative/social constraints seemed to act like two coupled fields around the same person and event. NOMOS did **not** preserve that literal physics. The early program destroyed its strongest metaphors: no literal normative force, no universal absurdity score, no fixed threshold, no single social translation function.
-
-What survived is a stricter research program in **relational person-judgment and institutional epistemic authority**.
+The project began from a social-physics intuition: material/sensory constraints and normative/social constraints seemed to act like two coupled fields around the same person and event. NOMOS did **not** preserve literal normative physics. What survived is a stricter program in **relational person-judgment and institutional epistemic authority**.
 
 ## What this repository is
 
-NOMOS is **not** a moral scoring engine and **not** an automated judge.
+NOMOS is **not** a moral scoring engine, automated judge, or policy optimizer.
 
-It is a typed research kernel for studying when evidence, causal claims, person predicates, supports, provenance, review paths, routing decisions and institutional authority are being illegitimately collapsed.
+It is a typed research kernel for studying when evidence, causal claims, person predicates, supports, provenance, review paths, routing decisions and feedback-based institutional learning are being illegitimately collapsed.
 
 The executable layer audits structures. It never outputs a verdict about a person.
 
@@ -28,32 +26,39 @@ Audits person-judgment structure, provenance, transport and derived-record overr
 Audits Q/E/M/I/A/C dependency breaks, redundancy, common-mode exposure, escalation and reassembly.
 
 ### Router Authority
-Audits the meta-authority that decides which review path is entered.
+Audits the meta-authority that selects among materially different review paths.
 
-A routing choice is material when eligible routes differ in:
-- visibility;
-- dependency breaks;
-- remedy reach.
+### Routing Learning
+Audits policy revision when reversal, remand or correction signals are observed only under routes selected by the current router.
 
-The router analyzer detects:
-- material route assignment;
-- routing-provenance gaps;
-- missing counter-routing;
-- unexplained exclusion of materially broader routes;
-- outcome-sensitive routing rules;
-- unfrozen trigger rules;
-- trigger-provenance gaps;
-- unreviewable concentration of assignment/trigger/termination/reassembly authority.
+It separates:
+- route exposure;
+- raw correction count;
+- exposure-normalized correction rate;
+- load/capacity change;
+- revision-rule provenance;
+- on-policy versus independent learning channels.
 
-These are architecture diagnostics, never person scores.
+It can identify:
+- selective routing feedback;
+- raw-count self-confirmation;
+- load/correction confounding;
+- revision provenance gaps;
+- on-policy self-evaluation;
+- outcome-conditioned rule revision;
+- unsafe exploration that would require withholding an already-entitled review.
 
-## Design rule
+## Design rules
 
-The repository encodes **constraints on warranted inference**, not a universal scalar of truth, blame, risk, morality, personhood, or institutional quality.
+**POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
 
-**PATH PLURALITY ≠ ACCESS PLURALITY.**
+**FEWER OBSERVED CORRECTIONS ≠ FEWER CORRECTABLE ERRORS WHEN CORRECTION OPPORTUNITIES ALSO FELL.**
 
-Many independent review branches do not create meaningful plurality if one unreviewable router controls which branch a contested judgment may enter.
+**OPERATIONAL ADAPTATION ≠ EPISTEMIC VALIDATION.**
+
+**LEARNING VALUE DOES NOT AUTHORIZE HARMFUL EXPLORATION.**
+
+Whenever a result would require collapsing heterogeneous questions into one number, NOMOS prefers typed structure, explicit bridges, provenance, HOLD, or nonidentification.
 
 ## Run
 
@@ -61,14 +66,15 @@ Many independent review branches do not create meaningful plurality if one unrev
 PYTHONPATH=src python -m nomos examples/shared_success.json
 PYTHONPATH=src python -m nomos examples/review_topology_calibration.json --calibrate-review
 PYTHONPATH=src python -m nomos examples/router_contestable.json --audit-router
-PYTHONPATH=src python -m nomos examples/router_capture.json --audit-router
+PYTHONPATH=src python -m nomos examples/routing_learning_self_sealing.json --audit-routing-learning
+PYTHONPATH=src python -m nomos examples/routing_learning_audited.json --audit-routing-learning
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.841 — Review-Router Authority, Case Assignment, Escalation Trigger Selection & Meta-Reviewer Capture — CLOSED.**
+**NOMOS-0.842 — Routing-Rule Revision, Learned Triage, Load-Adaptive Escalation & Feedback Coupling — CLOSED.**
 
-Executable kernel: **v0.4.0** — Case Graph + Review Topology + Router Authority.
+Executable kernel: **v0.5.0** — Case Graph + Review Topology + Router Authority + Routing Learning.
 
-Next title only: **NOMOS-0.842 — Routing-Rule Revision, Learned Triage, Load-Adaptive Escalation, Feedback Coupling...**
+Next title only: **NOMOS-0.843 — Feedback-Support Restoration, Counterfactual Review Coverage, Shadow Audit & Safe Learning...**
