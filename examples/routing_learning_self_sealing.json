@@ -1,0 +1,56 @@
+{
+  "policy_id": "router-learning-self-sealing",
+  "feedback": {
+    "correction_signal": "correction_outcome",
+    "observable_on_routes": ["deep_review"],
+    "unobserved_outside_routes": true
+  },
+  "revision_rule": {
+    "uses_post_review_outcomes": true,
+    "frozen_before_outcomes": true
+  },
+  "epochs": [
+    {
+      "id": "t0",
+      "policy_version": "v1",
+      "case_volume": 100,
+      "load": 1.0,
+      "route_exposure": {"deep_review": 40, "thin_review": 60},
+      "observed_corrections": {"deep_review": 20, "thin_review": 0},
+      "revision": {
+        "uses_signals": ["raw_correction_count"],
+        "rule_version": "r1",
+        "provenance": "ledger:t0",
+        "load_adjusted": false
+      }
+    },
+    {
+      "id": "t1",
+      "policy_version": "v2",
+      "case_volume": 100,
+      "load": 1.0,
+      "route_exposure": {"deep_review": 20, "thin_review": 80},
+      "observed_corrections": {"deep_review": 10, "thin_review": 0},
+      "revision": {
+        "uses_signals": ["raw_correction_count"],
+        "rule_version": "r1",
+        "provenance": "ledger:t1",
+        "load_adjusted": false
+      }
+    },
+    {
+      "id": "t2",
+      "policy_version": "v3",
+      "case_volume": 100,
+      "load": 1.0,
+      "route_exposure": {"deep_review": 10, "thin_review": 90},
+      "observed_corrections": {"deep_review": 5, "thin_review": 0},
+      "revision": {
+        "uses_signals": ["raw_correction_count"],
+        "rule_version": "r1",
+        "provenance": "ledger:t2",
+        "load_adjusted": false
+      }
+    }
+  ]
+}
