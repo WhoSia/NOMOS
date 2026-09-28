@@ -8,6 +8,7 @@ from .audit import audit_case
 from .lineage import trace_record
 from .review_topology import analyze_review_topology
 from .router import analyze_router
+from .routing_learning import analyze_routing_learning
 
 
 def main() -> int:
@@ -28,9 +29,19 @@ def main() -> int:
         action="store_true",
         help="Audit review-router assignment, trigger provenance and meta-authority concentration",
     )
+    parser.add_argument(
+        "--audit-routing-learning",
+        action="store_true",
+        help="Audit adaptive routing-rule revision under policy-selected correction feedback",
+    )
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_routing_learning:
+        learning = data.get("routing_learning", data)
+        print(json.dumps(analyze_routing_learning(learning), ensure_ascii=False, indent=2))
+        return 0
 
     if args.audit_router:
         router = data.get("router", data)
