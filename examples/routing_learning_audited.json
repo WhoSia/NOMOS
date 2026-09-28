@@ -1,0 +1,43 @@
+{
+  "policy_id": "router-learning-audited",
+  "feedback": {
+    "correction_signal": "correction_outcome",
+    "observable_on_routes": ["deep_review"],
+    "unobserved_outside_routes": true
+  },
+  "revision_rule": {
+    "uses_post_review_outcomes": true,
+    "frozen_before_outcomes": true
+  },
+  "independent_audit": true,
+  "shadow_review": true,
+  "epochs": [
+    {
+      "id": "t0",
+      "policy_version": "v1",
+      "case_volume": 100,
+      "load": 1.0,
+      "route_exposure": {"deep_review": 40, "thin_review": 60},
+      "observed_corrections": {"deep_review": 20, "thin_review": 0},
+      "revision": {
+        "uses_signals": ["correction_rate", "case_volume"],
+        "rule_version": "r2",
+        "provenance": "ledger:t0"
+      }
+    },
+    {
+      "id": "t1",
+      "policy_version": "v2",
+      "case_volume": 100,
+      "load": 1.1,
+      "route_exposure": {"deep_review": 40, "thin_review": 60},
+      "observed_corrections": {"deep_review": 12, "thin_review": 0},
+      "revision": {
+        "uses_signals": ["correction_rate", "case_volume", "load"],
+        "rule_version": "r2",
+        "provenance": "ledger:t1",
+        "load_adjusted": true
+      }
+    }
+  ]
+}
