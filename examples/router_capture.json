@@ -1,0 +1,40 @@
+{
+  "router_id": "captured_router",
+  "router_controls_assignment": true,
+  "router_controls_triggers": true,
+  "router_controls_termination": true,
+  "router_controls_reassembly": true,
+  "router_reviewable": false,
+  "routes": [
+    {
+      "id": "thin_review",
+      "visibility": ["decision_record"],
+      "breaks": ["Q"],
+      "remedies": ["affirm"]
+    },
+    {
+      "id": "full_review",
+      "visibility": ["decision_record", "sealed_lineage", "corrections"],
+      "breaks": ["Q", "E", "M", "C"],
+      "remedies": ["affirm", "narrow", "remand", "reverse"]
+    }
+  ],
+  "routing_rules": [
+    {
+      "id": "posthoc_rule",
+      "trigger": "router_discretion",
+      "precommitted": false,
+      "uses_outcome_direction": true
+    }
+  ],
+  "assignments": [
+    {
+      "id": "case_capture",
+      "eligible_routes": ["thin_review", "full_review"],
+      "selected_route": "thin_review",
+      "rule": "posthoc_rule",
+      "selection_provenance": false,
+      "counter_route_available": false
+    }
+  ]
+}
