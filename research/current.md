@@ -1,76 +1,99 @@
-# Current Research Head — NOMOS-0.841
+# Current Research Head — NOMOS-0.842
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-Who may decide which independent review path a contested person-judgment is sent through when path choice itself changes what can be seen, challenged and corrected?
+When may a review router legitimately revise its own case-assignment policy after observing reversals, remands or escalations generated under that very policy?
 
 ## Core theorem
 
-**ROUTING IS AN EPISTEMIC INTERVENTION WHEN ROUTE CHOICE CHANGES WHAT CAN BE SEEN, WHICH DEPENDENCIES CAN BE BROKEN, OR WHICH REMEDIES CAN BE REACHED.**
+Let:
+- `N_t` = case volume,
+- `p_t` = exposure to a route capable of generating a correction signal,
+- `q_t` = correction rate conditional on that route.
 
-## Route effect profile
+Under a simple exposure model:
 
-For route r:
+**E[K_t] ≈ N_t × p_t × q_t**
 
-**Φ(r) = ⟨V(r), B(r), D(r), M(r)⟩**
+where `K_t` is the observed correction count.
 
-- V — accessible context/visibility
-- B — dependency breaks
-- D — defeater/counter-query capacity
-- M — remedy reach
+Therefore a decline in `K_t` does not identify a decline in `q_t` when `p_t` also changes.
 
-When two eligible routes differ materially in Φ, selecting one is authority-bearing.
+**FEWER OBSERVED CORRECTIONS ≠ FEWER CORRECTABLE ERRORS WHEN CORRECTION OPPORTUNITIES ALSO FELL.**
 
-## Five router authorities
+## New object
 
-1. eligibility authority
-2. assignment authority
-3. trigger authority
-4. termination authority
-5. reassembly authority
+0.842 is not generic performativity or generic adaptive governance.
 
-**PATH PLURALITY ≠ ACCESS PLURALITY.**
+Its object is the **authority to revise routing policy from correction feedback whose observability is itself routing-dependent**.
 
-A system may contain many independent branches while one unreviewable router controls practical access to all of them.
+Policy loop:
 
-## Counter-routing
+**routing policy → review exposure → observable correction signal → routing-policy revision → future review exposure**
 
-A challenger does not gain a right to choose any reviewer.
+## Required separations
 
-They require a bounded route to contest a material assignment when routing changes visibility, dependency-breaking capacity or remedy reach.
+- case volume ≠ correction opportunity;
+- correction count ≠ correction prevalence;
+- load adaptation ≠ epistemic improvement;
+- on-policy feedback ≠ independent validation;
+- rule revision ≠ authority expansion;
+- exploration value ≠ permission to withhold an entitled review.
+
+## Learning channels
+
+Potentially useful, claim-bounded channels include:
+- independent audit;
+- non-consequential shadow review;
+- natural overlap / reviewer heterogeneity;
+- off-policy evaluation with support;
+- frozen holdout;
+- randomization only among already acceptable routes.
+
+## Cross-Lab re-entry
+
+Boundedly absorbed:
+- RITHM observation-schedule bias → routing exposure provenance;
+- RITHM outcome-blind adaptation → operational adaptation lane;
+- MQR unvisited-world debt → unvisited-review-path debt;
+- EPISTEME self-sealing diagnosability → novelty breaker;
+- EvoNOMOS intervention–observation entanglement → routing/evidence entanglement guard.
 
 ## Executable materialization
 
-Repository version: **v0.4.0**
+Repository version: **v0.5.0**
 
 Added:
-- `src/nomos/router.py`
-- Router Authority 0.1 spec
-- `--audit-router` CLI
-- contestable and captured router fixtures
-- routing provenance audit
-- material route-effect comparison
-- counter-route diagnostics
-- trigger-precommitment/provenance checks
-- outcome-sensitive routing detection
-- unreviewable router-concentration detection
-- CI integration
+- `src/nomos/routing_learning.py`;
+- Routing Learning 0.1 spec;
+- `--audit-routing-learning` CLI;
+- self-sealing and audited learning fixtures;
+- exposure-normalized correction-rate computation;
+- raw-count self-confirmation detection;
+- load/correction confounding detection;
+- on-policy self-evaluation audit;
+- revision provenance audit;
+- independent learning-channel declaration;
+- unsafe-exploration rejection;
+- regression and CI integration.
 
-Manual frozen-fixture replay:
-- contestable fixture → **ROUTING_CONTESTABLE_CANDIDATE**, findings 0
-- capture fixture → **META_AUTHORITY_CAPTURE_RISK**, with the expected seven structural findings
+Frozen semantic replay:
+- self-sealing fixture: exposure **40→20→10**, corrections **20→10→5**, rate **0.5→0.5→0.5** → **REVISION_IDENTIFIABILITY_HOLD**;
+- audited fixture: independent audit + shadow review, rate-aware revision → **REVISION_IDENTIFIABILITY_CANDIDATE**.
 
-## Drive intake receipt
+## Literature
 
-`00_INTAKE — Literature Radar` is empty after this stage.
-
-- nine identified papers were canonically renamed and moved to `10_PAPERS — Canonical Literature Commons`;
-- a duplicate copy of Knight & Leveson (1986) was isolated in `90_ARCHIVE`, preserving the existing canonical copy.
+Bounded external donors:
+- Lakkaraju et al. (2017), DOI **10.1145/3097983.3098066**;
+- Perdomo et al. (2020), **Performative Prediction**;
+- Ensign et al. (2018), **Runaway Feedback Loops in Predictive Policing**;
+- Dudík et al., **Doubly Robust Policy Evaluation and Optimization**;
+- adaptive-experiment inference literature.
 
 ## Next title only
 
-**NOMOS-0.842 — Routing-Rule Revision, Learned Triage, Load-Adaptive Escalation, Feedback Coupling & the Primitive Question of When a Review Router May Legitimately Change Its Own Case-Assignment Policy after Observing Which Cases Are Reversed, Remanded or Escalated without Turning Institutional Learning into a Self-Confirming Selection Loop**
+**NOMOS-0.843 — Feedback-Support Restoration, Counterfactual Review Coverage, Shadow Audit, Safe Exploration & the Primitive Question of How an Institution May Learn Whether Its Routing Policy Misses Correctable Cases When the Very Cases It Routes Away from Deep Review Do Not Reveal What Deep Review Would Have Found**
 
 **TITLE-LOCKED / NOT OPENED.**
