@@ -1,161 +1,108 @@
 # NOMOS Research Constitution
 
-This document defines the active invariants enforced by the repository.
-
-The rules are deliberately negative and structural. NOMOS does not provide a universal moral score, blame score, risk score or person score.
+This document defines the active structural invariants of the research kernel. NOMOS does not provide a universal moral, blame, risk, truth or person score.
 
 ## C1 — Type the claim before evaluating it
-
-Keep separate: event fact, causal claim, bounded action claim, prediction, person predicate, moral attribution, action authority, historical claim, and repair duty.
-
-A true claim of one type does not automatically license a stronger claim of another type.
+Event fact, causal claim, bounded action claim, prediction, person predicate, moral attribution, action authority, historical claim and repair duty remain distinct.
 
 ## C2 — Event-to-person inference requires a bridge
-
-An event belonging to a person is not automatically evidence of a stable person predicate.
-
-A person-directed inference must state the target predicate, conduct-to-person bridge, relevant situational rivals, scope/transport conditions, and defeat conditions.
+Person-directed inference requires an explicit conduct-to-person bridge, scope, rivals and defeat conditions.
 
 ## C3 — Causal contribution is not blame
-
-A causal bearer may be a person, support, tool, institution, rule, environment, absence, or barrier.
-
-A causal bearer is not automatically a normative bearer.
-
-Causal contribution, agency, credit, answerability, blame, repair duty and consequence authority remain separate.
+Causal bearer, agent, credit bearer, blame bearer, repair bearer and authority bearer may differ.
 
 ## C4 — Responsibility is not a conservation law
-
-Shared causation does not imply that a fixed quantity of responsibility must be divided among contributors.
-
-Typed vectors are preferred to universal scalarization.
+Shared causation does not imply a fixed scalar responsibility pie.
 
 ## C5 — Action authority is not person-predicate authority
-
-An institution may have sufficient warrant to act while lacking warrant for a thick claim about the person.
+Authority to act does not automatically license a thick claim about the person.
 
 ## C6 — Preserve provenance
-
-Evidence retains the provenance of source, transformation, observation regime, policy regime, recovery regime, support configuration, and downstream adoption.
-
-A transformed record does not become independent merely because it has a new file, score or recipient.
+Transformation, copying and recipient change do not erase source ancestry.
 
 ## C7 — Policy-conditioned evidence stays policy-conditioned
-
-If policy changes what becomes observable or likely, resulting evidence cannot silently be transported to an untreated world.
-
-Transport requires an explicit warrant.
+Observation generated under intervention or policy cannot silently transport to an untreated world.
 
 ## C8 — Recovered visibility is not recovered baseline
-
-A restoration process may reveal, create or co-create a new state.
-
-Recovery evidence can be strong about the recovered regime while remaining weak about a historical untreated state.
+Recovery may reveal or co-create a state rather than reconstruct history.
 
 ## C9 — Ordinary regime is not zero-support regime
-
-Human functioning normally occurs with tools, norms, feedback, institutions and infrastructure.
-
-A support must be shown to fall outside the legitimate target environment before its removal is used as a capacity test.
+Ordinary functioning includes legitimate tools, infrastructure and support.
 
 ## C10 — Support dependence is not person failure
-
-Dependence on a legitimate support identifies a relation before it identifies a defect.
+Dependence identifies a relation before it identifies a defect.
 
 ## C11 — Withdrawal is an intervention
-
-Removing support changes the causal system.
-
-Post-withdrawal deterioration first identifies sensitivity to that transition.
+Post-withdrawal deterioration first identifies sensitivity to the transition.
 
 ## C12 — Shared success is real success
-
-Assistance does not cancel authorship.
-
-Authorship does not cancel enablement.
+Assistance does not cancel authorship; authorship does not cancel enablement.
 
 ## C13 — Distributed production must be reassemblable
-
-When several institutions transform a person-judgment, at least one route must reconstruct:
-
-**source → transformation → ratification → consequence → defeat/correction**
-
-Fragmentation may distribute responsibility; it may not dissolve it.
+Consequential chains require a reconstructable source → transformation → ratification → consequence → defeat/correction route.
 
 ## C14 — Defeat capacity is part of authority
-
-A person-claim that can only accumulate confirmation and has no live route to weakening, narrowing or termination is epistemically defective.
+A claim that can only accumulate confirmation is epistemically defective.
 
 ## C15 — Nonidentification is a legitimate endpoint
-
-When an ethically admissible route cannot identify a thick person claim, NOMOS permits:
-
-**HOLD / NONIDENTIFIED / AUTHORITY CEILING**
-
-instead of forcing a verdict.
+HOLD / NONIDENTIFIED / AUTHORITY CEILING may be correct outcomes.
 
 ## C16 — No outcome-selective asymmetry
-
-The same structural explanations must remain available for favorable and adverse results.
+Structural explanations must remain available across favorable and adverse outcomes.
 
 ## C17 — Repair responsibility is separately allocated
+Cause, repair capacity, action authority and explanation duty need not coincide.
 
-Who caused a state, who can repair it, who may act, and who owes an explanation can be different actors.
-
-## C18 — The final person claim must survive relational restoration
-
-Before compressing a result into a person predicate, restore all materially relevant supports, barriers, interventions, opportunity constraints, observation regimes and shared causal contributors to view.
-
-If the person claim disappears when the relational system is made visible, it was never adequately warranted.
+## C18 — Final person claims must survive relational restoration
+Restore material supports, barriers, opportunity constraints, regimes and shared contributors before compressing to a person predicate.
 
 ## C19 — Derived record is not person property
-
-A score, credential, profile feature, summary, flag or other derivative remains a record produced from a relational history.
+A score or credential remains a derivative of relational history.
 
 ## C20 — Compression validity is use-relative
-
-Every practical record loses information.
-
-Compression is legitimate only when the distinctions it erases do not change the warrant for downstream use, or when those distinctions remain recoverable before the decision.
+Information loss is legitimate only where erased distinctions do not change downstream warrant or remain reopenable.
 
 ## C21 — Auditability does not require public flagging
-
-Sensitive dependency information may remain sealed when a live authorized reopening route exists.
+Sensitive provenance may remain sealed if a live authorized reopening route exists.
 
 ## C22 — Portability requires semantic warrant
-
-A support-dependent derivative may travel only within validated claim scopes unless a fresh bridge or interpretation limit is supplied.
+Derived records travel only within validated claim scopes absent a fresh bridge.
 
 ## C23 — Attribution must persist through derivation
-
-Compression may not remember person agency, support, barrier or institutional contribution selectively according to outcome valence.
+Outcome valence may not determine which causal dependencies remain visible.
 
 ## C24 — Review independence is failure-mode relative
-
-Independence is not reviewer count or organizational distance.
-
-A review architecture should break the query, evidence, model, incentive, authority or override-cost dependencies that are materially live for the challenged claim.
+Review should break the Q/E/M/I/A/C dependencies materially live for the challenged claim.
 
 ## C25 — Redundancy earns value through diversity or remedy
-
-Duplicated review is epistemically valuable when it breaks a residual dependency, provides a distinct failure route against common-mode error, or creates practically usable remedy reach.
-
-Nominal duplication alone does not create a fresh warrant.
+Review count alone does not create fresh warrant.
 
 ## C26 — More review is not monotonically better
-
-Once live failure modes are covered and a usable corrective path exists, further separation must justify its marginal corrective role.
-
-Extra review can create delay, stale evidence, repeated person burden or recursive ratification.
+Additional layers must state their marginal corrective role.
 
 ## C27 — Independent branches require reassembly
-
-Multiple review paths that can change authority must have a traceable way to reconcile incompatible results.
-
-Reassembly may not silently reinstall the original captured authority.
+Plural corrective branches need a traceable non-recapturing reconciliation path.
 
 ## C28 — The router is also an authority
+Assignment, trigger, termination and reassembly choices can constitute meta-authority.
 
-An actor that assigns cases, selects review paths, triggers escalation or terminates review exercises meta-authority.
+## C29 — Routing is epistemically material when path effects differ
+If eligible routes differ in visible context, dependency breaks, defeater access or remedy reach, selecting among them is not merely administrative.
 
-Distributed review does not eliminate capture if all routes remain controlled by one unreviewable allocator.
+## C30 — Path plurality is not access plurality
+Many independent review branches do not create practical plurality when one actor controls access to all materially distinct paths.
+
+## C31 — Material routing requires provenance
+For materially different eligible routes, preserve the rule/version, trigger state, eligible set, selected route, exclusions and selector sufficient for later audit.
+
+## C32 — Material routing requires a live counter-routing route
+A challenger need not choose their preferred reviewer, but must have a bounded way to contest a route assignment that changes visibility, break capacity or remedy reach.
+
+## C33 — Escalation triggers must not be silently outcome-selected
+Dynamic routing is permitted. Trigger changes and exceptions require provenance; desired decision direction is not by itself a routing warrant.
+
+## C34 — Router authority cannot close its own boundary without review
+A router that jointly controls assignment, trigger recognition, termination or reassembly requires a live higher-order challenge path when those controls materially affect review access.
+
+## C35 — Unavailable routes cannot become person evidence
+Failure to produce evidence or defeat through a route the institution did not make legitimately accessible cannot later be redescribed as evidence about the person.
