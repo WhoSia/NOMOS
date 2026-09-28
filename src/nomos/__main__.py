@@ -7,6 +7,7 @@ from pathlib import Path
 from .audit import audit_case
 from .lineage import trace_record
 from .review_topology import analyze_review_topology
+from .router import analyze_router
 
 
 def main() -> int:
@@ -14,7 +15,7 @@ def main() -> int:
         prog="nomos",
         description="Audit NOMOS research structures without producing person verdicts.",
     )
-    parser.add_argument("case", type=Path, help="Path to a NOMOS JSON case or review topology")
+    parser.add_argument("case", type=Path, help="Path to a NOMOS JSON structure")
     parser.add_argument("--json", action="store_true", dest="as_json", help="Emit JSON findings")
     parser.add_argument("--trace", metavar="RECORD_ID", help="Trace a derived record's dependency closure")
     parser.add_argument(
@@ -22,9 +23,19 @@ def main() -> int:
         action="store_true",
         help="Analyze review-topology dependency breaks, redundancy and escalation structure",
     )
+    parser.add_argument(
+        "--audit-router",
+        action="store_true",
+        help="Audit review-router assignment, trigger provenance and meta-authority concentration",
+    )
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_router:
+        router = data.get("router", data)
+        print(json.dumps(analyze_router(router), ensure_ascii=False, indent=2))
+        return 0
 
     if args.calibrate_review:
         topology = data.get("review_topology", data)
