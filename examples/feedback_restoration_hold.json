@@ -1,0 +1,15 @@
+{
+  "policy_id": "router-feedback-restoration-hold",
+  "live_defeat_regions": ["missed_escalation", "routed_away_complex"],
+  "methods": [
+    {
+      "id": "off_policy_partial",
+      "kind": "off_policy",
+      "covers": ["missed_escalation"],
+      "support_audited": true,
+      "unsupported_regions": ["routed_away_complex"],
+      "provenance": "ledger:ope",
+      "assumptions": ["positivity on observed support"]
+    }
+  ]
+}
