@@ -1,99 +1,97 @@
-# Current Research Head — NOMOS-0.842
+# Current Research Head — NOMOS-0.843
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-When may a review router legitimately revise its own case-assignment policy after observing reversals, remands or escalations generated under that very policy?
+How may an institution learn whether its routing policy misses correctable cases when routed-away cases do not reveal what deeper review would have found?
 
 ## Core theorem
 
-Let:
-- `N_t` = case volume,
-- `p_t` = exposure to a route capable of generating a correction signal,
-- `q_t` = correction rate conditional on that route.
+Let `D(C)` be the live defeat regions for routing-policy claim `C`.
+Each restoration method `m` has:
+- a declared coverage set `K(m) ⊆ D(C)`;
+- an admissibility status `A(m)`.
 
-Under a simple exposure model:
+A restoration portfolio is sufficient when the union of admissible method coverage spans `D(C)`.
 
-**E[K_t] ≈ N_t × p_t × q_t**
+NOMOS seeks **inclusion-minimal safe covers**, not one universal audit score or maximal review volume.
 
-where `K_t` is the observed correction count.
-
-Therefore a decline in `K_t` does not identify a decline in `q_t` when `p_t` also changes.
-
-**FEWER OBSERVED CORRECTIONS ≠ FEWER CORRECTABLE ERRORS WHEN CORRECTION OPPORTUNITIES ALSO FELL.**
-
-## New object
-
-0.842 is not generic performativity or generic adaptive governance.
-
-Its object is the **authority to revise routing policy from correction feedback whose observability is itself routing-dependent**.
-
-Policy loop:
-
-**routing policy → review exposure → observable correction signal → routing-policy revision → future review exposure**
+**COUNTERFACTUAL REVIEW COVERAGE ≠ MAXIMAL REVIEW.**
 
 ## Required separations
 
-- case volume ≠ correction opportunity;
-- correction count ≠ correction prevalence;
-- load adaptation ≠ epistemic improvement;
-- on-policy feedback ≠ independent validation;
-- rule revision ≠ authority expansion;
-- exploration value ≠ permission to withhold an entitled review.
+- routed-away case ≠ research review entitlement;
+- quality-assurance review ≠ individual appeal;
+- shadow review ≠ hidden second adjudication;
+- disagreement ≠ ground truth;
+- defeat coverage ≠ population representativeness;
+- random sample ≠ targeted sample;
+- natural overlap ≠ randomization;
+- off-policy uncertainty ≠ support;
+- information value ≠ action authority.
 
-## Learning channels
+## Shadow review
 
-Potentially useful, claim-bounded channels include:
-- independent audit;
-- non-consequential shadow review;
-- natural overlap / reviewer heterogeneity;
-- off-policy evaluation with support;
-- frozen holdout;
-- randomization only among already acceptable routes.
+A valid shadow lane is diagnostic by default:
+- independent enough to break the target dependency;
+- explicit about context/blinding;
+- unable to change the live consequence without a separately governed escalation path;
+- provenance-preserving.
 
-## Cross-Lab re-entry
+**SHADOW REVIEW IS A SENSOR, NOT A SECRET COURT.**
 
-Boundedly absorbed:
-- RITHM observation-schedule bias → routing exposure provenance;
-- RITHM outcome-blind adaptation → operational adaptation lane;
-- MQR unvisited-world debt → unvisited-review-path debt;
-- EPISTEME self-sealing diagnosability → novelty breaker;
-- EvoNOMOS intervention–observation entanglement → routing/evidence entanglement guard.
+## Sampling constitution
+
+- random: broad monitoring / prevalence-compatible under a valid frame;
+- stratified random: stronger rare-region coverage with design-aware aggregation;
+- targeted: high diagnostic yield for known failures, weak population-prevalence authority;
+- hybrid: may separate discovery from prevalence, without becoming universally optimal.
+
+## Safe restoration ladder
+
+Existing evidence → natural overlap → independent audit → shadow review → supported off-policy evaluation → random tie-break among independently acceptable routes → independently justified staged restoration.
+
+No step receives action authority from information value alone.
+
+## Cross-Lab bounded re-entry
+
+- NOMOS-0.831: ethical recovery ladder and no-harm probe constitution;
+- EvoNOMOS DIP-12: counterfactual coverage must target decision-relevant uncertainty;
+- EPISTEME-P6/P9: off-path loss and restoration-sufficient provenance remain novelty pressure, not wholesale import.
 
 ## Executable materialization
 
-Repository version: **v0.5.0**
+Repository version: **v0.6.0**
 
 Added:
-- `src/nomos/routing_learning.py`;
-- Routing Learning 0.1 spec;
-- `--audit-routing-learning` CLI;
-- self-sealing and audited learning fixtures;
-- exposure-normalized correction-rate computation;
-- raw-count self-confirmation detection;
-- load/correction confounding detection;
-- on-policy self-evaluation audit;
-- revision provenance audit;
-- independent learning-channel declaration;
-- unsafe-exploration rejection;
+- `src/nomos/feedback_restoration.py`;
+- Feedback Support Restoration 0.1;
+- `--plan-feedback-restoration`;
+- safe / coverage-HOLD / unsafe fixtures;
+- inclusion-minimal safe restoration sets;
+- shadow-review independence and consequence firewall;
+- off-policy support audit;
+- natural-overlap assignment provenance;
+- acceptable-option randomization guard;
+- harmful-exploration rejection;
+- uncovered live-defeat-region detection;
 - regression and CI integration.
 
-Frozen semantic replay:
-- self-sealing fixture: exposure **40→20→10**, corrections **20→10→5**, rate **0.5→0.5→0.5** → **REVISION_IDENTIFIABILITY_HOLD**;
-- audited fixture: independent audit + shadow review, rate-aware revision → **REVISION_IDENTIFIABILITY_CANDIDATE**.
+Frozen structural replay:
+- safe fixture → **two inclusion-minimal safe covers**;
+- hold fixture → **RESTORATION_COVERAGE_HOLD** with `routed_away_complex` uncovered;
+- unsafe fixture → **RESTORATION_METHOD_REJECTED**.
 
-## Literature
+## External bounded donors
 
-Bounded external donors:
 - Lakkaraju et al. (2017), DOI **10.1145/3097983.3098066**;
-- Perdomo et al. (2020), **Performative Prediction**;
-- Ensign et al. (2018), **Runaway Feedback Loops in Predictive Policing**;
-- Dudík et al., **Doubly Robust Policy Evaluation and Optimization**;
-- adaptive-experiment inference literature.
+- Gao & Zha, DOI **10.1287/opre.2022.2382**;
+- ACUS (2021), **Quality Assurance Systems in Agency Adjudication**;
+- Jia, Ben-Michael & Imai (2026), DOI **10.1093/jrsssa/qnaf122**.
 
 ## Next title only
 
-**NOMOS-0.843 — Feedback-Support Restoration, Counterfactual Review Coverage, Shadow Audit, Safe Exploration & the Primitive Question of How an Institution May Learn Whether Its Routing Policy Misses Correctable Cases When the Very Cases It Routes Away from Deep Review Do Not Reveal What Deep Review Would Have Found**
+**NOMOS-0.844 — Shadow-Audit Disagreement, Adjudication of Review Divergence, Error-Source Localization, Policy-Update Authority & the Primitive Question of What an Institution May Infer When Live Review and Restored Counterfactual Review Disagree about the Same Person-Judgment**
 
 **TITLE-LOCKED / NOT OPENED.**
