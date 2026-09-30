@@ -1,0 +1,15 @@
+{
+  "policy_id": "router-feedback-restoration-unsafe",
+  "live_defeat_regions": ["missed_escalation"],
+  "methods": [
+    {
+      "id": "deny_review_experiment",
+      "kind": "active_probe",
+      "covers": ["missed_escalation"],
+      "withholds_entitled_review": true,
+      "creates_new_person_burden": true,
+      "independent_action_justification": false,
+      "provenance": "ledger:unsafe"
+    }
+  ]
+}
