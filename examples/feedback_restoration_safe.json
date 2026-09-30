@@ -1,0 +1,38 @@
+{
+  "policy_id": "router-feedback-restoration-safe",
+  "live_defeat_regions": ["missed_escalation", "routed_away_complex", "boundary_case"],
+  "methods": [
+    {
+      "id": "shadow_complex",
+      "kind": "shadow_review",
+      "covers": ["routed_away_complex"],
+      "independent_reviewer": true,
+      "changes_immediate_consequence": false,
+      "result_can_change_live_consequence": false,
+      "provenance": "ledger:shadow_complex",
+      "assumptions": ["shadow reviewer has access to sealed context"]
+    },
+    {
+      "id": "independent_boundary_audit",
+      "kind": "independent_audit",
+      "covers": ["boundary_case"],
+      "provenance": "ledger:boundary_audit",
+      "assumptions": ["audit frame independently sampled from routing policy"]
+    },
+    {
+      "id": "natural_overlap_missed",
+      "kind": "natural_overlap",
+      "covers": ["missed_escalation"],
+      "assignment_provenance": "historical reviewer assignment ledger",
+      "provenance": "ledger:natural_overlap",
+      "assumptions": ["overlap is not outcome-created"]
+    },
+    {
+      "id": "randomized_tie_break_optional",
+      "kind": "randomized_tie_break",
+      "covers": ["boundary_case"],
+      "all_options_independently_acceptable": true,
+      "provenance": "ledger:tie_break"
+    }
+  ]
+}
