@@ -130,3 +130,28 @@ Institutional desire to learn cannot justify withholding an already-entitled or 
 
 ## C43 — Self-confirming policy improvement requires an exterior check
 If a policy reduces the opportunities through which its own mistakes can be observed and then cites the resulting decline in observed mistakes as evidence of improvement, revision authority is held pending an exterior, shadow, natural-overlap, off-policy or otherwise independently justified check.
+
+
+## C44 — Restoration targets live defeat regions
+Routed-away cases create feedback-restoration debt only where a materially live rival says added review could change the routing-policy claim, remedy authority, or person-level warrant.
+
+## C45 — Counterfactual review coverage is not maximal review
+Institutions need not duplicate every case. They must preserve enough admissible coverage to keep live defeat regions testable.
+
+## C46 — Shadow review is diagnostic by default
+A shadow lane is a sensor, not a hidden second adjudication. It requires an explicit consequence firewall and a separately governed route before its result may alter an individual live case.
+
+## C47 — Sampling design determines aggregation authority
+Random, stratified and targeted audit frames answer different questions. Targeted yield does not identify population prevalence; random sampling does not prove rare predeclared failure modes absent.
+
+## C48 — Defeat coverage is not representativeness
+Coverage of all live defeat regions and representativeness for a population claim are separate properties and must be reported separately.
+
+## C49 — Natural overlap and off-policy evidence retain support provenance
+Natural heterogeneity is not randomization by default. Logged-data inference may not cross unsupported regions while claiming restored observation.
+
+## C50 — Randomization cannot manufacture permissibility
+Randomization may select among routes already independently acceptable for a case. It cannot make an otherwise impermissible route acceptable.
+
+## C51 — Safe nonidentification is valid restoration closure
+If no admissible evidence channel can cover a live defeat region, NOMOS permits RESTORATION_COVERAGE_HOLD / NONIDENTIFIED rather than compelled experimentation or fabricated certainty.
