@@ -155,3 +155,31 @@ Randomization may select among routes already independently acceptable for a cas
 
 ## C51 — Safe nonidentification is valid restoration closure
 If no admissible evidence channel can cover a live defeat region, NOMOS permits RESTORATION_COVERAGE_HOLD / NONIDENTIFIED rather than compelled experimentation or fabricated certainty.
+
+
+## C52 — Disagreement must be localized before adjudication
+A difference between live and shadow/restored review does not identify an error source until the relevant claim, evidence, provenance, visibility, rule, model, threshold, burden, procedure and timepoint differences are exposed.
+
+## C53 — Same person does not imply same review question
+Two reviews concerning the same person may target different claims, horizons, standards or consequences. Noncomparable questions may not be forced into a single winner.
+
+## C54 — Shadow review has no truth privilege
+Independence, extra context or diagnostic purpose does not make a shadow result automatically authoritative over the live result.
+
+## C55 — Contract difference is not causal localization
+A review-coordinate difference becomes an error-source candidate only through a validated defect, alignment/swap test, or other claim-relevant discriminator.
+
+## C56 — Residual disagreement is a legitimate state
+When materially relevant review-contract coordinates are aligned and disagreement remains, NOMOS permits ALIGNED_RESIDUAL_DIVERGENCE rather than forced consensus or reviewer blame.
+
+## C57 — Error localization does not automatically transfer authority
+A localized defect may justify case repair, reviewer/process correction or policy revision only within the scope supported by the defect and its replication.
+
+## C58 — Systemic policy update needs systemic evidence
+A single shadow/live disagreement is normally diagnostic. Routing-policy revision requires replicated or otherwise sufficiently general evidence plus a mechanism link to the policy coordinate being changed.
+
+## C59 — Disagreement does not thicken the person model
+Review divergence is first evidence about evidence access, rules, models, thresholds, procedures or irreducible judgment variation—not evidence that the person is unstable, deceptive or internally inconsistent.
+
+## C60 — Adjudication may allocate consequence without manufacturing universal truth
+A competent forum may decide which branch governs a specified action while preserving unresolved epistemic divergence.
