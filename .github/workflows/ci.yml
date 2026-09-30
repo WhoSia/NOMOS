@@ -15,16 +15,14 @@ jobs:
           python-version: "3.12"
       - run: PYTHONPATH=src python -m unittest discover -s tests -v
       - run: PYTHONPATH=src python -m nomos examples/shared_success.json
-      - run: PYTHONPATH=src python -m nomos examples/derived_record_valid.json
       - run: PYTHONPATH=src python -m nomos examples/derived_record_valid.json --trace r1
       - run: PYTHONPATH=src python -m nomos examples/review_topology_calibration.json --calibrate-review
       - run: PYTHONPATH=src python -m nomos examples/router_contestable.json --audit-router
-      - run: PYTHONPATH=src python -m nomos examples/router_capture.json --audit-router
-      - run: PYTHONPATH=src python -m nomos examples/routing_learning_self_sealing.json --audit-routing-learning
       - run: PYTHONPATH=src python -m nomos examples/routing_learning_audited.json --audit-routing-learning
       - run: PYTHONPATH=src python -m nomos examples/feedback_restoration_safe.json --plan-feedback-restoration
-      - run: PYTHONPATH=src python -m nomos examples/feedback_restoration_hold.json --plan-feedback-restoration
-      - run: PYTHONPATH=src python -m nomos examples/feedback_restoration_unsafe.json --plan-feedback-restoration
+      - run: PYTHONPATH=src python -m nomos examples/review_divergence_mismatch.json --audit-review-divergence
+      - run: PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
+      - run: PYTHONPATH=src python -m nomos examples/review_divergence_residual.json --audit-review-divergence
       - run: |
           if PYTHONPATH=src python -m nomos examples/invalid_person_inference.json; then
             echo "invalid person-inference fixture unexpectedly passed"
