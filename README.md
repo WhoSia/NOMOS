@@ -48,6 +48,17 @@ It can identify:
 - outcome-conditioned rule revision;
 - unsafe exploration that would require withholding an already-entitled review.
 
+### Feedback Support Restoration
+Audits whether routed-away live defeat regions can be re-opened through ethically admissible evidence channels.
+
+It can:
+- enumerate inclusion-minimal safe restoration covers;
+- distinguish random, stratified, targeted, natural-overlap, shadow and off-policy channels;
+- reject entitlement-withholding exploration;
+- enforce a diagnostic consequence firewall for shadow review;
+- expose unsupported off-policy regions;
+- preserve safe nonidentification when no admissible cover exists.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -68,13 +79,14 @@ PYTHONPATH=src python -m nomos examples/review_topology_calibration.json --calib
 PYTHONPATH=src python -m nomos examples/router_contestable.json --audit-router
 PYTHONPATH=src python -m nomos examples/routing_learning_self_sealing.json --audit-routing-learning
 PYTHONPATH=src python -m nomos examples/routing_learning_audited.json --audit-routing-learning
+PYTHONPATH=src python -m nomos examples/feedback_restoration_safe.json --plan-feedback-restoration
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.842 — Routing-Rule Revision, Learned Triage, Load-Adaptive Escalation & Feedback Coupling — CLOSED.**
+**NOMOS-0.843 — Feedback-Support Restoration, Counterfactual Review Coverage, Shadow Audit & Safe Exploration — CLOSED.**
 
-Executable kernel: **v0.5.0** — Case Graph + Review Topology + Router Authority + Routing Learning.
+Executable kernel: **v0.6.0** — Case Graph + Review Topology + Router Authority + Routing Learning + Feedback Support Restoration.
 
-Next title only: **NOMOS-0.843 — Feedback-Support Restoration, Counterfactual Review Coverage, Shadow Audit & Safe Learning...**
+Next title only: **NOMOS-0.844 — Shadow-Audit Disagreement, Adjudication of Review Divergence, Error-Source Localization, Policy-Update Authority...**
