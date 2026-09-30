@@ -59,6 +59,17 @@ It can:
 - expose unsupported off-policy regions;
 - preserve safe nonidentification when no admissible cover exists.
 
+### Review Divergence
+Audits disagreement between live and restored/shadow review without treating disagreement as automatic error.
+
+It can:
+- diff review contracts across claim/evidence/provenance/visibility/rule/model/threshold/burden/procedure/time;
+- separate noncomparable review questions;
+- localize validated defects;
+- localize structural sources through declared alignment/swap tests;
+- preserve aligned residual disagreement;
+- separate case diagnostics from policy-update authority.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -80,13 +91,16 @@ PYTHONPATH=src python -m nomos examples/router_contestable.json --audit-router
 PYTHONPATH=src python -m nomos examples/routing_learning_self_sealing.json --audit-routing-learning
 PYTHONPATH=src python -m nomos examples/routing_learning_audited.json --audit-routing-learning
 PYTHONPATH=src python -m nomos examples/feedback_restoration_safe.json --plan-feedback-restoration
+PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.843 — Feedback-Support Restoration, Counterfactual Review Coverage, Shadow Audit & Safe Exploration — CLOSED.**
+**NOMOS-0.844 — Shadow-Audit Disagreement, Adjudication of Review Divergence, Error-Source Localization & Policy-Update Authority — CLOSED.**
 
-Executable kernel: **v0.6.0** — Case Graph + Review Topology + Router Authority + Routing Learning + Feedback Support Restoration.
+Executable kernel: **v0.7.0** — Case Graph + Review Topology + Router Authority + Routing Learning + Feedback Support Restoration + Review Divergence.
 
-Next title only: **NOMOS-0.844 — Shadow-Audit Disagreement, Adjudication of Review Divergence, Error-Source Localization, Policy-Update Authority...**
+External verification boundary: see **VERIFY.md**.
+
+Next title only: **NOMOS-0.845 — Divergence Replication, Reviewer-Conditional Error Surfaces, Case-Mix Transport, Adjudicator Calibration...**
