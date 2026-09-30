@@ -24,6 +24,7 @@ This is a compressed scientific genealogy, not a full version history.
 | 0.841 | Review-router authority, route-effect materiality, counter-routing and meta-reviewer capture. | Path plurality = access plurality; case assignment = neutral administration. |
 | 0.842 | Routing-rule revision under selective correction feedback; exposure-normalized learning, exterior validation and safe learning constraints. | Fewer observed reversals = fewer correctable errors; on-policy feedback = independent policy validation. |
 | 0.843 | Claim-relative feedback-support restoration, shadow audit, sampling constitution and safe counterfactual review coverage. | More review = more knowledge; shadow review = hidden appeal; randomization = automatic legitimacy; missing labels must be manufactured. |
+| 0.844 | Shadow/live divergence localization, aligned residual disagreement, scoped repair and policy-update authority separation. | Disagreement = error; shadow review = truth oracle; consensus = correctness; one case = policy evidence. |
 
 ## Recurrent return-to-core question
 
@@ -31,7 +32,7 @@ This is a compressed scientific genealogy, not a full version history.
 
 The review lineage adds:
 
-> Which dependencies must be broken, who controls access to those paths, and who controls the learning process that decides which paths will exist or be used tomorrow, and how the system can safely regain evidence from paths its own routing made invisible?
+> Which dependencies must be broken, who controls access to those paths, and who controls the learning process that decides which paths will exist or be used tomorrow, how the system safely regains evidence from invisible paths, and what it may infer when restored and live review still disagree?
 
 0.842 returns to the founding NOMOS intuition in mature form: the institutional environment does not merely observe a person. It can shape **which errors become visible**, then mistake that visibility pattern for evidence about the accuracy of its own person-judgment system.
 
