@@ -1,0 +1,35 @@
+{
+  "case_id": "divergence-contract-mismatch",
+  "live_review": {
+    "claim": "eligibility_under_current_policy",
+    "evidence_set": ["record_a", "record_b"],
+    "provenance_window": "t0-t1",
+    "visibility": ["visible_record"],
+    "rule_version": "policy-v3",
+    "model": "rule_engine_a",
+    "threshold": 0.7,
+    "burden_rule": "preponderance",
+    "procedure": "live_review",
+    "timepoint": "t2",
+    "outcome": "RESTRICT"
+  },
+  "shadow_review": {
+    "claim": "eligibility_under_current_policy",
+    "evidence_set": ["record_a", "record_b", "sealed_context_c"],
+    "provenance_window": "t0-t2",
+    "visibility": ["visible_record", "sealed_context"],
+    "rule_version": "policy-v4",
+    "model": "rule_engine_b",
+    "threshold": 0.7,
+    "burden_rule": "preponderance",
+    "procedure": "shadow_review",
+    "timepoint": "t2",
+    "outcome": "ALLOW"
+  },
+  "policy_update": {
+    "single_case_only": true,
+    "systemic_replication": false,
+    "routing_mechanism_link": false,
+    "shadow_result_directly_changes_live_case": false
+  }
+}
