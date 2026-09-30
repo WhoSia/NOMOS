@@ -1,0 +1,45 @@
+{
+  "case_id": "divergence-localized",
+  "live_review": {
+    "claim": "eligibility_under_current_policy",
+    "evidence_set": ["record_a", "record_b"],
+    "provenance_window": "t0-t2",
+    "visibility": ["visible_record"],
+    "rule_version": "policy-v4",
+    "model": "rule_engine_a",
+    "threshold": 0.7,
+    "burden_rule": "preponderance",
+    "procedure": "live_review",
+    "timepoint": "t2",
+    "outcome": "RESTRICT"
+  },
+  "shadow_review": {
+    "claim": "eligibility_under_current_policy",
+    "evidence_set": ["record_a", "record_b", "sealed_context_c"],
+    "provenance_window": "t0-t2",
+    "visibility": ["visible_record", "sealed_context"],
+    "rule_version": "policy-v4",
+    "model": "rule_engine_a",
+    "threshold": 0.7,
+    "burden_rule": "preponderance",
+    "procedure": "shadow_review",
+    "timepoint": "t2",
+    "outcome": "ALLOW"
+  },
+  "alignment_tests": [
+    {
+      "coordinate": "evidence_set",
+      "result": "OUTCOME_CONVERGED_AFTER_ALIGNMENT"
+    },
+    {
+      "coordinate": "visibility",
+      "result": "OUTCOME_CONVERGED_AFTER_ALIGNMENT"
+    }
+  ],
+  "policy_update": {
+    "single_case_only": false,
+    "systemic_replication": true,
+    "routing_mechanism_link": true,
+    "shadow_result_directly_changes_live_case": false
+  }
+}
