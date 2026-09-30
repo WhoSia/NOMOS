@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .audit import audit_case
+from .feedback_restoration import analyze_feedback_restoration
 from .lineage import trace_record
 from .review_topology import analyze_review_topology
 from .router import analyze_router
@@ -34,9 +35,19 @@ def main() -> int:
         action="store_true",
         help="Audit adaptive routing-rule revision under policy-selected correction feedback",
     )
+    parser.add_argument(
+        "--plan-feedback-restoration",
+        action="store_true",
+        help="Audit safe methods for restoring counterfactual review coverage",
+    )
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.plan_feedback_restoration:
+        restoration = data.get("feedback_restoration", data)
+        print(json.dumps(analyze_feedback_restoration(restoration), ensure_ascii=False, indent=2))
+        return 0
 
     if args.audit_routing_learning:
         learning = data.get("routing_learning", data)
