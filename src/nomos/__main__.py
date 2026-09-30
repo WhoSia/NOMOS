@@ -7,6 +7,7 @@ from pathlib import Path
 from .audit import audit_case
 from .feedback_restoration import analyze_feedback_restoration
 from .lineage import trace_record
+from .review_divergence import analyze_review_divergence
 from .review_topology import analyze_review_topology
 from .router import analyze_router
 from .routing_learning import analyze_routing_learning
@@ -20,29 +21,23 @@ def main() -> int:
     parser.add_argument("case", type=Path, help="Path to a NOMOS JSON structure")
     parser.add_argument("--json", action="store_true", dest="as_json", help="Emit JSON findings")
     parser.add_argument("--trace", metavar="RECORD_ID", help="Trace a derived record's dependency closure")
+    parser.add_argument("--calibrate-review", action="store_true")
+    parser.add_argument("--audit-router", action="store_true")
+    parser.add_argument("--audit-routing-learning", action="store_true")
+    parser.add_argument("--plan-feedback-restoration", action="store_true")
     parser.add_argument(
-        "--calibrate-review",
+        "--audit-review-divergence",
         action="store_true",
-        help="Analyze review-topology dependency breaks, redundancy and escalation structure",
-    )
-    parser.add_argument(
-        "--audit-router",
-        action="store_true",
-        help="Audit review-router assignment, trigger provenance and meta-authority concentration",
-    )
-    parser.add_argument(
-        "--audit-routing-learning",
-        action="store_true",
-        help="Audit adaptive routing-rule revision under policy-selected correction feedback",
-    )
-    parser.add_argument(
-        "--plan-feedback-restoration",
-        action="store_true",
-        help="Audit safe methods for restoring counterfactual review coverage",
+        help="Localize disagreement between live and shadow/restored review contracts",
     )
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_review_divergence:
+        divergence = data.get("review_divergence", data)
+        print(json.dumps(analyze_review_divergence(divergence), ensure_ascii=False, indent=2))
+        return 0
 
     if args.plan_feedback_restoration:
         restoration = data.get("feedback_restoration", data)
