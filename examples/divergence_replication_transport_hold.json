@@ -1,0 +1,44 @@
+{
+  "systematic_claim": {
+    "id": "visibility-transport-hold",
+    "localized_coordinate": "visibility",
+    "target_case_mix_strata": ["ordinary", "complex", "high_consequence"]
+  },
+  "replication_rule": {
+    "min_independent_clusters": 3,
+    "min_live_reviewers": 2,
+    "min_shadow_reviewers": 2,
+    "required_case_mix_strata": ["ordinary", "complex"]
+  },
+  "localization_depends_on_adjudicator": false,
+  "transport": {"supported_target_strata": []},
+  "cases": [
+    {
+      "case_id": "t1",
+      "cluster_id": "tcluster-1",
+      "case_mix_stratum": "ordinary",
+      "live_reviewer": "L1",
+      "shadow_reviewer": "S1",
+      "divergence": true,
+      "localized_coordinates": ["visibility"]
+    },
+    {
+      "case_id": "t2",
+      "cluster_id": "tcluster-2",
+      "case_mix_stratum": "complex",
+      "live_reviewer": "L2",
+      "shadow_reviewer": "S2",
+      "divergence": true,
+      "localized_coordinates": ["visibility"]
+    },
+    {
+      "case_id": "t3",
+      "cluster_id": "tcluster-3",
+      "case_mix_stratum": "ordinary",
+      "live_reviewer": "L3",
+      "shadow_reviewer": "S3",
+      "divergence": true,
+      "localized_coordinates": ["visibility"]
+    }
+  ]
+}
