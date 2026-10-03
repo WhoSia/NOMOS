@@ -1,0 +1,83 @@
+{
+  "systematic_claim": {
+    "id": "visibility-rehydration-failure",
+    "localized_coordinate": "visibility",
+    "target_case_mix_strata": ["ordinary", "complex", "high_consequence"]
+  },
+  "replication_rule": {
+    "min_independent_clusters": 4,
+    "min_live_reviewers": 2,
+    "min_shadow_reviewers": 2,
+    "required_case_mix_strata": ["ordinary", "complex", "high_consequence"]
+  },
+  "localization_depends_on_adjudicator": true,
+  "adjudicator_calibration": {
+    "status": "ADEQUATE",
+    "scope": "visibility-localization",
+    "provenance": "anchors:adj-v1"
+  },
+  "transport": {
+    "supported_target_strata": []
+  },
+  "cases": [
+    {
+      "case_id": "c1a",
+      "cluster_id": "cluster-1",
+      "case_mix_stratum": "ordinary",
+      "live_reviewer": "L1",
+      "shadow_reviewer": "S1",
+      "divergence": true,
+      "localized_coordinates": ["visibility"],
+      "direction": "live_more_restrictive"
+    },
+    {
+      "case_id": "c1b",
+      "cluster_id": "cluster-1",
+      "case_mix_stratum": "ordinary",
+      "live_reviewer": "L1",
+      "shadow_reviewer": "S1",
+      "divergence": true,
+      "localized_coordinates": ["visibility"],
+      "direction": "live_more_restrictive"
+    },
+    {
+      "case_id": "c2",
+      "cluster_id": "cluster-2",
+      "case_mix_stratum": "complex",
+      "live_reviewer": "L2",
+      "shadow_reviewer": "S2",
+      "divergence": true,
+      "localized_coordinates": ["visibility"],
+      "direction": "live_more_restrictive"
+    },
+    {
+      "case_id": "c3",
+      "cluster_id": "cluster-3",
+      "case_mix_stratum": "high_consequence",
+      "live_reviewer": "L3",
+      "shadow_reviewer": "S1",
+      "divergence": true,
+      "localized_coordinates": ["visibility"],
+      "direction": "live_more_restrictive"
+    },
+    {
+      "case_id": "c4",
+      "cluster_id": "cluster-4",
+      "case_mix_stratum": "ordinary",
+      "live_reviewer": "L2",
+      "shadow_reviewer": "S3",
+      "divergence": true,
+      "localized_coordinates": ["visibility"],
+      "direction": "live_more_restrictive"
+    },
+    {
+      "case_id": "control-1",
+      "cluster_id": "cluster-5",
+      "case_mix_stratum": "complex",
+      "live_reviewer": "L3",
+      "shadow_reviewer": "S2",
+      "divergence": false,
+      "localized_coordinates": []
+    }
+  ]
+}
