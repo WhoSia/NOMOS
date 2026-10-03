@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .audit import audit_case
+from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration
 from .lineage import trace_record
 from .review_divergence import analyze_review_divergence
@@ -25,14 +26,20 @@ def main() -> int:
     parser.add_argument("--audit-router", action="store_true")
     parser.add_argument("--audit-routing-learning", action="store_true")
     parser.add_argument("--plan-feedback-restoration", action="store_true")
+    parser.add_argument("--audit-review-divergence", action="store_true")
     parser.add_argument(
-        "--audit-review-divergence",
+        "--audit-divergence-replication",
         action="store_true",
-        help="Localize disagreement between live and shadow/restored review contracts",
+        help="Audit whether localized live↔shadow divergence replicates across clusters, reviewers and case mix",
     )
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_divergence_replication:
+        replication = data.get("divergence_replication", data)
+        print(json.dumps(analyze_divergence_replication(replication), ensure_ascii=False, indent=2))
+        return 0
 
     if args.audit_review_divergence:
         divergence = data.get("review_divergence", data)
