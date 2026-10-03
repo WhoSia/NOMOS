@@ -83,6 +83,71 @@ def analyze_divergence_replication(spec: dict[str, Any]) -> dict[str, Any]:
         str(c.get("shadow_reviewer")) for c in qualifying if c.get("shadow_reviewer")
     )
 
+    by_live_reviewer: dict[str, dict[str, Any]] = {}
+    for reviewer in sorted(str(x) for x in _unique(c.get("live_reviewer") for c in cases)):
+        rows = [c for c in cases if str(c.get("live_reviewer")) == reviewer]
+        localized = [
+            c for c in rows
+            if c.get("divergence") is True
+            and coordinate in _set(c.get("localized_coordinates"))
+        ]
+        by_live_reviewer[reviewer] = {
+            "cases": len(rows),
+            "localized_divergences": len(localized),
+            "localized_divergence_rate": _rate(len(localized), len(rows)),
+            "case_mix_strata": sorted(str(x) for x in _unique(
+                c.get("case_mix_stratum") for c in rows
+            )),
+        }
+
+    by_shadow_reviewer: dict[str, dict[str, Any]] = {}
+    for reviewer in sorted(str(x) for x in _unique(c.get("shadow_reviewer") for c in cases)):
+        rows = [c for c in cases if str(c.get("shadow_reviewer")) == reviewer]
+        localized = [
+            c for c in rows
+            if c.get("divergence") is True
+            and coordinate in _set(c.get("localized_coordinates"))
+        ]
+        by_shadow_reviewer[reviewer] = {
+            "cases": len(rows),
+            "localized_divergences": len(localized),
+            "localized_divergence_rate": _rate(len(localized), len(rows)),
+            "case_mix_strata": sorted(str(x) for x in _unique(
+                c.get("case_mix_stratum") for c in rows
+            )),
+        }
+
+    reviewer_case_mix_surface: list[dict[str, Any]] = []
+    cell_keys = sorted({
+        (
+            str(c.get("live_reviewer")),
+            str(c.get("shadow_reviewer")),
+            str(c.get("case_mix_stratum")),
+        )
+        for c in cases
+        if c.get("live_reviewer") and c.get("shadow_reviewer") and c.get("case_mix_stratum")
+    })
+    for live_id, shadow_id, stratum in cell_keys:
+        rows = [
+            c for c in cases
+            if str(c.get("live_reviewer")) == live_id
+            and str(c.get("shadow_reviewer")) == shadow_id
+            and str(c.get("case_mix_stratum")) == stratum
+        ]
+        localized = [
+            c for c in rows
+            if c.get("divergence") is True
+            and coordinate in _set(c.get("localized_coordinates"))
+        ]
+        reviewer_case_mix_surface.append({
+            "live_reviewer": live_id,
+            "shadow_reviewer": shadow_id,
+            "case_mix_stratum": stratum,
+            "cases": len(rows),
+            "localized_divergences": len(localized),
+            "localized_divergence_rate": _rate(len(localized), len(rows)),
+        })
+
     required_strata = _set(rule.get("required_case_mix_strata"))
     min_clusters = int(rule.get("min_independent_clusters", 1))
     min_live = int(rule.get("min_live_reviewers", 1))
@@ -177,6 +242,9 @@ def analyze_divergence_replication(spec: dict[str, Any]) -> dict[str, Any]:
         "transport_ok": transport_ok,
         "adjudicator_calibration_ok": adjudicator_ok,
         "by_case_mix_stratum": by_stratum,
+        "by_live_reviewer": by_live_reviewer,
+        "by_shadow_reviewer": by_shadow_reviewer,
+        "reviewer_case_mix_surface": reviewer_case_mix_surface,
         "live_reviewer_localization_counts": dict(sorted(live_reviewer_counts.items())),
         "shadow_reviewer_localization_counts": dict(sorted(shadow_reviewer_counts.items())),
         "repeated_rows_same_cluster": repeated_rows_same_cluster,
