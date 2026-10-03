@@ -11,13 +11,13 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 Then inspect one representative surface:
 
 ```bash
-PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
+PYTHONPATH=src python -m nomos examples/divergence_replication_systematic.json --audit-divergence-replication
 ```
 
 Expected structural state:
 
 ```text
-STRUCTURAL_SOURCE_LOCALIZED
+TRANSPORTABLE_SYSTEMATIC_CANDIDATE
 ```
 
 ## What this fast path verifies
@@ -25,7 +25,7 @@ STRUCTURAL_SOURCE_LOCALIZED
 - the Python package imports;
 - regression fixtures execute;
 - declared structural invariants behave as encoded;
-- review-divergence localization can distinguish contract mismatch, localized structural source and aligned residual disagreement.
+- divergence replication distinguishes row repetition, independent cluster replication, reviewer-conditional surfaces, case-mix-conditional surfaces, transport holds and calibrated systematic candidates.
 
 ## What it does not verify
 
@@ -54,12 +54,13 @@ No lower layer inherits a higher layer's authority.
 - Routing Learning
 - Feedback Support Restoration
 - Review Divergence
+- Divergence Replication
 
 ## Current version
 
-**v0.7.0**
+**v0.8.0**
 
-Current research head after closure: **NOMOS-0.844**.
+Current research head after closure: **NOMOS-0.845**.
 
 See:
 - `README.md`
@@ -71,3 +72,8 @@ See:
 ## Trust boundary
 
 NOMOS code audits structures and provenance. It does not output person merit, moral worth, legal guilt, blame, risk, or an institutional winner.
+
+
+## Automation boundary
+
+The repository may use CI as a test runner, but CI status is not scientific proof and automation must not mint research authority or alter contributor identity. The 0.845 release did **not** modify the GitHub Actions workflow.
