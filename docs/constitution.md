@@ -183,3 +183,34 @@ Review divergence is first evidence about evidence access, rules, models, thresh
 
 ## C60 — Adjudication may allocate consequence without manufacturing universal truth
 A competent forum may decide which branch governs a specified action while preserving unresolved epistemic divergence.
+
+
+## C61 — Repetition is not replication
+Multiple rows from one provenance-dependent person/event/source cluster do not create multiple independent replications.
+
+## C62 — Systematicity is mechanism- and scope-indexed
+A repeated disagreement supports only the localized mechanism and case/reviewer/time scope actually replicated. NOMOS rejects an untyped global "system failure" label.
+
+## C63 — Reviewer-conditional recurrence is not system-wide recurrence
+If a localized divergence does not survive reviewer substitution, the supported claim remains reviewer-conditional. This is not equivalent to reviewer blame.
+
+## C64 — Case-mix transport must be earned
+Replication in one case-mix region does not automatically transport to ordinary, complex, high-consequence or otherwise different target strata.
+
+## C65 — Aggregate disagreement rate cannot erase conditional surfaces
+Systematic review analysis must preserve material reviewer, case-mix, mechanism and time heterogeneity before promoting an aggregate rate.
+
+## C66 — Replication criteria are claim-scoped precommitments
+Minimum independent clusters, reviewer substitution, case-mix coverage and target support are declared for the intended claim rather than installed as universal numerical constants.
+
+## C67 — Adjudicator calibration is part of localization provenance
+When systematic-failure labels depend on a higher-order adjudicator, that adjudicator's calibration scope and provenance must be explicit.
+
+## C68 — Adjudicator calibration is not truth sovereignty
+Performance on structural anchors supports the adjudicator only for the calibrated localization task. It does not establish universal authority over person truth or every future disagreement.
+
+## C69 — Directional recurrence is descriptive, not dispositive
+Repeated live-more-restrictive or shadow-more-restrictive divergence may be diagnostically important but does not by itself identify which review is correct.
+
+## C70 — Systematic policy authority requires replicated localization plus transport
+A policy-update candidate requires recurrence of the same localized mechanism across independent clusters, sufficient reviewer substitution, case-mix support, and any load-bearing adjudicator calibration. Missing dimensions yield conditional or HOLD states rather than authority inflation.
