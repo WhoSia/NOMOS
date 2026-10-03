@@ -70,6 +70,19 @@ It can:
 - preserve aligned residual disagreement;
 - separate case diagnostics from policy-update authority.
 
+### Divergence Replication
+Audits whether the **same localized divergence mechanism** survives independent replication.
+
+It separates:
+- row count from provenance-independent cluster replication;
+- reviewer-conditional surfaces from system-level claims;
+- case-mix-conditional surfaces from transportable claims;
+- observed support from unsupported target strata;
+- localization evidence from adjudicator calibration;
+- directional recurrence from correctness.
+
+It also exposes reviewer × case-mix conditional surfaces rather than collapsing everything into one disagreement rate.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -92,15 +105,16 @@ PYTHONPATH=src python -m nomos examples/routing_learning_self_sealing.json --aud
 PYTHONPATH=src python -m nomos examples/routing_learning_audited.json --audit-routing-learning
 PYTHONPATH=src python -m nomos examples/feedback_restoration_safe.json --plan-feedback-restoration
 PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
+PYTHONPATH=src python -m nomos examples/divergence_replication_systematic.json --audit-divergence-replication
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.844 — Shadow-Audit Disagreement, Adjudication of Review Divergence, Error-Source Localization & Policy-Update Authority — CLOSED.**
+**NOMOS-0.845 — Divergence Replication, Reviewer-Conditional Error Surfaces, Case-Mix Transport & Adjudicator Calibration — CLOSED.**
 
-Executable kernel: **v0.7.0** — Case Graph + Review Topology + Router Authority + Routing Learning + Feedback Support Restoration + Review Divergence.
+Executable kernel: **v0.8.0** — Case Graph + Review Topology + Router Authority + Routing Learning + Feedback Support Restoration + Review Divergence + Divergence Replication.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.845 — Divergence Replication, Reviewer-Conditional Error Surfaces, Case-Mix Transport, Adjudicator Calibration...**
+Next title only: **NOMOS-0.846 — Failure-Surface Intervention, Review-System Repair, Error Redistribution, Counterfactual Repair Evaluation...**
