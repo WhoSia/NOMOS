@@ -1,0 +1,53 @@
+{
+  "systematic_claim": {
+    "id": "complexity-conditional-rule-failure",
+    "localized_coordinate": "rule_version",
+    "target_case_mix_strata": ["ordinary", "complex"]
+  },
+  "replication_rule": {
+    "min_independent_clusters": 3,
+    "min_live_reviewers": 2,
+    "min_shadow_reviewers": 2,
+    "required_case_mix_strata": ["ordinary", "complex"]
+  },
+  "localization_depends_on_adjudicator": false,
+  "transport": {"supported_target_strata": []},
+  "cases": [
+    {
+      "case_id": "m1",
+      "cluster_id": "mcluster-1",
+      "case_mix_stratum": "complex",
+      "live_reviewer": "L1",
+      "shadow_reviewer": "S1",
+      "divergence": true,
+      "localized_coordinates": ["rule_version"]
+    },
+    {
+      "case_id": "m2",
+      "cluster_id": "mcluster-2",
+      "case_mix_stratum": "complex",
+      "live_reviewer": "L2",
+      "shadow_reviewer": "S2",
+      "divergence": true,
+      "localized_coordinates": ["rule_version"]
+    },
+    {
+      "case_id": "m3",
+      "cluster_id": "mcluster-3",
+      "case_mix_stratum": "complex",
+      "live_reviewer": "L3",
+      "shadow_reviewer": "S3",
+      "divergence": true,
+      "localized_coordinates": ["rule_version"]
+    },
+    {
+      "case_id": "m4",
+      "cluster_id": "mcluster-4",
+      "case_mix_stratum": "ordinary",
+      "live_reviewer": "L1",
+      "shadow_reviewer": "S2",
+      "divergence": false,
+      "localized_coordinates": []
+    }
+  ]
+}
