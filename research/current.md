@@ -1,103 +1,119 @@
-# Current Research Head — NOMOS-0.844
+# Current Research Head — NOMOS-0.845
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-What may an institution infer when live review and a restored/shadow review disagree about the same person-related judgment?
+When does repeated live↔shadow disagreement become evidence of a systematic review failure rather than a collection of case-specific conflicts?
 
-## Core rule
+## Core theorem
 
-**DISAGREEMENT MUST BE LOCALIZED BEFORE IT IS ADJUDICATED.**
+A repeated disagreement is not yet a replication.
 
-For review r define a contract:
+For a previously localized mechanism `m`, systematicity is indexed to a surface:
 
-**Ψ(r) = ⟨claim, evidence, provenance, visibility, rule, model, threshold, burden, procedure, time⟩**
+**F_m(g, l, s, t)**
 
-A difference in outcome is interpreted only after the relevant differences in Ψ are exposed.
+where:
+- `g` = case-mix stratum;
+- `l` = live-reviewer condition;
+- `s` = shadow-reviewer condition;
+- `t` = time/policy regime.
 
-## Divergence states
+A claim becomes broader only when the localized mechanism survives the dimensions over which the claim intends to generalize.
 
-- OUTCOME_CONVERGENCE
-- NONCOMPARABLE_REVIEW_QUESTIONS
-- VALIDATED_ERROR_SOURCE_PRESENT
-- STRUCTURAL_SOURCE_LOCALIZED
-- ALIGNED_RESIDUAL_DIVERGENCE
-- DIVERGENCE_UNDERDETERMINED
+**REPETITION ≠ REPLICATION.**
 
-None of these is a person score.
+**SYSTEMATIC ≠ GLOBAL.**
 
-## Error-source ladder
+## Replication unit
 
-1. claim-target mismatch;
-2. evidence/provenance mismatch;
-3. visibility/context mismatch;
-4. rule/version mismatch;
-5. construct/model mismatch;
-6. threshold/burden mismatch;
-7. procedural mismatch;
-8. validated implementation/source defect;
-9. aligned residual judgment divergence.
+The default scientific replication unit is a provenance-independent case cluster, not a row.
 
-A difference is not causal merely because it is visible. Localization requires a discriminator such as alignment, swap, ablation, replay or externally validated defect.
+Repeated observations from one person/event/source lineage remain useful but do not multiply independent replication authority.
 
-## Authority separation
+## Promotion ladder
 
-- case diagnostic authority;
-- individual case-repair authority;
-- reviewer/process correction authority;
-- routing-policy update authority;
-- population/system claim authority
+- **CASE_SPECIFIC_OR_UNDERREPLICATED**
+- **REVIEWER_CONDITIONAL_SURFACE**
+- **CASE_MIX_CONDITIONAL_SURFACE**
+- **SYSTEMATIC_CLAIM_HOLD_ADJUDICATOR**
+- **SYSTEMATIC_CLAIM_HOLD_TRANSPORT**
+- **TRANSPORTABLE_SYSTEMATIC_CANDIDATE**
 
-remain distinct.
+The final state is still claim-scoped and mechanism-indexed.
 
-A single disagreement normally has **case-diagnostic authority only**.
+## Reviewer conditionality
 
-Policy-update authority requires a localized mechanism plus systemic replication or equivalent evidence.
+Reviewer substitution is a generalization test, not a blame test.
 
-## Research OS 2026-09-30 runtime patch
+If a localized divergence survives only one reviewer/reviewer-pair condition, the correct claim is reviewer-conditional.
 
-Loaded and applied:
-- Scientific Operating Surface — START HERE;
-- Ambition Prior / Anti-Rigor-Trap;
-- Work-Mode Scarcity;
-- Research Judgment CI continuation gate;
-- source-first / connector-first grounding;
-- Stranger Verification Surface — selectively adopted as `VERIFY.md`.
+## Case-mix transport
 
-Opening CI receipt: **CI-NOMOS-0.844-OPEN-20260930 / PASS / ONE-CLOSURE-COURT**.
+Observed recurrence in one case family does not identify a target-wide failure rate.
 
-## Executable materialization
+Target strata require:
+- direct support, or
+- an explicit transport bridge.
 
-Repository version: **v0.7.0**
+**CASE-MIX SUPPORT IS PART OF SYSTEMATIC-FAILURE AUTHORITY.**
 
-Added:
-- `src/nomos/review_divergence.py`;
-- Review Divergence 0.1 spec;
-- `--audit-review-divergence`;
-- mismatch / localized / aligned-residual fixtures;
-- contract-coordinate diff;
-- validated-defect localization;
-- alignment/swap localization;
-- shadow→live consequence firewall;
-- policy-update authority boundary;
-- regression/CI integration;
-- `VERIFY.md` stranger-facing fast verification surface.
+## Adjudicator calibration
 
-Frozen semantic replay:
-- contract mismatch → **DIVERGENCE_UNDERDETERMINED**;
-- evidence/visibility alignment → **STRUCTURAL_SOURCE_LOCALIZED**;
-- full contract alignment with persistent disagreement → **ALIGNED_RESIDUAL_DIVERGENCE**.
+If the label “localized failure” depends on a higher-order adjudicator, the adjudicator becomes another measurement facet.
+
+Required:
+- calibration status;
+- calibration scope;
+- provenance.
+
+Calibration does not establish truth sovereignty.
 
 ## External bounded donors
 
-- Kumar et al. (2026), DOI **10.18653/v1/2026.findings-acl.1908**;
-- Cuevas (2026), DOI **10.1186/s41073-026-00200-7**;
-- ACUS Recommendation 2021-10;
-- recent multi-funder reviewer-disagreement evidence.
+- Hesselberg et al. (2026), DOI **10.1371/journal.pone.0356108**;
+- Brennan (2001), DOI **10.1007/978-1-4757-3456-0**;
+- Brennan (2001), DOI **10.1111/j.1745-3984.2001.tb01129.x**;
+- Hayes & Murray (1995), DOI **10.1111/j.1365-2753.1995.tb00015.x**;
+- Dawid & Skene (1979), DOI **10.2307/2346806**.
+
+## Executable materialization
+
+Repository version: **v0.8.0**
+
+Added:
+- `src/nomos/divergence_replication.py`;
+- Divergence Replication 0.1 spec;
+- `--audit-divergence-replication`;
+- systematic / reviewer-conditional / case-mix-conditional / transport-HOLD fixtures;
+- provenance-independent cluster counting;
+- reviewer substitution checks;
+- case-mix transport support;
+- adjudicator calibration gate;
+- reviewer × case-mix conditional surfaces;
+- manual regression tests.
+
+The GitHub Actions workflow was **not modified** in 0.845.
+
+Expected frozen states:
+- systematic fixture → **TRANSPORTABLE_SYSTEMATIC_CANDIDATE**;
+- reviewer-only recurrence → **REVIEWER_CONDITIONAL_SURFACE**;
+- complex-only recurrence → **CASE_MIX_CONDITIONAL_SURFACE**;
+- unsupported target stratum → **SYSTEMATIC_CLAIM_HOLD_TRANSPORT**;
+- adjudicator calibration removed → **SYSTEMATIC_CLAIM_HOLD_ADJUDICATOR**.
+
+## Research OS runtime
+
+Opening CI:
+**CI-NOMOS-0.845-OPEN-20261004 / PASS / ONE-CLOSURE-COURT.**
+
+Owner constraint:
+**Do not create bot contributors through GitHub Actions.**
+0.845 respected this by leaving the Actions workflow untouched.
 
 ## Next title only
 
-**NOMOS-0.845 — Divergence Replication, Reviewer-Conditional Error Surfaces, Case-Mix Transport, Adjudicator Calibration & the Primitive Question of When Repeated Shadow–Live Disagreement Becomes Evidence of a Systematic Review Failure Rather than a Collection of Case-Specific Conflicts**
+**NOMOS-0.846 — Failure-Surface Intervention, Review-System Repair, Error Redistribution, Counterfactual Repair Evaluation & the Primitive Question of Whether a Reform That Reduces a Known Systematic Review Failure May Legitimately Be Adopted When It Also Moves Disagreement, Delay or Error into Different Cases, Reviewers or Consequence Classes**
 
 **TITLE-LOCKED / NOT OPENED.**
