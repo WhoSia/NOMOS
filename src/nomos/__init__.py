@@ -4,6 +4,7 @@ from .audit import Finding, audit_case
 from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration, minimal_safe_restoration_sets
 from .lineage import dependency_closure, impacted_derived_records, trace_record
+from .record_portability import analyze_record_portability, descendant_map, emergency_ancestors
 from .review_divergence import analyze_review_divergence, contract_diff
 from .review_topology import analyze_review_topology, minimal_break_sets
 from .router import analyze_router
@@ -24,5 +25,8 @@ __all__ = [
     "analyze_review_divergence",
     "contract_diff",
     "analyze_divergence_replication",
+    "analyze_record_portability",
+    "descendant_map",
+    "emergency_ancestors",
 ]
-__version__ = "0.8.0"
+__version__ = "0.8.1"
