@@ -27,6 +27,7 @@ This is a compressed scientific genealogy, not a full version history.
 | 0.844 | Shadow/live divergence localization, aligned residual disagreement, scoped repair and policy-update authority separation. | Disagreement = error; shadow review = truth oracle; consensus = correctness; one case = policy evidence. |
 | 0.845 | Mechanism-indexed divergence replication, provenance-independent clustering, reviewer/case-mix conditional surfaces, transport and adjudicator calibration. | Repetition = replication; reviewer recurrence = system failure; aggregate disagreement = transportable error rate; adjudicator = truth oracle. |
 | 0.846 | Counterfactual repair evaluation, redistribution surfaces and repair-efficacy/adoption-authority separation. | Target metric reduction = system repair; before/after = intervention effect; global improvement erases local worsening; trade-off existence chooses adoption. |
+| 0.847 | Distributional authority, compensability, guardrail constitution and typed adoption/reopening roles. | Aggregate benefit = permission; potential compensation = consent; affected standing = total veto; institutional control = universal valuation authority. |
 
 ## Recurrent return-to-core question
 
