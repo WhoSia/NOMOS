@@ -1,97 +1,98 @@
-# Current Research Head — NOMOS-0.846
+# Current Research Head — NOMOS-0.847
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-May a reform that reduces a known systematic review failure be adopted when it also moves disagreement, delay, workload or other consequential burden into different cells of the review system?
+Who may decide which new errors, delays or burdens are acceptable prices for correcting an old review-system failure?
 
 ## Core theorem
 
-**REPAIR EFFICACY ≠ REPAIR ADOPTION AUTHORITY.**
+**TRADE-OFF EXISTENCE ≠ TRADE-OFF AUTHORITY.**
 
-A repair is evaluated as a transformation of the 0.845 failure surface, not as one before/after number.
+Distributional governance separates:
+- factual intervention effect;
+- burden incidence;
+- valuation;
+- compensability;
+- guardrail selection;
+- adoption authority;
+- reopening authority.
 
-For metric k and review-system cell z:
+No actor inherits all seven merely by controlling the repair.
 
-**τ_k(z) = E[Y_k(1,z) - Y_k(0,z)]**
+## Compensation firewall
 
-The target mechanism can improve while another metric or cell worsens.
+**POTENTIAL COMPENSATION ≠ ACTUAL COMPENSATION ≠ CONSENT OR PERMISSION.**
 
-## Required separations
+A repair currency requires an explicit bridge from the offered remedy to the claim-relevant loss.
 
-- target failure reduction ≠ system repair;
-- before/after improvement ≠ intervention effect;
-- metric repair ≠ mechanism repair;
-- global improvement ≠ absence of local worsening;
-- error redistribution ≠ error conservation;
-- trade-off existence ≠ authority to choose the trade-off;
-- repair efficacy ≠ deployment scope.
+## Compensability taxonomy
 
-## Repair-state ladder
+- K0 — no material loss;
+- K1 — same-currency reversible;
+- K2 — functional in-kind repair;
+- K3 — agency-sensitive substitution;
+- K4 — residual non-equivalence;
+- K5 — non-compensable within current decision authority;
+- K6 — UNKNOWN / HOLD.
 
-- **REPAIR_TARGET_NOT_ESTABLISHED**
-- **REPAIR_CAUSALITY_HOLD**
-- **REPAIR_COVERAGE_HOLD**
-- **REDISTRIBUTIVE_REPAIR_CANDIDATE**
-- **REPAIR_ADOPTION_HOLD_REDISTRIBUTION**
-- **SCOPE_RESTRICTED_REPAIR_CANDIDATE**
-- **NONREDISTRIBUTIVE_REPAIR_CANDIDATE**
+## Guardrail constitution
 
-## Counterfactual evaluation
+- G0 — information-only;
+- G1 — review trigger;
+- G2 — scope limiter;
+- G3 — mitigation condition;
+- G4 — outside current trade-off authority;
+- G5 — higher-authority override required.
 
-Admissible designs depend on the domain and can include paired replay, matched holdout, staggered rollout, natural experiments, synthetic control, or randomization among independently permissible options.
+Guardrails must be prospectively grounded.
 
-No design is universally privileged.
+## Distributional adoption ladder
 
-## Redistribution surface
-
-Track, when claim-relevant:
-- target localized failure;
-- secondary error;
-- delay;
-- review workload;
-- consequence class;
-- correction opportunity / visibility;
-- access to review or contestation.
-
-No universal scalar utility is installed.
+- DISTRIBUTION_UNMAPPED
+- STANDING_MAP_INCOMPLETE
+- COMPENSABILITY_HOLD
+- GUARDRAIL_AUTHORITY_HOLD
+- SCOPE_RESTRICTED_DISTRIBUTIONAL_CANDIDATE
+- MITIGATED_DISTRIBUTIONAL_CANDIDATE
+- DISTRIBUTIONAL_ADOPTION_CANDIDATE
 
 ## Genealogical rejoin
 
-- 0.203 — status-quo forecast ≠ intervention effect;
-- 0.780 — repair profile is vector-valued;
-- 0.797 — repair ≠ purification;
-- 0.799 — repair follows dependency edges;
+- 0.207 — distributed repair standing / double charging;
+- 0.208A — capacity, beneficiary nexus and anti-paternalism;
+- 0.261A — correction labor and burden externalization;
+- 0.415 — asymmetric error-cost allocation;
+- 0.73A — irreversibility/corrigibility burden;
 - 0.804 — no single repair currency;
-- 0.830 / 0.842 — post-intervention evidence is policy-conditioned;
-- 0.845 — repair must be evaluated on the same conditional failure surface.
+- 0.811 — provenance burden after institutional error;
+- 0.839–0.841 — capture and authority topology;
+- 0.846 — repair efficacy / adoption authority separation.
 
 ## External bounded donors
 
-- Bardach & Cabana, DOI **10.1097/MOP.0b013e3283329937**;
-- Catlow et al., DOI **10.1136/bmjqs-2021-013588**;
-- Edwards & Black, DOI **10.1136/bmjqs-2023-016247**;
-- Chouldechova, DOI **10.1089/big.2016.0047**;
-- Kleinberg, Mullainathan & Raghavan, DOI **10.4230/LIPIcs.ITCS.2017.43**.
+- Young, DOI **10.1017/S0265052506060043**;
+- Daniels, DOI **10.1136/bmj.321.7272.1300**;
+- Asaria, Griffin & Cookson, DOI **10.1177/0272989X15583266**;
+- Martin, DOI **10.1111/jere.12240**;
+- compensation-principle overview, DOI **10.1017/CBO9780511582417.004**.
 
 ## Development
 
 Executable kernel remains **v0.8.0**.
 
-0.846 is intentionally theory-dominant. No new executable analyzer was promoted because the unresolved object is authority-bearing counterfactual repair interpretation rather than a missing deterministic computation.
-
-GitHub Actions were not modified.
+0.847 is theory-dominant. Repository change is limited to active theory surfaces. GitHub Actions are not modified and may not author repository history.
 
 ## Research OS runtime
 
 Opening CI:
-**CI-NOMOS-0.846-OPEN-20261004 / PASS / ONE-CLOSURE-COURT.**
+**CI-NOMOS-0.847-OPEN-20261004 / PASS / ONE-CLOSURE-COURT.**
 
-CURRENT 2026-10-02 bootstrap/method shelf loaded before work. BOT_CONTRIBUTION_ZERO remains binding.
+CURRENT 2026-10-02 bootstrap/method shelf loaded before execution. BOT_CONTRIBUTION_ZERO remains binding.
 
 ## Next title only
 
-**NOMOS-0.847 — Repair Governance, Guardrail Selection, Compensability, Distributional Authority & the Primitive Question of Who May Decide Which New Errors, Delays or Burdens Are Acceptable Prices for Correcting an Old Review-System Failure**
+**NOMOS-0.848 — Distributional Override, Emergency Departure, Guardrail Suspension, Restoration Debt & the Primitive Question of Whether an Institution May Temporarily Violate Its Own Repair-Distribution Constitution under Urgent Conditions without Converting Emergency Exception into a New Normal**
 
 **TITLE-LOCKED / NOT OPENED.**
