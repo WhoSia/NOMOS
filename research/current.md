@@ -1,86 +1,119 @@
-# Current Research Head — NOMOS-0.848
+# Current Research Head — NOMOS-0.849
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-May an institution temporarily violate part of its own repair-distribution constitution under urgent conditions without converting emergency exception into a new normal?
+Which parts of an emergency-produced history may survive into ordinary person-judgment after the override ends?
 
-## Core rule
+## Four-layer portability rule
 
-**THE AUTHORITY TO DEPART FROM NORMALITY DOES NOT INCLUDE THE AUTHORITY TO REDEFINE NORMALITY BY SURVIVAL.**
+For ordinary use of an emergency-produced record, keep separate:
 
-Emergency distributional override:
+**history → evidence → ordinary meaning → consequence authority**
 
-**E_D = ⟨authority source, trigger, suspension mask, meta-floors, substitute safeguards, bounded action, affected surface, re-entry, restoration debt, provenance reserve⟩**
+No arrow is automatic.
 
-## Restoration debt
+A record may survive as history while failing as ordinary person evidence.
 
-**D_R = ⟨incidence, standing, compensability, guardrail, mitigation, review, baseline debt⟩**
+## Portability lattice
 
-Debt is typed, not scalar.
+- **P0** — archive only
+- **P1** — reconstruction / review
+- **P2** — contextual evidentiary use
+- **P3** — bounded ordinary inference
+- **P4** — ordinary adverse consequence
+- **P5** — durable person-model incorporation
 
-A justified emergency can create restoration debt.
+**RETENTION DOES NOT ENTAIL PROMOTION.**
 
-**FORMAL SUNSET ≠ FUNCTIONAL RESTORATION.**
+## Ordinary-use gates
 
-## Re-entry
+Stronger ordinary use can require:
+- emergency provenance;
+- acquisition integrity;
+- regime-sensitivity audit;
+- ordinary/successor baseline;
+- semantic revalidation;
+- dependency accounting;
+- contestability;
+- purpose limitation;
+- fresh consequence authority;
+- review/expiry of the portability decision.
 
-Re-entry may restore the old constitution, partially repair it, or establish a freshly warranted successor constitution.
+The institution seeking ordinary reuse bears the portability burden.
 
-Emergency-created dependency cannot self-ratify continuation.
+## Descendant-record propagation
 
-Renewal is a fresh authority decision.
+Emergency provenance remains relevant through:
+
+**record → score → summary → ranking → recipient copy**
+
+A derivative is not cleansed by:
+- a new identifier;
+- a new model version;
+- a new recipient;
+- compression;
+- a later timestamp.
+
+**DERIVATION DOES NOT RESET REGIME PROVENANCE.**
+
+If the source is corrected or reclassified, live consequence-bearing descendants must be located and corrected, annotated, rederived, quarantined or retired at the appropriate scope.
+
+**CORRECTING THE SOURCE WITHOUT PROPAGATING THE CORRECTION THROUGH ITS LIVE DESCENDANTS IS NOT COMPLETE RESTORATION.**
+
+## Successor baseline
+
+The old pre-emergency baseline may be:
+- still usable;
+- partially contaminated;
+- obsolete.
+
+**RECENCY IS NOT BASELINE AUTHORITY.**
+
+A lawful **BASELINE_UNAVAILABLE** result is preferable to manufacturing a comparator.
 
 ## Origin return — 71-page report
 
-Founding artifact:
-**1206 김우준 주제 탐구 활동.pdf** — 71 pages.
+The 2025 founding question survives as:
 
-Destroyed:
-- literal normative-field/energy mechanics;
-- fixed semantic threshold 1050;
-- ABM output as person/legal proof;
-- singularity as thick person essence.
+**event → person model → later event interpretation**
 
-Survived:
-- heterogeneous event → person-level identity compression;
-- whole-person censure expansion;
-- stronger, separately falsifiable person-model → act-reading return edge;
-- concern that institutional/classificatory environments can shape the evidence through which their categories later appear confirmed.
+0.849 identifies the persistent record as the bridge object that can carry emergency-produced meaning into ordinary person judgment.
 
-Mature translation:
+The mature replacement for literal “normative field” is a provenance-sensitive institutional environment that can detach records from the conditions that made them meaningful.
 
-**normative field → policy-conditioned observation + authority-conditioned normality.**
+## Literature pressure
 
-0.848 therefore returns directly to the founding question: when may a world that helps produce a person-judgment use its own products as authority over the person?
-
-## Literature radar
-
-P0 emergency/normalization:
-- Fagan — DOI **10.1007/s10657-011-9219-x**
-- Won — DOI **10.1093/icon/moaf010**
-- Ginsburg & Versteeg — DOI **10.1093/icon/moab059**
-- Bar-Siman-Tov — DOI **10.1111/rego.12148**
-- Emergency legislation / ordinary legislation separation — DOI **10.1080/20508840.2020.1786272**
-- Scheuerman — DOI **10.1146/annurev.lawsocsci.2.061206.074644**
-- Mukherjee (2026 preprint) — DOI/SSRN **10.2139/ssrn.7118898**
-
-P0/P1 founding-origin:
-- **Making up people digitally** — DOI **10.1016/j.tao.2026.100032**
-- Hacking, **Kinds of People: Moving Targets** — DOI **10.5871/bacad/9780197264249.003.0010**
-- Guala — DOI **10.1007/s13194-023-00534-9**
-- Sparti — DOI **10.1177/13684310122225154**
-- Khalidi — DOI **10.1111/phpr.12020**
+- Fagan — temporary law can leave post-sunset behavioral/organizational residue.
+- Bar-Siman-Tov — formal temporariness does not itself create experimental learning.
+- Ginsburg & Versteeg — emergency governance remains constrained.
+- Mukherjee (2026) — ratchet/persistence is conditional rather than automatic.
+- Sherling (2026) — looping requires an explanatory bridge, not mere post-classification correlation.
+- Martino (2026) — algorithmic classification can structure opportunity and visibility.
+- Lageson, Adams & Chen (2026) — automated record relief can shift rather than eliminate burden through notification failure, partial clearances and opaque downstream data.
+- Biega & Finck (2021) — purpose limitation/data minimisation remain meaningful constraints in data-driven systems.
+- Contextual Integrity — recipient/attribute/transmission-condition changes can create a new information-flow question.
+- Mayson (2015) — historical record and future predictive-risk authority are analytically distinct.
 
 ## Development
 
-Executable kernel remains **v0.8.0**. 0.848 is theory-dominant.
+Executable kernel: **v0.8.1**
 
-GitHub Actions are not modified and may not author repository history.
+New surface:
+- `src/nomos/record_portability.py`
+- `spec/record-portability.md`
+- safe/unsafe fixtures;
+- unit tests;
+- CLI `--audit-record-portability`.
+
+CI:
+- latest v0.8.1 gate: **PASS**
+- workflow permissions: **contents: read**
+- Actions writeback: **not authorized**
 
 ## Next title only
 
-**NOMOS-0.849 — Emergency Residue Reclassification, Successor Baseline Contest, Exceptional-Record Portability & the Primitive Question of Which Parts of an Emergency-Produced History May Survive into Ordinary Person-Judgment after the Override Ends**
+**NOMOS-0.850 — Descendant-Record Correction Propagation, Recipient-Graph Recall, Semantic Re-Derivation, Residual Copy Authority & the Primitive Question of Whether a Person-Judgment Can Be Meaningfully Corrected When the Original Record Is Reclassified but Its Scores, Summaries, Rankings and Downstream Copies Continue to Act**
 
 **TITLE-LOCKED / NOT OPENED.**
