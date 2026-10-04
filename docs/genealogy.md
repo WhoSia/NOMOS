@@ -26,6 +26,7 @@ This is a compressed scientific genealogy, not a full version history.
 | 0.843 | Claim-relative feedback-support restoration, shadow audit, sampling constitution and safe counterfactual review coverage. | More review = more knowledge; shadow review = hidden appeal; randomization = automatic legitimacy; missing labels must be manufactured. |
 | 0.844 | Shadow/live divergence localization, aligned residual disagreement, scoped repair and policy-update authority separation. | Disagreement = error; shadow review = truth oracle; consensus = correctness; one case = policy evidence. |
 | 0.845 | Mechanism-indexed divergence replication, provenance-independent clustering, reviewer/case-mix conditional surfaces, transport and adjudicator calibration. | Repetition = replication; reviewer recurrence = system failure; aggregate disagreement = transportable error rate; adjudicator = truth oracle. |
+| 0.846 | Counterfactual repair evaluation, redistribution surfaces and repair-efficacy/adoption-authority separation. | Target metric reduction = system repair; before/after = intervention effect; global improvement erases local worsening; trade-off existence chooses adoption. |
 
 ## Recurrent return-to-core question
 
