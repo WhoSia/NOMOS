@@ -1,0 +1,35 @@
+{
+  "record_portability": {
+    "records": [
+      {
+        "id": "emergency_event_record",
+        "emergency_produced": true,
+        "provenance_visible": true,
+        "regime_sensitivity_assessed": true,
+        "ordinary_baseline": "matched_post_restoration_cohort",
+        "semantic_revalidated": true,
+        "contest_route": "ordinary_review",
+        "allowed_purposes": ["eligibility_review"]
+      },
+      {
+        "id": "bounded_summary",
+        "dependencies": ["emergency_event_record"],
+        "emergency_ancestor_refs": ["emergency_event_record"],
+        "provenance_visible": true,
+        "regime_sensitivity_assessed": true,
+        "ordinary_baseline": "matched_post_restoration_cohort",
+        "semantic_revalidated": true,
+        "contest_route": "ordinary_review",
+        "allowed_purposes": ["eligibility_review"]
+      }
+    ],
+    "proposed_uses": [
+      {
+        "id": "ordinary_contextual_use",
+        "record": "bounded_summary",
+        "level": "P3",
+        "purpose": "eligibility_review"
+      }
+    ]
+  }
+}
