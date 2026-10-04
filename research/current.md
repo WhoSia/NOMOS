@@ -1,98 +1,86 @@
-# Current Research Head — NOMOS-0.847
+# Current Research Head — NOMOS-0.848
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-Who may decide which new errors, delays or burdens are acceptable prices for correcting an old review-system failure?
+May an institution temporarily violate part of its own repair-distribution constitution under urgent conditions without converting emergency exception into a new normal?
 
-## Core theorem
+## Core rule
 
-**TRADE-OFF EXISTENCE ≠ TRADE-OFF AUTHORITY.**
+**THE AUTHORITY TO DEPART FROM NORMALITY DOES NOT INCLUDE THE AUTHORITY TO REDEFINE NORMALITY BY SURVIVAL.**
 
-Distributional governance separates:
-- factual intervention effect;
-- burden incidence;
-- valuation;
-- compensability;
-- guardrail selection;
-- adoption authority;
-- reopening authority.
+Emergency distributional override:
 
-No actor inherits all seven merely by controlling the repair.
+**E_D = ⟨authority source, trigger, suspension mask, meta-floors, substitute safeguards, bounded action, affected surface, re-entry, restoration debt, provenance reserve⟩**
 
-## Compensation firewall
+## Restoration debt
 
-**POTENTIAL COMPENSATION ≠ ACTUAL COMPENSATION ≠ CONSENT OR PERMISSION.**
+**D_R = ⟨incidence, standing, compensability, guardrail, mitigation, review, baseline debt⟩**
 
-A repair currency requires an explicit bridge from the offered remedy to the claim-relevant loss.
+Debt is typed, not scalar.
 
-## Compensability taxonomy
+A justified emergency can create restoration debt.
 
-- K0 — no material loss;
-- K1 — same-currency reversible;
-- K2 — functional in-kind repair;
-- K3 — agency-sensitive substitution;
-- K4 — residual non-equivalence;
-- K5 — non-compensable within current decision authority;
-- K6 — UNKNOWN / HOLD.
+**FORMAL SUNSET ≠ FUNCTIONAL RESTORATION.**
 
-## Guardrail constitution
+## Re-entry
 
-- G0 — information-only;
-- G1 — review trigger;
-- G2 — scope limiter;
-- G3 — mitigation condition;
-- G4 — outside current trade-off authority;
-- G5 — higher-authority override required.
+Re-entry may restore the old constitution, partially repair it, or establish a freshly warranted successor constitution.
 
-Guardrails must be prospectively grounded.
+Emergency-created dependency cannot self-ratify continuation.
 
-## Distributional adoption ladder
+Renewal is a fresh authority decision.
 
-- DISTRIBUTION_UNMAPPED
-- STANDING_MAP_INCOMPLETE
-- COMPENSABILITY_HOLD
-- GUARDRAIL_AUTHORITY_HOLD
-- SCOPE_RESTRICTED_DISTRIBUTIONAL_CANDIDATE
-- MITIGATED_DISTRIBUTIONAL_CANDIDATE
-- DISTRIBUTIONAL_ADOPTION_CANDIDATE
+## Origin return — 71-page report
 
-## Genealogical rejoin
+Founding artifact:
+**1206 김우준 주제 탐구 활동.pdf** — 71 pages.
 
-- 0.207 — distributed repair standing / double charging;
-- 0.208A — capacity, beneficiary nexus and anti-paternalism;
-- 0.261A — correction labor and burden externalization;
-- 0.415 — asymmetric error-cost allocation;
-- 0.73A — irreversibility/corrigibility burden;
-- 0.804 — no single repair currency;
-- 0.811 — provenance burden after institutional error;
-- 0.839–0.841 — capture and authority topology;
-- 0.846 — repair efficacy / adoption authority separation.
+Destroyed:
+- literal normative-field/energy mechanics;
+- fixed semantic threshold 1050;
+- ABM output as person/legal proof;
+- singularity as thick person essence.
 
-## External bounded donors
+Survived:
+- heterogeneous event → person-level identity compression;
+- whole-person censure expansion;
+- stronger, separately falsifiable person-model → act-reading return edge;
+- concern that institutional/classificatory environments can shape the evidence through which their categories later appear confirmed.
 
-- Young, DOI **10.1017/S0265052506060043**;
-- Daniels, DOI **10.1136/bmj.321.7272.1300**;
-- Asaria, Griffin & Cookson, DOI **10.1177/0272989X15583266**;
-- Martin, DOI **10.1111/jere.12240**;
-- compensation-principle overview, DOI **10.1017/CBO9780511582417.004**.
+Mature translation:
+
+**normative field → policy-conditioned observation + authority-conditioned normality.**
+
+0.848 therefore returns directly to the founding question: when may a world that helps produce a person-judgment use its own products as authority over the person?
+
+## Literature radar
+
+P0 emergency/normalization:
+- Fagan — DOI **10.1007/s10657-011-9219-x**
+- Won — DOI **10.1093/icon/moaf010**
+- Ginsburg & Versteeg — DOI **10.1093/icon/moab059**
+- Bar-Siman-Tov — DOI **10.1111/rego.12148**
+- Emergency legislation / ordinary legislation separation — DOI **10.1080/20508840.2020.1786272**
+- Scheuerman — DOI **10.1146/annurev.lawsocsci.2.061206.074644**
+- Mukherjee (2026 preprint) — DOI/SSRN **10.2139/ssrn.7118898**
+
+P0/P1 founding-origin:
+- **Making up people digitally** — DOI **10.1016/j.tao.2026.100032**
+- Hacking, **Kinds of People: Moving Targets** — DOI **10.5871/bacad/9780197264249.003.0010**
+- Guala — DOI **10.1007/s13194-023-00534-9**
+- Sparti — DOI **10.1177/13684310122225154**
+- Khalidi — DOI **10.1111/phpr.12020**
 
 ## Development
 
-Executable kernel remains **v0.8.0**.
+Executable kernel remains **v0.8.0**. 0.848 is theory-dominant.
 
-0.847 is theory-dominant. Repository change is limited to active theory surfaces. GitHub Actions are not modified and may not author repository history.
-
-## Research OS runtime
-
-Opening CI:
-**CI-NOMOS-0.847-OPEN-20261004 / PASS / ONE-CLOSURE-COURT.**
-
-CURRENT 2026-10-02 bootstrap/method shelf loaded before execution. BOT_CONTRIBUTION_ZERO remains binding.
+GitHub Actions are not modified and may not author repository history.
 
 ## Next title only
 
-**NOMOS-0.848 — Distributional Override, Emergency Departure, Guardrail Suspension, Restoration Debt & the Primitive Question of Whether an Institution May Temporarily Violate Its Own Repair-Distribution Constitution under Urgent Conditions without Converting Emergency Exception into a New Normal**
+**NOMOS-0.849 — Emergency Residue Reclassification, Successor Baseline Contest, Exceptional-Record Portability & the Primitive Question of Which Parts of an Emergency-Produced History May Survive into Ordinary Person-Judgment after the Override Ends**
 
 **TITLE-LOCKED / NOT OPENED.**
