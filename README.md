@@ -97,7 +97,29 @@ NOMOS-0.848 allows bounded emergency departure without granting the exception au
 
 The stage also explicitly rejoins the 2025 71-page founding report: literal normative physics is retired, while the surviving problem is the institutional production of person-level meaning and self-confirming normality.
 
-These surfaces are theory-level; the executable kernel remains v0.8.0.
+### Emergency Record Portability
+NOMOS-0.849 adds an executable audit for transporting emergency-produced history into ordinary evidentiary and person-judgment use.
+
+Core separation:
+
+**history ≠ evidence ≠ ordinary meaning ≠ consequence authority**
+
+The surface:
+- tracks a P0–P5 portability lattice from archive-only retention to durable person-model incorporation;
+- requires visible or reconstructible emergency provenance;
+- requires regime-sensitivity and successor-baseline analysis for stronger ordinary use;
+- checks semantic revalidation, contestability and purpose limitation;
+- requires fresh consequence authority before adverse ordinary action;
+- propagates emergency ancestry through descendant score/summary/ranking records;
+- rejects the idea that a new identifier, recipient, model version or timestamp resets regime provenance.
+
+Core rules:
+
+**RETENTION DOES NOT ENTAIL PROMOTION.**
+
+**DERIVATION DOES NOT RESET REGIME PROVENANCE.**
+
+**CORRECTING THE SOURCE WITHOUT PROPAGATING THE CORRECTION THROUGH ITS LIVE DESCENDANTS IS NOT COMPLETE RESTORATION.**
 
 ## Design rules
 
@@ -122,15 +144,18 @@ PYTHONPATH=src python -m nomos examples/routing_learning_audited.json --audit-ro
 PYTHONPATH=src python -m nomos examples/feedback_restoration_safe.json --plan-feedback-restoration
 PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
 PYTHONPATH=src python -m nomos examples/divergence_replication_systematic.json --audit-divergence-replication
+PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-record-portability
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.848 — Distributional Override, Emergency Departure, Guardrail Suspension & Restoration Debt — CLOSED.**
+**NOMOS-0.849 — Emergency Residue Reclassification, Successor Baseline Contest & Exceptional-Record Portability — CLOSED.**
 
-Executable kernel remains **v0.8.0**. 0.848 is theory-dominant and includes an explicit return to the 2025 71-page founding report.
+Executable kernel is **v0.8.1**.
+
+The kernel now includes a record-portability audit surface that preserves emergency ancestry through derived records. GitHub Actions are constrained to **`contents: read`** and do not author or write back repository history.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.849 — Emergency Residue Reclassification, Successor Baseline Contest, Exceptional-Record Portability...**
+Next title only: **NOMOS-0.850 — Descendant-Record Correction Propagation, Recipient-Graph Recall, Semantic Re-Derivation, Residual Copy Authority & the Primitive Question of Whether a Person-Judgment Can Be Meaningfully Corrected When the Original Record Is Reclassified but Its Scores, Summaries, Rankings and Downstream Copies Continue to Act**
