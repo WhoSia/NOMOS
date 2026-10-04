@@ -28,6 +28,7 @@ This is a compressed scientific genealogy, not a full version history.
 | 0.845 | Mechanism-indexed divergence replication, provenance-independent clustering, reviewer/case-mix conditional surfaces, transport and adjudicator calibration. | Repetition = replication; reviewer recurrence = system failure; aggregate disagreement = transportable error rate; adjudicator = truth oracle. |
 | 0.846 | Counterfactual repair evaluation, redistribution surfaces and repair-efficacy/adoption-authority separation. | Target metric reduction = system repair; before/after = intervention effect; global improvement erases local worsening; trade-off existence chooses adoption. |
 | 0.847 | Distributional authority, compensability, guardrail constitution and typed adoption/reopening roles. | Aggregate benefit = permission; potential compensation = consent; affected standing = total veto; institutional control = universal valuation authority. |
+| 0.848 | Emergency suspension masks, typed restoration debt, functional re-entry and normalization-hysteresis control. | Emergency success = guardrail defeat; formal sunset = restoration; exception persistence = ordinary warrant; emergency-created dependency = continuation authority. |
 
 ## Recurrent return-to-core question
 
@@ -54,3 +55,8 @@ These transfers remain non-sovereign. Their original Labs keep their own evident
 A validator/analyzer enters the kernel only if it blocks a recurrent category error, preserves provenance, prevents authority inflation, preserves defeatability, protects transport distinctions, reconstructs distributed judgment, or exposes materially hidden dependency/routing/feedback topology.
 
 The kernel is a compressed theory of **what NOMOS has learned not to collapse**.
+
+
+## Founding-report return — 0.848
+
+The 2025 71-page report's literal normative-field mechanics, fixed threshold 1050 and ABM-as-proof were destroyed. Its sharper structure survived: heterogeneous episodes can be compressed into a person model, and an institution can later use products of its own classificatory environment as evidence about the person. 0.848 restates the old "field" intuition as **policy-conditioned observation + authority-conditioned normality**: an exceptional regime may shape the baseline from which its own necessity later appears self-evident.
