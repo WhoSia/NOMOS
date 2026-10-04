@@ -1,119 +1,97 @@
-# Current Research Head — NOMOS-0.845
+# Current Research Head — NOMOS-0.846
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-When does repeated live↔shadow disagreement become evidence of a systematic review failure rather than a collection of case-specific conflicts?
+May a reform that reduces a known systematic review failure be adopted when it also moves disagreement, delay, workload or other consequential burden into different cells of the review system?
 
 ## Core theorem
 
-A repeated disagreement is not yet a replication.
+**REPAIR EFFICACY ≠ REPAIR ADOPTION AUTHORITY.**
 
-For a previously localized mechanism `m`, systematicity is indexed to a surface:
+A repair is evaluated as a transformation of the 0.845 failure surface, not as one before/after number.
 
-**F_m(g, l, s, t)**
+For metric k and review-system cell z:
 
-where:
-- `g` = case-mix stratum;
-- `l` = live-reviewer condition;
-- `s` = shadow-reviewer condition;
-- `t` = time/policy regime.
+**τ_k(z) = E[Y_k(1,z) - Y_k(0,z)]**
 
-A claim becomes broader only when the localized mechanism survives the dimensions over which the claim intends to generalize.
+The target mechanism can improve while another metric or cell worsens.
 
-**REPETITION ≠ REPLICATION.**
+## Required separations
 
-**SYSTEMATIC ≠ GLOBAL.**
+- target failure reduction ≠ system repair;
+- before/after improvement ≠ intervention effect;
+- metric repair ≠ mechanism repair;
+- global improvement ≠ absence of local worsening;
+- error redistribution ≠ error conservation;
+- trade-off existence ≠ authority to choose the trade-off;
+- repair efficacy ≠ deployment scope.
 
-## Replication unit
+## Repair-state ladder
 
-The default scientific replication unit is a provenance-independent case cluster, not a row.
+- **REPAIR_TARGET_NOT_ESTABLISHED**
+- **REPAIR_CAUSALITY_HOLD**
+- **REPAIR_COVERAGE_HOLD**
+- **REDISTRIBUTIVE_REPAIR_CANDIDATE**
+- **REPAIR_ADOPTION_HOLD_REDISTRIBUTION**
+- **SCOPE_RESTRICTED_REPAIR_CANDIDATE**
+- **NONREDISTRIBUTIVE_REPAIR_CANDIDATE**
 
-Repeated observations from one person/event/source lineage remain useful but do not multiply independent replication authority.
+## Counterfactual evaluation
 
-## Promotion ladder
+Admissible designs depend on the domain and can include paired replay, matched holdout, staggered rollout, natural experiments, synthetic control, or randomization among independently permissible options.
 
-- **CASE_SPECIFIC_OR_UNDERREPLICATED**
-- **REVIEWER_CONDITIONAL_SURFACE**
-- **CASE_MIX_CONDITIONAL_SURFACE**
-- **SYSTEMATIC_CLAIM_HOLD_ADJUDICATOR**
-- **SYSTEMATIC_CLAIM_HOLD_TRANSPORT**
-- **TRANSPORTABLE_SYSTEMATIC_CANDIDATE**
+No design is universally privileged.
 
-The final state is still claim-scoped and mechanism-indexed.
+## Redistribution surface
 
-## Reviewer conditionality
+Track, when claim-relevant:
+- target localized failure;
+- secondary error;
+- delay;
+- review workload;
+- consequence class;
+- correction opportunity / visibility;
+- access to review or contestation.
 
-Reviewer substitution is a generalization test, not a blame test.
+No universal scalar utility is installed.
 
-If a localized divergence survives only one reviewer/reviewer-pair condition, the correct claim is reviewer-conditional.
+## Genealogical rejoin
 
-## Case-mix transport
-
-Observed recurrence in one case family does not identify a target-wide failure rate.
-
-Target strata require:
-- direct support, or
-- an explicit transport bridge.
-
-**CASE-MIX SUPPORT IS PART OF SYSTEMATIC-FAILURE AUTHORITY.**
-
-## Adjudicator calibration
-
-If the label “localized failure” depends on a higher-order adjudicator, the adjudicator becomes another measurement facet.
-
-Required:
-- calibration status;
-- calibration scope;
-- provenance.
-
-Calibration does not establish truth sovereignty.
+- 0.203 — status-quo forecast ≠ intervention effect;
+- 0.780 — repair profile is vector-valued;
+- 0.797 — repair ≠ purification;
+- 0.799 — repair follows dependency edges;
+- 0.804 — no single repair currency;
+- 0.830 / 0.842 — post-intervention evidence is policy-conditioned;
+- 0.845 — repair must be evaluated on the same conditional failure surface.
 
 ## External bounded donors
 
-- Hesselberg et al. (2026), DOI **10.1371/journal.pone.0356108**;
-- Brennan (2001), DOI **10.1007/978-1-4757-3456-0**;
-- Brennan (2001), DOI **10.1111/j.1745-3984.2001.tb01129.x**;
-- Hayes & Murray (1995), DOI **10.1111/j.1365-2753.1995.tb00015.x**;
-- Dawid & Skene (1979), DOI **10.2307/2346806**.
+- Bardach & Cabana, DOI **10.1097/MOP.0b013e3283329937**;
+- Catlow et al., DOI **10.1136/bmjqs-2021-013588**;
+- Edwards & Black, DOI **10.1136/bmjqs-2023-016247**;
+- Chouldechova, DOI **10.1089/big.2016.0047**;
+- Kleinberg, Mullainathan & Raghavan, DOI **10.4230/LIPIcs.ITCS.2017.43**.
 
-## Executable materialization
+## Development
 
-Repository version: **v0.8.0**
+Executable kernel remains **v0.8.0**.
 
-Added:
-- `src/nomos/divergence_replication.py`;
-- Divergence Replication 0.1 spec;
-- `--audit-divergence-replication`;
-- systematic / reviewer-conditional / case-mix-conditional / transport-HOLD fixtures;
-- provenance-independent cluster counting;
-- reviewer substitution checks;
-- case-mix transport support;
-- adjudicator calibration gate;
-- reviewer × case-mix conditional surfaces;
-- manual regression tests.
+0.846 is intentionally theory-dominant. No new executable analyzer was promoted because the unresolved object is authority-bearing counterfactual repair interpretation rather than a missing deterministic computation.
 
-The GitHub Actions workflow was **not modified** in 0.845.
-
-Expected frozen states:
-- systematic fixture → **TRANSPORTABLE_SYSTEMATIC_CANDIDATE**;
-- reviewer-only recurrence → **REVIEWER_CONDITIONAL_SURFACE**;
-- complex-only recurrence → **CASE_MIX_CONDITIONAL_SURFACE**;
-- unsupported target stratum → **SYSTEMATIC_CLAIM_HOLD_TRANSPORT**;
-- adjudicator calibration removed → **SYSTEMATIC_CLAIM_HOLD_ADJUDICATOR**.
+GitHub Actions were not modified.
 
 ## Research OS runtime
 
 Opening CI:
-**CI-NOMOS-0.845-OPEN-20261004 / PASS / ONE-CLOSURE-COURT.**
+**CI-NOMOS-0.846-OPEN-20261004 / PASS / ONE-CLOSURE-COURT.**
 
-Owner constraint:
-**Do not create bot contributors through GitHub Actions.**
-0.845 respected this by leaving the Actions workflow untouched.
+CURRENT 2026-10-02 bootstrap/method shelf loaded before work. BOT_CONTRIBUTION_ZERO remains binding.
 
 ## Next title only
 
-**NOMOS-0.846 — Failure-Surface Intervention, Review-System Repair, Error Redistribution, Counterfactual Repair Evaluation & the Primitive Question of Whether a Reform That Reduces a Known Systematic Review Failure May Legitimately Be Adopted When It Also Moves Disagreement, Delay or Error into Different Cases, Reviewers or Consequence Classes**
+**NOMOS-0.847 — Repair Governance, Guardrail Selection, Compensability, Distributional Authority & the Primitive Question of Who May Decide Which New Errors, Delays or Burdens Are Acceptable Prices for Correcting an Old Review-System Failure**
 
 **TITLE-LOCKED / NOT OPENED.**
