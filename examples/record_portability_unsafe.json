@@ -1,0 +1,26 @@
+{
+  "record_portability": {
+    "records": [
+      {
+        "id": "emergency_risk_label",
+        "emergency_produced": true,
+        "provenance_visible": false,
+        "selection_feedback": true,
+        "emergency_label_expired": true
+      },
+      {
+        "id": "ordinary_score",
+        "dependencies": ["emergency_risk_label"],
+        "provenance_visible": false
+      }
+    ],
+    "proposed_uses": [
+      {
+        "id": "ordinary_adverse_action",
+        "record": "ordinary_score",
+        "level": "P4",
+        "purpose": "ordinary_risk_scoring"
+      }
+    ]
+  }
+}
