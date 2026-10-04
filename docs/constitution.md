@@ -276,3 +276,34 @@ Where one actor benefits from the chosen valuation and controls evidence, compen
 
 ## C90 — Adoption remains reopenable
 A distributional settlement must be reopenable when compensation fails in practice, burden incidence shifts, hidden losers appear, or the original guardrail assumptions are defeated.
+
+
+## C91 — Emergency departure does not redefine normality
+A valid emergency override may suspend part of the ordinary distributional constitution without gaining authority to redefine the suspended rule as unnecessary.
+
+## C92 — Emergency suspension requires an explicit mask
+The override must identify which incidence, standing, compensability, guardrail, mitigation, review or adoption functions are compressed, and must not silently suspend unrelated functions.
+
+## C93 — Emergency success does not defeat ordinary guardrails
+Successful operation under emergency conditions is evidence about the override world, not self-ratifying proof that ordinary safeguards lacked value.
+
+## C94 — Formal sunset is not functional restoration
+Calendar expiry or formal termination does not discharge residual effects in records, queues, opportunities, infrastructure, burden distributions or downstream reliance.
+
+## C95 — Restoration debt survives justified emergency action
+A warranted emergency can create outstanding incidence, standing, compensability, guardrail, mitigation, review and baseline obligations without becoming wrongful merely because debt exists.
+
+## C96 — Re-entry need not be rollback
+When the pre-emergency constitution is no longer feasible or adequate, restoration may require a freshly warranted successor constitution rather than a fiction of exact return.
+
+## C97 — Emergency-created dependency cannot self-ratify continuation
+Dependencies, infrastructure or routines created by the exceptional regime are part of the re-entry problem; their existence alone does not justify indefinite retention.
+
+## C98 — Emergency evidence retains exceptional provenance
+Evidence, records and person-status artifacts generated under altered surveillance, opportunity, incentives or review conditions may not silently become ordinary person evidence or ordinary distributional warrant.
+
+## C99 — Renewal is a fresh authority decision
+Each extension must restate trigger persistence, remaining infeasibility of ordinary process, accumulated restoration debt, feasible partial re-entry and the authority of the renewing actor.
+
+## C100 — Ordinary retention requires fresh non-emergency authority
+An emergency innovation may survive into normal governance only through an ordinary or successor constitutional warrant independent of emergency success and inertia.
