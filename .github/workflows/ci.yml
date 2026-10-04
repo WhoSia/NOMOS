@@ -5,6 +5,9 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -23,6 +26,12 @@ jobs:
       - run: PYTHONPATH=src python -m nomos examples/review_divergence_mismatch.json --audit-review-divergence
       - run: PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
       - run: PYTHONPATH=src python -m nomos examples/review_divergence_residual.json --audit-review-divergence
+      - run: PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-record-portability
+      - run: |
+          if PYTHONPATH=src python -m nomos examples/record_portability_unsafe.json --audit-record-portability; then
+            echo "unsafe record-portability fixture unexpectedly passed"
+            exit 1
+          fi
       - run: |
           if PYTHONPATH=src python -m nomos examples/invalid_person_inference.json; then
             echo "invalid person-inference fixture unexpectedly passed"
