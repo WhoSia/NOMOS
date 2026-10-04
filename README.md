@@ -86,7 +86,13 @@ It also exposes reviewer × case-mix conditional surfaces rather than collapsing
 ### Repair Evaluation
 NOMOS-0.846 adds a theory-level repair surface: target repair efficacy is kept separate from adoption authority, and changes in secondary failure, delay, workload, visibility and consequence class remain explicit rather than being collapsed into one headline improvement score.
 
-This surface is currently conceptual rather than executable; the kernel therefore remains v0.8.0.
+### Distributional Repair Governance
+NOMOS-0.847 separates intervention effect, burden incidence, compensability, guardrail authority, adoption authority and reopening authority.
+
+Core boundary:
+**potential compensation ≠ actual compensation ≠ consent or permission.**
+
+These surfaces are theory-level; the executable kernel remains v0.8.0.
 
 ## Design rules
 
@@ -116,10 +122,10 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.846 — Failure-Surface Intervention, Review-System Repair, Error Redistribution & Counterfactual Repair Evaluation — CLOSED.**
+**NOMOS-0.847 — Repair Governance, Guardrail Selection, Compensability & Distributional Authority — CLOSED.**
 
-Executable kernel remains **v0.8.0**. 0.846 is intentionally theory-dominant and does not mint a new analyzer merely to increase code surface.
+Executable kernel remains **v0.8.0**. 0.847 is intentionally theory-dominant.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.847 — Repair Governance, Guardrail Selection, Compensability, Distributional Authority...**
+Next title only: **NOMOS-0.848 — Distributional Override, Emergency Departure, Guardrail Suspension, Restoration Debt...**
