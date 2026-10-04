@@ -83,6 +83,11 @@ It separates:
 
 It also exposes reviewer × case-mix conditional surfaces rather than collapsing everything into one disagreement rate.
 
+### Repair Evaluation
+NOMOS-0.846 adds a theory-level repair surface: target repair efficacy is kept separate from adoption authority, and changes in secondary failure, delay, workload, visibility and consequence class remain explicit rather than being collapsed into one headline improvement score.
+
+This surface is currently conceptual rather than executable; the kernel therefore remains v0.8.0.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -111,10 +116,10 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.845 — Divergence Replication, Reviewer-Conditional Error Surfaces, Case-Mix Transport & Adjudicator Calibration — CLOSED.**
+**NOMOS-0.846 — Failure-Surface Intervention, Review-System Repair, Error Redistribution & Counterfactual Repair Evaluation — CLOSED.**
 
-Executable kernel: **v0.8.0** — Case Graph + Review Topology + Router Authority + Routing Learning + Feedback Support Restoration + Review Divergence + Divergence Replication.
+Executable kernel remains **v0.8.0**. 0.846 is intentionally theory-dominant and does not mint a new analyzer merely to increase code surface.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.846 — Failure-Surface Intervention, Review-System Repair, Error Redistribution, Counterfactual Repair Evaluation...**
+Next title only: **NOMOS-0.847 — Repair Governance, Guardrail Selection, Compensability, Distributional Authority...**
