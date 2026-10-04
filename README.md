@@ -92,6 +92,11 @@ NOMOS-0.847 separates intervention effect, burden incidence, compensability, gua
 Core boundary:
 **potential compensation ≠ actual compensation ≠ consent or permission.**
 
+### Emergency Override / Restoration Debt
+NOMOS-0.848 allows bounded emergency departure without granting the exception authority to redefine normality. It separates formal sunset from functional restoration, tracks typed restoration debt, and requires fresh ordinary or successor authority before exceptional arrangements become ordinary governance.
+
+The stage also explicitly rejoins the 2025 71-page founding report: literal normative physics is retired, while the surviving problem is the institutional production of person-level meaning and self-confirming normality.
+
 These surfaces are theory-level; the executable kernel remains v0.8.0.
 
 ## Design rules
@@ -122,10 +127,10 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.847 — Repair Governance, Guardrail Selection, Compensability & Distributional Authority — CLOSED.**
+**NOMOS-0.848 — Distributional Override, Emergency Departure, Guardrail Suspension & Restoration Debt — CLOSED.**
 
-Executable kernel remains **v0.8.0**. 0.847 is intentionally theory-dominant.
+Executable kernel remains **v0.8.0**. 0.848 is theory-dominant and includes an explicit return to the 2025 71-page founding report.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.848 — Distributional Override, Emergency Departure, Guardrail Suspension, Restoration Debt...**
+Next title only: **NOMOS-0.849 — Emergency Residue Reclassification, Successor Baseline Contest, Exceptional-Record Portability...**
