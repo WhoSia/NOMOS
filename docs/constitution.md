@@ -214,3 +214,34 @@ Repeated live-more-restrictive or shadow-more-restrictive divergence may be diag
 
 ## C70 — Systematic policy authority requires replicated localization plus transport
 A policy-update candidate requires recurrence of the same localized mechanism across independent clusters, sufficient reviewer substitution, case-mix support, and any load-bearing adjudicator calibration. Missing dimensions yield conditional or HOLD states rather than authority inflation.
+
+
+## C71 — Repair efficacy is not adoption authority
+Evidence that an intervention causally reduces the targeted review failure does not by itself authorize unrestricted adoption.
+
+## C72 — Repair is a surface transformation
+A review reform must be evaluated across material case-mix, reviewer, time and consequence coordinates rather than by one aggregate before/after metric.
+
+## C73 — Error redistribution is empirical, not conserved
+Reducing one failure does not imply that error must reappear elsewhere, but any material worsening that does appear remains an independent authority object.
+
+## C74 — Post-repair improvement requires counterfactual support
+Observed improvement after a reform is not automatically an intervention effect when case mix, routing, visibility, reviewers or recording rules also changed.
+
+## C75 — Metric repair is not mechanism repair
+A monitored failure rate can improve because observability, coding, routing or denominators changed. Mechanism repair requires evidence about the target failure process itself.
+
+## C76 — Redistribution may not be hidden by aggregation
+Global improvement does not erase material worsening in a bounded case, reviewer, temporal or consequence-class cell.
+
+## C77 — Trade-off existence does not choose the trade-off
+Statistical or operational incompatibility among desirable criteria does not by itself determine which worsening is institutionally acceptable.
+
+## C78 — Repair authority may be scope-restricted
+A reform may be warranted for one validated surface while remaining HOLD outside that surface.
+
+## C79 — Guardrails are prospective authority constraints
+Non-compensable or tolerance-bounded cells must be declared prospectively for the intended decision scope; they may not be invented after outcomes are known merely to rationalize a preferred reform.
+
+## C80 — Repair closure preserves unseen-risk humility
+Absence of detected redistribution is bounded by monitoring coverage. NONREDISTRIBUTIVE_REPAIR_CANDIDATE is not proof that no unmeasured side effect exists.
