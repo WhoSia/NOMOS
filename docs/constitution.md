@@ -245,3 +245,34 @@ Non-compensable or tolerance-bounded cells must be declared prospectively for th
 
 ## C80 — Repair closure preserves unseen-risk humility
 Absence of detected redistribution is bounded by monitoring coverage. NONREDISTRIBUTIVE_REPAIR_CANDIDATE is not proof that no unmeasured side effect exists.
+
+
+## C81 — Trade-off existence is not trade-off authority
+Evidence that a repair creates gains and losses does not identify who may authorize those losses or by what procedure.
+
+## C82 — Potential compensation is not permission
+The fact that beneficiaries could hypothetically compensate burden bearers does not establish actual compensation, consent, fairness, or authority to impose the burden.
+
+## C83 — Actual compensation does not retroactively authorize
+Compensation can repair or mitigate a consequence without converting an originally underauthorized imposition into a justified one.
+
+## C84 — Compensability requires a currency bridge
+Time, access, record correction, opportunity, privacy, review quality and other burdens are not automatically exchangeable. A proposed substitute must state why it addresses the claim-relevant loss.
+
+## C85 — Affected standing is material but non-sovereign
+Affected parties have strong standing over first-person burden, factual correction and agency-sensitive substitution, but this does not create universal veto authority over third-party or system-wide claims.
+
+## C86 — Institutional control is not universal valuation authority
+An institution that controls a repair lever may have implementation authority while lacking authority to define every burden, equivalence relation, or acceptable loss created by that repair.
+
+## C87 — Guardrails require prospective authority
+Material guardrails, tolerance limits and override conditions must be declared prospectively for the intended scope rather than invented after results are known to rationalize a preferred intervention.
+
+## C88 — Distributional authority is composite
+Fact, incidence, valuation, compensability, guardrail selection, adoption and reopening may belong to different actors. NOMOS rejects the presumption that one body should hold all seven roles.
+
+## C89 — Common-mode distributional capture requires a live break
+Where one actor benefits from the chosen valuation and controls evidence, compensation and appeal, the system requires a live challenge or differently constituted authority route before distributional closure.
+
+## C90 — Adoption remains reopenable
+A distributional settlement must be reopenable when compensation fails in practice, burden incidence shifts, hidden losers appear, or the original guardrail assumptions are defeated.
