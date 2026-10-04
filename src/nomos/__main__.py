@@ -8,6 +8,7 @@ from .audit import audit_case
 from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration
 from .lineage import trace_record
+from .record_portability import analyze_record_portability
 from .review_divergence import analyze_review_divergence
 from .review_topology import analyze_review_topology
 from .router import analyze_router
@@ -32,9 +33,20 @@ def main() -> int:
         action="store_true",
         help="Audit whether localized live↔shadow divergence replicates across clusters, reviewers and case mix",
     )
+    parser.add_argument(
+        "--audit-record-portability",
+        action="store_true",
+        help="Audit emergency-record transport into ordinary evidentiary/person-judgment use",
+    )
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_record_portability:
+        portability = data.get("record_portability", data)
+        result = analyze_record_portability(portability)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 1 if result["status"] == "FAIL" else 0
 
     if args.audit_divergence_replication:
         replication = data.get("divergence_replication", data)
