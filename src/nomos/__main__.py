@@ -17,6 +17,7 @@ from .review_divergence import analyze_review_divergence
 from .review_topology import analyze_review_topology
 from .router import analyze_router
 from .routing_learning import analyze_routing_learning
+from .systemic_reopening import analyze_systemic_reopening
 
 
 def main() -> int:
@@ -36,6 +37,11 @@ def main() -> int:
         "--audit-divergence-replication",
         action="store_true",
         help="Audit whether localized live↔shadow divergence replicates across clusters, reviewers and case mix",
+    )
+    parser.add_argument(
+        "--audit-systemic-reopening",
+        action="store_true",
+        help="Audit shared-defect propagation, cohort identification and sample-to-recall escalation",
     )
     parser.add_argument(
         "--audit-historical-reopening",
@@ -65,6 +71,12 @@ def main() -> int:
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_systemic_reopening:
+        systemic = data.get("systemic_reopening", data)
+        result = analyze_systemic_reopening(systemic)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 1 if result["status"] == "FAIL" else 0
 
     if args.audit_historical_reopening:
         reopening = data.get("historical_reopening", data)
