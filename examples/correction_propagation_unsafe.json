@@ -1,0 +1,39 @@
+{
+  "correction_propagation": {
+    "correction": {
+      "id": "corr-unsafe",
+      "source": "source_record",
+      "dimensions": ["semantic", "authority", "regime", "consequence"]
+    },
+    "records": [
+      {
+        "id": "source_record"
+      },
+      {
+        "id": "stale_score",
+        "dependencies": ["source_record"],
+        "dependency_dimensions": {
+          "source_record": ["semantic", "authority", "regime", "consequence"]
+        },
+        "operations": ["semantic_rederive", "query_replay", "consequence_reopen"],
+        "transformation_version": "semantic-v1",
+        "corrected_transformation_version": "semantic-v1",
+        "query_version": "query-v1",
+        "corrected_query_version": "query-v1",
+        "generator_active": true,
+        "generator_corrected": false,
+        "output_changed": false,
+        "current_governing": true
+      }
+    ],
+    "recipient_branches": [
+      {
+        "id": "recipient-a",
+        "notice": "delivered",
+        "state": "notice_only",
+        "onward_transfer_open": true
+      }
+    ],
+    "completion_claim": "complete"
+  }
+}
