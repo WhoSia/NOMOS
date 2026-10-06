@@ -1,0 +1,30 @@
+{
+  "historical_reopening": {
+    "branches": [
+      {
+        "id": "branch-retired",
+        "state": "historical_reopenable"
+      }
+    ],
+    "requests": [
+      {
+        "id": "reopen-1",
+        "branch": "branch-retired",
+        "trigger": "material_new_evidence",
+        "trigger_provenance": true,
+        "material_link": true,
+        "standing": "subject",
+        "standing_fit": true,
+        "repeat_request": false,
+        "implicated_scopes": ["factual-premise"],
+        "opened_scopes": ["factual-premise"],
+        "requested_state": "petition_admitted",
+        "review_capable_path": true,
+        "closure_receipt_visible": true,
+        "automatic_old_judgment_reauthorization": false,
+        "adverse_current_authority": false
+      }
+    ],
+    "completion_claim": "complete"
+  }
+}
