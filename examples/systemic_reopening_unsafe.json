@@ -1,0 +1,51 @@
+{
+  "systemic_reopening": {
+    "defects": [
+      {
+        "id": "d-local",
+        "type": "model",
+        "validated": true,
+        "provenance_visible": true,
+        "source_branch": "b-1",
+        "implicated_components": ["model:shared-core"]
+      }
+    ],
+    "branches": [
+      {"id": "b-1"},
+      {"id": "b-2"},
+      {"id": "b-3"}
+    ],
+    "cohorts": [
+      {
+        "id": "all-institution-history",
+        "branches": ["b-1", "b-2", "b-3"],
+        "exposed_branches": ["b-1"],
+        "shared_components": ["department:all"],
+        "frame_defined": false,
+        "exposure_reconstructible": false
+      }
+    ],
+    "proposals": [
+      {
+        "id": "global-recall",
+        "defect": "d-local",
+        "cohort": "all-institution-history",
+        "reopen_branches": ["b-1", "b-2", "b-3"],
+        "known_eligible_branches": ["b-1"],
+        "evidence_mode": "targeted_diagnostic_sample",
+        "claims_prevalence_estimate": true,
+        "same_institution_only": true,
+        "same_model_label_only": true,
+        "single_case_count_only": true,
+        "automatic_merits_reversal": true,
+        "automatic_adverse_reauthorization": true,
+        "person_burden_shift": true,
+        "notice_plan": false,
+        "review_capacity_plan": false,
+        "freeze_old_consequence_authority": false,
+        "completion_claim": "complete",
+        "unresolved_exposure_cells": ["unknown-legacy-model-path"]
+      }
+    ]
+  }
+}
