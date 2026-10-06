@@ -1,0 +1,51 @@
+{
+  "correction_concurrency": {
+    "events": [
+      {
+        "id": "e1",
+        "dimensions": ["factual"],
+        "scope": "person-a"
+      },
+      {
+        "id": "e2",
+        "parents": ["e1"],
+        "dimensions": ["semantic"],
+        "scope": "person-a"
+      },
+      {
+        "id": "e3",
+        "parents": ["e2"],
+        "dimensions": ["authority"],
+        "scope": "person-a",
+        "deauthorizes": ["adverse-label"]
+      },
+      {
+        "id": "e4",
+        "parents": ["e3"],
+        "dimensions": ["authority"],
+        "scope": "person-a"
+      }
+    ],
+    "jobs": [
+      {
+        "id": "factual-score",
+        "scope": "person-a",
+        "base_frontier": ["e1"],
+        "commit_frontier": ["e2"],
+        "dependency_dimensions": ["factual"]
+      },
+      {
+        "id": "fresh-restoration",
+        "scope": "person-a",
+        "base_frontier": ["e3"],
+        "commit_frontier": ["e4"],
+        "dependency_dimensions": ["authority"],
+        "restores_state": "adverse-label",
+        "rebased": true,
+        "fresh_warrant": true,
+        "fresh_adoption": true
+      }
+    ],
+    "completion_claim": "complete"
+  }
+}
