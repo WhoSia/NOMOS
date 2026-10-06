@@ -1,0 +1,41 @@
+{
+  "correction_concurrency": {
+    "events": [
+      {
+        "id": "e1",
+        "dimensions": ["semantic"],
+        "scope": "person-a"
+      },
+      {
+        "id": "e2",
+        "parents": ["e1"],
+        "dimensions": ["authority", "semantic"],
+        "scope": "person-a",
+        "deauthorizes": ["adverse-label"]
+      },
+      {
+        "id": "e3",
+        "dimensions": ["semantic"],
+        "scope": "person-a"
+      }
+    ],
+    "concurrency_resolutions": {
+      "e2|e3": {
+        "classification": "last_writer_wins"
+      }
+    },
+    "jobs": [
+      {
+        "id": "late-old-summary",
+        "scope": "person-a",
+        "base_frontier": ["e1"],
+        "commit_frontier": ["e2"],
+        "dependency_dimensions": ["semantic", "authority"],
+        "restores_state": "adverse-label",
+        "uses_wall_clock_as_freshness": true,
+        "output_same_as_current": true
+      }
+    ],
+    "completion_claim": "complete"
+  }
+}
