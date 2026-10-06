@@ -1,0 +1,45 @@
+{
+  "correction_propagation": {
+    "correction": {
+      "id": "corr-001",
+      "source": "source_record",
+      "dimensions": ["semantic", "authority", "regime"]
+    },
+    "records": [
+      {
+        "id": "source_record"
+      },
+      {
+        "id": "summary",
+        "dependencies": ["source_record"],
+        "dependency_dimensions": {
+          "source_record": ["semantic", "authority", "regime"]
+        },
+        "operations": ["semantic_rederive", "query_replay", "fresh_reconstitution"],
+        "transformation_version": "semantic-v1",
+        "corrected_transformation_version": "semantic-v2",
+        "semantic_rule_changed": true,
+        "query_version": "query-v1",
+        "corrected_query_version": "query-v2",
+        "selection_rule_changed": true,
+        "generator_active": true,
+        "generator_corrected": true,
+        "output_changed": false,
+        "current_governing": true,
+        "fresh_adoption": true,
+        "fresh_warrant": true
+      }
+    ],
+    "recipient_branches": [
+      {
+        "id": "recipient-a",
+        "notice": "delivered",
+        "state": "fresh_independent",
+        "local_rederivation": true,
+        "fresh_warrant": true,
+        "onward_transfer_open": false
+      }
+    ],
+    "completion_claim": "complete"
+  }
+}
