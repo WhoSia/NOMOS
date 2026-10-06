@@ -1,102 +1,125 @@
-# Current Research Head — NOMOS-0.850
+# Current Research Head — NOMOS-0.851
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-Can a person-judgment be meaningfully corrected when the source is reclassified but its scores, summaries, rankings, recipient copies and generators continue to act?
+Which person-judgment state may govern when new evidence, new models or multiple corrections arrive before an earlier descendant-graph repair has finished propagating?
 
 ## Anti-reinvention boundary
 
-0.850 does not rediscover generic correction propagation.
+0.851 does not rediscover stale replicas or generic distributed concurrency.
 
 Recovered predecessors:
-- **0.229A** — correct the dependency, not the past;
-- **0.731** — semantic revision ≠ factual revision;
-- **0.798–0.799** — historical truth, current warrant and consequence repair;
-- **0.822–0.827** — graph propagation, hidden descendants, bounded completion, external recipients, fresh-warrant reconstitution and provenance forks;
-- **0.835–0.838** — derivative ancestry, rehydration and selection-route contestability;
-- **0.849** — record portability and descendant emergency provenance.
+- **0.179** — temporal sequence is not explanatory force by itself;
+- **0.229 / 0.229A** — stale replicas, dependency-bound correction, supersession without erasure;
+- **0.798** — current warrant and historical warrant are distinct;
+- **0.827** — unresolved institutional disagreement is a typed provenance fork;
+- **0.850** — typed correction payloads and operation-specific re-derivation;
+- **PEA-H3** — supersession-aware retrieval as a retired cross-lab donor, not NOMOS authority.
 
-Drive chats **NOMOS 1–7** were reread before 0.850 was opened.
+## Correction frontier
 
-## Typed correction constitution
+A correction event records causal parents, correction dimensions, scope, transformation state and adoption provenance.
 
-A correction may change:
-- factual state;
-- provenance;
-- semantic interpretation;
-- authority;
-- temporal scope;
-- regime/context;
-- consequence authority.
+At any moment the governing correction state may have multiple maximal heads.
 
-**CORRECTION IS A TYPED STATE CHANGE, NOT A SINGLE BOOLEAN FLAG.**
+**THE GOVERNING CORRECTION STATE IS A FRONTIER, NOT NECESSARILY A SINGLE LATEST VERSION.**
 
-Each descendant declares which dimensions of each parent materially affect it.
+A scalar timestamp cannot represent all concurrent correction relations.
 
-**PROPAGATION SCOPE IS DETERMINED BY DEPENDENCY SEMANTICS, NOT BY GRAPH REACHABILITY ALONE.**
+## Causal freshness
 
-## Re-derivation
+A re-derivation job records:
+- base frontier;
+- commit frontier;
+- dependency dimensions;
+- scope;
+- rebase/revalidation state;
+- fresh warrant/adoption where required.
 
-A factual change may require recomputation.
+**WALL-CLOCK LATENESS DOES NOT ESTABLISH CORRECTION FRESHNESS.**
 
-A provenance change may require rebinding.
+A job may finish later while having started from an older authority state.
 
-A semantic change can require a new or explicitly revalidated event→meaning / record→person transformation.
+## Dimension-scoped supersession
 
-A regime change can require query/context replay.
+A later correction supersedes only the dimensions and scope it actually reopens.
 
-An authority change can leave history intact while deauthorizing current governance.
+**SUPERSESSION IS CLAIM- AND DIMENSION-SCOPED, NOT WHOLE-RECORD LAST-WRITER-WINS.**
 
-**RECOMPUTATION UNDER A DEFEATED INTERPRETIVE RULE IS NOT RE-DERIVATION.**
+Thus a later consequence-authority change does not erase an earlier factual correction merely because it arrived later.
 
-## Generator resurrection
+## Stale-base commit
 
-Correcting stored outputs is insufficient where an active semantic mapper, selection query, context filter or ranking rule can recreate the defeated state on the next refresh.
+If a newly arrived event changes a dimension that the in-flight job actually depends on, the job must:
+- rebase;
+- revalidate against the new frontier;
+- or remain non-governing.
 
-**OUTPUT REPAIR WITHOUT GENERATOR REPAIR IS INCOMPLETE WHEN THE GENERATOR CAN RECREATE THE DEFEATED STATE.**
+If the new event is irrelevant to the job's dependency signature, a late commit may remain valid.
 
-## Same-output rule
+## Stale-write resurrection
 
-Correction need not force a different result.
+A stale-write resurrection occurs when an old in-flight result commits after a newer correction has withdrawn or changed authority and thereby restores the defeated state without fresh post-correction warrant.
 
-The same result may survive if it is traceably re-derived and freshly warranted.
+This is distinct from 0.850 generator resurrection.
 
-**SAME OUTPUT ≠ SAME WARRANT.**
+**A WRITE MAY BE CHRONOLOGICALLY NEW YET EPISTEMICALLY STALE.**
 
-## Recipient recall
+## Concurrent corrections
 
-Recipient recall is a state graph, not a message-delivery event.
+Concurrent events are not automatically contradictory.
 
-Track notice, mapping, local re-derivation, fresh warrant, onward transfer, current consequence and unresolved branch.
+They may be:
+- disjoint and commuting;
+- overlapping but mergeable with both provenances preserved;
+- transformation-dependent and requiring rebase;
+- semantically conflicting and requiring a provenance fork/HOLD;
+- consequence-conflicting and requiring explicit consequence-authority review.
 
-**RECIPIENT RECALL TRACKS CORRECTION STATE, NOT MERE MESSAGE DELIVERY.**
+**CONCURRENCY IS NOT DISAGREEMENT, AND DISAGREEMENT IS NOT RESOLVED BY ARRIVAL ORDER.**
+
+## Deauthorization guard
+
+A stale descendant cannot restore a state explicitly deauthorized by a newer correction.
+
+A genuinely fresh later correction may restore the same result if it is causally downstream and has fresh warrant/adoption.
+
+**DEAUTHORIZATION IS MONOTONIC AGAINST STALE ANCESTRY, NOT AGAINST FUTURE FRESH WARRANT.**
+
+## Model chronology firewall
+
+A newer model version is not automatically a newer person-authority state.
+
+**MODEL VERSION ORDER IS NOT PERSON-AUTHORITY ORDER.**
 
 ## Development
 
-Executable kernel: **v0.9.0**
+Executable kernel: **v0.10.0**
 
 New:
-- `src/nomos/correction_propagation.py`;
-- `tests/test_correction_propagation.py`;
-- `spec/correction-propagation.md`;
-- safe/unsafe fixtures;
-- CLI `--audit-correction-propagation`.
+- `src/nomos/correction_concurrency.py`;
+- `tests/test_correction_concurrency.py`;
+- `spec/correction-concurrency.md`;
+- safe/unsafe concurrency fixtures;
+- CLI `--audit-correction-concurrency`.
 
-The executable surface checks typed dependency propagation, stale semantic/query replay, generator resurrection, same-output fresh warrant, consequence reopening and recipient branch state.
+Invariant family: **CR001–CR016**.
+
+The executable surface tests causal integrity, scoped supersession, concurrent overlap resolution, dual-provenance merge, stale-base commit, wall-clock freshness laundering, model-version authority laundering, stale-write resurrection and completion over unresolved branches.
 
 CI:
-- v0.9.0 correction gate **#139: SUCCESS**;
+- v0.10.0 correction-concurrency gate **#150: SUCCESS**;
 - workflow permissions: **contents: read**;
 - Actions repository writeback: **not authorized**.
 
-## Historical reread
+## External donor ceiling
 
-Drive chats NOMOS 1–7 exposed the forgotten 0.229A and 0.822–0.827 correction lineage before 0.850 was opened. This prevented correction propagation from being reinvented under a new name.
+Version vectors, logical clocks and optimistic concurrency are bounded technical donors. They show why concurrent state and stale-base writes need explicit causal/version structure, but none of them determines substantive person-judgment authority.
 
 ## Next title only
 
-**NOMOS-0.851 — Concurrent Correction Events, Supersession Ordering, Re-Derivation Races, Stale-Write Resurrection & the Primitive Question of Which Person-Judgment State May Govern When New Evidence, New Models or Multiple Corrections Arrive before an Earlier Descendant-Graph Repair Has Finished Propagating**
+**NOMOS-0.852 — Correction-Frontier Garbage Collection, Historical Branch Retention, Conflict Compaction, Provenance-Safe Snapshotting & the Primitive Question of When Superseded Person-Judgment Branches May Stop Participating in Live Governance without Being Erased from the History Needed to Explain, Contest or Reconstruct the Present State**
 
 **TITLE-LOCKED / NOT OPENED.**
