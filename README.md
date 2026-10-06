@@ -153,6 +153,31 @@ Core rules:
 The historical Drive chat reread of NOMOS 1–7 also recovered an anti-reinvention chain:
 **0.229A → 0.731 → 0.798–0.799 → 0.822–0.827 → 0.835–0.838 → 0.849 → 0.850.**
 
+### Concurrent Correction Frontiers / Stale-Write Resurrection
+NOMOS-0.851 extends typed correction into overlapping and in-flight repair.
+
+The executable surface distinguishes:
+- causal-before / causal-after / concurrent correction events;
+- scalar latest-version thinking from a multi-head correction frontier;
+- dimension-scoped supersession from whole-record last-writer-wins;
+- a safe late commit whose dependency dimensions are unaffected from a stale-base commit that must rebase;
+- stale-write resurrection from v0.9.0 generator resurrection;
+- stale ancestry from genuinely fresh post-deauthorization restoration.
+
+Core rules:
+
+**WALL-CLOCK LATENESS DOES NOT ESTABLISH CORRECTION FRESHNESS.**
+
+**THE GOVERNING CORRECTION STATE IS A FRONTIER, NOT NECESSARILY A SINGLE LATEST VERSION.**
+
+**SUPERSESSION IS CLAIM- AND DIMENSION-SCOPED, NOT WHOLE-RECORD LAST-WRITER-WINS.**
+
+**A WRITE MAY BE CHRONOLOGICALLY NEW YET EPISTEMICALLY STALE.**
+
+**DEAUTHORIZATION IS MONOTONIC AGAINST STALE ANCESTRY, NOT AGAINST FUTURE FRESH WARRANT.**
+
+**MODEL VERSION ORDER IS NOT PERSON-AUTHORITY ORDER.**
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -178,19 +203,20 @@ PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit
 PYTHONPATH=src python -m nomos examples/divergence_replication_systematic.json --audit-divergence-replication
 PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-record-portability
 PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit-correction-propagation
+PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit-correction-concurrency
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.850 — Descendant-Record Correction Propagation, Recipient-Graph Recall, Semantic Re-Derivation & Residual Copy Authority — CLOSED.**
+**NOMOS-0.851 — Concurrent Correction Events, Supersession Ordering, Re-Derivation Races & Stale-Write Resurrection — CLOSED.**
 
-Executable kernel is **v0.9.0**.
+Executable kernel is **v0.10.0**.
 
-The kernel now includes typed correction propagation and semantic re-derivation auditing in addition to record portability. The 0.850 stage was opened only after rereading Drive chats NOMOS 1–7 and recovering the older 0.229A / 0.822–0.827 correction lineage, preventing the new surface from merely reinventing graph propagation.
+The kernel now audits correction frontiers, causal ordering, dimension-scoped supersession, concurrent correction compatibility, stale-base writes and post-deauthorization resurrection. It does not use wall-clock time, model version, or arrival order as a substitute for person-authority warrant.
 
 GitHub Actions remain constrained to **`contents: read`** and do not author or write back repository history.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.851 — Concurrent Correction Events, Supersession Ordering, Re-Derivation Races, Stale-Write Resurrection & the Primitive Question of Which Person-Judgment State May Govern When New Evidence, New Models or Multiple Corrections Arrive before an Earlier Descendant-Graph Repair Has Finished Propagating**
+Next title only: **NOMOS-0.852 — Correction-Frontier Garbage Collection, Historical Branch Retention, Conflict Compaction, Provenance-Safe Snapshotting & the Primitive Question of When Superseded Person-Judgment Branches May Stop Participating in Live Governance without Being Erased from the History Needed to Explain, Contest or Reconstruct the Present State**
