@@ -1,0 +1,48 @@
+{
+  "correction_compaction": {
+    "branches": [
+      {
+        "id": "branch-old",
+        "state": "live_governing",
+        "events": ["e1", "e2", "e3"],
+        "current_governing": false,
+        "unresolved_conflict": false,
+        "open_consequence": false,
+        "has_supersession_history": true,
+        "had_conflict": true,
+        "privacy_sensitive": true,
+        "future_dispute_class": "bounded",
+        "required_tasks": ["explain", "contest", "attribute", "resurrection"]
+      }
+    ],
+    "snapshots": [
+      {
+        "id": "snapshot-1",
+        "covers": ["e1", "e2", "e3"],
+        "supported_tasks": ["explain", "contest", "attribute", "resurrection"],
+        "lossy": true,
+        "universal_sufficiency_claim": false,
+        "preserved": {
+          "coverage": true,
+          "provenance": true,
+          "supersession_map": true,
+          "conflict_map": true,
+          "attribution": true,
+          "integrity_witness": true
+        }
+      }
+    ],
+    "proposals": [
+      {
+        "id": "retire-1",
+        "branch": "branch-old",
+        "snapshot": "snapshot-1",
+        "action": "compact_to_snapshot",
+        "target_state": "historical_reopenable",
+        "retention_visibility": "sealed",
+        "routine_current_retrieval": false
+      }
+    ],
+    "completion_claim": "complete"
+  }
+}
