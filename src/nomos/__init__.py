@@ -13,6 +13,7 @@ from .review_divergence import analyze_review_divergence, contract_diff
 from .review_topology import analyze_review_topology, minimal_break_sets
 from .router import analyze_router
 from .routing_learning import analyze_routing_learning
+from .systemic_reopening import analyze_systemic_reopening
 
 __all__ = [
     "Finding",
@@ -40,5 +41,6 @@ __all__ = [
     "analyze_correction_compaction",
     "compaction_debt",
     "analyze_historical_reopening",
+    "analyze_systemic_reopening",
 ]
-__version__ = "0.12.0"
+__version__ = "0.13.0"
