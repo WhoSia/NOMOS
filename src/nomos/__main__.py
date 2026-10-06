@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .audit import audit_case
+from .correction_compaction import analyze_correction_compaction
 from .correction_concurrency import analyze_correction_concurrency
 from .correction_propagation import analyze_correction_propagation
 from .divergence_replication import analyze_divergence_replication
@@ -36,6 +37,11 @@ def main() -> int:
         help="Audit whether localized live↔shadow divergence replicates across clusters, reviewers and case mix",
     )
     parser.add_argument(
+        "--audit-correction-compaction",
+        action="store_true",
+        help="Audit correction-branch retirement, historical retention and provenance-safe snapshotting",
+    )
+    parser.add_argument(
         "--audit-correction-concurrency",
         action="store_true",
         help="Audit correction frontiers, supersession ordering and stale-write resurrection",
@@ -53,6 +59,12 @@ def main() -> int:
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_correction_compaction:
+        compaction = data.get("correction_compaction", data)
+        result = analyze_correction_compaction(compaction)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 1 if result["status"] == "FAIL" else 0
 
     if args.audit_correction_concurrency:
         concurrency = data.get("correction_concurrency", data)
