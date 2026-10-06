@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .audit import audit_case
+from .correction_propagation import analyze_correction_propagation
 from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration
 from .lineage import trace_record
@@ -34,6 +35,11 @@ def main() -> int:
         help="Audit whether localized live↔shadow divergence replicates across clusters, reviewers and case mix",
     )
     parser.add_argument(
+        "--audit-correction-propagation",
+        action="store_true",
+        help="Audit typed correction propagation, semantic re-derivation and recipient recall",
+    )
+    parser.add_argument(
         "--audit-record-portability",
         action="store_true",
         help="Audit emergency-record transport into ordinary evidentiary/person-judgment use",
@@ -41,6 +47,12 @@ def main() -> int:
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_correction_propagation:
+        propagation = data.get("correction_propagation", data)
+        result = analyze_correction_propagation(propagation)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 1 if result["status"] == "FAIL" else 0
 
     if args.audit_record_portability:
         portability = data.get("record_portability", data)
