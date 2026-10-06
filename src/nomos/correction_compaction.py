@@ -263,8 +263,8 @@ def analyze_correction_compaction(packet: dict[str, Any]) -> dict[str, Any]:
                 if debt:
                     add(
                         "GC018",
-                        "WARNING",
-                        "Compaction leaves declared reopen-task debt.",
+                        "ERROR",
+                        "Compaction loses one or more declared reopen-task capabilities.",
                         [pid, bid, *debt],
                     )
 
