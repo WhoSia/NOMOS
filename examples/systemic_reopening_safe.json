@@ -1,0 +1,44 @@
+{
+  "systemic_reopening": {
+    "defects": [
+      {
+        "id": "d-q7",
+        "type": "query",
+        "validated": true,
+        "provenance_visible": true,
+        "source_branch": "b-101",
+        "implicated_components": ["query:q7"]
+      }
+    ],
+    "branches": [
+      {"id": "b-101"},
+      {"id": "b-102"},
+      {"id": "b-103"}
+    ],
+    "cohorts": [
+      {
+        "id": "q7-exposed",
+        "branches": ["b-101", "b-102", "b-103"],
+        "exposed_branches": ["b-101", "b-102"],
+        "shared_components": ["query:q7"],
+        "frame_defined": true,
+        "exposure_reconstructible": true
+      }
+    ],
+    "proposals": [
+      {
+        "id": "recall-q7",
+        "defect": "d-q7",
+        "cohort": "q7-exposed",
+        "reopen_branches": ["b-101", "b-102"],
+        "known_eligible_branches": ["b-101", "b-102"],
+        "evidence_mode": "mechanism_universal",
+        "universal_mechanism_bridge": true,
+        "notice_plan": true,
+        "review_capacity_plan": true,
+        "freeze_old_consequence_authority": true,
+        "completion_claim": "complete"
+      }
+    ]
+  }
+}
