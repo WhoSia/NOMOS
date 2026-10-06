@@ -1,6 +1,7 @@
 """NOMOS: typed audit kernel for relational person-judgment research."""
 
 from .audit import Finding, audit_case
+from .correction_propagation import analyze_correction_propagation, correction_impact
 from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration, minimal_safe_restoration_sets
 from .lineage import dependency_closure, impacted_derived_records, trace_record
@@ -28,5 +29,7 @@ __all__ = [
     "analyze_record_portability",
     "descendant_map",
     "emergency_ancestors",
+    "analyze_correction_propagation",
+    "correction_impact",
 ]
-__version__ = "0.8.1"
+__version__ = "0.9.0"
