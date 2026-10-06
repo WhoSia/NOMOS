@@ -1,125 +1,115 @@
-# Current Research Head — NOMOS-0.851
+# Current Research Head — NOMOS-0.852
 
 **Status: STRONG PASS / CLOSED**
 
 ## Primitive question
 
-Which person-judgment state may govern when new evidence, new models or multiple corrections arrive before an earlier descendant-graph repair has finished propagating?
+When may superseded or resolved correction branches stop participating in live governance without erasing the historical provenance needed to explain, contest or reconstruct the present state?
 
 ## Anti-reinvention boundary
 
-0.851 does not rediscover stale replicas or generic distributed concurrency.
+0.852 does not rediscover ordinary snapshotting or archival retention.
 
 Recovered predecessors:
-- **0.179** — temporal sequence is not explanatory force by itself;
-- **0.229 / 0.229A** — stale replicas, dependency-bound correction, supersession without erasure;
-- **0.798** — current warrant and historical warrant are distinct;
-- **0.827** — unresolved institutional disagreement is a typed provenance fork;
-- **0.850** — typed correction payloads and operation-specific re-derivation;
-- **PEA-H3** — supersession-aware retrieval as a retired cross-lab donor, not NOMOS authority.
+- **0.30A** — historical proposition, current status and present identity representativeness are distinct;
+- **0.212–0.215** — institutional memory can persist while present person-jurisdiction contracts;
+- **0.229A** — supersession without erasure;
+- **0.725–0.726** — archive retention may coexist with decision-use prohibition; memory does not automatically regain current authority;
+- **0.798–0.799** — historical truth, current warrant and corrective non-erasure;
+- **0.823–0.824** — bounded completeness and graded repair certificates;
+- **0.835–0.836** — sealed provenance and use-time rehydration;
+- **0.851** — governing correction state is a frontier;
+- **EPISTEME-P9** — cross-lab donor for task-relative retention sufficiency and the open-future compression barrier.
 
-## Correction frontier
+## Branch lifecycle
 
-A correction event records causal parents, correction dimensions, scope, transformation state and adoption provenance.
+NOMOS distinguishes:
+- live-governing;
+- live-conflict;
+- historical-reopenable;
+- historical-minimal.
 
-At any moment the governing correction state may have multiple maximal heads.
+**RETIRING A BRANCH FROM LIVE GOVERNANCE IS NOT ERASING IT FROM INSTITUTIONAL HISTORY.**
 
-**THE GOVERNING CORRECTION STATE IS A FRONTIER, NOT NECESSARILY A SINGLE LATEST VERSION.**
+## Retention task family
 
-A scalar timestamp cannot represent all concurrent correction relations.
+Historical retention is certified against declared future tasks:
+- explain;
+- contest;
+- reconstruct;
+- attribute;
+- resurrection;
+- consequence.
 
-## Causal freshness
+**PROVENANCE SUFFICIENCY IS TASK-RELATIVE, AND THE TASK FAMILY MUST BE DECLARED BEFORE COMPACTION.**
 
-A re-derivation job records:
-- base frontier;
-- commit frontier;
-- dependency dimensions;
-- scope;
-- rebase/revalidation state;
-- fresh warrant/adoption where required.
+## Provenance-safe snapshot
 
-**WALL-CLOCK LATENESS DOES NOT ESTABLISH CORRECTION FRESHNESS.**
+A valid compact witness can preserve:
+- explicit coverage;
+- provenance/ancestry;
+- supersession map;
+- conflict history;
+- attribution;
+- consequence links;
+- integrity witness;
+- supported reopen-task list.
 
-A job may finish later while having started from an older authority state.
+**A SNAPSHOT WITHOUT COVERAGE AND PROVENANCE RECEIPTS IS A NEW OPAQUE ASSERTION, NOT A SAFE HISTORICAL COMPACTION.**
 
-## Dimension-scoped supersession
+## Conflict compaction
 
-A later correction supersedes only the dimensions and scope it actually reopens.
+Resolved branches may leave live competition without being retroactively deleted from history.
 
-**SUPERSESSION IS CLAIM- AND DIMENSION-SCOPED, NOT WHOLE-RECORD LAST-WRITER-WINS.**
+**RESOLUTION MAY CLOSE LIVE COMPETITION WITHOUT RETROACTIVELY MAKING THE LOSING BRANCH NEVER HAVE EXISTED.**
 
-Thus a later consequence-authority change does not erase an earlier factual correction merely because it arrived later.
+## Open-future barrier
 
-## Stale-base commit
+Lossy compaction cannot promise universal future contest/reconstruction sufficiency when the future dispute class is open.
 
-If a newly arrived event changes a dimension that the in-flight job actually depends on, the job must:
-- rebase;
-- revalidate against the new frontier;
-- or remain non-governing.
+**LOSSY COMPACTION CANNOT CLAIM UNBOUNDED FUTURE CONTESTABILITY.**
 
-If the new event is irrelevant to the job's dependency signature, a late commit may remain valid.
+## Historical-retention firewall
 
-## Stale-write resurrection
+Historical preservation can be sealed/restricted and excluded from routine current person evaluation.
 
-A stale-write resurrection occurs when an old in-flight result commits after a newer correction has withdrawn or changed authority and thereby restores the defeated state without fresh post-correction warrant.
+**HISTORICAL RETENTION DOES NOT AUTHORIZE ROUTINE PRESENT-DAY REACTIVATION.**
 
-This is distinct from 0.850 generator resurrection.
+## Compaction debt
 
-**A WRITE MAY BE CHRONOLOGICALLY NEW YET EPISTEMICALLY STALE.**
+Compaction debt is represented as lost reopen capabilities, not lost bytes.
 
-## Concurrent corrections
-
-Concurrent events are not automatically contradictory.
-
-They may be:
-- disjoint and commuting;
-- overlapping but mergeable with both provenances preserved;
-- transformation-dependent and requiring rebase;
-- semantically conflicting and requiring a provenance fork/HOLD;
-- consequence-conflicting and requiring explicit consequence-authority review.
-
-**CONCURRENCY IS NOT DISAGREEMENT, AND DISAGREEMENT IS NOT RESOLVED BY ARRIVAL ORDER.**
-
-## Deauthorization guard
-
-A stale descendant cannot restore a state explicitly deauthorized by a newer correction.
-
-A genuinely fresh later correction may restore the same result if it is causally downstream and has fresh warrant/adoption.
-
-**DEAUTHORIZATION IS MONOTONIC AGAINST STALE ANCESTRY, NOT AGAINST FUTURE FRESH WARRANT.**
-
-## Model chronology firewall
-
-A newer model version is not automatically a newer person-authority state.
-
-**MODEL VERSION ORDER IS NOT PERSON-AUTHORITY ORDER.**
+A branch whose declared required tasks are not supported by its compact witness cannot validly retire.
 
 ## Development
 
-Executable kernel: **v0.10.0**
+Executable kernel: **v0.11.0**
 
 New:
-- `src/nomos/correction_concurrency.py`;
-- `tests/test_correction_concurrency.py`;
-- `spec/correction-concurrency.md`;
-- safe/unsafe concurrency fixtures;
-- CLI `--audit-correction-concurrency`.
+- `src/nomos/correction_compaction.py`;
+- `tests/test_correction_compaction.py`;
+- `spec/correction-compaction.md`;
+- safe compaction fixture;
+- CLI `--audit-correction-compaction`.
 
-Invariant family: **CR001–CR016**.
+Invariant family: **GC001–GC024**.
 
-The executable surface tests causal integrity, scoped supersession, concurrent overlap resolution, dual-provenance merge, stale-base commit, wall-clock freshness laundering, model-version authority laundering, stale-write resurrection and completion over unresolved branches.
+The executable surface checks live-authority retirement, unresolved-conflict flattening, consequence orphaning, snapshot coverage/provenance loss, supersession/conflict-history erasure, task loss, open-future overclaim and historical-record reactivation.
 
 CI:
-- v0.10.0 correction-concurrency gate **#150: SUCCESS**;
-- workflow permissions: **contents: read**;
-- Actions repository writeback: **not authorized**.
+- read-only workflow remains **contents: read**;
+- Actions repository writeback remains **not authorized**.
 
 ## External donor ceiling
 
-Version vectors, logical clocks and optimistic concurrency are bounded technical donors. They show why concurrent state and stale-base writes need explicit causal/version structure, but none of them determines substantive person-judgment authority.
+Event sourcing and snapshotting are bounded technical donors: snapshots can reduce replay cost while event history remains distinct. They do not decide person-authority, privacy, retention ethics or future contestability.
+
+## Cross-lab donor ceiling
+
+EPISTEME-P9 contributes only the retention-sufficiency form: more open future dispute classes require richer retained provenance. NOMOS keeps authority over person-judgment use, contestability and historical/current separation.
 
 ## Next title only
 
-**NOMOS-0.852 — Correction-Frontier Garbage Collection, Historical Branch Retention, Conflict Compaction, Provenance-Safe Snapshotting & the Primitive Question of When Superseded Person-Judgment Branches May Stop Participating in Live Governance without Being Erased from the History Needed to Explain, Contest or Reconstruct the Present State**
+**NOMOS-0.853 — Reopen Trigger Governance, Historical-Branch Reactivation, Snapshot Challenge Escalation & the Primitive Question of Who May Reopen a Compacted Person-Judgment Branch, on What Evidence, and How to Prevent Both Permanent Dormancy and Frivolous Historical Reactivation**
 
 **TITLE-LOCKED / NOT OPENED.**
