@@ -30,6 +30,12 @@ jobs:
       - run: PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit-correction-propagation
       - run: PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit-correction-concurrency
       - run: PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-correction-compaction
+      - run: PYTHONPATH=src python -m nomos examples/historical_reopening_safe.json --audit-historical-reopening
+      - run: |
+          if PYTHONPATH=src python -m nomos examples/historical_reopening_unsafe.json --audit-historical-reopening; then
+            echo "unsafe historical-reopening fixture unexpectedly passed"
+            exit 1
+          fi
       - run: |
           if PYTHONPATH=src python -m nomos examples/correction_concurrency_unsafe.json --audit-correction-concurrency; then
             echo "unsafe correction-concurrency fixture unexpectedly passed"
