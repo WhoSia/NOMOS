@@ -121,6 +121,38 @@ Core rules:
 
 **CORRECTING THE SOURCE WITHOUT PROPAGATING THE CORRECTION THROUGH ITS LIVE DESCENDANTS IS NOT COMPLETE RESTORATION.**
 
+### Typed Correction Propagation / Semantic Re-Derivation
+NOMOS-0.850 reopens the older correction-propagation lineage (0.229A and 0.822–0.827) without duplicating it.
+
+The new executable distinction is:
+
+**correction type → descendant dependency semantics → operation-specific re-derivation**
+
+Correction dimensions are typed across factual, provenance, semantic, authority, temporal, regime and consequence changes.
+
+The surface can detect:
+- semantic correction mechanically rerun through an unchanged interpretive mapper;
+- regime/context correction replayed through an unchanged selection/query rule;
+- stale generators capable of recreating a defeated state after visible outputs were repaired;
+- same governing outputs preserved without fresh adoption and fresh warrant;
+- notice-only recipient branches falsely presented as corrected;
+- completion claims while material descendant or recipient branches remain unresolved.
+
+Core rules:
+
+**CORRECTION IS A TYPED STATE CHANGE, NOT A SINGLE BOOLEAN FLAG.**
+
+**PROPAGATION SCOPE IS DETERMINED BY DEPENDENCY SEMANTICS, NOT BY GRAPH REACHABILITY ALONE.**
+
+**RECOMPUTATION UNDER A DEFEATED INTERPRETIVE RULE IS NOT RE-DERIVATION.**
+
+**OUTPUT REPAIR WITHOUT GENERATOR REPAIR IS INCOMPLETE WHEN THE GENERATOR CAN RECREATE THE DEFEATED STATE.**
+
+**RECIPIENT RECALL TRACKS CORRECTION STATE, NOT MERE MESSAGE DELIVERY.**
+
+The historical Drive chat reread of NOMOS 1–7 also recovered an anti-reinvention chain:
+**0.229A → 0.731 → 0.798–0.799 → 0.822–0.827 → 0.835–0.838 → 0.849 → 0.850.**
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -145,17 +177,20 @@ PYTHONPATH=src python -m nomos examples/feedback_restoration_safe.json --plan-fe
 PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
 PYTHONPATH=src python -m nomos examples/divergence_replication_systematic.json --audit-divergence-replication
 PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-record-portability
+PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit-correction-propagation
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.849 — Emergency Residue Reclassification, Successor Baseline Contest & Exceptional-Record Portability — CLOSED.**
+**NOMOS-0.850 — Descendant-Record Correction Propagation, Recipient-Graph Recall, Semantic Re-Derivation & Residual Copy Authority — CLOSED.**
 
-Executable kernel is **v0.8.1**.
+Executable kernel is **v0.9.0**.
 
-The kernel now includes a record-portability audit surface that preserves emergency ancestry through derived records. GitHub Actions are constrained to **`contents: read`** and do not author or write back repository history.
+The kernel now includes typed correction propagation and semantic re-derivation auditing in addition to record portability. The 0.850 stage was opened only after rereading Drive chats NOMOS 1–7 and recovering the older 0.229A / 0.822–0.827 correction lineage, preventing the new surface from merely reinventing graph propagation.
+
+GitHub Actions remain constrained to **`contents: read`** and do not author or write back repository history.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.850 — Descendant-Record Correction Propagation, Recipient-Graph Recall, Semantic Re-Derivation, Residual Copy Authority & the Primitive Question of Whether a Person-Judgment Can Be Meaningfully Corrected When the Original Record Is Reclassified but Its Scores, Summaries, Rankings and Downstream Copies Continue to Act**
+Next title only: **NOMOS-0.851 — Concurrent Correction Events, Supersession Ordering, Re-Derivation Races, Stale-Write Resurrection & the Primitive Question of Which Person-Judgment State May Govern When New Evidence, New Models or Multiple Corrections Arrive before an Earlier Descendant-Graph Repair Has Finished Propagating**
