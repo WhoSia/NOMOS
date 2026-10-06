@@ -27,6 +27,12 @@ jobs:
       - run: PYTHONPATH=src python -m nomos examples/review_divergence_localized.json --audit-review-divergence
       - run: PYTHONPATH=src python -m nomos examples/review_divergence_residual.json --audit-review-divergence
       - run: PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-record-portability
+      - run: PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit-correction-propagation
+      - run: |
+          if PYTHONPATH=src python -m nomos examples/correction_propagation_unsafe.json --audit-correction-propagation; then
+            echo "unsafe correction-propagation fixture unexpectedly passed"
+            exit 1
+          fi
       - run: |
           if PYTHONPATH=src python -m nomos examples/record_portability_unsafe.json --audit-record-portability; then
             echo "unsafe record-portability fixture unexpectedly passed"
