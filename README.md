@@ -178,6 +178,38 @@ Core rules:
 
 **MODEL VERSION ORDER IS NOT PERSON-AUTHORITY ORDER.**
 
+### Historical Branch Retention / Provenance-Safe Snapshotting
+NOMOS-0.852 separates live-governance participation from historical retention.
+
+The new executable distinction is:
+
+**live branch state → declared reopen-task family → provenance-safe snapshot certificate → bounded compaction authority**
+
+Branch lifecycle states:
+- live-governing;
+- live-conflict;
+- historical-reopenable;
+- historical-minimal.
+
+Core rules:
+
+**RETIRING A BRANCH FROM LIVE GOVERNANCE IS NOT ERASING IT FROM INSTITUTIONAL HISTORY.**
+
+**PROVENANCE SUFFICIENCY IS TASK-RELATIVE, AND THE TASK FAMILY MUST BE DECLARED BEFORE COMPACTION.**
+
+**A SNAPSHOT WITHOUT COVERAGE AND PROVENANCE RECEIPTS IS A NEW OPAQUE ASSERTION, NOT A SAFE HISTORICAL COMPACTION.**
+
+**RESOLUTION MAY CLOSE LIVE COMPETITION WITHOUT RETROACTIVELY MAKING THE LOSING BRANCH NEVER HAVE EXISTED.**
+
+**LOSSY COMPACTION CANNOT CLAIM UNBOUNDED FUTURE CONTESTABILITY.**
+
+**HISTORICAL RETENTION DOES NOT AUTHORIZE ROUTINE PRESENT-DAY REACTIVATION.**
+
+The historical genealogy reactivated here is:
+**0.30A → 0.212–0.215 → 0.229A → 0.725–0.726 → 0.798–0.799 → 0.823–0.824 → 0.835–0.836 → 0.851 → 0.852.**
+
+EPISTEME-P9 is used only as a cross-lab donor for the task-relative/open-future retention barrier.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -204,19 +236,20 @@ PYTHONPATH=src python -m nomos examples/divergence_replication_systematic.json -
 PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-record-portability
 PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit-correction-propagation
 PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit-correction-concurrency
+PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-correction-compaction
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.851 — Concurrent Correction Events, Supersession Ordering, Re-Derivation Races & Stale-Write Resurrection — CLOSED.**
+**NOMOS-0.852 — Correction-Frontier Garbage Collection, Historical Branch Retention, Conflict Compaction & Provenance-Safe Snapshotting — CLOSED.**
 
-Executable kernel is **v0.10.0**.
+Executable kernel is **v0.11.0**.
 
-The kernel now audits correction frontiers, causal ordering, dimension-scoped supersession, concurrent correction compatibility, stale-base writes and post-deauthorization resurrection. It does not use wall-clock time, model version, or arrival order as a substitute for person-authority warrant.
+The kernel now audits whether a superseded/resolved correction branch may leave live governance while preserving the declared explanation, contest, reconstruction, attribution, resurrection and consequence-reopening capabilities required of its historical witness.
 
 GitHub Actions remain constrained to **`contents: read`** and do not author or write back repository history.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.852 — Correction-Frontier Garbage Collection, Historical Branch Retention, Conflict Compaction, Provenance-Safe Snapshotting & the Primitive Question of When Superseded Person-Judgment Branches May Stop Participating in Live Governance without Being Erased from the History Needed to Explain, Contest or Reconstruct the Present State**
+Next title only: **NOMOS-0.853 — Reopen Trigger Governance, Historical-Branch Reactivation, Snapshot Challenge Escalation & the Primitive Question of Who May Reopen a Compacted Person-Judgment Branch, on What Evidence, and How to Prevent Both Permanent Dormancy and Frivolous Historical Reactivation**
