@@ -10,6 +10,7 @@ from .correction_concurrency import analyze_correction_concurrency
 from .correction_propagation import analyze_correction_propagation
 from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration
+from .historical_reopening import analyze_historical_reopening
 from .lineage import trace_record
 from .record_portability import analyze_record_portability
 from .review_divergence import analyze_review_divergence
@@ -37,6 +38,11 @@ def main() -> int:
         help="Audit whether localized live↔shadow divergence replicates across clusters, reviewers and case mix",
     )
     parser.add_argument(
+        "--audit-historical-reopening",
+        action="store_true",
+        help="Audit historical-branch reopening triggers, standing, scope and reauthorization firewalls",
+    )
+    parser.add_argument(
         "--audit-correction-compaction",
         action="store_true",
         help="Audit correction-branch retirement, historical retention and provenance-safe snapshotting",
@@ -59,6 +65,12 @@ def main() -> int:
     args = parser.parse_args()
 
     data = json.loads(args.case.read_text(encoding="utf-8"))
+
+    if args.audit_historical_reopening:
+        reopening = data.get("historical_reopening", data)
+        result = analyze_historical_reopening(reopening)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 1 if result["status"] == "FAIL" else 0
 
     if args.audit_correction_compaction:
         compaction = data.get("correction_compaction", data)
