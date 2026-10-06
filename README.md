@@ -210,6 +210,31 @@ The historical genealogy reactivated here is:
 
 EPISTEME-P9 is used only as a cross-lab donor for the task-relative/open-future retention barrier.
 
+### Historical-Branch Reopening / Reauthorization Firewall
+NOMOS-0.853 governs the reverse transition: when retained history may move back into active review.
+
+The executable distinction is:
+
+**historical access → reopen admission → bounded rehydration → active review → fresh current authority**
+
+Recognized trigger families include material new evidence, provenance/integrity defects, newly discovered descendant or consequence dependencies, activated compaction debt, stale-resurrection signals, validated rule/model/query defects and institutional self-correction.
+
+The surface rejects archive-availability-only reopening, repeat requests without a material delta, global cascade reopening without a shared defect, privacy-overbroad rehydration, historical branch counts treated as current evidence, and automatic restoration of an old adverse judgment.
+
+Core rules:
+
+**AUTHORITY TO OPEN HISTORY IS NOT AUTHORITY TO GOVERN FROM HISTORY.**
+
+**STANDING TO ASK FOR REOPENING IS NOT STANDING TO WIN THE REOPENED QUESTION.**
+
+**REOPENING HISTORY DOES NOT REAUTHORIZE THE HISTORICAL JUDGMENT.**
+
+**THE THRESHOLD FOR REVIEW MAY BE LOWER THAN THE THRESHOLD FOR REAUTHORIZATION.**
+
+**REPEATED REOPENING MUST NOT BECOME A SUBSTITUTE FOR FRESH EVIDENCE.**
+
+The stage joins the older 0.772 reactivation-potential distinction, 0.824 reopenability requirement, 0.838–0.841 contestability/router line and 0.852 historical-retention firewall without collapsing into generic appeal design.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -237,19 +262,20 @@ PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-rec
 PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit-correction-propagation
 PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit-correction-concurrency
 PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-correction-compaction
+PYTHONPATH=src python -m nomos examples/historical_reopening_safe.json --audit-historical-reopening
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.852 — Correction-Frontier Garbage Collection, Historical Branch Retention, Conflict Compaction & Provenance-Safe Snapshotting — CLOSED.**
+**NOMOS-0.853 — Reopen Trigger Governance, Historical-Branch Reactivation & Snapshot Challenge Escalation — CLOSED.**
 
-Executable kernel is **v0.11.0**.
+Executable kernel is **v0.12.0**.
 
-The kernel now audits whether a superseded/resolved correction branch may leave live governance while preserving the declared explanation, contest, reconstruction, attribution, resurrection and consequence-reopening capabilities required of its historical witness.
+The kernel now audits whether historically retained person-judgment branches may re-enter active review without allowing historical accessibility, requester standing, review admission or old branch persistence to substitute for fresh current person-authority warrant.
 
 GitHub Actions remain constrained to **`contents: read`** and do not author or write back repository history.
 
 External verification boundary: see **VERIFY.md**.
 
-Next title only: **NOMOS-0.853 — Reopen Trigger Governance, Historical-Branch Reactivation, Snapshot Challenge Escalation & the Primitive Question of Who May Reopen a Compacted Person-Judgment Branch, on What Evidence, and How to Prevent Both Permanent Dormancy and Frivolous Historical Reactivation**
+Next title only: **NOMOS-0.854 — Systemic Reopening, Shared-Defect Propagation, Class-Wide Historical Recall, Sample-to-Cohort Escalation & the Primitive Question of When a Defect Found in One Reopened Branch Creates Duties to Reopen Other Retired Person-Judgment Branches That Share the Same Model, Query, Data Pipeline or Institutional Generator**
