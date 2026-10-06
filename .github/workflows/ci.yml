@@ -29,6 +29,7 @@ jobs:
       - run: PYTHONPATH=src python -m nomos examples/record_portability_safe.json --audit-record-portability
       - run: PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit-correction-propagation
       - run: PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit-correction-concurrency
+      - run: PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-correction-compaction
       - run: |
           if PYTHONPATH=src python -m nomos examples/correction_concurrency_unsafe.json --audit-correction-concurrency; then
             echo "unsafe correction-concurrency fixture unexpectedly passed"
