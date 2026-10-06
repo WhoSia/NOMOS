@@ -1,0 +1,39 @@
+{
+  "historical_reopening": {
+    "branches": [
+      {
+        "id": "branch-retired",
+        "state": "historical_reopenable"
+      }
+    ],
+    "requests": [
+      {
+        "id": "reopen-bad",
+        "branch": "branch-retired",
+        "trigger": "material_new_evidence",
+        "trigger_provenance": false,
+        "material_link": false,
+        "standing": "repair_duty_institution",
+        "standing_fit": true,
+        "archive_availability_only": true,
+        "repeat_request": true,
+        "material_delta": false,
+        "implicated_scopes": ["factual-premise"],
+        "opened_scopes": ["factual-premise", "unrelated-character-label"],
+        "global_defect_justified": false,
+        "requested_state": "active_review",
+        "review_capable_path": true,
+        "closure_receipt_visible": false,
+        "automatic_old_judgment_reauthorization": true,
+        "adverse_current_authority": true,
+        "fresh_current_warrant": false,
+        "fresh_current_adoption": false,
+        "historical_branch_count_used_as_evidence": true,
+        "periodic_reactivation_default": true,
+        "institution_self_initiated": true,
+        "institution_unilateral_adverse_reactivation": true
+      }
+    ],
+    "completion_claim": "complete"
+  }
+}
