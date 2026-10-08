@@ -267,6 +267,15 @@ Correcting a record does not reopen lost deadlines, compensation does not recrea
 
 Structural audit: `src/nomos/restitution.py`, **RD001–RD033**, safe/unsafe fixtures and `--audit-restitution`. These guards audit *declared* receipts; they do not certify actual restitution or compute compensation.
 
+### Institutional Succession / Orphan Repair-Duty Firewall
+NOMOS-0.858 examines the distribution of unresolved historical person-judgment repair tasks when an institution is abolished or reorganized.
+
+**RECORD CUSTODY ≠ OPERATING SUCCESSION ≠ REVIEW AUTHORITY ≠ RESTITUTION LIABILITY.**
+
+**INSTITUTIONAL DISSOLUTION DOES NOT ERASE THE HISTORICAL REPAIR QUESTION.**
+
+Each task requires documented assignment under its own legal authority, a reviewable orphan HOLD with accessible records, or an independently warranted scoped discharge. Record receipt, organization rename, and software ownership are not automatically compensation obligations or merits authority. Audit module: `src/nomos/successor_duties.py`, **SD001–SD032**; the audit does not validate real legal statutes.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -298,11 +307,14 @@ PYTHONPATH=src python -m nomos examples/historical_reopening_safe.json --audit-h
 PYTHONPATH=src python -m nomos examples/recall_triage_safe.json --audit-recall-triage
 PYTHONPATH=src python -m nomos examples/interim_protection_safe.json --audit-interim-protection
 PYTHONPATH=src python -m nomos examples/restitution_safe.json --audit-restitution
+PYTHONPATH=src python -m nomos examples/successor_duties_safe.json --audit-successor-duties
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.857 — Restitution Shortfalls, Interim Expiry, Retroactive Limits & Residual Repair-Debt Discharge — executable v0.16.0; exact-head CI verification pending.**
+**NOMOS-0.858 — Residual Repair-Debt Transfer, Institutional Succession & Obligation Survival — executable kernel v0.17.0; exact-head CI pending.**
 
-GitHub Actions remain read-only (`contents: read`); no automated repository writeback. Next title only: **NOMOS-0.858 — Residual Repair-Debt Transfer, Institutional Succession, Obligation Survival after Review Closure & the Primitive Question of Who Must Carry Undischarged Restitution Duties When the Original Decision-Making Institution, Review Authority or Remedial Program No Longer Exists**.
+GitHub Actions use `contents: read`, with no authored bot writeback.
+
+Next title only: **NOMOS-0.859 — Fragmented Successor Jurisdiction, Joint Repair-Duty Coordination, Multi-Custodian Provenance Reconstruction & the Primitive Question of How Unresolved Person-Judgment Repair Survives When No Single Successor Controls the Records, Review Authority, Operational Systems and Restitution Budget Required for Effective Restoration**.
