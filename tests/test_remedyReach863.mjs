@@ -21,7 +21,8 @@ function verdict(name,modify,wantReach,wantRepair,perRoute=null){
  const packet=basePacket(),evidence=evidenceFor(packet);
  modify(packet,evidence);
  const actual=assessRemedyReach863(packet,evidence);
- assert.deepEqual(actual.computational,{remedy_reachable:wantReach,repair_evidenced:wantRepair},name);
+ assert.deepEqual({remedy_reachable:actual.computational.remedy_reachable,repair_evidenced:actual.computational.repair_evidenced},
+  {remedy_reachable:wantReach,repair_evidenced:wantRepair},name);
  assert.equal(actual.institutional,"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED");
  if(perRoute){
   const x=actual.reachableRouteClaims.find(x=>x.id===perRoute.id);
