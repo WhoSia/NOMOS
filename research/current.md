@@ -1,37 +1,29 @@
-# Current Research Head — NOMOS-0.858
+# Current Research Head — NOMOS-0.859
 
-**Status: OPEN / EXECUTABLE STRUCTURAL COURT / EXACT-HEAD CI PENDING**
+**Status: OPEN / EXECUTABLE STRUCTURAL COURT / CI PENDING**
 
 ## Primitive
-If an institution is dissolved, merged, privatized or replaced while obligations from old person-judgments remain, which specific obligation may move to which successor, on what independently reviewable authority?
+Historical repair is a distributed task, not merely the sum of individually compliant institutions. No single successor may possess records, statutory review competence, payment authority, and recipient operational control.
 
-**RECORD CUSTODY ≠ OPERATING SUCCESSION ≠ REVIEW POWER ≠ RESTITUTION LIABILITY.**
+**INDIVIDUAL INSTITUTIONAL COMPLIANCE ≠ JOINT REPAIR COMPLETION.**
 
-**INSTITUTIONAL DISSOLUTION DOES NOT ERASE THE HISTORICAL REPAIR QUESTION.**
+**COORDINATION AUTHORITY ≠ UNIVERSAL MERITS OR RESTITUTION JURISDICTION.**
 
-**CUSTODY OF A RECORD DOES NOT CONFER LIABILITY FOR THE WRONG RECORDED.**
+## Framework
+Represent each repair task as a dependency on capabilities, a responsible institutional bearer, contributing custodians, statutory handoff warrants, and task-specific evidence. Completion requires end-to-end operational reconciliation, not locally reported success. No automatic joint legal liability follows from required cooperation.
 
-## Duty-specific transition
-Each known historical duty must be:
-- assigned to an actual institution supported by competent legal/institutional warrant; or
-- retained as an `orphan_hold` with accessible records and a real route to determine responsibility; or
-- discharged only by a scoped and independently reviewed legal disposition.
-
-A historical defect and a missing successor warrant do not authorize invention of successor liability. An orphan HOLD is not the same as legal enforceability, and is not allowed to become an inaccessible black hole.
-
-## Competing defects
-(1) responsibility-washing via dissolution or legal-name change; (2) automatic universal liability by mere custody, contract, archive receipt or software supply; (3) loss of review, notice and interim measures during the transfer; (4) concealed split responsibility for recipient copies and compensatory relief.
+A case can be held in an accountable coordination state even where legally competent authority is fragmented. Unreviewable veto and cross-agency data transfers without privacy scope are inadmissible. A claimant should have one practical challenge pathway without inventing one superagency that can adjudicate everything.
 
 ## Anti-reinvention
-Public Records Management Act (Republic of Korea) Art. 25 explicitly governs records of abolished public agencies with and without successors; records preservation does not logically settle remedy liability. Institutional legal succession is existing doctrine, not original NOMOS theory. Nomos tests a more bounded claim: typed, task-wise successor transition and preserved contestability of already established historical repair debt, without automatic old person-authority renewal.
+Administrative coordination, multi-agency service delivery, record-sharing, data provenance and distributed transaction protocols are established disciplines. NOMOS's bounded candidate is a post-error-repair task/authority firewall for retired person judgments, and requires empirical and legal comparison before novelty claims.
 
-## Implementation
-v0.17.0, `src/nomos/successor_duties.py` negative audit **SD001–SD032**; unit tests; safe/unsafe fixtures; `--audit-successor-duties`; read-only CI. These assertions are not authenticated legal proof.
+## Code
+Kernel **v0.18.0**; `src/nomos/joint_repair.py`; invariants JC001–JC031; dedicated unit tests, `spec/joint-repair.md`, safe/unsafe fixtures, `--audit-joint-repair`, read-only CI. All flags self-attested and must not be treated as legal proof.
 
-## Genealogy
-0.229A; 0.772 reactivation potential; 0.824 reopenability; 0.847 distributional restoration; 0.849 successor baseline portability; 0.850 correction propagation; 0.853–0.857 history→cohort→queue→protection→residual debt; 0.858 bearer transition.
+## History
+0.814 shared-defect route, 0.834 shared causation, 0.839 review independence, 0.841 routing authority, 0.849 successor baseline, 0.853–0.858 historical repair sequence.
 
 ## Next title only
-**NOMOS-0.859 — Fragmented Successor Jurisdiction, Joint Repair-Duty Coordination, Multi-Custodian Provenance Reconstruction & the Primitive Question of How Unresolved Person-Judgment Repair Survives When No Single Successor Controls the Records, Review Authority, Operational Systems and Restitution Budget Required for Effective Restoration**
+**NOMOS-0.860 — Joint-Repair Deadlock, Interinstitutional Veto Authority, Cross-Agency Priority Conflict, Coordination Escalation & the Primitive Question of When a Legally Distributed Repair Process Becomes Institutionally Noncompletable despite Every Participating Body Claiming Compliance**
 
 **TITLE-LOCKED / NOT OPENED.**
