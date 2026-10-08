@@ -1,34 +1,37 @@
-# Current Research Head — NOMOS-0.857
+# Current Research Head — NOMOS-0.858
 
-**Status: EXECUTABLE STRUCTURAL COURT / EXACT-HEAD CI VERIFICATION PENDING**
+**Status: OPEN / EXECUTABLE STRUCTURAL COURT / EXACT-HEAD CI PENDING**
 
 ## Primitive
-Whether a delayed review can discharge institutional repair debt despite lost opportunities, residual damages, interim expiry, downstream copies and third-party reliance.
+If an institution is dissolved, merged, privatized or replaced while obligations from old person-judgments remain, which specific obligation may move to which successor, on what independently reviewable authority?
 
-**REVIEW COMPLETION ≠ RESTITUTION ≠ REPAIR-DEBT DISCHARGE.**
+**RECORD CUSTODY ≠ OPERATING SUCCESSION ≠ REVIEW POWER ≠ RESTITUTION LIABILITY.**
 
-Review closure, record re-derivation, descendant consequence repair, compensation, irrecoverable opportunity acknowledgments, and task-relative institutional debt discharge are distinct certificates. The institution may finish one without pretending the others never mattered. The existence of residual moral injury does not itself create unlimited merits-reopening authority.
+**INSTITUTIONAL DISSOLUTION DOES NOT ERASE THE HISTORICAL REPAIR QUESTION.**
 
-## Normative boundaries
-- Monetary compensation, apology and record correction cannot literally reverse time or recreate expiring opportunities.
-- Counterparty rights and reliance require independent review but do not prove the defeated old person classification.
-- Interim expiry is not fresh authority for the old adverse judgment.
-- Affected persons retain access to reasoned closure and contestation; institution-held provenance burdens stay institutional.
-- A known unresolved copy/recipient or lost-opportunity duty remains scoped debt, not falsely complete.
-- Avoid scalar restitution, false equivalence or universal entitlement inference.
+**CUSTODY OF A RECORD DOES NOT CONFER LIABILITY FOR THE WRONG RECORDED.**
+
+## Duty-specific transition
+Each known historical duty must be:
+- assigned to an actual institution supported by competent legal/institutional warrant; or
+- retained as an `orphan_hold` with accessible records and a real route to determine responsibility; or
+- discharged only by a scoped and independently reviewed legal disposition.
+
+A historical defect and a missing successor warrant do not authorize invention of successor liability. An orphan HOLD is not the same as legal enforceability, and is not allowed to become an inaccessible black hole.
+
+## Competing defects
+(1) responsibility-washing via dissolution or legal-name change; (2) automatic universal liability by mere custody, contract, archive receipt or software supply; (3) loss of review, notice and interim measures during the transfer; (4) concealed split responsibility for recipient copies and compensatory relief.
 
 ## Anti-reinvention
-Corrective justice and moral repair scholarship already recognize incomplete restoration. Lazar (2008) and *After Harm* (2025) defeat broad novelty claims. Distinctive candidate: auditable typed closure across historical person-j judgment, recipient copies and consequence governance, requiring independent completion warrants.
+Public Records Management Act (Republic of Korea) Art. 25 explicitly governs records of abolished public agencies with and without successors; records preservation does not logically settle remedy liability. Institutional legal succession is existing doctrine, not original NOMOS theory. Nomos tests a more bounded claim: typed, task-wise successor transition and preserved contestability of already established historical repair debt, without automatic old person-authority renewal.
 
-## Development
-Kernel **v0.16.0**, `src/nomos/restitution.py`, dedicated tests, `spec/restitution.md`, safe/unsafe fixtures, CLI `--audit-restitution` and CI. Structural invariants RD001–RD033.
+## Implementation
+v0.17.0, `src/nomos/successor_duties.py` negative audit **SD001–SD032**; unit tests; safe/unsafe fixtures; `--audit-successor-duties`; read-only CI. These assertions are not authenticated legal proof.
 
-**Test caveat:** tests and GitHub Actions result must be independently verified; code checks claimed receipt fields, does not validate real payments, lost opportunities or moral repair.
-
-## Prior lineage
-0.229A, 0.731, 0.798–0.799, 0.822–0.827, 0.846–0.850; 0.852 historical compaction → 0.853 reopening → 0.854 cohort recall → 0.855 capacity triage → 0.856 interim protection → 0.857 terminal/restoration authority.
+## Genealogy
+0.229A; 0.772 reactivation potential; 0.824 reopenability; 0.847 distributional restoration; 0.849 successor baseline portability; 0.850 correction propagation; 0.853–0.857 history→cohort→queue→protection→residual debt; 0.858 bearer transition.
 
 ## Next title only
-**NOMOS-0.858 — Residual Repair-Debt Transfer, Institutional Succession, Obligation Survival after Review Closure & the Primitive Question of Who Must Carry Undischarged Restitution Duties When the Original Decision-Making Institution, Review Authority or Remedial Program No Longer Exists**
+**NOMOS-0.859 — Fragmented Successor Jurisdiction, Joint Repair-Duty Coordination, Multi-Custodian Provenance Reconstruction & the Primitive Question of How Unresolved Person-Judgment Repair Survives When No Single Successor Controls the Records, Review Authority, Operational Systems and Restitution Budget Required for Effective Restoration**
 
 **TITLE-LOCKED / NOT OPENED.**
