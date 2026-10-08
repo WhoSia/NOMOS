@@ -15,7 +15,7 @@ person("judgeE","E",["resolution"]);person("judgeF","F",["resolution"]);
 person("origin","origin",["status","resolution"]);person("other","other",["status"]);
 const root={
  id:"governance-v6",epoch:6,minimumEpoch:6,jurisdiction:"TEST-ONLY",asOf:now,
- quorum:2,maxStatusAgeDays:7,subjectGroup:"origin",
+ quorum:2,maxStatusAgeDays:7,maxChallengeAgeDays:14,subjectGroup:"origin",
  keys:Object.fromEntries(Object.values(people).map(p=>[p.id,{
   publicKeyDerBase64:p.publicKeyDerBase64,roles:p.roles,group:p.group,
   from:"2026-01-01",until:"2026-12-31"}])),
@@ -60,6 +60,9 @@ run("tampered signature",p=>{p.events[0].claim.state="revoked"},"UNKNOWN");
 run("tampered source bytes",p=>{p.sources[0].text+=" modified"},"UNKNOWN");
 run("untrusted key role",(_,c)=>{c.keys.goodA.roles=["challenge"]},"UNKNOWN");
 run("old key revoked by pinned policy",(_,c)=>{c.revokedKeys=["goodA"]},"UNKNOWN");
+run("aged unresolved challenge escalates without restoring status",p=>{
+ p.events.push(ev("challenge","challenger","challenge",{reason:"omitted_route",counterRouteId:"r2",issuedOn:"2026-09-20"}));
+},"ESCALATION_REQUIRED");
 run("legitimate census challenge holds",p=>{p.events.push(ev("challenge","challenger","challenge",{reason:"omitted_route",counterRouteId:"r2"}))},"CHALLENGED");
 run("malicious invalid census challenge cannot freeze",p=>{
  p.events.push(ev("challenge","challenger","challenge",{reason:"omitted_route",counterRouteId:"r1"}));
