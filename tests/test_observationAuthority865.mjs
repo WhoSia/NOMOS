@@ -1,0 +1,17 @@
+import assert from "node:assert/strict";
+import {assessObservationAuthority865} from "../tools/observationAuthority865.mjs";
+const scope={caseId:"fiction",nodeId:"governing",asOf:"2026-10-09",governingCopyId:"copy1"};
+const read=(observerId,provenanceRoots)=>({...scope,observerId,provenanceRoots});
+let r=assessObservationAuthority865({scope,readbacks:[read("watchdog-A",["db"]),read("watchdog-B",["db"])],untrustedControllingRoots:["db"]});
+assert.equal(r.verdict,"INDEPENDENCE_REFUTED_BY_SHARED_CONTROLLER");
+assert.equal(r.independenceCertified,false);
+r=assessObservationAuthority865({scope,readbacks:[read("A",["a"]),read("B",["b"])],untrustedControllingRoots:["db"]});
+assert.equal(r.verdict,"INDEPENDENCE_NOT_ESTABLISHED");
+assert.equal(r.independenceCertified,false);
+r=assessObservationAuthority865({scope,readbacks:[read("A",["shared"]),read("B",["shared"])],untrustedControllingRoots:[]});
+assert.equal(r.verdict,"INDEPENDENCE_NOT_ESTABLISHED");
+assert.deepEqual(r.sharedRoots,["shared"]);
+assert.throws(()=>assessObservationAuthority865({scope,readbacks:[read("A",["x"]),{...read("B",["y"]),caseId:"other"}]}));
+assert.throws(()=>assessObservationAuthority865({scope,readbacks:[read("A",["x"]),read("A",["y"])]}));
+assert.throws(()=>assessObservationAuthority865({scope,readbacks:[read("A",[]),read("B",["y"])]}));
+console.log("NOMOS 0.865 P1 observation authority negative audit PASS");
