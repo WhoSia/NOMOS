@@ -299,6 +299,28 @@ node tools/deadlock860.mjs examples/deadlock860_cases.json
 
 All P1–P4 research sections live inside one NOMOS-0.860 Notion canonical. Exact-head CI SUCCESS remains a separate closure gate.
 
+### NOMOS-0.861 — Evidence Attestation without Self-Sovereignty
+
+**SIGNED ≠ TRUE ≠ LAWFUL ≠ INDEPENDENT ≠ COMPLETE.**
+
+NOMOS-0.861 confronts the assumption gap exposed by the 0.860 finite AND/OR deadlock court. It adds an independently rooted, synthetic, cryptographic evidence-precondition verifier rather than a new blanket checklist.
+
+- `tools/attest861.mjs` verifies Ed25519-signed, case/jurisdiction/time-scoped attestation receipts with **separately passed** issuer/control/role trust anchors and source SHA-256 pins.
+- It accepts distinct evidence roles for legal route warrants, observed base facts, reviewer dependency-break receipts and an independently signed bounded route-census claim.
+- The original agency and a reviewer controlled by it cannot self-certify a successor's power or appellate independence within the declared trust policy.
+- Unwitnessed initial facts become UNKNOWN rather than being silently injected into the 0.860 verified lower fixed point.
+- The verifier checks declared live Q/E/M/I/A/C dependency breaks and a remedy path **without claiming to prove real reviewer independence**.
+- It returns minimized proof provenance, model-relative actionability and an explicit **NOT_INDEPENDENTLY_LEGALLY_CERTIFIED** institutional verdict.
+- The issuing keys and document pins in automated tests are **fictional**. Cryptographic attribution does not validate the truth of a legal claim or completeness of all lawful routes.
+
+```bash
+node tests/test_attest861.mjs
+# A valid CLI packet requires a separate, independently pinned trust policy:
+node tools/attest861.mjs <packet.json> <trusted-policy.json>
+```
+
+The kernel remains **v0.18.0**. The stage's mathematical and evidence-composition court is scoped to synthetic input and explicitly does not provide legal advice, administrative merits determinations or a live compensation engine. Canonical P0–P4 live in one Notion document.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -337,6 +359,6 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.860 — Joint-Repair Deadlock: BOUNDED THEORY SEALED / locally checked Node.js countermodels / exact-head CI PENDING / kernel v0.18.0 unchanged.**
+**NOMOS-0.861 — Authority-Evidence Attestation, Jurisdictional Warrant Provenance & Reviewer-Dependency Authentication — bounded theory + synthetic Node.js executable verification; documentation exact-head CI pending; kernel v0.18.0 unchanged.**
 
-**Next title proposed, not opened:** NOMOS-0.861 — Authority-Evidence Attestation, Jurisdictional Warrant Provenance, Reviewer-Dependency Authentication, Temporal Legal-Route Reconstruction & the Primitive Question of What Evidence Can Convert a Bounded Repair-Graph Verdict into an Institutionally Justified Claim of Actionability or Noncompletability without Letting the Attesting Institution Certify Its Own Authority.
+Next title only, not opened: **NOMOS-0.862 — Trust-Root Contestability, Attestor Governance, Authority-Credential Revocation Freshness, Legal-Route Census Challenge & the Primitive Question of Who May Certify the Evidence Needed to Legitimate Institutional Repair without Allowing the Registrar, Auditor or Reviewing Authority to Become a New Self-Sealing Sovereign**.
