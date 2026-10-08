@@ -56,3 +56,15 @@ Test precommit includes stale derivative, missing recipient, stale/falsely indep
 Do not seal until exact-head CI SUCCESS is independently checked, human-only author/committer provenance is audited, and the source-to-claim comparison is documented. Actual claimant-relative correction, trusted live census, independent signatures, legal powers, and causal identification remain explicit external HOLDs.
 
 No product/service accepts actual identity or legal petitions.
+
+## P4 preseal extension — explicit 0.850 semantic mismatch gate
+
+The earlier `assessConsequenceRepair864` is a surface readback classifier, not a NOMOS-0.850 semantic re-derivation proof. `assessSemanticRepair864` is an explicitly *synthetic negative gate*:
+1. Target-value readback alone is insufficient.
+2. Source defeat, fresh warrant, changed mapper, and fresh re-derivation are separate model assumptions.
+3. Active generator replay must be tested; a resurrected defeated judgment produces OBSERVED_INCOMPLETE; missing replay evidence produces UNKNOWN.
+4. Even a passing synthetic gate returns SEMANTICALLY_SUPPORTED_IN_SYNTHETIC_MODEL_ONLY, not a trusted real-world repair certificate.
+
+At source HEAD `73b456e08da05c2b5e40e826c8ad43b88a11a63d`, the live GitHub source/test blobs were re-fetched. The exact regression body with host imports adapted to an isolated V8 JS evaluator passed **28 assertions**, including these four semantic gates. This is NOT a GitHub Actions exact-head success nor Node.js 22 full-suite execution.
+
+**Verdict remains PRESEAL / EXACT-HEAD CI HOLD.** 0.865 is not authorized by a PRESEAL result. Publication authority remains strictly synthetic and declared-model-relative.
