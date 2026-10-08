@@ -73,7 +73,7 @@ export function assessRemedyReach863(packet,evidence){
  }
  const result=assess860({goals:[...MODEL_GOALS863,...perRoute.flatMap(r=>[r.eligibleGoal,r.completeGoal])],facts:["__entry__"],rules,
     alternativesComplete:true,evidenceScopeVerified:true});
- return {status:"BOUNDED_REMEDY_MODEL_ONLY",
+ return {status:"HYPOTHETICAL_REMEDY_MODEL_ONLY",
    computational:result.verdicts,
    proofTrace:trace,reachableRouteClaims:perRoute.map(r=>({
       id:r.id,channelType:r.channelType,
@@ -148,7 +148,7 @@ export function assessGovernedRemedyReach863(
    packetDigest:digest861(canonical861(caseRoutes)),
    enumeratedRouteIds:caseRoutes.routes.map(r=>r.id),claims};
  const modeled=assessRemedyReach863(caseRoutes,evidence);
- return {...modeled,upstream:"GOVERNED_ATTESTED_MODEL_ONLY",
+ return {...modeled,status:"GOVERNED_ATTRIBUTED_MODEL_ONLY",upstream:"GOVERNED_ATTESTED_MODEL_ONLY",
    evidenceReceiptCount:receipts.length,
    proofCeiling:"PROVEN SIGNER ATTRIBUTION AND DECLARED PATH MODEL; NOT REAL LEGAL ENTITLEMENT"};
 }
