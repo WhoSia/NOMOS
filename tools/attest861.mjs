@@ -79,7 +79,7 @@ export function verify861(packet, policy) {
       }catch{why="BAD_KEY_OR_SIGNATURE";}
     }
     details.push({id:proof.id,kind:c?.kind||"unknown",accepted:!why,reason:why||"SIGNED_AND_PINNED_NOT_LEGALLY_CERTIFIED"});
-    if(why)errors.push({proofId:proof.id,reason:why});else accepted.push(c);
+    if(why)errors.push({proofId:proof.id,reason:why});else accepted.push({...c,proofId:proof.id});
   }
   // Conflicting accepted attestations are neither verified nor denied.
   function assertions(kind,routeId){
@@ -120,6 +120,11 @@ export function verify861(packet, policy) {
     computational:gate.verdicts, institutional:institutionalVerdicts,
     evidence:{accepted:accepted.length,rejected:errors.length,proofs:details,
       pinnedSources:[...pinnedSources].sort(),signedCensusClaim:censusValid,
+      acceptedReceipts:accepted.map(c=>({proofId:c.proofId,issuer:c.issuer,
+        role:c.kind,routeId:c.routeId||null,factId:c.factId||null,sourceId:c.sourceId,
+        sourceSha256:policy.sourcePins[c.sourceId].digest,
+        issuedOn:c.issuedOn,validFrom:c.validFrom,validUntil:c.validUntil,
+        controlGroup:policy.trustedKeys[c.issuer].controlGroup})),
       independentPolicyMaterial:"EXTERNALLY_SUPPLIED_NOT_INFERRED_FROM_PACKET"},
     caveat:"Signature and source pin verify integrity, NOT truth, jurisdictional competence, reviewer epistemic independence or legal completeness."};
 }
