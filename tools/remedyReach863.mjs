@@ -5,6 +5,7 @@
 // they are never accepted from the contested route packet itself.
 import { assess860 } from "./deadlock860.mjs";
 import { canonical861, digest861 } from "./attest861.mjs";
+import { verifyGoverned862 } from "./governance862.mjs";
 import {readFileSync} from "node:fs";
 import {pathToFileURL} from "node:url";
 
@@ -82,6 +83,66 @@ export function assessRemedyReach863(packet,evidence){
    institutional:"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED",
    interpretation:"Reachability is conditional on externally derived, complete finite claimant-route evidence. No live court, submission, identity verification, legal deadline, or correction is certified."};
 }
+
+/**
+ * Authenticate modeled path inputs by EXECUTING prior verifier layers.
+ * Every step corresponds to a 0.861 route, covered by 0.862 signed census.
+ * Never treats signed assertions as actual laws or completed remedies.
+ */
+export function assessGovernedRemedyReach863(
+  caseRoutes,legacyPacket,legacyPolicy,charter,rootRecord,censusRecord
+){
+ validateRoutes863(caseRoutes);
+ const needed=caseRoutes.routes.flatMap(r=>STAGES863.map(st=>r.steps[st]));
+ if(!unique(needed))return unknownGoals("STEP_EVIDENCE_REUSED_ACROSS_PATHS");
+ if(legacyPacket?.caseId!==caseRoutes.caseId ||
+   legacyPolicy?.jurisdiction!==caseRoutes.jurisdiction ||
+   legacyPolicy?.asOf!==caseRoutes.asOf ||
+   !Array.isArray(legacyPacket?.model?.rules)||
+   !Array.isArray(censusRecord?.declaredRouteIds))return unknownGoals("BOUNDARY_CASE_OR_SNAPSHOT_MISMATCH");
+ const upstreamRuleIds=legacyPacket.model.rules.map(x=>x.id);
+ const censusIds=censusRecord.declaredRouteIds;
+ if(!unique(upstreamRuleIds)||!unique(censusIds)||
+    upstreamRuleIds.length!==needed.length||
+    !needed.every(x=>upstreamRuleIds.includes(x))||
+    censusIds.length!==needed.length||
+    !needed.every(x=>censusIds.includes(x)))return unknownGoals("MISSING_EXACT_SIGNED_ROUTE_CENSUS");
+ const governed=verifyGoverned862(
+   legacyPacket,legacyPolicy,charter,rootRecord,censusRecord);
+ if(governed.status!=="GOVERNED_MODEL_BOUNDS_ONLY" ||
+    governed.downstream?.status!=="ATTESTED_MODEL_BOUNDS_ONLY"){
+   return {...unknownGoals("UPSTREAM_GOVERNANCE_OR_ATTESTATION_HOLD"),
+     upstream:governed.status};
+ }
+ const warrants=governed.downstream.modeledRuleWarrants;
+ const receipts=governed.downstream.evidence?.acceptedReceipts||[];
+ const witness=new Map();
+ for(const receipt of receipts){
+   if(receipt.role!=="route"||!needed.includes(receipt.routeId))continue;
+   if(!witness.has(receipt.routeId))witness.set(receipt.routeId,[]);
+   witness.get(receipt.routeId).push(receipt.proofId);
+ }
+ const claims=caseRoutes.routes.flatMap(r=>STAGES863.map(stage=>{
+   const id=r.steps[stage];
+   const proofs=witness.get(id)||[];
+   const proposed=warrants[id];
+   const status=proofs.length&&["verified","denied"].includes(proposed)?
+     proposed:"unknown";
+   return {id,routeId:r.id,stage,caseId:caseRoutes.caseId,
+     jurisdiction:caseRoutes.jurisdiction,asOf:caseRoutes.asOf,
+     scope:r.channelType,status,proofRefs:proofs};
+ }));
+ const evidence={status:"GOVERNED_MODEL_BOUNDS_ONLY",
+   caseId:caseRoutes.caseId,jurisdiction:caseRoutes.jurisdiction,
+   asOf:caseRoutes.asOf,policyDigest:digest861(canonical861(legacyPolicy)),
+   packetDigest:digest861(canonical861(caseRoutes)),
+   enumeratedRouteIds:caseRoutes.routes.map(r=>r.id),claims};
+ const modeled=assessRemedyReach863(caseRoutes,evidence);
+ return {...modeled,upstream:"GOVERNED_ATTESTED_MODEL_ONLY",
+   evidenceReceiptCount:receipts.length,
+   proofCeiling:"PROVEN SIGNER ATTRIBUTION AND DECLARED PATH MODEL; NOT REAL LEGAL ENTITLEMENT"};
+}
+
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
  if(process.argv.length!==4){console.error("Usage: node tools/remedyReach863.mjs <case-routes.json> <externally-derived-evidence.json>");process.exitCode=2;}
  else console.log(JSON.stringify(assessRemedyReach863(
