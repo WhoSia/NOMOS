@@ -321,6 +321,28 @@ node tools/attest861.mjs <packet.json> <trusted-policy.json>
 
 The kernel remains **v0.18.0**. The stage's mathematical and evidence-composition court is scoped to synthetic input and explicitly does not provide legal advice, administrative merits determinations or a live compensation engine. Canonical P0–P4 live in one Notion document.
 
+### NOMOS-0.862 — Contestable Trust-Root Governance and Freshness Firewall
+
+**VALID SIGNATURE ≠ LEGITIMATE TRUST ROOT.**  
+**QUORUM OF KEYS ≠ QUORUM OF INDEPENDENT CONTROLLERS.**  
+**OLD GOOD STATUS ≠ CURRENT NONREVOCATION.**
+
+A Node.js governance court extends the 0.861 signed-evidence verifier, without adding a new person-judgment or legal-authority engine:
+
+- `tools/governance862.mjs`: externally supplied charter, epoch and minimum-epoch policy, issuer roles and control groups, source pins, ED25519 signatures, signed route-census digest, attested status recency, independently signed challenge events and a group-diverse resolution channel.
+- Status is typed ELIGIBLE_MODEL, UNKNOWN, FRESHNESS_HOLD, REVOKED_ATTESTED, CHALLENGED or ESCALATION_REQUIRED; every result still says **NOT_INDEPENDENTLY_LEGALLY_CERTIFIED**.
+- An aged unresolved challenge is escalated but **never automatically dismissed or promoted**.
+- `verifyGoverned862` uses a pinned digest of the exact 0.861 trust policy and demands admissible governance status of both root and case-specific route inventory. A governance HOLD forces all downstream results to UNKNOWN, even if the unguarded finite model previously declared ACTIONABLE or BOUNDED_BLOCKED.
+- `tests/test_governance862.mjs`, `tests/test_governance862_integration.mjs`: synthetic key/group Sybil, revocation, stale status, compromised role, route swapping, external census challenge, captured dismissal, and four observationally identical worlds with distinct hidden institutional facts.
+- No actual government credential, court power, independent complainant portal, trusted timestamp, valid real-world status freshness or Merkle log is asserted.
+
+```bash
+node tests/test_governance862.mjs
+node tests/test_governance862_integration.mjs
+```
+
+The kernel remains **v0.18.0**. The proof is conditional on externally set issuer/group policy; those governance assumptions are NOT rendered true by passing signatures. Canonical NOMOS-0.862 P0–P4 is a single Notion page, with Harvest reserved for source-index fragments.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -359,6 +381,6 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.861 — Authority-Evidence Attestation, Jurisdictional Warrant Provenance & Reviewer-Dependency Authentication — bounded theory + synthetic Node.js executable verification; exact-head CI gated; kernel v0.18.0 unchanged.**
+**NOMOS-0.862 — Trust-Root Contestability, Attestor Governance, Credential Status Freshness & Route-Census Challenge — OPEN / bounded mathematical and synthetic execution PASS / real-world legal legitimacy HOLD.**
 
-Next title only, not opened: **NOMOS-0.862 — Trust-Root Contestability, Attestor Governance, Authority-Credential Revocation Freshness, Legal-Route Census Challenge & the Primitive Question of Who May Certify the Evidence Needed to Legitimate Institutional Repair without Allowing the Registrar, Auditor or Reviewing Authority to Become a New Self-Sealing Sovereign**.
+Node.js/JSON/YAML verification surface; Python kernel **v0.18.0 unchanged**. No unconditional legal authority claim. No 0.863 opening or title until independent contestation and current status source are actually grounded.
