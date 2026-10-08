@@ -1,29 +1,32 @@
-# Current Research Head — NOMOS-0.859
+# Current Research Head — NOMOS-0.860
 
-**Status: OPEN / EXECUTABLE STRUCTURAL COURT / CI PENDING**
+**Status: OPEN / MATHEMATICAL PRESEAL / IMPLEMENTATION HOLD**
 
-## Primitive
-Historical repair is a distributed task, not merely the sum of individually compliant institutions. No single successor may possess records, statutory review competence, payment authority, and recipient operational control.
+**INSTITUTIONAL NONCOMPLETABILITY ≠ GRAPH CYCLE ≠ LEGALLY WARRANTED VETO ≠ ORDINARY BACKLOG.**
 
-**INDIVIDUAL INSTITUTIONAL COMPLIANCE ≠ JOINT REPAIR COMPLETION.**
+NOMOS-0.855–0.859 progressed quickly through one module and 30-plus mostly declarative guards per stage. 0.860 deliberately changes the method: first audit existing self-attested checks and confront prior art, then require counterexamples and a bounded semantics, and only then implement.
 
-**COORDINATION AUTHORITY ≠ UNIVERSAL MERITS OR RESTITUTION JURISDICTION.**
+**0.859 limitation:** JC025 checks only whether capabilities are declared in an agency union; JC026 trusts boolean handoff authority; JC018 trusts a declared unreviewable veto. These are NOT proofs of real lawful task executability or deadlock.
 
-## Framework
-Represent each repair task as a dependency on capabilities, a responsible institutional bearer, contributing custodians, statutory handoff warrants, and task-specific evidence. Completion requires end-to-end operational reconciliation, not locally reported success. No automatic joint legal liability follows from required cooperation.
+## Preseal questions
 
-A case can be held in an accountable coordination state even where legally competent authority is fragmented. Unreviewable veto and cross-agency data transfers without privacy scope are inadmissible. A claimant should have one practical challenge pathway without inventing one superagency that can adjudicate everything.
+1. A circular waiting graph can contain an independently valid alternate route.
+2. Acyclic action can be impossible where a legally competent bearer does not exist.
+3. A refusal to disclose protected information can be legitimate and must not be overridden by a coordinator for workflow efficiency.
+4. Local compliance certificates do not establish global execution or final person-merits authority.
+5. An appeal channel can be formally identified but substantively self-sealing through the same generator.
+6. Legal availability is time- and evidence-relative; do not mistake current HOLD for permanent impossibility.
 
-## Anti-reinvention
-Administrative coordination, multi-agency service delivery, record-sharing, data provenance and distributed transaction protocols are established disciplines. NOMOS's bounded candidate is a post-error-repair task/authority firewall for retired person judgments, and requires empirical and legal comparison before novelty claims.
+Represent tasks as a typed AND/OR dependency hypergraph with separately warranted legal prerequisites and independently reviewable institutional refusals. Outcomes may only be **BOUNDED_BLOCKED**, **ACTIONABLE**, or **UNKNOWN**, scoped to supplied authority/evidence rather than actual judicial conclusions.
 
-## Code
-Kernel **v0.18.0**; `src/nomos/joint_repair.py`; invariants JC001–JC031; dedicated unit tests, `spec/joint-repair.md`, safe/unsafe fixtures, `--audit-joint-repair`, read-only CI. All flags self-attested and must not be treated as legal proof.
+## Novelty restraint
+Ansell & Gash (2008) collaborative governance, administrative accountability fragmentation and classic distributed-systems deadlock are pre-existing literatures. NOMOS must not claim the graph model or generic collaboration obstacles as new.
 
-## History
-0.814 shared-defect route, 0.834 shared causation, 0.839 review independence, 0.841 routing authority, 0.849 successor baseline, 0.853–0.858 historical repair sequence.
+## Execution
+`spec/joint-deadlock-preseal.md` authored. **Kernel stays v0.18.0**; no 0.860 test/CLI/CI module yet. No CLOSED claim.
 
-## Next title only
-**NOMOS-0.860 — Joint-Repair Deadlock, Interinstitutional Veto Authority, Cross-Agency Priority Conflict, Coordination Escalation & the Primitive Question of When a Legally Distributed Repair Process Becomes Institutionally Noncompletable despite Every Participating Body Claiming Compliance**
+## Gate before implementation
+Produce legal/capability evidence receipts, three independent hard witnesses, OR-cycle counterexample, independent rival explanation, and a sound bounded blocking verdict. A larger boolean checklist is not sufficient.
 
-**TITLE-LOCKED / NOT OPENED.**
+## Next title
+**NOT PROPOSED until 0.860 survives the preseal.**
