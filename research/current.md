@@ -1,33 +1,37 @@
-# Current Research Head — NOMOS-0.855
+# Current Research Head — NOMOS-0.856
 
-**Status: STRUCTURAL PASS / RESEARCH CLOSURE PENDING EXACT-HEAD CI**
+**Status: STRUCTURAL IMPLEMENTATION COMPLETE / CI VERIFICATION PENDING**
 
 ## Primitive question
-When a validated historical recall cohort exceeds review capacity, which claims may justify ordering review, and how does that policy avoid becoming a new person-judgment?
+What protection is owed during delay when a previously authorized historical recall cannot immediately receive review, and when does waiting itself become an unreviewed adverse decision?
 
-## Core
-**RECALL ELIGIBILITY ≠ QUEUE PRIORITY ≠ MERITS ≠ CONSEQUENCE AUTHORITY.**
+## Theory
+Historical recall, review sequencing, interim protection, merits and consequence reauthorization are five nonidentical authority types.
 
-**QUEUE PRIORITY IS REPAIR-SEQUENCING AUTHORITY, NOT PERSON-JUDGMENT AUTHORITY.**
+**INSTITUTIONAL WAITING TIME MUST NOT BECOME AN UNREVIEWED NEW ADVERSE PERSON-JUDGMENT.**
 
-A queue priority is repair-process governance; queue policy must not reuse defeated adverse labels to infer personal deservingness, character or blame.
+**INTERIM PROTECTION IS NOT MERITS ADJUDICATION.**
 
-Delay can have unequal, material consequences. Scarce review resources do not erase the standing of already recalled cases or convert postponed cases into valid person judgments.
+**EXPIRED TEMPORARY PROTECTION DOES NOT BY ITSELF REAUTHORIZE A DEFEATED ADVERSE JUDGMENT.**
 
-First-come-first-served can reflect unequal access to notification. Cheap-case-first maximizes throughput only under an independently justified objective and cannot indefinitely defer harder but consequential cases. Lottery is appropriate only among independently permissible alternatives, not to override deadlines or interim floors.
+Temporary measures require distinct institutional authority, task-relative scope, consideration of continuing consequence and irreversible delay, reasons, review, notice, counterparty impact, time bounds and operational reality.
+
+Doing nothing may be justified only as an express, independently reasoned nonintervention rather than silent continuation. Blanket suspension is likewise not implied by recall.
+
+Remedial queue debt measures pending tasks, contested consequences and lost opportunities, not a person's character or guilt. Queue admission does not complete correction.
 
 ## Anti-reinvention
-Recovered NOMOS: 0.814, 0.843, 0.845–0.848, 0.853–0.854. Prior queue fairness, ranking fairness and appeals triage studies already cover much scheduling theory. NOMOS's narrow focus is post-error repair sequencing with separate person and consequence authority.
+Prior NOMOS 0.814 / 0.846–0.848 / 0.850–0.855 supply the predecessor roles. Abramov (2026) already distinguishes systemic inquiry from individual merits and discusses proportionate interim measures. McAlister (2023) documents asymmetric judicial attention. Cormacain (2020) and Won (2025) bound the temporal logic of emergency exceptions. Queue fairness and ranking principles remain external donors, not NOMOS inventions.
 
-## Executable
-Kernel **v0.14.0**, `src/nomos/recall_triage.py`, unit tests, safe and unsafe fixtures, `spec/recall-triage.md`, CLI `--audit-recall-triage`, structural rules **QT001–QT029**.
+## Development
+Kernel **v0.15.0**, module `src/nomos/interim_protection.py`, 10 dedicated unit tests, safe/unsafe fixtures, CLI `--audit-interim-protection`, invariant family **IP001–IP032**.
+The structural auditor is neither a legal relief recommendation engine nor a certification of actual just outcomes.
+Code committed; CI exact-head success must be checked separately.
 
-The audit is a negative structural gate, not a scheduler or a substantive fairness certification. It does not claim that checking all boolean fields proves justice.
-
-## Publication gap
-Requires independent review of fairness-in-queues, delay distribution and algorithmic ranking scholarship, together with realistic queue traces and policy comparisons. Without these, theoretical distinctness is provisional.
+## Literature custody
+Nine of the new PDF items were routed to 10_PAPERS with standardized names; one Hacking (2007) 2-page abstract/metadata object went to 20_NON_PAPER_SOURCES; Sparti (2001) image PDF was moved to 10_PAPERS but marked TEXT-UNVERIFIED. Zehlike et al. (2022) Part I remained pending due to blocked metadata update. (Counts: eight fully verified paper moves + one image PDF.)
 
 ## Next title only
-**NOMOS-0.856 — Interim Consequence Suspension, Delay-Contingent Protection, Remedial Queue Debt & the Primitive Question of What an Institution Must Do While a Validly Recalled Person-Judgment Cannot Yet Be Reviewed without Allowing Waiting Time to Become a New Unreviewed Adverse Decision**
+**NOMOS-0.857 — Interim Protection Expiry, Restitution Shortfalls, Retroactive Repair Limits & the Primitive Question of Whether Completing a Delayed Review Can Discharge Institutional Repair Debt When Lost Opportunities, Suspended Consequences or Third-Party Reliance Cannot Be Fully Reversed**
 
 **TITLE-LOCKED / NOT OPENED.**
