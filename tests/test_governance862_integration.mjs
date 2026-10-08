@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import {generateKeyPairSync,sign} from "node:crypto";
 import {verifyGoverned862,bytes862} from "../tools/governance862.mjs";
+import {verifyGovernedWithPetitions862,screenBytes862} from "../tools/petition862.mjs";
 import {signedBytes861,canonical861,digest861} from "../tools/attest861.mjs";
 const day="2026-10-08",jurisdiction="FICTIONAL-JURISDICTION",caseId="CASE-DEMO";
 const keys={};function person(id,group,roles){
@@ -11,7 +12,8 @@ for(const [id,group,roles] of [
  ["routeWitness","legal-witness",["route"]],["factWitness","record-witness",["fact"]],
  ["censusWitness","inventory-witness",["census"]],
  ["governorA","external-A",["status"]],["governorB","external-B",["status"]],
- ["challenger","external-challenge",["challenge"]]
+ ["challenger","external-challenge",["challenge"]],
+ ["screenAssessor","external-screen",["screen"]]
 ])person(id,group,roles);
 const src861=[
  {id:"law",text:"Fictional law permitting action."},
@@ -45,11 +47,12 @@ function packet861(routeState){
 }
 const src862=[
 {id:"status",text:"Fictional signed governance status."},
-{id:"challenge",text:"Fictional omitted route challenge."}];
+{id:"challenge",text:"Fictional omitted route challenge."},
+{id:"screenEvidence",text:"Fictional externally pinned assessment of the potential omitted route."}];
 const govCharter={id:"GOV-FICTION",epoch:6,minimumEpoch:6,jurisdiction,asOf:day,
- quorum:2,maxStatusAgeDays:7,maxChallengeAgeDays:14,subjectGroup:"original",
+ quorum:2,maxStatusAgeDays:7,maxChallengeAgeDays:14,maxIntakeAgeDays:10,subjectGroup:"original",
  legacyPolicySha256:digest861(canonical861(policy861)),
- keys:Object.fromEntries(["governorA","governorB","challenger"].map(id=>[id,{
+ keys:Object.fromEntries(["governorA","governorB","challenger","screenAssessor"].map(id=>[id,{
   publicKeyDerBase64:keys[id].publicKeyDerBase64,roles:keys[id].roles,group:keys[id].group,
   from:"2026-01-01",until:"2026-12-31"}])),
  sourcePins:Object.fromEntries(src862.map(s=>[s.id,{
@@ -91,3 +94,52 @@ test("external charter no longer pins 0.861 trust policy",({charter})=>{charter.
 test("case replay lacks matching census root",({legacy})=>{legacy.caseId="CASE-REPLAY";},"verified","GOVERNANCE_HOLD","UNKNOWN");
 test("policy epoch rollback blocked",({root})=>{root.epoch=5;},"verified","GOVERNANCE_HOLD","UNKNOWN");
 console.log("PASS 0.861/0.862 boundary: governance hold forbids either outer model verdict");
+
+
+function petitionInput(decision,routeState="verified"){
+  const docket={id:"D-CASE-DEMO",caseId,target:"census:"+caseId,
+    charterId:govCharter.id,epoch:govCharter.epoch,jurisdiction,
+    receivedOn:day,complaintKind:"omitted_route",counterRouteId:"r2"};
+  const evidenceSources=[{id:"screenEvidence",text:src862.find(x=>x.id==="screenEvidence").text}];
+  const assessments=[];
+  if(decision){
+    const claim={kind:"screen",issuer:"screenAssessor",decision,
+      docketId:docket.id,docketSha256:digest861(canonical861(docket)),
+      caseId,target:docket.target,charterId:docket.charterId,epoch:docket.epoch,jurisdiction,
+      sourceId:"screenEvidence",evidenceDigest:govCharter.sourcePins.screenEvidence.digest,
+      issuedOn:day,validUntil:"2026-12-31"};
+    assessments.push({id:"SCREEN-"+(++seq),claim,
+      signature:sign(null,screenBytes862(claim),keys.screenAssessor.privateKey).toString("base64")});
+  }
+  return {docket,assessments,evidenceSources,routeState};
+}
+function withPetition(name,routeState,kind,mutate,expectedState,expectedModel,expectedIntake){
+  const legacy=packet861(routeState),charter=structuredClone(govCharter);
+  const root=record("policy:"+charter.id),census=record("census:"+caseId);
+  const item=petitionInput(kind,routeState);
+  mutate(item);
+  const r=verifyGovernedWithPetitions862(legacy,policy861,charter,root,census,[item]);
+  assert.equal(r.status,expectedState,name+" gate");
+  assert.equal(r.computational.restored,expectedModel,name+" bounded verdict");
+  assert.equal(r.petitionDockets[0].status,expectedIntake,name+" petition");
+  assert.equal(r.institutional.restored,"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED");
+  console.log("PASS petition↔governance↔model",name,r.status,r.computational.restored);
+}
+withPetition("unkeyed petition gets receipt, not automatic policy veto",
+  "verified",null,()=>{},"GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SCREENING_PENDING");
+withPetition("independent screened material claim masks ACTIONABLE",
+  "verified","material",()=>{},"INDEPENDENT_CONTEST_REVIEW_HOLD","UNKNOWN","MATERIAL_FOR_GOVERNANCE_CHALLENGE");
+withPetition("independent screened material claim masks BOUNDED_BLOCKED",
+  "denied","material",()=>{},"INDEPENDENT_CONTEST_REVIEW_HOLD","UNKNOWN","MATERIAL_FOR_GOVERNANCE_CHALLENGE");
+withPetition("independent nonmaterial screen does not obtain veto",
+  "verified","nonmaterial",()=>{},"GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SCREENED_NONMATERIAL");
+withPetition("tampered material review has no veto",
+  "verified","material",item=>{item.assessments[0].claim.decision="nonmaterial";},
+  "GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SCREENING_PENDING");
+withPetition("unrelated case cannot veto",
+  "verified","material",item=>{item.docket.caseId="OTHER-CASE";},
+  "GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","UNRELATED_PETITION");
+withPetition("aged unkeyed intake does not silently disappear or gain a veto",
+  "verified",null,item=>{item.docket.receivedOn="2026-09-01";},
+  "GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SCREENING_ESCALATION_DUE");
+console.log("PASS P5 open intake separated from signed authority to challenge");
