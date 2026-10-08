@@ -51,6 +51,15 @@ function check(name,modify,wantVerdict,wantStatus){
  console.log("PASS",name,x.computational.restored,"proofsRejected",x.evidence.rejected);
 }
 check("all independent synthetic receipts",()=>{},"ACTIONABLE","ATTESTED_MODEL_BOUNDS_ONLY");
+const cleanReceipt=verify861(specimen(),policy);
+assert.equal(cleanReceipt.evidence.acceptedReceipts.length,4);
+assert.deepEqual(new Set(cleanReceipt.evidence.acceptedReceipts.map(r=>r.role)),
+    new Set(["route","review","fact","census"]));
+assert(cleanReceipt.evidence.acceptedReceipts.every(r=>r.sourceSha256 && r.proofId && r.controlGroup));
+assert(!JSON.stringify(cleanReceipt).includes("Fictional external custody receipt"),"raw evidence leaked into receipt");
+console.log("PASS evidence lineage with private raw-source minimization");
+check("expired as-of snapshot",(_,trust)=>trust.asOf="2026-12-01","UNKNOWN","EVIDENCE_HOLD");
+
 check("altered signed assertion",p=>p.proofs[0].claim.assertion="denied","UNKNOWN");
 check("corrupted signed bits",p=>p.proofs[0].signature=p.proofs[0].signature.slice(0,-3)+"AAA","UNKNOWN");
 check("source content differs from independent pin",p=>p.sources[0].text+=" Omitted clause.","UNKNOWN");
