@@ -105,3 +105,47 @@ Unknown warrants can change `U` and even `L` when corroborated, so no eternal le
 W4–W8 are *constitutional and domain* witnesses rather than covered by this reachability abstraction: recipient-copy repair, appeal independence, interim expiry, future legal changes, and self-sealing nominal review need typed domain receipts and cannot be deemed verified from graph reachability.
 
 **No overall 0.860 CLOSED until exact-head CI passes and the domain-witness limit is explicitly adjudicated.**
+
+## 0.860-P2 — Exhaustive Finite-World Test and Stronger Theorem
+
+A new regression file `tests/test_deadlock860_exhaustive.mjs` independently enumerates five finite candidate rules, each with one of three warrants (verified/denied/unknown), over five seed configurations. This yields **1,215 packet models**, whose unresolved-warrant choices generate **5,120 total completed worlds**. Each world is checked for three goals. A separate local Node 22 reconstruction passed this test on 2026-10-08; exact-head GitHub Actions still requires separate validation.
+
+Let Ω be all assignments of every **unknown** candidate warrant to verified or denied, and let R_ω be the reachable fixed point for an assignment ω. For a fixed *complete finite* candidate set and known true seed facts:
+
+**L = ⋂_{ω∈Ω} R_ω** and **U = ⋃_{ω∈Ω} R_ω**.
+
+Proof: by monotonicity of least fixed-point reachability in enabled rules, the completion denying every unknown yields the minimum reachable set L, and the completion approving every unknown yields the maximum U; both extreme assignments are members of Ω. Hence the intersection and union are attained by these extremes.
+
+Thus, relative to the declared finite model, three-valued verdicts are **both sound and complete for unanimous completion-world status**:
+- `ACTIONABLE`: reachable in every world;
+- `BOUNDED_BLOCKED`: unreachable in every world;
+- `UNKNOWN`: reachable in at least one world and unreachable in another.
+
+**Do not lift this completeness claim to real statutes or agencies.** It requires complete candidate enumeration, true seed facts, legal-warrant correctness for verified/denied candidates, monotone rule semantics and no unmodeled time-dependent changes. Each is an independent input assumption, not a tested empirical fact.
+
+The previously defective CLI invocation on a `{cases:[...]}` corpus was corrected: it now checks expected outcomes and fails on mismatch. CI now includes the original witness tests, exhaustive proof checks and corpus CLI.
+
+## 0.860-P3 — NOMOS Genealogy and Institutional Evidence Gate
+
+A second collision audit found that the institution-level problem is **not novel in the abstract**:
+- NOMOS-0.834 already separates causal contribution, normative responsibility, repair obligation and person-predicate authority. Causal dependencies do not generate liability allocations.
+- NOMOS-0.839 already defines reviewer independence by **dependency-sensitive epistemic breaks**, not reviewer count or distinct job titles; Q/E/M/I/A/C, source ablation, appeal loops and override friction are prior NOMOS machinery.
+- NOMOS-0.840 already develops inclusion-minimal dependency-break covers and distinguishes accessible escalation from independent convergence.
+- Ansell & Gash (2008), *Collaborative Governance in Theory and Practice*, DOI 10.1093/jopart/mum032, analyzes 137 collaborative governance cases and conditions including power/resource asymmetry and design.
+- Bovens & Zouridis (2002), *From Street-Level to System-Level Bureaucracies*, DOI 10.1111/0033-3352.00168, examines system-level discretion and due-process implications.
+- Coffman, Elphick & Shoshani (1971), *System Deadlocks*, DOI 10.1145/356586.356588, is a foundational technical ancestor of the deadlock metaphor.
+
+**Domain witness adjudication** (all conditional hypothetical models, not real-case legal findings):
+- W4: local archival/review/budget certificates plus an uncorrected live recipient => joint repair not complete. A graph rule can represent this *only after* externally corroborated recipient evidence.
+- W5: an appeal routed through the original generator fails the 0.839 dependency-independence criterion even if a graph path exists; a reachability path cannot prove independence.
+- W6: interim expiry is not a new merits warrant. This requires legal and consequence records, not mere graph topology.
+- W7: a later statute or order changes the rule universe. Compare **separate snapshots**; no timeless noncompletability conclusion is licensed.
+- W8: single-door appeals can refer back to the same gatekeeper. Check whether a practically effective dependency-break route exists per 0.839–0.840, not whether the reception interface is unified.
+
+### Scope and stopping decision
+
+**P1 and P2 mathematical court: CLOSED relative to explicitly finite premises and local exhaustive validation; GitHub exact-head CI still pending.**
+
+**P3 institutional legal-authority court: HOLD.** There are no authenticated case-specific legal authorities, reviewer-dependency break receipts, or downstream recipient records in these synthetic fixtures. It would be false to mark all 0.860 institutionally CLOSED.
+
+No standalone P1/P2/P3 Notion page is created; sections belong inside the **single 0.860 canonical document**. No new NOMOS-0.861 title until the domain evidence gate has been faced.
