@@ -257,6 +257,16 @@ NOMOS-0.856 examines consequences that continue while an accepted historical rec
 
 Temporary protection, reasoned nonintervention, bounded suspension, notice, periodic review, counterparty impacts and repair-debt accounting require their own authority. The kernel audits 32 structural failure modes (IP001–IP032) and intentionally does not decide individual relief or case merits.
 
+### Residual Restitution / Retroactive Repair Limits
+
+NOMOS-0.857 audits the difference between completing an individual review and discharging every obligation produced by the institution's historic judgment.
+
+**REVIEW COMPLETION ≠ CONSEQUENCE RESTORATION ≠ REPAIR-DEBT DISCHARGE.**
+
+Correcting a record does not reopen lost deadlines, compensation does not recreate an irretrievable opportunity, and a third party's reliance is neither irrelevant nor retroactive evidence that a defeated person-model was right. A bounded receipt must distinguish reversible obligations, compensation or acknowledgment of irrecoverable losses, independent counterparty-disposition, live descendant/copy correction, and unresolved typed debt. A case can be *review complete* while residual loss remains, without laundering either state into total closure or permanent review authority.
+
+Structural audit: `src/nomos/restitution.py`, **RD001–RD033**, safe/unsafe fixtures and `--audit-restitution`. These guards audit *declared* receipts; they do not certify actual restitution or compute compensation.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -287,11 +297,12 @@ PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-
 PYTHONPATH=src python -m nomos examples/historical_reopening_safe.json --audit-historical-reopening
 PYTHONPATH=src python -m nomos examples/recall_triage_safe.json --audit-recall-triage
 PYTHONPATH=src python -m nomos examples/interim_protection_safe.json --audit-interim-protection
+PYTHONPATH=src python -m nomos examples/restitution_safe.json --audit-restitution
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.856 — Interim Consequence Suspension, Delay-Contingent Protection & Remedial Queue Debt — executable v0.15.0; exact-head verification pending.**
+**NOMOS-0.857 — Restitution Shortfalls, Interim Expiry, Retroactive Limits & Residual Repair-Debt Discharge — executable v0.16.0; exact-head CI verification pending.**
 
-GitHub Actions remain read-only (`contents: read`). Next title only: **NOMOS-0.857 — Interim Protection Expiry, Restitution Shortfalls, Retroactive Repair Limits & the Primitive Question of Whether Completing a Delayed Review Can Discharge Institutional Repair Debt When Lost Opportunities, Suspended Consequences or Third-Party Reliance Cannot Be Fully Reversed**.
+GitHub Actions remain read-only (`contents: read`); no automated repository writeback. Next title only: **NOMOS-0.858 — Residual Repair-Debt Transfer, Institutional Succession, Obligation Survival after Review Closure & the Primitive Question of Who Must Carry Undischarged Restitution Duties When the Original Decision-Making Institution, Review Authority or Remedial Program No Longer Exists**.
