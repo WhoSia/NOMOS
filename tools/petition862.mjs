@@ -6,8 +6,9 @@ import {verifyGoverned862} from "./governance862.mjs";
 const dayOk=x=>typeof x==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(x)&&!Number.isNaN(Date.parse(x+"T00:00:00Z"))&&new Date(x+"T00:00:00Z").toISOString().slice(0,10)===x;
 const age=(a,b)=>(Date.parse(a+"T00:00:00Z")-Date.parse(b+"T00:00:00Z"))/86400000;
 export const screenBytes862 = c => Buffer.from("NOMOS:862:PETITION-SCREEN:v1\n"+canonical861(c),"utf8");
+export const intakeAckBytes862 = c => Buffer.from("NOMOS:862:INTAKE-ACK:v1\n"+canonical861(c),"utf8");
 function distinct(a){return new Set(a).size===a.length;}
-export function evaluatePetitionIntake862(docket,assessments,charter,evidenceSources=[]) {
+export function evaluatePetitionIntake862(docket,assessments,charter,evidenceSources=[],acknowledgement=null) {
  if(!charter || !dayOk(charter.asOf)||!charter.id||!charter.jurisdiction ||
    !Number.isInteger(charter.epoch)||!Number.isInteger(charter.maxIntakeAgeDays)||charter.maxIntakeAgeDays<0||
    !charter.keys||!charter.sourcePins||!charter.subjectGroup)throw Error("External intake charter malformed");
@@ -18,10 +19,33 @@ export function evaluatePetitionIntake862(docket,assessments,charter,evidenceSou
  const sourceById=new Map(evidenceSources.map(s=>[s.id,s]));
  const live=docket.receivedOn<=charter.asOf&&docket.jurisdiction===charter.jurisdiction&&
    docket.charterId===charter.id&&docket.epoch===charter.epoch;
- const base={id:docket.id,caseId:docket.caseId,receiptDigest:digest861(canonical861(docket)),
+ const base={id:docket.id,caseId:docket.caseId,submissionDigest:digest861(canonical861(docket)),
     institutional:"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED",
     petitionRequiresApprovedAttestorKey:false, automaticallySuspendsAuthority:false};
  if(!live)return {...base,status:"INTAKE_SCOPE_HOLD",screenReceipts:[]};
+ // A user-created submissionDigest does not prove delivery or institutional
+ // acceptance. A distinct signer with *intake* role must acknowledge it.
+ const ac=acknowledgement?.claim,ak=charter.keys?.[ac?.issuer];
+ let ackAccepted=false;
+ if(ac && typeof acknowledgement.signature==="string" && ac.kind==="intake_ack" &&
+    ak?.roles?.includes("intake") && !charter.revokedKeys?.includes(ac.issuer) &&
+    ac.docketSha256===digest861(canonical861(docket)) &&
+    ac.caseId===docket.caseId && ac.target===docket.target &&
+    ac.charterId===charter.id && ac.epoch===charter.epoch &&
+    ac.jurisdiction===charter.jurisdiction &&
+    ac.receivedOn===docket.receivedOn &&
+    dayOk(ac.issuedOn) && ac.issuedOn>=docket.receivedOn && ac.issuedOn<=charter.asOf &&
+    dayOk(ac.validUntil) && ac.validUntil>=charter.asOf &&
+    dayOk(ak.from) && dayOk(ak.until) &&
+    ak.from<=charter.asOf && ak.until>=charter.asOf) {
+   try{
+     const pub=createPublicKey({key:Buffer.from(ak.publicKeyDerBase64,"base64"),format:"der",type:"spki"});
+     ackAccepted=cryptoVerify(null,intakeAckBytes862(ac),pub,Buffer.from(acknowledgement.signature,"base64"));
+   }catch{ackAccepted=false;}
+ }
+ if(!ackAccepted)return {...base,status:"SUBMISSION_UNACKNOWLEDGED",
+   acknowledgement:"NOT_INDEPENDENTLY_CONFIRMED",screenReceipts:[]};
+
  // No signature is needed to *lodge* the petition, but this does not validate
  // identity, standing, materiality, or any legal route.
  for(const item of assessments){
@@ -58,7 +82,7 @@ export function evaluatePetitionIntake862(docket,assessments,charter,evidenceSou
    "MATERIAL_FOR_GOVERNANCE_CHALLENGE":states.has("nonmaterial")?
    "SCREENED_NONMATERIAL":age(charter.asOf,docket.receivedOn)>charter.maxIntakeAgeDays?
    "SCREENING_ESCALATION_DUE":"SCREENING_PENDING";
- return {...base,status,screenReceipts:notes,
+ return {...base,status,acknowledgement:"SIGNED_INTAKE_RECEIPT_ONLY",screenReceipts:notes,
     acceptedGroups:[...new Set(accepted.map(c=>c.group))].sort(),
     provenanceCeiling:"UNSIGNED_INTAKE_AND_SIGNED_SCREEN_ARE_NOT_IDENTITY_STANDING_OR_LEGAL_TRUTH"};
 }
@@ -74,7 +98,7 @@ export function verifyGovernedWithPetitions862(
       !["census:"+legacyPacket.caseId,"policy:"+charter.id].includes(x?.docket?.target))
       return {status:"UNRELATED_PETITION",id:x?.docket?.id||null,
         institutional:"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED"};
-   return evaluatePetitionIntake862(x.docket,x.assessments,charter,x.evidenceSources||[]);
+   return evaluatePetitionIntake862(x.docket,x.assessments,charter,x.evidenceSources||[],x.acknowledgement||null);
  });
  const material=intake.some(x=>x.status==="MATERIAL_FOR_GOVERNANCE_CHALLENGE"||
                                     x.status==="SCREENING_DISPUTED");
