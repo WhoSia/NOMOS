@@ -69,7 +69,13 @@ export function verifyGovernedWithPetitions862(
  legacyPacket,legacyPolicy,charter,rootRecord,censusRecord,docketsWithScreens){
  if(!Array.isArray(docketsWithScreens))throw Error("Docket array required");
  const ordinary=verifyGoverned862(legacyPacket,legacyPolicy,charter,rootRecord,censusRecord);
- const intake=docketsWithScreens.map(x=>evaluatePetitionIntake862(x.docket,x.assessments,charter,x.evidenceSources||[]));
+ const intake=docketsWithScreens.map(x=>{
+   if(x?.docket?.caseId!==legacyPacket.caseId ||
+      !["census:"+legacyPacket.caseId,"policy:"+charter.id].includes(x?.docket?.target))
+      return {status:"UNRELATED_PETITION",id:x?.docket?.id||null,
+        institutional:"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED"};
+   return evaluatePetitionIntake862(x.docket,x.assessments,charter,x.evidenceSources||[]);
+ });
  const material=intake.some(x=>x.status==="MATERIAL_FOR_GOVERNANCE_CHALLENGE"||
                                     x.status==="SCREENING_DISPUTED");
  if(material){
