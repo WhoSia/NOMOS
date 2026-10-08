@@ -31,3 +31,29 @@ Link & Phelan (2001), Conceptualizing Stigma, DOI 10.1146/annurev.soc.27.1.363; 
 Originality prospect is *separation of epistemic entitlement to criticize from social authorization of collateral sanctions, and from memory-mediated person-model revival*; genealogy 0.2–0.4, 0.752, 0.839–0.850 and 0.857 already anticipated much. Novelty burden not discharged by this test harness. Further P3 must model transitions and independent warrant, not merely count Boolean input dimensions.
 ### Korea empirics ceiling
 Koo et al. 2024 describes Korean online-community hate dynamics, but measures neither cross-country ordinal rank of witch hunts nor individual judgment-reinstatement transitions. 김재경 2025 analyzes 215 Korean news records, not a representative census of public attitudes. 남궁현 2017 develops digital vigilantism framework; 2024/2025 official cyberviolence surveys are different constructs. No national-exceptionalism verdict permitted from these heterogeneous evidence bases.
+
+## P3 — Ancestry Inflation versus Correction Reach (2026-10-09)
+
+**Non-novel donor findings:** continuing influence of misinformation, source-credibility dependence, correction-reach gaps and the effectiveness of some fact-checks are independently studied phenomena. See Walter & Tukachinsky (2020) DOI 10.1177/0093650219854600 and Porter & Wood (2024) DOI 10.1016/j.copsyc.2023.101715. The purpose is to discipline NOMOS's own person-judgment argument, not to assert discoverer priority.
+
+Two different causal/epistemic structures must be modeled:
+1. **Support ancestry:** a crowd of N repeaters may have only one original evidence root. Multiplication of statements alone never authenticates N independent witnesses. The defeat of root R under a fixed claim defeats citations depending solely on R. The presence of an allegedly independent root is a *request for examination*, not proof of its reliability or person-level relevance.
+2. **Correction reception:** original publisher's correction, delivery to derived audiences, acceptance/uptake, change in operative person judgment, and changed opportunity or consequence are non-equivalent. Declared material recipients that have not received correction define a **known coverage gap**, not a global complete population census.
+
+**Finite synthetic audit implemented:** `tools/echoCorrection866.mjs`; `tests/test_echoCorrection866.mjs`. It returns statement count, distinct *declared* roots, echoes based solely on defeated roots, sources needing independent audit and unreached recipients. Even with complete declared delivery, `actualBeliefChangeEstablished` and `actualPersonRestorationEstablished` are always false. The graph does not authenticate actual ancestry, prove a crowd's motives or detect real stigma.
+
+### Rival world table
+- One rumor echoed by three unrelated account identities → statementCount 3; sourceRootCount 1; no three-way corroboration.
+- Three independently authenticated new observations → potentially three actual support roots, but this must be substantiated outside this harness.
+- Correction reaches origin and one listener, misses institutional adopter → active propagation gap.
+- Correction reaches all listed listeners but they continue applying the old label → transmission alone insufficient.
+- Later genuine misconduct motivates lawful, proportional criticism → not label-based resurrection.
+- Repeating moral disapproval without factual claims → never treat a count of condemnations as a factual evidence source.
+- Correction increases initial rumor visibility in one population → coverage and exposure risks can move in opposite directions.
+
+### Formal insufficiency
+For a fixed claim q, let `ancestors(s)` denote identified ultimate evidence roots for statement s, `D(q,t)` defeated roots, and `A` the set of apparent agreeing statements. If all `ancestors(s)` are subsets of `D`, then `|A|` alone cannot restore warrant for q: no repeat introduces an undefeated independent source. This is a **conditional graph-relative negative result**, not a truth theorem about actual allegations. Conversely, a source outside D is not necessarily fresh, relevant or admissible.
+
+For declared materially exposed recipients M and correction recipients C, `M\\C` is the declared *unreached frontier*. `M\\C = ∅` does **not** entail actual uptake, authoritative judgment correction, or restoration. Unenumerated recipients cannot be ruled out by a closed fixture.
+
+**Status:** P3 synthetic test court implemented and connected to read-only CI. CI outcome must be verified independently at exact commit. 0.866 remains OPEN; P4 should test dynamic reputational feedback and the difference between observational echo and genuine new grounds.
