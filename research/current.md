@@ -30,3 +30,11 @@ Produce legal/capability evidence receipts, three independent hard witnesses, OR
 
 ## Next title
 **NOT PROPOSED until 0.860 survives the preseal.**
+
+## 0.860-P1 — Bounded Reachability Proof Object (2026-10-08)
+
+- Independent **Node.js** prototype added, `tools/deadlock860.mjs`; case corpus `examples/deadlock860_cases.json`; test `tests/test_deadlock860.mjs`, CI wired. Kernel **still v0.18.0**. This is a deliberate exception to premature Python-only release cycles.
+- For finite AND/OR hypergraph of preconditions, compute lower least fixed-point L from verified warrant edges and upper least fixed-point U from verified+unknown edges; denied edges cannot fire. Verdict ACTIONABLE iff goal in L; BOUNDED_BLOCKED iff goal absent from U; otherwise UNKNOWN. If completeness/evidence scopes not certified by packet, output UNKNOWN.
+- Relative soundness: given correct warrant declarations, complete enumeration and derivational semantics, L ⊆ actual executable closure ⊆ U. Proof by induction over finite derivation depth. This is **not legal soundness for authentic jurisdictions**; completeness input is self-attested.
+- Witness corpus: W1 cycle with lawful alternative; W2 acyclic denied edge; W3 lawful privacy-denied edge; pure unseeded cycle; unknown warrant; incomplete options; incomplete evidence; duplicate rule rejection.
+- Remaining W4–W8 (recipient propagation, independent appeal, expiry and changing law) are NOT resolved by graph reachability. Keep stage research OPEN and evidence/CI pending. Do not label full strong closure merely because Node tests run.
