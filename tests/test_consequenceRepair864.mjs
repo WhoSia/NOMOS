@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import {assessConsequenceRepair864,compatibleHiddenWorlds864,compareConsequenceOutcomes864,causalCounterworldPair864} from "../tools/consequenceRepair864.mjs";
+import {assessConsequenceRepair864,compatibleHiddenWorlds864,compareConsequenceOutcomes864,causalCounterworldPair864,assessSemanticRepair864} from "../tools/consequenceRepair864.mjs";
 const packet={caseId:"fictional-case",asOf:"2026-10-08",snapshotId:"s1",nodes:[
 {id:"primary",operatorId:"agency",previousValue:"J0",correctedValue:"J1",dependsOn:[]},
 {id:"recipient",operatorId:"downstream",previousValue:"J0",correctedValue:"J1",dependsOn:["primary"]}]};
@@ -30,4 +30,10 @@ for(let a of ["J0","J1",null])for(let b of ["J0","J1",null]){
  const expected=a==="J0"||b==="J0"?"OBSERVED_INCOMPLETE":a==="J1"&&b==="J1"?"OBSERVED_CORRECTED_WITHIN_DECLARED_CENSUS":"UNKNOWN";
  assert.equal(v.status,expected);
 }
+const sem={kind:"fresh_rederivation",sourceDefeated:true,freshWarrant:true,mapperChanged:true};
+const generator={replayTested:true,resurrectsDefeatedJudgment:false};
+assert.equal(assessSemanticRepair864({valueReadback:"OBSERVED_CORRECTED",semanticReadback:null,activeGenerator:generator}).status,"UNKNOWN");
+assert.equal(assessSemanticRepair864({valueReadback:"OBSERVED_CORRECTED",semanticReadback:sem,activeGenerator:null}).status,"UNKNOWN");
+assert.equal(assessSemanticRepair864({valueReadback:"OBSERVED_CORRECTED",semanticReadback:sem,activeGenerator:{replayTested:true,resurrectsDefeatedJudgment:true}}).status,"OBSERVED_INCOMPLETE");
+assert.equal(assessSemanticRepair864({valueReadback:"OBSERVED_CORRECTED",semanticReadback:sem,activeGenerator:generator}).status,"SEMANTICALLY_SUPPORTED_IN_SYNTHETIC_MODEL_ONLY");
 console.log("NOMOS 0.864 synthetic consequence checks PASS (9 ternary census cases + countermodels)");
