@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import {assessJudgmentReinstatement866} from "../tools/judgmentReinstatement866.mjs";
+const base={caseId:"fiction",personKey:"P",judgmentId:"L",asOf:"t2",originalDefeated:true,judgmentReactivated:true,supports:[{id:"copied",kind:"inherited_label",active:true}]};
+const run=x=>assessJudgmentReinstatement866({...base,...x});
+assert.equal(run({}).state,"REINSTATEMENT_WITHOUT_FRESH_WARRANT");
+assert.equal(run({judgmentReactivated:false}).state,"NO_REINSTATEMENT_OBSERVED");
+assert.equal(run({supports:[...base.supports,{id:"new",kind:"fresh_independent",active:true}]}).state,"FRESH_WARRANT_REQUIRES_INDEPENDENT_VALIDATION");
+assert.equal(run({originalDefeated:false}).state,"UNKNOWN");
+assert.equal(run({}).realWorldStigmaDetermination,false);
+console.log("NOMOS 0.866 P1 PASS");
