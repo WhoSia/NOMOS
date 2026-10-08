@@ -37,7 +37,8 @@ export function evaluateGovernance862(packet,charter){
     if(!c || !event.id || typeof event.signature!=="string" ||
        !["status","challenge","resolution"].includes(c.kind))reason="INVALID_EVENT";
     else if(c.charterId!==charter.id || c.epoch!==charter.epoch ||
-            c.jurisdiction!==charter.jurisdiction || c.target!==packet.target)reason="SCOPE_MISMATCH";
+            c.jurisdiction!==charter.jurisdiction || c.target!==packet.target ||
+            c.routeSetDigest!==digest861(canonical861([...packet.declaredRouteIds].sort())))reason="SCOPE_MISMATCH";
     else if(!dateOk(c.issuedOn) || c.issuedOn>charter.asOf ||
             !dateOk(c.validUntil) || c.issuedOn>c.validUntil || c.validUntil<charter.asOf)reason="INVALID_TIME";
     else if(!key || !key.roles?.includes(c.kind) ||
