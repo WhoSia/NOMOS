@@ -1,0 +1,38 @@
+{
+  "successor_duties": {
+    "plans": [
+      {
+        "id": "migration",
+        "defunct_institution": true,
+        "transition_evidence": true,
+        "separate_authorities": true,
+        "continuity_ledger": true,
+        "affected_party_notice": true,
+        "contestable_allocation": true,
+        "independent_oversight": true,
+        "record_handoff_receipt": true,
+        "privacy_scope_reviewed": true,
+        "interim_consequence_continuity": true,
+        "recipient_graph_continuity": true,
+        "duties": [
+          {
+            "id": "records",
+            "type": "record_custody",
+            "status": "assigned",
+            "responsible_institution": "archive",
+            "authority_evidence": true
+          },
+          {
+            "id": "restitution",
+            "type": "restitution",
+            "status": "orphan_hold",
+            "escalation_route": null,
+            "records_accessible": true
+          }
+        ],
+        "custody_implies_liability": true,
+        "closure_by_abolition": true
+      }
+    ]
+  }
+}
