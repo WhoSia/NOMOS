@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import {assessEchoCorrection866} from "../tools/echoCorrection866.mjs";
+const packet={statements:[{id:"a",roots:["rumor"]},{id:"b",roots:["rumor"]},{id:"c",roots:["rumor"]}],defeatedRoots:["rumor"],materialRecipients:["A","B","C"],correctedRecipients:["A"]};
+const f=x=>assessEchoCorrection866({...packet,...x});
+assert.equal(f({}).statementCount,3);
+assert.equal(f({}).sourceRootCount,1);
+assert.deepEqual(f({}).unsupportedRepetitions,["a","b","c"]);
+assert.deepEqual(f({}).unreachedRecipients,["B","C"]);
+assert.equal(f({correctedRecipients:["A","B","C"]}).actualBeliefChangeEstablished,false);
+assert.equal(f({statements:[...packet.statements,{id:"d",roots:["independent"]}]}).freshSourceAuthenticated,false);
+assert.deepEqual(f({statements:[...packet.statements,{id:"d",roots:["independent"]}]}).purportedFreshSourcesNeedAudit,["d"]);
+assert.throws(()=>f({statements:[packet.statements[0],packet.statements[0]]}));
+console.log("NOMOS 0.866 P3 PASS");
