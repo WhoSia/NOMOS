@@ -34,7 +34,7 @@ function specimen(){
  proofs:[
  signed("route",legal,"law",{routeId:"route1",subject:"agency-successor",assertion:"verified"}),
  signed("review",review,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent"}),
- signed("census",census,"census",{subject:"independent_route_census",assertion:"complete",routeIds:["route1"]})
+ signed("census",census,"census",{subject:"agency-legacy",assertion:"complete",routeIds:["route1"]})
  ]};
 }
 function clone(x){return structuredClone(x);}
