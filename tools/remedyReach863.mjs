@@ -17,7 +17,7 @@ function validateRoutes863(packet){
    !Array.isArray(packet.routes)||!packet.routes.length)throw Error("Invalid case-scoped remedy routes");
  if(!unique(packet.routes.map(r=>r.id)))throw Error("Duplicate route");
  for(const r of packet.routes){
-   if(!r.id||!r.channelType||!["online","paper","assisted","other"].includes(r.channelType)||
+   if(!r.id||!(/^[A-Za-z0-9_-]{1,64}$/).test(r.id)||!r.channelType||!["online","paper","assisted","other"].includes(r.channelType)||
      !r.reviewerId||!r.remedyBearer||!r.recipientId||
      !r.steps || STAGES863.some(s=>typeof r.steps[s]!=="string"))throw Error("Incomplete typed route");
    if(!unique(STAGES863.map(s=>r.steps[s])))throw Error("One evidence assertion cannot stand in for all stages");
@@ -46,7 +46,7 @@ export function assessRemedyReach863(packet,evidence){
     !packet.routes.every(r=>evidence.enumeratedRouteIds.includes(r.id))||
     evidence.packetDigest!==digest861(canonical861(packet)))return unknownGoals("UNBOUND_OR_INCOMPLETE_EXTERNAL_EVIDENCE");
  const claims=new Map(evidence.claims.map(x=>[x.id,x]));
- const rules=[],trace=[];
+ const rules=[],trace=[],perRoute=[];
  for(const r of packet.routes){
    let prev="__entry__";
    for(const stage of STAGES863){
@@ -62,20 +62,22 @@ export function assessRemedyReach863(packet,evidence){
      trace.push({route:r.id,stage,claimId:id,warrant,proofRefs:claim?.proofRefs||[]});
      prev=next;
      if(stage==="authority"){
-       rules.push({id:"eligible:"+r.id,head:"remedy_reachable",requires:[next],warrant:"verified"});
+       rules.push({id:"eligible:"+r.id,head:"__eligible__"+r.id,requires:[next],warrant:"verified"});
+       rules.push({id:"eligible_or:"+r.id,head:"remedy_reachable",requires:["__eligible__"+r.id],warrant:"verified"});
      }
    }
-   rules.push({id:"complete:"+r.id,head:"repair_evidenced",requires:[prev],warrant:"verified"});
+   rules.push({id:"complete:"+r.id,head:"__completed__"+r.id,requires:[prev],warrant:"verified"});
+   rules.push({id:"complete_or:"+r.id,head:"repair_evidenced",requires:["__completed__"+r.id],warrant:"verified"});
+   perRoute.push({id:r.id,channelType:r.channelType,eligibleGoal:"__eligible__"+r.id,completeGoal:"__completed__"+r.id});
  }
- const result=assess860({goals:MODEL_GOALS863,facts:["__entry__"],rules,
+ const result=assess860({goals:[...MODEL_GOALS863,...perRoute.flatMap(r=>[r.eligibleGoal,r.completeGoal])],facts:["__entry__"],rules,
     alternativesComplete:true,evidenceScopeVerified:true});
  return {status:"BOUNDED_REMEDY_MODEL_ONLY",
    computational:result.verdicts,
-   proofTrace:trace,reachableRouteClaims:packet.routes.map(r=>({
+   proofTrace:trace,reachableRouteClaims:perRoute.map(r=>({
       id:r.id,channelType:r.channelType,
-      routeGoal:result.verdicts.remedy_reachable,
-      // The overall goal is an OR across routes; no per-route execution claim here.
-      interpretation:"OVERALL_OR_GOAL_NOT_ROUTE_SPECIFIC"
+      caseRelativeRemedyPath:result.verdicts[r.eligibleGoal],
+      modeledRestoration:result.verdicts[r.completeGoal]
    })),
    institutional:"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED",
    interpretation:"Reachability is conditional on externally derived, complete finite claimant-route evidence. No live court, submission, identity verification, legal deadline, or correction is certified."};
