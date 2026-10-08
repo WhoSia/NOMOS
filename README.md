@@ -276,6 +276,12 @@ NOMOS-0.858 examines the distribution of unresolved historical person-judgment r
 
 Each task requires documented assignment under its own legal authority, a reviewable orphan HOLD with accessible records, or an independently warranted scoped discharge. Record receipt, organization rename, and software ownership are not automatically compensation obligations or merits authority. Audit module: `src/nomos/successor_duties.py`, **SD001–SD032**; the audit does not validate real legal statutes.
 
+### Distributed Joint Repair / Multi-Custodian Dependency Audit
+
+**INDIVIDUAL INSTITUTIONAL COMPLIANCE ≠ JOINT REPAIR COMPLETION.**
+
+NOMOS-0.859 audits missing task capabilities, unauthorized handoffs, fragmented challenges, veto deadlock, private-data overreach and falsely closed interinstitutional repair. A coordinator does not automatically acquire person-merits or restitution jurisdiction. Kernel v0.18.0 adds `src/nomos/joint_repair.py`, JC001–JC031, safe/unsafe fixtures and CLI `--audit-joint-repair`. The audit is structural and self-attested, not actual legal or completion proof.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -308,13 +314,12 @@ PYTHONPATH=src python -m nomos examples/recall_triage_safe.json --audit-recall-t
 PYTHONPATH=src python -m nomos examples/interim_protection_safe.json --audit-interim-protection
 PYTHONPATH=src python -m nomos examples/restitution_safe.json --audit-restitution
 PYTHONPATH=src python -m nomos examples/successor_duties_safe.json --audit-successor-duties
+PYTHONPATH=src python -m nomos examples/joint_repair_safe.json --audit-joint-repair
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.858 — Residual Repair-Debt Transfer, Institutional Succession & Obligation Survival — executable kernel v0.17.0; exact-head CI pending.**
+**NOMOS-0.859 — Fragmented Successor Jurisdiction, Joint Repair-Duty Coordination & Multi-Custodian Provenance Reconstruction — executable v0.18.0 / CI pending.**
 
-GitHub Actions use `contents: read`, with no authored bot writeback.
-
-Next title only: **NOMOS-0.859 — Fragmented Successor Jurisdiction, Joint Repair-Duty Coordination, Multi-Custodian Provenance Reconstruction & the Primitive Question of How Unresolved Person-Judgment Repair Survives When No Single Successor Controls the Records, Review Authority, Operational Systems and Restitution Budget Required for Effective Restoration**.
+Next title only: **NOMOS-0.860 — Joint-Repair Deadlock, Interinstitutional Veto Authority, Cross-Agency Priority Conflict, Coordination Escalation & the Primitive Question of When a Legally Distributed Repair Process Becomes Institutionally Noncompletable despite Every Participating Body Claiming Compliance**.
