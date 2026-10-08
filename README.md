@@ -246,6 +246,17 @@ The kernel's negative audit checks whether a capacity-constrained review queue r
 
 Structural audit PASS is not an empirical fairness certificate. Queue fairness, ranking fairness and administrative triage are established research fields; NOMOS's bounded contribution concerns post-error-repair authority separation.
 
+### Interim Consequence Suspension / Remedial Queue Debt
+NOMOS-0.856 examines consequences that continue while an accepted historical recall waits in a capacity-constrained review queue.
+
+**INSTITUTIONAL WAITING TIME MUST NOT BECOME AN UNREVIEWED NEW ADVERSE PERSON-JUDGMENT.**
+
+**INTERIM PROTECTION IS NOT MERITS ADJUDICATION.**
+
+**EXPIRY OF A TEMPORARY PROTECTION DOES NOT AUTOMATICALLY REAUTHORIZE A DEFEATED ADVERSE JUDGMENT.**
+
+Temporary protection, reasoned nonintervention, bounded suspension, notice, periodic review, counterparty impacts and repair-debt accounting require their own authority. The kernel audits 32 structural failure modes (IP001–IP032) and intentionally does not decide individual relief or case merits.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -275,13 +286,12 @@ PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit
 PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-correction-compaction
 PYTHONPATH=src python -m nomos examples/historical_reopening_safe.json --audit-historical-reopening
 PYTHONPATH=src python -m nomos examples/recall_triage_safe.json --audit-recall-triage
+PYTHONPATH=src python -m nomos examples/interim_protection_safe.json --audit-interim-protection
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.855 — Recall-Capacity Triage, Queue-Induced Inequality & Consequence-Sensitive Review Ordering — STRUCTURAL IMPLEMENTATION / EXACT-HEAD CI PENDING.**
+**NOMOS-0.856 — Interim Consequence Suspension, Delay-Contingent Protection & Remedial Queue Debt — executable v0.15.0; exact-head verification pending.**
 
-Executable kernel is **v0.14.0**. GitHub Actions retains **`contents: read`** and no writeback authority.
-
-Next title only: **NOMOS-0.856 — Interim Consequence Suspension, Delay-Contingent Protection, Remedial Queue Debt & the Primitive Question of What an Institution Must Do While a Validly Recalled Person-Judgment Cannot Yet Be Reviewed without Allowing Waiting Time to Become a New Unreviewed Adverse Decision**.
+GitHub Actions remain read-only (`contents: read`). Next title only: **NOMOS-0.857 — Interim Protection Expiry, Restitution Shortfalls, Retroactive Repair Limits & the Primitive Question of Whether Completing a Delayed Review Can Discharge Institutional Repair Debt When Lost Opportunities, Suspended Consequences or Third-Party Reliance Cannot Be Fully Reversed**.
