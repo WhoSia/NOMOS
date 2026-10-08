@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import {generateKeyPairSync,sign} from "node:crypto";
-import {evaluatePetitionIntake862,screenBytes862} from "../tools/petition862.mjs";
+import {evaluatePetitionIntake862,screenBytes862,intakeAckBytes862} from "../tools/petition862.mjs";
 import {canonical861,digest861} from "../tools/attest861.mjs";
 const asOf="2026-10-08",jurisdiction="FICTIONAL";
 let seq=0;
@@ -9,7 +9,7 @@ function key(id,group,roles){
   const {privateKey,publicKey}=generateKeyPairSync("ed25519");
   keys[id]={privateKey,group,roles,publicKeyDerBase64:publicKey.export({format:"der",type:"spki"}).toString("base64")};
 }
-key("outside","external",["screen"]);key("captured","original",["screen"]);key("untrusted","untrusted",[]);
+key("outside","external",["screen"]);key("intakeDesk","intake-office",["intake"]);key("captured","original",["screen"]);key("untrusted","untrusted",[]);
 const sources=[{id:"evidence",text:"Fictional independently pinned review memorandum."}];
 const baseCharter={id:"TEST-GOV",asOf,jurisdiction,epoch:6,subjectGroup:"original",maxIntakeAgeDays:10,
  keys:Object.fromEntries(Object.entries(keys).map(([id,x])=>[id,{
@@ -20,6 +20,13 @@ const baseCharter={id:"TEST-GOV",asOf,jurisdiction,epoch:6,subjectGroup:"origina
 function docket(){return {id:"DOCKET-1",caseId:"CASE-001",target:"census:CASE-001",
  charterId:"TEST-GOV",epoch:6,jurisdiction,receivedOn:"2026-10-06",
  complaintKind:"omitted_route",counterRouteId:"r2",claimantChannel:"open-no-attestor-key"};}
+function acknowledge(d){
+ const claim={kind:"intake_ack",issuer:"intakeDesk",docketSha256:digest861(canonical861(d)),
+   caseId:d.caseId,target:d.target,charterId:d.charterId,epoch:d.epoch,jurisdiction:d.jurisdiction,
+   receivedOn:d.receivedOn,issuedOn:"2026-10-08",validUntil:"2026-12-31"};
+ return {id:"ACK-"+(++seq),claim,
+ signature:sign(null,intakeAckBytes862(claim),keys.intakeDesk.privateKey).toString("base64")};
+}
 function assessed(d,decision="material",issuer="outside"){
  const claim={kind:"screen",issuer,decision,docketId:d.id,docketSha256:digest861(canonical861(d)),
    caseId:d.caseId,target:d.target,charterId:d.charterId,epoch:d.epoch,jurisdiction:d.jurisdiction,
@@ -28,26 +35,32 @@ function assessed(d,decision="material",issuer="outside"){
  return {id:"screen-"+(++seq),claim,signature:sign(null,screenBytes862(claim),keys[issuer].privateKey).toString("base64")};
 }
 function test(name,change,expected){
- const d=docket(),c=structuredClone(baseCharter),proofs=[],provided=structuredClone(sources);
- change({d,c,proofs,provided});
- const result=evaluatePetitionIntake862(d,proofs,c,provided);
+ const state={d:docket(),c:structuredClone(baseCharter),proofs:[],provided:structuredClone(sources)};
+ state.ack=acknowledge(state.d);
+ change(state);
+ const {d,c,proofs,provided,ack}=state;
+ const result=evaluatePetitionIntake862(d,proofs,c,provided,ack);
  assert.equal(result.status,expected,name);assert.equal(result.automaticallySuspendsAuthority,false);
  assert.equal(result.petitionRequiresApprovedAttestorKey,false);
  console.log("PASS",name,expected);
 }
-test("anyone may enter a modeled docket without approved signer",()=>{},"SCREENING_PENDING");
+test("submitter needs no privileged attestor key, but institution signs intake receipt",()=>{},"SCREENING_PENDING");
+test("unacknowledged submission does not masquerade as institutional receipt",p=>{p.ack=null;},"SUBMISSION_UNACKNOWLEDGED");
+test("counterfeit intake receipt fails",p=>{p.ack.signature="invalid";},"SUBMISSION_UNACKNOWLEDGED");
+test("replayed receipt cannot authenticate modified docket",p=>{p.d.counterRouteId="r3";},"SUBMISSION_UNACKNOWLEDGED");
+test("revoked intake desk key loses receipt authority",p=>{p.c.revokedKeys=["intakeDesk"];},"SUBMISSION_UNACKNOWLEDGED");
 test("signed materiality screening enters governance review",({d,proofs})=>proofs.push(assessed(d)),"MATERIAL_FOR_GOVERNANCE_CHALLENGE");
 test("signed non-materiality finding requires independent source",({d,proofs})=>proofs.push(assessed(d,"nonmaterial")),"SCREENED_NONMATERIAL");
 test("conflicting signed screens require review",({d,proofs})=>{
  proofs.push(assessed(d,"material"),assessed(d,"nonmaterial"));
 },"SCREENING_DISPUTED");
-test("aged unscreened petition escalates without blocking",({d})=>{d.receivedOn="2026-09-20";},"SCREENING_ESCALATION_DUE");
+test("aged acknowledged petition escalates without blocking",p=>{p.d.receivedOn="2026-09-20";p.ack=acknowledge(p.d);},"SCREENING_ESCALATION_DUE");
 test("notional case ID changed after signature",({d,proofs})=>{
  proofs.push(assessed(d));d.caseId="CASE-OTHER";
-},"SCREENING_PENDING");
+},"SUBMISSION_UNACKNOWLEDGED");
 test("docket counter-route changed after review",({d,proofs})=>{
  proofs.push(assessed(d));d.counterRouteId="r3";
-},"SCREENING_PENDING");
+},"SUBMISSION_UNACKNOWLEDGED");
 test("original operator cannot sign screening",({d,proofs})=>proofs.push(assessed(d,"material","captured")),"SCREENING_PENDING");
 test("unauthorized signing role cannot rule",({d,proofs})=>proofs.push(assessed(d,"material","untrusted")),"SCREENING_PENDING");
 test("source bytes modified after signature",({d,proofs,provided})=>{
