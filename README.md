@@ -365,6 +365,39 @@ node tests/test_petition862.mjs
 
 **0.862 bounded mathematical/synthetic governance + intake court: CLOSED after final exact-head CI validation; genuine institutional rights/standing/revocation freshness: NOT CERTIFIED.** Canonical P0–P6 stays in one Notion page.
 
+### NOMOS-0.863 — Claimant-Relative Remedy Reach and Actual Repair Distinction
+
+**FORMAL APPEAL AVAILABILITY ≠ EFFECTIVE REMEDY REACH.**
+
+NOMOS-0.863 reuses the existing 0.860 finite AND/OR court to assess separately witnessed procedural steps in the person-judgment repair path:
+
+1. claimant-usable lawful communication channel;
+2. institutionally authenticated filing receipt;
+3. legal claimant standing;
+4. timely filing or applicable exception;
+5. independent Q/E/M/I/A/C merits review;
+6. actual corrective power;
+7. execution of the granted remedy;
+8. dependent recipient-system correction.
+
+Alternative lawful candidate channels are **OR** paths, while the eight stages within a channel are **AND** dependencies. This tests both `remedy_reachable` (through stage 6) and `repair_evidenced` (through stage 8). A hypothetical case might have a validly described written route even when an online channel is unavailable. That does **not** excuse actual legally required identity verification, standing or filing formalities.
+
+- `tools/remedyReach863.mjs`: direct hypothetical model and a governed wrapper actually invoking 0.862 policy/census verification, 0.861 signed evidence and the 0.860 least fixed point. The review-stage route must have typed decision-relevant dependency-break evidence.
+- `tests/test_remedyReach863.mjs`: alternative channels, standing/time uncertainty, independent review and authority failure, receipt uncertainty and surviving adverse recipient copies.
+- `tests/test_remedyReach863_integration.mjs`: fictional cryptographic signing plus genuine 0.861/0.862 cross-stage execution.
+- `tests/test_remedyReach863_nonidentifiability.mjs`: five worlds with observationally identical signed records but different actual accessibility, hearing independence, standing or recipient state.
+- `tests/test_remedyReach863_exhaustive.mjs`: exact classification of **all 6,561 single-route stage-warrant assignments** and prefix constraints.
+- `spec/effective-contestation-access.md`: conditional theorem, previous research genealogy, official procedural sources, limits and stopping rule.
+
+Every output remains **NOT_INDEPENDENTLY_LEGALLY_CERTIFIED**. Signed route assertions do not determine real governmental authority or establish that a person has actually filed or obtained correction. Node.js/JSON tests, read-only YAML CI and unchanged Python kernel v0.18.0. Single Notion canonical has P0–P4.
+
+```bash
+node tests/test_remedyReach863.mjs
+node tests/test_remedyReach863_integration.mjs
+node tests/test_remedyReach863_exhaustive.mjs
+node tests/test_remedyReach863_nonidentifiability.mjs
+```
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -403,6 +436,6 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.862 — Contestable Trust-Root Governance, Freshness, Route Census and Independent Petition Intake — BOUNDED THEORY/SYNTHETIC EXECUTION CLOSED (exact-head CI verification required); actual institutional legal rights NOT CERTIFIED.**
+**NOMOS-0.863 — Effective Contestation Access, Independent Petition Acknowledgement & Remedy-Reach Verification — BOUNDED FINITE / SYNTHETIC SIGNED-REMEDY COURT SEALED SUBJECT TO EXACT-HEAD CI. Real legal standing and actual restitution NOT CERTIFIED.**
 
-Kernel **v0.18.0 unchanged**; Node.js verifier/proof tools with JSON packets and read-only YAML CI. Next title proposed only: **NOMOS-0.863 — Effective Contestation Access, Independent Petition Acknowledgement, Claimant Standing without Privileged Attestor Credentials, Remedy-Reach Verification & the Primitive Question of When a Formally Contestable Institutional Trust Regime Actually Gives an Affected Person a Usable Path to Correction**.
+All P0–P4 records are under one Notion 0.863 canonical. Python kernel **v0.18.0 retained**; the evidence-linking implementation uses Node.js/JSON and read-only Actions YAML. No additional stage title or new merits power is asserted.
