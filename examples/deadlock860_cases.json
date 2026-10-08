@@ -1,0 +1,160 @@
+{
+  "cases": [
+    {
+      "name": "W1-cycle-with-alternative",
+      "packet": {
+        "goals": [
+          "repair"
+        ],
+        "facts": [
+          "independent_authority"
+        ],
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "rules": [
+          {
+            "id": "a-from-b",
+            "head": "a",
+            "requires": [
+              "b"
+            ],
+            "warrant": "verified"
+          },
+          {
+            "id": "b-from-a",
+            "head": "b",
+            "requires": [
+              "a"
+            ],
+            "warrant": "verified"
+          },
+          {
+            "id": "c-route",
+            "head": "repair",
+            "requires": [
+              "independent_authority"
+            ],
+            "warrant": "verified"
+          }
+        ]
+      },
+      "expected": "ACTIONABLE"
+    },
+    {
+      "name": "W2-acyclic-no-authority",
+      "packet": {
+        "goals": [
+          "repair"
+        ],
+        "facts": [],
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "rules": [
+          {
+            "id": "unlawful",
+            "head": "repair",
+            "requires": [],
+            "warrant": "denied"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
+    },
+    {
+      "name": "W3-privacy-refusal",
+      "packet": {
+        "goals": [
+          "release"
+        ],
+        "facts": [],
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "rules": [
+          {
+            "id": "privacy",
+            "head": "release",
+            "requires": [],
+            "warrant": "denied"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
+    },
+    {
+      "name": "cycle-no-seed",
+      "packet": {
+        "goals": [
+          "a"
+        ],
+        "facts": [],
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "rules": [
+          {
+            "id": "a",
+            "head": "a",
+            "requires": [
+              "b"
+            ],
+            "warrant": "verified"
+          },
+          {
+            "id": "b",
+            "head": "b",
+            "requires": [
+              "a"
+            ],
+            "warrant": "verified"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
+    },
+    {
+      "name": "unknown-warrant",
+      "packet": {
+        "goals": [
+          "repair"
+        ],
+        "facts": [],
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "rules": [
+          {
+            "id": "unadjudicated",
+            "head": "repair",
+            "requires": [],
+            "warrant": "unknown"
+          }
+        ]
+      },
+      "expected": "UNKNOWN"
+    },
+    {
+      "name": "unknown-alternatives",
+      "packet": {
+        "goals": [
+          "repair"
+        ],
+        "facts": [],
+        "alternativesComplete": false,
+        "evidenceScopeVerified": true,
+        "rules": []
+      },
+      "expected": "UNKNOWN"
+    },
+    {
+      "name": "unknown-evidence",
+      "packet": {
+        "goals": [
+          "repair"
+        ],
+        "facts": [],
+        "alternativesComplete": true,
+        "evidenceScopeVerified": false,
+        "rules": []
+      },
+      "expected": "UNKNOWN"
+    }
+  ]
+}
