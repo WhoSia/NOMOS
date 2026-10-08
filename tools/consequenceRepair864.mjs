@@ -75,3 +75,22 @@ export function causalCounterworldPair864({observedBefore,observedAfter,untreate
   causalEffectIdentified:untreatedAfterA===untreatedAfterB,
   interpretation:"Existence of a pair with distinct effects refutes identification from observed before/after alone; constructed counterfactuals are not actual person data."};
 }
+
+// NOMOS-0.850 compatibility: surface equality cannot prove semantic re-derivation.
+// This is a negative gate, NOT verification of a fresh independent warrant.
+export function assessSemanticRepair864({valueReadback,semanticReadback,activeGenerator}){
+ if(valueReadback!=="OBSERVED_CORRECTED")return {status:"UNKNOWN",reason:"NO_TARGET_VALUE_READBACK"};
+ if(!semanticReadback||semanticReadback.kind!=="fresh_rederivation"||
+    semanticReadback.sourceDefeated!==true||
+    semanticReadback.freshWarrant!==true||
+    semanticReadback.mapperChanged!==true)
+    return {status:"UNKNOWN",reason:"SEMANTIC_REDERIVATION_NOT_ESTABLISHED"};
+ if(!activeGenerator||activeGenerator.replayTested!==true)
+    return {status:"UNKNOWN",reason:"GENERATOR_RESURRECTION_UNTESTED"};
+ if(activeGenerator.resurrectsDefeatedJudgment===true)
+    return {status:"OBSERVED_INCOMPLETE",reason:"GENERATOR_RESURRECTS_DEFEATED_JUDGMENT"};
+ if(activeGenerator.resurrectsDefeatedJudgment!==false)
+    return {status:"UNKNOWN",reason:"GENERATOR_RESULT_UNCERTAIN"};
+ return {status:"SEMANTICALLY_SUPPORTED_IN_SYNTHETIC_MODEL_ONLY",
+    actuality:"NOT_AN_INDEPENDENT_VERIFICATION_OF_REAL_WARRANT"};
+}
