@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import {generateKeyPairSync,sign} from "node:crypto";
 import {verifyGoverned862,bytes862} from "../tools/governance862.mjs";
-import {verifyGovernedWithPetitions862,screenBytes862} from "../tools/petition862.mjs";
+import {verifyGovernedWithPetitions862,screenBytes862,intakeAckBytes862} from "../tools/petition862.mjs";
 import {signedBytes861,canonical861,digest861} from "../tools/attest861.mjs";
 const day="2026-10-08",jurisdiction="FICTIONAL-JURISDICTION",caseId="CASE-DEMO";
 const keys={};function person(id,group,roles){
@@ -13,6 +13,7 @@ for(const [id,group,roles] of [
  ["censusWitness","inventory-witness",["census"]],
  ["governorA","external-A",["status"]],["governorB","external-B",["status"]],
  ["challenger","external-challenge",["challenge"]],
+ ["intakeDesk","intake-office",["intake"]],
  ["screenAssessor","external-screen",["screen"]]
 ])person(id,group,roles);
 const src861=[
@@ -52,7 +53,7 @@ const src862=[
 const govCharter={id:"GOV-FICTION",epoch:6,minimumEpoch:6,jurisdiction,asOf:day,
  quorum:2,maxStatusAgeDays:7,maxChallengeAgeDays:14,maxIntakeAgeDays:10,subjectGroup:"original",
  legacyPolicySha256:digest861(canonical861(policy861)),
- keys:Object.fromEntries(["governorA","governorB","challenger","screenAssessor"].map(id=>[id,{
+ keys:Object.fromEntries(["governorA","governorB","challenger","intakeDesk","screenAssessor"].map(id=>[id,{
   publicKeyDerBase64:keys[id].publicKeyDerBase64,roles:keys[id].roles,group:keys[id].group,
   from:"2026-01-01",until:"2026-12-31"}])),
  sourcePins:Object.fromEntries(src862.map(s=>[s.id,{
@@ -96,6 +97,13 @@ test("policy epoch rollback blocked",({root})=>{root.epoch=5;},"verified","GOVER
 console.log("PASS 0.861/0.862 boundary: governance hold forbids either outer model verdict");
 
 
+function acknowledgeDocket(docket){
+ const claim={kind:"intake_ack",issuer:"intakeDesk",docketSha256:digest861(canonical861(docket)),
+ caseId:docket.caseId,target:docket.target,charterId:docket.charterId,epoch:docket.epoch,jurisdiction:docket.jurisdiction,
+ receivedOn:docket.receivedOn,issuedOn:day,validUntil:"2026-12-31"};
+ return {id:"ACK-"+(++seq),claim,
+ signature:sign(null,intakeAckBytes862(claim),keys.intakeDesk.privateKey).toString("base64")};
+}
 function petitionInput(decision,routeState="verified"){
   const docket={id:"D-CASE-DEMO",caseId,target:"census:"+caseId,
     charterId:govCharter.id,epoch:govCharter.epoch,jurisdiction,
@@ -111,7 +119,7 @@ function petitionInput(decision,routeState="verified"){
     assessments.push({id:"SCREEN-"+(++seq),claim,
       signature:sign(null,screenBytes862(claim),keys.screenAssessor.privateKey).toString("base64")});
   }
-  return {docket,assessments,evidenceSources,routeState};
+  return {docket,assessments,evidenceSources,acknowledgement:acknowledgeDocket(docket),routeState};
 }
 function withPetition(name,routeState,kind,mutate,expectedState,expectedModel,expectedIntake){
   const legacy=packet861(routeState),charter=structuredClone(govCharter);
@@ -125,7 +133,7 @@ function withPetition(name,routeState,kind,mutate,expectedState,expectedModel,ex
   assert.equal(r.institutional.restored,"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED");
   console.log("PASS petition↔governance↔model",name,r.status,r.computational.restored);
 }
-withPetition("unkeyed petition gets receipt, not automatic policy veto",
+withPetition("non-attestor-credentialed petitioner receives signed intake acknowledgement, not a veto",
   "verified",null,()=>{},"GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SCREENING_PENDING");
 withPetition("independent screened material claim masks ACTIONABLE",
   "verified","material",()=>{},"INDEPENDENT_CONTEST_REVIEW_HOLD","UNKNOWN","MATERIAL_FOR_GOVERNANCE_CHALLENGE");
@@ -140,6 +148,12 @@ withPetition("unrelated case cannot veto",
   "verified","material",item=>{item.docket.caseId="OTHER-CASE";},
   "GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","UNRELATED_PETITION");
 withPetition("aged unkeyed intake does not silently disappear or gain a veto",
-  "verified",null,item=>{item.docket.receivedOn="2026-09-01";},
+  "verified",null,item=>{item.docket.receivedOn="2026-09-01";item.acknowledgement=acknowledgeDocket(item.docket);},
   "GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SCREENING_ESCALATION_DUE");
+withPetition("no institutional acknowledgement is not proof of receipt",
+  "verified",null,item=>{item.acknowledgement=null;},
+  "GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SUBMISSION_UNACKNOWLEDGED");
+withPetition("material assertion without institutional acknowledgement gains no suspension",
+  "verified","material",item=>{item.acknowledgement=null;},
+  "GOVERNED_MODEL_BOUNDS_ONLY","ACTIONABLE","SUBMISSION_UNACKNOWLEDGED");
 console.log("PASS P5 open intake separated from signed authority to challenge");
