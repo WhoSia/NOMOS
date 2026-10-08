@@ -22,7 +22,7 @@ let cases=0,worlds=0;
 for(const facts of [[],["a"],["b"],["c"],["a","c"]]){
   for(let encoding=0;encoding<3**template.length;encoding++){
     let x=encoding;
-    const rules=template.map(t=>({...t,warrant:labels[(x%3)],...(x=Math.floor(x/3),{})}));
+    const rules=template.map(t=>{const warrant=labels[x%3];x=Math.floor(x/3);return {...t,warrant};});
     const packet={goals:["goal","a","b"],facts,alternativesComplete:true,evidenceScopeVerified:true,rules};
     const result=assess860(packet);
     const unknown=rules.filter(r=>r.warrant==="unknown");
