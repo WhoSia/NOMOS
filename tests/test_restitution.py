@@ -14,7 +14,7 @@ class RestitutionTests(unittest.TestCase):
     def test_interim_expiry(self):self.check("RD030","post_expiry_effect_reviewed",False,True)
     def test_lost_opportunity(self):self.check("RD025","opportunity_receipt",False,True)
     def test_reliance(self):self.check("RD027","reliance_disposition",False,True)
-    def test_discharge(self):self.check("RD031","unresolved_tasks",["compensate"],True);self.check("RD031","debt_claim","discharged",True) if False else None
+    def test_discharge(self):p=fixture();p["cases"][0]["unresolved_tasks"]=["compensate"];p["cases"][0]["debt_claim"]="discharged";self.assertIn("RD031",{f["code"] for f in analyze_restitution(p)["findings"]})
     def test_false_completion(self):self.check("RD020","completion_claim","complete")
     def test_live_copy(self):self.check("RD029","downstream_copy_live",True,True)
 if __name__=="__main__":unittest.main()
