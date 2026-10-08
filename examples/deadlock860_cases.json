@@ -155,6 +155,183 @@
         "rules": []
       },
       "expected": "UNKNOWN"
+    },
+    {
+      "name": "W4-local-certificates-with-live-recipient",
+      "domainLimit": "Recipient branch still live is an ASSUMED fact, not independently detected from raw records.",
+      "packet": {
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "goals": [
+          "joint_restoration"
+        ],
+        "facts": [
+          "archive_complete",
+          "review_complete",
+          "budget_ready"
+        ],
+        "rules": [
+          {
+            "id": "joint",
+            "head": "joint_restoration",
+            "requires": [
+              "archive_complete",
+              "review_complete",
+              "budget_ready",
+              "recipient_corrected"
+            ],
+            "warrant": "verified"
+          },
+          {
+            "id": "recipient_correction_not_available",
+            "head": "recipient_corrected",
+            "requires": [],
+            "warrant": "denied"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
+    },
+    {
+      "name": "W5-formal-appeal-unindependent",
+      "domainLimit": "Reviewer independence is encoded as a denied rule after separate institutional evaluation, not proven by reachability.",
+      "packet": {
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "goals": [
+          "independent_review"
+        ],
+        "facts": [
+          "appeal_filed"
+        ],
+        "rules": [
+          {
+            "id": "same_generator_review",
+            "head": "independent_review",
+            "requires": [
+              "appeal_filed"
+            ],
+            "warrant": "denied"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
+    },
+    {
+      "name": "W6-interim-expiry-without-fresh-adverse-authority",
+      "domainLimit": "Lawful adverse reauthorization and expiry are independent warrant assertions.",
+      "packet": {
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "goals": [
+          "adverse_reauthorized"
+        ],
+        "facts": [
+          "interim_expired"
+        ],
+        "rules": [
+          {
+            "id": "expiry_not_merits",
+            "head": "adverse_reauthorized",
+            "requires": [
+              "interim_expired"
+            ],
+            "warrant": "denied"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
+    },
+    {
+      "name": "W7-before-new-authority",
+      "domainLimit": "Snapshot before a hypothetical legal amendment; NOT permanent impossibility.",
+      "packet": {
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "goals": [
+          "authorized_repair"
+        ],
+        "facts": [
+          "request"
+        ],
+        "rules": [
+          {
+            "id": "new_power",
+            "head": "authorized_repair",
+            "requires": [
+              "request"
+            ],
+            "warrant": "denied"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
+    },
+    {
+      "name": "W7-after-new-authority",
+      "domainLimit": "Distinct hypothetical post-amendment snapshot; not a monotone within-snapshot legal conclusion.",
+      "packet": {
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "goals": [
+          "authorized_repair"
+        ],
+        "facts": [
+          "request"
+        ],
+        "rules": [
+          {
+            "id": "new_power",
+            "head": "authorized_repair",
+            "requires": [
+              "request"
+            ],
+            "warrant": "verified"
+          }
+        ]
+      },
+      "expected": "ACTIONABLE"
+    },
+    {
+      "name": "W8-single-door-referral-loop",
+      "domainLimit": "Acyclic derivation model assumes all independent exits enumerated. Referral loop does not by itself prove no real appeal exists.",
+      "packet": {
+        "alternativesComplete": true,
+        "evidenceScopeVerified": true,
+        "goals": [
+          "independent_hearing"
+        ],
+        "facts": [
+          "claim_filed"
+        ],
+        "rules": [
+          {
+            "id": "redirectA",
+            "head": "deskA",
+            "requires": [
+              "deskB"
+            ],
+            "warrant": "verified"
+          },
+          {
+            "id": "redirectB",
+            "head": "deskB",
+            "requires": [
+              "deskA"
+            ],
+            "warrant": "verified"
+          },
+          {
+            "id": "formal_hearing",
+            "head": "independent_hearing",
+            "requires": [
+              "deskA"
+            ],
+            "warrant": "verified"
+          }
+        ]
+      },
+      "expected": "BOUNDED_BLOCKED"
     }
   ]
 }
