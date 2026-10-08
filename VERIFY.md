@@ -46,6 +46,15 @@ TRANSPORTABLE_SYSTEMATIC_CANDIDATE
 
 No lower layer inherits a higher layer's authority.
 
+## Node 22 active synthetic audit
+
+```bash
+node tests/test_consequenceRepair864.mjs
+node tests/test_observationAuthority865.mjs
+```
+
+Both are model-relative only. The 0.865 readback-root rule has not been independently certified against real institutions. See `research/current.md` for current research state.
+
 ## Current executable surfaces
 
 - Case Graph
@@ -60,7 +69,7 @@ No lower layer inherits a higher layer's authority.
 
 **v0.8.0**
 
-Current research head after closure: **NOMOS-0.845**.
+Current research head: **NOMOS-0.865 OPEN**; preceding **NOMOS-0.864 CLOSED** under bounded synthetic claims (exact-head CI #332 SUCCESS). The historical v0.8.0 version marker above is not a version upgrade assertion.
 
 See:
 - `README.md`
@@ -76,4 +85,4 @@ NOMOS code audits structures and provenance. It does not output person merit, mo
 
 ## Automation boundary
 
-The repository may use CI as a test runner, but CI status is not scientific proof and automation must not mint research authority or alter contributor identity. The 0.845 release did **not** modify the GitHub Actions workflow.
+The repository may use CI as a test runner, but CI status is not scientific proof and automation must not mint research authority or alter contributor identity. The CI is read-only (`permissions: contents: read`) and must never author commits or push as `github-actions[bot]`. Human-authored changes alone amend the repository.
