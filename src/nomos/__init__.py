@@ -7,6 +7,7 @@ from .correction_propagation import analyze_correction_propagation, correction_i
 from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration, minimal_safe_restoration_sets
 from .historical_reopening import analyze_historical_reopening
+from .recall_triage import analyze_recall_triage
 from .lineage import dependency_closure, impacted_derived_records, trace_record
 from .record_portability import analyze_record_portability, descendant_map, emergency_ancestors
 from .review_divergence import analyze_review_divergence, contract_diff
@@ -41,6 +42,7 @@ __all__ = [
     "analyze_correction_compaction",
     "compaction_debt",
     "analyze_historical_reopening",
+    "analyze_recall_triage",
     "analyze_systemic_reopening",
 ]
-__version__ = "0.13.0"
+__version__ = "0.14.0"
