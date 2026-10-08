@@ -235,6 +235,17 @@ Core rules:
 
 The stage joins the older 0.772 reactivation-potential distinction, 0.824 reopenability requirement, 0.838–0.841 contestability/router line and 0.852 historical-retention firewall without collapsing into generic appeal design.
 
+### Historical Recall-Capacity Triage / Queue-Authority Firewall
+NOMOS-0.855 examines what happens when a valid systemic historical recall cohort exceeds review capacity.
+
+**RECALL ELIGIBILITY ≠ QUEUE PRIORITY ≠ PERSON MERITS ≠ CONSEQUENCE AUTHORITY.**
+
+**QUEUE PRIORITY IS REPAIR-SEQUENCING AUTHORITY, NOT PERSON-JUDGMENT AUTHORITY.**
+
+The kernel's negative audit checks whether a capacity-constrained review queue reuses defeated person labels, silently omits eligible branches, ignores ongoing harm and deadlines, hides queue policy, denies queue-position contestability, overuses arrival order, or falsely declares review complete.
+
+Structural audit PASS is not an empirical fairness certificate. Queue fairness, ranking fairness and administrative triage are established research fields; NOMOS's bounded contribution concerns post-error-repair authority separation.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -263,19 +274,14 @@ PYTHONPATH=src python -m nomos examples/correction_propagation_safe.json --audit
 PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit-correction-concurrency
 PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-correction-compaction
 PYTHONPATH=src python -m nomos examples/historical_reopening_safe.json --audit-historical-reopening
+PYTHONPATH=src python -m nomos examples/recall_triage_safe.json --audit-recall-triage
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 ## Current head
 
-**NOMOS-0.853 — Reopen Trigger Governance, Historical-Branch Reactivation & Snapshot Challenge Escalation — CLOSED.**
+**NOMOS-0.855 — Recall-Capacity Triage, Queue-Induced Inequality & Consequence-Sensitive Review Ordering — STRUCTURAL IMPLEMENTATION / EXACT-HEAD CI PENDING.**
 
-Executable kernel is **v0.12.0**.
+Executable kernel is **v0.14.0**. GitHub Actions retains **`contents: read`** and no writeback authority.
 
-The kernel now audits whether historically retained person-judgment branches may re-enter active review without allowing historical accessibility, requester standing, review admission or old branch persistence to substitute for fresh current person-authority warrant.
-
-GitHub Actions remain constrained to **`contents: read`** and do not author or write back repository history.
-
-External verification boundary: see **VERIFY.md**.
-
-Next title only: **NOMOS-0.854 — Systemic Reopening, Shared-Defect Propagation, Class-Wide Historical Recall, Sample-to-Cohort Escalation & the Primitive Question of When a Defect Found in One Reopened Branch Creates Duties to Reopen Other Retired Person-Judgment Branches That Share the Same Model, Query, Data Pipeline or Institutional Generator**
+Next title only: **NOMOS-0.856 — Interim Consequence Suspension, Delay-Contingent Protection, Remedial Queue Debt & the Primitive Question of What an Institution Must Do While a Validly Recalled Person-Judgment Cannot Yet Be Reviewed without Allowing Waiting Time to Become a New Unreviewed Adverse Decision**.
