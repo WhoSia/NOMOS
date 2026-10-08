@@ -39,7 +39,7 @@ export function verify861(packet, policy) {
   if(typeof packet.caseId!=="string" || typeof policy.jurisdiction!=="string" || !packet.caseId) throw Error("Case scope required");
   const errors=[],details=[];
   const rules=packet.model.rules;
-  if(!unique(rules.map(x=>x.id)) || rules.some(x=>!x.id || !x.head || !Array.isArray(x.requires) || !x.subject || !["boolean","undefined"].includes(typeof x.requiresIndependentReview)))throw Error("Malformed or duplicate rule");
+  if(!Array.isArray(packet.model.facts) || !unique(packet.model.facts) || !unique(rules.map(x=>x.id)) || rules.some(x=>!x.id || !x.head || !Array.isArray(x.requires) || !x.subject || !["boolean","undefined"].includes(typeof x.requiresIndependentReview)))throw Error("Malformed or duplicate rule");
   if(!unique(packet.proofs.map(x=>x.id)) || !unique(packet.sources.map(x=>x.id)))throw Error("Duplicate evidence identifiers");
   const sourceById=new Map(packet.sources.map(x=>[x.id,x]));
   const pinnedSources=new Set();
@@ -54,7 +54,7 @@ export function verify861(packet, policy) {
     const c=proof.claim, sig=proof.signature;
     const issuer=c?.issuer, key=policy.trustedKeys[issuer];
     let why="";
-    if(!c || typeof proof.id!=="string" || typeof sig!=="string" || !["route","review","census"].includes(c.kind))why="MALFORMED_PROOF";
+    if(!c || typeof proof.id!=="string" || typeof sig!=="string" || !["route","review","census","fact"].includes(c.kind))why="MALFORMED_PROOF";
     else if(c.caseId!==packet.caseId || c.jurisdiction!==policy.jurisdiction)why="SCOPE_MISMATCH";
     else if(!active(policy.asOf,c.validFrom,c.validUntil) || !day(c.issuedOn) || c.issuedOn>policy.asOf)why="STALE_OR_FUTURE";
     else if(policy.revokedProofIds?.includes(proof.id) || policy.revokedKeyIds?.includes(issuer))why="REVOKED_AT_SNAPSHOT";
@@ -71,6 +71,7 @@ export function verify861(packet, policy) {
              !["verified","denied"].includes(c.assertion)))why="INVALID_ROUTE_ASSERTION";
     else if(c.kind==="review" && (!rules.some(r=>r.id===c.routeId && r.subject===c.subject) ||
              c.assertion!=="independent"))why="INVALID_REVIEW_ASSERTION";
+    else if(c.kind==="fact" && (!packet.model.facts.includes(c.factId) || c.assertion!=="observed"))why="INVALID_BASE_FACT";
     if(!why){
       try{
         const publicKey=createPublicKey({key:Buffer.from(key.publicKeyDerBase64,"base64"),format:"der",type:"spki"});
@@ -100,13 +101,22 @@ export function verify861(packet, policy) {
     }
     return {id:r.id,head:r.head,requires:r.requires,warrant};
   });
-  // An unsigned census cannot turn an absent edge into a definite blocked claim.
-  // A signed complete census is still only a claim in the *pinned trust-policy model*.
-  const gate=assess860({goals:packet.model.goals,facts:packet.model.facts||[],
-      rules:modeledRules,alternativesComplete:censusValid,evidenceScopeVerified:censusValid});
+  // NEVER promote a submitted base fact directly into a known true fact.
+  // Missing attestation means the fact is UNKNOWN, not FALSE or TRUE.
+  const attestedFacts=new Set(accepted.filter(c=>c.kind==="fact" && c.assertion==="observed").map(c=>c.factId));
+  const witnessedFacts=packet.model.facts.filter(x=>attestedFacts.has(x));
+  const unwitnessedFacts=packet.model.facts.filter(x=>!attestedFacts.has(x));
+  const epistemicRules=unwitnessedFacts.map((x,i)=>({
+    id:"__nomos_861_unwitnessed_fact_"+i,head:x,requires:[],warrant:"unknown"
+  }));
+  // A signed complete census is still only a *bounded assertion*, not an
+  // authentic proof that all lawful routes have been enumerated.
+  const gate=assess860({goals:packet.model.goals,facts:witnessedFacts,
+      rules:[...modeledRules,...epistemicRules],alternativesComplete:censusValid,evidenceScopeVerified:censusValid});
   const institutionalVerdicts=Object.fromEntries(packet.model.goals.map(g=>[g,"NOT_INDEPENDENTLY_LEGALLY_CERTIFIED"]));
   return {status:censusValid?"ATTESTED_MODEL_BOUNDS_ONLY":"EVIDENCE_HOLD",
     modeledRuleWarrants:Object.fromEntries(modeledRules.map(r=>[r.id,r.warrant])),
+    baseFacts:{attested:witnessedFacts,unknown:unwitnessedFacts},
     computational:gate.verdicts, institutional:institutionalVerdicts,
     evidence:{accepted:accepted.length,rejected:errors.length,proofs:details,
       pinnedSources:[...pinnedSources].sort(),signedCensusClaim:censusValid,
