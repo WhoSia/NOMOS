@@ -1,65 +1,66 @@
 # Current Research Head — NOMOS-0.862
 
-**Status: OPEN / BOUNDED GOVERNANCE THEOREM AND SYNTHETIC VALIDATION PASS / REAL-WORLD TRUST-ROOT LEGITIMACY HOLD**
+**Status: BOUNDED THEORY + SYNTHETIC GOVERNANCE/PETITION EXECUTION SEALED / FINAL EXACT-HEAD CI GATE / REAL INSTITUTIONAL LEGITIMACY NOT CERTIFIED**
 
-## Primitive question
+## Explanandum
 
-Who may certify institutional repair-evidence trust roots, legal route inventories and credential status without giving the registrar, auditor or reviewer power to authenticate its own competence or suppress admissible challenges?
+A formally signed trust root cannot create its own legitimate authority over a disputed person's institutional repair. The person must have a workable route to contest root, revocation and route-census assertions; that ability is distinct from allowing every submitted petition to veto a competent agency.
 
-**SIGNED TRUST ROOT ≠ LEGITIMATE AUTHORITY.**
-**DECLARED CONTROL-GROUP QUORUM ≠ EMPIRICALLY INDEPENDENT SIGNERS.**
-**OLD GOOD STATUS ≠ CURRENT NONREVOCATION.**
-**TRUST POLICY COMPLIANCE ≠ LEGALLY EFFECTIVE INSTITUTIONAL JUDGMENT.**
+**SIGNED TRUST ROOT ≠ LAWFUL AUTHORITY.**
 
-## Rejoin original NOMOS
+**QUORUM OF KEYS ≠ INDEPENDENT REAL CONTROLLERS.**
 
-0.19 already established bounded reflexive anti-capture operator oversight, separated trigger governance and appeal against safeguards. 0.38 attacked self-sealing descriptions. 0.839–0.840 require real Q/E/M/I/A/C review breaks. 0.841 established router/meta-reviewer capture. 0.860 proved the finite reachability result under complete model assumptions and showed actual legal feasibility cannot be inferred from declared graphs. 0.861 established an externally pinned evidence-verifier but necessarily took the external trust-policy governance as given.
+**SUBMISSION ≠ INSTITUTIONAL ACKNOWLEDGEMENT ≠ QUALIFIED SCREENING ≠ LEGAL VETO.**
 
-**0.862 is an executable specialization of these pre-existing ideas, not the discovery of generic contestability or credential revocation.**
+## P0–P1: Constitution and donors
 
-## P0–P1 — Finite governance and negative authority proof
+0.19 already developed anti-capture-operator reflexivity, trigger/appeal separation and bounded contestability; 0.38 rejected self-sealing repairs; 0.839–0.840 require dependency-sensitive independent review; 0.841 established meta-router capture. 0.860's three-valued AND/OR computation and 0.861's cryptographically attributed signed-evidence receipts remain subject to external-world assumptions.
 
-Externally supplied policy charter governs root ID, jurisdiction, current/minimum epoch, signer keys/roles, purported independent control groups, pinned evidence digests, date snapshot, group quorum, status freshness limit and maximum unaddressed challenge period.
+Prior standards are W3C VC Data Model 2.0 and Bitstring Status List, RFC 9162, NIST SP 800-63C-4 redress/trust agreements, and SLSA/in-toto policy attribution. **No invention claim** for revocation lists, status freshness, signatures, quorums or challenge procedures.
 
-No formal signature chain proves that the charter itself represents legitimate statutory authority. Two worlds can have identical signed policy observations while their real controllers, authoritative legal interpretation, hidden revocations, actual timestamps or accessible complainant routes differ. A computational function of the observations cannot determine those real conditions.
+## P2–P4: Finite synthetic governance court
 
-## P2 — Runtime
+`tools/governance862.mjs` uses a **separately supplied** charter with independently pinned signer keys, roles, declared control groups, epoch, jurisdiction, evidentiary source hashes, claimed status freshness and challenge escalation bounds.
 
-- Node.js: `tools/governance862.mjs`; conditional ED25519 verification and signed route-list digest binding, rule roles, group-distinct approval count, revocation, external signed challenge and group-distinct resolution quorum.
-- `tests/test_governance862.mjs`: synthetic status, spoofed self-approval, key/group Sybil, revoked/stale status, altered route list, root epoch, challenge misuse and aged challenge tests, plus hidden-world observational pairs.
-- `tests/test_governance862_integration.mjs`: synthetic Ed25519 governance and 0.861 packet with real execution checks: parent root or census HOLD returns UNKNOWN even if 0.861's finite model would be ACTIONABLE or BOUNDED_BLOCKED.
-- `spec/contested-trust-governance.md`: scope, conditional safety proposition, nonidentifiability and prior-art ceiling.
-- Existing 0.860/0.861 Node audits and Python v0.18.0 remain untouched; read-only GitHub Actions checks all.
+Finite-model states include ELIGIBLE_MODEL, UNKNOWN, FRESHNESS_HOLD, REVOKED_ATTESTED, CHALLENGED, ESCALATION_REQUIRED. Each still returns institutional **NOT_INDEPENDENTLY_LEGALLY_CERTIFIED**.
 
-Conditional policy states: ELIGIBLE_MODEL, UNKNOWN, FRESHNESS_HOLD, REVOKED_ATTESTED, CHALLENGED, ESCALATION_REQUIRED. These **do not** denote legal or judicial disposition.
+`verifyGoverned862` binds the exact 0.861 policy hash plus route census to the signed charter. A challenged, revoked, stale or otherwise invalid governance root/census changes BOTH downstream ACTIONABLE and BOUNDED_BLOCKED certificates to UNKNOWN. Tests include duplicate keys/one controller, conflicting status, missing freshness, disallowed attestor, review capture, age-based independent escalation and four identical observable governance records with different actual hidden institutional worlds.
 
-## P3 — Double-sided falsification
+**Bounded theorem:** if charter identities, controller map, signer roles, dates, event set and cryptographic checks are correct, ELIGIBLE_MODEL establishes a group-diverse, current, signed modeled status with no recognized unresolved contest **inside that snapshot**. Neither policy authorship nor actual legal competence is proved.
 
-Under provided charter, fresh independent group attestations can support ELIGIBLE_MODEL. A signer with two keys in one control group cannot form quorum; current revocation, unresolved material challenge, expired status, altered route census, bad epoch, or mismatched lower policy hash prevents blind reuse of a model verdict.
+## P5: Access without free veto
 
-An expired challenge is not silently dismissed: ESCALATION_REQUIRED records the institutional review debt without creating a new coercive court.
+`tools/petition862.mjs` adds a procedure in which a person need not possess the privileged **attestor** key to submit a docket. This does not bypass any lawfully required identity or standing checks. The submitter's own docket hash is explicitly NOT proof of institutional acceptance.
 
-Four hidden-world paired tests: actual common controller, unknown revocation, signed backdated issuance, and unauthenticated affected-person petition. Identical observations lead to identical computed result, exposing genuine legal independence/freshness/inclusion as OUTSIDE the model.
+A separately role-authorized intake operator must sign the exact docket's SHA-256, case, charter epoch, jurisdiction, asserted date and target to establish `SIGNED_INTAKE_RECEIPT_ONLY`. Without that the result is `SUBMISSION_UNACKNOWLEDGED`.
 
-## P4 — Prior-art and stopping court
+A different independently chartered screening role can then issue a source-pinned signed assessment of materiality. Ordinary submitted, acknowledged-but-pending and independently nonmaterial petitions do not automatically suspend a 0.861 finite computation. A receipt-backed independent *material* screen or genuine conflicting independent screens mask either positive or negative model answer with `INDEPENDENT_CONTEST_REVIEW_HOLD` and UNKNOWN. Late screened/unscreened petitions are kept in accountable escalation state, not silently dismissed or given automatic legal effect. Unrelated-case receipts cannot block others.
 
-Existing donors:
-- W3C VC Data Model 2.0: signature verification does not imply claim truth.
-- W3C Bitstring Status List v1.0: revocation/suspension and status-issuer separation already exist.
-- RFC 9162: append-only Merkle log, monitors, split-view and consistency issues already exist.
-- NIST SP 800-63C-4: trust agreements in identity federation.
-- SLSA/in-toto: verification policy provenance and accepted signer-verifier combinations.
-- NOMOS 0.19 / 0.38 / 0.839–0.841: established bounded recursive contestability, anti-sealing and meta-router critique.
+**Exact test artifacts:** `tests/test_petition862.mjs`; extended `tests/test_governance862_integration.mjs`. Earlier exact code-test head `4eebf26ee0ed3cef5925eaf90c154bdbe97dbb22`, Actions #301 SUCCESS. Intermediate #299/#300 were red while mandatory acknowledgement changed verifier inputs before fixtures were updated; they were repaired.
 
-### Final legal/epistemic ceiling
+## P6: Theorems and stopping rule
 
-Signatures and group strings are not real legal mandates or evidence of separate ultimate controllers. Cryptographic date fields do not prove time without trusted timestamping; no live authority/status registry or verified appeal intake is connected. A signed counter-route is a claim requiring review, not a source of legal entitlement. The event packet itself may omit relevant challenges. The implementation has no true Merkle log or cross-observer consistency check and cannot measure real review independence or enforce actual remedies.
+Conditional technical proposition: submitted bytes or a self-generated docket ID alone cannot be promoted into institutional acknowledgement or an authority veto. A signer/role/source/case-bound acknowledgement plus independently screened materiality can invoke **a bounded model-level hold** under the configured charter, not a legal ruling.
 
-**Current research ruling:** P0–P1 semantics frozen, P2–P3 synthetic executable court PASS at verified code heads, P4 negative authority result formally retained. Stage-level real institutional trust-root contestability **HOLD / NOT CERTIFIED**. No full unconditional STRONG PASS/CLOSED claim.
+Nonidentifiability theorem: identical fully signed/acknowledged model packets can represent different actual legal powers, controller relationships, genuinely current revocation data, correct petitioner standing or effective appeal reachability. Thus no finite in-band certificate can by itself establish an institution's legitimate coercive authority over a person.
 
-## Canonical and next gate
+**0.862 DOMAIN-BOUNDED MATHEMATICAL/SYNTHETIC COURT: CLOSED subject to final exact-head CI.**
 
-- One Notion canonical with P0–P4: https://app.notion.com/p/3f3ef561cf928158855dfbfdce37e364
-- Source-bound spec: `spec/contested-trust-governance.md`.
-- Next substantive action: acquire independently grounded actual statutory trust-key governance, verifiable current revocation and an accessible lay-person petition route before attempting an institutional test.
-- **No NOMOS-0.863 title or opening merely because an executable toy model passed.**
+**ACTUAL LEGAL AUTHORITY, LIVE REVOCATION, TRUSTED TIMESTAMPS, AUTHENTIC PUBLIC-AGENCY RECEIPTS, IDENTITY ASSURANCE, REALISTIC QUEUE/SLA RESOURCES AND EFFECTIVE REMEDY: NOT CERTIFIED / OUTSIDE PROVEN DOMAIN.**
+
+No further simulated checkboxes should be used to claim real-world sovereignty. The correct next research object is actual institutional-access evidence and human/legal review.
+
+## Protocol and links
+
+- Kernel remains Python **v0.18.0** (unchanged).
+- Owner runtime: **Node.js** with Ed25519 + JSON; workflow **YAML**, no bot-authored commits.
+- `tools/governance862.mjs`, `tools/petition862.mjs`, `spec/contested-trust-governance.md`
+- Tests: `tests/test_governance862.mjs`, `tests/test_governance862_integration.mjs`, `tests/test_petition862.mjs`.
+- Single Notion canonical with P0–P6: https://app.notion.com/p/3f3ef561cf928158855dfbfdce37e364
+- Source-only Harvest: https://app.notion.com/p/3f3ef561cf92818ab465c2f40e0f856d
+
+## Next formal title — proposed, NOT OPENED
+
+**NOMOS-0.863 — Effective Contestation Access, Independent Petition Acknowledgement, Claimant Standing without Privileged Attestor Credentials, Remedy-Reach Verification & the Primitive Question of When a Formally Contestable Institutional Trust Regime Actually Gives an Affected Person a Usable Path to Correction**
+
+Stage may be considered bounded-closed once exact-head CI verifies current canonical code/tests/docs. No institutionally authentic legal verdict is claimed.
