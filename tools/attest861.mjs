@@ -46,9 +46,10 @@ export function verify861(packet, policy) {
     else if(!key || !key.roles?.includes(c.kind) || key.jurisdiction!==policy.jurisdiction ||
             !active(policy.asOf,key.validFrom,key.validUntil))why="UNTRUSTED_ISSUER_OR_ROLE";
     else if(!pinnedSources.has(c.sourceId))why="UNPINNED_OR_STALE_SOURCE";
-    else if(c.subject && policy.institutionGroups[c.subject]===key.controlGroup)why="SELF_ATTESTATION";
+    else if(!key.controlGroup || !policy.institutionGroups[packet.originalAgency] || (c.subject && !policy.institutionGroups[c.subject]))why="UNMAPPED_CONTROL_GROUP";
+    else if(key.controlGroup===policy.institutionGroups[packet.originalAgency] || (c.subject && policy.institutionGroups[c.subject]===key.controlGroup))why="SELF_ATTESTATION";
     else if(c.kind==="review" && policy.institutionGroups[packet.originalAgency]===key.controlGroup)why="DEPENDENT_REVIEW_CONTROL";
-    else if(c.kind==="census" && (c.assertion!=="complete" || !Array.isArray(c.routeIds) ||
+    else if(c.kind==="census" && (c.subject!=="independent_route_census" || c.assertion!=="complete" || !Array.isArray(c.routeIds) ||
              !unique(c.routeIds) || c.routeIds.length!==rules.length ||
              !rules.every(r=>c.routeIds.includes(r.id))))why="INVALID_ROUTE_CENSUS";
     else if(c.kind==="route" && (!rules.some(r=>r.id===c.routeId && r.subject===c.subject) ||
