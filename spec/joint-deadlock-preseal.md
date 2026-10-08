@@ -65,3 +65,43 @@ No claim of executable PASS, STRONG PASS, or CLOSED.
 ## Predecessor limitation
 
 0.859 at v0.18.0 is an **assertion consistency filter**, not a verified end-to-end repair executor, and its final exact-head CI must be checked before any retrospective success claim.
+
+
+## 0.860-P1 — Finite-model three-valued semantics
+
+Implemented as independent Node.js tool: `tools/deadlock860.mjs`; regression witnesses in `examples/deadlock860_cases.json`, `tests/test_deadlock860.mjs`. **Kernel stays v0.18.0.**
+
+Fix a **finite** task set T, verified base facts F, and a set R of candidate AND/OR rules. Each rule `(S → t, w)` has conjunctive prerequisites `S ⊆ T`, conclusion `t`, and a declared warrant `w ∈ {verified, denied, unknown}`. Different rules for the same conclusion express alternatives. The packet must assert complete enumeration of admissible candidates and its evidentiary scope. These assertions are NOT verified by the tool.
+
+Let `Cl(R')` denote the **least fixed point** reached by repeatedly firing enabled rules whose prerequisites have already been reached, starting from F.
+
+- Lower closure: `L = Cl({r ∈ R : warrant(r)=verified})`.
+- Upper closure: `U = Cl({r ∈ R : warrant(r)≠denied})`.
+
+Given the model-completeness and evidence-scope assumptions:
+- `t ∈ L` → **ACTIONABLE** with a finite derivation witness.
+- `t ∉ U` → **BOUNDED_BLOCKED** relative to current candidate law/evidence/resource model, with a finite saturation certificate.
+- Otherwise → **UNKNOWN**.
+- If candidate alternatives or evidence scope are incomplete, force **UNKNOWN** regardless of calculated reachability.
+
+### Proposition (monotone soundness under packet assumptions)
+
+Assume all known-verified warrants are correct, all denied warrants are in fact inadmissible, all candidate paths are enumerated, and every executable action is representable as a finite acyclic derivation grounded in F. Then `L ⊆ ActualReachable ⊆ U`. Proof: induction on derivation height for the left inclusion. For the right inclusion, every actual derivation uses non-denied rules and its prerequisites have shorter derivations; induct on height. Thus both outer verdicts are sound **only under these assumptions**.
+
+Unknown warrants can change `U` and even `L` when corroborated, so no eternal legal impossibility is inferred. The algorithm says **nothing** about legal truth if packet warrants or completeness claims are false. In particular, its upper-unreachability certificate is not an authentic court finding.
+
+### Countermodel receipts
+
+- W1 genuine A↔B cycle + independently verified C route: **ACTIONABLE**, disproves naïve cycle => impossibility.
+- W2 acyclic but denied only route: **BOUNDED_BLOCKED**, disproves no-cycle => possibility.
+- W3 privacy-denied release: **BOUNDED_BLOCKED**, but only if the legal refusal itself has been independently established.
+- Pure cycle with no initial seed: **BOUNDED_BLOCKED** for finite derivation semantics, not proof of indefinite real-world deadlock.
+- Unadjudicated legal warrant: **UNKNOWN**; no false definitive assignment.
+- Incomplete alternatives/evidence: **UNKNOWN**.
+- Duplicate rule identities: rejected.
+
+### What remains open
+
+W4–W8 are *constitutional and domain* witnesses rather than covered by this reachability abstraction: recipient-copy repair, appeal independence, interim expiry, future legal changes, and self-sealing nominal review need typed domain receipts and cannot be deemed verified from graph reachability.
+
+**No overall 0.860 CLOSED until exact-head CI passes and the domain-witness limit is explicitly adjudicated.**
