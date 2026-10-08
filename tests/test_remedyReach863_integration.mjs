@@ -6,6 +6,7 @@ import {bytes862} from "../tools/governance862.mjs";
 const asOf="2026-10-08", jurisdiction="FICTIONAL-863", caseId="CASE-INTEGRATION";
 const keyring={};for(const [name,group,roles] of [
  ["routeObserver","external-law",["route"]],
+ ["reviewObserver","external-review",["review"]],
  ["censusObserver","external-census",["census"]],
  ["governorA","external-gov-A",["status"]],
  ["governorB","external-gov-B",["status"]],
@@ -22,9 +23,10 @@ const caseRoutes={caseId,jurisdiction,asOf,routes:[{
 }]};
 const stageIds=STAGES863.map(s=>"paper-"+s);
 const source861=[{id:"source",text:"Fictional stage-specific external witness record."},
- {id:"inventory",text:"Fictional enumerated evidence-route inventory."}];
+ {id:"inventory",text:"Fictional enumerated evidence-route inventory."},
+ {id:"review",text:"Fictional independently witnessed E/A reviewer-dependency ablation."}];
 const policy861={asOf,jurisdiction,institutionGroups:{original:"original",successor:"successor"},
- trustedKeys:Object.fromEntries(["routeObserver","censusObserver"].map(id=>[id,{
+ trustedKeys:Object.fromEntries(["routeObserver","reviewObserver","censusObserver"].map(id=>[id,{
   publicKeyDerBase64:keyring[id].publicKeyDerBase64,roles:keyring[id].roles,
   jurisdiction,controlGroup:keyring[id].group,validFrom:"2026-01-01",validUntil:"2026-12-31"}])),
  sourcePins:Object.fromEntries(source861.map(s=>[s.id,{
@@ -38,9 +40,17 @@ function sign861(kind,issuer,sourceId,extra){
 function legacyPacket(){
  return {caseId,originalAgency:"original",sources:structuredClone(source861),
   model:{facts:[],goals:["paper-recipient"],rules:stageIds.map(id=>({
-    id,head:id,requires:[],subject:"successor"}))},
+    id,head:id,requires:[],subject:"successor",
+    ...(id==="paper-review"?{requiresIndependentReview:true,liveFailureModes:["E","A"],remedyPath:"independent-appeal"}:{})}))},
   proofs:[...stageIds.map(id=>sign861("route","routeObserver","source",{
     routeId:id,subject:"successor",assertion:"verified"})),
+    sign861("review","reviewObserver","review",{
+      routeId:"paper-review",subject:"successor",assertion:"independent",
+      remedyPath:"independent-appeal",
+      dependencyBreaks:[
+        {mode:"E",originalSource:"legacy-evidence",reviewSource:"independent-evidence",probeId:"source-ablation-e",evidenceSourceId:"review"},
+        {mode:"A",originalSource:"original-authority",reviewSource:"separate-review-power",probeId:"authority-ablation-a",evidenceSourceId:"review"}
+      ]}),
     sign861("census","censusObserver","inventory",{
      subject:"original",assertion:"complete",routeIds:stageIds})]};
 }
@@ -85,6 +95,12 @@ run("real receipt claimed but downstream record explicitly uncorrected",
   const q=lp.proofs.find(p=>p.claim.routeId==="paper-recipient");
   q.signature=sign(null,signedBytes861(q.claim),keyring.routeObserver.privateKey).toString("base64");
  },"ACTIONABLE","BOUNDED_BLOCKED","GOVERNED_ATTESTED_MODEL_ONLY");
+run("signed review route without independent dependency break remains UNKNOWN",
+ ({lp})=>{lp.proofs=lp.proofs.filter(p=>p.claim.kind!=="review");},
+ "UNKNOWN","UNKNOWN","GOVERNED_ATTESTED_MODEL_ONLY");
+run("captured assertion editing cannot forge review independence",
+ ({lp})=>{lp.proofs.find(p=>p.claim.kind==="review").claim.dependencyBreaks=[];},
+ "UNKNOWN","UNKNOWN","GOVERNED_ATTESTED_MODEL_ONLY");
 run("missing route evidence remains unknown not denied",
  ({lp})=>{lp.proofs=lp.proofs.filter(p=>p.claim.routeId!=="paper-standing");},
  "UNKNOWN","UNKNOWN","GOVERNED_ATTESTED_MODEL_ONLY");
