@@ -26,17 +26,24 @@ for(const facts of [[],["a"],["b"],["c"],["a","c"]]){
     const packet={goals:["goal","a","b"],facts,alternativesComplete:true,evidenceScopeVerified:true,rules};
     const result=assess860(packet);
     const unknown=rules.filter(r=>r.warrant==="unknown");
+    const ever=new Map(packet.goals.map(g=>[g,false]));
+    const always=new Map(packet.goals.map(g=>[g,true]));
     for(let mask=0;mask<2**unknown.length;mask++){
       const decided=rules.map(r=>r.warrant==="unknown"?{...r,warrant:(mask&(1<<unknown.indexOf(r)))?"verified":"denied"}:r);
       const actual=directClosure(facts,decided);worlds++;
       for(const goal of packet.goals){
-        if(result.verdicts[goal]==="ACTIONABLE")assert(actual.has(goal),`False actionable: ${encoding}, ${mask}, ${goal}`);
-        if(result.verdicts[goal]==="BOUNDED_BLOCKED")assert(!actual.has(goal),`False blocked: ${encoding}, ${mask}, ${goal}`);
+        const reached=actual.has(goal);
+        ever.set(goal,ever.get(goal)||reached);
+        always.set(goal,always.get(goal)&&reached);
       }
+    }
+    for(const goal of packet.goals){
+      const wanted=always.get(goal)?"ACTIONABLE":ever.get(goal)?"UNKNOWN":"BOUNDED_BLOCKED";
+      assert.equal(result.verdicts[goal],wanted,`Three-valued verdict not exact: ${encoding}, ${goal}`);
     }
     cases++;
   }
 }
 assert.equal(assess860({goals:["goal"],facts:[],rules:[],alternativesComplete:false,evidenceScopeVerified:true}).verdicts.goal,"UNKNOWN");
 assert.equal(assess860({goals:["goal"],facts:[],rules:[],alternativesComplete:true,evidenceScopeVerified:false}).verdicts.goal,"UNKNOWN");
-console.log(`PASS exhaustive finite-world sandwich: ${cases} source models, ${worlds} completed worlds, 3 queried goals, zero unsound outer verdicts`);
+console.log(`PASS exhaustive finite-world sandwich: ${cases} source models, ${worlds} completed worlds, 3 queried goals, exact three-valued classification`);
