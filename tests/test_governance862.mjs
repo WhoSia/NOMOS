@@ -114,19 +114,29 @@ console.log("PASS invalid charter and duplicate evidence fail closed");
 
 
 // P4: cryptographically identical observations can disagree about actual
-// political authority, hidden group control, and real receipt freshness.
-function observationalPair(label,truthInFirst,truthInSecond){
+// political authority, hidden group control, and effective timely challenge.
+function observationalPair(label,hiddenPlus,hiddenMinus,realStatus){
   const visiblePacket=packet(),visibleCharter=structuredClone(root);
-  const wPlus={packet:structuredClone(visiblePacket),charter:structuredClone(visibleCharter),truth:truthInFirst};
-  const wMinus={packet:structuredClone(visiblePacket),charter:structuredClone(visibleCharter),truth:truthInSecond};
-  assert.notEqual(wPlus.truth,wMinus.truth,label+" must contain distinct underlying worlds");
-  assert.deepEqual(evaluateGovernance862(wPlus.packet,wPlus.charter),
-                   evaluateGovernance862(wMinus.packet,wMinus.charter),
-                   label+" cannot be distinguished by same attested observations");
-  console.log("PASS observational equivalence",label);
+  const positive={packet:structuredClone(visiblePacket),charter:structuredClone(visibleCharter),reality:hiddenPlus};
+  const negative={packet:structuredClone(visiblePacket),charter:structuredClone(visibleCharter),reality:hiddenMinus};
+  assert.notEqual(realStatus(positive.reality),realStatus(negative.reality),label+" must have genuinely different hidden predicates");
+  const a=evaluateGovernance862(positive.packet,positive.charter);
+  const b=evaluateGovernance862(negative.packet,negative.charter);
+  assert.equal(a.status,"ELIGIBLE_MODEL");
+  assert.deepEqual(a,b,label+" must remain observationally indistinguishable");
+  console.log("PASS non-identifiable:",label);
 }
-observationalPair("undisclosed collusion between signed independent groups",true,false);
-observationalPair("unreported status revocation unknown to snapshot issuer",true,false);
-observationalPair("backdated fresh-looking signed statement vs actual old issuance",true,false);
-observationalPair("unheard lawful complaint from person without approved attestor key",true,false);
-console.log("PASS four limits of policy-contained governance, not actual trust legitimacy");
+observationalPair("actual common-controller identity hidden by listed group map",
+  {controllers:{goodA:"independent-X",goodB:"independent-Y"}},
+  {controllers:{goodA:"common-X",goodB:"common-X"}},
+  w=>new Set(Object.values(w.controllers)).size>=2);
+observationalPair("actual credential revocation unknown to observed snapshot",
+  {actuallyRevoked:[]},{actuallyRevoked:["goodA"]},
+  w=>!w.actuallyRevoked.includes("goodA"));
+observationalPair("issuer backdates a signed freshness declaration",
+  {actualIssuedOn:"2026-10-08"},{actualIssuedOn:"2026-09-20"},
+  w=> (Date.parse("2026-10-08T00:00:00Z")-Date.parse(w.actualIssuedOn+"T00:00:00Z"))/86400000<=7);
+observationalPair("a person without an approved challenger key is unable to enter",
+  {unheardRelevantComplaint:false},{unheardRelevantComplaint:true},
+  w=>!w.unheardRelevantComplaint);
+console.log("PASS four observational-equivalence pairs; actual institutional legitimacy NOT certified");
