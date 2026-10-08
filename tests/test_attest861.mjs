@@ -23,17 +23,17 @@ asOf,jurisdiction,sourcePins:pins,institutionGroups:{"agency-legacy":"original",
 trustedKeys:Object.fromEntries(people.map(k=>[k.name,{publicKeyDerBase64:k.publicKey,roles:[k.role],jurisdiction,controlGroup:k.group,validFrom:"2026-01-01",validUntil:"2026-12-31"}]))
 };
 function signed(kind,issuer,sourceId,extra={},keyOverride){
-  const claim={kind,issuer:issuer.name,caseId:"CASE-001",jurisdiction,validFrom:"2026-09-01",validUntil:"2026-11-01",sourceId,...extra};
+  const claim={kind,issuer:issuer.name,caseId:"CASE-001",jurisdiction,validFrom:"2026-09-01",validUntil:"2026-11-01",issuedOn:"2026-09-15",sourceId,...extra};
   const signingKey=keyOverride||issuer.privateKey;
   return {id:"receipt-"+issuer.name+"-"+kind,claim,signature:sign(null,signedBytes861(claim),signingKey).toString("base64")};
 }
 function specimen(){
  return {caseId:"CASE-001",originalAgency:"agency-legacy",
  sources:structuredClone(sources),
- model:{goals:["restored"],facts:["record"],rules:[{id:"route1",head:"restored",requires:["record"],subject:"agency-successor",requiresIndependentReview:true}]},
+ model:{goals:["restored"],facts:["record"],rules:[{id:"route1",head:"restored",requires:["record"],subject:"agency-successor",requiresIndependentReview:true,liveFailureModes:["E","A"],remedyPath:"appeal-review"}]},
  proofs:[
  signed("route",legal,"law",{routeId:"route1",subject:"agency-successor",assertion:"verified"}),
- signed("review",review,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent"}),
+ signed("review",review,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent",remedyPath:"appeal-review",dependencyBreaks:[{mode:"E",originalSource:"orig-e",reviewSource:"new-e",probeId:"source-ablation-e",evidenceSourceId:"review"},{mode:"A",originalSource:"orig-a",reviewSource:"new-a",probeId:"override-a",evidenceSourceId:"review"}]}),
  signed("census",census,"census",{subject:"agency-legacy",assertion:"complete",routeIds:["route1"]})
  ]};
 }
@@ -58,10 +58,21 @@ check("expired route",p=>p.proofs[0].claim.validUntil="2026-09-30","UNKNOWN");
 check("cross-jurisdiction replay",p=>p.proofs[0].claim.jurisdiction="X","UNKNOWN");
 check("missing independent reviewer",p=>p.proofs.splice(1,1),"UNKNOWN");
 check("review signer controlled by origin",p=>{
-  p.proofs[1]=signed("review",covert,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent"});
+  p.proofs[1]=signed("review",covert,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent",remedyPath:"appeal-review",dependencyBreaks:[{mode:"E",originalSource:"orig-e",reviewSource:"new-e",probeId:"ablate",evidenceSourceId:"review"},{mode:"A",originalSource:"orig-a",reviewSource:"new-a",probeId:"override",evidenceSourceId:"review"}]});
 },"UNKNOWN");
 check("original agency signs successor route",p=>{
   p.proofs[0]=signed("route",origin,"law",{routeId:"route1",subject:"agency-successor",assertion:"verified"});
+},"UNKNOWN");
+check("future issued statement",p=>p.proofs[0].claim.issuedOn="2026-11-01","UNKNOWN");
+check("revoked route receipt",(_,trust)=>trust.revokedProofIds=["receipt-legalObserver-route"],"UNKNOWN");
+check("revoked legal issuer key",(_,trust)=>trust.revokedKeyIds=["legalObserver"],"UNKNOWN");
+check("signed but review break does not cover live A dimension",p=>{
+  p.proofs[1]=signed("review",review,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent",remedyPath:"appeal-review",
+  dependencyBreaks:[{mode:"E",originalSource:"orig-e",reviewSource:"new-e",probeId:"ablate-e",evidenceSourceId:"review"}]});
+},"UNKNOWN");
+check("signed but reviewer has no live outcome-changing path",p=>{
+  p.proofs[1]=signed("review",review,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent",remedyPath:"no-remedy",
+  dependencyBreaks:[{mode:"E",originalSource:"orig-e",reviewSource:"new-e",probeId:"ablate-e",evidenceSourceId:"review"},{mode:"A",originalSource:"orig-a",reviewSource:"new-a",probeId:"over-a",evidenceSourceId:"review"}]});
 },"UNKNOWN");
 check("no census",p=>p.proofs.pop(),"UNKNOWN","EVIDENCE_HOLD");
 check("census forged route list",p=>p.proofs[2].claim.routeIds=["other"],"UNKNOWN","EVIDENCE_HOLD");
