@@ -21,6 +21,7 @@ export function evaluateGovernance862(packet,charter){
      !Number.isInteger(charter.epoch) || !Number.isInteger(charter.minimumEpoch) ||
      !Number.isInteger(charter.quorum) || charter.quorum<2 ||
      !Number.isInteger(charter.maxStatusAgeDays) || charter.maxStatusAgeDays<0 ||
+     !Number.isInteger(charter.maxChallengeAgeDays) || charter.maxChallengeAgeDays<0 ||
      !charter.keys || !charter.sourcePins || !charter.subjectGroup) throw Error("Malformed external governance charter");
   if(!packet || typeof packet.target!=="string" || !Array.isArray(packet.events) ||
      !Array.isArray(packet.sources) || !Array.isArray(packet.declaredRouteIds))throw Error("Malformed governance packet");
@@ -83,7 +84,11 @@ export function evaluateGovernance862(packet,charter){
   const approved=fresh.filter(s=>s.state==="good");
   const revoked=status.filter(s=>s.state==="revoked");
   let state="UNKNOWN",notes=[];
-  if(disputed.length){state="CHALLENGED";notes=["UNRESOLVED_INDEPENDENT_CHALLENGE",...disputed];}
+  if(disputed.length){
+    const aged=challenges.some(ch=>disputed.includes(ch._id) && elapsed(charter.asOf,ch.issuedOn)>charter.maxChallengeAgeDays);
+    state=aged?"ESCALATION_REQUIRED":"CHALLENGED";
+    notes=[aged?"AGED_UNRESOLVED_CHALLENGE_NOT_AUTO_DISMISSED":"UNRESOLVED_INDEPENDENT_CHALLENGE",...disputed];
+  }
   else if(revoked.length && approved.length){state="CHALLENGED";notes=["CONTRADICTORY_STATUS_ATTESTATIONS"];}
   else if(revoked.length){state="REVOKED_ATTESTED";notes=["ATTESTED_REVOCATION_NOT_LEGAL_ADJUDICATION"];}
   else if(!fresh.length && status.length){state="FRESHNESS_HOLD";notes=["NO_FRESH_GOOD_STATUS"];}
