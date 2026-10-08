@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import {assessConsequenceRepair864,compatibleHiddenWorlds864,compareConsequenceOutcomes864} from "../tools/consequenceRepair864.mjs";
+import {assessConsequenceRepair864,compatibleHiddenWorlds864,compareConsequenceOutcomes864,causalCounterworldPair864} from "../tools/consequenceRepair864.mjs";
 const packet={caseId:"fictional-case",asOf:"2026-10-08",snapshotId:"s1",nodes:[
 {id:"primary",operatorId:"agency",previousValue:"J0",correctedValue:"J1",dependsOn:[]},
 {id:"recipient",operatorId:"downstream",previousValue:"J0",correctedValue:"J1",dependsOn:["primary"]}]};
@@ -18,6 +18,12 @@ assert.equal(pair.actualCompletionNotIdentified,true);
 assert.equal(pair.verdict,"UNKNOWN");
 assert.equal(compareConsequenceOutcomes864({before:4,after:1}).observedDifference,-3);
 assert.equal(compareConsequenceOutcomes864({before:4,after:1,hasIdentifyingDesign:true}).causalEffect,"NOT_IDENTIFIED");
+const rivalWorlds=causalCounterworldPair864({observedBefore:4,observedAfter:1,untreatedAfterA:4,untreatedAfterB:1});
+assert.equal(rivalWorlds.observationsIdentical,true);
+assert.equal(rivalWorlds.causalEffectA,-3);
+assert.equal(rivalWorlds.causalEffectB,0);
+assert.equal(rivalWorlds.causalEffectIdentified,false);
+
 for(let a of ["J0","J1",null])for(let b of ["J0","J1",null]){
  const reads=[a===null?null:observation("primary",a),b===null?null:observation("recipient",b)].filter(Boolean);
  const v=assessConsequenceRepair864(packet,reads);
