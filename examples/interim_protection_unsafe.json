@@ -1,0 +1,49 @@
+{
+  "interim_protection": {
+    "cases": [
+      {
+        "id": "a",
+        "recall_eligible": true,
+        "interim_measure": "suspend_adverse",
+        "ongoing_consequence": true,
+        "ongoing_harm_assessed": true,
+        "irreversible_delay": true,
+        "irreversibility_response": true,
+        "protection_granted": true,
+        "effective_protection": false,
+        "unreviewed_delay": true,
+        "debt_recorded": true
+      },
+      {
+        "id": "b",
+        "recall_eligible": true,
+        "interim_measure": "no_change",
+        "reasoned_nonintervention": true
+      }
+    ],
+    "plans": [
+      {
+        "id": "p",
+        "cases": [
+          "a",
+          "b"
+        ],
+        "institutional_authority": true,
+        "written_reasons": true,
+        "review_route": true,
+        "notice_route": true,
+        "review_date": "2026-11-01",
+        "sunset_or_renewal": true,
+        "delay_debt_ledger": true,
+        "counterparty_impact_assessed": true,
+        "nonretroactivity_or_reversibility_assessed": true,
+        "safe_nonidentification_allowed": true,
+        "periodic_reassessment": true,
+        "automatic_merits_reversal": true,
+        "expiry_silently_restores_adversity": true,
+        "delay_justifies_existing_adversity": true,
+        "completion_claim": "complete"
+      }
+    ]
+  }
+}
