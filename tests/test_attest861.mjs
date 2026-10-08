@@ -5,7 +5,8 @@ const asOf="2026-10-08",jurisdiction="TEST-JURISDICTION";
 const sources=[
 {id:"law",text:"Fictional statute: restoration may be considered under W-1."},
 {id:"census",text:"Fictional external audit route inventory, case 001."},
-{id:"review",text:"Fictional external review dependency ablation receipt."}
+{id:"review",text:"Fictional external review dependency ablation receipt."},
+{id:"record",text:"Fictional external custody receipt documenting available record."}
 ];
 const pins=Object.fromEntries(sources.map(s=>[s.id,{digest:digest861(s.text),jurisdiction,validFrom:"2026-01-01",validUntil:"2026-12-31"}]));
 function key(name,role,group){
@@ -15,9 +16,10 @@ function key(name,role,group){
 const legal=key("legalObserver","route","external-law"),
 census=key("censusAuditor","census","external-inventory"),
 review=key("reviewObserver","review","external-review"),
+recordWitness=key("recordWitness","fact","external-records"),
 origin=key("originalAgency","route","original"),
 covert=key("capturedReviewer","review","original");
-const people=[legal,census,review,origin,covert];
+const people=[legal,census,review,recordWitness,origin,covert];
 const policy={
 asOf,jurisdiction,sourcePins:pins,institutionGroups:{"agency-legacy":"original","agency-successor":"successor","independent_route_census":"external-inventory"},
 trustedKeys:Object.fromEntries(people.map(k=>[k.name,{publicKeyDerBase64:k.publicKey,roles:[k.role],jurisdiction,controlGroup:k.group,validFrom:"2026-01-01",validUntil:"2026-12-31"}]))
@@ -34,6 +36,7 @@ function specimen(){
  proofs:[
  signed("route",legal,"law",{routeId:"route1",subject:"agency-successor",assertion:"verified"}),
  signed("review",review,"review",{routeId:"route1",subject:"agency-successor",assertion:"independent",remedyPath:"appeal-review",dependencyBreaks:[{mode:"E",originalSource:"orig-e",reviewSource:"new-e",probeId:"source-ablation-e",evidenceSourceId:"review"},{mode:"A",originalSource:"orig-a",reviewSource:"new-a",probeId:"override-a",evidenceSourceId:"review"}]}),
+ signed("fact",recordWitness,"record",{subject:"agency-successor",assertion:"observed",factId:"record"}),
  signed("census",census,"census",{subject:"agency-legacy",assertion:"complete",routeIds:["route1"]})
  ]};
 }
@@ -63,6 +66,13 @@ check("review signer controlled by origin",p=>{
 check("original agency signs successor route",p=>{
   p.proofs[0]=signed("route",origin,"law",{routeId:"route1",subject:"agency-successor",assertion:"verified"});
 },"UNKNOWN");
+check("missing independent base fact",p=>p.proofs.splice(2,1),"UNKNOWN");
+check("forged observed fact identifier",p=>p.proofs[2].claim.factId="restored","UNKNOWN");
+check("tampered record source",p=>p.sources.find(s=>s.id==="record").text+=" altered","UNKNOWN");
+check("goal injected as unauthenticated fact",p=>{
+ p.model.facts.push("restored");
+ p.proofs[0]=signed("route",legal,"law",{routeId:"route1",subject:"agency-successor",assertion:"denied"});
+},"UNKNOWN");
 check("future issued statement",p=>p.proofs[0].claim.issuedOn="2026-11-01","UNKNOWN");
 check("revoked route receipt",(_,trust)=>trust.revokedProofIds=["receipt-legalObserver-route"],"UNKNOWN");
 check("revoked legal issuer key",(_,trust)=>trust.revokedKeyIds=["legalObserver"],"UNKNOWN");
@@ -75,7 +85,7 @@ check("signed but reviewer has no live outcome-changing path",p=>{
   dependencyBreaks:[{mode:"E",originalSource:"orig-e",reviewSource:"new-e",probeId:"ablate-e",evidenceSourceId:"review"},{mode:"A",originalSource:"orig-a",reviewSource:"new-a",probeId:"over-a",evidenceSourceId:"review"}]});
 },"UNKNOWN");
 check("no census",p=>p.proofs.pop(),"UNKNOWN","EVIDENCE_HOLD");
-check("census forged route list",p=>p.proofs[2].claim.routeIds=["other"],"UNKNOWN","EVIDENCE_HOLD");
+check("census forged route list",p=>p.proofs[3].claim.routeIds=["other"],"UNKNOWN","EVIDENCE_HOLD");
 check("untrusted role key",(_,trust)=>trust.trustedKeys.legalObserver.roles=["census"],"UNKNOWN");
 check("untrusted verifier root",(_,trust)=>trust.trustedKeys.legalObserver.publicKeyDerBase64=origin.publicKey,"UNKNOWN");
 check("untrusted source pin",(_,trust)=>trust.sourcePins.law.digest="0".repeat(64),"UNKNOWN");
