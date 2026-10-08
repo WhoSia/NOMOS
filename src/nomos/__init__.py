@@ -10,6 +10,7 @@ from .historical_reopening import analyze_historical_reopening
 from .interim_protection import analyze_interim_protection
 from .restitution import analyze_restitution
 from .successor_duties import analyze_successor_duties
+from .joint_repair import analyze_joint_repair
 from .recall_triage import analyze_recall_triage
 from .lineage import dependency_closure, impacted_derived_records, trace_record
 from .record_portability import analyze_record_portability, descendant_map, emergency_ancestors
@@ -48,7 +49,8 @@ __all__ = [
     "analyze_interim_protection",
     "analyze_restitution",
     "analyze_successor_duties",
+    "analyze_joint_repair",
     "analyze_recall_triage",
     "analyze_systemic_reopening",
 ]
-__version__ = "0.17.0"
+__version__ = "0.18.0"
