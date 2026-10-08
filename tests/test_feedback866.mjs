@@ -1,0 +1,14 @@
+import assert from "node:assert/strict";
+import {auditFeedback866} from "../tools/feedback866.mjs";
+const b={labelDefeated:true,observations:[{id:"exclusion",origin:"label_generated"},{id:"isolation",origin:"label_generated"}]};
+const f=x=>auditFeedback866({...b,...x});
+assert.equal(f({}).verdict,"ENDOGENOUS_ONLY_NO_NEW_WARRANT");
+assert.deepEqual(f({}).endogenous,["exclusion","isolation"]);
+assert.equal(f({}).labelCannotSelfValidate,true);
+assert.equal(f({observations:[...b.observations,{id:"new",origin:"fresh_independent"}]}).verdict,"INDEPENDENT_SOURCE_AUDIT_REQUIRED");
+assert.equal(f({observations:[...b.observations,{id:"new",origin:"fresh_independent"}]}).newEvidenceActuallyCertified,false);
+assert.equal(f({observations:[{id:"unclear",origin:"uncertain"}]}).verdict,"ANCESTRY_UNRESOLVED");
+assert.equal(f({observations:[]}).verdict,"NO_NEW_OBSERVATION");
+assert.equal(f({labelDefeated:false}).labelCannotSelfValidate,false);
+assert.throws(()=>f({observations:[b.observations[0],b.observations[0]]}));
+console.log("NOMOS 0.866 P4 feedback PASS");
