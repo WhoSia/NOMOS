@@ -37,7 +37,11 @@ Two worlds can have the same observed signed-looking primary record but differen
 - De Toni et al., `Time Can Invalidate Algorithmic Recourse` (FAccT 2025), DOI 10.1145/3715275.3732008: causal recourse validity may fail under nonstationarity. Never claim discovery of temporal invalidation.
 - Anton Abramov, `When Recalculation Is Not a Remedy` (2026), SSRN 7339678: shared decision component systemic corrective duties. Never claim discovery of systemic repair.
 - Wever & Ybema, procedural justice in administrative objection processes; Greiner et al., randomized court accessibility evidence. Both procedural existence and realized access are pre-existing research objects.
-- Existing NOMOS 0.834+ correction propagation and restitution paths must be historically reconciled: a finite observation compiler is not a newly invented notion of reparation.
+- NOMOS-0.822 already defines correction as a dependency-sensitive graph operation, with source-ablation and propagated repair receipts.
+- NOMOS-0.850 already distinguishes notice from recipient correction, requires semantic re-derivation (not merely copying a new scalar), and audits generator-resurrection under refresh.
+- NOMOS-0.857 already separates record correction, ongoing consequences, compensation, opportunity expiry and residual repair debt.
+- Therefore 0.864 DOES NOT introduce downstream propagation, re-derivation, post-correction consequences or restitution. Its narrower possible result is a falsifiable observational-support limit for verifying those pre-existing obligations. It must not replace 0.850 dependency semantics with a superficial value-equality test.
+- Historical correction and causal restitution remain downstream legal/institutional obligations; the new finite node test measures only declared target-value agreement.
 
 ## Code and test surfaces
 
