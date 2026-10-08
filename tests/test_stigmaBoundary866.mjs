@@ -1,0 +1,14 @@
+import assert from "node:assert/strict";
+import {classifyResponse866} from "../tools/stigmaBoundary866.mjs";
+const b={evidenceVerified:true,claimScopedToAct:true,personTraitGeneralized:false,groupBoundaryInvoked:false,powerAsymmetry:false,collectivePenalty:false,proportionate:true,reviewAvailable:true};
+const f=x=>classifyResponse866({...b,...x});
+assert.equal(f({}).scopedCriticismSupported,true);
+assert.equal(f({}).stigmaCandidate,false);
+assert.equal(f({personTraitGeneralized:true,groupBoundaryInvoked:true,powerAsymmetry:true}).stigmaCandidate,true);
+assert.equal(f({collectivePenalty:true,proportionate:false}).sanctionProceduralConcern,true);
+assert.equal(f({collectivePenalty:true,reviewAvailable:false}).sanctionProceduralConcern,true);
+assert.equal(f({collectivePenalty:true}).stigmaCandidate,false);
+assert.equal(f({evidenceVerified:false,claimScopedToAct:false,personTraitGeneralized:true,groupBoundaryInvoked:true,powerAsymmetry:true}).scopedCriticismSupported,false);
+assert.equal(f({personTraitGeneralized:true,groupBoundaryInvoked:true,powerAsymmetry:true}).stigmaCertified,false);
+assert.throws(()=>classifyResponse866({}));
+console.log("NOMOS 0.866 P2 distinctions PASS");
