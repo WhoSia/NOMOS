@@ -51,6 +51,16 @@ export function assess860(packet) {
 }
 
 if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href){
-  const packet=JSON.parse(readFileSync(process.argv[2],"utf8"));
-  console.log(JSON.stringify(assess860(packet),null,2));
+  if(!process.argv[2]){console.error("Usage: node tools/deadlock860.mjs <packet-or-case-corpus.json>");process.exitCode=2;}
+  else{
+    const input=JSON.parse(readFileSync(process.argv[2],"utf8"));
+    if(Array.isArray(input.cases)){
+      const results=input.cases.map(c=> {
+        const actual=assess860(c.packet).verdicts[c.packet.goals[0]];
+        return {name:c.name,expected:c.expected,actual,passed:actual===c.expected};
+      });
+      console.log(JSON.stringify({status:results.every(r=>r.passed)?"PASS":"FAIL",results},null,2));
+      if(results.some(r=>!r.passed))process.exitCode=1;
+    }else console.log(JSON.stringify(assess860(input),null,2));
+  }
 }
