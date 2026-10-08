@@ -282,6 +282,23 @@ Each task requires documented assignment under its own legal authority, a review
 
 NOMOS-0.859 audits missing task capabilities, unauthorized handoffs, fragmented challenges, veto deadlock, private-data overreach and falsely closed interinstitutional repair. A coordinator does not automatically acquire person-merits or restitution jurisdiction. Kernel v0.18.0 adds `src/nomos/joint_repair.py`, JC001–JC031, safe/unsafe fixtures and CLI `--audit-joint-repair`. The audit is structural and self-attested, not actual legal or completion proof.
 
+### NOMOS-0.860 — Bounded Deadlock and Institutional Non-identifiability
+
+**INSTITUTIONAL NONCOMPLETABILITY ≠ GRAPH CYCLE ≠ LEGALLY WARRANTED VETO ≠ ORDINARY BACKLOG.**
+
+A separate **Node.js** AND/OR dependency court supports conditional three-way verdicts: ACTIONABLE, BOUNDED_BLOCKED or UNKNOWN. For finite, fully enumerated rules with verified/denied/unknown warrants, lower and upper least fixed points are respectively the intersection and union of reachable sets across all uncertainty completions. An exhaustive regression checks the **exact** three-way verdict (1,215 source models; 5,120 finite completed worlds; three goals). Six W4–W8 synthetic scenarios test domain-labeled hypotheses.
+
+A distinct three-pair indistinguishability test proves that self-attested graphs cannot identify actual legal authority, independent appellate review or complete alternative-path coverage. **A mathematical verdict is not a warranted legal conclusion.** This stage is a bounded proof, not a new merits or compensation authority. Kernel remains v0.18.0.
+
+```bash
+node tests/test_deadlock860.mjs
+node tests/test_deadlock860_exhaustive.mjs
+node tests/test_deadlock860_nonidentifiability.mjs
+node tools/deadlock860.mjs examples/deadlock860_cases.json
+```
+
+All P1–P4 research sections live inside one NOMOS-0.860 Notion canonical. Exact-head CI SUCCESS remains a separate closure gate.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -320,6 +337,6 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.859 — Fragmented Successor Jurisdiction, Joint Repair-Duty Coordination & Multi-Custodian Provenance Reconstruction — executable v0.18.0 / CI pending.**
+**NOMOS-0.860 — Joint-Repair Deadlock: BOUNDED THEORY SEALED / locally checked Node.js countermodels / exact-head CI PENDING / kernel v0.18.0 unchanged.**
 
-Next title only: **NOMOS-0.860 — Joint-Repair Deadlock, Interinstitutional Veto Authority, Cross-Agency Priority Conflict, Coordination Escalation & the Primitive Question of When a Legally Distributed Repair Process Becomes Institutionally Noncompletable despite Every Participating Body Claiming Compliance**.
+**Next title proposed, not opened:** NOMOS-0.861 — Authority-Evidence Attestation, Jurisdictional Warrant Provenance, Reviewer-Dependency Authentication, Temporal Legal-Route Reconstruction & the Primitive Question of What Evidence Can Convert a Bounded Repair-Graph Verdict into an Institutionally Justified Claim of Actionability or Noncompletability without Letting the Attesting Institution Certify Its Own Authority.
