@@ -63,3 +63,15 @@ export function compareConsequenceOutcomes864({before,after,hasIdentifyingDesign
   identificationClaim:hasIdentifyingDesign?"DESIGN_REQUIRES_EXTERNAL_VALIDATION":"NO_IDENTIFYING_DESIGN",
   actuality:"OBSERVATIONAL_ONLY"};
 }
+
+// Both worlds exhibit identical observed outcomes, but have distinct potential
+// untreated outcomes. This establishes non-identification for the synthetic pair.
+export function causalCounterworldPair864({observedBefore,observedAfter,untreatedAfterA,untreatedAfterB}){
+ const xs=[observedBefore,observedAfter,untreatedAfterA,untreatedAfterB];
+ assert(xs.every(Number.isFinite),"Numeric synthetic counterworld values required");
+ return {observationsIdentical:true,
+  causalEffectA:observedAfter-untreatedAfterA,
+  causalEffectB:observedAfter-untreatedAfterB,
+  causalEffectIdentified:untreatedAfterA===untreatedAfterB,
+  interpretation:"Existence of a pair with distinct effects refutes identification from observed before/after alone; constructed counterfactuals are not actual person data."};
+}
