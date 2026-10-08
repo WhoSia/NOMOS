@@ -7,13 +7,15 @@ const dayOk=x=>typeof x==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(x)&&!Number.isNaN
 const age=(a,b)=>(Date.parse(a+"T00:00:00Z")-Date.parse(b+"T00:00:00Z"))/86400000;
 export const screenBytes862 = c => Buffer.from("NOMOS:862:PETITION-SCREEN:v1\n"+canonical861(c),"utf8");
 function distinct(a){return new Set(a).size===a.length;}
-export function evaluatePetitionIntake862(docket,assessments,charter) {
+export function evaluatePetitionIntake862(docket,assessments,charter,evidenceSources=[]) {
  if(!charter || !dayOk(charter.asOf)||!charter.id||!charter.jurisdiction ||
    !Number.isInteger(charter.epoch)||!Number.isInteger(charter.maxIntakeAgeDays)||charter.maxIntakeAgeDays<0||
    !charter.keys||!charter.sourcePins||!charter.subjectGroup)throw Error("External intake charter malformed");
  if(!docket||!docket.id||!docket.caseId||!docket.target||!Array.isArray(assessments)||
-   !dayOk(docket.receivedOn)||!distinct(assessments.map(x=>x.id)))throw Error("Docket or assessments malformed");
+   !dayOk(docket.receivedOn)||!distinct(assessments.map(x=>x.id))||!Array.isArray(evidenceSources)||
+   !distinct(evidenceSources.map(x=>x.id)))throw Error("Docket or assessments malformed");
  const notes=[], accepted=[];
+ const sourceById=new Map(evidenceSources.map(s=>[s.id,s]));
  const live=docket.receivedOn<=charter.asOf&&docket.jurisdiction===charter.jurisdiction&&
    docket.charterId===charter.id&&docket.epoch===charter.epoch;
  const base={id:docket.id,caseId:docket.caseId,receiptDigest:digest861(canonical861(docket)),
@@ -29,6 +31,7 @@ export function evaluatePetitionIntake862(docket,assessments,charter) {
       !["material","nonmaterial"].includes(c.decision))err="INVALID_ASSESSMENT";
    else if(c.docketId!==docket.id||c.caseId!==docket.caseId||c.target!==docket.target||
       c.charterId!==charter.id||c.epoch!==charter.epoch||
+      c.docketSha256!==digest861(canonical861(docket))||
       c.jurisdiction!==charter.jurisdiction)err="SCOPE_MISMATCH";
    else if(!dayOk(c.issuedOn)||!dayOk(c.validUntil)||
       c.issuedOn<docket.receivedOn||c.issuedOn>charter.asOf||c.validUntil<charter.asOf)err="INVALID_REVIEW_TIME";
@@ -38,7 +41,9 @@ export function evaluatePetitionIntake862(docket,assessments,charter) {
       err="CAPTURED_OR_UNAUTHORIZED_SCREENER";
    else if(!pin||pin.jurisdiction!==charter.jurisdiction||
       !dayOk(pin.from)||!dayOk(pin.until)||pin.from>charter.asOf||pin.until<charter.asOf||
-      c.evidenceDigest!==pin.digest)err="UNPINNED_SCREEN_SOURCE";
+      c.evidenceDigest!==pin.digest||
+      typeof sourceById.get(c.sourceId)?.text!=="string"||
+      digest861(sourceById.get(c.sourceId).text)!==pin.digest)err="UNPINNED_SCREEN_SOURCE";
    if(!err){
      try {
        const pub=createPublicKey({key:Buffer.from(key.publicKeyDerBase64,"base64"),format:"der",type:"spki"});
@@ -64,7 +69,7 @@ export function verifyGovernedWithPetitions862(
  legacyPacket,legacyPolicy,charter,rootRecord,censusRecord,docketsWithScreens){
  if(!Array.isArray(docketsWithScreens))throw Error("Docket array required");
  const ordinary=verifyGoverned862(legacyPacket,legacyPolicy,charter,rootRecord,censusRecord);
- const intake=docketsWithScreens.map(x=>evaluatePetitionIntake862(x.docket,x.assessments,charter));
+ const intake=docketsWithScreens.map(x=>evaluatePetitionIntake862(x.docket,x.assessments,charter,x.evidenceSources||[]));
  const material=intake.some(x=>x.status==="MATERIAL_FOR_GOVERNANCE_CHALLENGE"||
                                     x.status==="SCREENING_DISPUTED");
  if(material){
