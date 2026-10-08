@@ -100,6 +100,16 @@ export function assessGovernedRemedyReach863(
    legacyPolicy?.asOf!==caseRoutes.asOf ||
    !Array.isArray(legacyPacket?.model?.rules)||
    !Array.isArray(censusRecord?.declaredRouteIds))return unknownGoals("BOUNDARY_CASE_OR_SNAPSHOT_MISMATCH");
+ // A signed route assertion alone must never impersonate independent review.
+ // Enforce 0.839/0.840 decision-relevant dependency-break evidence via 0.861.
+ for(const route of caseRoutes.routes){
+   const reviewRule=legacyPacket.model.rules.find(r=>r.id===route.steps.review);
+   if(reviewRule?.requiresIndependentReview!==true ||
+      !Array.isArray(reviewRule.liveFailureModes) ||
+      reviewRule.liveFailureModes.length===0 ||
+      typeof reviewRule.remedyPath!=="string" || !reviewRule.remedyPath)
+       return unknownGoals("REVIEW_DEPENDENCY_EVIDENCE_GATE_MISSING");
+ }
  const upstreamRuleIds=legacyPacket.model.rules.map(x=>x.id);
  const censusIds=censusRecord.declaredRouteIds;
  if(!unique(upstreamRuleIds)||!unique(censusIds)||
