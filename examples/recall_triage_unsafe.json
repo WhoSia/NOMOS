@@ -1,0 +1,42 @@
+{
+  "recall_triage": {
+    "cases": [
+      {
+        "id": "a",
+        "recall_eligible": true,
+        "current_consequence": "ongoing_adverse",
+        "interim_status_assessed": true,
+        "deadline_material": true,
+        "deadline_considered": true
+      },
+      {
+        "id": "b",
+        "recall_eligible": true
+      }
+    ],
+    "plans": [
+      {
+        "id": "p",
+        "order": [
+          "a",
+          "b"
+        ],
+        "capacity_per_period": 1,
+        "priority_basis": "person_risk",
+        "notice_for_all": false,
+        "interim_protections": true,
+        "published_policy": true,
+        "contestable_order": true,
+        "reason_receipts": true,
+        "independent_review": true,
+        "delay_impact_audit": true,
+        "periodic_reassessment": true,
+        "accessibility_route": true,
+        "uses_old_adverse_label_as_urgency": true,
+        "review_order_reauthorizes_judgment": true,
+        "indefinite_deferral_allowed": true,
+        "complete": true
+      }
+    ]
+  }
+}
