@@ -31,6 +31,12 @@ jobs:
       - run: PYTHONPATH=src python -m nomos examples/correction_concurrency_safe.json --audit-correction-concurrency
       - run: PYTHONPATH=src python -m nomos examples/correction_compaction_safe.json --audit-correction-compaction
       - run: PYTHONPATH=src python -m nomos examples/historical_reopening_safe.json --audit-historical-reopening
+      - run: PYTHONPATH=src python -m nomos examples/restitution_safe.json --audit-restitution
+      - run: |
+          if PYTHONPATH=src python -m nomos examples/restitution_unsafe.json --audit-restitution; then
+            echo "unsafe restitution fixture unexpectedly passed"
+            exit 1
+          fi
       - run: PYTHONPATH=src python -m nomos examples/interim_protection_safe.json --audit-interim-protection
       - run: |
           if PYTHONPATH=src python -m nomos examples/interim_protection_unsafe.json --audit-interim-protection; then
