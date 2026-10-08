@@ -1,6 +1,6 @@
 # Current Research Head — NOMOS-0.861
 
-**Status: BOUNDED EVIDENCE-ATTESTATION THEORY SEALED / SYNTHETIC CRYPTOGRAPHIC EXECUTION PASS / EXACT-HEAD CI RECHECK REQUIRED / REAL PUBLIC-LAW AUTHORITY NOT CERTIFIED**
+**Status: BOUNDED THEORY + SYNTHETIC EXECUTION SEALED / EXACT-HEAD CI GATED / REAL PUBLIC-LAW AUTHORITY NOT CERTIFIED**
 
 ## Primitive question
 
@@ -51,7 +51,7 @@ Tested signed assertion and source tampering, wrong case and jurisdiction, expir
 
 **Key repair:** Original implementation passed submitted `model.facts` straight into the lower reachable closure. The corrected implementation requires signed factual witnesses; otherwise introduces an UNKNOWN epistemic edge. This prevents base-fact laundering.
 
-GitHub Actions #273 at code+spec head `8383f1ee10d523f312ae49a0102c54471f6e56b7` **SUCCESS**. Intermediate red #267/#269 were repaired by corresponding updated fixtures; no earlier PASS is substituted for exact-head validation. Following docs-only commits need new exact-head CI.
+GitHub Actions #273 at code+spec head `8383f1ee10d523f312ae49a0102c54471f6e56b7` **SUCCESS**. Intermediate red #267/#269 were repaired by corresponding updated fixtures; no earlier PASS is substituted for exact-head validation. Documentation updates remain subject to the latest exact-head Actions check; CI status and URL are separately recorded in the Notion canonical.
 
 ## P4 — Conditional attribution and non-sovereignty theorems
 
@@ -63,7 +63,7 @@ Two institutional worlds can have the same cryptographic observations yet differ
 
 **Bounded theoretical claim:** VERIFIED under stated evidence-policy and cryptographic assumptions.
 
-**Synthetic implementation:** PASS at checked source head; exact-head documentation sync must be retested.
+**Synthetic implementation:** PASSED at tested source heads; the complete documentation head is independently checked using the latest GitHub Actions run.
 
 **Real institution's legal power or restitution liability:** NOT CERTIFIED.
 
