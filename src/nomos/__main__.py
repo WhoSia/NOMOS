@@ -11,6 +11,7 @@ from .correction_propagation import analyze_correction_propagation
 from .divergence_replication import analyze_divergence_replication
 from .feedback_restoration import analyze_feedback_restoration
 from .historical_reopening import analyze_historical_reopening
+from .recall_triage import analyze_recall_triage
 from .lineage import trace_record
 from .record_portability import analyze_record_portability
 from .review_divergence import analyze_review_divergence
@@ -43,6 +44,7 @@ def main() -> int:
         action="store_true",
         help="Audit shared-defect propagation, cohort identification and sample-to-recall escalation",
     )
+    parser.add_argument("--audit-recall-triage", action="store_true", help="Audit capacity-constrained historical recall sequencing")
     parser.add_argument(
         "--audit-historical-reopening",
         action="store_true",
@@ -75,6 +77,11 @@ def main() -> int:
     if args.audit_systemic_reopening:
         systemic = data.get("systemic_reopening", data)
         result = analyze_systemic_reopening(systemic)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 1 if result["status"] == "FAIL" else 0
+
+    if args.audit_recall_triage:
+        result = analyze_recall_triage(data.get("recall_triage", data))
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 1 if result["status"] == "FAIL" else 0
 
