@@ -22,10 +22,12 @@ const root={
  sourcePins:Object.fromEntries(Object.entries(texts).map(([id,text])=>[id,{
    digest:digest861(text),jurisdiction:"TEST-ONLY",from:"2026-01-01",until:"2026-12-31"}]))
 };
+let serial=0;
 function ev(kind,issuer,sourceId,props={}){
  const claim={kind,issuer,target:"policy:governance-v6",charterId:root.id,epoch:6,
- jurisdiction:"TEST-ONLY",issuedOn:now,validUntil:"2026-12-31",sourceId,...props};
- return {id:"e-"+issuer+"-"+kind+"-"+Math.random().toString(36).slice(2),claim,
+ jurisdiction:"TEST-ONLY",issuedOn:now,validUntil:"2026-12-31",sourceId,
+ routeSetDigest:digest861(canonical861(["r1"])),...props};
+ return {id:"e-"+issuer+"-"+kind+"-"+(++serial),claim,
  signature:sign(null,bytes862(claim),people[issuer].privateKey).toString("base64")};
 }
 function packet(){return {
@@ -51,6 +53,7 @@ run("revocation published, no contrary good",p=>{p.events=[ev("status","statusRe
 run("mixed contradictory status",p=>{p.events.push(ev("status","statusRevoker","status",{state:"revoked"}))},"CHALLENGED");
 run("original institution self certifies",p=>{p.events=[ev("status","origin","status",{state:"good"}),ev("status","goodB","status",{state:"good"})]},"UNKNOWN");
 run("invalid policy epoch",p=>{p.epoch=5},"UNKNOWN");
+run("census route set changed after status signatures",p=>{p.declaredRouteIds.push("r2");},"UNKNOWN");
 run("rollback blocked by higher policy minimum",(_,c)=>{c.minimumEpoch=7},"UNKNOWN");
 run("missing independent policy status",p=>{p.events=[]},"UNKNOWN");
 run("tampered signature",p=>{p.events[0].claim.state="revoked"},"UNKNOWN");
