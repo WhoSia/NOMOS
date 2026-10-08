@@ -111,3 +111,22 @@ assert.throws(()=>evaluateGovernance862(packet(),{...root,maxStatusAgeDays:-1}),
 const duplicate=packet();duplicate.events.push({...duplicate.events[0]});
 assert.throws(()=>evaluateGovernance862(duplicate,root),/Duplicate events/);
 console.log("PASS invalid charter and duplicate evidence fail closed");
+
+
+// P4: cryptographically identical observations can disagree about actual
+// political authority, hidden group control, and real receipt freshness.
+function observationalPair(label,truthInFirst,truthInSecond){
+  const visiblePacket=packet(),visibleCharter=structuredClone(root);
+  const wPlus={packet:structuredClone(visiblePacket),charter:structuredClone(visibleCharter),truth:truthInFirst};
+  const wMinus={packet:structuredClone(visiblePacket),charter:structuredClone(visibleCharter),truth:truthInSecond};
+  assert.notEqual(wPlus.truth,wMinus.truth,label+" must contain distinct underlying worlds");
+  assert.deepEqual(evaluateGovernance862(wPlus.packet,wPlus.charter),
+                   evaluateGovernance862(wMinus.packet,wMinus.charter),
+                   label+" cannot be distinguished by same attested observations");
+  console.log("PASS observational equivalence",label);
+}
+observationalPair("undisclosed collusion between signed independent groups",true,false);
+observationalPair("unreported status revocation unknown to snapshot issuer",true,false);
+observationalPair("backdated fresh-looking signed statement vs actual old issuance",true,false);
+observationalPair("unheard lawful complaint from person without approved attestor key",true,false);
+console.log("PASS four limits of policy-contained governance, not actual trust legitimacy");
