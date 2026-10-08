@@ -49,7 +49,7 @@ export function verify861(packet, policy) {
     else if(!key.controlGroup || !policy.institutionGroups[packet.originalAgency] || (c.subject && !policy.institutionGroups[c.subject]))why="UNMAPPED_CONTROL_GROUP";
     else if(key.controlGroup===policy.institutionGroups[packet.originalAgency] || (c.subject && policy.institutionGroups[c.subject]===key.controlGroup))why="SELF_ATTESTATION";
     else if(c.kind==="review" && policy.institutionGroups[packet.originalAgency]===key.controlGroup)why="DEPENDENT_REVIEW_CONTROL";
-    else if(c.kind==="census" && (c.subject!=="independent_route_census" || c.assertion!=="complete" || !Array.isArray(c.routeIds) ||
+    else if(c.kind==="census" && (c.subject!==packet.originalAgency || c.assertion!=="complete" || !Array.isArray(c.routeIds) ||
              !unique(c.routeIds) || c.routeIds.length!==rules.length ||
              !rules.every(r=>c.routeIds.includes(r.id))))why="INVALID_ROUTE_CENSUS";
     else if(c.kind==="route" && (!rules.some(r=>r.id===c.routeId && r.subject===c.subject) ||
@@ -69,7 +69,7 @@ export function verify861(packet, policy) {
   function assertions(kind,routeId){
     return accepted.filter(c=>c.kind===kind && (routeId===undefined || c.routeId===routeId));
   }
-  const censusClaims=assertions("census").filter(c=>c.subject==="independent_route_census");
+  const censusClaims=assertions("census").filter(c=>c.subject===packet.originalAgency);
   const censusValid=censusClaims.length>0 && censusClaims.every(c=>c.assertion==="complete");
   const modeledRules=rules.map(r=>{
     const claims=assertions("route",r.id);
