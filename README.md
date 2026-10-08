@@ -359,6 +359,6 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.861 — Authority-Evidence Attestation, Jurisdictional Warrant Provenance & Reviewer-Dependency Authentication — bounded theory + synthetic Node.js executable verification; documentation exact-head CI pending; kernel v0.18.0 unchanged.**
+**NOMOS-0.861 — Authority-Evidence Attestation, Jurisdictional Warrant Provenance & Reviewer-Dependency Authentication — bounded theory + synthetic Node.js executable verification; exact-head CI gated; kernel v0.18.0 unchanged.**
 
 Next title only, not opened: **NOMOS-0.862 — Trust-Root Contestability, Attestor Governance, Authority-Credential Revocation Freshness, Legal-Route Census Challenge & the Primitive Question of Who May Certify the Evidence Needed to Legitimate Institutional Repair without Allowing the Registrar, Auditor or Reviewing Authority to Become a New Self-Sealing Sovereign**.
