@@ -1,66 +1,75 @@
-# Current Research Head — NOMOS-0.862
+# Current Research Head — NOMOS-0.863
 
-**Status: BOUNDED THEORY + SYNTHETIC GOVERNANCE/PETITION EXECUTION SEALED / FINAL EXACT-HEAD CI GATE / REAL INSTITUTIONAL LEGITIMACY NOT CERTIFIED**
+**Status: BOUNDED FORMAL / SYNTHETIC GOVERNED-REMEDY EXECUTION SEALED SUBJECT TO FINAL EXACT-HEAD CI; REAL CLAIMANT REDRESS NOT CERTIFIED**
 
-## Explanandum
+## Primitive
 
-A formally signed trust root cannot create its own legitimate authority over a disputed person's institutional repair. The person must have a workable route to contest root, revocation and route-census assertions; that ability is distinct from allowing every submitted petition to veto a competent agency.
+Can a person with a disputed historical adverse judgment move from a formally available contestation channel to a genuinely executable corrective path? Distinguish an approved auditable signer's key from legally required claimant authentication; this study does **not** excuse lawful identity, representative standing or procedural conditions.
 
-**SIGNED TRUST ROOT ≠ LAWFUL AUTHORITY.**
+**FORMAL APPEAL AVAILABILITY ≠ PERSON-RELATIVE USABILITY ≠ INSTITUTIONAL RECEIPT ≠ LAWFUL STANDING ≠ INDEPENDENT REVIEW ≠ REMEDY AUTHORITY ≠ EXECUTED RESTORATION.**
 
-**QUORUM OF KEYS ≠ INDEPENDENT REAL CONTROLLERS.**
+## Genealogy and source ceiling
 
-**SUBMISSION ≠ INSTITUTIONAL ACKNOWLEDGEMENT ≠ QUALIFIED SCREENING ≠ LEGAL VETO.**
+- NOMOS-0.19: anti-capture, standing to contest institutional safeguards, bounded recursion.
+- NOMOS-0.839–0.840: independent review requires Q/E/M/I/A/C decision-sensitive dependency breaks, not reviewer count.
+- NOMOS-0.841: routing itself is an epistemic intervention; pathway count is not actual access.
+- NOMOS-0.860: exact finite lower/upper AND/OR reachability and nonidentifiability.
+- NOMOS-0.861: signed but conditional evidence attribution with self-certification firewall.
+- NOMOS-0.862: externally pinned trust governance, status/appeal challenge, signed institutional docket acknowledgement and independently screened materiality.
+- Official Korean Online Administrative Appeals: https://simpan.go.kr/eas/aa/ac/100/admjdgmTrgt.do?cmnMenuCd=E03020100 — authenticated online submission and separately described written visit/post procedures; these remain subject to their legal requirements.
+- Official general appeal guidance: https://simpan.go.kr/eas/aa/ac/100/admjdgmInst.do?cmnMenuCd=E03040100&subMenuIdx=01 — standing, deadlines, exceptions and remedy scope require independent legal evaluation.
+- NIST SP 800-63C-4 redress in identity federation, OECD AI transparency/contestability principle — existing donor scholarship, NOT novel due process or universal statutory authority.
 
-## P0–P1: Constitution and donors
+## P0–P1 — Exact typed eight-stage remedy model
 
-0.19 already developed anti-capture-operator reflexivity, trigger/appeal separation and bounded contestability; 0.38 rejected self-sealing repairs; 0.839–0.840 require dependency-sensitive independent review; 0.841 established meta-router capture. 0.860's three-valued AND/OR computation and 0.861's cryptographically attributed signed-evidence receipts remain subject to external-world assumptions.
+For each case-, jurisdiction- and date-scoped alternative candidate route, an ordered eight-stage chain:
 
-Prior standards are W3C VC Data Model 2.0 and Bitstring Status List, RFC 9162, NIST SP 800-63C-4 redress/trust agreements, and SLSA/in-toto policy attribution. **No invention claim** for revocation lists, status freshness, signatures, quorums or challenge procedures.
+1. claimant-usable legally described channel;
+2. authentic institutional receipt;
+3. claimant standing;
+4. applicable timely filing or legal exception;
+5. independent merits review;
+6. actual remedial legal authority;
+7. execution of correction;
+8. downstream recipient/copy reconciliation.
 
-## P2–P4: Finite synthetic governance court
+Within each route stages are AND, across channels routes are OR. Reuse `assess860` only.
 
-`tools/governance862.mjs` uses a **separately supplied** charter with independently pinned signer keys, roles, declared control groups, epoch, jurisdiction, evidentiary source hashes, claimed status freshness and challenge escalation bounds.
+Two goals:
+- `remedy_reachable`: a path through remedial authority;
+- `repair_evidenced`: an additional execution and recipient-correction path.
 
-Finite-model states include ELIGIBLE_MODEL, UNKNOWN, FRESHNESS_HOLD, REVOKED_ATTESTED, CHALLENGED, ESCALATION_REQUIRED. Each still returns institutional **NOT_INDEPENDENTLY_LEGALLY_CERTIFIED**.
+No route model evaluates a real person's lawful standing or actually delivers legal relief.
 
-`verifyGoverned862` binds the exact 0.861 policy hash plus route census to the signed charter. A challenged, revoked, stale or otherwise invalid governance root/census changes BOTH downstream ACTIONABLE and BOUNDED_BLOCKED certificates to UNKNOWN. Tests include duplicate keys/one controller, conflicting status, missing freshness, disallowed attestor, review capture, age-based independent escalation and four identical observable governance records with different actual hidden institutional worlds.
+## P2 — Authenticated execution gate
 
-**Bounded theorem:** if charter identities, controller map, signer roles, dates, event set and cryptographic checks are correct, ELIGIBLE_MODEL establishes a group-diverse, current, signed modeled status with no recognized unresolved contest **inside that snapshot**. Neither policy authorship nor actual legal competence is proved.
+- `tools/remedyReach863.mjs` exports `assessRemedyReach863` (direct HYPOTHETICAL model only) and `assessGovernedRemedyReach863` (executes 0.862 signed governance/census -> 0.861 verified route and independent-review evidence -> unchanged 0.860 fixed-point).
+- Direct claims or status strings are never claimed to be law. The governed function demands EXACT signed stage census correspondence, matching case/jurisdiction/snapshot, independently pinned policy, accepted signed evidence receipts and Q/E/M/I/A/C reviewer-dependency break.
+- An unsigned/contradictory/absent stage proof produces UNKNOWN, not a bogus definitive outcome; root/census HOLD prevents either ACTIONABLE or BOUNDED_BLOCKED promotion.
+- The returned institutional result remains `NOT_INDEPENDENTLY_LEGALLY_CERTIFIED`.
 
-## P5: Access without free veto
+## P3 — Exhaustive finite theorem
 
-`tools/petition862.mjs` adds a procedure in which a person need not possess the privileged **attestor** key to submit a docket. This does not bypass any lawfully required identity or standing checks. The submitter's own docket hash is explicitly NOT proof of institutional acceptance.
+For one eight-stage route with V/D/U warrant values, the completed chain is ACTIONABLE iff all required stages V, BOUNDED_BLOCKED iff at least one required stage D, otherwise UNKNOWN. Alternative routes combine by OR. Under correct warrants, complete finite route census and monotone derivation semantics, the six-stage remedy-path prefix is a prerequisite of eight-stage restoration. Hence:
 
-A separately role-authorized intake operator must sign the exact docket's SHA-256, case, charter epoch, jurisdiction, asserted date and target to establish `SIGNED_INTAKE_RECEIPT_ONLY`. Without that the result is `SUBMISSION_UNACKNOWLEDGED`.
+**repair_evidenced ACTIONABLE ⇒ remedy_reachable ACTIONABLE**;
 
-A different independently chartered screening role can then issue a source-pinned signed assessment of materiality. Ordinary submitted, acknowledged-but-pending and independently nonmaterial petitions do not automatically suspend a 0.861 finite computation. A receipt-backed independent *material* screen or genuine conflicting independent screens mask either positive or negative model answer with `INDEPENDENT_CONTEST_REVIEW_HOLD` and UNKNOWN. Late screened/unscreened petitions are kept in accountable escalation state, not silently dismissed or given automatic legal effect. Unrelated-case receipts cannot block others.
+**remedy_reachable BOUNDED_BLOCKED ⇒ repair_evidenced BOUNDED_BLOCKED**.
 
-**Exact test artifacts:** `tests/test_petition862.mjs`; extended `tests/test_governance862_integration.mjs`. Earlier exact code-test head `4eebf26ee0ed3cef5925eaf90c154bdbe97dbb22`, Actions #301 SUCCESS. Intermediate #299/#300 were red while mandatory acknowledgement changed verifier inputs before fixtures were updated; they were repaired.
+`tests/test_remedyReach863_exhaustive.mjs` checks all **3^8 = 6,561** single-route assignments and both prefix implications, plus `tests/test_remedyReach863.mjs` alternative-channel/standing/review/authority/recipient counterexamples. `tests/test_remedyReach863_integration.mjs` tests real execution of fictional Ed25519 0.861 and 0.862 verification calls including reviewed dependency breaks.
 
-## P6: Theorems and stopping rule
+## P4 — Non-identifiability and stopping rule
 
-Conditional technical proposition: submitted bytes or a self-generated docket ID alone cannot be promoted into institutional acknowledgement or an authority veto. A signer/role/source/case-bound acknowledgement plus independently screened materiality can invoke **a bounded model-level hold** under the configured charter, not a legal ruling.
+Five paired synthetic worlds share identical signed-looking observed documents but differ in actual submission access, notification delivery, hidden capture of reviewers, governing standing conditions, or active unrepaired recipient copies. No deterministic function of identical received data can certify true remedy in both distinct worlds. `tests/test_remedyReach863_nonidentifiability.mjs` records these falsifiers.
 
-Nonidentifiability theorem: identical fully signed/acknowledged model packets can represent different actual legal powers, controller relationships, genuinely current revocation data, correct petitioner standing or effective appeal reachability. Thus no finite in-band certificate can by itself establish an institution's legitimate coercive authority over a person.
+**Finite graph semantics and synthetic cryptographic attribution: BOUNDED SEALED pending final docs-head CI.**
 
-**0.862 DOMAIN-BOUNDED MATHEMATICAL/SYNTHETIC COURT: CLOSED subject to final exact-head CI.**
+**Actual effective claimant redress: NOT CERTIFIED.** Real legally competent public actors, current authority, claimant standing, accessibility, signed filing receipts, remedy operation and downstream evidence must be authenticated independently of the disputed institution.
 
-**ACTUAL LEGAL AUTHORITY, LIVE REVOCATION, TRUSTED TIMESTAMPS, AUTHENTIC PUBLIC-AGENCY RECEIPTS, IDENTITY ASSURANCE, REALISTIC QUEUE/SLA RESOURCES AND EFFECTIVE REMEDY: NOT CERTIFIED / OUTSIDE PROVEN DOMAIN.**
+## Canonical and execution
 
-No further simulated checkboxes should be used to claim real-world sovereignty. The correct next research object is actual institutional-access evidence and human/legal review.
-
-## Protocol and links
-
-- Kernel remains Python **v0.18.0** (unchanged).
-- Owner runtime: **Node.js** with Ed25519 + JSON; workflow **YAML**, no bot-authored commits.
-- `tools/governance862.mjs`, `tools/petition862.mjs`, `spec/contested-trust-governance.md`
-- Tests: `tests/test_governance862.mjs`, `tests/test_governance862_integration.mjs`, `tests/test_petition862.mjs`.
-- Single Notion canonical with P0–P6: https://app.notion.com/p/3f3ef561cf928158855dfbfdce37e364
-- Source-only Harvest: https://app.notion.com/p/3f3ef561cf92818ab465c2f40e0f856d
-
-## Next formal title — proposed, NOT OPENED
-
-**NOMOS-0.863 — Effective Contestation Access, Independent Petition Acknowledgement, Claimant Standing without Privileged Attestor Credentials, Remedy-Reach Verification & the Primitive Question of When a Formally Contestable Institutional Trust Regime Actually Gives an Affected Person a Usable Path to Correction**
-
-Stage may be considered bounded-closed once exact-head CI verifies current canonical code/tests/docs. No institutionally authentic legal verdict is claimed.
+- One Notion canonical P0–P4: https://app.notion.com/p/3f3ef561cf9281febbf2c826ac35eab1
+- Spec: `spec/effective-contestation-access.md`.
+- Node.js tools/tests and read-only YAML GitHub Actions; Python package **v0.18.0 unchanged**.
+- No new identity-avoidance mechanism or unauthorized filing route. Any officially described written route remains governed by applicable identity and procedural law.
+- No final NOMOS-0.864 title proposed until 0.863 source and CI receipts are sealed.
