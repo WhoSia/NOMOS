@@ -17,6 +17,20 @@ const day = s => typeof s==="string" && /^\d{4}-\d{2}-\d{2}$/.test(s) &&
   !Number.isNaN(Date.parse(s+"T00:00:00Z")) && new Date(s+"T00:00:00Z").toISOString().slice(0,10)===s;
 function active(on,from,to){return day(on)&&day(from)&&day(to)&&from<=on&&on<=to;}
 function unique(a){return new Set(a).size===a.length;}
+function reviewBreaksSufficient(claim,rule){
+  const live=rule.liveFailureModes;
+  if(!Array.isArray(live)||!live.length || !unique(live) ||
+     !live.every(m=>["Q","E","M","I","A","C"].includes(m)) ||
+     !Array.isArray(claim.dependencyBreaks) ||
+     claim.remedyPath!==rule.remedyPath ||
+     typeof claim.remedyPath!=="string" || !claim.remedyPath) return false;
+  return live.every(mode=>claim.dependencyBreaks.some(b=>
+    b.mode===mode && typeof b.originalSource==="string" && b.originalSource &&
+    typeof b.reviewSource==="string" && b.reviewSource &&
+    b.originalSource!==b.reviewSource &&
+    typeof b.probeId==="string" && b.probeId &&
+    b.evidenceSourceId===claim.sourceId));
+}
 
 export function verify861(packet, policy) {
   // No fallback to trust material embedded in packet.
@@ -42,7 +56,8 @@ export function verify861(packet, policy) {
     let why="";
     if(!c || typeof proof.id!=="string" || typeof sig!=="string" || !["route","review","census"].includes(c.kind))why="MALFORMED_PROOF";
     else if(c.caseId!==packet.caseId || c.jurisdiction!==policy.jurisdiction)why="SCOPE_MISMATCH";
-    else if(!active(policy.asOf,c.validFrom,c.validUntil))why="STALE_OR_FUTURE";
+    else if(!active(policy.asOf,c.validFrom,c.validUntil) || !day(c.issuedOn) || c.issuedOn>policy.asOf)why="STALE_OR_FUTURE";
+    else if(policy.revokedProofIds?.includes(proof.id) || policy.revokedKeyIds?.includes(issuer))why="REVOKED_AT_SNAPSHOT";
     else if(!key || !key.roles?.includes(c.kind) || key.jurisdiction!==policy.jurisdiction ||
             !active(policy.asOf,key.validFrom,key.validUntil))why="UNTRUSTED_ISSUER_OR_ROLE";
     else if(!pinnedSources.has(c.sourceId))why="UNPINNED_OR_STALE_SOURCE";
@@ -79,7 +94,8 @@ export function verify861(packet, policy) {
       const w=[...states][0];
       const independent=!r.requiresIndependentReview ||
          assertions("review",r.id).some(c=>c.assertion==="independent" &&
-           policy.institutionGroups[c.issuer]!==policy.institutionGroups[packet.originalAgency]);
+           policy.trustedKeys[c.issuer]?.controlGroup!==policy.institutionGroups[packet.originalAgency] &&
+           reviewBreaksSufficient(c,r));
       if(w==="denied" || independent)warrant=w;
     }
     return {id:r.id,head:r.head,requires:r.requires,warrant};
