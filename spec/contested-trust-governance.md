@@ -186,3 +186,129 @@ explicitly refuses to launder signed root status into renewed power over a perso
 result* after exact-head CI SUCCESS. Any claim of a universally legitimate
 trust root, independently complete appeal mechanism, or real public-law
 competence remains NOT CERTIFIED.
+
+
+## P5 — Signed Intake Receipts and Independent Materiality Screening
+
+The P0–P4 policy root only accepts challenges signed by a policy-approved
+attestor. That cannot establish an affected person's effective opportunity to
+enter review if their situation prevents obtaining a privileged attestor key.
+The right solution is NOT to give unsigned dockets unilateral revocation power,
+nor to pretend unverified submitted bytes are an agency-issued receipt.
+
+### Evidence states
+
+1. \`SUBMISSION_UNACKNOWLEDGED\`: a person claims to have filed a docket, but
+   no authorized *intake office* has signed receipt of those exact bytes.
+   The person is not required to hold a privileged auditor's Ed25519 key;
+   any legally required personal identity/standing verification remains
+   a separate requirement NOT bypassed by this software.
+2. \`SCREENING_PENDING\`: receipt signed by separately enrolled *intake* role,
+   without an independently signed materiality screen.
+3. \`SCREENING_ESCALATION_DUE\`: signed intake acknowledgement exists but
+   still no qualified screen after the selected time budget. This is an
+   accountable delay marker, not automatic legal suspension.
+4. \`SCREENED_NONMATERIAL\`: signed, source-pinned screen declares no
+   material root/census dispute, which may remain contestable.
+5. \`MATERIAL_FOR_GOVERNANCE_CHALLENGE\`: receipt plus signed external
+   screening, with the screened evidence bytes matching an independently
+   pinned digest and exact SHA-256 binding to the acknowledged docket.
+6. \`SCREENING_DISPUTED\`: conflicting independently signed screens; do not
+   silently pick the institution's preferred result.
+7. \`INTAKE_SCOPE_HOLD\`/ \`UNRELATED_PETITION\`: mismatched case, charter,
+   epoch or time does not acquire a veto over any other repair case.
+
+The submitted docket hash is \`submissionDigest\`, **never an institutional
+receipt**. An intake acknowledgement is independently signed with a
+domain-separated Ed25519 key registered for the intake role, bound to
+docket digest, case, jurisdiction, policy, epoch, received-on date and target.
+An intake signer can establish a claimed receipt under its role, but cannot
+by that act decide the petition's merits or validate the trust root.
+
+### Cross-layer invariants
+
+\`verifyGovernedWithPetitions862\`:
+- unacknowledged and merely pending petitions cannot independently force a
+  previously viable 0.861/0.860 model result to UNKNOWN;
+- an acknowledged, externally screened material claim (or conflicting
+  qualified screens) causes a temporary \`INDEPENDENT_CONTEST_REVIEW_HOLD\`
+  and both ACTIONABLE and BOUNDED_BLOCKED are masked to UNKNOWN;
+- an unrelated case's docket cannot veto another person's claim;
+- expired screening creates an escalation reason without automatically
+  dismissing the petition or manufacturing a new legal sovereign.
+
+A material screening **is still an attestor statement** and does not itself
+prove legal standing, material truth, source independence, actual court
+jurisdiction, or an effective remedy. Actual governmental authentication and
+reparative power remain outside this prototype.
+
+### P5 executable evidence
+
+- \`tools/petition862.mjs\` — separate intake and reviewer signature domains
+  on exact canonical docket and pinned source, with full scoped conditions.
+- \`tests/test_petition862.mjs\` — positive and negative acknowledgement,
+  modified docket, false signature, captured reviewer, source substitution,
+  unrelated case and delayed-screen regressions.
+- \`tests/test_governance862_integration.mjs\` — verifies positive and
+  negative downstream outcomes are blocked **only** following qualified
+  material screening, not by every submitted complaint.
+- Actions #301: **SUCCESS**, exact head at code-test convergence
+  \`4eebf26ee0ed3cef5925eaf90c154bdbe97dbb22\`.
+  Intermediate #299/#300 failures reflect temporarily inconsistent schema
+  and fixtures; they were repaired before the reported success.
+
+## P6 — Bounded Court Closure and External Institutional Proof Debt
+
+### Conditional propositions
+
+**Non-veto:** with independently accurate intake-role keys and secure signature
+verification, unsigned docket bytes alone do not trigger an authoritative
+material screening or change modeled eligibility.
+
+**Bounded contestability:** if an intake role signs acknowledgement of exact
+docket bytes, and a separately trusted external screening role signs a
+source-verified material concern about the same case, then the derived model
+remains reviewable instead of silently promoting either a positive or
+negative finite-model disposition.
+
+**Non-identifiability:** two worlds may have the same signed intake and screen
+but differ in real claimant standing, actual document provenance, procedural
+accessibility, independence of reviewers or legal powers to change an outcome.
+No purely internal algorithm can establish a correct legal verdict in both.
+An externally competent and accountable court or remedial institution must
+determine that separate question.
+
+### Explicit closing verdict
+
+**NOMOS-0.862's finite-model governance and synthetic implementation
+court is BOUNDED-CLOSED once final exact-head CI succeeds.** The general
+legal-world claim "these institutions legitimately govern these persons'
+rights" was NEVER admitted as a result, and remains NOT CERTIFIED.
+
+Theoretical and synthetic closure is a valid stopping point; more ungrounded
+checkboxes would confuse tested mechanism properties with legal truth.
+
+**Remaining live field obligations:**
+- authentic official legal/regulatory delegation of signer powers;
+- verified fresh revocation and trusted timestamps;
+- genuinely independent controller and auditor ownership;
+- a real complainant-accessible, lawfully identity-verified intake path
+  with acknowledged submission and practicable route to remedy;
+- observed downstream person-judgment repair and explicit irreversible harm.
+
+These are the next *empirical institutional research domain*, not excuses
+to declare the bounded finite model incomplete.
+
+### Next proposed research topic, not opened
+
+**NOMOS-0.863 — Effective Contestation Access, Independent Petition Acknowledgement,
+Claimant Standing without Privileged Attestor Credentials, Remedy-Reach
+Verification & the Primitive Question of When a Formally Contestable
+Institutional Trust Regime Actually Gives an Affected Person a Usable
+Path to Correction.**
+
+Existing law, NIST federation redress requirements, administrative appeal
+procedures and NOMOS-0.19/0.839–0.841 remain required donors; an electronic
+filing UI is not automatically a legal remedy.
+
+**P0–P6 all live inside one NOMOS-0.862 Notion canonical.**
