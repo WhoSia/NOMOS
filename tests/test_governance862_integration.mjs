@@ -47,7 +47,7 @@ const src862=[
 {id:"status",text:"Fictional signed governance status."},
 {id:"challenge",text:"Fictional omitted route challenge."}];
 const govCharter={id:"GOV-FICTION",epoch:6,minimumEpoch:6,jurisdiction,asOf:day,
- quorum:2,maxStatusAgeDays:7,subjectGroup:"original",
+ quorum:2,maxStatusAgeDays:7,maxChallengeAgeDays:14,subjectGroup:"original",
  legacyPolicySha256:digest861(canonical861(policy861)),
  keys:Object.fromEntries(["governorA","governorB","challenger"].map(id=>[id,{
   publicKeyDerBase64:keys[id].publicKeyDerBase64,roles:keys[id].roles,group:keys[id].group,
