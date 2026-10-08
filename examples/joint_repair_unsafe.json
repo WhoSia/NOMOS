@@ -1,0 +1,60 @@
+{
+  "joint_repair": {
+    "plans": [
+      {
+        "id": "joint",
+        "agencies": [
+          {
+            "id": "archive",
+            "capabilities": [
+              "records"
+            ]
+          },
+          {
+            "id": "review",
+            "capabilities": [
+              "adjudication"
+            ]
+          },
+          {
+            "id": "finance",
+            "capabilities": [
+              "payment"
+            ]
+          }
+        ],
+        "tasks": [
+          {
+            "id": "restore",
+            "required_capabilities": [
+              "records",
+              "adjudication",
+              "payment"
+            ],
+            "responsible_agency": "review",
+            "contributors": [
+              "archive"
+            ],
+            "handoff_warrant": true,
+            "independent_end_to_end_evidence": true,
+            "completion_claim": "complete",
+            "budget_holder": "finance"
+          }
+        ],
+        "joint_protocol": true,
+        "accountable_coordinator": "review",
+        "interinstitutional_access_warrant": true,
+        "privacy_minimization": true,
+        "cross_agency_provenance": true,
+        "affected_person_notice": true,
+        "single_accessible_challenge": true,
+        "independent_joint_review": true,
+        "coordination_capacity": true,
+        "interim_continuity": true,
+        "shared_debt_ledger": true,
+        "all_locally_complete_implies_joint_complete": true,
+        "veto_without_review": true
+      }
+    ]
+  }
+}
