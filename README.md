@@ -343,6 +343,28 @@ node tests/test_governance862_integration.mjs
 
 The kernel remains **v0.18.0**. The proof is conditional on externally set issuer/group policy; those governance assumptions are NOT rendered true by passing signatures. Canonical NOMOS-0.862 P0–P4 is a single Notion page, with Harvest reserved for source-index fragments.
 
+### NOMOS-0.862 — Ordinary Petition Intake and Bounded Closure
+
+A contested person-judgment repair needs a **usable opportunity to be heard**, not just a registry of approved auditors who can sign root challenges. NOMOS-0.862 P5 separates **submission, institutional acknowledgment, independent screening and legal consequence**:
+
+- `tools/petition862.mjs`: a requester does not need a privileged institutional *attestor signing key* merely to submit a petition in the **synthetic procedural model**. Applicable lawful identity and standing checks are separate and are not bypassed.
+- A claimant-submitted ID or hash is **not** evidence of receipt. A separately authorized *intake-office* signature must acknowledge the exact docket, jurisdiction, case, epoch, target and received-on date. Without it the state remains `SUBMISSION_UNACKNOWLEDGED`.
+- A charter-authorized independent *screening* signature must bind to the same docket digest and independently pinned evidence bytes. Only material or genuinely disputed acknowledged screens can impose a **model-only** `INDEPENDENT_CONTEST_REVIEW_HOLD` over either an ACTIONABLE or BOUNDED_BLOCKED finite-model result.
+- A plain submission, pending matter, unauthorized screen or different case's docket cannot create an automatic governance veto. An overdue acknowledged matter remains visible as `SCREENING_ESCALATION_DUE`.
+- `tests/test_petition862.mjs` and the extended `tests/test_governance862_integration.mjs` exercise signed acknowledgments, missing receipts, forged claims, source swapping, independent screening, case replay, non-veto and dual-sided downstream holds.
+
+NIST SP 800-63C-4 already requires accessible redress and multi-party redress coordination in covered federation contexts; NOMOS does not claim this as an original invention or infer that every real legal process permits the same filing method.
+
+**Scope:** No actual filing, case authentication, public-law authority, independent court, revocation live feed or remedy execution is provided. Code tests the condition that an approved **institutional attestor key** is not the same thing as the claimant's right to lodge a procedurally valid grievance.
+
+```bash
+node tests/test_governance862.mjs
+node tests/test_governance862_integration.mjs
+node tests/test_petition862.mjs
+```
+
+**0.862 bounded mathematical/synthetic governance + intake court: CLOSED after final exact-head CI validation; genuine institutional rights/standing/revocation freshness: NOT CERTIFIED.** Canonical P0–P6 stays in one Notion page.
+
 ## Design rules
 
 **POLICY-SELECTED FEEDBACK ≠ POLICY-INDEPENDENT VALIDATION.**
@@ -381,6 +403,6 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Current head
 
-**NOMOS-0.862 — Trust-Root Contestability, Attestor Governance, Credential Status Freshness & Route-Census Challenge — OPEN / bounded mathematical and synthetic execution PASS / real-world legal legitimacy HOLD.**
+**NOMOS-0.862 — Contestable Trust-Root Governance, Freshness, Route Census and Independent Petition Intake — BOUNDED THEORY/SYNTHETIC EXECUTION CLOSED (exact-head CI verification required); actual institutional legal rights NOT CERTIFIED.**
 
-Node.js/JSON/YAML verification surface; Python kernel **v0.18.0 unchanged**. No unconditional legal authority claim. No 0.863 opening or title until independent contestation and current status source are actually grounded.
+Kernel **v0.18.0 unchanged**; Node.js verifier/proof tools with JSON packets and read-only YAML CI. Next title proposed only: **NOMOS-0.863 — Effective Contestation Access, Independent Petition Acknowledgement, Claimant Standing without Privileged Attestor Credentials, Remedy-Reach Verification & the Primitive Question of When a Formally Contestable Institutional Trust Regime Actually Gives an Affected Person a Usable Path to Correction**.
