@@ -1,0 +1,45 @@
+{
+  "restitution": {
+    "cases": [
+      {
+        "id": "a",
+        "historical_recall_valid": true,
+        "review_complete": true,
+        "case_claim": "review_complete",
+        "unrecovered_opportunity": true,
+        "opportunity_receipt": false,
+        "remaining_harm": true,
+        "harm_receipt": true,
+        "residual_status": "acknowledged",
+        "third_party_reliance": true,
+        "reliance_disposition": true,
+        "interim_expired": true,
+        "post_expiry_effect_reviewed": true,
+        "debt_claim": "discharged",
+        "unresolved_tasks": [
+          "unrecovered_opportunity"
+        ]
+      }
+    ],
+    "plans": [
+      {
+        "id": "p",
+        "cases": [
+          "a"
+        ],
+        "independent_closure_authority": true,
+        "written_closure_reasons": true,
+        "contestable_closure": true,
+        "individual_notice": true,
+        "downstream_recipient_audit": true,
+        "third_party_interests_assessed": true,
+        "restoration_scope_defined": true,
+        "uncertainty_receipt": true,
+        "independent_debt_ledger": true,
+        "completion_claim": "complete",
+        "remainder_exists": true,
+        "treats_review_as_restitution": true
+      }
+    ]
+  }
+}
