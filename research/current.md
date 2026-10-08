@@ -1,6 +1,16 @@
-# Current Research Head — NOMOS-0.863
+# Current Research Head — NOMOS-0.865
 
-**Status: BOUNDED FORMAL / SYNTHETIC GOVERNED-REMEDY EXECUTION SEALED SUBJECT TO FINAL EXACT-HEAD CI; REAL CLAIMANT REDRESS NOT CERTIFIED**
+**Status: 0.865 OPEN — synthetic independent observation authority and consequential repair evidence; 0.864 CLOSED (bounded synthetic model, verified CI #332). Neither stage certifies real claimant-relative effects.**
+
+## Active head — NOMOS-0.865
+
+- Canonical: https://app.notion.com/p/3f3ef561cf928119b846c69f9fbff1c2
+- Active P1: observer labels are not evidence-path independence; shared untrusted controlling roots refute independent support, while disjoint roots alone never certify independence.
+- Executable: `tools/observationAuthority865.mjs`, `tests/test_observationAuthority865.mjs`; read-only CI test registration.
+- Predecessor: 0.864 CLOSED at https://github.com/WhoSia/NOMOS/actions/runs/37745839244 (push, exact HEAD `a0a75743339b03790f0889332e9770d15ca6c700`).
+- Archived old 0.860 preseal note: see frozen Drive `NOMOS-main.zip`, SHA-256 `7f5f534ed51253bf6acc054f7b31f672f10066809d3c5c66f93e72f8f2ad7dd1`.
+
+## Historical 0.863 research statement (retained as genealogy; not current status)
 
 ## Primitive
 
