@@ -22,9 +22,12 @@ The foundational NOMOS chain in `docs/origin.md`: situated event -> local interp
 
 ## External scholarship for acquisition
 - Girard (1964), Camus's Stranger Retried, DOI https://doi.org/10.2307/461137
-- Analyse du réquisitoire du procureur dans L'Étranger de Camus (1971), https://www.persee.fr/doc/retra_0151-1874_1971_num_3_1_934 (bibliographic author verification pending)
+- Le Hir (1971), Analyse du réquisitoire du procureur dans L'Étranger de Camus, DOI https://doi.org/10.3406/retra.1971.934; https://www.persee.fr/doc/retra_0151-1874_1971_num_3_1_934 (bibliographic author verification pending)
 - Bryja (2019), Is Albert Camus a stranger? Détournement ..., DOI https://doi.org/10.14746/prt2019.4.11
-- 부조리의 반복과 변주: 『이방인』과 『뫼르소 살인사건』의 비교를 통해 얻은 교훈, DOI https://doi.org/10.33078/COWOL93.02
+- 부조리의 반복과 변주: 『이방인』과 『뫼르소 살인사건』의 비교를 통해 얻은 교훈, DOI https://doi.org/10.33078/COWOL93.08
 Those four were *not* found as verified matching full PDFs in Drive search. No invented imports or fake completion.
 
 **Hold:** Literary stress test and conceptual relevance court drafted, not externally verified model of actual people. Keep OPEN until scope-safe counterexample and closure assessment; do not mechanically prolong into multiple P phases.
+
+## Four-Paper Harvest — Source Verified 2026-10-09
+Four originals are present under 10_PAPERS: Girard (1964) DOI 10.2307/461137; Le Hir (1971) DOI 10.3406/retra.1971.934; Bryja (2019) DOI 10.14746/prt2019.4.11; 박치완 (2025) DOI **10.33078/COWOL93.08**, not .02. See https://app.notion.com/p/3f4ef561cf928136a214ce62ad1fe32a for attributed and contested close-reading notes. Le Hir shows the rhetorical transformation of wake conduct into penal character evidence. Girard challenges easy innocence and the judge-condemning-judges trap. Bryja shifts canonical authority to the unnamed victim's brother in Daoud. 박치완 contrasts personal absurdity with normalized communal injustice. Two non-substitutable questions survive: whether observed emotion is relevant to the proposition being judged, and whether the adjudication/narrative makes those harmed visible as independent persons. Neither question eliminates responsibility for the underlying act. Interpretive accounts do not prove historical institutional facts or Korea-specific stigma rates. **Status: OPEN, short-stage rule; no novel social phenomenon claimed.**
