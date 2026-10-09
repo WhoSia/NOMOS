@@ -65,3 +65,53 @@ Let the observed metadata vector `O=(voice-received,voice-cited,decision-issued,
 - Human interpretive contestability cannot be inferred just from booleans; tool stores **declared** claim-alignment and challenge flags. No real-world moral classifier authorized.
 
 **Code correction:** `tests/test_interpretiveUptake870.mjs` explicitly verifies (1) issues can be substantially answered without literal quotation, and (2) literal quotation with no reasons fails. Previously transient mismatch between code and tests was repaired. GitHub Actions for predecessor head `160af89f47e1d1470070df5d624efcc063dcf125` completed SUCCESS, run https://github.com/WhoSia/NOMOS/actions/runs/37918033327. Recheck exact final spec head separately. Detailed P2 Harvest and all source IDs: https://app.notion.com/p/3f4ef561cf9281bdb6a8c10e469a1198.
+
+## P3 — Interpretation/Merits Boundary, Legal-Philosophy Collision, Closure Court
+
+**Question:** What entitlement exists to challenge an institution's attributed meaning of a person's words, without giving that person final authority to establish unrelated case facts or legally competent remedy? Break the single scalar notion of "being heard" into:
+1. **Source-and-attribution track:** speaker proposition and institutional paraphrase, claim-specific objection access, objection examination, reasons for acceptance or rejection. Exact quotation is not necessary, and mere quotation not sufficient.
+2. **Merits track:** scoped first-order conduct evidence, source-root independence, separately recorded higher-order testimony reliability challenges, legally relevant status. A credibility defeater should not be mistaken for proof of the reverse event, and a reasoned denial does not automatically certify a defendant's wrongdoing.
+3. **Process track:** an adjudicative proceeding and a consultative process are not identical forms of participation and need not have identical legally binding responsiveness duties.
+4. **Downstream track:** decisions, authority to change the consequences, independent readback and claimant-relative relief are distinct (0.863–0.865).
+5. **Person standing:** participation of accused/claimant does not prove an affected third party was independently represented, and recognition of victim harm does not license global person essentialization (0.866–0.869, Camus and four-critic Harvest).
+
+### An important rejected overstatement
+**REJECT:** correcting attributed speech meaning can never affect the merits.
+**Surviving negative rule:** correcting attributed speech meaning does not *automatically settle* merits. Where a speech act is itself constitutive of the relevant event or material evidence, fair merits review may need updating after semantic correction. Elsewhere the facts might remain independently established. This case-dependency is explicitly typed `speech_constitutive | speech_evidentiary | speech_incidental` in the synthetic court. No code determines which type a real legal case is or which objective fact is true.
+
+### Full finite synthetic counterworld set
+- W1: semantics corrected, independent act-specific evidence still supportive -> semantic correction does not entail acquittal or reversal.
+- W2: accurate attribution, support evidence shares a controlling root -> good transcription cannot authenticate merits.
+- W3: claimant challenges attributed meaning, institution independently examines and reasonably disagrees -> an adverse result is not itself proof of silencing.
+- W4: exact quotation but no answer to the actual issue -> procedural citation is not uptake.
+- W5: fair issue-specific paraphrase without quotation -> literal repetition not a necessary condition.
+- W6: consultation is open yet the decision need not follow the speaker's preference; misclassification as adjudication produces an invented right.
+- W7: speech is relevant to the event itself, its corrected meaning materially requires new evidentiary assessment -> reject absolute orthogonality.
+- W8: claimant's position addressed, harmed third party missing -> standing remains independent.
+- W9: source-faithful hearing and corrected document without independent downstream effect -> external remedy UNKNOWN.
+
+`tools/adjudicationBoundary870.mjs` / `tests/test_adjudicationBoundary870.mjs` check declared input typing, merits/meaning distinguishability, adjudicative-vs-consultative process and case-dependent linguistic relevance. Such state labels are not semantic or factual validity oracles.
+
+### Cross-shelf original scholarship already in Drive
+- De Benedetto & Peruzzi (2026), *Higher-order Evidence and Legal Cross-examination*, `Synthese` 207:148, https://doi.org/10.1007/s11229-026-05502-3 ; source ID `1gwmP3ejXUkQBAdQNFWIp5JRX_qsrgfF7`. Reliability challenge distinct from determining the act-specific truth.
+- Wever & Ybema (2024), *Procedural Justice and the Design of Administrative Dispute Resolution Procedures*, `Social Justice Research` 37:76–99, https://doi.org/10.1007/s11211-023-00428-4 ; ID `1d5yjB9g4t-WtRvYSeJt3f1nXL-DL58rq`. Professional representatives' **perceived** procedural justice is not identical to independent legal fact review. The study cannot show the latter is irrelevant.
+
+### Legal philosophy already anticipates our intuition: do NOT claim theorem originality
+Newly identified **absent from Drive metadata/title-and-author search** and **not newly acquired**:
+- Lon L. Fuller (1978), *The Forms and Limits of Adjudication*, `Harvard Law Review` 92(2):353–409, DOI https://doi.org/10.2307/1340368. Fuller establishes argument participation and its limits in adjudication.
+- Melvin Aron Eisenberg (1978), *Participation, Responsiveness, and the Consultative Process: An Essay for Lon Fuller*, `Harvard Law Review` 92(2):410–432, DOI https://doi.org/10.2307/1340369. His distinction between procedural consultation and adjudicative responsiveness directly constrains novelty.
+- Romare, Ohlsson & Wilske (2026), *Is there a human right to reasons for administrative decisions?*, `De Ethica` 9(3):25–42, DOI https://doi.org/10.3384/de-ethica.2001-8819.269325. The right to justification is a defended *philosophical position*, not a verified universal legal entitlement.
+- Jeremy Waldron (2011), *The Rule of Law and the Importance of Procedure*, in `Getting to the Rule of Law` pp.3–31, DOI https://doi.org/10.18574/nyu/9780814728437.003.0001 (book chapter -> 11_SOURCES, not 10_PAPERS, if the original is acquired).
+Publishers and institution records corroborated bibliography; full new originals NOT inspected in Drive.
+
+### Closure criteria and status
+**Criterion K1:** no historical novelty exaggeration; Fuller/Eisenberg and NOMOS 0.863–0.869 overlap documented.
+**K2:** semantic misattribution contestability distinct from claimant-sovereignty over external facts.
+**K3:** independent first-order merits, higher-order reliability defeaters, and source-root provenance typed separately.
+**K4:** the type of proceeding and the case's dependence on the utterance itself cannot be omitted.
+**K5:** claimant and affected victim standing independent, and legitimate adverse decision remains possible.
+**K6:** proof limited to synthetic nonidentification / finite regression; independent real-world causal effect, actual legal rights and restoration remain external HOLD.
+**K7:** all tests must be confirmed on exact final GitHub HEAD, not a predecessor run.
+
+**Scientific verdict:** bounded conceptual distinction is ready to close, conditional on K7 CI SUCCESS. No empirical or legal effect can be certified by these artifacts. Research text is narrower than the general philosophical principle of meaningful hearing.
+Notion P3 cross-shelf Harvest: https://app.notion.com/p/3f4ef561cf92813e802df031fc741cc8
