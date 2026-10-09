@@ -1,6 +1,6 @@
 # NOMOS-0.870 — Procedural Voice, Consequential Uptake, Remedial Reachability & the Primitive Question of When Being Heard Actually Gives a Person the Power to Change an Institutional Judgment
 
-**User-authorized title; OPEN — bounded synthetic court, 2026-10-09.**
+**User-authorized title; BOUNDED CLOSED — conceptual/synthetic only; real-world rights, merit determinations and consequences remain EXTERNAL HOLD (2026-10-09).**
 Notion canonical: https://app.notion.com/p/3f4ef561cf928152985acc439532333f
 Camus-based cross-source Harvest: https://app.notion.com/p/3f4ef561cf9281f8897dd6a373b1f737
 
@@ -46,7 +46,7 @@ https://app.notion.com/p/3f4ef561cf9281bdb6a8c10e469a1198
 
 **Implementation:** `tools/interpretiveUptake870.mjs` and `tests/test_interpretiveUptake870.mjs`. A declared limited status court: presence of voice, citation, issue-specific reasons, attribution objection access and actual review, declared alignment/alteration/unknown, separately noted victim standing. The enum is input metadata, not language-level proof of equivalence. No real judiciary validity, real person's innocence, remedy, or causal relief certified. CI exact-head success must be verified separately after commit.
 
-**Boundary of claimed advance:** 0.864 already separated corrected documents from consequences and 0.869 already separated formal hearing from effective change; 0.870's incremental difference is case-specific **semantic attribution contestability**: the actual statement-to-reasons edge, not another blanket rule that 'more listening is always better'. Do not count the full narrative as actual-world evidence. Status OPEN for bounded P1 assessment, not a new universal theorem.
+**Boundary of claimed advance (historical P1):** 0.864 already separated corrected documents from consequences and 0.869 already separated formal hearing from effective change; 0.870's incremental difference is case-specific **semantic attribution contestability**. The P1 OPEN notation is superseded by the P3 bounded closure below. No claim of a new general theorem.
 
 ### Adversarial correction to the implementation: no mandatory literal quotation
 A tribunal or reason-giver can substantively respond to the **actual issue** without reciting the speaker's exact words. Conversely, verbatim quotation with no proposition-specific answer is not substantive uptake. The final regression distinguishes these two counterworlds: `voiceCited=false, issueAnsweredWithReasons=true` can still be a declared uptake candidate; `voiceCited=true, issueAnsweredWithReasons=false` is `ISSUE_NOT_ANSWERED_WITH_REASONS`. A contested interpretation may also be legitimately rejected after reasons and independent case evidence; unaligned evaluation is **not proof of injustice**, only a prompt for attribution scrutiny. This avoids speaker-sovereignty over objective fact-finding.
@@ -113,5 +113,5 @@ Publishers and institution records corroborated bibliography; full new originals
 **K6:** proof limited to synthetic nonidentification / finite regression; independent real-world causal effect, actual legal rights and restoration remain external HOLD.
 **K7:** all tests must be confirmed on exact final GitHub HEAD, not a predecessor run.
 
-**Scientific verdict:** bounded conceptual distinction is ready to close, conditional on K7 CI SUCCESS. No empirical or legal effect can be certified by these artifacts. Research text is narrower than the general philosophical principle of meaningful hearing.
+**Scientific verdict:** bounded conceptual distinction CLOSED after successful exact-head P3 CI on preceding substantive commit `b88ece5ac530587131d69daf4b07d7631189d428`, run https://github.com/WhoSia/NOMOS/actions/runs/37919875845. This administrative status correction also requires its own final CI check. No empirical or legal effect can be certified by these artifacts. Research text is narrower than the general philosophical principle of meaningful hearing.
 Notion P3 cross-shelf Harvest: https://app.notion.com/p/3f4ef561cf92813e802df031fc741cc8
