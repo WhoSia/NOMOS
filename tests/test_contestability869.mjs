@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import {contestability869} from "../tools/contestability869.mjs";
+const baseline={voiceAvailable:true,exitFeasible:false,challengeDelivered:true,reviewerDependencyBroken:true,evidenceExamined:true,decisionUpdated:true,remedyReachable:true};
+const f=p=>contestability869({...baseline,...p});
+assert.equal(f({}).correctiveReach,true);
+assert.equal(f({reviewerDependencyBroken:false}).effectiveHearing,false);
+assert.equal(f({challengeDelivered:false}).correctiveReach,false);
+assert.equal(f({evidenceExamined:false}).effectiveHearing,false);
+assert.equal(f({remedyReachable:false}).correctiveReach,false);
+assert.equal(f({exitFeasible:false}).silenceIdentifiesAssent,false);
+assert.equal(f({voiceAvailable:false}).correctiveReach,false);
+assert.equal(f({decisionUpdated:false}).correctiveReach,false);
+assert.equal(f({}).realWorldCertified,false);
+assert.throws(()=>f({remedyReachable:"yes"}));
+console.log("NOMOS 0.869 contestability declared-route PASS");
