@@ -10,7 +10,7 @@ export function auditInterpretiveUptake870(p) {
  if(!["aligned_declared","altered_declared","undetermined"].includes(p.attributionRelation)) throw Error("bad relation");
  let status;
  if(!p.voiceReceived)status="NO_VOICE_RECEIPT";
- else if(!p.voiceCited || !p.issueAnsweredWithReasons)status="FORMAL_HEARING_NOT_SUBSTANTIVE_REPLY";
+ else if(!p.issueAnsweredWithReasons)status="ISSUE_NOT_ANSWERED_WITH_REASONS";
  else if(p.attributionDisputed&&!p.attributionChallengeUsable)status="INTERPRETATION_CHALLENGE_BLOCKED";
  else if(p.attributionDisputed&&!p.attributionChallengeExamined)status="INTERPRETATION_CHALLENGE_NOT_EXAMINED";
  else if(p.attributionRelation==="altered_declared")status="ATTRIBUTION_DIVERGENCE_REMAINS";
@@ -21,6 +21,7 @@ export function auditInterpretiveUptake870(p) {
   victimPerspectiveCoverage:p.victimStandingConsidered?"DECLARED_CONSIDERED":"MISSING_OR_NOT_DECLARED",
   actEvidenceDeclaredIndependent:p.independentCaseEvidence,
   attributionDisagreementReviewed:p.attributionDisputed&&p.attributionChallengeExamined,
+  statementLiterallyCited:p.voiceCited, // not a required condition for reasoned uptake
   statementAloneSettlesLiability:false,
   legitimateNoChangeStillPossible:true,
   realWorldSemanticAccuracyCertified:false,
