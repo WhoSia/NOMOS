@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import {adjudicationBoundary870 as a} from "../tools/adjudicationBoundary870.mjs";
 const b={meaning:{challengeRaised:true,routeUsable:true,examined:true,reasonsGiven:true,disposition:"accepted"},
- merits:{firstOrder:"support",provenance:"independent_declared",higherOrderChallenge:"examined"},victimStanding:"considered_declared",processMode:"adjudicative"};
+ merits:{firstOrder:"support",provenance:"independent_declared",higherOrderChallenge:"examined"},victimStanding:"considered_declared",processMode:"adjudicative",utteranceRelevance:"speech_incidental"};
 const f=p=>a({...b,...p,meaning:{...b.meaning,...(p.meaning||{})},merits:{...b.merits,...(p.merits||{})}});
 assert.equal(f({}).meaningStatus,"ATTRIBUTION_REVISED_DECLARED");
 assert.equal(f({processMode:"consultative"}).processModeDeclared,"consultative");
@@ -23,7 +23,12 @@ assert.equal(f({merits:{higherOrderChallenge:"raised_unexamined"}}).factStatus,"
 assert.equal(f({merits:{firstOrder:"insufficient"}}).factStatus,"ACT_EVIDENCE_INSUFFICIENT");
 assert.equal(f({victimStanding:"not_declared"}).meaningStatus,f({}).meaningStatus);
 assert.equal(f({victimStanding:"not_declared"}).victimStanding,"not_declared");
-assert.equal(f({}).meaningCorrectionChangesMeritsByDefinition,false);
+assert.equal(f({}).semanticRevisionAutomaticallySettlesMerits,false);
+assert.equal(f({}).semanticRevisionMayRequireMeritsReassessment,false);
+assert.equal(f({utteranceRelevance:"speech_constitutive"}).semanticRevisionMayRequireMeritsReassessment,true);
+assert.equal(f({utteranceRelevance:"speech_evidentiary"}).semanticRevisionMayRequireMeritsReassessment,true);
+assert.equal(f({utteranceRelevance:"speech_incidental"}).semanticRevisionMayRequireMeritsReassessment,false);
+assert.equal(f({utteranceRelevance:"speech_constitutive",meaning:{disposition:"rejected"}}).semanticRevisionMayRequireMeritsReassessment,false);
 assert.equal(f({}).meaningRejectionCertifiesMisconduct,false);
 assert.equal(f({}).authenticatedProvenance,false);
 assert.equal(f({}).actualJustificationCertified,false);
@@ -32,4 +37,5 @@ assert.throws(()=>f({meaning:{challengeRaised:false}}));
 assert.throws(()=>f({merits:{higherOrderChallenge:"verified_truth"}}));
 assert.throws(()=>f({victimStanding:"ignored"}));
 assert.throws(()=>f({processMode:"automatic_punishment"}));
-console.log("NOMOS 0.870 boundary court: PASS 29 assertions");
+assert.throws(()=>f({utteranceRelevance:"unknown"}));
+console.log("NOMOS 0.870 boundary court: PASS 35 assertions");
