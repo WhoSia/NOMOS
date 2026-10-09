@@ -47,3 +47,41 @@ The burden profile is **typed and situated**: learning costs, compliance costs a
 Institution-only cohort evidence can trigger the question of a bounded duty to investigate when a claimant produces an adequately grounded case-level allegation; it does **not** entail a universal burden shift, access to all sensitive third-party records, a valid legal claim or an authorized remedy. Distinguish individual testimony, source availability, targeted production, investigation, ultimate merits, and downstream response. A reduced application task could still generate system-wide delays if agency capacity is inadequate.
 P2 full source comparison, negative cases, live uncertainty and location audit: https://app.notion.com/p/3f4ef561cf9281b69456f8d49fb657e9 .
 Research stays OPEN and continuous with 0.871, 0.34x and 0.846–0.848. No empirical field results or cross-jurisdiction burden-shifting doctrine certified here.
+
+
+## P3 — Mechanism-indexed explanation, investigation and repair duties (2026-10-09; OPEN)
+
+### Status and source limits
+This is a **research reconstruction**, not a court finding, automatically applicable legal standard or adjudication of individual intent. It extends 0.872's typed burden profile, 0.871's rule/application distinction, 0.846–0.848's distributional and repair authority, and 0.863–0.865's reach-versus-effect distinction.
+
+Primary institutional source: *Report of the Royal Commission into the Robodebt Scheme*, originally issued 7 July 2023 and corrected 11 July 2023; https://robodebt.royalcommission.gov.au/publications/report . The commission report is an **inquiry report**, not a judicial holding. The currently checked source is its official publication/recommendations page, **not a page-by-page full-report or witness/exhibit audit**. Do not promote recommendations into established legal duties.
+
+### Non-exclusive mechanism hypotheses
+- **Designed burden (D):** an actor specifies or knowingly retains a procedure that predictably transfers learning, compliance, psychological or evidentiary costs to recipients. A design choice alone does not prove a purpose to harm.
+- **Capacity/coordination failure (C):** legal review, staffing, feedback, data quality or interagency responsibility is inadequate to deliver a justified policy reliably. This may interact with deliberate design and is not automatically innocent.
+- **Contingent execution error (E):** an isolated departure, system defect or unforeseen circumstance despite otherwise reasonable safeguards. Repeated supposedly isolated errors may defeat this explanation.
+- **Knowledge-response failure (K):** qualified warning or corrective information reaches a responsible authority, but sufficient reconsideration or intervention does not follow. K may overlay D, C or E.
+
+### Duty structure — proposal, not universal law
+(1) Individual allegation and accessible case evidence; (2) bounded preservation and explanation of data/rule provenance; (3) mechanism-sensitive independent investigation when warranted by prima facie grounds and institutional control; (4) independent assessment of legality/merits under the actual jurisdiction; (5) individual correction and feasible remedy; (6) common-cause removal, affected-cohort review and independently observed downstream correction where warranted. Information asymmetry by itself does not transfer the ultimate legal burden of proof.
+
+Duty intensity depends on foreseeable harm, control and availability of records, prior warnings, cost/privacy constraints, statutory roles and capacity to avert harm. No additive universal responsibility score is proposed. Duties of transparency, investigation, suspension, recompense and independent scrutiny must be separately authorized.
+
+### Robodebt source-linked probes (official recommendation labels)
+- **10.1 / 11.2–11.4:** plain-language, multi-channel access and accommodation of recipients with limited ability to engage. Probe differential practical opportunity sets rather than nominal channel availability.
+- **13.1–13.2:** consult frontline employees and improve upward feedback. Probe whether the organization received and could act on error signals.
+- **15.1–15.6:** make legal-change requirements, legal advice and underlying cost/assumption documentation visible. Probe lawful design, institutional knowledge and review failures.
+- **16.1–16.2:** seek end-to-end legal advice and strengthen documentation/governance of data-matching. Probe interagency provenance and control.
+- **17.1–17.2:** transparent automated decision-making rules, review routes and independent technical/fairness scrutiny. Probe contestability and independent audit authority.
+These are the commission's recommendations, not statements that each named duty was binding during the scheme.
+
+### Discriminating counterworlds
+A. A deliberately simplified form reduces one individual's compliance costs but a resource bottleneck increases delays across the cohort: local convenience does not prove system repair.
+B. A reasonable design and independent legal review encounter an unforeseeable one-off data corruption: harm alone does not identify purposeful design or systematic negligence.
+C. An institution repeatedly receives well-supported warnings yet continues a harmful decision pipeline: an initially contingent failure can become knowledge-response failure without requiring proof of intent to injure.
+D. A complainant cannot see cohort-wide matching logs; the institution can inspect them, but third-party privacy prevents unrestricted disclosure: targeted independent inspection may be justified, unconditional public release not.
+E. A corrected debt record leaves collection notices, downstream recipient copies or practical losses untouched: formal reversal is not evidenced restoration.
+F. The commission recommends a safeguard but a reviewer assumes it was already binding statute: source-type and time-index category error.
+
+### Falsifiers and outstanding evidence
+Do not infer institutional intent merely from aggregate harm. Test design documents and change records, legal advice and who saw it when, issue/complaint chronology, organization-specific capacities, decision and data-matching lineage, and independent correction outcomes. The current official recommendations page does not establish individual-level knowledge, intention, criminal culpability, or remedy effectiveness. **P3 remains OPEN** pending full corrected-report section/paragraph matching and source-custody checks.
