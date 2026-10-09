@@ -2,7 +2,7 @@
  * NOMOS-0.870 P3: interpretive challenge and act-specific merits are orthogonal.
  * Inputs are assertions about synthetic worlds, NOT authenticated case findings.
  */
-export function adjudicationBoundary870({meaning,merits,victimStanding}) {
+export function adjudicationBoundary870({meaning,merits,victimStanding,processMode}) {
  if (!meaning||!merits||typeof meaning!=="object"||typeof merits!=="object") throw Error("meaning/merits objects required");
  const bool=["challengeRaised","routeUsable","examined","reasonsGiven"];
  for(const k of bool) if(typeof meaning[k]!=="boolean") throw Error("meaning."+k+" must be boolean");
@@ -11,6 +11,7 @@ export function adjudicationBoundary870({meaning,merits,victimStanding}) {
  if(!["independent_declared","shared_root","unexamined"].includes(merits.provenance)) throw Error("bad provenance");
  if(!["none","raised_unexamined","examined"].includes(merits.higherOrderChallenge)) throw Error("bad higher-order state");
  if(!["considered_declared","not_declared"].includes(victimStanding)) throw Error("bad victim standing");
+ if(!["adjudicative","consultative"].includes(processMode)) throw Error("bad process mode");
  if(!meaning.challengeRaised&&meaning.disposition!=="not_applicable") throw Error("no challenge disposition mismatch");
  if(meaning.challengeRaised&&meaning.disposition==="not_applicable") throw Error("challenge disposition missing");
  let meaningStatus;
@@ -31,6 +32,9 @@ export function adjudicationBoundary870({meaning,merits,victimStanding}) {
  return Object.freeze({
   meaningStatus,factStatus,
   victimStanding,
+  processModeDeclared:processMode,
+  adjudicativeResponsivenessClaimed:processMode==="adjudicative",
+  legallyBindingResponsivenessDutyCertified:false,
   meaningCorrectionChangesMeritsByDefinition:false,
   meaningRejectionCertifiesMisconduct:false,
   absenceOfQuotationDefeatsUptake:false,
