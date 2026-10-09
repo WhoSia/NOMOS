@@ -34,3 +34,16 @@ Fleming (ed.) (2011), Getting to the Rule of Law: NOMOS L, original complete vol
 
 ## Next inquiry
 For each relevant burden, specify who can know it, who has access to underlying sources, what degree of proof is feasible, and what type of explanation or action an authorized institution owes. Avoid the symmetrical mistakes of demanding inaccessible proof from the claimant and automatically treating all institutional burden statements as false. Research remains OPEN.
+
+## P2 — Administrative burden originals / source-typed revision (2026-10-09)
+The interrupted chat's ten-file intake was independently verified in Drive: 9 articles/preprints now in Research OS 10_PAPERS and the full IJCAR 2026 proceedings in 20_NON_PAPER_SOURCES; no IDs changed. Other 29 intake objects remain and are NOT part of this audit. The exact filename-like hyphen expressions (including `Citizen-State`, `Isomorph-Free` and `q-ary` elsewhere) need to be preserved in bibliographic representations, while a flattened DOI filename cannot replace the canonical DOI.
+Freshly retrieved full papers, source-specific:
+* Moynihan, Herd & Harvey (2015; advance publication 2014), `Administrative Burden: Learning, Psychological, and Compliance Costs in Citizen-State Interactions`, DOI 10.1093/jopart/muu009; Drive ID 12JKqIrjRmXWM5vH8slfYOng4VLmzDLHd.
+* Herd, Hoynes, Michener & Moynihan (2023), `Introduction: Administrative Burden as a Mechanism of Inequality in Policy Implementation`, DOI 10.7758/RSF.2023.9.4.01; Drive ID 1kBAvithsy65rUuv8BVWNU2n6JdE-nV8i.
+* Herd & Moynihan (2025), `Administrative Burdens in the Social Safety Net`, DOI 10.1257/jep.20231394; Drive ID 1sLC0_z-JWPHVrpqiCpoMPdhP24i7DvNo.
+
+### Updated inference contract
+The burden profile is **typed and situated**: learning costs, compliance costs and psychological costs, with cumulative history and the feasible opportunity set as further axes. They have no empirically established common unit, so an additive universal scalar is prohibited under NOMOS's rejected 0.1 social-physics analogy. Even the underlying papers share a genealogy and may summarize the same studies: **three publications do not automatically count as three independent causal replications**.
+Institution-only cohort evidence can trigger the question of a bounded duty to investigate when a claimant produces an adequately grounded case-level allegation; it does **not** entail a universal burden shift, access to all sensitive third-party records, a valid legal claim or an authorized remedy. Distinguish individual testimony, source availability, targeted production, investigation, ultimate merits, and downstream response. A reduced application task could still generate system-wide delays if agency capacity is inadequate.
+P2 full source comparison, negative cases, live uncertainty and location audit: https://app.notion.com/p/3f4ef561cf9281b69456f8d49fb657e9 .
+Research stays OPEN and continuous with 0.871, 0.34x and 0.846–0.848. No empirical field results or cross-jurisdiction burden-shifting doctrine certified here.
