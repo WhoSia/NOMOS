@@ -6,8 +6,10 @@ const x={voiceReceived:true,voiceCited:true,issueAnsweredWithReasons:true,attrib
 const t=v=>a({...x,...v});
 assert.equal(t({}).status,"DECLARED_SEMANTIC_UPTAKE_CANDIDATE");
 assert.equal(t({voiceReceived:false}).status,"NO_VOICE_RECEIPT");
-assert.equal(t({voiceCited:false}).status,"FORMAL_HEARING_NOT_SUBSTANTIVE_REPLY");
-assert.equal(t({issueAnsweredWithReasons:false}).status,"FORMAL_HEARING_NOT_SUBSTANTIVE_REPLY");
+assert.equal(t({voiceCited:false}).status,"DECLARED_SEMANTIC_UPTAKE_CANDIDATE");
+assert.equal(t({voiceCited:false}).statementLiterallyCited,false);
+assert.equal(t({issueAnsweredWithReasons:false}).status,"ISSUE_NOT_ANSWERED_WITH_REASONS");
+assert.equal(t({voiceCited:true,issueAnsweredWithReasons:false}).status,"ISSUE_NOT_ANSWERED_WITH_REASONS");
 assert.equal(t({attributionDisputed:true,attributionChallengeUsable:false}).status,"INTERPRETATION_CHALLENGE_BLOCKED");
 assert.equal(t({attributionDisputed:true,attributionChallengeExamined:false}).status,"INTERPRETATION_CHALLENGE_NOT_EXAMINED");
 assert.equal(t({attributionRelation:"altered_declared"}).status,"ATTRIBUTION_DIVERGENCE_REMAINS");
