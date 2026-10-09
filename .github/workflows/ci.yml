@@ -41,6 +41,7 @@ jobs:
       - run: node tests/test_contestability869.mjs
       - run: node tests/test_uptake870.mjs
       - run: node tests/test_interpretiveUptake870.mjs
+      - run: node tests/test_adjudicationBoundary870.mjs
       - run: node tools/deadlock860.mjs examples/deadlock860_cases.json
       - run: PYTHONPATH=src python -m unittest discover -s tests -v
       - run: PYTHONPATH=src python -m nomos examples/shared_success.json
