@@ -1,0 +1,15 @@
+# NOMOS-0.873 — Institutional Knowledge, Distributed Capacity & Responsibility for Unacted Warnings: Organizational Notice, Fragmented Corrective Authority, Institutional Nonresponse & the Primitive Question of When an Institution Can Be Held Responsible for a Harm It Could Have Known and Prevented
+
+## Official opening — 2026-10-09
+Title fixed by user: NOMOS-0.873 — Institutional Knowledge, Distributed Capacity & Responsibility for Unacted Warnings: Organizational Notice, Fragmented Corrective Authority, Institutional Nonresponse & the Primitive Question of When an Institution Can Be Held Responsible for a Harm It Could Have Known and Prevented
+This is a question-migration continuation of NOMOS-0.872, which remains historically live; versioning does not certify the closure of unresolved evidence.
+## P0 — Epistemic and corrective authority
+Separate: (1) individual actual notice; (2) organization-held information and discoverability; (3) organizational synthesis capacity; (4) authority and feasible ability to interrupt, inspect, rectify and compensate; (5) statutory or other domain-specific duties, and (6) observed downstream remedy.
+Nonimplications: documents held by an institution do not prove an individual decision-maker read them; no single agent possessing complete knowledge does not by itself exonerate the organization. Both propositions require time-indexed, source-grounded tests.
+## Robodebt source anchor
+Official Royal Commission into the Robodebt Scheme report originally published 7 July 2023, corrected 11 July 2023: https://robodebt.royalcommission.gov.au/publications/report . The Commission's recommendations 15.2 (circulation of legal advice), 16.2 (joint data-matching governance), 19.13 (interagency legal-advice disclosure) and 20.1–20.3 (significant administrative review decisions reaching senior officers) motivate independent tests of information transmission and institutional authority. Recommendations are not automatically retrospective statutory obligations.
+## Rivals and falsifiers
+R1: several departments possess fragments of a warning but no legally authorized actor can lawfully assemble or act on them. R2: information was connectable using established lawful channels, but organizational design routinely suppressed synthesis. R3: warning reached a responsible agent, who acted with reasonable speed but remedy was blocked elsewhere. R4: officials knowingly ignored adequately supported, actionable warnings despite workable correction paths. Evidence must include document dates, send/receive/actual awareness where shown, legally relevant authority, resources, response options, and effect observations. Absence of a communication log is UNKNOWN, not proof of non-delivery.
+## Scope and ancestry
+Connect 0.20x distributed responsibility, 0.34x opportunity sets, 0.846–0.848 distributional and restoration authority, 0.863–0.865 correction vs effect, and 0.872 D/C/E/K mechanism decomposition. Do not add a universal scalar culpability score or equate institutional inquiry findings with judicial determinations.
+Status: P0 OPEN — source-grounded hypothesis, no adjudication or quantitative claim.
