@@ -1,0 +1,22 @@
+import assert from "node:assert/strict";
+import {assessUptake870} from "../tools/uptake870.mjs";
+const z={voiceUsable:true,challengeSubmitted:true,issueConsidered:true,reasonsCommunicated:true,
+judgmentRevised:true,remedyAuthorized:true,remedyDispatched:true,downstreamReadback:true,reliefClaimRecorded:true};
+const f=x=>assessUptake870({...z,...x});
+assert.equal(f({}).status,"DECLARED_CHAIN_COMPLETE");
+assert.equal(f({}).independentlyVerifiedCausalRelief,false);
+assert.equal(f({voiceUsable:false}).status,"VOICE_NOT_USABLE");
+assert.equal(f({challengeSubmitted:false}).status,"VOICE_ONLY");
+assert.equal(f({issueConsidered:false}).status,"SUBMITTED_NOT_CONSIDERED");
+assert.equal(f({reasonsCommunicated:false}).status,"CONSIDERED_NO_REASONS");
+assert.equal(f({judgmentRevised:false,reasonedNoChange:true}).status,"REASONED_NO_CHANGE");
+assert.equal(f({judgmentRevised:false,reasonedNoChange:true}).heard,true);
+assert.equal(f({judgmentRevised:false}).status,"NO_DECLARED_REVISION");
+assert.equal(f({remedyAuthorized:false}).status,"REVISION_WITHOUT_REMEDY_AUTHORITY");
+assert.equal(f({remedyDispatched:false}).status,"REMEDY_ORDERED_NOT_DISPATCHED");
+assert.equal(f({downstreamReadback:false}).status,"DISPATCH_WITHOUT_READBACK");
+assert.equal(f({reliefClaimRecorded:false}).status,"READBACK_WITHOUT_PERSON_RELIEF");
+assert.equal(f({reliefClaimRecorded:false}).realWorldLegitimacyCertified,false);
+assert.throws(()=>f({reasonedNoChange:true}));
+assert.throws(()=>f({voiceUsable:"yes"}));
+console.log("NOMOS 0.870 declared uptake chain PASS (16 assertions)");
