@@ -1,0 +1,14 @@
+import assert from "node:assert/strict";
+import {assessDissent869} from "../tools/dissent869.mjs";
+const b={claim:"fictional-act",responses:["deny","silence","apologize","request_review"],independentEvidence:"unresolved",challengeReviewed:false};
+const f=x=>assessDissent869({...b,...x});
+assert.equal(f({}).claimedSignals.length,4);
+assert.equal(f({}).claimedSignals.every(x=>x.adverseCharacterWarrant===false),true);
+assert.equal(f({}).processGap,true);
+assert.equal(f({challengeReviewed:true}).processGap,false);
+assert.equal(f({independentEvidence:"verified"}).verdict,"ACT_SPECIFIC_EVIDENCE_PRESENT");
+assert.equal(f({independentEvidence:"defeated"}).verdict,"ORIGINAL_SUPPORT_DEFEATED");
+assert.equal(f({}).responseAloneDeterminesGuilt,false);
+assert.equal(f({independentEvidence:"verified"}).personCharacterCertified,false);
+assert.throws(()=>f({responses:["other"]}));
+console.log("NOMOS 0.869 dissent PASS");
