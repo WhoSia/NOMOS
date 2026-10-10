@@ -434,8 +434,23 @@ PYTHONPATH=src python -m nomos examples/joint_repair_safe.json --audit-joint-rep
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-## Current head
+## Current research frontier (2026-10-10)
 
-**NOMOS-0.863 — Effective Contestation Access, Independent Petition Acknowledgement & Remedy-Reach Verification — BOUNDED FINITE / SYNTHETIC SIGNED-REMEDY COURT SEALED SUBJECT TO EXACT-HEAD CI. Real legal standing and actual restitution NOT CERTIFIED.**
+**NOMOS-0.876 P3 — source-contact advanced; real-world policy-causal effect NOT IDENTIFIED.** The research program is cumulative rather than a set of compulsory closed mini-projects. The latest scientific question is whether independent counterevidence is produced, acknowledged, considered by an authorized reviewer, transmitted across case-to-policy boundaries and reflected in actual renewal or downstream outcomes. An individual case reversal does **not** automatically change the rule that produced similar cases.
 
-All P0–P4 records are under one Notion 0.863 canonical. Python kernel **v0.18.0 retained**; the evidence-linking implementation uses Node.js/JSON and read-only Actions YAML. No additional stage title or new merits power is asserted.
+An official historical anchor is the *Royal Commission into the Robodebt Scheme* (2023), ch. 7 s. 5.2 and ch. 20 ss. 3.1–4.1: AAT findings against income-averaged debts, inadequate disclosure/escalation, and persistent scheme-level practice. The source is an inquiry report, not proof of a counterfactual causal effect or a rule automatically binding in other jurisdictions. [Official report](https://robodebt.royalcommission.gov.au/publications/report) · [0.876 P0–P3 specification](spec/endogenous-evidence-876.md) · [Notion canonical](https://app.notion.com/p/3f5ef561cf9281b0abe5c88fda866d10).
+
+**Executable boundary:** Python kernel **v0.18.0 retained**. The Node.js synthetic case tools are not live administrative adjudicators. The small [0.876 evidence-to-renewal audit](tools/renewalEvidence876.mjs) checks declared source, delivery, review, *optional* individual case change, policy escalation/authority, policy readback and independent effect readback. It always reports that observational path completion alone does not identify a causal policy effect. A fixed-context shadow contrast proves at most the declared model's structural sensitivity, never a real-world causal effect.
+
+```bash
+node tests/test_renewalEvidence876.mjs
+node tests/test_consequenceRepair864.mjs
+node tests/test_remedyReach863_nonidentifiability.mjs
+PYTHONPATH=src python -m unittest discover -s tests -v
+```
+
+**Research continuity:** [0.873 institutional knowledge](spec/institutional-knowledge-873.md) → [0.874 proportionate intervention](spec/warning-thresholds-874.md) → [0.875 provisional renewal](spec/provisional-protection-875.md) → [0.876 endogenous evidence](spec/endogenous-evidence-876.md). NOMOS-0.875 was backfilled on 2026-10-10 after prior connector write failures; this does not retroactively validate a previously failed write. Do not infer that each conceptual stage has separate executable implementations or independent empirical validation. The previous 0.863 finite remedy court is preserved as an earlier **synthetic** bounded result, not the current research-head version.
+
+**Research OS / contributor controls:** source-first Drive literature checks and source-typed provenance; no direct automated person verdict; no universal moral scalar; preserve historical artifacts instead of destructive cleanup; all GitHub Actions are verification-only (`permissions: contents: read`), never `git push`, `commit`, `tag` or writeback. `github-actions[bot]` must not appear as author or committer. Review both author and committer in the full reachable main history and rerun the current-head CI before claiming repository closure.
+
+**Next question (proposal, not opened):** NOMOS-0.877 — authority for case-to-policy corrective evidence uptake. See the bottom of [0.876 P3](spec/endogenous-evidence-876.md). Existing NOMOS-0.843/0.854/0.856 and Abramov (2026) are strict novelty rivals.
