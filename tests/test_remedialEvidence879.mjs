@@ -34,7 +34,8 @@ x=auditRemedialRecord879({...base,schemeProposalSourceId:'committee'});
 assert.equal(x.gates.schemeProposed,true);
 assert.equal(x.gates.specificSchemeEnacted,false);
 x=auditRemedialRecord879({...base,schemeProposalSourceId:'committee',schemeEnablingStatuteSourceId:'act'});
-assert.equal(x.gates.specificSchemeEnacted,true); // source-kind only; actual specific scope not certified
+assert.equal(x.gates.specificSchemeEnacted,false);
+assert(x.errors.includes('ENACTED_SCHEME_REQUIRES_SPECIFIC_PROVISION_AND_SCOPE_EVIDENCE'));
 x=auditRemedialRecord879({...base,remedy:{
  reviewDecisionId:'review-1',reviewSourceId:'agency',
  correctionReceipt:'readback-1',correctionSourceId:'effect',
