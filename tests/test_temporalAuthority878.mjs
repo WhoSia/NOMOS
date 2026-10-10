@@ -1,3 +1,5 @@
+// Invoke successor 0.879 source-typed savings regression in the existing CI test entrypoint.
+import './test_retroactiveSaving879.mjs';
 import assert from 'node:assert/strict';
 import {ACT2026,auditTemporalCase878,auditTransitionEvents878,schedule1Part2Scope878} from '../tools/temporalAuthority878.mjs';
 assert.equal(ACT2026.schedule1Commencement,'2026-04-02');
