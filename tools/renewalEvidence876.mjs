@@ -6,7 +6,8 @@ export function assessRenewalEvidence876(p = {}) {
   const stages={
     independentEvidence:yes(e.independentlyVerified)&&receipt(e.sourceId),
     delivery:yes(d.recipientAcknowledged)&&receipt(d.receiptId),
-    review:yes(r.evidenceConsidered)&&yes(r.hasCaseRemedyPower)&&receipt(r.decisionId),
+    review:yes(r.evidenceConsidered)&&receipt(r.decisionId),
+    caseAuthority:yes(r.hasCaseRemedyPower),
     caseChange:yes(r.caseDecisionChanged)&&receipt(r.changedDecisionReadback),
     policyEscalation:yes(s.escalationAcknowledged)&&receipt(s.escalationReceipt),
     policyAuthority:yes(s.hasRuleRevisionPower),
@@ -16,11 +17,12 @@ export function assessRenewalEvidence876(p = {}) {
   const warnings=[];
   if(stages.delivery&&!stages.independentEvidence)warnings.push('DELIVERY_WITHOUT_VERIFIED_EVIDENCE');
   if(stages.review&&!stages.delivery)warnings.push('REVIEW_WITHOUT_DELIVERY_RECEIPT');
-  if(stages.caseChange&&!stages.review)warnings.push('CASE_CHANGE_WITHOUT_REVIEW_CONTRACT');
+  if(stages.caseChange&&(!stages.review||!stages.caseAuthority))warnings.push('CASE_CHANGE_WITHOUT_CASE_REMEDY_AUTHORITY');
   if(stages.policyChange&&!stages.policyAuthority)warnings.push('POLICY_CHANGE_WITHOUT_AUTHORITY');
   if(stages.policyChange&&!stages.policyEscalation)warnings.push('POLICY_CHANGE_WITHOUT_ESCALATION_RECEIPT');
   if(stages.effectReadback&&!stages.policyChange)warnings.push('EFFECT_WITHOUT_POLICY_CHANGE_PROVENANCE');
-  const firstUnwitnessed=Object.keys(stages).find(k=>!stages[k])??null;
+  const required=['independentEvidence','delivery','review','policyEscalation','policyAuthority','policyChange','effectReadback'];
+  const firstUnwitnessed=required.find(k=>!stages[k])??null;
   return {stages,firstUnwitnessed,warnings,
     routeStatus:firstUnwitnessed||warnings.length?'BOUNDED_EVIDENCE_GAP':'DECLARED_PATH_OBSERVED',
     policyCausalEffect:'NOT_IDENTIFIED_FROM_PATH_OR_BEFORE_AFTER',legalMerits:'NOT_ASSESSED'};
