@@ -21,8 +21,10 @@ export function auditTemporalCase878(input = {}) {
   if (!evidence(caseId)) throw new TypeError('caseId required');
   date(decidedOn);
   if (!decisionKinds.has(kind)) throw new TypeError('unknown case kind');
-  const effective = law?.effectiveOn ? date(law.effectiveOn) : ACT2026.schedule1Commencement;
   if (law?.citation && law.citation !== ACT2026.citation) throw new TypeError('different statute requires another audit');
+  if (law?.effectiveOn && law.effectiveOn !== ACT2026.schedule1Commencement)
+    throw new TypeError('source-locked commencement cannot be overridden');
+  const effective = ACT2026.schedule1Commencement;
   const timeline = decidedOn < effective ? 'BEFORE_SCHEDULE1' : 'ON_OR_AFTER_SCHEDULE1';
   const appealFiled = Boolean(appeal?.filedOn && evidence(appeal?.filingReceipt));
   if (appeal?.filedOn) date(appeal.filedOn);
