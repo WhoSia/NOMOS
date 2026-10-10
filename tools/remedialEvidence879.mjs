@@ -42,7 +42,10 @@ export function auditRemedialRecord879(record = {}) {
  const schemeProposed = nonempty(record.schemeProposalSourceId)&&
    entries.some(s=>s.id===record.schemeProposalSourceId && ['PARLIAMENT_BILL_DIGEST','SENATE_COMMITTEE','SUBMISSION'].includes(s.kind));
  const specificSchemeEnacted = nonempty(record.schemeEnablingStatuteSourceId)&&
-   evidenceSource(record.schemeEnablingStatuteSourceId,'STATUTE');
+   evidenceSource(record.schemeEnablingStatuteSourceId,'STATUTE')&&
+   nonempty(record.schemeEnablingProvision)&&nonempty(record.schemeBeneficiaryScopeReceipt);
+ if (record.schemeEnablingStatuteSourceId && !specificSchemeEnacted)
+   errors.push('ENACTED_SCHEME_REQUIRES_SPECIFIC_PROVISION_AND_SCOPE_EVIDENCE');
  if (remedy.paymentReceipt && !paymentObserved) errors.push('PAYMENT_WITHOUT_INDEPENDENT_READBACK');
  if (remedy.correctionReceipt && !actualPersonCorrection) errors.push('CORRECTION_UNLINKED_FROM_REVIEW_AND_RESULT');
  if (record.actualNumberRepaired != null) errors.push('COHORT_REMEDY_COUNT_UNSUPPORTED_BY_AGGREGATE_SCREENING');
