@@ -56,7 +56,8 @@ export function auditAU879(input={}){
    known(court.rightsLiabilitiesBetweenParties),
    known(court.materialConnectionToAssessment)
  ):false;
- const validation=all(previous,historical,nil,evidence);
+ // Item 17 is framed as a pre-validation-time nil-rate ground, not item 16(1)'s 1 July 2008 assessment gate.
+ const validation=all(previous,nil,evidence);
  const validationCourtSaving=court?all(courtProtection,
    known(court.materialConnectionToNilGround)):false;
  const errors=[];
@@ -65,6 +66,8 @@ export function auditAU879(input={}){
  if(court?.finalOn&&court.finalOn<d)errors.push('COURT_FINALITY_PRECEDES_ASSESSMENT');
  if(input.jurisdiction&&input.jurisdiction!==AU879.jurisdiction)errors.push('WRONG_JURISDICTION');
  if(!evidence)errors.push('ASSESSMENT_SOURCE_UNVERIFIED');
+ if(!historical)errors.push('PRE_JULY_2008_SCHEME_SCOPE_REQUIRES_SEPARATE_CHECK');
+ if(positive===true&&nil===true)errors.push('CONFLICTING_RATE_CLASSIFICATION');
  if(input.independentDefect===true)errors.push('OTHER_DEFECT_MUST_BE_EVALUATED_SEPARATELY');
  return {law:AU879,
   checks:{historical,positiveException,reviewedAfter,courtProtection,validation,validationCourtSaving},
