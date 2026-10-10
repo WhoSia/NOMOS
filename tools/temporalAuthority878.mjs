@@ -98,3 +98,50 @@ export function auditTransitionEvents878(events = []) {
   return {valid:errors.length===0,errors,sourceCount:seen.size,
     lawAutomaticallyApplied:false,realWorldCausalityEstablished:false};
 }
+
+/** Coarse branching witness for Schedule 1 Part 2 items 16-17, not a merits decision.
+ * Distinguishes pre-commencement positive assessment, nil assessed from low care,
+ * objection decided after commencement, and relevant prior finally heard court case.
+ * Assessments with other unverified legal defects must be considered separately.
+ */
+export function schedule1Part2Scope878({
+ assessmentDate, assessmentType, reviewDecidedOn,
+ priorFinalCourt, evidenceRef,
+} = {}) {
+  date(assessmentDate);
+  if (reviewDecidedOn) date(reviewDecidedOn);
+  if (!['PRE_LOW_CARE_NIL','PRE_LOW_CARE_POSITIVE_35_37','OTHER'].includes(assessmentType))
+    throw new TypeError('assessmentType not mapped to official item 16/17');
+  if (priorFinalCourt?.finalOn) date(priorFinalCourt.finalOn);
+  const pre = assessmentDate < ACT2026.schedule1Commencement;
+  const afterReview = Boolean(reviewDecidedOn && reviewDecidedOn >= ACT2026.schedule1Commencement);
+  const exceptionCandidate = Boolean(
+    priorFinalCourt?.heardAndFinallyDetermined === true &&
+    evidence(priorFinalCourt.finalJudgmentSource) &&
+    priorFinalCourt.finalOn < ACT2026.schedule1Commencement &&
+    priorFinalCourt?.rightsFromRelevantAssessment === true
+  );
+  let item16 = 'REQUIRES_APPLICABILITY_FACTS_AND_LEGAL_REVIEW';
+  let item17 = 'NOT_DEMONSTRATED_ON_GIVEN_FACTS';
+  if (assessmentType !== 'OTHER' && assessmentDate >= '2008-07-01') {
+    if (exceptionCandidate) item16 = 'ITEM16_4_COURT_FINALITY_EXCEPTION_CANDIDATE';
+    else if (afterReview) item16 = 'ITEM16_3_REVIEW_DECIDED_AFTER_COMMENCEMENT_CANDIDATE';
+    else if (pre && assessmentType === 'PRE_LOW_CARE_POSITIVE_35_37')
+      item16 = 'ITEM16_2_PRIOR_POSITIVE_ASSESSMENT_EXCEPTION_CANDIDATE';
+    else item16 = 'ITEM16_1_APPLICATION_CANDIDATE';
+  }
+  if (assessmentType === 'PRE_LOW_CARE_NIL' && pre) {
+    item17 = exceptionCandidate
+      ? 'ITEM17_3_COURT_FINALITY_EXCEPTION_CANDIDATE'
+      : 'ITEM17_1_RETROSPECTIVE_VALIDATION_CANDIDATE';
+  }
+  const issues = [];
+  if (!evidence(evidenceRef)) issues.push('ASSESSMENT_FACT_RECEIPT_MISSING');
+  if (priorFinalCourt?.heardAndFinallyDetermined && !exceptionCandidate)
+    issues.push('FINAL_COURT_EXCEPTION_NOT_PROVEN_OR_NOT_WITHIN_SCOPE');
+  if (reviewDecidedOn && reviewDecidedOn < assessmentDate)
+    issues.push('REVIEW_PRECEDES_ASSESSMENT');
+  return {item16,item17,exceptionCandidate,issues,
+    source:'C2026A00030 Schedule 1 Part 2 items 16-17',
+    legallyBindingOutcome:'NOT_ASSESSED',individualRemedy:'NOT_ASSESSED'};
+}
