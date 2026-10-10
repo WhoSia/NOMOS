@@ -39,6 +39,7 @@ q=structuredClone(base);q.appeal.filingReceipt=null;assert.throws(()=>auditTempo
 q=structuredClone(base);q.decidedOn='2026-02-30';assert.throws(()=>auditTemporalCase878(q),/real ISO/);
 q=structuredClone(base);q.kind='judgment-from-AI';assert.throws(()=>auditTemporalCase878(q),/case kind/);
 q=structuredClone(base);q.law.citation='other';assert.throws(()=>auditTemporalCase878(q),/different statute/);
+q=structuredClone(base);q.law.effectiveOn='2026-04-03';assert.throws(()=>auditTemporalCase878(q),/source-locked commencement/);
 const events=[
  {type:'WARNING',id:'e1',occurredOn:'2025-11-01',sourceId:'notice',sourceType:'agency'},
  {type:'BILL',id:'e2',occurredOn:'2026-02-05',sourceId:'bill',sourceType:'parliament'},
