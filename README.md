@@ -477,7 +477,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 **Historical note:** NOMOS-0.879 was proposed in 0.878 and officially opened 2026-10-11. Refer to the following current frontier.
 
 
-### Current official frontier — NOMOS-0.879 P0–P1 (2026-10-11)
+### Current official frontier — NOMOS-0.879 P0–P2 (2026-10-11)
 
 **[NOMOS-0.879 — Retroactive Validation, Final-Judgment Exceptions & Unequal Corrective Standing](spec/retroactive-validation-879.md)** · [Notion canonical](https://app.notion.com/p/3f5ef561cf9281e58f34f770f3bf4183).
 
@@ -487,3 +487,15 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 - **Claim ceiling:** statute-defined cohort differences are existing laws, not new mathematical discoveries. The unresolved NOMOS question is how court saving, open objections, separate defects, person-specific downstream exposure and institutionally effective correction interact. Do not infer moral rankings from legal-savings design alone.
 
 **Next evidence:** Australian parliamentary explanatory memorandum, 2026 Senate committee submissions/report, an independent person-level deidentified implementation/review sample, and original New Zealand proceedings records where legally accessible; sources must not be mistaken for actual claimant judgments.
+
+
+### 0.879 P2 — no presumed remedy from a retrospective statute or screening estimate
+
+P2 distinguishes the legislative **intent** (restore longstanding child-support principle), the **actual enacted item 16–17 law** (specific historical applicability, objection/review timing, limited court-finality savings), public **screening estimates**, individual access to a review/compensation process, and independently **observed person-level effects**. Sources:
+- [Parliamentary Library Bills Digest 45, updated 24 Feb 2026](https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd045) (**before** the March report): ~16,600 people / ~10,000 child-support cases *possibly* affected as at Mar 2024, ~A$560 *hypothetical* average resulting debt per case if then-applicable law were applied; four identified distinct multiparty-care cases. **These are neither verified unlawful-case judgments nor observed compensation/repair results.**
+- [Senate Community Affairs report 25 Mar 2026](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Community_Affairs/SocSecBillNo148P/Report) received ten submissions, supported the Bill (rec 1, para 1.96), and documented differences about long administrative delays and likely distributional effects of a *separate* child-support-period timing change in Schedule 1 Part 1. [Submissions](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Community_Affairs/SocSecBillNo148P/Submissions); [additional parliamentary comments](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Community_Affairs/SocSecBillNo148P/Report/Additional_Comments_-_Australian_Greens).
+- The 2026 Bill did **not** itself propose a separate resolution-payment program like the income-apportionment scheme; the [2026 Ombudsman report](https://www.ombudsman.gov.au/__data/assets/pdf_file/0025/323773/Following-the-law-is-not-optional.pdf) recommends notice of possible [DSS CDDA](https://www.dss.gov.au/compensation-detriment-caused-defective-administration) pathways. CDDA is **discretionary, last-resort where appropriate**, and cannot override an enacted statute. An advisory recommendation is not a compensation award or proof of actual person-level payment.
+- [P2 source-typed evidence ledger](tools/remedialEvidence879.mjs) · [P2 adversarial tests](tests/test_remedialEvidence879.mjs) distinguish possible exposure, observed review/correction, independent payment readback and enacted scheme-specific provisions. They run through the existing 0.879 and 0.878 CI test chain, retaining `permissions: contents: read`. No automatic legal merits or actual causal-effect estimator has been added.
+- **Missing empirical verification:** case-level deidentified decisions/objections, admissibility and timeliness, notifications and CDDA applications/decisions, amounts actually paid, independent downstream receipt after 2 Apr 2026; **not found in reviewed public sources**. Do not assert zero payments, 10,000 validated harms, 10,000 repaired cases or a quantified actual effect.
+
+**Candidate 0.880 only (not opened):** NOMOS-0.880 — Retrospective Legality, Residual Accountability & the Evidence of Unrepaired Consequences: Legislative Validation versus Administrative Responsibility, Screening-to-Remedy Attrition, Compensation-Pathway Asymmetry & the Primitive Question of What Remains Owed After a Past Wrong Is Made Legally Effective. Existing NOMOS-0.864–0.865 and Ombudsman/CDDA law sharply limit novelty claims.
