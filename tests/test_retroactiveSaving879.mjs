@@ -17,6 +17,13 @@ assert.equal(auditAU879(before).checks.reviewedAfter,false);
 const nil={...base,otherParentRatePositive:false,nilRateBecauseOtherParentLowCare:true};
 assert.equal(auditAU879(nil).checks.validation,true);
 assert.equal(auditAU879(nil).checks.positiveException,false);
+const older=auditAU879({...nil,assessmentOn:'2007-10-01'});
+assert.equal(older.checks.historical,false);
+assert.equal(older.checks.validation,true); // item 17 has distinct wording; candidate only
+assert(older.errors.includes('PRE_JULY_2008_SCHEME_SCOPE_REQUIRES_SEPARATE_CHECK'));
+assert(auditAU879({...nil,otherParentRatePositive:true})
+ .errors.includes('CONFLICTING_RATE_CLASSIFICATION'));
+
 const court={heardAndFinallyDetermined:true,finalOn:'2026-04-01',
  judgmentReceipt:'signed court judgment',rightsLiabilitiesBetweenParties:true,
  materialConnectionToAssessment:true,materialConnectionToNilGround:true};
