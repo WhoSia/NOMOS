@@ -4,7 +4,7 @@
 Exact user-approved title. This is a source-bound research question about legal and factual evidence, NOT case adjudication, entitlement determination or a general moral scalar. Primary bridge: retrospective legal validity of a bounded historical act does not itself show the institution had complied with law *at the time of decision*, that contemporary legal-warning records cease to exist, that affected persons knew about a review/compensation route, or that material outcomes were restored. Conversely historic maladministration and an Ombudsman recommendation do not automatically confer an individualized present right to damages.
 
 ## Prior-art collision — MUST NOT reinvent
-Direct Drive chat audit (NOMOS 5–9; especially 8 and 9) and Notion canonical:
+Direct Drive chat audit (NOMOS 1–9, original source texts opened; focused on 1–4 origin/authority and 8–9 late remediation) and Notion canonical:
 - NOMOS-0.854 already separates material mechanism exposure, cohort investigation and individual merits, and forbids targeted-sample prevalence laundering.
 - NOMOS-0.863 defines formal access != effective remedy reachability.
 - NOMOS-0.864 already separates formality, semantic correction, active generator cleanup, historical harm and synthetic vs actual causal effect.
@@ -40,3 +40,12 @@ Required counterfactuals: with/without notification, with/without law change, an
 ## Development and evidentiary ceiling
 Implement a *claim-relative provenance ledger* over aggregate exposure, law status, historical warning, frame-specific notice, route access, application, decision, actual payment and independent readback; reject denominator migration, source-kind laundering, invented zero outcomes and claim that discretionary authority = guaranteed award. Existing Node 0.879 and Python v0.18.0 remain. CI is read-only, no `github-actions[bot]` author or committer. Real case data, Ministerial response text, deidentified receipts and an independently reviewed denominator are outside present audit.
 P0–P1 OPEN / STRONG EXTERNAL NOVELTY LIMIT / REAL REPAIR EFFECT UNIDENTIFIED.
+
+## P1 additional rival witnesses and executable boundary (2026-10-11)
+Earlier than 0.854, 0.212–0.215 already separate durable records from authority to continue affecting a person; 0.261 separates formal channels from fair burdens when institutions hold the evidence; 0.686–0.687 asks who may assign residual losses. Do not market the bare distinction 'history survives legal repair' as novel. W7: Two published histories contain the same statute, 2024 potential-screening estimate and advertised CDDA page, but world A has unrecorded private applications/payouts while world B has none. The public observations are identical; neither number of applications nor payments is identifiable without an external complete person-linked frame and receipts. Even confirmed chain counts can identify only **descriptive attrition within a fixed cohort and unit** with source-backed subset links, not causal treatment effects or legality.
+
+The implemented tools/residualAccountability880.mjs uses typed public/agency source receipts and refuses to infer benefit from announced relief, case count from person count, or lost cases from absent counts. A 48-combination synthetic adversarial grid plus targeted fixtures is checked in tests/test_residualAccountability880.mjs. The first linked-funnel CI failed when added stricter linkage receipts were absent from old fixtures; source and test were repaired and subsequent exact-head CI succeeded. That historical failure is not erased. NO authorization for real agency filing or real claimant merits.
+
+**Primary source audit ceiling:** Australian Senate Scrutiny Digests 3/5 are committee questions about possible lawful entitlements lost; Community Affairs report is a separate committee's passage recommendation. The 28 Apr ministerial reply is recorded as received after enactment; its full content has not yet been verified from the official reply PDF. No inference about the Government's substantive answer or claimant outcomes is admissible.
+
+**Scientific state: P0–P1 OPEN / PRIMARY DOCUMENT TENSION / NINE ARCHIVE FILES CONTACTED / SYNTHETIC LINKED-COHORT AUDIT / EMPIRICAL REMEDY STILL NOT IDENTIFIED.**
