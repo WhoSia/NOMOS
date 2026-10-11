@@ -1,5 +1,12 @@
 # NOMOS
 
+**CURRENT RESEARCH HEAD — NOMOS-0.880 P0–P1 OPEN (2026-10-11)** · [Current state](research/current.md) · [0.880 source-bound specification](spec/residual-accountability-880.md) · [Notion canonical](https://app.notion.com/p/3f6ef561cf9281739f10ec0ca9df8334) · [Research genealogy](docs/genealogy.md).
+
+The project's current primitive asks what evidence remains owed after a retrospective statute makes specified past administration legally effective. **Legal validity**, dated institutional **warning/compliance history**, identifiable cohort **exposure**, actual **notice/review/compensation access** and independently read-back **person-level correction** are different questions. The historical institution did not necessarily comply with operative law when it acted, and a present discretionary CDDA route is not an automatic award. We have **not** certified individual legal merits, whole-cohort remediation or a causal effect. The Python kernel remains v0.18.0; Node tests are synthetic provenance guards only; CI is read-only and no bot commits are authorized.
+
+> **Archive governance:** Historic stages are preserved as their own dated records. The old `research/current.md` still claiming 0.865 as head was saved intact at [historical-current-through-865.md](research/historical-current-through-865.md) before current-state reconciliation. Do not infer new research closure from the fact a test suite passes.
+
+
 **Normative Ontology, Meursault, and Ontological Singularity**  
 한국어 연구명: **특이점의 형이상학**
 
@@ -477,7 +484,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 **Historical note:** NOMOS-0.879 was proposed in 0.878 and officially opened 2026-10-11. Refer to the following current frontier.
 
 
-### Current official frontier — NOMOS-0.879 P0–P2 (2026-10-11)
+### Previous completed research frontier — NOMOS-0.879 P0–P2 (2026-10-11)
 
 **[NOMOS-0.879 — Retroactive Validation, Final-Judgment Exceptions & Unequal Corrective Standing](spec/retroactive-validation-879.md)** · [Notion canonical](https://app.notion.com/p/3f5ef561cf9281e58f34f770f3bf4183).
 
@@ -499,3 +506,20 @@ P2 distinguishes the legislative **intent** (restore longstanding child-support 
 - **Missing empirical verification:** case-level deidentified decisions/objections, admissibility and timeliness, notifications and CDDA applications/decisions, amounts actually paid, independent downstream receipt after 2 Apr 2026; **not found in reviewed public sources**. Do not assert zero payments, 10,000 validated harms, 10,000 repaired cases or a quantified actual effect.
 
 **Candidate 0.880 only (not opened):** NOMOS-0.880 — Retrospective Legality, Residual Accountability & the Evidence of Unrepaired Consequences: Legislative Validation versus Administrative Responsibility, Screening-to-Remedy Attrition, Compensation-Pathway Asymmetry & the Primitive Question of What Remains Owed After a Past Wrong Is Made Legally Effective. Existing NOMOS-0.864–0.865 and Ombudsman/CDDA law sharply limit novelty claims.
+
+
+### Active 0.880 P0–P1 — residual accountability and measured remedy access
+
+**[Canonical source and 6 rival worlds](spec/residual-accountability-880.md)** · **[Notion P0–P1](https://app.notion.com/p/3f6ef561cf9281739f10ec0ca9df8334)** · **[Current state](research/current.md)**.
+
+The 2026 Australian [Social Security technical amendment](https://www.legislation.gov.au/C2026A00030/asmade) retroactively validates specified administration, but this does not itself revise *contemporaneous* official warnings or independently demonstrate compensation. Two different parliamentary tracks must not be conflated:
+1. Senate **Community Affairs Legislation Committee**, report 25 March 2026, recommended the bill pass.
+2. Senate **Scrutiny of Bills Committee**, in 2026 Scrutiny Digests 3 and 5, requested justification and possible examples/estimates for loss of previously lawful child-support entitlements caused by retrospectivity. [Scrutiny principles](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Scrutiny_of_Bills/Annual_Report_2025/Appendix_1_-_The_committees_scrutiny_principles_in_detail) demand identification of affected persons and adverse effects; [government response listing](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Scrutiny_of_Bills/Ministerial_Responses) records a further response **28 April 2026**, after assent. The ministerial text and whether it explains losses remain outstanding direct checks; do not rewrite the sequence.
+
+A [DSS CDDA application](https://www.dss.gov.au/compensation-detriment-caused-defective-administration) is discretionary and may require proof of defective administration, direct detriment and alternatives, not proof of an award. The [Bills Digest 45 exposure estimate](https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2526/26bd045) of around **10,000 potentially affected cases / 16,600 parents**, plus the hypothetical average A$560 recalculation debt, cannot be used as a numerator of actually compensated persons or as a verified causal effect.
+
+**Executable guarded surface:** [0.880 dated history and claimant-path witness](tools/residualAccountability880.mjs), [synthetic adversarial tests](tests/test_residualAccountability880.mjs), in the existing read-only Node test chain. Prohibits evidence-type laundering from historical warning to legal damages, nominal route to observed payout, or missing contact data to proof of zero claims. The attrition estimator yields numeric stage losses **only for a declared identical cohort and unit with audited complete enumerations and independent receipts**. Otherwise it returns non-identification; a fall in stage counts is not assigned moral or legal meaning. There is **no access to real claimants or CDDA accounts**.
+
+**Source continuity:** Chat Archive NOMOS 5–9 (especially 8–9), Notion 0.854, 0.864, 0.865, 0.879, and the Research OS historiography were reread. The crucial predecessor propositions are already known: shared-exposure recall != other people's merits (0.854), formal route != effective access (0.863), paper correction != independent real-world effect (0.864–0.865). A broad 'lawful does not mean just' slogan is not a novel 0.880 theorem.
+
+**Outstanding original evidence:** actual 28-Apr Scrutiny ministerial response, dated departmental notices and communications, case-level anonymized application/decision/payment ledgers with compatible frames and no hidden privacy disclosures, administrative remediation/route-access observations and independent post-payment downstream readbacks. Absence of such datasets does **not** mean zero applications or zero compensation.
