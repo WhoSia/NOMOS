@@ -60,3 +60,27 @@ The kernel is a compressed theory of **what NOMOS has learned not to collapse**.
 ## Founding-report return — 0.848
 
 The 2025 71-page report's literal normative-field mechanics, fixed threshold 1050 and ABM-as-proof were destroyed. Its sharper structure survived: heterogeneous episodes can be compressed into a person model, and an institution can later use products of its own classificatory environment as evidence about the person. 0.848 restates the old "field" intuition as **policy-conditioned observation + authority-conditioned normality**: an exceptional regime may shape the baseline from which its own necessity later appears self-evident.
+
+
+## Selected 0.849–0.880 continuation — source-typed transition, not a renumbered invention (reconciled 2026-10-11)
+
+This section is selective. Earlier live analyses and Notion canonical pages, not this compressed file, carry the entire version history.
+
+| Version family | Surviving primitive or bounded result | Earlier or overly strong claim rejected |
+|---|---|---|
+| 0.849–0.854 | Restoration and historical recall require versioned sources, material shared-mechanism exposure and independent person review; 0.854 cohort recall follows exposure, not institution label. | Correction of one case proves every other person's merits; targeted sample estimates cohort prevalence. |
+| 0.855–0.863 | Recall-capacity, protection and reachable remedies diverge: existence of a filing/review route is not actual receipt or completed restoration. | Paper accessibility or apparent system success suffices to certify redress. |
+| 0.864–0.865 | Formal execution, semantic freshness, independently observed downstream effects and causal attribution are different conditions; a synthetic pass is not a real-person certificate. | Different observer IDs guarantee independence; restored value proves the whole person's world was repaired. |
+| 0.866–0.874 | The institutional effect of classification, dissent, public procedural standing and bounded normative claims remains claim- and authority-relative. | Narrative about an individual becomes automatically authoritative over the person. |
+| 0.875–0.876 | Interim renewal can manipulate the observability of its own counterevidence; private appeal, policy escalation, independent observation and actual renewal change are separate gates. | Few appeals prove the intervention necessary; retrospective evidence is automatically exogenous. |
+| 0.877 | Court interpretation, tribunal fact findings, shared technical defects and advisory recommendations have non-equivalent authority paths across persons and cases. | Case win/agency identity alone determines policy response or other people’s merits. |
+| 0.878 | Enacted 2026 Australian child-support retrospective validation and court-finality savings, statutory commencement, actual stays and administrative appeal are separate time-indexed objects. | An appeal itself grants a stay; planned law already operates; later legality uniformly erases historical harm. |
+| 0.879 | Australian item 16/17 savings and NZ 2026 changeover-started-proceedings savings use different protected edges. Legislative exposure estimates, person-level application and actual compensation remain separate. | All legal savings require final court order; 10,000 potentially affected cases = 10,000 compensated. |
+| **0.880 OPEN** | **Residual-accountability evidence:** retrospective legal status L, dated historical institutional warning H, deidentified exposure frame X, truly reachable remedy Q, independently read-back outcome Y must retain distinct authority and source types. Parliamentary retrospective-rights scrutiny is a direct antecedent, not an original NOMOS discovery. | **Legal validation changes the historical timeline, an advertised CDDA route proves payouts, or undated aggregate silence is evidence that nobody sought relief.** |
+
+### Archived conversation, Notion and code continuity
+
+- Directly reconsulted Drive Research OS Chat Archive `NOMOS 5–9.md` (especially `NOMOS 8.md` and `NOMOS 9.md`), Notion 0.854, 0.864, 0.865, 0.879 and Research OS historical canon. Older 0.854/0.864/0.865 canonical results are often *stronger* novelty limiters than a new version number.
+- Reconciled `research/current.md` from an old 0.865 head to 0.880 and **preserved verbatim** the old current page at `research/historical-current-through-865.md`.
+- [0.880 specification](../spec/residual-accountability-880.md) · [Notion official](https://app.notion.com/p/3f6ef561cf9281739f10ec0ca9df8334). The new pure source-typed Node audit never purports to determine a claimant's legal status or repair an actual welfare case.
+- Source tension: Australian Senate **Scrutiny of Bills** Committee asked the Social Services Minister about possible loss of lawful support entitlements and associated detriment notwithstanding the contemporaneous **Community Affairs** Committee's recommendation to pass the Bill. The later government reply received 28 April 2026 is **after** the 1 April enactment. The scope/meaning of this later reply still needs a direct-source full reading; do not backdate it.
