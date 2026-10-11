@@ -19,6 +19,10 @@ r=auditPublishedClinical880('SINGH_IMAGING_2009',{...PUBLISHED_880.SINGH_IMAGING
 assert(r.errors.includes('FOLLOWUP_NOT_PROOF_OF_HEALTH_RECOVERY'));
 const atlas=PUBLISHED_880.ATLAS_2023;
 assert.equal(atlas.arms.reduce((a,v)=>a+v.n,0),11980);
+let corrupt=auditPublishedClinical880('ATLAS_2023',{...atlas,arms:atlas.arms.map((v,i)=>i===0?{...v,n:v.n+1}:v)});
+assert(corrupt.errors.includes('PUBLISHED_RCT_ARM_AGGREGATE_MISMATCH'));
+corrupt=auditPublishedClinical880('ATLAS_2023',{...atlas,arms:atlas.arms.map((v,i)=>i===1?{...v,adjustedFollowupPct:99}:v)});
+assert(corrupt.errors.includes('PUBLISHED_RCT_ARM_AGGREGATE_MISMATCH'));
 r=auditPublishedClinical880('ATLAS_2023',{...atlas,claimsLongTermHealthOutcomeEffect:true});
 assert(r.errors.includes('FOLLOWUP_ENDPOINT_NOT_HEALTH_OUTCOME'));
 r=auditPublishedClinical880('ATLAS_2023',{...atlas,claimsPercentTimesNEqualsObservedNumber:true});
@@ -28,8 +32,14 @@ assert.equal(coro.arms.reduce((a,v)=>a+v.n,0),967);
 r=auditPublishedClinical880('CORONADO_2025',{...coro,claimsPatientLevelDataReleased:true});
 assert(r.errors.includes('PUBLISHED_AGGREGATE_NOT_RAW_PATIENT_DATA'));
 assert.equal(coro.adjustedDifferencePctPoints,13);
+assert(auditPublishedClinical880('CORONADO_2025',{...coro,
+ adjustedDifferencePctPoints:11}).errors.includes('PUBLISHED_RCT_ARM_AGGREGATE_MISMATCH'));
 const corley=PUBLISHED_880.CORLEY_2017;
 assert(corley.allPositiveFIT>corley.eligible&&corley.eligible>corley.receivedFollowup);
+assert(auditPublishedClinical880('CORLEY_2017',{...corley,
+ allPositiveFIT:corley.eligible}).errors.includes('ELIGIBLE_OR_FOLLOWUP_COUNT_MISMATCH'));
+assert(auditPublishedClinical880('SINGH_LAB_2010',{...lab,
+ unacknowledged:79}).errors.includes('PUBLISHED_COUNT_MISMATCH'));
 r=auditPublishedClinical880('CORLEY_2017',{...corley,claimsOutcomeForAllPositiveTests:true});
 assert(r.errors.includes('SELECTION_CONDITIONAL_ON_FOLLOWUP'));
 r=auditPublishedClinical880('CORLEY_2017',{...corley,claimsCausalHarmFromDelay:true});
