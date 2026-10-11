@@ -41,7 +41,8 @@ export function auditResidualResponsibility880(x={}){
    !m.has(e.sourceId))errors.push('UNVERIFIABLE_DATED_EVENT');
   else times[e.event]=e.date;
  }
- if(times.AMENDMENT_ENACTED&&times.SCRUTINY_RESPONSE&&times.SCRUTINY_RESPONSE>times.AMENDMENT_ENACTED)
+ if(x.claimsScrutinyResponseWasPreEnactment===true&&times.AMENDMENT_ENACTED&&
+  times.SCRUTINY_RESPONSE&&times.SCRUTINY_RESPONSE>times.AMENDMENT_ENACTED)
   errors.push('POST_ENACTMENT_RESPONSE_CANNOT_BE_PRE_ENACTMENT_CAUSE');
  return {gates:{lawValid,historicalWarningDocumented:history,scrutinyConcernDocumented:scrutiny,
   noticeReceiptDocumented:notice,applicationReceiptDocumented:application,
