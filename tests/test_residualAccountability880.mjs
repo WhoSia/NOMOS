@@ -53,7 +53,7 @@ const f=(unit='CASE',frame='cohort-x')=>[
  {stage:'DECISION_MADE',count:6,receiptId:'decisions',unit,frameId:frame,completeCensus:true,independentlyVerified:true},
  {stage:'PAYMENT_OBSERVED',count:3,receiptId:'payments',unit,frameId:frame,completeCensus:true,independentlyVerified:true},
  {stage:'INDEPENDENT_OUTCOME_CONFIRMED',count:2,receiptId:'readback',unit,frameId:frame,completeCensus:true,independentlyVerified:true}
-];
+].map((e,i)=>i===0?e:{...e,linkedToPreviousByStableId:true,linkageReceipt:'independent-linkage-'+i});
 let y=auditLinkedFunnel880({stages:f()});
 assert.equal(y.attritionIdentified,true);
 assert.equal(y.attrition[0].lost,10);
@@ -75,6 +75,11 @@ a=f();a[4].receiptId='';
 assert.equal(auditLinkedFunnel880({stages:a}).attritionIdentified,false);
 a=f();a[4].independentlyVerified=false;
 assert.equal(auditLinkedFunnel880({stages:a}).attritionIdentified,false);
+a=f();a[3].linkageReceipt='';
+assert.equal(auditLinkedFunnel880({stages:a}).attritionIdentified,false);
+assert(auditLinkedFunnel880({stages:a}).errors.includes('SUBSET_LINK_UNPROVEN_DO_NOT_CALCULATE_ATTRITION'));
+a=f();a[2].linkedToPreviousByStableId=false;
+assert.equal(auditLinkedFunnel880({stages:a}).attrition,null);
 a=f();a[1].stage='POTENTIALLY_EXPOSED';
 assert(auditLinkedFunnel880({stages:a}).errors.includes('STAGE_ORDER_OR_DUPLICATE'));
 const four=[undefined,true,false,null];let checked=0;
