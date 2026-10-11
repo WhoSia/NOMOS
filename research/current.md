@@ -12,7 +12,7 @@ After an enacted retrospective validation, distinguish (L) current legal status 
 
 ## What the archive review destroyed as novelty claims
 
-Read Drive Chat Archive NOMOS 5–9 (emphasis 8,9), Notion NOMOS 0.854, 0.864, 0.865, 0.879 and historical canon. 0.854 already separates mechanism-linked cohort recall from merits; 0.863 distinguishes nominal review from accessible redress; 0.864 and 0.865 distinguish paper correction, independent consequence readback and real-world causal identification. 0.875–0.879 already isolate appeal, authority transfer, source-law commencement, exposure, screening, and compensation. 0.880 is not 'the discovery that validity does not equal justice'; its scoped object is a dated source-type and recipient-frame **proof-carrying attrition audit** where history, notice, review and actual consequences remain independently checkable.
+Read Drive Chat Archive NOMOS 1–9 (focused checks on origin, authority and late remediation), Notion NOMOS 0.854, 0.864, 0.865, 0.879 and historical canon. 0.854 already separates mechanism-linked cohort recall from merits; 0.863 distinguishes nominal review from accessible redress; 0.864 and 0.865 distinguish paper correction, independent consequence readback and real-world causal identification. 0.875–0.879 already isolate appeal, authority transfer, source-law commencement, exposure, screening, and compensation. 0.880 is not 'the discovery that validity does not equal justice'; its scoped object is a dated source-type and recipient-frame **proof-carrying attrition audit** where history, notice, review and actual consequences remain independently checkable.
 
 ## Code and operational authority
 
@@ -29,3 +29,6 @@ Existing Python v0.18.0 kept. New 0.880: [responsibility/funnel gate](../tools/r
 ## Provenance of formerly stale current page
 
 Former `research/current.md` was an older 0.865/0.863-era record and is archived verbatim at [historical-current-through-865.md](historical-current-through-865.md) before this update. Its time-bounded assertions must not be mistaken for current research status. Do not rewrite historical judgments or delete earlier project versions to make the present clean.
+
+## Earlier-than-0.854 research correction (NOMOS-0.880 P1)
+The nine Drive conversation archives were each opened and key stage transitions checked. 0.212–0.215 already distinguish historical record permanence from contemporary consequence authority, 0.261 already asks how institutions allocate rebuttal burden when holding evidence, and 0.686–0.687 already treats residual harm and the authority to allocate it as different questions. These strengthen the anti-reinvention ceiling for 0.880. Long files were not re-read line-by-line in full. Current synthetic attrition audit requires source-typed, frame-stable, SAME-UNIT counts, independently verified enumerations and stable-ID subset linkage receipts; otherwise attrition is NONIDENTIFIED.
