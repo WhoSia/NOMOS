@@ -67,8 +67,11 @@ export function auditLinkedFunnel880(x={}){
   if(v.count!==null&&v.count!==undefined&&!count(v.count))errors.push('BAD_COUNT');
   if(!nonempty(v.receiptId))errors.push('NO_STAGE_RECEIPT');
   if(!nonempty(v.frameId)||!['CASE','PERSON'].includes(v.unit))errors.push('NO_TYPED_FRAME');
+  if(prior&&(!nonempty(v.linkageReceipt)||v.linkedToPreviousByStableId!==true))
+   errors.push('SUBSET_LINK_UNPROVEN_DO_NOT_CALCULATE_ATTRITION');
   if(prior&&prior.unit===v.unit&&prior.frameId===v.frameId&&
    count(prior.count)&&count(v.count)&&prior.completeCensus===true&&v.completeCensus===true&&
+   v.linkedToPreviousByStableId===true&&nonempty(v.linkageReceipt)&&
    v.count>prior.count) errors.push('REPORTED_NESTED_COUNTS_INCREASE');
   if(prior&&prior.frameId!==v.frameId)errors.push('FRAME_CHANGED_DO_NOT_CALCULATE_ATTRITION');
   if(prior&&prior.unit!==v.unit)errors.push('UNIT_CHANGED_DO_NOT_CALCULATE_ATTRITION');
