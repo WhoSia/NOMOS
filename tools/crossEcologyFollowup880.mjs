@@ -33,12 +33,15 @@ export function auditPublishedClinical880(name,record={}){
  if(record.claimsIndividualPatientsVerified===true)errors.push('AGGREGATE_PAPER_NOT_PERSON_RECORDS');
  if(record.claimsCourtOrCompensationOutcome===true)errors.push('CLINICAL_DATA_NOT_ADMINISTRATIVE_REMEDY');
  if(ref.design==='RETROSPECTIVE_ALERT_AUDIT'){
-   if(record.alerts!==ref.alerts||record.followupLacking!==ref.followupLacking)
+   if(record.allTests!==ref.allTests||record.alerts!==ref.alerts||
+      record.unacknowledged!==ref.unacknowledged||record.followupLacking!==ref.followupLacking||
+      record.windowDays!==ref.windowDays)
      errors.push('PUBLISHED_COUNT_MISMATCH');
    if(record.claimsNoFollowupEqualsUnacknowledged===true)
      errors.push('ALERT_ACKNOWLEDGEMENT_AND_ACTION_NOT_IDENTICAL');
  }else if(ref.design==='CONDITIONAL_FOLLOWUP_COHORT'){
-   if(record.eligible!==ref.eligible||record.receivedFollowup!==ref.receivedFollowup)
+   if(record.allPositiveFIT!==ref.allPositiveFIT||record.eligible!==ref.eligible||
+      record.receivedFollowup!==ref.receivedFollowup)
      errors.push('ELIGIBLE_OR_FOLLOWUP_COUNT_MISMATCH');
    if(record.claimsOutcomeForAllPositiveTests===true)
      errors.push('SELECTION_CONDITIONAL_ON_FOLLOWUP');
@@ -47,6 +50,11 @@ export function auditPublishedClinical880(name,record={}){
  }else{
    if(record.participants!==(ref.participants||ref.primaryAnalysis))
      errors.push('RCT_ANALYSIS_COHORT_COUNT_MISMATCH');
+   if(!Array.isArray(record.arms)||record.arms.length!==ref.arms.length||
+     record.arms.some((a,i)=>a.n!==ref.arms[i].n||
+         a.adjustedFollowupPct!==ref.arms[i].adjustedFollowupPct)||
+     record.adjustedDifferencePctPoints!==ref.adjustedDifferencePctPoints)
+     errors.push('PUBLISHED_RCT_ARM_AGGREGATE_MISMATCH');
    if(record.claimsPercentTimesNEqualsObservedNumber===true)
      errors.push('ADJUSTED_PERCENT_NOT_RAW_EVENT_COUNT');
    if(record.claimsLongTermHealthOutcomeEffect===true)
