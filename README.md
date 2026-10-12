@@ -1,6 +1,6 @@
 # NOMOS
 
-**CURRENT RESEARCH HEAD — NOMOS-0.880 P0–P2 ACTIVE (2026-10-11)** · [Current state](research/current.md) · [0.880 source-bound specification](spec/residual-accountability-880.md) · [Notion canonical](https://app.notion.com/p/3f6ef561cf9281739f10ec0ca9df8334) · [Research genealogy](docs/genealogy.md).
+**CURRENT RESEARCH HEAD — NOMOS-0.880 P0–P3 OPEN (2026-10-12; P3 source custody and scoped closure inquiry, not empirically closed)** · [Current state](research/current.md) · [0.880 source-bound specification](spec/residual-accountability-880.md) · [Notion canonical](https://app.notion.com/p/3f6ef561cf9281739f10ec0ca9df8334) · [Research genealogy](docs/genealogy.md).
 
 The project's current primitive asks what evidence remains owed after a retrospective statute makes specified past administration legally effective. **Legal validity**, dated institutional **warning/compliance history**, identifiable cohort **exposure**, actual **notice/review/compensation access** and independently read-back **person-level correction** are different questions. The historical institution did not necessarily comply with operative law when it acted, and a present discretionary CDDA route is not an automatic award. We have **not** certified individual legal merits, whole-cohort remediation or a causal effect. The Python kernel remains v0.18.0; Node tests are synthetic provenance guards only; CI is read-only and no bot commits are authorized.
 
