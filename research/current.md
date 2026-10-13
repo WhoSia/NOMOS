@@ -1,6 +1,12 @@
-# NOMOS — Current Research Head (2026-10-11)
+# NOMOS — Current Research Head (2026-10-13)
 
-**Current: NOMOS-0.880 P0–P2 ACTIVE.** Official title: *Retrospective Legality, Residual Accountability & the Evidence of Unrepaired Consequences: Legislative Validation versus Administrative Responsibility, Screening-to-Remedy Attrition, Compensation-Pathway Asymmetry & the Primitive Question of What Remains Owed After a Past Wrong Is Made Legally Effective.*
+**Current formal mainline: NOMOS-0.881 P1-R2 OPEN.** [User-approved original Notion research canonical](https://app.notion.com/p/3f7ef561cf9281e99c70ffa061b898c3) · [GitHub source-faithful 0.881 status mirror](../spec/institutional-closure-881.md) · [README](../README.md). 0.881 asks how an institution controlling who can become a claimant and who is observed may warrant narrow procedural finality, actual person-level consequence and later reuse of a person-predicate. The original Notion P0 source reports 5/5 synthetic tests and P1-R2 reports 9 source-level synthetic tests; there has been **no independently source-verified 0.881 executable import or GitHub-native Actions pass** in this update. P2 external cross-ecology work is a proposal; actual claimant remediation/legal finality/causal personal results remain HOLD.
+
+**Previous active mainline and inherited unresolved research: NOMOS-0.880 P0–P3 OPEN historically.** This section retains its original claims and dated evidence. 0.880 P3's source-custody/real-world verification tasks remain open; a new 0.881 version is not a retrospective empirical PASS.
+
+## Historical 0.880 current-state snapshot as it stood 2026-10-11
+
+**At that time: NOMOS-0.880 P0–P2 ACTIVE.** Official title: *Retrospective Legality, Residual Accountability & the Evidence of Unrepaired Consequences: Legislative Validation versus Administrative Responsibility, Screening-to-Remedy Attrition, Compensation-Pathway Asymmetry & the Primitive Question of What Remains Owed After a Past Wrong Is Made Legally Effective.*
 
 **Canonical:** [Notion 0.880](https://app.notion.com/p/3f6ef561cf9281739f10ec0ca9df8334) · [GitHub 0.880 specification](../spec/residual-accountability-880.md) · [README](../README.md) · [Research OS historical canon](https://app.notion.com/p/3cbef561cf92817b93daf7e8f989d3a9).
 
