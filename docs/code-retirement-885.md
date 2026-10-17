@@ -25,3 +25,7 @@ At current main tree d8dabeb34fc37330e0fae0a80286a155369556e6, the recursive tre
 
 ## P0-R8 — Sampled direct import/CI reconciliation (2026-10-18)
 Five selected Node tests were inspected by reading source imports and comparing exact command paths with `.github/workflows/ci.yml`. Four tests (remedialEvidence879, retroactiveSaving879, residualAccountability880, crossEcologyFollowup880) import their same-family tools but were absent as direct CI commands; uptake870 was present. This is not a complete repository-wide reachability census. Decision: restore automated regression coverage rather than delete live historical witnesses. Added four `node tests/...` steps to CI on main commit bc827933b9b9ed8ee915cde1f0488222ed7283b5. Successful CI is required before declaring the change verified. Deletions: ZERO, branches: ZERO. Status: unreferenced-source deletion candidates not demonstrated.
+
+
+## P0-R9 — Exhaustive explicit Node test command census (2026-10-18)
+At `main` pre-write tree d0d7269a5d5711e7ae016825d78b3b3b0b374caa, `tests/*.mjs` contains 29 tests and `.github/workflows/ci.yml` contains a direct `node tests/<filename>` invocation for all 29: omission count **zero**. This proves named command coverage, not complete code-path coverage, and not that every module is semantically nonredundant. Baseline CI succeeded after P0-R8. No safe, proven redundant executable discovered; deletion count zero. Next gate: import-reference mapping, documentation consumers, byte-verified file-level custody and replaceability, without new branches.
