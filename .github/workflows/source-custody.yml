@@ -1,0 +1,34 @@
+name: source-custody-archive
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact trigger SHA
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Create source archive and checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p custody
+          git rev-parse HEAD > custody/GIT_HEAD.txt
+          git archive --format=tar --prefix=NOMOS-main/ HEAD | gzip -n > custody/NOMOS-main.tar.gz
+          git ls-files -z | xargs -0 sha256sum > custody/SHA256_FILES.txt
+          sha256sum custody/NOMOS-main.tar.gz > custody/SHA256_ARCHIVE.txt
+          git status --porcelain > custody/STATUS.txt
+          test ! -s custody/STATUS.txt
+          tar -tzf custody/NOMOS-main.tar.gz | head -n 2
+      - name: Upload reproducible recovery material
+        uses: actions/upload-artifact@v4
+        with:
+          name: nomos-source-custody
+          path: custody/
+          if-no-files-found: error
+          retention-days: 90
