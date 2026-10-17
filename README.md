@@ -1,8 +1,10 @@
 # NOMOS
 
-**CURRENT FORMAL RESEARCH HEAD — NOMOS-0.883 P0 OPEN (2026-10-17)** · [Primary Notion](https://app.notion.com/p/3fcef561cf9281dd887dcdcd583c7538) · [0.882 predecessor](https://app.notion.com/p/3fcef561cf9281f5b164d05ef2f50771) · [Genealogy](docs/genealogy.md). The earlier 0.882 P0-R4/P0-R5, 0.881 P1 and 0.880 P3 remain open obligations.
+**CURRENT FORMAL RESEARCH HEAD — NOMOS-0.884 P0 OPEN (2026-10-17)** · [Primary Notion](https://app.notion.com/p/3fcef561cf92818fbac3e5089c817573) · [P0 spec](spec/cross-context-testimonial-authority-884.md) · [Genealogy](docs/genealogy.md). Previous 0.883 and 0.880–0.882 obligations remain OPEN; numbering is not closure.
 
-**0.883 primitive:** Legitimate legal or research representation differs from substituting an ungrounded person-portrait for someone's own evidentiary position. Both positive and negative portraits require claim-specific support; authorized defense remains a vital positive counterexample. The unnamed harmed party also has distinct standing. This is a new research question, not a certified novelty or a judgment about any actual person.
+**0.884 primitive:** Existing law permits some case-bounded use of earlier representative testimony; the provenance, permissible receiving-context inference and opportunity to contest must be checked before any broader institutional attribution. Use proven doctrine with citations, not compulsory novelty. Current status P0 OPEN.
+
+**0.883 predecessor primitive:** Legitimate legal or research representation differs from substituting an ungrounded person-portrait for someone's own evidentiary position. Both positive and negative portraits require claim-specific support; authorized defense remains a vital positive counterexample. The unnamed harmed party also has distinct standing. This is a new research question, not a certified novelty or a judgment about any actual person.
 
 **0.882 predecessor primitive:** Under what conditions does evaluation of a person's nonconforming belief, situated refusal, affective response or action become an authorized judgment about that person? The original 71-page *Normative Ontology, Meursault, and Ontological Singularity* report is historical source material, **not literal physical law**. Distinguish proposition truth, justified belief, task-bounded action accountability and person-wide moral/character attribution. Camus interpretation and scientific novelty remain OPEN.
 
