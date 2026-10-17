@@ -1,5 +1,11 @@
 # NOMOS — Current Research Head (2026-10-17)
 
+**Current formal head NOMOS-0.884 P0 OPEN.** [Primary Notion](https://app.notion.com/p/3fcef561cf92818fbac3e5089c817573) · [GitHub P0 research spec](../spec/cross-context-testimonial-authority-884.md). Adopt well-established judicial-versus-evidentiary admission doctrine and bound the transfer of earlier counsel statements by source, case context, lawful evidentiary use and renewed contestability. The 0.883 P0-R6, 0.882 P0 work, 0.881 P1 and 0.880 P3 are not closed merely by promotion. Research P0 OPEN; tested real-world consequence and scientific novelty UNVERIFIED. Use main only, preserve source snapshots after writes.
+
+---
+
+# NOMOS — Current Research Head (2026-10-17)
+
 **Current formal head: NOMOS-0.882 P0 OPEN.** Approved title: *Epistemic Nonconformity & the Limits of Person-Judgment Authority: Situated Refusal, Normative Translation, Interpretive Essentialization, Evidentiary Disagreement & the Primitive Question of When Judging a Belief Becomes Judging a Person*. Primary [Notion 0.882](https://app.notion.com/p/3fcef561cf9281f5b164d05ef2f50771). This dated head supersedes earlier current-head labels without erasing their contents. The 71-page original is an interpretive historical source, not empirical normative-field physics. 0.880 P3 and 0.881 P1 remain unverified separate obligations. Code retirement: HOLD until archive-to-Drive bytes and checksum are verified; no bot commits.
 
 ---
