@@ -22,9 +22,9 @@ jobs:
           git archive --format=tar --prefix=NOMOS-main/ HEAD | gzip -n > custody/NOMOS-main.tar.gz
           git ls-files -z | xargs -0 sha256sum > custody/SHA256_FILES.txt
           sha256sum custody/NOMOS-main.tar.gz > custody/SHA256_ARCHIVE.txt
-          git status --porcelain > custody/STATUS.txt
+          git status --porcelain --untracked-files=no > custody/STATUS.txt
           test ! -s custody/STATUS.txt
-          tar -tzf custody/NOMOS-main.tar.gz | head -n 2
+          tar -tzf custody/NOMOS-main.tar.gz > custody/ARCHIVE_CONTENTS.txt
       - name: Upload reproducible recovery material
         uses: actions/upload-artifact@v4
         with:
