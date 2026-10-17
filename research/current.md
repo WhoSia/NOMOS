@@ -1,5 +1,7 @@
 # NOMOS — Current Research Head (2026-10-17)
 
+**P0-R13 source correction (2026-10-18):** CFPB 2024 *Fair Credit Reporting; Background Screening* advisory formally withdrawn May 12, 2025. Earlier references as current policy are superseded; [authority correction](../docs/source-authority-correction-885.md). FCRA statute and Rhodes must be independently interpreted. P1 promotion HOLD until authority-time table and downstream evidence are tested.
+
 **Current formal head: NOMOS-0.885 P0 OPEN.** [Primary Notion](https://app.notion.com/p/3fcef561cf9281579127e9084ecbc6b9) · [GitHub research spec](../spec/purpose-bound-record-afterlives-885.md). 0.884 P1 and earlier unfinished questions are still OPEN. Historical records can persist while particular uses become restricted. Track receiving institution's actual decision separately from record correction. Initial P0 is an inherited source-grounded question, not certified new law. Harvest audit coverage is partial. Main only, CI+source custody required.
 
 ---
