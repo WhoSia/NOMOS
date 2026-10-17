@@ -1,3 +1,9 @@
+# NOMOS — Current Research Head (2026-10-17)
+
+**Current formal head: NOMOS-0.882 P0 OPEN.** Approved title: *Epistemic Nonconformity & the Limits of Person-Judgment Authority: Situated Refusal, Normative Translation, Interpretive Essentialization, Evidentiary Disagreement & the Primitive Question of When Judging a Belief Becomes Judging a Person*. Primary [Notion 0.882](https://app.notion.com/p/3fcef561cf9281f5b164d05ef2f50771). This dated head supersedes earlier current-head labels without erasing their contents. The 71-page original is an interpretive historical source, not empirical normative-field physics. 0.880 P3 and 0.881 P1 remain unverified separate obligations. Code retirement: HOLD until archive-to-Drive bytes and checksum are verified; no bot commits.
+
+---
+
 # NOMOS — Current Research Head (2026-10-13)
 
 **Current formal mainline: NOMOS-0.881 P1-R2 OPEN.** [User-approved original Notion research canonical](https://app.notion.com/p/3f7ef561cf9281e99c70ffa061b898c3) · [GitHub source-faithful 0.881 status mirror](../spec/institutional-closure-881.md) · [README](../README.md). 0.881 asks how an institution controlling who can become a claimant and who is observed may warrant narrow procedural finality, actual person-level consequence and later reuse of a person-predicate. The original Notion P0 source reports 5/5 synthetic tests and P1-R2 reports 9 source-level synthetic tests; there has been **no independently source-verified 0.881 executable import or GitHub-native Actions pass** in this update. P2 external cross-ecology work is a proposal; actual claimant remediation/legal finality/causal personal results remain HOLD.
