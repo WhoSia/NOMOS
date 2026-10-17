@@ -1,0 +1,15 @@
+# NOMOS-0.883 P0-R3 — Representation, Voice, and Legal Precedence
+
+Source-bound note (2026-10-17). Primary canonical: https://app.notion.com/p/3fcef561cf9281dd887dcd583c7538
+
+McCoy v. Louisiana, 584 U.S. 414 (2018): defense counsel's strategic preference could not override a client's express insistence on the fundamental objective of asserting innocence. US Supreme Court opinion: https://www.law.cornell.edu/supremecourt/text/16-8255
+
+Florida v. Nixon, 543 U.S. 175 (2004): after counsel repeatedly discussed a strategy, the client's nonresponse did not itself trigger a categorical rule of ineffective assistance. Opinion: https://www.law.cornell.edu/supremecourt/text/543/175
+
+ABA Model Rule 1.2 distinguishes client objectives from lawyer decisions concerning means; the Model Rule is a professional template, not automatically the law of every jurisdiction: https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_2_scope_of_representation_allocation_of_authority_between_client_lawyer/
+
+Countermodel A: lawful advocacy with bounded evidence. B: explicit client objection to a reserved objective versus counsel's tactical preference. C: informed but nonresponsive client where consultation and strategy must not be equated with express opposition. D: procedurally authorized advocate making an unsupported person-wide character claim; legal representation and evidentiary person-inference separate. E: victim or absent affected person's distinct interests must not disappear behind defendant-centric narrative.
+
+Precedence: NOMOS 0.246 third-party authority; 0.261 correction burden; 0.050–0.055 person-target vs censure expansion; 0.161 genuine reason-work; 0.867 affective and victim visibility; 0.882 symmetric whole-person portrayals. No new theorem or across-jurisdiction conclusion.
+
+OPEN: A documentary real-world case of person-character portrayal being adopted, formally disputed and causing measurable downstream person-level harm has not been independently verified; McCoy proves a specific US defendant-autonomy limit but not that fuller new NOMOS hypothesis. No new GitHub branch. No historical executable deletions.
