@@ -17,3 +17,7 @@ The 0.885 P0-R5 exact-source artifact corresponding to baseline commit 3cb6a5aaa
 
 ## Next elimination work
 Build a full static+runtime reference manifest across all text blobs; identify a concrete *unreferenced, reproducibly redundant* path, prove replacement or non-use, attach per-file hash and Drive custody proof, then request the actual deletion as part of main-only transaction. Until then retain functional code, historic negative witnesses, and source provenance.
+
+
+## P0-R7 — Stronger actual-reference sample
+At current main tree d8dabeb34fc37330e0fae0a80286a155369556e6, the recursive tree enumerates 23 Node `tools/*.mjs` sources and 47 test files. Each Node filename has a correspondingly named versioned test in the tree; checked exact imports for `adjudicationBoundary870`, `dissent869` and `crossEcologyFollowup880`. Thus absence of a direct path literal in `.github/workflows/ci.yml` is NOT proof of a Node tool being unused: its test imports that path. Conversely having a matching test filename alone does NOT prove that the CI invokes the test. The existing CI explicitly executes only some Node tests; a complete per-file import and runtime execution audit remains OPEN. **No code deletions justified.** The user asked removal of genuine dead code, not destruction of historical negative witnesses; archive-first rule remains in force.
