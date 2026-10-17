@@ -1,6 +1,6 @@
 # NOMOS — Current Research Head (2026-10-17)
 
-**Current formal head NOMOS-0.884 P0 OPEN.** [Primary Notion](https://app.notion.com/p/3fcef561cf92818fbac3e5089c817573) · [GitHub P0 research spec](../spec/cross-context-testimonial-authority-884.md). Adopt well-established judicial-versus-evidentiary admission doctrine and bound the transfer of earlier counsel statements by source, case context, lawful evidentiary use and renewed contestability. The 0.883 P0-R6, 0.882 P0 work, 0.881 P1 and 0.880 P3 are not closed merely by promotion. Research P0 OPEN; tested real-world consequence and scientific novelty UNVERIFIED. Use main only, preserve source snapshots after writes.
+**Current formal head NOMOS-0.884 P1 OPEN.** [Primary Notion](https://app.notion.com/p/3fcef561cf92818fbac3e5089c817573) · [GitHub P0 research spec](../spec/cross-context-testimonial-authority-884.md). Adopt well-established judicial-versus-evidentiary admission doctrine and bound the transfer of earlier counsel statements by source, case context, lawful evidentiary use and renewed contestability. The 0.883 P0-R6, 0.882 P0 work, 0.881 P1 and 0.880 P3 are not closed merely by promotion. P0-R5 bounded research complete, P1 OPEN; tested real-world consequence and scientific novelty UNVERIFIED. Use main only, preserve source snapshots after writes.
 
 ---
 
