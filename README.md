@@ -1,6 +1,8 @@
 # NOMOS
 
-**CURRENT FORMAL RESEARCH HEAD — NOMOS-0.885 P0 OPEN (2026-10-17)** · [Primary Notion](https://app.notion.com/p/3fcef561cf9281579127e9084ecbc6b9) · [P0 research spec](spec/purpose-bound-record-afterlives-885.md). Previous 0.884 P1 and earlier unfinished obligations remain OPEN. Record retention, lawful disclosure, authorized present use, descendant correction and actual outcomes are separate. Harvest audit is partial; source-matched claim-level evidence required. No novelty certification.
+**P1 promotion — 2026-10-18:** P0 admission gate passed; independent downstream effects remain *P1 research and closure requirements*, not prerequisites for beginning P1. The withdrawn 2024 CFPB advisory is not current authority. [P1 spec]( spec/purpose-bound-record-afterlives-885.md ). P1-R1 open; predecessors' incomplete obligations remain open.
+
+**CURRENT FORMAL RESEARCH HEAD — NOMOS-0.885 P1 OPEN (2026-10-17)** · [Primary Notion](https://app.notion.com/p/3fcef561cf9281579127e9084ecbc6b9) · [P0 research spec](spec/purpose-bound-record-afterlives-885.md). Previous 0.884 P1 and earlier unfinished obligations remain OPEN. Record retention, lawful disclosure, authorized present use, descendant correction and actual outcomes are separate. Harvest audit is partial; source-matched claim-level evidence required. No novelty certification.
 
 **P0-R6 / retirement audit (2026-10-17):** [Rhodes pre-report accuracy vs dispute-scoped reinvestigation](spec/purpose-bound-record-afterlives-885.md). [Main-only retirement audit](docs/code-retirement-885.md): zero code deletions because the inspected Python CLI, Node witnesses, and fixtures remain referenced; full Drive provenance and dependency proof are required before deletion. Historical versions are preserved, no branch created.
 
