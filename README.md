@@ -2,7 +2,7 @@
 
 **CURRENT FORMAL RESEARCH HEAD — NOMOS-0.885 P0 OPEN (2026-10-17)** · [Primary Notion](https://app.notion.com/p/3fcef561cf9281579127e9084ecbc6b9) · [P0 research spec](spec/purpose-bound-record-afterlives-885.md). Previous 0.884 P1 and earlier unfinished obligations remain OPEN. Record retention, lawful disclosure, authorized present use, descendant correction and actual outcomes are separate. Harvest audit is partial; source-matched claim-level evidence required. No novelty certification.
 
-**CURRENT FORMAL RESEARCH HEAD — NOMOS-0.884 P1 OPEN (2026-10-17)** · [Primary Notion](https://app.notion.com/p/3fcef561cf92818fbac3e5089c817573) · [P0 spec](spec/cross-context-testimonial-authority-884.md) · [Genealogy](docs/genealogy.md). Previous 0.883 and 0.880–0.882 obligations remain OPEN; numbering is not closure.
+**PREDECESSOR HEAD (HISTORICAL) — NOMOS-0.884 P1 OPEN (2026-10-17)** · [Primary Notion](https://app.notion.com/p/3fcef561cf92818fbac3e5089c817573) · [P0 spec](spec/cross-context-testimonial-authority-884.md) · [Genealogy](docs/genealogy.md). Previous 0.883 and 0.880–0.882 obligations remain OPEN; numbering is not closure.
 
 **0.884 primitive:** Existing law permits some case-bounded use of earlier representative testimony; the provenance, permissible receiving-context inference and opportunity to contest must be checked before any broader institutional attribution. Use proven doctrine with citations, not compulsory novelty. P0-R5 bounded synthesis complete; P1 OPEN for claim-relative receiving-context testing; real-world effects unverified.
 
