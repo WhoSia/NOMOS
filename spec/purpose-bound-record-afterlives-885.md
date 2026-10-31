@@ -174,3 +174,6 @@ CFPB official tenant screening resource identifies dispute and correction rights
 
 ### P1-R6.9 — Counterexample: correction followed by reappearance
 CFPB 2022 consumer snapshot records complaint narratives where contested rental-screening information reappeared following a purported correction: https://files.consumerfinance.gov/f/documents/cfpb_consumer-snapshot-tenant-background-check_2022-11.pdf . Treat these as reported complaint accounts, not adjudicated agency misconduct or verified per-recipient outcome. The existence of a reported reappearance challenges correction-as-permanent-finality, but does not prove a completed 1681i(d) notification.
+
+### P1-R6.10 — Decision and P2 gate
+Proof categories: E0 statutory rule; E1 consumer request/designation; E2 CRA dispatch; E3 named recipient confirmed receipt; E4 recipient's reliance or new evaluation; E5 externally verified outcome. Evidence for E0 and public disputes exists; a connected E1-E5 trace in a specific case is still not found. P2 promotion remains HOLD; inherited NOMOS 0.822/0.825/0.850/0.865 already require trace and outcome. **Ten individually scoped commits form P1-R6**; do not claim CI or archival success until exact latest HEAD is checked. No branch and no code deletion.
