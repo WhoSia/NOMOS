@@ -198,3 +198,6 @@ A named recipient's receipt, its revised record, a review event and an altered e
 
 ## P1-R7.7 — Current CFPB consumer guidance
 Official CFPB credit-error dispute guide reviewed September 2, 2026: https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/ . It explains the separate agency/furnisher dispute channels, and explicitly recognizes a furnisher may conclude disputed information is accurate. Consumer guidance does not replace statutory text or prove a particular recipient notification.
+
+## P1-R7.8 — Adversarial negative result
+New public search for actual subsection (d) notification-to-identified-recipient followed by documented changed decision did not provide a sufficiently sourced complete record. The absence in this scoped search is NOT a finding no such cases exist. Do not invent an E1-E5 complete case to satisfy promotion incentives.
