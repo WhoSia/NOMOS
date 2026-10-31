@@ -231,3 +231,7 @@ A regulator's examiner observation and a complaint's unverified assertion carry 
 
 ### P1-R8.6 — Distinct institutional edges
 Furnisher-to-CRA correction cannot establish CRA-to-previous-recipient notification. The latter requires an independent event trace under applicable conditions.
+
+
+### P1-R8.7 — Pinpoint provenance requirement
+Each claim needs a passage-level locator and a stated inference boundary. A report title alone is insufficient to establish a named consumer's downstream experience.
