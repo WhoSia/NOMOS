@@ -275,3 +275,7 @@ The Fall 2022 CFPB report says auto furnishers were conducting retrospective loo
 
 ### P1-R9.7 — Recipient outcome positive control
 A notified decision-maker may legitimately retain a prior decision after a fresh review for unrelated lawful reasons. Evidence of an unchanged outcome does not by itself prove no consideration.
+
+
+### P1-R9.8 — Recipient outcome negative control
+A corrected upstream tradeline can coexist with a historical recipient using a stale report. Without specific notice, receipt and decision records, neither a violation nor successful correction is proved.
