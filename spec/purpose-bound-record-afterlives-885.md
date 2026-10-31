@@ -259,3 +259,7 @@ Under 1681i(d), specifically designated prior recipients qualify for the statuto
 
 ### P1-R9.3 — Supervisory completion-state correction (2026-10-31)
 CFPB Supervisory Highlights Issue 28 (November 2022), section 2.2.2 reports that affected consumers' inaccurate furnished accounts were corrected. Section 2.2.3 separately records automation implemented for outdated investigation status, while auto-loan furnishers were conducting lookbacks to identify and furnish retroactive deferment corrections. These are distinct observed versus ongoing remediation statements; no completed entire-cohort correction is certified. https://files.consumerfinance.gov/f/documents/cfpb_supervisory-highlights_issue-28_2022-11.pdf . No identified historical report recipient's receipt or decision is evidenced. P2 HOLD.
+
+
+### P1-R9.4 — Evidence status distinction
+A supervisory finding, a documented corrective act, an ongoing lookback, and an independently confirmed affected-account result have different epistemic statuses. Record them as typed statements rather than a remediation-success scalar.
