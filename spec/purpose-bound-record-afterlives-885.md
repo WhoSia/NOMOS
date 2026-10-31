@@ -162,3 +162,6 @@ Under 1681i(c), future reports carrying a disputed item must note the qualifying
 
 ### P1-R6.5 — Reinsertion reverses certainty
 Section 1681i(a)(5)(B) restricts reinserting previously deleted information, requires certification and consumer notice. A one-time deletion certificate is not a permanent absence guarantee; look for future report and reinsert state before finality claims.
+
+### P1-R6.6 — Consumer notice is not recipient notice
+Section 1681i(a)(6) specifies a notice to the consumer of completed reinvestigation; it includes information about asking for notification to designated prior users. Receipt by the consumer cannot be counted as receipt by a prior employer or landlord.
