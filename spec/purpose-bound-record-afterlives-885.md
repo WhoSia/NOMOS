@@ -183,3 +183,6 @@ Official source: https://uscode.house.gov/us/usc/119-124/t15/s1681i/ . Section (
 
 ## P1-R7.2 — Reinvestigation outcome dependency
 Section (d) operates following deletion for inaccuracy or unverifiability or qualifying notation of disputed information. A complaint or consumer request by itself does not prove a qualifying correction/notation; the prerequisite event must be documented.
+
+## P1-R7.3 — Disposition of request
+For (d) require identified consumer request and named recipient. The name of an entity on an old report is not evidence of consumer designation; public litigation complaints often omit the actual notice instruction and metadata.
