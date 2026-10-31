@@ -211,3 +211,7 @@ P1-R7 completed with ten independently reviewable statutory and evidentiary upda
 
 ### P1-R8.1 — Supervisory evidence audit
 CFPB Supervisory Highlights Issue 24 (2021) describes auto-loan furnishing failures after internal cancellation. A regulator-reported discrepancy is evidence of a failed upstream update, not proof of prior-recipient correction notice.
+
+
+### P1-R8.2 — Reporting state mismatch
+An internally cancelled application and an externally reported active account are different recorded states. Verify both states before treating a claimed mismatch as established.
