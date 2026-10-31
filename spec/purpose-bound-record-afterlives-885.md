@@ -219,3 +219,7 @@ An internally cancelled application and an externally reported active account ar
 
 ### P1-R8.3 — Evidence boundary
 2022 CFPB supervisory reporting describes corrective furnishing after identified defects. This does not prove notice to previously designated consumers' recipients.
+
+
+### P1-R8.4 — Status staleness
+A status that remains in an investigation state after investigation completion is separately auditable from the underlying account merits.
