@@ -251,3 +251,7 @@ Supervisory examples establish failures and some corrective responses at the fur
 
 ### P1-R9.1 — Statutory trigger matrix
 The current 15 USC 1681i distinguishes (a)(5)(A)(ii) prompt furnisher notification following modification/deletion, (c) prospective reports carrying dispute statements, and (d) consumer-requested notice to specifically designated historical recipients. These are nonidentical legal routes. Primary text https://uscode.house.gov/us/usc/119-124/t15/s1681i/ . No event-level compliance inferred.
+
+
+### P1-R9.2 — Recipient window and identity
+Under 1681i(d), specifically designated prior recipients qualify for the statutory notification route when the relevant report containing the information was received within two years for employment purposes or six months for other purposes. The recipient, purpose, report content, date and consumer designation must be evidenced individually. Statutory eligibility is not documented actual dispatch.
