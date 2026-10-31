@@ -168,3 +168,6 @@ Section 1681i(a)(6) specifies a notice to the consumer of completed reinvestigat
 
 ### P1-R6.7 — CFPB present-tense guidance
 CFPB's consumer guide to disputing errors separates furnishing-company updates to reporting companies from report corrections and future reports. https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/ . This is public guidance, not a named recipient dispatch ledger or judgment of changed tenancy. Do not reimport withdrawn 2024 background-screening advisory as current authority.
+
+### P1-R6.8 — Tenant-screening outcome gap
+CFPB official tenant screening resource identifies dispute and correction rights when a rental application was denied: https://www.consumerfinance.gov/ask-cfpb/what-should-i-do-if-my-rental-application-is-denied-because-of-a-tenant-screening-report-en-2105/ . Generic consumer instructions do not establish any identified landlord reversed a denial.
