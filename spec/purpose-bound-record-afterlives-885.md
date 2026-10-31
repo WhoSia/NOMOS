@@ -177,3 +177,6 @@ CFPB 2022 consumer snapshot records complaint narratives where contested rental-
 
 ### P1-R6.10 — Decision and P2 gate
 Proof categories: E0 statutory rule; E1 consumer request/designation; E2 CRA dispatch; E3 named recipient confirmed receipt; E4 recipient's reliance or new evaluation; E5 externally verified outcome. Evidence for E0 and public disputes exists; a connected E1-E5 trace in a specific case is still not found. P2 promotion remains HOLD; inherited NOMOS 0.822/0.825/0.850/0.865 already require trace and outcome. **Ten individually scoped commits form P1-R6**; do not claim CI or archival success until exact latest HEAD is checked. No branch and no code deletion.
+
+## P1-R7.1 — Statutory edge inventory (2026-10-31)
+Official source: https://uscode.house.gov/us/usc/119-124/t15/s1681i/ . Section (a)(2) concerns CRA notice of dispute to furnisher; (a)(5)(A)(ii) notice of deletion/modification to furnisher; (a)(6) notice of completed reinvestigation to consumer. These are distinct edges, neither proving a notification under subsection (d) to a prior report recipient.
