@@ -247,3 +247,7 @@ NOMOS 0.822 and 0.850 previously analyzed descendant records and receiving insti
 
 ### P1-R8.10 — Promotion assessment
 Supervisory examples establish failures and some corrective responses at the furnisher-to-reporting-agency boundary. They do not establish a named prior recipient's confirmed receipt, reconsideration and outcome. Maintain NOMOS-0.885 P1 and P2 HOLD pending a verified multi-institution event trail. No code deletion or new branch.
+
+
+### P1-R9.1 — Statutory trigger matrix
+The current 15 USC 1681i distinguishes (a)(5)(A)(ii) prompt furnisher notification following modification/deletion, (c) prospective reports carrying dispute statements, and (d) consumer-requested notice to specifically designated historical recipients. These are nonidentical legal routes. Primary text https://uscode.house.gov/us/usc/119-124/t15/s1681i/ . No event-level compliance inferred.
