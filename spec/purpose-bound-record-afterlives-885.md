@@ -204,3 +204,6 @@ New public search for actual subsection (d) notification-to-identified-recipient
 
 ## P1-R7.9 — Prior NOMOS and Harvest bounds
 Genealogy: NOMOS 0.229 dependency correction, 0.261 substantive contestation, 0.822 descendant graph, 0.825 external notifications, 0.850 receiving institution operation, 0.865 independent effects. Harvest provenance audit requires claim-level source-to-locator fit; citing a source title is not a factual E2 dispatch trace.
+
+## P1-R7.10 — Stage gate and research decision
+P1-R7 completed with ten independently reviewable statutory and evidentiary updates. E0 legal rule verified; E1 consumer request, E2 dispatch, E3 recipient receipt, E4 re-evaluation, E5 outcome not jointly established in an authenticated case. P2 PROMOTION HOLD. Next task: look for agency investigative exhibits, deidentified enforcement narratives with actual transmission and recipient responses, rather than merely more court dicta. Do not delete executable code absent independent proof; main only.
