@@ -165,3 +165,6 @@ Section 1681i(a)(5)(B) restricts reinserting previously deleted information, req
 
 ### P1-R6.6 — Consumer notice is not recipient notice
 Section 1681i(a)(6) specifies a notice to the consumer of completed reinvestigation; it includes information about asking for notification to designated prior users. Receipt by the consumer cannot be counted as receipt by a prior employer or landlord.
+
+### P1-R6.7 — CFPB present-tense guidance
+CFPB's consumer guide to disputing errors separates furnishing-company updates to reporting companies from report corrections and future reports. https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/ . This is public guidance, not a named recipient dispatch ledger or judgment of changed tenancy. Do not reimport withdrawn 2024 background-screening advisory as current authority.
