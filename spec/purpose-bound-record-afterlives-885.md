@@ -180,3 +180,6 @@ Proof categories: E0 statutory rule; E1 consumer request/designation; E2 CRA dis
 
 ## P1-R7.1 — Statutory edge inventory (2026-10-31)
 Official source: https://uscode.house.gov/us/usc/119-124/t15/s1681i/ . Section (a)(2) concerns CRA notice of dispute to furnisher; (a)(5)(A)(ii) notice of deletion/modification to furnisher; (a)(6) notice of completed reinvestigation to consumer. These are distinct edges, neither proving a notification under subsection (d) to a prior report recipient.
+
+## P1-R7.2 — Reinvestigation outcome dependency
+Section (d) operates following deletion for inaccuracy or unverifiability or qualifying notation of disputed information. A complaint or consumer request by itself does not prove a qualifying correction/notation; the prerequisite event must be documented.
