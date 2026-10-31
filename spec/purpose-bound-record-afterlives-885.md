@@ -192,3 +192,6 @@ Compute eligibility by prior recipient report date relative to subsection (d) no
 
 ## P1-R7.5 — Proof of dispatch versus receipt
 CRA log entry, outbound notice copy and verified deliverability differ from an authenticated receipt acknowledgment. Do not infer a landlord or employer received a correction merely from the text of §1681i(d).
+
+## P1-R7.6 — Reconsideration and decision
+A named recipient's receipt, its revised record, a review event and an altered employment or housing decision are four different evidentiary facts. A refusal after correction could be authorized for reasons independent of the original record; seek purpose-specific decision records.
