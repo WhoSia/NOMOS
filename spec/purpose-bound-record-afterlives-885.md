@@ -227,3 +227,7 @@ A status that remains in an investigation state after investigation completion i
 
 ### P1-R8.5 — Source class distinction
 A regulator's examiner observation and a complaint's unverified assertion carry distinct evidential status. Identify the precise source class.
+
+
+### P1-R8.6 — Distinct institutional edges
+Furnisher-to-CRA correction cannot establish CRA-to-previous-recipient notification. The latter requires an independent event trace under applicable conditions.
