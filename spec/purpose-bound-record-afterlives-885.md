@@ -243,3 +243,7 @@ The fact that credit reporting information was corrected following examination d
 
 ### P1-R8.9 — Prior-art check
 NOMOS 0.822 and 0.850 previously analyzed descendant records and receiving institutions. P1-R8 applies rather than reinvents these ideas.
+
+
+### P1-R8.10 — Promotion assessment
+Supervisory examples establish failures and some corrective responses at the furnisher-to-reporting-agency boundary. They do not establish a named prior recipient's confirmed receipt, reconsideration and outcome. Maintain NOMOS-0.885 P1 and P2 HOLD pending a verified multi-institution event trail. No code deletion or new branch.
