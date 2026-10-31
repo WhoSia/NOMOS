@@ -215,3 +215,7 @@ CFPB Supervisory Highlights Issue 24 (2021) describes auto-loan furnishing failu
 
 ### P1-R8.2 — Reporting state mismatch
 An internally cancelled application and an externally reported active account are different recorded states. Verify both states before treating a claimed mismatch as established.
+
+
+### P1-R8.3 — Evidence boundary
+2022 CFPB supervisory reporting describes corrective furnishing after identified defects. This does not prove notice to previously designated consumers' recipients.
