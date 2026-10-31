@@ -223,3 +223,7 @@ An internally cancelled application and an externally reported active account ar
 
 ### P1-R8.4 — Status staleness
 A status that remains in an investigation state after investigation completion is separately auditable from the underlying account merits.
+
+
+### P1-R8.5 — Source class distinction
+A regulator's examiner observation and a complaint's unverified assertion carry distinct evidential status. Identify the precise source class.
