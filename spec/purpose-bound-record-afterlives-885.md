@@ -156,3 +156,6 @@ Section 1681i(a)(5)(A)(ii) separately provides prompt notice to the furnisher af
 
 ### P1-R6.3 — Prior-recipient eligibility
 Section 1681i(d) is request-gated and designation-gated; employment reports in the preceding two years, other purposes in the preceding six months. Do not substitute the timing of a new consumer report or the rights in section (a)(6) for proof of actual old-recipient dispatch.
+
+### P1-R6.4 — Subsequent future reports
+Under 1681i(c), future reports carrying a disputed item must note the qualifying consumer dispute. This is a *future-report annotation*, not evidence the agency notified a past recipient. Section 1681i(d) is a separate previous-recipient mechanism.
