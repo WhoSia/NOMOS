@@ -171,3 +171,6 @@ CFPB's consumer guide to disputing errors separates furnishing-company updates t
 
 ### P1-R6.8 — Tenant-screening outcome gap
 CFPB official tenant screening resource identifies dispute and correction rights when a rental application was denied: https://www.consumerfinance.gov/ask-cfpb/what-should-i-do-if-my-rental-application-is-denied-because-of-a-tenant-screening-report-en-2105/ . Generic consumer instructions do not establish any identified landlord reversed a denial.
+
+### P1-R6.9 — Counterexample: correction followed by reappearance
+CFPB 2022 consumer snapshot records complaint narratives where contested rental-screening information reappeared following a purported correction: https://files.consumerfinance.gov/f/documents/cfpb_consumer-snapshot-tenant-background-check_2022-11.pdf . Treat these as reported complaint accounts, not adjudicated agency misconduct or verified per-recipient outcome. The existence of a reported reappearance challenges correction-as-permanent-finality, but does not prove a completed 1681i(d) notification.
