@@ -271,3 +271,7 @@ A furnisher's internal account, a CRA tradeline, a historically transmitted repo
 
 ### P1-R9.6 — No premature completion
 The Fall 2022 CFPB report says auto furnishers were conducting retrospective lookbacks to identify and furnish corrections. Do not rewrite future or ongoing remediation into a completed verified cohort fix.
+
+
+### P1-R9.7 — Recipient outcome positive control
+A notified decision-maker may legitimately retain a prior decision after a fresh review for unrelated lawful reasons. Evidence of an unchanged outcome does not by itself prove no consideration.
