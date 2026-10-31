@@ -283,3 +283,7 @@ A corrected upstream tradeline can coexist with a historical recipient using a s
 
 ### P1-R9.9 — Inherited research comparison
 NOMOS 0.822 already identifies descendant-record coverage, 0.850 receiving operations and 0.865 independently observed outcomes. The new question is whether externally documented remediation reports distinguish implementation state from same-unit verified correction, not whether those earlier ideas were first invented now.
+
+
+### P1-R9.10 — Promotion decision
+P1-R9 identifies a promising verification-status question but not a novel law or a linked E1-E5 prior-recipient case. P2 remains HOLD pending a concrete record-level counterexample, rival prior-art review and a prospectively testable added result. No executable code retired.
