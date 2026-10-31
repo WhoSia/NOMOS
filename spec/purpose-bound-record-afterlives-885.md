@@ -263,3 +263,7 @@ CFPB Supervisory Highlights Issue 28 (November 2022), section 2.2.2 reports that
 
 ### P1-R9.4 — Evidence status distinction
 A supervisory finding, a documented corrective act, an ongoing lookback, and an independently confirmed affected-account result have different epistemic statuses. Record them as typed statements rather than a remediation-success scalar.
+
+
+### P1-R9.5 — Same-unit identity requirement
+A furnisher's internal account, a CRA tradeline, a historically transmitted report and a recipient decision require stable event-level linkage. Supervisory reports anonymize institutions and generally do not supply this linkage.
