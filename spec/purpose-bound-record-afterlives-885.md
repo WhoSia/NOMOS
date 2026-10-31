@@ -150,3 +150,6 @@ Four separate predicates: (A) statutory entitlement, (B) qualifying user designa
 
 ### P1-R6.1 — Statute baseline
 Read currently indexed 15 USC 1681i primary text: https://uscode.house.gov/us/usc/119-124/t15/s1681i/ . Consumer-report accuracy and statutory procedure are distinct from the empirical claim that a later decision changed. The legal text does not prove an individualized recipient received anything.
+
+### P1-R6.2 — Furnisher correction route
+Section 1681i(a)(5)(A)(ii) separately provides prompt notice to the furnisher after agency modifies or deletes inaccurate/unverifiable information. This notice is not the prior-recipient notice in section (d); conflation overstates dissemination. Statutory source is the same House revision above.
