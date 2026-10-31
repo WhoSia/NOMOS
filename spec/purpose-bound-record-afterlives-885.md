@@ -159,3 +159,6 @@ Section 1681i(d) is request-gated and designation-gated; employment reports in t
 
 ### P1-R6.4 — Subsequent future reports
 Under 1681i(c), future reports carrying a disputed item must note the qualifying consumer dispute. This is a *future-report annotation*, not evidence the agency notified a past recipient. Section 1681i(d) is a separate previous-recipient mechanism.
+
+### P1-R6.5 — Reinsertion reverses certainty
+Section 1681i(a)(5)(B) restricts reinserting previously deleted information, requires certification and consumer notice. A one-time deletion certificate is not a permanent absence guarantee; look for future report and reinsert state before finality claims.
