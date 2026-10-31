@@ -189,3 +189,6 @@ For (d) require identified consumer request and named recipient. The name of an 
 
 ## P1-R7.4 — Temporal eligibility
 Compute eligibility by prior recipient report date relative to subsection (d) notification request: employment two years, all other purposes six months. Record purpose and both dates; otherwise do not treat a past recipient as statutorily eligible.
+
+## P1-R7.5 — Proof of dispatch versus receipt
+CRA log entry, outbound notice copy and verified deliverability differ from an authenticated receipt acknowledgment. Do not infer a landlord or employer received a correction merely from the text of §1681i(d).
