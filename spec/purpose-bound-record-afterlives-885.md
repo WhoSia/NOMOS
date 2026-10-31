@@ -235,3 +235,7 @@ Furnisher-to-CRA correction cannot establish CRA-to-previous-recipient notificat
 
 ### P1-R8.7 — Pinpoint provenance requirement
 Each claim needs a passage-level locator and a stated inference boundary. A report title alone is insufficient to establish a named consumer's downstream experience.
+
+
+### P1-R8.8 — Outcome boundary
+The fact that credit reporting information was corrected following examination does not demonstrate a changed decision by a lender, landlord or employer.
