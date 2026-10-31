@@ -279,3 +279,7 @@ A notified decision-maker may legitimately retain a prior decision after a fresh
 
 ### P1-R9.8 — Recipient outcome negative control
 A corrected upstream tradeline can coexist with a historical recipient using a stale report. Without specific notice, receipt and decision records, neither a violation nor successful correction is proved.
+
+
+### P1-R9.9 — Inherited research comparison
+NOMOS 0.822 already identifies descendant-record coverage, 0.850 receiving operations and 0.865 independently observed outcomes. The new question is whether externally documented remediation reports distinguish implementation state from same-unit verified correction, not whether those earlier ideas were first invented now.
