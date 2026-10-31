@@ -195,3 +195,6 @@ CRA log entry, outbound notice copy and verified deliverability differ from an a
 
 ## P1-R7.6 — Reconsideration and decision
 A named recipient's receipt, its revised record, a review event and an altered employment or housing decision are four different evidentiary facts. A refusal after correction could be authorized for reasons independent of the original record; seek purpose-specific decision records.
+
+## P1-R7.7 — Current CFPB consumer guidance
+Official CFPB credit-error dispute guide reviewed September 2, 2026: https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/ . It explains the separate agency/furnisher dispute channels, and explicitly recognizes a furnisher may conclude disputed information is accurate. Consumer guidance does not replace statutory text or prove a particular recipient notification.
