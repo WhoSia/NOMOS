@@ -186,3 +186,6 @@ Section (d) operates following deletion for inaccuracy or unverifiability or qua
 
 ## P1-R7.3 — Disposition of request
 For (d) require identified consumer request and named recipient. The name of an entity on an old report is not evidence of consumer designation; public litigation complaints often omit the actual notice instruction and metadata.
+
+## P1-R7.4 — Temporal eligibility
+Compute eligibility by prior recipient report date relative to subsection (d) notification request: employment two years, all other purposes six months. Record purpose and both dates; otherwise do not treat a past recipient as statutorily eligible.
