@@ -239,3 +239,7 @@ Each claim needs a passage-level locator and a stated inference boundary. A repo
 
 ### P1-R8.8 — Outcome boundary
 The fact that credit reporting information was corrected following examination does not demonstrate a changed decision by a lender, landlord or employer.
+
+
+### P1-R8.9 — Prior-art check
+NOMOS 0.822 and 0.850 previously analyzed descendant records and receiving institutions. P1-R8 applies rather than reinvents these ideas.
