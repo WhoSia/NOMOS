@@ -201,3 +201,6 @@ Official CFPB credit-error dispute guide reviewed September 2, 2026: https://www
 
 ## P1-R7.8 — Adversarial negative result
 New public search for actual subsection (d) notification-to-identified-recipient followed by documented changed decision did not provide a sufficiently sourced complete record. The absence in this scoped search is NOT a finding no such cases exist. Do not invent an E1-E5 complete case to satisfy promotion incentives.
+
+## P1-R7.9 — Prior NOMOS and Harvest bounds
+Genealogy: NOMOS 0.229 dependency correction, 0.261 substantive contestation, 0.822 descendant graph, 0.825 external notifications, 0.850 receiving institution operation, 0.865 independent effects. Harvest provenance audit requires claim-level source-to-locator fit; citing a source title is not a factual E2 dispatch trace.
