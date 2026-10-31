@@ -255,3 +255,7 @@ The current 15 USC 1681i distinguishes (a)(5)(A)(ii) prompt furnisher notificati
 
 ### P1-R9.2 — Recipient window and identity
 Under 1681i(d), specifically designated prior recipients qualify for the statutory notification route when the relevant report containing the information was received within two years for employment purposes or six months for other purposes. The recipient, purpose, report content, date and consumer designation must be evidenced individually. Statutory eligibility is not documented actual dispatch.
+
+
+### P1-R9.3 — Supervisory completion-state correction (2026-10-31)
+CFPB Supervisory Highlights Issue 28 (November 2022), section 2.2.2 reports that affected consumers' inaccurate furnished accounts were corrected. Section 2.2.3 separately records automation implemented for outdated investigation status, while auto-loan furnishers were conducting lookbacks to identify and furnish retroactive deferment corrections. These are distinct observed versus ongoing remediation statements; no completed entire-cohort correction is certified. https://files.consumerfinance.gov/f/documents/cfpb_supervisory-highlights_issue-28_2022-11.pdf . No identified historical report recipient's receipt or decision is evidenced. P2 HOLD.
