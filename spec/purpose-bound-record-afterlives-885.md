@@ -207,3 +207,7 @@ Genealogy: NOMOS 0.229 dependency correction, 0.261 substantive contestation, 0.
 
 ## P1-R7.10 — Stage gate and research decision
 P1-R7 completed with ten independently reviewable statutory and evidentiary updates. E0 legal rule verified; E1 consumer request, E2 dispatch, E3 recipient receipt, E4 re-evaluation, E5 outcome not jointly established in an authenticated case. P2 PROMOTION HOLD. Next task: look for agency investigative exhibits, deidentified enforcement narratives with actual transmission and recipient responses, rather than merely more court dicta. Do not delete executable code absent independent proof; main only.
+
+
+### P1-R8.1 — Supervisory evidence audit
+CFPB Supervisory Highlights Issue 24 (2021) describes auto-loan furnishing failures after internal cancellation. A regulator-reported discrepancy is evidence of a failed upstream update, not proof of prior-recipient correction notice.
