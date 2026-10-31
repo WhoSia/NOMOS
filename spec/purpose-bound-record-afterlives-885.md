@@ -267,3 +267,7 @@ A supervisory finding, a documented corrective act, an ongoing lookback, and an 
 
 ### P1-R9.5 — Same-unit identity requirement
 A furnisher's internal account, a CRA tradeline, a historically transmitted report and a recipient decision require stable event-level linkage. Supervisory reports anonymize institutions and generally do not supply this linkage.
+
+
+### P1-R9.6 — No premature completion
+The Fall 2022 CFPB report says auto furnishers were conducting retrospective lookbacks to identify and furnish corrections. Do not rewrite future or ongoing remediation into a completed verified cohort fix.
