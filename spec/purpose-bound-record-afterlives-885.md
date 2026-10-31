@@ -153,3 +153,6 @@ Read currently indexed 15 USC 1681i primary text: https://uscode.house.gov/us/us
 
 ### P1-R6.2 — Furnisher correction route
 Section 1681i(a)(5)(A)(ii) separately provides prompt notice to the furnisher after agency modifies or deletes inaccurate/unverifiable information. This notice is not the prior-recipient notice in section (d); conflation overstates dissemination. Statutory source is the same House revision above.
+
+### P1-R6.3 — Prior-recipient eligibility
+Section 1681i(d) is request-gated and designation-gated; employment reports in the preceding two years, other purposes in the preceding six months. Do not substitute the timing of a new consumer report or the rights in section (a)(6) for proof of actual old-recipient dispatch.
