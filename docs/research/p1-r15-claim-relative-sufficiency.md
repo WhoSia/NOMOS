@@ -16,3 +16,7 @@ An authenticated, same-case, same-account CRA update registry or named recipient
 
 ### R15.5 — Assertion versus event
 The generated status documentarily_asserted means merely that a human-curated source label matches a target claim. It does not certify legal effect, source validity, occurrence of any event, or case-level causation. Explicitly distinguish signed official acts from respondent self-report and case-specific receipt records.
+
+
+### R15.6 — Claim specific nonmonotonic revision
+A claim may be textually asserted and later defeated by corrected court or agency evidence. Preserve dated legal validity, source version, withdrawn guidance and contrary source as independent fields. The score is not monotone in raw source count; one newer superseding source can change authority.
