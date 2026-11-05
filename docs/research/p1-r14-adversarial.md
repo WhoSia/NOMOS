@@ -16,3 +16,8 @@ R13 official four-case ledger and source rules remain unchanged. This unit is an
 ## All-present-step temporal verification
 Earlier R12 checked only adjacent required steps when both are present, so it could miss request occurring after a later recipient receipt if CRA application were unobserved. R14 checks every pair among present ordered stage labels. This is a *conservative assumed order*, not universal process law; parallel or repeated events can legitimately violate a naive stage ordering. Such cases must enter a richer event model rather than be declared legal violations. Synthetic fixture 'nonadjacent-inversion' exposes the original software gap.
 
+
+### R14.8 — Calendar and multiplicity defects
+## Calendar and duplicate observations
+A regular expression matching YYYY-MM-DD does not validate an actual calendar day. The R14 validator parses the day and round-trips ISO format. Multiple authenticated-looking events for the same stage are marked ambiguous instead of choosing the earliest and silently discarding the rest. This deliberately sacrifices completeness when repeated corrections are legitimate. Future adjudication requires event IDs and operation versions.
+
