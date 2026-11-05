@@ -24,3 +24,7 @@ D. No reported judgment here independently certifies recipient-specific restorat
 
 ## Promotion gate
 Before new theoretical P2 stage, compare with expert legal audit + contextual integrity + purpose-limited provenance access control. Require blinded adjudicated cases with objective source-grounded labels; if benchmark parity, register null and do not assert novelty.
+
+
+### P2-P1.6 — FOIA requester-purpose correction
+DOJ v Reporters Committee (489 U.S. 749, at 771-775) rejects tailoring the FOIA disclosure interest to this particular requester's identity or personal reasons. It focuses on the Act's public interest in government-accountability information. A naive context-aware NOMOS algorithm that denies a rap sheet only because the requester is an employer would reproduce the *wrong rationale*. Contrast the government's compiled record and the public-interest basis rather than invented employment-purpose rules.
