@@ -11,3 +11,8 @@ A naive graph of asserted correction events is insufficient: unless relation ide
 
 ## Sources and continuity
 R13 official four-case ledger and source rules remain unchanged. This unit is an engineering validity exercise; external state of each consumer is unknown. No new P2 theory until external validation beats a strong law-and-documents audit.
+
+### R14.7 — Temporal partial-order defect
+## All-present-step temporal verification
+Earlier R12 checked only adjacent required steps when both are present, so it could miss request occurring after a later recipient receipt if CRA application were unobserved. R14 checks every pair among present ordered stage labels. This is a *conservative assumed order*, not universal process law; parallel or repeated events can legitimately violate a naive stage ordering. Such cases must enter a richer event model rather than be declared legal violations. Synthetic fixture 'nonadjacent-inversion' exposes the original software gap.
+
