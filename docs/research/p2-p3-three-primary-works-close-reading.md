@@ -36,3 +36,7 @@ P2-P4: distinguish assertion legitimacy from simply knowing and transmitting an 
 
 ### P2-P3.6 — Barth inference counterexample
 The crucial novelty correction is Barth 2006 §3.1: knowledge state κ⊆P×P×T and inference rules (T,t). For example address ⇒ postcode, and a message's contents are computation-closed. Therefore saying NOMOS is the first to model derived inferences after data transfer is false. The *open difference* is whether an inferable trait may be institutionalized as an authoritative personal classification, grounded in a distinct law/rule and contestation path.
+
+
+### P2-P3.7 — Temporal future obligations
+Barth §4.3 explicitly distinguishes weak compliance (local action plus future obligations) from strong compliance (some satisfying extension exists). Theorems 3-5 address algorithms and complexities, so NOMOS 'future consequences of notices' cannot be presented as a first temporal compliance formalism. Strong compliance remains a possibility criterion within their model, not verification that actors in practice fulfilled actual obligations.
