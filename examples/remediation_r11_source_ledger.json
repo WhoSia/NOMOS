@@ -1,0 +1,65 @@
+{
+  "schema_version": "r11.1",
+  "sources": [
+    {
+      "id": "toyota-order-2023",
+      "kind": "regulator_consent_order",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_toyota-motor-credit-corporation-consent-order_2023-11.pdf",
+      "locator": "paragraph 6(b)(v), filed 2023-11-20",
+      "claim": "27,507 accounts identified for credit-reporting remediation",
+      "unit": "accounts",
+      "count": 27507,
+      "observes": [
+        "affected_account_frame"
+      ],
+      "does_not_observe": [
+        "CRA_application",
+        "individual_downstream_decision"
+      ]
+    },
+    {
+      "id": "toyota-termination-2025",
+      "kind": "regulator_termination_order",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_toyota-motor-credit-corp_order-terminating-consent-order_2025-05.pdf",
+      "locator": "page 2, filed 2025-05-12",
+      "claim": "consent order terminated and alleged noncompliance waived",
+      "observes": [
+        "legal_order_terminated"
+      ],
+      "does_not_observe": [
+        "all_account_corrected",
+        "person_welfare_restored"
+      ]
+    },
+    {
+      "id": "toyota-faq",
+      "kind": "respondent_administrator_faq",
+      "url": "https://www.tmccremediation.com/faq",
+      "locator": "FAQ 1, 2, 4, 15",
+      "claim": "correction requests submitted; some redress checks mailed and can be reissued",
+      "observes": [
+        "self_reported_CRA_request",
+        "self_reported_check_mailings"
+      ],
+      "does_not_observe": [
+        "CRA_applied_by_account",
+        "checks_cashed_all",
+        "downstream_review"
+      ]
+    },
+    {
+      "id": "synchrony-2025",
+      "kind": "regulator_enforcement_page",
+      "url": "https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank/",
+      "locator": "termination paragraph 2025-05-12",
+      "claim": "CFPB states at least $259m redress fulfilled; termination also invokes executive order policy",
+      "observes": [
+        "regulator_asserted_aggregate_fulfillment",
+        "legal_order_terminated"
+      ],
+      "does_not_observe": [
+        "person_level_downstream_outcome"
+      ]
+    }
+  ]
+}
