@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {auditNotice} from '../tools/remediationAuthorityR16.mjs';
+const data=JSON.parse(readFileSync(new URL('../examples/remediation_r16_conditions.json',import.meta.url),'utf8'));
+const found=Object.fromEntries(data.cases.map(x=>[x.id,auditNotice(x.condition)]));
+assert.equal(found['employment-valid'].trigger,'conditional_trigger_met');
+assert.equal(found['employment-old'].trigger,'not_triggered');
+assert.equal(found['other-valid'].trigger,'conditional_trigger_met');
+assert.equal(found['no-request'].trigger,'not_triggered');
+assert.equal(found['unknown-purpose'].trigger,'unknown');
+assert.equal(found['no-designation'].trigger,'not_triggered');
+assert.equal(found['source-correction-alone'].trigger,'unknown');
+assert.throws(()=>auditNotice(null),/facts object/);
+console.log('R16 synthetic statutory trigger checks passed');
