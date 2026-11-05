@@ -1,0 +1,77 @@
+{
+  "schema": "p2-p2.1",
+  "evaluation_status": "descriptive_benchmark_design_only",
+  "rivals": [
+    {
+      "id": "nissenbaum_2004",
+      "name": "Contextual integrity",
+      "capabilities": [
+        "context",
+        "actor_roles",
+        "appropriateness_norms",
+        "distribution_norms"
+      ],
+      "provenance": "https://digitalcommons.law.uw.edu/wlr/vol79/iss1/10/",
+      "warning": "not a finished legal case classifier"
+    },
+    {
+      "id": "barth_2006",
+      "name": "Formal information-flow norms",
+      "capabilities": [
+        "context",
+        "sender_recipient",
+        "transmission_norms",
+        "temporal_logic"
+      ],
+      "provenance": "https://crypto.stanford.edu/~jcm/papers/barth-datta-mitchell-nissenbaum-2006.pdf",
+      "warning": "normative model not automatically an enacted statute"
+    },
+    {
+      "id": "sultan_2021",
+      "name": "Purpose-limited provenance access control",
+      "capabilities": [
+        "origin_tracking",
+        "purpose_constraint",
+        "derivative_resources",
+        "access_check"
+      ],
+      "provenance": "https://doi.org/10.3390/s21093041",
+      "warning": "access control does not by itself decide individual court claims"
+    },
+    {
+      "id": "prov_o",
+      "name": "W3C PROV-O",
+      "capabilities": [
+        "origin_tracking",
+        "agent",
+        "activity",
+        "generation_use"
+      ],
+      "provenance": "https://www.w3.org/TR/prov-o/",
+      "warning": "provenance ontology alone does not adjudicate lawful use"
+    },
+    {
+      "id": "legal_expert",
+      "name": "Strong claim-specific law audit",
+      "capabilities": [
+        "controlling_law",
+        "role",
+        "purpose",
+        "time",
+        "scope",
+        "claim_relevance"
+      ],
+      "provenance": "https://www.law.cornell.edu/supremecourt/text/489/749",
+      "warning": "requires expert and case-specific source review"
+    }
+  ],
+  "candidate": {
+    "id": "nomos_p2",
+    "claims": [
+      "person_judgment_inference_scope",
+      "renewed_contestability",
+      "source_to_claim_scope"
+    ],
+    "empirical_added_value": "not_measured"
+  }
+}
