@@ -26,3 +26,8 @@ A regular expression matching YYYY-MM-DD does not validate an actual calendar da
 ## False authority prevention
 The auth=true flag and a nonempty proof_ref string in R14 tests are fixture *assertions*, not actual signature verification, source integrity, legal admissibility, respondent compliance or independent evidence. The checker is a structural sanity filter. Public documents can support certain institutional assertions without revealing private consumer identities. No private beneficiary reidentification, public-data record linkage, or unsupported individual welfare inference is authorized.
 
+
+### R14.10 — Promotion verdict
+## P2 gate and research-debt ledger
+R13 found four public cases with distinct source claims but no outcome ground truth. R14 found and tested at least four validator weaknesses: calendar validity, missing-intermediate chronology, duplicates, and self-asserted provenance. This is a real internal negative engineering result, not field novelty. Strong external baselines could implement every guard. Formal P2 remains HOLD until independent external outcome labels plus a defensible advantage over established partial-identification/provenance audit procedures. Pending: exact-head CI pass, source-byte Drive archive, prospective independent test and stronger identity/proof semantics.
+
