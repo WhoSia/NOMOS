@@ -311,3 +311,7 @@ Toyota and Synchrony both have terminated orders but their publicly expressed ra
 
 ### P1-R10.6 — Honda and Hyundai active records
 CFPB enforcement descriptions: Hyundai July 26 2022 order required $13.2m consumer redress and $6m penalty; American Honda Finance January 17 2025 order required $10.3m redress and $2.5m penalty. Neither issuance page by itself verifies individual payments, complete corrected credit histories, or recipient decisions. https://www.consumerfinance.gov/enforcement/actions/hyundai-capital-america/ ; https://www.consumerfinance.gov/enforcement/actions/american-honda-finance-corporation-2025/ . Do not infer orders are still operative today absent independent status verification.
+
+
+### P1-R10.7 — Commonwealth deletion request distinction
+CFPB December 15 2023 Commonwealth Financial Systems order required a request to all CRAs to delete previously furnished collection accounts. Request, CRA receipt, actual deletion, and later recipient action are distinct observations. https://www.consumerfinance.gov/enforcement/actions/commonwealth-financial-systems-inc/ . The order does not itself prove downstream completed deletions.
