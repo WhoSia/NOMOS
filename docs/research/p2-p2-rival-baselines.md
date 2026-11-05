@@ -1,0 +1,22 @@
+# NOMOS-0.885 P2-P2 — Contextual Integrity and Provenance-Purpose Rival Audit
+Date: 2026-11-05. Status: P2 research, original scientific theorem NOT demonstrated.
+
+## Strong direct rivals
+R1: Helen Nissenbaum, Privacy as Contextual Integrity (2004), 79 Wash. L. Rev. 119. Context-specific norms of appropriate information collection and distribution; source and destination alone are insufficient. https://digitalcommons.law.uw.edu/wlr/vol79/iss1/10/
+R2: Adam Barth, Anupam Datta, John C Mitchell, Helen Nissenbaum, Privacy and Contextual Integrity: Framework and Applications (2006), formal logical contextual norms and information-flow histories, including temporal constraints. https://crypto.stanford.edu/~jcm/papers/barth-datta-mitchell-nissenbaum-2006.pdf
+R3: Shizra Sultan & Christian D. Jensen, Ensuring Purpose Limitation in Large-Scale Infrastructures with Provenance-Enabled Access Control, Sensors 21(9):3041 (2021), DOI:10.3390/s21093041. Purpose limitation embedded in immutable/append-only provenance metadata and verified at access control. https://doi.org/10.3390/s21093041
+R4: W3C PROV-O standard: attributed entities, agents, activities, derivations, use, generation, origins. https://www.w3.org/TR/prov-o/
+R5: Strong case-specific legal reading of FOIA, Privacy Act, FCRA and relevant court jurisdiction; not a caricatured 'document-count' baseline.
+R6: NOMOS inherited 0.822, 0.850, 0.865, 0.881, 0.884.
+
+## Null hypothesis
+After all strong rivals are allowed to encode context, source, actor, purpose, normative transmission and claim boundaries, NOMOS adds no novel adjudicated correct conclusions. Accept this result as a successful falsification, rather than inflate novelty.
+
+## Proposed incremental question
+A permitted information flow and an authorized receiving role may not justify a broader person-classifying proposition; require explicit inference grounds and person-specific contestation where applicable. But a trained legal auditor and contextual integrity might already capture that. We need a real discordance, independent adjudication, and a decision-useful observable; synthetic agreement/difference cannot establish empirical superiority.
+
+## Evaluation protocol
+Case-level and claim-level unit of analysis; preserve case id, underlying doctrine and court date. Blind annotators to study hypothesis and rival outputs. Encode adjudication labels as SUPPORTED, CONTRADICTED, NOT_ESTABLISHED and OUT_OF_SCOPE with passage locators. Compare strong B1 and G on same source packet and time budget. Metrics only if independent gold judgments obtained: paired adjudicated errors, abstention, adjudicator uncertainty, completion time. Otherwise report no measured performance.
+
+## Precommitted failure conditions
+If G's novel edge adds no correct decision beyond B1 after grounded adjudication, merge the proposal into predecessor methodology. If the proposed inferential contract is merely contextual integrity or established purpose-limited provenance, retract originality. If source authority cannot be lawfully resolved, abstain, do not label illegal or harmful.
