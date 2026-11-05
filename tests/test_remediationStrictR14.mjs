@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {auditStrictBridge} from '../tools/remediationStrictR14.mjs';
+const data=JSON.parse(readFileSync(new URL('../examples/remediation_r14_adversarial.json',import.meta.url),'utf8'));
+const v=Object.fromEntries(data.cases.map(c=>[c.id,auditStrictBridge(c)]));
+assert.equal(v['valid-synthetic'].structurallyComplete,true);
+assert.equal(v['invalid-date'].rejected[0].reason,'invalid-calendar-date');
+assert.equal(v['nonadjacent-inversion'].chronology.length,1);
+assert.equal(v['duplicate-conflict'].ambiguous[0],'request');
+assert.equal(v['missing-proof'].rejected[0].reason,'missing-provenance');
+assert.equal(v['duplicate-conflict'].structurallyComplete,false);
+assert.throws(()=>auditStrictBridge({}),/invalid case/);
+console.log('R14 strictly synthetic adversarial guards passed');
