@@ -44,3 +44,7 @@ Barth §4.3 explicitly distinguishes weak compliance (local action plus future o
 
 ### P2-P3.8 — Aggregation is prior art
 Sultan/Jensen §3.2 maps collection purposes across aggregated parents: access purpose should be compatible with all retained input purposes. This defeats a NOMOS claim to invent purpose propagation along a descendant graph. Their case is a modeled smart-city system; empirical performance claims require independent measurement not found in their §2-§6 framework presentation.
+
+
+### P2-P3.9 — Contextual appropriateness stronger than privacy labels
+Nissenbaum III.A argues even an otherwise shareable fact can be inappropriate to reveal in a specific institutional context; III.B separately specifies distribution restrictions. This already attacks the premise that public facts can be freely copied into employment, medical or governmental adjudication. Any 'different purpose changes authority' NOVELTY claim must be demoted.
