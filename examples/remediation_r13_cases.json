@@ -1,0 +1,88 @@
+{
+  "schema": "r13.1",
+  "selection": "purposive_no_outcome_ground_truth",
+  "cases": [
+    {
+      "id": "toyota-2023",
+      "name": "Toyota Motor Credit Corporation",
+      "order_date": "2023-11-20",
+      "order_status": "terminated_2025-05-12",
+      "remedy_type": [
+        "credit_reporting",
+        "add_on_redress"
+      ],
+      "ordered_redress_usd": 48000000,
+      "observations": [
+        "order_filed",
+        "termination_recorded",
+        "company_reports_cra_requests"
+      ],
+      "not_observed": [
+        "all_cra_updates",
+        "specific_prior_recipient_review",
+        "individual_recovery"
+      ],
+      "source": "https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/",
+      "status_source": "https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/toyota-motor-credit-corporation-2023/"
+    },
+    {
+      "id": "synchrony-2014",
+      "name": "Synchrony Bank formerly GE Capital Retail Bank",
+      "order_date": "2014-06-19",
+      "order_status": "terminated_2025-05-12",
+      "remedy_type": [
+        "credit_card_relief"
+      ],
+      "observations": [
+        "order_filed",
+        "termination_recorded",
+        "regulator_reports_at_least_259m_redress_fulfillment"
+      ],
+      "not_observed": [
+        "specific_individual_downstream_outcome"
+      ],
+      "source": "https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank/"
+    },
+    {
+      "id": "hyundai-2022",
+      "name": "Hyundai Capital America",
+      "order_date": "2022-07-26",
+      "order_status": "issued_status_not_audited",
+      "remedy_type": [
+        "credit_reporting"
+      ],
+      "ordered_redress_usd": 13200000,
+      "observations": [
+        "order_filed",
+        "agency_finding_furnishing_errors"
+      ],
+      "not_observed": [
+        "completed_all_account_remediation",
+        "recipient_receipt",
+        "individual_outcome"
+      ],
+      "source": "https://www.consumerfinance.gov/enforcement/actions/hyundai-capital-america/"
+    },
+    {
+      "id": "tdbank-2024",
+      "name": "TD Bank NA",
+      "order_date": "2024-09-11",
+      "order_status": "issued_status_not_audited",
+      "remedy_type": [
+        "credit_reporting",
+        "dispute_investigation"
+      ],
+      "ordered_redress_usd": 7760000,
+      "observations": [
+        "order_filed",
+        "agency_finding_furnishing_errors"
+      ],
+      "not_observed": [
+        "completed_all_account_remediation",
+        "recipient_receipt",
+        "individual_outcome"
+      ],
+      "source": "https://www.consumerfinance.gov/enforcement/actions/td-bank-na-furnishing-2024/"
+    }
+  ]
+}
