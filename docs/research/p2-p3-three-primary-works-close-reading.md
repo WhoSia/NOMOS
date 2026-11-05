@@ -40,3 +40,7 @@ The crucial novelty correction is Barth 2006 §3.1: knowledge state κ⊆P×P×T
 
 ### P2-P3.7 — Temporal future obligations
 Barth §4.3 explicitly distinguishes weak compliance (local action plus future obligations) from strong compliance (some satisfying extension exists). Theorems 3-5 address algorithms and complexities, so NOMOS 'future consequences of notices' cannot be presented as a first temporal compliance formalism. Strong compliance remains a possibility criterion within their model, not verification that actors in practice fulfilled actual obligations.
+
+
+### P2-P3.8 — Aggregation is prior art
+Sultan/Jensen §3.2 maps collection purposes across aggregated parents: access purpose should be compatible with all retained input purposes. This defeats a NOMOS claim to invent purpose propagation along a descendant graph. Their case is a modeled smart-city system; empirical performance claims require independent measurement not found in their §2-§6 framework presentation.
