@@ -32,3 +32,7 @@ For DOJ v Reporters Committee, an unsophisticated 'purpose-based disclosure' cod
 
 ### P2-P2.8 — Legitimate authority positive control
 NASA v Nelson is a positive control for lawful and functionally justified government collection with Privacy Act safeguards; an algorithm that concludes government collection inherently equals an unauthorized person-judgment transfer is unsound. Preserve the Supreme Court's assumption-without-decision on constitutional right.
+
+
+### P2-P2.9 — Measurement contract
+Current tests check curated source metadata, duplicate case IDs, legal category output and novelty-gate fields. They do NOT compare actual blinded annotators, independent source verification, judicial merits or real affected individuals. No precision, recall, causal estimate or utility metric is available. Promotion claims must remain at RESEARCH PROGRAM OPEN.
