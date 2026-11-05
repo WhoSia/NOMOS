@@ -20,3 +20,8 @@ Toyota and Synchrony both have a public 2025 termination, yet the Synchrony page
 ### R13.8 — Strong-baseline non-superiority
 ## Strong B1 audit competition
 B1 extracts actual legal and administrative content, including remedy scope, dated finding, redress claimed or ordered, and gaps. Our current G ledger adds fields and missingness display but does NOT establish greater factual accuracy, causal identification or auditing utility than B1. Do not present stronger descriptions as higher statistical performance without independent labels.
+
+
+### R13.9 — Selection and confounder
+## Selection and comparability
+The four cases are purposively selected, differ in remedy, year and enforcement theory, and include closure and issuance pages. Condition on case visibility and available public text; any prevalence estimator from these cases is invalid. The 2025 CFPB enforcement lookback separately reports 22 terminated/modified pending orders or no-action letters, demonstrating substantial policy/administrative changes but not a causal estimate of remedy completion. https://www.consumerfinance.gov/enforcement/2025-enforcement-lookback/
