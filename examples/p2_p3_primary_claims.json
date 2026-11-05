@@ -1,0 +1,70 @@
+{
+  "schema": "p2-p3.1",
+  "sources": [
+    {
+      "id": "nissenbaum-2004",
+      "drive_id": "1NZjrRWp4aooazZGeU-tj7L792agdwnqm",
+      "sections": [
+        "II",
+        "III.A",
+        "III.B"
+      ],
+      "confirmed_capabilities": [
+        "contextual_appropriateness",
+        "information_distribution",
+        "cross_sphere_constraints"
+      ],
+      "unsupported_extrapolations": [
+        "mere public information is unrestricted"
+      ]
+    },
+    {
+      "id": "barth-2006",
+      "drive_id": "1iOiTolBFjwG96ohg9uBDGI6cAXf_09u7",
+      "sections": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "4.1",
+        "4.2",
+        "4.3",
+        "5",
+        "6"
+      ],
+      "confirmed_capabilities": [
+        "derived_attribute_rules",
+        "temporal_norms",
+        "recipient_sender_subject",
+        "weak_strong_compliance",
+        "policy_entailment"
+      ],
+      "unsupported_extrapolations": [
+        "only raw messages; no inference at all",
+        "solves every downstream person-level legal adjudication"
+      ]
+    },
+    {
+      "id": "sultan-jensen-2021",
+      "drive_id": "1cceIx9-bU3GUru4yQrYSmlGKtIRP_BtF",
+      "sections": [
+        "2",
+        "3.1",
+        "3.2",
+        "4.1",
+        "5",
+        "6"
+      ],
+      "confirmed_capabilities": [
+        "transformation_provenance",
+        "aggregated_purpose_propagation",
+        "purpose_limited_access"
+      ],
+      "unsupported_extrapolations": [
+        "independently verified downstream person recovery",
+        "randomized causal validation in this paper"
+      ]
+    }
+  ],
+  "note": "Human-curated close-reading map; no real-world compliance or novelty certification."
+}
