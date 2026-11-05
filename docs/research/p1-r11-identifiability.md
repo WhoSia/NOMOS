@@ -28,3 +28,7 @@ Falsifier: locate a reliable, same-cohort CRA acknowledgement register with veri
 ## Unit mismatch and selection
 
 The Toyota order's 27,507 figure concerns accounts identified for a particular credit-reporting remediation population, not all affected customers across every add-on redress category. A dollar amount refers to money, not people or accounts. A mailed check is not a cashed check. Do not join across these units using text similarity or aggregate amounts. A future ledger requires an irreversible, privacy-preserving stable unit identifier and proof of lawful access; never reconstruct personal consumer identities from public records.
+
+## Rival assumptions and the weakest missing document
+
+Rival M1: only a source-side CRA correction request occurred. M2: some CRA tradelines were applied, some were not. M3: all CRA tradelines were applied but earlier lenders used stale snapshots. M4: all relevant correction paths succeeded but an earlier credit denial still stands on independently lawful grounds. M1-M4 can agree on the public order termination and some check mailings. Records needed differ: CRA acceptance for M1-M2; timestamped prior-recipient report and review history for M3; decision reasons and legal purpose for M4. Do not interpret logical possibility as observed incidence.
