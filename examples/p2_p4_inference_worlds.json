@@ -1,0 +1,69 @@
+{
+  "schema": "p2-p4.1",
+  "note": "Entirely synthetic scenarios; matched flow and inference but differing asserted institutional claim-use scope.",
+  "worlds": [
+    {
+      "id": "warranted-narrow",
+      "flow": {
+        "sender": "agency_A",
+        "recipient": "agency_B",
+        "data_subject": "person_X",
+        "attribute": "case_fact",
+        "purpose": "case_review",
+        "authorized": true
+      },
+      "knowledge": {
+        "recipient_knows_derived_attribute": true
+      },
+      "decision": {
+        "claim": "case_fact_observed",
+        "scope": "case_X",
+        "use": "case_review",
+        "warrant_present": true,
+        "contestability_specified": true
+      }
+    },
+    {
+      "id": "unwarranted-global",
+      "flow": {
+        "sender": "agency_A",
+        "recipient": "agency_B",
+        "data_subject": "person_X",
+        "attribute": "case_fact",
+        "purpose": "case_review",
+        "authorized": true
+      },
+      "knowledge": {
+        "recipient_knows_derived_attribute": true
+      },
+      "decision": {
+        "claim": "person_is_generally_untrustworthy",
+        "scope": "all_future_cases",
+        "use": "person_ranking",
+        "warrant_present": false,
+        "contestability_specified": false
+      }
+    },
+    {
+      "id": "uncertain-warrant",
+      "flow": {
+        "sender": "agency_A",
+        "recipient": "agency_B",
+        "data_subject": "person_X",
+        "attribute": "case_fact",
+        "purpose": "case_review",
+        "authorized": true
+      },
+      "knowledge": {
+        "recipient_knows_derived_attribute": true
+      },
+      "decision": {
+        "claim": "person_is_generally_untrustworthy",
+        "scope": "all_future_cases",
+        "use": "person_ranking",
+        "warrant_present": null,
+        "contestability_specified": null
+      }
+    }
+  ]
+}
