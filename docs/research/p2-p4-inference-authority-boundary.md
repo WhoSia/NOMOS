@@ -21,3 +21,7 @@ Attempt an explicit translation into an extended Barth first-order temporal trac
 
 ### P2-P4.7 — Observational-equivalence statement
 Fix the observed transmission and inferable attribute π_flow(w)=(Flow,Know). Worlds A and B have equal π_flow by fixture design but differ in a later institutional claim. Consequently the observation projection cannot identify which *decision* was issued unless the decision event is independently observed. This is an elementary projection fact, not a novel representation theorem.
+
+
+### P2-P4.8 — Expressibility defeater
+Barth §3.1 already models computed attributes; the paper's core norm grammar centers communication events. An extension can add judge(a,p,Q,u) to the trace alphabet and prohibit unwarranted classifications using negative context-specific temporal norms. NOMOS cannot claim its toy separation is formally inexpressible in contextual-integrity extensions; no such inexpressibility proof exists.
