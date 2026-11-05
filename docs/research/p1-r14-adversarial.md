@@ -21,3 +21,8 @@ Earlier R12 checked only adjacent required steps when both are present, so it co
 ## Calendar and duplicate observations
 A regular expression matching YYYY-MM-DD does not validate an actual calendar day. The R14 validator parses the day and round-trips ISO format. Multiple authenticated-looking events for the same stage are marked ambiguous instead of choosing the earliest and silently discarding the rest. This deliberately sacrifices completeness when repeated corrections are legitimate. Future adjudication requires event IDs and operation versions.
 
+
+### R14.9 — Authentication and scope limits
+## False authority prevention
+The auth=true flag and a nonempty proof_ref string in R14 tests are fixture *assertions*, not actual signature verification, source integrity, legal admissibility, respondent compliance or independent evidence. The checker is a structural sanity filter. Public documents can support certain institutional assertions without revealing private consumer identities. No private beneficiary reidentification, public-data record linkage, or unsupported individual welfare inference is authorized.
+
