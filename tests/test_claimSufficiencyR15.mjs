@@ -1,0 +1,5 @@
+import assert from 'node:assert/strict';import{readFileSync}from'node:fs';import{auditClaims}from'../tools/claimSufficiencyR15.mjs';
+const f=JSON.parse(readFileSync(new URL('../examples/remediation_r15_claims.json',import.meta.url),'utf8'));const v=Object.fromEntries(auditClaims(f).map(x=>[x.claim_id,x]));
+assert.equal(v.C1.status,'documentarily_asserted');assert.equal(v.C2.status,'not_established_by_supplied_sources');assert.equal(v.C3.status,'not_established_by_supplied_sources');assert.equal(v.C4.status,'documentarily_asserted');assert.equal(v.C5.status,'documentarily_asserted');assert.equal(v.C4.supportingSources[0].source_kind,'statutory_text');
+assert.throws(()=>auditClaims({}),/sources and claims/);assert.throws(()=>auditClaims({...f,sources:[f.sources[0],f.sources[0]]}),/duplicate/);
+console.log('R15 claim-specific source-assertion regression passed');
