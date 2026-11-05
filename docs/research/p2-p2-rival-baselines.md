@@ -20,3 +20,7 @@ Case-level and claim-level unit of analysis; preserve case id, underlying doctri
 
 ## Precommitted failure conditions
 If G's novel edge adds no correct decision beyond B1 after grounded adjudication, merge the proposal into predecessor methodology. If the proposed inferential contract is merely contextual integrity or established purpose-limited provenance, retract originality. If source authority cannot be lawfully resolved, abstain, do not label illegal or harmful.
+
+
+### P2-P2.6 — Major novelty defeater
+The first novelty firewall is NOT merely W3C PROV-O. Nissenbaum (2004) explicitly centers context-dependent appropriateness and distribution of personal information. Barth et al. (2006) provide formal temporal logic for norms constraining transmission histories. Sultan/Jensen (2021) bind purpose metadata to provenance-enabled access enforcement. Together these directly rival NOMOS's 'actor/context/purpose/transmission/provenance' formula; treating it as novel is inaccurate.
