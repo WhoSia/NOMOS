@@ -1,0 +1,48 @@
+{
+  "schema": "p2-p1.1",
+  "method": "source-bounded manually classified legal issues; no consumer-level labels",
+  "cases": [
+    {
+      "id": "reporters-committee-1989",
+      "case": "DOJ v. Reporters Committee",
+      "year": 1989,
+      "context": "FOIA Exemption 7(C)",
+      "actor": "federal agency",
+      "issue": "compiled rap-sheet public disclosure",
+      "primary": "https://www.law.cornell.edu/supremecourt/text/489/749",
+      "claimed_rule": "FOIA central purpose concerns agency conduct; requester's intended private use is not the decision rule",
+      "does_not_show": [
+        "any private employer's actual reuse decision",
+        "all public records are exempt"
+      ]
+    },
+    {
+      "id": "nasa-nelson-2011",
+      "case": "NASA v. Nelson",
+      "year": 2011,
+      "context": "federal contractor personnel inquiry",
+      "actor": "government employer",
+      "issue": "collection and safeguards",
+      "primary": "https://supreme.justia.com/cases/federal/us/562/134/",
+      "claimed_rule": "challenged background inquiries upheld assuming but not resolving constitutional informational privacy right",
+      "does_not_show": [
+        "all background inquiries categorically permissible",
+        "actual subsequent public disclosure"
+      ]
+    },
+    {
+      "id": "transunion-ramirez-2021",
+      "case": "TransUnion LLC v. Ramirez",
+      "year": 2021,
+      "context": "Article III standing for federal FCRA damages litigation",
+      "actor": "consumer reporting agency",
+      "issue": "internal file versus publication",
+      "primary": "https://www.law.cornell.edu/supremecourt/text/20-297",
+      "claimed_rule": "1853 reports disseminated and 6332 not disseminated in relevant period distinguished for concrete harm on reasonable procedures claim",
+      "does_not_show": [
+        "every FCRA violation requires publication",
+        "every affected person's later decision outcome"
+      ]
+    }
+  ]
+}
