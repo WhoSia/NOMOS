@@ -32,3 +32,7 @@ DOJ v Reporters Committee (489 U.S. 749, at 771-775) rejects tailoring the FOIA 
 
 ### P2-P1.7 — Permissible collection positive control
 NASA v Nelson (562 U.S. 134) explicitly assumes without deciding a constitutional informational-privacy right and rejects the particular contractor background-investigation challenge in light of government's employment interest and Privacy Act protections. It is a positive control showing that protecting personhood cannot imply forbidding every inquiry. Whether statutory safeguards actually operated for a named worker is not established by the Court's general holding.
+
+
+### P2-P1.8 — Standing versus merits
+TransUnion v Ramirez (594 U.S. 413) distinguished 1,853 disseminated reports from 6,332 internal files for Article III standing on a particular FCRA claim. A claim that non-disseminated records cannot ever have legal consequences extends beyond that ruling. A claim that dissemination proves changed downstream employment or lending outcome also exceeds the ruling.
