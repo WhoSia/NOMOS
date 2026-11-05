@@ -1,0 +1,89 @@
+{
+  "schema": "r16.1",
+  "warning": "All consumer notice scenarios synthetic. Eligible window is an assumed input, not computed real-law eligibility.",
+  "cases": [
+    {
+      "id": "employment-valid",
+      "condition": {
+        "qualifying_deletion_or_dispute_notation": true,
+        "consumer_requested": true,
+        "recipient_specifically_designated": true,
+        "recipient_received_report_containing_item": true,
+        "purpose": "employment",
+        "within_2y": true
+      },
+      "receipt_evidence": false
+    },
+    {
+      "id": "employment-old",
+      "condition": {
+        "qualifying_deletion_or_dispute_notation": true,
+        "consumer_requested": true,
+        "recipient_specifically_designated": true,
+        "recipient_received_report_containing_item": true,
+        "purpose": "employment",
+        "within_2y": false
+      },
+      "receipt_evidence": false
+    },
+    {
+      "id": "other-valid",
+      "condition": {
+        "qualifying_deletion_or_dispute_notation": true,
+        "consumer_requested": true,
+        "recipient_specifically_designated": true,
+        "recipient_received_report_containing_item": true,
+        "purpose": "other",
+        "within_6m": true
+      },
+      "receipt_evidence": false
+    },
+    {
+      "id": "no-request",
+      "condition": {
+        "qualifying_deletion_or_dispute_notation": true,
+        "consumer_requested": false,
+        "recipient_specifically_designated": true,
+        "recipient_received_report_containing_item": true,
+        "purpose": "other",
+        "within_6m": true
+      },
+      "receipt_evidence": false
+    },
+    {
+      "id": "unknown-purpose",
+      "condition": {
+        "qualifying_deletion_or_dispute_notation": true,
+        "consumer_requested": true,
+        "recipient_specifically_designated": true,
+        "recipient_received_report_containing_item": true,
+        "purpose": "unknown"
+      },
+      "receipt_evidence": false
+    },
+    {
+      "id": "no-designation",
+      "condition": {
+        "qualifying_deletion_or_dispute_notation": true,
+        "consumer_requested": true,
+        "recipient_specifically_designated": false,
+        "recipient_received_report_containing_item": true,
+        "purpose": "employment",
+        "within_2y": true
+      },
+      "receipt_evidence": true
+    },
+    {
+      "id": "source-correction-alone",
+      "condition": {
+        "qualifying_deletion_or_dispute_notation": null,
+        "consumer_requested": null,
+        "recipient_specifically_designated": null,
+        "recipient_received_report_containing_item": null,
+        "purpose": "employment",
+        "within_2y": null
+      },
+      "receipt_evidence": false
+    }
+  ]
+}
