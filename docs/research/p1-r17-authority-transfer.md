@@ -28,3 +28,7 @@ In 15 USC 1681i(d), once the relevant facts and consumer request conditions hold
 
 ### R17.8 — Strong baseline equality is a negative result
 The R17 synthetic program intentionally sets claimGraph equal to strongLegalAudit: 'addedDecisionDiscrimination=false' by construction. That is a control against fabricated performance. This neither proves broader equivalence in real practice nor constitutes empirical comparative superiority. Truly independent labels and blinded audit are needed.
+
+
+### R17.9 — Pre-registration of future research
+Freeze a real independent cohort and predefined claim set before evaluator sees results; separate legal baseline B1 and NOMOS variant G; use independently reviewed source and actor identifiers; measure discrepancy and adjudicated correctness by claim, including ambiguous/no-public-evidence; report abstention and review time, and avoid any claim of causal welfare gain.
