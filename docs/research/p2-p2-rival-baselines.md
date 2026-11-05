@@ -28,3 +28,7 @@ The first novelty firewall is NOT merely W3C PROV-O. Nissenbaum (2004) explicitl
 
 ### P2-P2.7 — FOIA domain-specific distinction
 For DOJ v Reporters Committee, an unsophisticated 'purpose-based disclosure' code could incorrectly switch ruling based on requester's claimed motive. The Court instead focuses on the FOIA's own central accountability purpose and privacy interests in compiled criminal records under exemption 7(C). This example demonstrates that a generalized policy model requires controlling-domain law, rather than a context-free purpose flag.
+
+
+### P2-P2.8 — Legitimate authority positive control
+NASA v Nelson is a positive control for lawful and functionally justified government collection with Privacy Act safeguards; an algorithm that concludes government collection inherently equals an unauthorized person-judgment transfer is unsound. Preserve the Supreme Court's assumption-without-decision on constitutional right.
