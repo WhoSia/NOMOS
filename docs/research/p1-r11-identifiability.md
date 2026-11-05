@@ -32,3 +32,7 @@ The Toyota order's 27,507 figure concerns accounts identified for a particular c
 ## Rival assumptions and the weakest missing document
 
 Rival M1: only a source-side CRA correction request occurred. M2: some CRA tradelines were applied, some were not. M3: all CRA tradelines were applied but earlier lenders used stale snapshots. M4: all relevant correction paths succeeded but an earlier credit denial still stands on independently lawful grounds. M1-M4 can agree on the public order termination and some check mailings. Records needed differ: CRA acceptance for M1-M2; timestamped prior-recipient report and review history for M3; decision reasons and legal purpose for M4. Do not interpret logical possibility as observed incidence.
+
+## R11 stage verdict
+
+The counterworld witness yields `identified=false` for all-CRA correction on four possible toy worlds. Its model is deliberately coarse and can be defeated by additional authenticated data. This is a falsifiable *identification proposal*, not an empirical estimate or field-level novelty certification; missing-data/partial-identification literature remains a serious outside rival. P1-R11 research unit: implemented source ledger, synthetic fixtures, Node verifier, test, CI integration and adversarial conditions. P2 HOLD. No bot author, no code retirement, and no branch. CI pass requires separate exact-HEAD observation.
