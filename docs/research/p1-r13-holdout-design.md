@@ -10,3 +10,8 @@ Strong baseline B1 reads actual order text, regulatory findings, termination rat
 ## Source-controlled cases
 Official CFPB action pages confirm: Toyota 2023 ($48m ordered redress; 2025 terminated); Synchrony 2014 (2025 termination explicitly cites at least $259m redress fulfilled plus policy reason); Hyundai 2022 ($13.2m ordered redress); TD Bank 2024 ($7.76m ordered redress). Hyundai/TD status today is not inferred from old issuance pages. Compare on reported source type, never as homogeneous random sample.
 Sources: https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/ ; https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank/ ; https://www.consumerfinance.gov/enforcement/actions/hyundai-capital-america/ ; https://www.consumerfinance.gov/enforcement/actions/td-bank-na-furnishing-2024/ .
+
+
+### R13.7 — Closure baseline discrimination
+## Baseline B0 falsifier
+Toyota and Synchrony both have a public 2025 termination, yet the Synchrony page says specific aggregate redress obligations were fulfilled and the Toyota page does not establish equivalent claim-specific aggregate fulfillment. Thus B0 (a termination-only bit) loses publicly documented assertion distinctions. This is *not* evidence that Toyota failed, nor independent confirmation of Synchrony individual outcomes.
