@@ -315,3 +315,7 @@ CFPB enforcement descriptions: Hyundai July 26 2022 order required $13.2m consum
 
 ### P1-R10.7 — Commonwealth deletion request distinction
 CFPB December 15 2023 Commonwealth Financial Systems order required a request to all CRAs to delete previously furnished collection accounts. Request, CRA receipt, actual deletion, and later recipient action are distinct observations. https://www.consumerfinance.gov/enforcement/actions/commonwealth-financial-systems-inc/ . The order does not itself prove downstream completed deletions.
+
+
+### P1-R10.8 — Typed completion assertion audit
+Record Claim={issuer, decision_date, legal_authority, cohort_definition, unit, remedy_type, ordered_amount, implementation_claim, observation_source, verified_outcome_scope, outstanding_missingness}. Possible source statements: ORDERED, IMPLEMENTATION_REPORTED, REGULATOR_ASSERTED_FULFILLED, TERMINATED_WITHOUT_PUBLIC_PERSON_LEVEL_PROOF, PERSON_LEVEL_VERIFIED. This vocabulary is analytic and must not equate different sources' legal effects.
