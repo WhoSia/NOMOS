@@ -291,3 +291,7 @@ P1-R9 identifies a promising verification-status question but not a novel law or
 
 ### P1-R10.1 — Order-versus-outcome question
 P1-R10 asks whether official administrative order closure is being mistaken for complete person-level remediation. Distinguish legal status of an enforcement order, respondent compliance assertions, paid redress evidence, corrected credit tradelines, and independently observed downstream consumer decisions. This is a research decomposition, not a rule of US law.
+
+
+### P1-R10.2 — Toyota 2023 enforcement source
+CFPB publicly describes its November 20, 2023 Toyota Motor Credit consent order requiring $48 million consumer redress and $12 million civil penalty, addressing add-on product and credit furnishing issues. Source: https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/ . An ordered amount is not independently verified total disbursement.
