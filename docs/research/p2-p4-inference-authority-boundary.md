@@ -29,3 +29,7 @@ Barth §3.1 already models computed attributes; the paper's core norm grammar ce
 
 ### P2-P4.9 — Normative fact source missing
 The toy evaluator marks one world synthetically warranted only because an input Boolean and a hard-coded matching scope were supplied. It does not verify who has legitimate claim authority, a legal provision granting it, actual notice, opportunity to contest or independent harms. Rule provenance and admissible institution-purpose scope must be directly grounded before making any legal assertion.
+
+
+### P2-P4.10 — P2 hold and scientific decision
+P2-P3 close-reading directly defeats inflated originality of context, derived attributes, prospective obligations and propagation of purpose. P2-P4 establishes only a simple pair-world underdetermination and transparent contract-test fixture. Distinguish 'P2 research stage open' from 'P2 novel result' (HOLD). Future step: compare an extended Barth model and established source-aware legal audit on independently sourced real-world case claims, not a synthetic hard-coded Boolean.
