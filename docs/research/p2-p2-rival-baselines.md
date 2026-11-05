@@ -24,3 +24,7 @@ If G's novel edge adds no correct decision beyond B1 after grounded adjudication
 
 ### P2-P2.6 — Major novelty defeater
 The first novelty firewall is NOT merely W3C PROV-O. Nissenbaum (2004) explicitly centers context-dependent appropriateness and distribution of personal information. Barth et al. (2006) provide formal temporal logic for norms constraining transmission histories. Sultan/Jensen (2021) bind purpose metadata to provenance-enabled access enforcement. Together these directly rival NOMOS's 'actor/context/purpose/transmission/provenance' formula; treating it as novel is inaccurate.
+
+
+### P2-P2.7 — FOIA domain-specific distinction
+For DOJ v Reporters Committee, an unsophisticated 'purpose-based disclosure' code could incorrectly switch ruling based on requester's claimed motive. The Court instead focuses on the FOIA's own central accountability purpose and privacy interests in compiled criminal records under exemption 7(C). This example demonstrates that a generalized policy model requires controlling-domain law, rather than a context-free purpose flag.
