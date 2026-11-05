@@ -18,3 +18,7 @@ A missing consumer request record is neither an affirmative request nor proof th
 
 ### R16.7 source authority taxonomy
 Statutes can establish a general conditional norm; a regulator order can establish a case-specific legal act; institution statements can establish claimed implementation; a delivery receipt can establish dispatch/receipt under separate authentication. Each source must be attached to the exact claim and actor.
+
+
+### R16.8 baseline test and limitation
+Strong baseline is a specialist who reads the statute and checks facts. The Boolean predicate classifier is a transparent representation of that baseline, not evidence of superior legal reasoning. It does not compute actual date windows from report records or evaluate exceptions and jurisdictional disputes.
