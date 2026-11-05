@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {auditBridge} from '../tools/remediationBridgeR12.mjs';
+const f=JSON.parse(readFileSync(new URL('../examples/remediation_r12_bridge_fixtures.json',import.meta.url),'utf8'));
+const r=Object.fromEntries(f.cases.map(c=>[c.id,auditBridge(c)]));
+assert.equal(r['same-case-complete'].chainComplete,true);
+assert.deepEqual(r['same-case-complete'].missing,[]);
+assert.equal(r['wrong-case'].chainComplete,false);
+assert.equal(r['wrong-case'].rejected[0].reason,'wrong-case');
+assert.equal(r['wrong-unit'].rejected[0].reason,'wrong-unit');
+assert.equal(r['unverified-receipt'].rejected[0].reason,'unauthenticated');
+assert.equal(r['time-inversion'].chronology.length,1);
+assert.equal(r['time-inversion'].chainComplete,false);
+assert.throws(()=>auditBridge({}),/invalid/);
+console.log('R12 synthetic bridge tests pass (no real individual claims)');
