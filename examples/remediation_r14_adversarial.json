@@ -1,0 +1,140 @@
+{
+  "schema": "r14.1",
+  "note": "Entirely fictional event receipts and booleans for testing structural checks.",
+  "cases": [
+    {
+      "id": "valid-synthetic",
+      "events": [
+        {
+          "step": "request",
+          "time": "2024-01-01",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "artificial_request",
+          "proof_ref": "synthetic:request"
+        },
+        {
+          "step": "cra_applied",
+          "time": "2024-01-02",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "artificial_cra_applied",
+          "proof_ref": "synthetic:cra_applied"
+        },
+        {
+          "step": "recipient_receipt",
+          "time": "2024-01-03",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "artificial_recipient_receipt",
+          "proof_ref": "synthetic:recipient_receipt"
+        },
+        {
+          "step": "recipient_review",
+          "time": "2024-01-04",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "artificial_recipient_review",
+          "proof_ref": "synthetic:recipient_review"
+        },
+        {
+          "step": "outcome",
+          "time": "2024-01-05",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "artificial_outcome",
+          "proof_ref": "synthetic:outcome"
+        }
+      ],
+      "case_id": "A",
+      "unit_id": "X"
+    },
+    {
+      "id": "invalid-date",
+      "events": [
+        {
+          "step": "request",
+          "time": "2024-02-30",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "synthetic",
+          "proof_ref": "fixture:1"
+        }
+      ],
+      "case_id": "A",
+      "unit_id": "X"
+    },
+    {
+      "id": "nonadjacent-inversion",
+      "events": [
+        {
+          "step": "request",
+          "time": "2024-01-04",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "synthetic",
+          "proof_ref": "fixture:2"
+        },
+        {
+          "step": "recipient_receipt",
+          "time": "2024-01-02",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "synthetic",
+          "proof_ref": "fixture:2"
+        }
+      ],
+      "case_id": "A",
+      "unit_id": "X"
+    },
+    {
+      "id": "duplicate-conflict",
+      "events": [
+        {
+          "step": "request",
+          "time": "2024-01-01",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "synthetic",
+          "proof_ref": "fixture:0"
+        },
+        {
+          "step": "request",
+          "time": "2024-01-05",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "synthetic",
+          "proof_ref": "fixture:1"
+        }
+      ],
+      "case_id": "A",
+      "unit_id": "X"
+    },
+    {
+      "id": "missing-proof",
+      "events": [
+        {
+          "step": "request",
+          "time": "2024-01-01",
+          "case_id": "A",
+          "unit_id": "X",
+          "auth": true,
+          "source": "self_claim",
+          "proof_ref": ""
+        }
+      ],
+      "case_id": "A",
+      "unit_id": "X"
+    }
+  ]
+}
