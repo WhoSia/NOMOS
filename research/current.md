@@ -1,3 +1,9 @@
+# NOMOS — Current Research Head (2026-11-05, P2-P0 ADMISSION)
+
+**NOMOS-0.885 P2-P0 RESEARCH STAGE OPEN, NOT THEORY VALIDATED.** P1-R16 is synthetically implemented with a three-valued statutory-condition checker; P1-R17 compared source-specific claims to a strong legal audit in synthetic controls and obtained **no added decision discrimination by construction**. This negative result justifies an adversarial independent test, not novel legal theory. [P2-P0 pre-registration](../docs/research/p2-p0-authority-transfer-falsification.md) · [R16](../docs/research/p1-r16-authority-boundary.md) · [R17](../docs/research/p1-r17-authority-transfer.md). All inherited P1 tasks remain OPEN; actual consumer-level results and external incremental value UNVERIFIED. Source-byte Drive and exact-HEAD CI still need independent verification.
+
+---
+
 # NOMOS — Current Research Head (2026-11-05)
 
 **ACTIVE: NOMOS-0.885 P1-R14; P2 HOLD.** R11–R12 created synthetic non-identification and typed event-chain witnesses. R13 compared a four-case purposive CFPB sample under closure-only and strong document-based baseline; no outcome ground truth or superior predictive performance. R14 discovered structural event-graph defects (calendar-date acceptance, nonadjacent temporal inversion, duplicate-event ambiguity, caller-asserted provenance) and recorded a conservative updated verifier with synthetic tests. [R13 source audit](../docs/research/p1-r13-holdout-design.md) · [R14 adversarial note](../docs/research/p1-r14-adversarial.md) · [official Notion](https://app.notion.com/p/3fcef561cf9281579127e9084ecbc6b9). No code deletion, no new branch, no bot commit. Exact-HEAD CI pass and complete Drive byte-verification are pending. Prior unresolved obligations remain open.
