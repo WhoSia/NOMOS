@@ -1,0 +1,54 @@
+{
+  "schema_version": "r11.1",
+  "cases": [
+    {
+      "id": "toyota-possible-world-A",
+      "observation": "toyota_public_records",
+      "legal_order_terminated": true,
+      "requested_CRA_correction": true,
+      "checks_mailed_some": true,
+      "latent": {
+        "CRA_applied_all": true,
+        "checks_received_all": true,
+        "downstream_review_all": true
+      }
+    },
+    {
+      "id": "toyota-possible-world-B",
+      "observation": "toyota_public_records",
+      "legal_order_terminated": true,
+      "requested_CRA_correction": true,
+      "checks_mailed_some": true,
+      "latent": {
+        "CRA_applied_all": false,
+        "checks_received_all": false,
+        "downstream_review_all": false
+      }
+    },
+    {
+      "id": "toyota-possible-world-C",
+      "observation": "toyota_public_records",
+      "legal_order_terminated": true,
+      "requested_CRA_correction": true,
+      "checks_mailed_some": true,
+      "latent": {
+        "CRA_applied_all": true,
+        "checks_received_all": false,
+        "downstream_review_all": false
+      }
+    },
+    {
+      "id": "toyota-possible-world-D",
+      "observation": "toyota_public_records",
+      "legal_order_terminated": true,
+      "requested_CRA_correction": true,
+      "checks_mailed_some": true,
+      "latent": {
+        "CRA_applied_all": false,
+        "checks_received_all": true,
+        "downstream_review_all": true
+      }
+    }
+  ],
+  "note": "Logical countermodels, not claims about Toyota's actual hidden results."
+}
