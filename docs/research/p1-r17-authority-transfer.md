@@ -16,3 +16,7 @@ B0 provenance-only: source exists and chain structurally complete. B1 expert leg
 
 ## Outcomes and limitations
 The experiment's expected result is *documentation of non-entailment* with synthetic conditions, not a real consumer case. A model unable to exceed B1's performance must be demoted to transparent tooling or folded into existing NOMOS lineage. Proposed P2 admission is a decision about opening a falsifiable research stage, never novelty or real-world remediation completion.
+
+
+### R17.6 — Court evidence analogy firewall
+Federal Rules of Evidence 401 and 105 provide a clear *court-specific* example of claim-relative relevance and limited purpose use. Their applicability cannot simply be transported to consumer reporting agency duties or CFPB enforcement proceedings. A well-typed analogy preserves recipient institution and source-of-law scope.
