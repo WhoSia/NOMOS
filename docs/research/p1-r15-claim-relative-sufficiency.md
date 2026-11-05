@@ -28,3 +28,7 @@ A claim may be textually asserted and later defeated by corrected court or agenc
 
 ### R15.8 — Negative evidence boundary
 The termination order does not certify all CRA entries corrected; it also does not prove they were not corrected. Non-observation in the scoped public file is neither a population-level failure rate nor proof of individual noncompliance.
+
+
+### R15.9 — Counterclaim competition
+Competing claims can hold simultaneously: (i) the enforcement order is legally terminated, (ii) some remediation may have been executed, and (iii) downstream consumer-specific welfare is not independently known. Therefore a binary 'case resolved' score is an invalid compression without a claim-relative scope.
