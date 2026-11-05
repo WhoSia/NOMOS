@@ -32,3 +32,7 @@ Adversary explicitly builds a Barth-style rule extension and contextual integrit
 
 ## VII. Follow-on
 P2-P4: distinguish assertion legitimacy from simply knowing and transmitting an inferred attribute; use a paired-world counterexample where communication traces are identical but institutional classification actions differ. Clearly state this is a modeling demonstration, not an impossibility or novelty theorem.
+
+
+### P2-P3.6 — Barth inference counterexample
+The crucial novelty correction is Barth 2006 §3.1: knowledge state κ⊆P×P×T and inference rules (T,t). For example address ⇒ postcode, and a message's contents are computation-closed. Therefore saying NOMOS is the first to model derived inferences after data transfer is false. The *open difference* is whether an inferable trait may be institutionalized as an authoritative personal classification, grounded in a distinct law/rule and contestation path.
