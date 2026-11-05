@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import{readFileSync}from'node:fs';import{compareCases}from'../tools/authorityComparisonR17.mjs';
+const data=JSON.parse(readFileSync(new URL('../examples/remediation_r17_comparators.json',import.meta.url),'utf8'));const out=compareCases(data);
+assert.equal(out.length,6);
+assert.ok(out.every(x=>x.addedDecisionDiscrimination===false));
+assert.equal(out.find(x=>x.id==='conditional-statute').strongLegalAudit,'not_established');
+assert.equal(out.find(x=>x.id==='synthetic-eligible').strongLegalAudit,'modeled_duty_only');
+assert.equal(out.find(x=>x.id==='synthetic-no-request').strongLegalAudit,'no_modeled_duty');
+assert.equal(out.find(x=>x.id==='termination-only').strongLegalAudit,'bounded_documentary_claim');
+assert.throws(()=>compareCases({}),/cases required/);
+console.log('R17 programmed equality with strong audit baseline; no independent accuracy experiment');
