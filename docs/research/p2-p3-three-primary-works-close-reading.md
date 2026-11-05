@@ -48,3 +48,7 @@ Sultan/Jensen §3.2 maps collection purposes across aggregated parents: access p
 
 ### P2-P3.9 — Contextual appropriateness stronger than privacy labels
 Nissenbaum III.A argues even an otherwise shareable fact can be inappropriate to reveal in a specific institutional context; III.B separately specifies distribution restrictions. This already attacks the premise that public facts can be freely copied into employment, medical or governmental adjudication. Any 'different purpose changes authority' NOVELTY claim must be demoted.
+
+
+### P2-P3.10 — Final close-reading verdict
+All three PDFs acquired and full-text extraction/section-specific close reading completed. Strictly no claim of complete visual table/figure inspection or byte hash seal. Prior-art result: claims about inference, timing, distribution and cross-purpose aggregation were already represented. P2 research remains OPEN only for demonstrating an incremental independently adjudicated decision difference in person-classification authority; none shown here.
