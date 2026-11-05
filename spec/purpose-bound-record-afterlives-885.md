@@ -319,3 +319,7 @@ CFPB December 15 2023 Commonwealth Financial Systems order required a request to
 
 ### P1-R10.8 — Typed completion assertion audit
 Record Claim={issuer, decision_date, legal_authority, cohort_definition, unit, remedy_type, ordered_amount, implementation_claim, observation_source, verified_outcome_scope, outstanding_missingness}. Possible source statements: ORDERED, IMPLEMENTATION_REPORTED, REGULATOR_ASSERTED_FULFILLED, TERMINATED_WITHOUT_PUBLIC_PERSON_LEVEL_PROOF, PERSON_LEVEL_VERIFIED. This vocabulary is analytic and must not equate different sources' legal effects.
+
+
+### P1-R10.9 — Strong negative and positive controls
+Negative: an order terminates without publicly establishing each consumer's restored credit or later decision; termination alone does not prove full repair. Positive: a source may explicitly assert quantified disbursement fulfillment while still lacking individual welfare readback. Counter-control: pending order can coexist with already implemented partial redress. Do not infer noncompliance from lack of public evidence.
