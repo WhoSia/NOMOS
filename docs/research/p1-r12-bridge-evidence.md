@@ -16,3 +16,7 @@ Evidence is accepted only with typed case, object unit, path segment, timestamp,
 
 ## Research novelty ceiling
 Reusing NOMOS 0.822, 0.850, 0.865, 0.881 is mandatory; source matching and missing-labels are established outside literatures. Our potential contribution must appear as a novel falsifiable discriminator with fresh comparative data, not a new label for established principles.
+
+## Toyota FAQ: dated operator assertions versus independent receipts
+
+The operator's FAQ says that prior to the 2023 consent order TMCC submitted requests to credit-reporting agencies to update affected accounts; its FAQ also states that some redress checks were or would be mailed, and mailed checks may be reissued following the May 2025 termination. This is more concrete than a generalized plan, but it remains the respondent/administrator's source statement. It is not a CRA-level acceptance response, item-level post-update report or individual bank deposit confirmation. Source: https://www.tmccremediation.com/faq , items 1, 2, 4 and 15. FAQ's last-publication date not independently established; do not infer the statements were all known before May 2025.
