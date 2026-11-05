@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {completionIdentified} from '../tools/remediationIdentifiabilityR11.mjs';
+const fixture=JSON.parse(readFileSync(new URL('../examples/remediation_r11_counterworlds.json',import.meta.url),'utf8'));
+const result=completionIdentified(fixture.cases);
+assert.equal(result.length,1);
+assert.equal(result[0].possibleWorldCount,4);
+assert.equal(result[0].identified,false);
+assert.deepEqual(result[0].admissibleValues,[false,true]);
+assert.equal(completionIdentified([fixture.cases[0]])[0].identified,true);
+assert.throws(()=>completionIdentified([]),/nonempty/);
+console.log('R11 logical identification tests passed; synthetic only');
