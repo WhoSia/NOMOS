@@ -299,3 +299,7 @@ CFPB publicly describes its November 20, 2023 Toyota Motor Credit consent order 
 
 ### P1-R10.3 — Toyota 2025 termination status
 CFPB's May 12, 2025 termination of Toyota docket 2023-CFPB-0015 expressly terminates the consent order and waives alleged noncompliance. It does not state that every affected person's credit entry was corrected or every individual downstream consequence reversed. Sources: https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/toyota-motor-credit-corporation-2023/ ; https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/ . Avoid both false completion and false noncompletion inferences.
+
+
+### P1-R10.4 — Synchrony 2025 contrasting closure
+CFPB's May 12, 2025 Synchrony/GE Capital Retail Bank termination page explicitly says the bank fulfilled obligations including at least $259 million of redress and $3.5 million penalty; it also cites alignment with executive order policy. Source: https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank/ . This is a regulator-reported aggregate fulfillment statement, not an independently traced person-by-person outcome.
