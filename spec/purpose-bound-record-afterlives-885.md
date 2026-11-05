@@ -303,3 +303,7 @@ CFPB's May 12, 2025 termination of Toyota docket 2023-CFPB-0015 expressly termin
 
 ### P1-R10.4 — Synchrony 2025 contrasting closure
 CFPB's May 12, 2025 Synchrony/GE Capital Retail Bank termination page explicitly says the bank fulfilled obligations including at least $259 million of redress and $3.5 million penalty; it also cites alignment with executive order policy. Source: https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank/ . This is a regulator-reported aggregate fulfillment statement, not an independently traced person-by-person outcome.
+
+
+### P1-R10.5 — Cross-case non-equivalence
+Toyota and Synchrony both have terminated orders but their publicly expressed rationale and factual assertions differ. Thus shared closure label cannot be treated as a sufficient statistic for observed remediation. The different vintage and remedy categories make them logical contrasts, not a controlled causal experiment.
