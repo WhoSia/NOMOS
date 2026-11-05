@@ -32,3 +32,7 @@ The R17 synthetic program intentionally sets claimGraph equal to strongLegalAudi
 
 ### R17.9 — Pre-registration of future research
 Freeze a real independent cohort and predefined claim set before evaluator sees results; separate legal baseline B1 and NOMOS variant G; use independently reviewed source and actor identifiers; measure discrepancy and adjudicated correctness by claim, including ambiguous/no-public-evidence; report abstention and review time, and avoid any claim of causal welfare gain.
+
+
+### R17.10 — Promotion gate
+R17 identifies a distinct research *question* about authority to reuse evidence across institutional claims, not a verified new *theorem*. Existing internal 0.838-0.850 and 0.881 and external FRE purpose limits, PROV-O and partial identification literature are stronger prior art. Propose P2-P0 as a bounded falsification program only if P2 labels explicitly mean 'research stage open' not 'validated evidence or novelty'; preserve unresolved P1 commitments.
