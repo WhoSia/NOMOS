@@ -307,3 +307,7 @@ CFPB's May 12, 2025 Synchrony/GE Capital Retail Bank termination page explicitly
 
 ### P1-R10.5 — Cross-case non-equivalence
 Toyota and Synchrony both have terminated orders but their publicly expressed rationale and factual assertions differ. Thus shared closure label cannot be treated as a sufficient statistic for observed remediation. The different vintage and remedy categories make them logical contrasts, not a controlled causal experiment.
+
+
+### P1-R10.6 — Honda and Hyundai active records
+CFPB enforcement descriptions: Hyundai July 26 2022 order required $13.2m consumer redress and $6m penalty; American Honda Finance January 17 2025 order required $10.3m redress and $2.5m penalty. Neither issuance page by itself verifies individual payments, complete corrected credit histories, or recipient decisions. https://www.consumerfinance.gov/enforcement/actions/hyundai-capital-america/ ; https://www.consumerfinance.gov/enforcement/actions/american-honda-finance-corporation-2025/ . Do not infer orders are still operative today absent independent status verification.
