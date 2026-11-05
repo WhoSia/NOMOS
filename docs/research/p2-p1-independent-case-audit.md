@@ -40,3 +40,7 @@ TransUnion v Ramirez (594 U.S. 413) distinguished 1,853 disseminated reports fro
 
 ### P2-P1.9 — Stronger rivals than provenance alone
 Nissenbaum 2004 contextual integrity, Barth/Datta/Mitchell/Nissenbaum 2006 transmission norms with temporal logic, and Sultan/Jensen 2021 provenance-enabled purpose limitation already encode combinations of actors, context, recipient roles, purpose, transmission rules and provenance. They constitute directly competing solutions to purported P2 originality. An incremental claim would require person-classification inference authority *after* an otherwise authorized flow, where those rivals and a trained legal reviewer demonstrably fail.
+
+
+### P2-P1.10 — Adjudication status and gate
+Source summaries are manually curated from publicly available opinions; no independently blinded judgments, no per-claim annotation inter-rater agreement, and no empirical performance evaluation have occurred. P2-P1 is a precedent/negative-control construction unit, NOT a validated holdout test. Next P2-P2: preregister comparison matrix with strong baseline including contextual integrity and purpose-provenance systems. P2 scientific hypothesis remains OPEN, no novelty admission.
