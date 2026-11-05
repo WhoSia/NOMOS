@@ -1,0 +1,42 @@
+{
+  "schema_version": "p2-p3-custody.1",
+  "date": "2026-11-05",
+  "lab": "NOMOS-0.885",
+  "role": "three_priority_original_research_pdfs",
+  "source_folder": {
+    "id": "1MLtYh0pv8QUZDReYzRqjDrOjRkSJAD16",
+    "name": "00_INTAKE — Literature Radar"
+  },
+  "destination_folder": {
+    "id": "1D2M4LHcejREhlyp6vTd71xxLLx-6ldUP",
+    "name": "10_PAPERS — Canonical Literature Commons"
+  },
+  "move_operation": "Drive metadata-only move, preserve original file ID/filename/MIME, no duplicate upload",
+  "files": [
+    {
+      "name": "Privacy as Contextual Integrity.pdf",
+      "id": "1NZjrRWp4aooazZGeU-tj7L792agdwnqm",
+      "mime": "application/pdf",
+      "readback_parent_verified": true,
+      "text_extracted_length": 107355
+    },
+    {
+      "name": "barth-datta-mitchell-nissenbaum-2006.pdf",
+      "id": "1iOiTolBFjwG96ohg9uBDGI6cAXf_09u7",
+      "mime": "application/pdf",
+      "readback_parent_verified": true,
+      "text_extracted_length": 73964
+    },
+    {
+      "name": "sensors-21-03041-with-cover.pdf",
+      "id": "1cceIx9-bU3GUru4yQrYSmlGKtIRP_BtF",
+      "mime": "application/pdf",
+      "readback_parent_verified": true,
+      "text_extracted_length": 73112
+    }
+  ],
+  "original_byte_sha256": "NOT_COMPUTED",
+  "byte_readback_status": "BYTE_READBACK_PENDING",
+  "research_status": "P2-P4, novelty HOLD",
+  "note": "Only metadata readback and text extraction have been verified; source binary SHA-256 integrity comparison was not performed."
+}
