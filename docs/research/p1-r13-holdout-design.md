@@ -25,3 +25,8 @@ B1 extracts actual legal and administrative content, including remedy scope, dat
 ### R13.9 — Selection and confounder
 ## Selection and comparability
 The four cases are purposively selected, differ in remedy, year and enforcement theory, and include closure and issuance pages. Condition on case visibility and available public text; any prevalence estimator from these cases is invalid. The 2025 CFPB enforcement lookback separately reports 22 terminated/modified pending orders or no-action letters, demonstrating substantial policy/administrative changes but not a causal estimate of remedy completion. https://www.consumerfinance.gov/enforcement/2025-enforcement-lookback/
+
+
+### R13.10 — No fabricated outcome metric
+## R13 verdict
+The fixture test can assert documentary scope distinctions (Toyota vs Synchrony; non-observed individual outcomes), not empirical correct-classification rates. Without independently labeled real outcomes, precision/recall/accuracy are undefined. Work package R13 consists of independent source ledger, read-only code, tests, CI link and negative findings. P2 HOLD. Next R14: adversarial validation of even the proposed receipt graph and its strong-baseline equivalence. No branch or code removal.
