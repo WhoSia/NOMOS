@@ -1,0 +1,60 @@
+{
+  "schema": "r15.1",
+  "note": "Curated statements are textual assertions, not cryptographic source authentication or individual evidence.",
+  "sources": [
+    {
+      "id": "cFPB-toyota-termination",
+      "kind": "regulator_termination",
+      "case": "toyota-2023",
+      "asserts": [
+        "order_terminated"
+      ],
+      "url": "https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/toyota-motor-credit-corporation-2023/"
+    },
+    {
+      "id": "cFPB-toyota-order",
+      "kind": "regulator_order",
+      "case": "toyota-2023",
+      "asserts": [
+        "redress_ordered"
+      ],
+      "url": "https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/"
+    },
+    {
+      "id": "usc-1681i",
+      "kind": "statutory_text",
+      "case": "general",
+      "asserts": [
+        "conditional_prior_recipient_duty"
+      ],
+      "url": "https://uscode.house.gov/us/usc/119-124/t15/s1681i/"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "case": "toyota-2023",
+      "proposition": "order_terminated"
+    },
+    {
+      "id": "C2",
+      "case": "toyota-2023",
+      "proposition": "all_cra_accounts_corrected"
+    },
+    {
+      "id": "C3",
+      "case": "toyota-2023",
+      "proposition": "named_prior_recipient_received"
+    },
+    {
+      "id": "C4",
+      "case": "toyota-2023",
+      "proposition": "conditional_prior_recipient_duty"
+    },
+    {
+      "id": "C5",
+      "case": "toyota-2023",
+      "proposition": "redress_ordered"
+    }
+  ]
+}
