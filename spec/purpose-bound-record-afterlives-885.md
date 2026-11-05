@@ -323,3 +323,7 @@ Record Claim={issuer, decision_date, legal_authority, cohort_definition, unit, r
 
 ### P1-R10.9 — Strong negative and positive controls
 Negative: an order terminates without publicly establishing each consumer's restored credit or later decision; termination alone does not prove full repair. Positive: a source may explicitly assert quantified disbursement fulfillment while still lacking individual welfare readback. Counter-control: pending order can coexist with already implemented partial redress. Do not infer noncompliance from lack of public evidence.
+
+
+### P1-R10.10 — Origin and P2 stage gate
+NOMOS 0.865 already distinguishes formal remediation from independently verified effects; 0.881 already distinguishes institutional closure from private recovery. R10 adds a dated same-day cross-order textual contrast and typed evidence ledger, not certified novelty. P2 candidate: closure claims under heterogeneous evidence and remedy scopes; require independent new observable, credible competing doctrine, and falsifiable prospective prediction before formal promotion. P1-R10 source-comparison complete, P2 HOLD, no code deletion or branch.
