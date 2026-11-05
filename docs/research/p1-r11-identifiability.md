@@ -24,3 +24,7 @@ NOMOS 0.822 (descendants), 0.850 (recipient operations), 0.865 (real outcomes) a
 Let O be the public tuple (terminated order, reported CRA correction requests, some checks mailed). Let Z_A indicate all targeted records were actually corrected at CRAs and Z_B indicate they were not all corrected. Two logically possible worlds share O but differ on Z. The mapping O -> Z is therefore non-injective on the currently permitted model class. This proves only non-identification *relative to this public observation set and model class*, not any Toyota failure. Executable witness: tools/remediationIdentifiabilityR11.mjs and tests/test_remediationIdentifiabilityR11.mjs.
 
 Falsifier: locate a reliable, same-cohort CRA acknowledgement register with verified before/after item status; it could eliminate some competing worlds, subject to coverage and timing.
+
+## Unit mismatch and selection
+
+The Toyota order's 27,507 figure concerns accounts identified for a particular credit-reporting remediation population, not all affected customers across every add-on redress category. A dollar amount refers to money, not people or accounts. A mailed check is not a cashed check. Do not join across these units using text similarity or aggregate amounts. A future ledger requires an irreversible, privacy-preserving stable unit identifier and proof of lawful access; never reconstruct personal consumer identities from public records.
