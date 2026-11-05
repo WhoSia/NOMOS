@@ -295,3 +295,7 @@ P1-R10 asks whether official administrative order closure is being mistaken for 
 
 ### P1-R10.2 — Toyota 2023 enforcement source
 CFPB publicly describes its November 20, 2023 Toyota Motor Credit consent order requiring $48 million consumer redress and $12 million civil penalty, addressing add-on product and credit furnishing issues. Source: https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/ . An ordered amount is not independently verified total disbursement.
+
+
+### P1-R10.3 — Toyota 2025 termination status
+CFPB's May 12, 2025 termination of Toyota docket 2023-CFPB-0015 expressly terminates the consent order and waives alleged noncompliance. It does not state that every affected person's credit entry was corrected or every individual downstream consequence reversed. Sources: https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/toyota-motor-credit-corporation-2023/ ; https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/ . Avoid both false completion and false noncompletion inferences.
