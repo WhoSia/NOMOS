@@ -14,3 +14,7 @@ NOMOS 0.261, 0.822, 0.850, 0.865, 0.881; 15 USC 1681i; W3C PROV-O. R16's contrib
 
 ### R16.6 unknown is not disproven
 A missing consumer request record is neither an affirmative request nor proof that no request occurred. Software returns unknown when one or more required facts remain null/undefined and none are affirmatively false. Explicit false is a modeled exclusion for this one statutory route only; other statutes or remedies not adjudicated.
+
+
+### R16.7 source authority taxonomy
+Statutes can establish a general conditional norm; a regulator order can establish a case-specific legal act; institution statements can establish claimed implementation; a delivery receipt can establish dispatch/receipt under separate authentication. Each source must be attached to the exact claim and actor.
