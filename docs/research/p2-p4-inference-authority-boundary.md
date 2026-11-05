@@ -25,3 +25,7 @@ Fix the observed transmission and inferable attribute π_flow(w)=(Flow,Know). Wo
 
 ### P2-P4.8 — Expressibility defeater
 Barth §3.1 already models computed attributes; the paper's core norm grammar centers communication events. An extension can add judge(a,p,Q,u) to the trace alphabet and prohibit unwarranted classifications using negative context-specific temporal norms. NOMOS cannot claim its toy separation is formally inexpressible in contextual-integrity extensions; no such inexpressibility proof exists.
+
+
+### P2-P4.9 — Normative fact source missing
+The toy evaluator marks one world synthetically warranted only because an input Boolean and a hard-coded matching scope were supplied. It does not verify who has legitimate claim authority, a legal provision granting it, actual notice, opportunity to contest or independent harms. Rule provenance and admissible institution-purpose scope must be directly grounded before making any legal assertion.
