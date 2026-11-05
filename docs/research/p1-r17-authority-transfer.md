@@ -20,3 +20,7 @@ The experiment's expected result is *documentation of non-entailment* with synth
 
 ### R17.6 — Court evidence analogy firewall
 Federal Rules of Evidence 401 and 105 provide a clear *court-specific* example of claim-relative relevance and limited purpose use. Their applicability cannot simply be transported to consumer reporting agency duties or CFPB enforcement proceedings. A well-typed analogy preserves recipient institution and source-of-law scope.
+
+
+### R17.7 — Distinguish legal duty and discharge
+In 15 USC 1681i(d), once the relevant facts and consumer request conditions hold the CRA can have a prior-recipient notification duty. Whether the CRA actually sends notice, whether it arrives, and whether a decision-maker revisits earlier action are separate observations. A consent-order termination does not substitute for them.
