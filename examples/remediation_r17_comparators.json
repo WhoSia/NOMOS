@@ -1,0 +1,54 @@
+{
+  "schema": "r17.1",
+  "cases": [
+    {
+      "id": "termination-only",
+      "claim": "legal_order_ended",
+      "documentary": true,
+      "statutory_trigger": "unknown",
+      "actual_recipient_receipt": "unknown",
+      "purpose": "legal_status"
+    },
+    {
+      "id": "conditional-statute",
+      "claim": "specific_prior_recipient_duty",
+      "documentary": true,
+      "statutory_trigger": "unknown",
+      "actual_recipient_receipt": "unknown",
+      "purpose": "consumer_reporting"
+    },
+    {
+      "id": "synthetic-eligible",
+      "claim": "specific_prior_recipient_duty",
+      "documentary": true,
+      "statutory_trigger": "conditional_trigger_met",
+      "actual_recipient_receipt": "unknown",
+      "purpose": "consumer_reporting"
+    },
+    {
+      "id": "synthetic-no-request",
+      "claim": "specific_prior_recipient_duty",
+      "documentary": true,
+      "statutory_trigger": "not_triggered",
+      "actual_recipient_receipt": "unknown",
+      "purpose": "consumer_reporting"
+    },
+    {
+      "id": "synthetic-claimed-receipt",
+      "claim": "specific_prior_recipient_duty",
+      "documentary": true,
+      "statutory_trigger": "unknown",
+      "actual_recipient_receipt": "asserted_only",
+      "purpose": "consumer_reporting"
+    },
+    {
+      "id": "wrong-purpose",
+      "claim": "all_downstream_welfare_restored",
+      "documentary": true,
+      "statutory_trigger": "unknown",
+      "actual_recipient_receipt": "unknown",
+      "purpose": "person_outcome"
+    }
+  ],
+  "note": "All decision evaluations are synthetic and truth labels are specified by scenario design, not sourced consumer records."
+}
