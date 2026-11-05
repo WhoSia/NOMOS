@@ -17,3 +17,7 @@ Never construct real named individual profiles or infer actual privacy violation
 
 ## Rival and stop rule
 Attempt an explicit translation into an extended Barth first-order temporal trace with new `judge` event and a negative norm requiring proper claim authorization. If no nondefinable residual remains, collapse NOMOS's 'new operator' claim. Also benchmark against Nissenbaum's context-appropriateness and standard claim-specific legal analysis before using novelty language.
+
+
+### P2-P4.7 — Observational-equivalence statement
+Fix the observed transmission and inferable attribute π_flow(w)=(Flow,Know). Worlds A and B have equal π_flow by fixture design but differ in a later institutional claim. Consequently the observation projection cannot identify which *decision* was issued unless the decision event is independently observed. This is an elementary projection fact, not a novel representation theorem.
