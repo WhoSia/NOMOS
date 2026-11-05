@@ -20,3 +20,7 @@ The generated status documentarily_asserted means merely that a human-curated so
 
 ### R15.6 — Claim specific nonmonotonic revision
 A claim may be textually asserted and later defeated by corrected court or agency evidence. Preserve dated legal validity, source version, withdrawn guidance and contrary source as independent fields. The score is not monotone in raw source count; one newer superseding source can change authority.
+
+
+### R15.7 — Recipient conditions
+15 USC 1681i(d) is conditional on qualifying deletion or disputed notation, the consumer's request, a specifically designated prior recipient and receiving-purpose windows. A general statutory source alone cannot establish satisfaction of those factual predicates for Toyota or another real person.
