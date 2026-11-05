@@ -36,3 +36,7 @@ NASA v Nelson (562 U.S. 134) explicitly assumes without deciding a constitutiona
 
 ### P2-P1.8 — Standing versus merits
 TransUnion v Ramirez (594 U.S. 413) distinguished 1,853 disseminated reports from 6,332 internal files for Article III standing on a particular FCRA claim. A claim that non-disseminated records cannot ever have legal consequences extends beyond that ruling. A claim that dissemination proves changed downstream employment or lending outcome also exceeds the ruling.
+
+
+### P2-P1.9 — Stronger rivals than provenance alone
+Nissenbaum 2004 contextual integrity, Barth/Datta/Mitchell/Nissenbaum 2006 transmission norms with temporal logic, and Sultan/Jensen 2021 provenance-enabled purpose limitation already encode combinations of actors, context, recipient roles, purpose, transmission rules and provenance. They constitute directly competing solutions to purported P2 originality. An incremental claim would require person-classification inference authority *after* an otherwise authorized flow, where those rivals and a trained legal reviewer demonstrably fail.
