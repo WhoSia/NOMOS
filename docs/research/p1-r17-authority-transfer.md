@@ -24,3 +24,7 @@ Federal Rules of Evidence 401 and 105 provide a clear *court-specific* example o
 
 ### R17.7 — Distinguish legal duty and discharge
 In 15 USC 1681i(d), once the relevant facts and consumer request conditions hold the CRA can have a prior-recipient notification duty. Whether the CRA actually sends notice, whether it arrives, and whether a decision-maker revisits earlier action are separate observations. A consent-order termination does not substitute for them.
+
+
+### R17.8 — Strong baseline equality is a negative result
+The R17 synthetic program intentionally sets claimGraph equal to strongLegalAudit: 'addedDecisionDiscrimination=false' by construction. That is a control against fabricated performance. This neither proves broader equivalence in real practice nor constitutes empirical comparative superiority. Truly independent labels and blinded audit are needed.
