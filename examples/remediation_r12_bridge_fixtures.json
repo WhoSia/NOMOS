@@ -1,0 +1,145 @@
+{
+  "schema": "r12.1",
+  "cases": [
+    {
+      "id": "same-case-complete",
+      "case_id": "case-A",
+      "unit_id": "account-X",
+      "events": [
+        {
+          "step": "request",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "furnisher",
+          "time": "2024-01-01",
+          "auth": true
+        },
+        {
+          "step": "cra_applied",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "CRA",
+          "time": "2024-01-02",
+          "auth": true
+        },
+        {
+          "step": "recipient_receipt",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "recipient",
+          "time": "2024-01-03",
+          "auth": true
+        },
+        {
+          "step": "recipient_review",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "recipient",
+          "time": "2024-01-04",
+          "auth": true
+        },
+        {
+          "step": "outcome",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "independent",
+          "time": "2024-01-05",
+          "auth": true
+        }
+      ]
+    },
+    {
+      "id": "wrong-case",
+      "case_id": "case-A",
+      "unit_id": "account-X",
+      "events": [
+        {
+          "step": "request",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "furnisher",
+          "time": "2024-01-01",
+          "auth": true
+        },
+        {
+          "step": "cra_applied",
+          "case_id": "case-B",
+          "unit_id": "account-X",
+          "source": "CRA",
+          "time": "2024-01-02",
+          "auth": true
+        }
+      ]
+    },
+    {
+      "id": "wrong-unit",
+      "case_id": "case-A",
+      "unit_id": "account-X",
+      "events": [
+        {
+          "step": "request",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "furnisher",
+          "time": "2024-01-01",
+          "auth": true
+        },
+        {
+          "step": "cra_applied",
+          "case_id": "case-A",
+          "unit_id": "account-Y",
+          "source": "CRA",
+          "time": "2024-01-02",
+          "auth": true
+        }
+      ]
+    },
+    {
+      "id": "unverified-receipt",
+      "case_id": "case-A",
+      "unit_id": "account-X",
+      "events": [
+        {
+          "step": "request",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "furnisher",
+          "time": "2024-01-01",
+          "auth": true
+        },
+        {
+          "step": "recipient_receipt",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "furnisher",
+          "time": "2024-01-02",
+          "auth": false
+        }
+      ]
+    },
+    {
+      "id": "time-inversion",
+      "case_id": "case-A",
+      "unit_id": "account-X",
+      "events": [
+        {
+          "step": "request",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "furnisher",
+          "time": "2024-01-04",
+          "auth": true
+        },
+        {
+          "step": "cra_applied",
+          "case_id": "case-A",
+          "unit_id": "account-X",
+          "source": "CRA",
+          "time": "2024-01-01",
+          "auth": true
+        }
+      ]
+    }
+  ],
+  "note": "All cases are synthetic fixtures, not authentic Toyota or Synchrony consumer records."
+}
