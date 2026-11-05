@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {auditCases} from '../tools/remediationAuditR13.mjs';
+const f=JSON.parse(readFileSync(new URL('../examples/remediation_r13_cases.json',import.meta.url),'utf8'));const r=auditCases(f);
+assert.equal(r.length,4);assert.equal(r.filter(x=>x.baselineClosureOnly.legalClosure).length,2);
+assert.equal(r.find(x=>x.id==='synchrony-2014').strongSourceBaseline.regulatorAggregateFulfillment,true);
+assert.equal(r.find(x=>x.id==='toyota-2023').strongSourceBaseline.regulatorAggregateFulfillment,false);
+assert.ok(r.every(x=>x.strongSourceBaseline.publicIndividualOutcomeEstablished===false));
+assert.ok(r.every(x=>x.typedLedger.contradictory.length===0));
+assert.throws(()=>auditCases({}),/cases required/);console.log('R13 documentation-only audit passed');
