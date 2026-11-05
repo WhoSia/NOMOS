@@ -1,3 +1,9 @@
+# NOMOS — Current Head (2026-11-05 · P2-P2 rival audit)
+
+**P2-P2 SOURCE-BOUNDED / THEORETICAL NOVELTY NOT DEMONSTRATED.** P2-P1 added distinct US Supreme Court precedents DOJ v Reporters Committee (FOIA purpose), NASA v Nelson (permissible contractor background inquiry) and retained TransUnion v Ramirez as a previously used bounded comparator. P2-P2 audited strong external competitors: Nissenbaum 2004 contextual integrity; Barth/Datta/Mitchell/Nissenbaum 2006 formal flow norms; Sultan/Jensen 2021 provenance-enabled purpose access control. Actor + purpose + provenance is NOT new. No independent blinded outcome labels, no demonstrated incremental correctness versus strong legal baseline. P2 remains research stage only. [P2-P1 case audit](../docs/research/p2-p1-independent-case-audit.md) · [P2-P2 rival audit](../docs/research/p2-p2-rival-baselines.md) · [P2-P0 preregistration](../docs/research/p2-p0-authority-transfer-falsification.md). All P1 historical debts remain OPEN. New CI test calls do not certify a passing CI run. Latest source-byte Drive snapshot unverified. No code deletion or new branch.
+
+---
+
 # NOMOS — Current Research Head (2026-11-05, P2-P0 ADMISSION)
 
 **NOMOS-0.885 P2-P0 RESEARCH STAGE OPEN, NOT THEORY VALIDATED.** P1-R16 is synthetically implemented with a three-valued statutory-condition checker; P1-R17 compared source-specific claims to a strong legal audit in synthetic controls and obtained **no added decision discrimination by construction**. This negative result justifies an adversarial independent test, not novel legal theory. [P2-P0 pre-registration](../docs/research/p2-p0-authority-transfer-falsification.md) · [R16](../docs/research/p1-r16-authority-boundary.md) · [R17](../docs/research/p1-r17-authority-transfer.md). All inherited P1 tasks remain OPEN; actual consumer-level results and external incremental value UNVERIFIED. Source-byte Drive and exact-HEAD CI still need independent verification.
