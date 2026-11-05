@@ -22,3 +22,7 @@ Statutes can establish a general conditional norm; a regulator order can establi
 
 ### R16.8 baseline test and limitation
 Strong baseline is a specialist who reads the statute and checks facts. The Boolean predicate classifier is a transparent representation of that baseline, not evidence of superior legal reasoning. It does not compute actual date windows from report records or evaluate exceptions and jurisdictional disputes.
+
+
+### R16.9 adversarial same-record claims
+A termination can be fully evidenced while an all-CRA correction or downstream revision claim remains unknown. Positive evidence of a case-specific completed mailing cannot establish a different case's notification. Consent-order termination and FCRA subsection (d) triggers involve distinct actors, purposes and legal bases.
