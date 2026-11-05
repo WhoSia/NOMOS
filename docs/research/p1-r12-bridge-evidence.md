@@ -20,3 +20,7 @@ Reusing NOMOS 0.822, 0.850, 0.865, 0.881 is mandatory; source matching and missi
 ## Toyota FAQ: dated operator assertions versus independent receipts
 
 The operator's FAQ says that prior to the 2023 consent order TMCC submitted requests to credit-reporting agencies to update affected accounts; its FAQ also states that some redress checks were or would be mailed, and mailed checks may be reissued following the May 2025 termination. This is more concrete than a generalized plan, but it remains the respondent/administrator's source statement. It is not a CRA-level acceptance response, item-level post-update report or individual bank deposit confirmation. Source: https://www.tmccremediation.com/faq , items 1, 2, 4 and 15. FAQ's last-publication date not independently established; do not infer the statements were all known before May 2025.
+
+## Same-case, same-unit and timing guards
+
+The R12 executable witness has five artificial cases: complete logical scaffold, mismatched case, mismatched unit, self-asserted unauthenticated recipient receipt, and inverted source/correction time ordering. The mismatches must not fill missing links. Real account IDs or consumer records are not used. A synthetic fixture's `auth=true` is a test input, NOT an authentic cryptographic signature or proof of provenance. A false positive under a new adversarial fixture is a defect to correct rather than evidence about real-world compliance.
