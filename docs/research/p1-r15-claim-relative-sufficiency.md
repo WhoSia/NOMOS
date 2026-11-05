@@ -32,3 +32,7 @@ The termination order does not certify all CRA entries corrected; it also does n
 
 ### R15.9 — Counterclaim competition
 Competing claims can hold simultaneously: (i) the enforcement order is legally terminated, (ii) some remediation may have been executed, and (iii) downstream consumer-specific welfare is not independently known. Therefore a binary 'case resolved' score is an invalid compression without a claim-relative scope.
+
+
+### R15.10 — P2 scrutiny
+Internal precedence: NOMOS 0.822, 0.850, 0.865 and 0.881 already distinguish derived record correction, recipient operations, actual outcome and partial institutional closure. External provenance standards and legal auditing may already implement the observed distinction. R15 asserts no field novelty; next R16 tests authorization separately.
