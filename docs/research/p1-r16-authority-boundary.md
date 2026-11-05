@@ -26,3 +26,7 @@ Strong baseline is a specialist who reads the statute and checks facts. The Bool
 
 ### R16.9 adversarial same-record claims
 A termination can be fully evidenced while an all-CRA correction or downstream revision claim remains unknown. Positive evidence of a case-specific completed mailing cannot establish a different case's notification. Consent-order termination and FCRA subsection (d) triggers involve distinct actors, purposes and legal bases.
+
+
+### R16.10 stage verdict
+R16 code and fixtures target only conditional-trigger logic with three-valued output. R15 source matching remains not a truth or law classifier. P1 advances through R16 synthetic method but no independent recipient outcome exists; P2 not promoted. Current HEAD CI and Drive byte seal require independent readback.
