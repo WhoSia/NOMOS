@@ -12,3 +12,7 @@ C1 = 'Toyota 2023 order terminated on 2025-05-12' is supported by regulator date
 B0 counts number of official documents as evidence; B1 performs claim-specific paragraph reading (strong, manual). The proposed machine check only detects some support/absence errors from manually curated claim tags. It has no demonstrated advantage over B1 and does not independently authenticate sources.
 ## Falsifier
 An authenticated, same-case, same-account CRA update registry or named recipient readback may warrant additional claims; revise ledger when sourced. Do not treat not-public as false.
+
+
+### R15.5 — Assertion versus event
+The generated status documentarily_asserted means merely that a human-curated source label matches a target claim. It does not certify legal effect, source validity, occurrence of any event, or case-level causation. Explicitly distinguish signed official acts from respondent self-report and case-specific receipt records.
