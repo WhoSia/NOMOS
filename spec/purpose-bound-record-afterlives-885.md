@@ -287,3 +287,7 @@ NOMOS 0.822 already identifies descendant-record coverage, 0.850 receiving opera
 
 ### P1-R9.10 — Promotion decision
 P1-R9 identifies a promising verification-status question but not a novel law or a linked E1-E5 prior-recipient case. P2 remains HOLD pending a concrete record-level counterexample, rival prior-art review and a prospectively testable added result. No executable code retired.
+
+
+### P1-R10.1 — Order-versus-outcome question
+P1-R10 asks whether official administrative order closure is being mistaken for complete person-level remediation. Distinguish legal status of an enforcement order, respondent compliance assertions, paid redress evidence, corrected credit tradelines, and independently observed downstream consumer decisions. This is a research decomposition, not a rule of US law.
