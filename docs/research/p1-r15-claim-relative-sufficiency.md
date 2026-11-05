@@ -24,3 +24,7 @@ A claim may be textually asserted and later defeated by corrected court or agenc
 
 ### R15.7 — Recipient conditions
 15 USC 1681i(d) is conditional on qualifying deletion or disputed notation, the consumer's request, a specifically designated prior recipient and receiving-purpose windows. A general statutory source alone cannot establish satisfaction of those factual predicates for Toyota or another real person.
+
+
+### R15.8 — Negative evidence boundary
+The termination order does not certify all CRA entries corrected; it also does not prove they were not corrected. Non-observation in the scoped public file is neither a population-level failure rate nor proof of individual noncompliance.
