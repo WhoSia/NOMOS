@@ -36,3 +36,7 @@ NASA v Nelson is a positive control for lawful and functionally justified govern
 
 ### P2-P2.9 — Measurement contract
 Current tests check curated source metadata, duplicate case IDs, legal category output and novelty-gate fields. They do NOT compare actual blinded annotators, independent source verification, judicial merits or real affected individuals. No precision, recall, causal estimate or utility metric is available. Promotion claims must remain at RESEARCH PROGRAM OPEN.
+
+
+### P2-P2.10 — Negative result and prospective gate
+At this point no source-backed example has been found where NOMOS produces a correct independent decision that contextual integrity plus a trained legal auditor cannot produce. This is a null relative to the scoped audit, NOT proof no such example exists. Before P2-P3, obtain independent adjudicated labels or demonstrate a formal theorem beyond Nissenbaum/Barth/Sultan and inherited NOMOS, then predeclare evaluation thresholds and failure criteria.
