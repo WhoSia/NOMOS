@@ -27,3 +27,7 @@ The 2025 Engelmann/Nissenbaum preprint has arXiv ID 2507.18253; its abstract dir
 
 ### P2-P6.7 — Stronger predecessor: original purpose controls
 Independent bibliography checking confirmed Park/Nguyen/Sandhu (2012), *A Provenance-based Access Control Model*, PST 2012 pp.137–144, DOI 10.1109/PST.2012.6297930; Pan/Stakhanova/Ray (2023), *Data Provenance in Security and Privacy*, ACM Computing Surveys, DOI 10.1145/3593294; Gierend et al. (2024), *Provenance Information for Biomedical Data and Workflows: Scoping Review*, JMIR 26:e51297, DOI 10.2196/51297; and Sultan/Jensen's *Secondary Use Prevention in Large-Scale Data Lakes* (2021), Springer chapter DOI 10.1007/978-3-030-80129-8_64. These were in prior missing ledger and must be retained rather than silently discarded.
+
+
+### P2-P6.8 — Theses and already-implemented models
+Sultan's 2022 DTU dissertation *Purpose Limitation and Secondary Use Prevention in Large-Scale Video Surveillance Systems* covers the AERBAC approach and prototype per institutional repository abstract, and is another direct technical competitor. DOI/library entry for the dissertation should be source verified on acquisition. University repository https://orbit.dtu.dk/en/publications/purpose-limitation-and-secondary-use-prevention-in-large-scale-vi/ . This is a newly discovered missing candidate, not a text already studied in Drive.
