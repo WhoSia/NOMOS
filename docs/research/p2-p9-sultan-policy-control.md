@@ -19,3 +19,7 @@ Create a toy record with both authorized traffic object and unauthorized bystand
 
 ## Validation boundary
 Static synthetic fixtures, no actual personal footage, no network/DB/XACML runtime, no assertion of real GDPR compliance. Source includes tables/figures that require visual and policy syntax inspection before claiming an exact policy reproduction. No empirical accuracy, recall, privacy outcomes or court findings established.
+
+
+### P2-P9.6 — Fidelity counterexample
+The thesis §5.2 requires intersection of the observer's access-purpose EOI with the data's collection-purpose EOI. The mixed-traffic fixture would expose two objects under physical-only permissions, but only vehicle_1 under the restricted abstraction. This difference is inherited from Sultan, not produced by NOMOS.
