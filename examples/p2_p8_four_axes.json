@@ -1,0 +1,21 @@
+{
+  "schema": "p2-p8.1",
+  "synthetic": true,
+  "predicates": [
+    "evidence",
+    "construct",
+    "authority",
+    "outcome"
+  ],
+  "domain": [
+    "yes",
+    "no",
+    "unknown"
+  ],
+  "methods": [
+    "full_3pow4_enumeration",
+    "no_hidden_legal_attribution",
+    "strong_baseline_competition"
+  ],
+  "note": "These are synthetic judgment states, not observations of real people."
+}
