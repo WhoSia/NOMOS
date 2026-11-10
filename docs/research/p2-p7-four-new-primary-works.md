@@ -35,3 +35,7 @@ Therefore any new P2 theorem must have a *specific institution-claim-use authori
 
 ### P2-P7.6 — Publication-year and edition correction
 DTU Orbit explicitly labels Sultan's 155-page dissertation 'Published - 2022', with 2021 on the internal title page; repository citation determines normalized year, preserving the internal date as a separate field. Martin's Georgetown Law Technology Review 9(1), January 2025 final citation was verified against the journal's own page; SSRN-distributed file must not be mistaken for independently hashed publisher-native bytes. Engelmann's arXiv v1 must not be silently conflated with later Hart edited-volume text.
+
+
+### P2-P7.7 — Empirical study limitations
+Martin et al. design six vignette survey conditions and report Survey 1 mean -23.41 vs Survey 2 mean -30.88 and t=10.22 for a particular raw-versus-inference comparison. These are study-reported ratings, NOT an independently reproduced regression and not a judicial finding. Respondents recruited via Prolific in March/April 2023; experimental vignette perceptions do not entail population representative preferences or downstream welfare. Charts and tables should be independently inspected before detailed numeric meta-analysis.
