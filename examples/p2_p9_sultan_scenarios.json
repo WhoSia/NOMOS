@@ -1,0 +1,165 @@
+{
+  "schema": "p2-p9.1",
+  "source": "Sultan DTU PhD 2022 §5.2–5.4; researcher-created toy objects",
+  "scenarios": [
+    {
+      "id": "mixed-traffic",
+      "request": {
+        "role": "traffic",
+        "contextOk": true,
+        "accessEvents": [
+          "road_incident"
+        ]
+      },
+      "record": {
+        "collectionEvents": [
+          "road_incident",
+          "public_safety"
+        ],
+        "events": [
+          {
+            "kind": "road_incident",
+            "objects": [
+              "vehicle_1"
+            ]
+          },
+          {
+            "kind": "public_safety",
+            "objects": [
+              "bystander_2"
+            ]
+          }
+        ]
+      },
+      "expected": "FILTERED",
+      "visible": [
+        "vehicle_1"
+      ]
+    },
+    {
+      "id": "no-event-match",
+      "request": {
+        "role": "traffic",
+        "contextOk": true,
+        "accessEvents": [
+          "road_incident"
+        ]
+      },
+      "record": {
+        "collectionEvents": [
+          "public_safety"
+        ],
+        "events": [
+          {
+            "kind": "public_safety",
+            "objects": [
+              "bystander_2"
+            ]
+          }
+        ]
+      },
+      "expected": "PRIVACY_AWARE",
+      "visible": []
+    },
+    {
+      "id": "physical-deny",
+      "request": {
+        "role": "traffic",
+        "contextOk": false,
+        "accessEvents": [
+          "road_incident"
+        ]
+      },
+      "record": {
+        "collectionEvents": [
+          "road_incident"
+        ],
+        "events": [
+          {
+            "kind": "road_incident",
+            "objects": [
+              "vehicle_1"
+            ]
+          }
+        ]
+      },
+      "expected": "DENY",
+      "visible": []
+    },
+    {
+      "id": "unknown-purpose",
+      "request": {
+        "role": "traffic",
+        "contextOk": true,
+        "accessEvents": [
+          "road_incident"
+        ]
+      },
+      "record": {
+        "collectionEvents": null,
+        "events": [
+          {
+            "kind": "road_incident",
+            "objects": [
+              "vehicle_1"
+            ]
+          }
+        ]
+      },
+      "expected": "UNKNOWN_PURPOSE",
+      "visible": []
+    },
+    {
+      "id": "safety-allowed",
+      "request": {
+        "role": "safety",
+        "contextOk": true,
+        "accessEvents": [
+          "public_safety"
+        ]
+      },
+      "record": {
+        "collectionEvents": [
+          "public_safety"
+        ],
+        "events": [
+          {
+            "kind": "public_safety",
+            "objects": [
+              "bystander_2"
+            ]
+          }
+        ]
+      },
+      "expected": "FILTERED",
+      "visible": [
+        "bystander_2"
+      ]
+    },
+    {
+      "id": "invalid-context",
+      "request": {
+        "role": "traffic",
+        "contextOk": null,
+        "accessEvents": [
+          "road_incident"
+        ]
+      },
+      "record": {
+        "collectionEvents": [
+          "road_incident"
+        ],
+        "events": [
+          {
+            "kind": "road_incident",
+            "objects": [
+              "vehicle_1"
+            ]
+          }
+        ]
+      },
+      "expected": "UNKNOWN_CONTEXT",
+      "visible": []
+    }
+  ]
+}
