@@ -26,3 +26,7 @@ Four toy cases: a family relationship disclosure, group similarity prediction, e
 
 ## Conclusion
 Two newly acquired manuscripts are **defeaters** of broad theory originality. This unit creates a reproducible *evaluation contract* only, not a new theorem, real-world outcome or evidence that NOMOS outperforms relational frameworks. No consent-sensitive actual personal dataset is used.
+
+
+### P2-P14.6 — Domain of dependence is prior-art variable
+Barocas/Levy 2020 §II makes privacy dependency type an explicit mechanism dimension. If a test varies whether Alice and Bob are related, similar in a dataset, or distinguishable by elimination, a correct strong baseline already detects those differing information-production routes. Relabeling mechanism as a new NOMOS stage supplies no incremental information.
