@@ -29,3 +29,7 @@ The regression asserts that (i) `judge` preceding `send` is rejected, (ii) `judg
 
 ### P2-P5.8 — Closed-world Boolean hazard
 The exhaustive comparison enumerates only true/false input predicates. Real legal-document fact sets often require unknown, contested and superseded labels. Null is treated conservatively as not-affirmatively-true in the toy checker, so `fullyCompliant=false` cannot be transported to 'real-law violation'. A prospective law benchmark must add at least true / false / unknown, contrary sources, versioned rule authority and abstention.
+
+
+### P2-P5.9 — Strongest theoretical defeater
+An extended Barth-style first-order temporal trace can introduce a `judge` event and negative contextual norm of the form G(judge -> (past-authorized-send & previously-derived-information & appropriate role & scoped claim authorization)). Our JavaScript simulates a finite bounded case, not a syntactic translation or model checker for the original 2006 logic. To establish a new expressiveness theorem, show a property unrepresentable in a relevant specified extension under explicit resources—not merely assert a new event name.
