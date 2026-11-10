@@ -31,3 +31,7 @@ Therefore any new P2 theorem must have a *specific institution-claim-use authori
 
 ## Research-risk and next moves
 (1) Reproduce one bounded paper-internal example with a faithful baseline rather than building a strawman. (2) Obtain independent benchmark labels without private consumer reidentification. (3) Model the difference between analytic inference, epistemic construct validity, authorized institutional use and observed outcome as FOUR separate predicates. (4) Report nil improvement if a strong prior model already captures the asserted event.
+
+
+### P2-P7.6 — Publication-year and edition correction
+DTU Orbit explicitly labels Sultan's 155-page dissertation 'Published - 2022', with 2021 on the internal title page; repository citation determines normalized year, preserving the internal date as a separate field. Martin's Georgetown Law Technology Review 9(1), January 2025 final citation was verified against the journal's own page; SSRN-distributed file must not be mistaken for independently hashed publisher-native bytes. Engelmann's arXiv v1 must not be silently conflated with later Hart edited-volume text.
