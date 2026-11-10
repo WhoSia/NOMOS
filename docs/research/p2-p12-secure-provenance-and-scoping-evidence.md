@@ -29,3 +29,7 @@ Pan et al. §4.1 explicitly note that per-record signatures alone do not protect
 
 ### P2-P12.7 — Attacker taxonomy is inherited prior art
 Pan et al. §3.3 already catalog forge/append, modify, shuffle, drop and attack against provenance collection mechanisms. NOMOS-R14's date/order/duplicate audit was a valid software improvement but must not be promoted as a previously unknown provenance threat or general security innovation.
+
+
+### P2-P12.8 — Scoping search denominators and validation types
+Gierend et al. report 764 initial search results, 624 deduplicated, 66 included (66/624=10.5769%, 10.6% rounded). They report 52 studies describing successful provenance solution validation. 'Successful' encompasses use-case demonstrations, semantic competency questions and other tests, not 52 independent end-to-end clinical causal benefit validations. A provenance study's inclusion in this review does not prove GDPR/FCRA compliance.
