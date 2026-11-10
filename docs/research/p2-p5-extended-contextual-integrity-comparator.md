@@ -25,3 +25,7 @@ The Node v22 local execution of the independently written comparator reported `t
 
 ### P2-P5.7 — Metamorphic perturbations
 The regression asserts that (i) `judge` preceding `send` is rejected, (ii) `judge` after `send` but before `derive` has a missing prior derivation, and (iii) replacing a known positive contestability flag with null blocks a positive modeled warrant. The study does not infer that any specific real institution is legally obliged to provide identical contestability procedures in every context.
+
+
+### P2-P5.8 — Closed-world Boolean hazard
+The exhaustive comparison enumerates only true/false input predicates. Real legal-document fact sets often require unknown, contested and superseded labels. Null is treated conservatively as not-affirmatively-true in the toy checker, so `fullyCompliant=false` cannot be transported to 'real-law violation'. A prospective law benchmark must add at least true / false / unknown, contrary sources, versioned rule authority and abstention.
