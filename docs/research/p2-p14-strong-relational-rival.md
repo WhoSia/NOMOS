@@ -30,3 +30,7 @@ Two newly acquired manuscripts are **defeaters** of broad theory originality. Th
 
 ### P2-P14.6 — Domain of dependence is prior-art variable
 Barocas/Levy 2020 §II makes privacy dependency type an explicit mechanism dimension. If a test varies whether Alice and Bob are related, similar in a dataset, or distinguishable by elimination, a correct strong baseline already detects those differing information-production routes. Relabeling mechanism as a new NOMOS stage supplies no incremental information.
+
+
+### P2-P14.7 — Legitimacy cannot be reduced to an operator's consent
+Viljoen 2021 §IV criticizes Watercorp-like governance where households have individual opt-out or compensation but no meaningful role in determining population-level rules. The difference between procedural individual permission and legitimate collective arrangements predates NOMOS. R1 therefore contains a governance-legitimacy feature in addition to ordinary source and use purpose.
