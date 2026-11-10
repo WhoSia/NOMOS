@@ -35,3 +35,7 @@ Solow-Niederman 2022 part IV.B shows that the people whose records train a predi
 
 ### P2-P11.9 — Relational governance is prior art
 Solow-Niederman part IV proposes shifting regulation to the relationships and interdependencies among data collectors, processors and affected people, with attention to incentives and organizational informational power. The NOMOS claim that identifying institutional transfer interfaces is a first conceptual contribution must be rejected as stated; only a narrower verified claim-specific legal consequence might remain.
+
+
+### P2-P11.10 — Thesis gate and negative result
+No real target/person-level case labels or independent results were obtained. The P2-P11 tool identifies supplied documentary completeness and distinct training-contributor roles, not the fairness, validity or lawfulness of a classifier. Next P2-P12 studies technical integrity attacks and observed validation levels; do not claim source existence or signature validity as proof of complete trustworthy provenance.
