@@ -1,0 +1,72 @@
+{
+  "schema": "p2-p14.1",
+  "synthetic": true,
+  "baselines": [
+    {
+      "id": "R0",
+      "features": [
+        "direct_disclosure"
+      ],
+      "strength": "weak_control"
+    },
+    {
+      "id": "R1",
+      "features": [
+        "mechanism",
+        "horizontal_population_relation",
+        "vertical_institutional_relation",
+        "governance_legitimacy",
+        "expert_law_scope",
+        "purpose",
+        "context"
+      ],
+      "strength": "strong_rival"
+    },
+    {
+      "id": "G",
+      "features": [
+        "mechanism",
+        "horizontal_population_relation",
+        "vertical_institutional_relation",
+        "governance_legitimacy",
+        "expert_law_scope",
+        "purpose",
+        "context",
+        "case_claim_warrant",
+        "correction_outcome_chain"
+      ],
+      "strength": "proposed_augmented"
+    }
+  ],
+  "cases": [
+    {
+      "id": "tie-family",
+      "mechanism": "tie",
+      "populationEffect": false,
+      "sourceLaw": "unknown",
+      "independentAdjudication": false
+    },
+    {
+      "id": "similarity-group",
+      "mechanism": "similarity",
+      "populationEffect": true,
+      "sourceLaw": "unknown",
+      "independentAdjudication": false
+    },
+    {
+      "id": "difference-candidates",
+      "mechanism": "difference",
+      "populationEffect": false,
+      "sourceLaw": "unknown",
+      "independentAdjudication": false
+    },
+    {
+      "id": "watercorp-governance",
+      "mechanism": "similarity",
+      "populationEffect": true,
+      "sourceLaw": "unknown",
+      "independentAdjudication": false
+    }
+  ],
+  "note": "toy comparison registration only; no claim-level independently adjudicated correct outcomes"
+}
