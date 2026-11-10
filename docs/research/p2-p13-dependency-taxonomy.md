@@ -20,3 +20,7 @@ Construct fictional cases showing the **same downstream claim and absence of Bob
 
 ## Prospective P2 gate
 Require independent legal rule + source evidence + actor/recipient case identity and an independently reviewable expert comparator. No such real-world incremental result is presented in this unit. No human subject records, no assertion of privacy violation or actual outcome. Code and CI configuration are not successful remote CI receipts.
+
+
+### P2-P13.6 — Tie mechanism has multiple subroutes
+Barocas/Levy §II.A distinguishes passthrough (revealing a relationship), bycatch (unintended third-party data), identification and tie-justified observation. These are *distinct* evidence-generating processes with different risks and potentially different legal responses. A one-bit 'noncontributor' field cannot tell them apart.
