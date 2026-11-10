@@ -64,6 +64,7 @@ jobs:
       - run: node tests/test_p2P8ClaimAxes.mjs
       - run: node tests/test_p2P9SultanPolicy.mjs
       - run: node tests/test_p2P10AggregateAudit.mjs
+      - run: node tests/test_p2P11InferenceScopes.mjs
       - run: node tests/test_p2CaseClaims.mjs
       - run: node tools/deadlock860.mjs examples/deadlock860_cases.json
       - run: PYTHONPATH=src python -m unittest discover -s tests -v
