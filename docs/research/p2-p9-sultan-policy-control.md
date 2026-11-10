@@ -31,3 +31,7 @@ The dissertation describes privacy-aware masking as a possible view in authorize
 
 ### P2-P9.8 — Role and nested event caveats
 The six synthetic scenarios do not faithfully encode AERBAC role-to-permission assignments, role hierarchies, native XACML three-valued/indeterminate decisions, dynamic environmental attributes, video-region extraction, multiple event-object memberships or overlapping consent/legal bases. The implementation uses prevalidated contextOk rather than computing it, so it MUST NOT be labeled a full XACML replication.
+
+
+### P2-P9.9 — Construct validity interface
+Sultan's access control does not independently validate the correctness of video-derived event labels or their epistemic mapping to human behavioral traits. Engelmann/Nissenbaum and Jacobs/Wallach supply existing construct-validity critiques; adding a check would reuse their prior work. No video classification predictions or real human records are used.
