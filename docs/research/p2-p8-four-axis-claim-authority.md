@@ -41,3 +41,7 @@ Martin/Nissenbaum/Shmatikov present real factorial-vignette evidence that contex
 
 ### P2-P8.8 — Closed-world exceptions and nulls
 The synthetic model's 'no' means a negative predicate is explicitly stipulated, whereas 'unknown' means no sufficient case record. In real records, absence of a remedy completion certificate must never become empirical noncompliance. In addition, straightforward claims of public legal acts need not instantiate a psychological latent trait K; a domain-specific type system should disable or reinterpret K rather than force a made-up construct warrant.
+
+
+### P2-P8.9 — Replication target
+The next concrete test should target one published survey's factor coding, vignette instrument, sample construction and regression table from Martin et al. and attempt to replicate only with disclosed data; until respondent-level data is found, label 'author-reported findings' and avoid synthesizing effect sizes. In parallel, extract one small XACML policy example from Sultan's dissertation and reproduce it fairly in a baseline engine, not a weakened caricature.
