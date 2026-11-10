@@ -43,3 +43,7 @@ Martin et al. design six vignette survey conditions and report Survey 1 mean -23
 
 ### P2-P7.8 — Thesis prototype against technical novelty
 Sultan (2022) ch. 5 describes MySQL-backed VSS metadata, a PDP engine, XACML policies, need-to-know views and an expanded AERBAC with semantic object/event data. This directly defeats 'first purpose-aware structured classification access tool'. A possible new NOMOS contribution must concern demonstrable institution-level legal consequences, versioned warrant and failure-to-correct evidence, not simply another access-control UI.
+
+
+### P2-P7.9 — Epistemic validity precursor
+Engelmann/Nissenbaum (2025) critically scrutinize data collection, ground-truth manufacturing and model evaluations, identifying conceptual overfitting. This is DIRECT precursor to any NOMOS proposal requiring construct grounding before moral attribution. A purportedly high model accuracy score alone is not the kind of evidence that warrants a robust institutional character claim. Again, this is not a novel distinction first made by NOMOS.
