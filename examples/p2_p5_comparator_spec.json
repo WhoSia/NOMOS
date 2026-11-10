@@ -1,0 +1,26 @@
+{
+  "schema": "p2-p5.1",
+  "date": "2026-11-10",
+  "synthetic": true,
+  "conditions": [
+    "flow_permitted",
+    "attribute_derived",
+    "actor_qualified",
+    "purpose_allowed",
+    "claim_scope_supported",
+    "contest_enabled"
+  ],
+  "trace_kinds": [
+    "send-derive-judge",
+    "judge-send-derive",
+    "send-judge-derive",
+    "derive-judge-send",
+    "send-derive-judge-judge"
+  ],
+  "expected": {
+    "combinations": 320,
+    "comparator_mismatches": 0
+  },
+  "status": "not_original_Barth_implementation",
+  "caveat": "same-fact synthetic comparator, no real law conclusions"
+}
