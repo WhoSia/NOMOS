@@ -1,0 +1,28 @@
+{
+  "schema": "p2-p10.1",
+  "source": "Martin et al. 2025 journal article §II–III, author-reported, NOT independently replicated",
+  "design": {
+    "conditions": 6,
+    "vignettes_per_respondent": 30,
+    "respondents_unique_across_conditions": true,
+    "recruited_months": [
+      "2023-03",
+      "2023-04"
+    ],
+    "recruiter": "Prolific"
+  },
+  "contrast": {
+    "survey_1_mean": -23.41,
+    "survey_2_mean": -30.88,
+    "reported_t_magnitude": 10.22,
+    "reported_p_threshold_text": "p < 0.00",
+    "positive_t_sign_in_text": true
+  },
+  "known_unavailable": {
+    "respondent_level_data": true,
+    "clustered_variances": true,
+    "inference_scale_full_codebook": true,
+    "source_table_visual_number_check": true
+  },
+  "hypothesis_status": "paper-reported pattern only"
+}
