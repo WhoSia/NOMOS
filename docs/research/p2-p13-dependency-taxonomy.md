@@ -36,3 +36,7 @@ Barocas/Levy §II.C catalogs process-of-elimination, anomaly-detection and adver
 
 ### P2-P13.9 — Viljoen institutional legitimacy is a direct defeater
 Viljoen §IV's Watercorp/Waterorg example distinguishes an individual's exit/payment rights from meaningful participation in governing collective data production. This is already a theory of legitimate institutional power, not merely a data-flow privacy principle. NOMOS must NOT present collective governance legitimacy as its own discovery.
+
+
+### P2-P13.10 — Negative conclusion and next phase
+The four scenarios are synthetic and fixed to equal observables, so the inability to identify the dependency mechanism is by construction. This is not a formal impossibility result for enriched existing models. Next research should compare doctrinally grounded institutional remedies for different dependency mechanisms using independent real records, not merely add labels.
