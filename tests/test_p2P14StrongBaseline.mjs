@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';import{readFileSync}from'node:fs';
+import{auditResearchContract}from'../tools/p2P14StrongBaseline.mjs';
+const f=JSON.parse(readFileSync(new URL('../examples/p2_p14_relational_baselines.json',import.meta.url),'utf8'));
+const r=auditResearchContract(f);
+assert.equal(r.caseCount,4);assert.deepEqual(r.missingStrong,[]);
+assert.equal(r.independentTruthLabels,0);assert.equal(r.empiricalIncrementEstablished,false);
+assert.ok(r.extra.includes('case_claim_warrant'));assert.ok(r.extra.includes('correction_outcome_chain'));
+const bad=JSON.parse(JSON.stringify(f));bad.baselines.find(x=>x.id==='R1').features=[];
+assert.ok(auditResearchContract(bad).missingStrong.length>0);
+assert.throws(()=>auditResearchContract({}),/bad benchmark/);
+console.log('P2-P14 strong prior-art baseline contract recorded; no measured incremental value');
