@@ -35,3 +35,7 @@ The six synthetic scenarios do not faithfully encode AERBAC role-to-permission a
 
 ### P2-P9.9 — Construct validity interface
 Sultan's access control does not independently validate the correctness of video-derived event labels or their epistemic mapping to human behavioral traits. Engelmann/Nissenbaum and Jacobs/Wallach supply existing construct-validity critiques; adding a check would reuse their prior work. No video classification predictions or real human records are used.
+
+
+### P2-P9.10 — Null finding and next test
+A realistic source-backed access-control gate is reproducible as a small toy without inventing a new NOMOS principle. NOMOS could conceivably add a downstream claim-use warrant, but proof requires separate legal text, case facts and corrected judgments. No such evidence is provided; report a null scientific novelty claim and source/implementation scope restrictions.
