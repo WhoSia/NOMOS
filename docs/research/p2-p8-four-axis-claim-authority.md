@@ -29,3 +29,7 @@ Replicate a bounded published vignette (with its measurement instrument, sample 
 
 ## Stop condition
 If B1 expert review and extended contextual-integrity methods implement the same E/K/A/O distinction, NOMOS must not claim a new theory. P2 research ongoing; originality and actual recipient-level outcomes HOLD.
+
+
+### P2-P8.6 — Four axes must not be collapsed
+Park's graph-derived access permissions are not a substitute for epistemic construct validity K. Engelmann/Nissenbaum directly problematize construct labels and ground truth. Conversely, a high-quality inference or justified K does not establish the institution's legal authority A, and no combination of K/A proves that a downstream outcome O occurred. Treat each as a distinct evidence question.
