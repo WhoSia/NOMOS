@@ -1,27 +1,37 @@
-# NOMOS P2 — Missing-Paper and Reading-Depth Register
-As of **2026-11-10**. Status definitions: FOUND_PDF = exact original PDF found in connected Drive; SEARCH_NOT_FOUND = title/author/DOI searches did not identify an exact original PDF; this is **not definitive absence**. Do not count incidental matching search results as the paper. If exact source is later added, replace this row status after checking file ID and edition. 'Abstract reviewed' is not 'full text read'.
+# NOMOS-0.885 — Living Missing Literature Register
+**Updated 2026-11-10 after new user uploads, fulltext checks and Drive redistribution.**
 
-## Newly identified or re-audited search-unlocated publications
+Legend: `FOUND_PDF` = exact PDF/genre verified and metadata parent read back; `SEARCH_NOT_FOUND` = no identified standalone original after connected Drive title/DOI search, **NOT proof of nonpossession**; `RELATED_THESIS_HELD` = same research appears in the thesis, but distinct publisher article/chapter file remains search-unlocated. Reading stage is explicit. No source-byte SHA-256 was computed.
 
-| Priority | Work | Source identity | What would change NOMOS | Drive status / reading |
+## Current priority: five independent publications not found as standalone originals
+
+| Priority | Work and publication type | Stable citation | Drive status / reading stage | Why read next |
 |---|---|---|---|---|
-| P0 | Engelmann & Nissenbaum (2025), *Countering Privacy Nihilism* | https://arxiv.org/abs/2507.18253 | Inferential privacy/contextual-integrity and conceptual overfitting—most immediate originality defeater | SEARCH_NOT_FOUND / abstract reviewed |
-| P0 | Sultan (2022), *Purpose Limitation and Secondary Use Prevention in Large-Scale Video Surveillance Systems*, doctoral thesis | https://orbit.dtu.dk/en/publications/purpose-limitation-and-secondary-use-prevention-in-large-scale-vi/ | Fully developed AERBAC prototype and purpose restrictions may defeat NOMOS engineering novelty | SEARCH_NOT_FOUND / institutional abstract reviewed |
-| P0 | Chen & Huang (2026), *Inferential Privacy and the Duty of Data Loyalty* | https://doi.org/10.1093/idpl/ipag020 | A direct legal/normative inferential-privacy competitor (online 2026-09-25; December 2026 issue) | SEARCH_NOT_FOUND / publisher abstract reviewed |
-| P1 | Martin, Nissenbaum & Shmatikov (2025), *No Cookies For You!: Evaluating The Promises Of Big Tech's 'Privacy-Enhancing' Techniques* | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4655228 | Inference instead of raw data may not itself protect privacy | SEARCH_NOT_FOUND / metadata/abstract reviewed |
-| P1 | Park, Nguyen & Sandhu (2012), *A Provenance-based Access Control Model*, PST pp.137–144 | https://doi.org/10.1109/PST.2012.6297930 | Original PBAC technical comparator | SEARCH_NOT_FOUND / bibliography/abstract reviewed |
-| P1 | Sultan & Jensen (2021), *Secondary Use Prevention in Large-Scale Data Lakes*, Intelligent Computing III pp.967–985 | https://doi.org/10.1007/978-3-030-80129-8_64 | Original purpose-propagation companion to existing Sultan/Jensen Sensors paper | SEARCH_NOT_FOUND / bibliography/abstract reviewed |
-| P2 | Pan, Stakhanova & Ray (2023), *Data Provenance in Security and Privacy*, ACM CSUR 55(14s), Article 323 | https://doi.org/10.1145/3593294 | Secure provenance/threat provenance boundaries | SEARCH_NOT_FOUND / abstract reviewed |
-| P2 | Gierend et al. (2024), *Provenance Information for Biomedical Data and Workflows: Scoping Review*, JMIR 26:e51297 | https://doi.org/10.2196/51297 | Existing source-provenance practice and review methodology | SEARCH_NOT_FOUND / abstract reviewed |
+| P0 | Chen & Huang (2026), *Inferential Privacy and the Duty of Data Loyalty* — journal article | https://doi.org/10.1093/idpl/ipag020 | SEARCH_NOT_FOUND / abstract | Direct legal theory of inference and data loyalty |
+| P0 | Sultan & Jensen (2021), *Secondary Use Prevention in Large-Scale Data Lakes* — conference proceedings **book chapter**, Intelligent Computing III, 967–985 | https://doi.org/10.1007/978-3-030-80129-8_64 | RELATED_THESIS_HELD; standalone chapter SEARCH_NOT_FOUND / abstract and related thesis chapter reviewed | Exact distinct chapter of purpose inheritance, not equivalent to whole doctoral thesis |
+| P1 | Sultan & Jensen (2021), *Metadata based need-to-know view in large-scale video surveillance systems* — **journal article**, Computers & Security 111, 102452 | https://doi.org/10.1016/j.cose.2021.102452 | RELATED_THESIS_HELD; standalone journal PDF SEARCH_NOT_FOUND / publisher abstract and related thesis ch.5 reviewed | Specific content-sensitive AERBAC model and video prototype as published |
+| P2 | Pan, Stakhanova & Ray (2023), *Data Provenance in Security and Privacy* — ACM Computing Surveys review | https://doi.org/10.1145/3593294 | SEARCH_NOT_FOUND / abstract | Broad threat models / provenance security research |
+| P2 | Gierend et al. (2024), *Provenance Information for Biomedical Data and Workflows: Scoping Review* — JMIR review 26:e51297 | https://doi.org/10.2196/51297 | SEARCH_NOT_FOUND / abstract | External provenance evidence standards and reproducibility |
 
-## Verified canonical Drive originals (do not re-download)
+## Newly acquired — removed from missing status (four verified originals)
+
+| Work | File type and distinct version | Drive ID | Final folder | Reading state |
+|---|---|---|---|---|
+| Park, Nguyen & Sandhu (2012), *A Provenance-based Access Control Model* | Conference paper PST 2012 pp.137–144 | `11CUSnooMw5Ty8Kc9WN-Jxed4LRMpJUDJ` | `10_PAPERS` | Text and important formal sections/case study reviewed |
+| Martin, Nissenbaum & Shmatikov (2025), *No Cookies for You!* | Georgetown Law Technology Review 9(1) journal-layout PDF distributed via SSRN 4655228 | `19k2Pj3H_DRrR_lnj-LfkS6ncYBkacVQb` | `10_PAPERS` | Full text and method/results/conclusion reviewed; source data not reanalyzed |
+| Sultan (2022), *Purpose Limitation and Secondary Use Prevention in Large-Scale Video Surveillance Systems* | **PhD thesis**, DTU publisher PDF; cover internal place-year 2021, **official publication 2022** | `1_AP8Ly2tG-cKYxXjDffARDPk82v0xpFc` | `11_SOURCES` | Full extracted text and theory, prototype/implementation/limitations reviewed |
+| Engelmann & Nissenbaum (2025), *Countering Privacy Nihilism* | **arXiv 2507.18253v1 preprint**; forthcoming edited-volume indication is NOT final version confirmation | `1KXUULKh0uFbQ-MWsI9IjfTXgQK8k-UJY` | `10_PAPERS` | Full extracted text and sections II–V reviewed |
+
+All four files moved from `00_INTAKE` by metadata-only rename/move, original Drive IDs preserved and final parent folders re-read. Binary bytes not independently SHA-256 verified. [Detailed P2-P7 study and bibliography](p2-p7-four-new-primary-works.md), [custody receipt](../../examples/p2_p7_primary_custody.json).
+
+## Previously canonical PDFs (do not re-download)
 - Nissenbaum (2004), *Privacy as Contextual Integrity*: `1NZjrRWp4aooazZGeU-tj7L792agdwnqm`.
 - Barth et al. (2006), *Privacy and Contextual Integrity: Framework and Applications*: `1iOiTolBFjwG96ohg9uBDGI6cAXf_09u7`.
 - Sultan & Jensen (2021), *Ensuring Purpose Limitation in Large-Scale Infrastructures with Provenance-Enabled Access Control*: `1cceIx9-bU3GUru4yQrYSmlGKtIRP_BtF`.
-All three moved into 10_PAPERS and Drive parent rechecked on prior turn, metadata proof not byte-level SHA verification.
 
-## Next custody rules
-1. Locate exact scholarly identity, original file ID and parent, verify title/DOI/publication version before declaring FOUND_PDF.
-2. Move genuine new originals from 00_INTAKE to 10_PAPERS while preserving original file ID; avoid duplicates.
-3. Report a current missing-literature table at end of every research output using this ledger.
-4. Do not claim P2 theoretical novelty on the basis of paper titles, abstracts or unsupported model assumptions.
+## Update discipline
+1. Check by exact title/author/DOI and document's own bibliography, not fuzzy search count; inspect source parent, genre, publication and edition.
+2. Locate each independent **journal, conference, book chapter, dissertation** separately. Possession of a dissertation including related results is not automatically possession of publisher chapter/journal file.
+3. Preserve file ID and check actual destination after moving. Do not duplicate canonical original.
+4. Paper reading level, empirical replication and byte-level integrity are independently tracked.
+5. End each NOMOS research output with this current missing-paper table, even if no new sources were acquired.
