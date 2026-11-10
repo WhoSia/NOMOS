@@ -27,3 +27,7 @@ Jacobs/Wallach §3.1: test–retest reliability addresses stability under compar
 
 ### P2-P11.7 — Construct validity dimensions
 Jacobs/Wallach §3.2 distinguishes face/content, convergent, discriminant, predictive and consequential aspects. In particular predictive validity is distinct from generic held-out prediction; even a high predictive score for a proxy does not establish the correct interpretation of a person's moral character. Their discussion of essentially contested fairness rejects one fixed technical fairness label as legally/ethically sufficient.
+
+
+### P2-P11.8 — The noncontributor counterworld
+Solow-Niederman 2022 part IV.B shows that the people whose records train a prediction model need not be the people ultimately affected by application of the model. A privacy governance system limited to one-to-one data-source permission can miss this. The collector/processor/target triangle already predates NOMOS; our toy merely reproduces the possibility using fictional identifiers.
