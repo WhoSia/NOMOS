@@ -33,3 +33,7 @@ Pan et al. §3.3 already catalog forge/append, modify, shuffle, drop and attack 
 
 ### P2-P12.8 — Scoping search denominators and validation types
 Gierend et al. report 764 initial search results, 624 deduplicated, 66 included (66/624=10.5769%, 10.6% rounded). They report 52 studies describing successful provenance solution validation. 'Successful' encompasses use-case demonstrations, semantic competency questions and other tests, not 52 independent end-to-end clinical causal benefit validations. A provenance study's inclusion in this review does not prove GDPR/FCRA compliance.
+
+
+### P2-P12.9 — Stakeholder metrics cannot be pooled without grain
+The Gierend review reports stakeholder-benefit observations with separate denominators (e.g. researchers/scientists/clinicians n=64 in a subgroup). Percentages drawn from those categories are not automatically percentages of all 66 included studies. NOMOS's research-validation ledger must track denominator, unit, inclusion scope, evidence grade and overlap before comparative inference.
