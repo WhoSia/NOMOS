@@ -24,3 +24,7 @@ Before labeling a research replication: obtain respondent-level survey instrumen
 
 ## P2 verdict
 Martin et al. provide a real reported experiment beyond our toy Boolean fixtures. NOMOS has NOT independently replicated it, and its institutional claim-authority model has no demonstrated accuracy or scientific novelty over this study and existing social-science measurement approaches. P2 remains research stage OPEN with empirical improvement HOLD.
+
+
+### P2-P10.6 — Aggregate difference only
+Published Survey 1 raw mean -23.41 and Survey 2 inference mean -30.88 imply arithmetic difference -7.47. This is the only recomputation supported by those two aggregate values; without counts, standard errors and within-person repeated-vignette structure, a valid independent hypothesis test cannot be derived. The reported t magnitude 10.22 remains author-reported.
