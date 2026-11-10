@@ -28,3 +28,7 @@ Barocas/Levy §II.A distinguishes passthrough (revealing a relationship), bycatc
 
 ### P2-P13.7 — Similarity does not require an interpersonal connection
 Barocas/Levy §II.B explains statistical similarity-based dependencies may be socially salient or non-salient. Even with no known social relationship or user-provided records, observer inference may concern Bob. Legal and epistemic grounds therefore cannot be decided from social ties alone.
+
+
+### P2-P13.8 — Difference and comparison classes
+Barocas/Levy §II.C catalogs process-of-elimination, anomaly-detection and adverse-inference dependencies. These rely on a relevant comparison set and response/selection rule. An institution's assertion about Bob can vary when the reference set changes even if Bob's direct source data do not.
