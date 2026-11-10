@@ -25,3 +25,7 @@ No external archive SHA was computed in this session; only Drive MIME/filename/p
 
 ### P2-P12.6 — Cryptographic authenticity does not equal completeness
 Pan et al. §4.1 explicitly note that per-record signatures alone do not protect the integrity of provenance relationships. Even when a digest or signature matches the reference, absent external registration, a maliciously omitted event cannot necessarily be detected. Our code therefore reports NOT_VERIFIED for internally consistent fixture records, never VERIFIED_SECURE.
+
+
+### P2-P12.7 — Attacker taxonomy is inherited prior art
+Pan et al. §3.3 already catalog forge/append, modify, shuffle, drop and attack against provenance collection mechanisms. NOMOS-R14's date/order/duplicate audit was a valid software improvement but must not be promoted as a previously unknown provenance threat or general security innovation.
