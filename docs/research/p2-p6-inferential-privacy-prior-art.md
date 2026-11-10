@@ -23,3 +23,7 @@ Only escalate P2 scientific novelty when a clearly articulated distinction survi
 
 ### P2-P6.6 — Verified title-and-date controls
 The 2025 Engelmann/Nissenbaum preprint has arXiv ID 2507.18253; its abstract directly describes conceptual overfitting, AI inference risks and contextual-integrity response. Chen/Huang's 2026 IDPL article is DOI:10.1093/idpl/ipag020, online published September 25 2026, even though assigned to a December 2026 issue (future relative to this November 10 audit). Martin/Nissenbaum/Shmatikov's No Cookies For You 2025 journal/SSRN metadata criticizes inference-only privacy-enhancing techniques. All three are abstract/metadata only in this turn.
+
+
+### P2-P6.7 — Stronger predecessor: original purpose controls
+Independent bibliography checking confirmed Park/Nguyen/Sandhu (2012), *A Provenance-based Access Control Model*, PST 2012 pp.137–144, DOI 10.1109/PST.2012.6297930; Pan/Stakhanova/Ray (2023), *Data Provenance in Security and Privacy*, ACM Computing Surveys, DOI 10.1145/3593294; Gierend et al. (2024), *Provenance Information for Biomedical Data and Workflows: Scoping Review*, JMIR 26:e51297, DOI 10.2196/51297; and Sultan/Jensen's *Secondary Use Prevention in Large-Scale Data Lakes* (2021), Springer chapter DOI 10.1007/978-3-030-80129-8_64. These were in prior missing ledger and must be retained rather than silently discarded.
