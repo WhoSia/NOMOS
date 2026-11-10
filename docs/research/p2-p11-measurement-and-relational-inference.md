@@ -31,3 +31,7 @@ Jacobs/Wallach §3.2 distinguishes face/content, convergent, discriminant, predi
 
 ### P2-P11.8 — The noncontributor counterworld
 Solow-Niederman 2022 part IV.B shows that the people whose records train a prediction model need not be the people ultimately affected by application of the model. A privacy governance system limited to one-to-one data-source permission can miss this. The collector/processor/target triangle already predates NOMOS; our toy merely reproduces the possibility using fictional identifiers.
+
+
+### P2-P11.9 — Relational governance is prior art
+Solow-Niederman part IV proposes shifting regulation to the relationships and interdependencies among data collectors, processors and affected people, with attention to incentives and organizational informational power. The NOMOS claim that identifying institutional transfer interfaces is a first conceptual contribution must be rejected as stated; only a narrower verified claim-specific legal consequence might remain.
