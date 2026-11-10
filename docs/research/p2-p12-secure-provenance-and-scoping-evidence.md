@@ -21,3 +21,7 @@ Cryptographic signature, tamper-evident event chain, provenance provenance graph
 
 ## Integrity and evaluation limits
 No external archive SHA was computed in this session; only Drive MIME/filename/parent read-back. Toy checks are string comparisons, not a cryptographic signer or secure provenance implementation. This unit is a bounded read-only conceptual test with fake records, no actual sensitive data and no real-world security claim.
+
+
+### P2-P12.6 — Cryptographic authenticity does not equal completeness
+Pan et al. §4.1 explicitly note that per-record signatures alone do not protect the integrity of provenance relationships. Even when a digest or signature matches the reference, absent external registration, a maliciously omitted event cannot necessarily be detected. Our code therefore reports NOT_VERIFIED for internally consistent fixture records, never VERIFIED_SECURE.
