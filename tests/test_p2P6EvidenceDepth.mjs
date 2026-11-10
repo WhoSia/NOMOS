@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {auditCorpus,auditEvidenceContract} from '../tools/p2P6EvidenceDepth.mjs';
+const data=JSON.parse(readFileSync(new URL('../examples/p2_p6_literature_claims.json',import.meta.url),'utf8'));
+const rows=auditCorpus(data),statuses=rows.map(x=>x.status);
+assert.deepEqual(statuses,['source_description_supported','not_established','source_description_supported','not_established','not_established']);
+assert.equal(rows[1].reason,'read_depth_insufficient');
+assert.equal(rows[4].reason,'missing_source');
+assert.throws(()=>auditCorpus({...data,sources:[data.sources[0],data.sources[0]]}),/duplicate/);
+assert.throws(()=>auditEvidenceContract(data.sources[0],{...data.claims[0],source_id:'barth-et-al-2006'}),/mismatch/);
+console.log(JSON.stringify(rows));
