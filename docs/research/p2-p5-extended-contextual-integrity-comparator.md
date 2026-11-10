@@ -17,3 +17,7 @@ Source facts are externally asserted booleans; no court judgment or authentic au
 
 ## Research decision
 If all combinations agree, do not claim an autonomous NOMOS operator was discovered. Only novel externally justified law/fact mechanisms, outcomes, or measurable workflow benefit against an equal-input strong baseline could advance the P2 theorem claim. Preserve P1 debts, no real consumer identifiers, P2 research OPEN / tested originality HOLD.
+
+
+### P2-P5.6 — Executed baseline result
+The Node v22 local execution of the independently written comparator reported `tests=320`, `mismatches=[]`, `lawful=2`. This verifies the standalone local script execution on its synthetic truth-table. The GitHub version was written with the same core logic, but remote CI exact-head success has NOT yet been independently observed. Because the rule predicates are intentionally mirrored, equality is primarily a refutation of *unique expressiveness in this bounded toy* rather than a statistical discovery.
