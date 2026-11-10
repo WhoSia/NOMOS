@@ -39,3 +39,7 @@ DTU Orbit explicitly labels Sultan's 155-page dissertation 'Published - 2022', w
 
 ### P2-P7.7 — Empirical study limitations
 Martin et al. design six vignette survey conditions and report Survey 1 mean -23.41 vs Survey 2 mean -30.88 and t=10.22 for a particular raw-versus-inference comparison. These are study-reported ratings, NOT an independently reproduced regression and not a judicial finding. Respondents recruited via Prolific in March/April 2023; experimental vignette perceptions do not entail population representative preferences or downstream welfare. Charts and tables should be independently inspected before detailed numeric meta-analysis.
+
+
+### P2-P7.8 — Thesis prototype against technical novelty
+Sultan (2022) ch. 5 describes MySQL-backed VSS metadata, a PDP engine, XACML policies, need-to-know views and an expanded AERBAC with semantic object/event data. This directly defeats 'first purpose-aware structured classification access tool'. A possible new NOMOS contribution must concern demonstrable institution-level legal consequences, versioned warrant and failure-to-correct evidence, not simply another access-control UI.
