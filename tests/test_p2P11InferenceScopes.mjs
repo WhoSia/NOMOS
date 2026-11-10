@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';import{readFileSync}from'node:fs';
+import{auditCorpus,auditScenario}from'../tools/p2P11InferenceScopes.mjs';
+const d=JSON.parse(readFileSync(new URL('../examples/p2_p11_inference_scopes.json',import.meta.url),'utf8'));
+const r=auditCorpus(d);
+assert.equal(r.length,4);assert.equal(r[0].nonparticipant,true);assert.equal(r[1].nonparticipant,false);
+assert.equal(r[2].constructEvidenceDocumented,false);assert.ok(r[2].missingOrUnfavorable.includes('constructDefined'));
+assert.equal(r[3].constructValidityScientificallyEstablished,false);
+assert.ok(r.every(x=>!x.legalAuthorityVerified));
+assert.throws(()=>auditScenario({...d.cases[0],claim:{target:'other'}}),/target mismatch/);
+assert.throws(()=>auditCorpus({}),/cases needed/);
+console.log('P2-P11 document-triage and three-role cases passed; construct validity not certified');
