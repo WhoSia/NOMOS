@@ -33,3 +33,7 @@ The exhaustive comparison enumerates only true/false input predicates. Real lega
 
 ### P2-P5.9 — Strongest theoretical defeater
 An extended Barth-style first-order temporal trace can introduce a `judge` event and negative contextual norm of the form G(judge -> (past-authorized-send & previously-derived-information & appropriate role & scoped claim authorization)). Our JavaScript simulates a finite bounded case, not a syntactic translation or model checker for the original 2006 logic. To establish a new expressiveness theorem, show a property unrepresentable in a relevant specified extension under explicit resources—not merely assert a new event name.
+
+
+### P2-P5.10 — Result and P2 gate
+**Negative bounded result**: 320 synthetic evaluations, no disagreement between constructed equal-fact monitors; no new independent operator or theorem. User-facing 'P2 OPEN' is a research-stage governance status, not evidence of validated legal novelty. P2-P6 should audit emerging inference privacy scholarship and preserve reproducible abstention baselines. GitHub commits are not identical to verified remote CI execution; Drive original source bytes and paper-location provenance remain separate.
