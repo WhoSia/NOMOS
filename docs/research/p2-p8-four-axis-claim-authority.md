@@ -45,3 +45,7 @@ The synthetic model's 'no' means a negative predicate is explicitly stipulated, 
 
 ### P2-P8.9 — Replication target
 The next concrete test should target one published survey's factor coding, vignette instrument, sample construction and regression table from Martin et al. and attempt to replicate only with disclosed data; until respondent-level data is found, label 'author-reported findings' and avoid synthesizing effect sizes. In parallel, extract one small XACML policy example from Sultan's dissertation and reproduce it fairly in a baseline engine, not a weakened caricature.
+
+
+### P2-P8.10 — Decision gate
+The 81-case exhaustive synthetic guard is structurally testable and conservative, but it assesses no independently sourced real institutional authority. P2 remains a research stage; claimed empirical superiority, legal doctrine originality and specific affected-person recovery remain HOLD. New paper/thesis file IDs were moved to typed Drive folders, preserving original IDs and parent-readback receipt. Pending exact remote HEAD CI, raw-byte SHA2 custody and blinded independent adjudication.
