@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';import{readFileSync}from'node:fs';
+import{auditLedger,auditReviewCounts}from'../tools/p2P12ProvenanceThreatAudit.mjs';
+const f=JSON.parse(readFileSync(new URL('../examples/p2_p12_provenance_fixtures.json',import.meta.url),'utf8'));
+const c=Object.fromEntries(f.cases.map(e=>[e.id,auditLedger(e)]));
+assert.equal(f.cases.length,6);
+assert.equal(c['complete-with-reference'].integrityStatus,'not_verified');
+assert.ok(c['duplicate-event'].findings.includes('duplicate_event_id'));
+assert.ok(c['chronology-reordered'].findings.includes('nonmonotonic_sequence'));
+assert.ok(c['known-digest-conflict'].findings.includes('asserted_digest_mismatch'));
+assert.ok(c['known-missing-event'].findings.includes('missing_from_declared_expected_list'));
+assert.equal(c['self-consistent-unknown'].integrityStatus,'not_verified');
+assert.equal(c['self-consistent-unknown'].independentlyAuthenticated,false);
+const review=auditReviewCounts(f.review);assert.equal(review.selectionPercent,10.6);
+assert.equal(review.denominator,624);assert.equal(review.validationReportedCount,52);assert.equal(review.validationCertified,false);
+assert.throws(()=>auditReviewCounts({...f.review,included:650}),/invalid review flow/);
+console.log('P2-P12 synthetic provenance and scoping denominators passed');
