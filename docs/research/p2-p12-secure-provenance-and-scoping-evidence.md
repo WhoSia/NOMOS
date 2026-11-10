@@ -37,3 +37,7 @@ Gierend et al. report 764 initial search results, 624 deduplicated, 66 included 
 
 ### P2-P12.9 — Stakeholder metrics cannot be pooled without grain
 The Gierend review reports stakeholder-benefit observations with separate denominators (e.g. researchers/scientists/clinicians n=64 in a subgroup). Percentages drawn from those categories are not automatically percentages of all 66 included studies. NOMOS's research-validation ledger must track denominator, unit, inclusion scope, evidence grade and overlap before comparative inference.
+
+
+### P2-P12.10 — Strongest null and future test
+After reading these two original surveys, source integrity, actor-event structure and requirements/test/implementation maturity are substantive established disciplines. The remaining NOMOS opportunity is a claim-specific institution-to-person warrant/outcome case not already settled by law+contextual integrity+measurement and secure-provenance baselines. Real case independent labels, blinded expert comparison and legal applicability remain unproven; P2 research OPEN, theorem/empirical advantage HOLD.
