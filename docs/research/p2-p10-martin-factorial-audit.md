@@ -28,3 +28,7 @@ Martin et al. provide a real reported experiment beyond our toy Boolean fixtures
 
 ### P2-P10.6 — Aggregate difference only
 Published Survey 1 raw mean -23.41 and Survey 2 inference mean -30.88 imply arithmetic difference -7.47. This is the only recomputation supported by those two aggregate values; without counts, standard errors and within-person repeated-vignette structure, a valid independent hypothesis test cannot be derived. The reported t magnitude 10.22 remains author-reported.
+
+
+### P2-P10.7 — Invalid probability threshold
+The PDF text contains the literal inequality 'p < 0.00'. A nonnegative probability cannot satisfy that strict inequality, so do not interpret it literally as a valid significance probability or silently replace with p<0.001. The numeric audit flags SOURCE_PVALUE_FORMAT_ANOMALY. The issue can reflect typesetting or editorial mistake, not necessarily an invalid underlying analysis; inspect original table and author statistical appendix.
