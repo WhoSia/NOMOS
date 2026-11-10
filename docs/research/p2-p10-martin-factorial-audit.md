@@ -32,3 +32,7 @@ Published Survey 1 raw mean -23.41 and Survey 2 inference mean -30.88 imply arit
 
 ### P2-P10.7 — Invalid probability threshold
 The PDF text contains the literal inequality 'p < 0.00'. A nonnegative probability cannot satisfy that strict inequality, so do not interpret it literally as a valid significance probability or silently replace with p<0.001. The numeric audit flags SOURCE_PVALUE_FORMAT_ANOMALY. The issue can reflect typesetting or editorial mistake, not necessarily an invalid underlying analysis; inspect original table and author statistical appendix.
+
+
+### P2-P10.8 — Six surveys do not mean six independent causal outcomes
+The authors' six factorial-vignette survey conditions were administered to different samples of respondents, with 30 hypothetical vignettes per participant. A simple difference of group means is not necessarily the causal effect of using inference independently of all factors, without checking vignette randomization and group differences; subjective appropriateness is not factual wrongdoing or individualized harm.
