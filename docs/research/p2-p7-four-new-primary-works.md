@@ -47,3 +47,7 @@ Sultan (2022) ch. 5 describes MySQL-backed VSS metadata, a PDP engine, XACML pol
 
 ### P2-P7.9 — Epistemic validity precursor
 Engelmann/Nissenbaum (2025) critically scrutinize data collection, ground-truth manufacturing and model evaluations, identifying conceptual overfitting. This is DIRECT precursor to any NOMOS proposal requiring construct grounding before moral attribution. A purportedly high model accuracy score alone is not the kind of evidence that warrants a robust institutional character claim. Again, this is not a novel distinction first made by NOMOS.
+
+
+### P2-P7.10 — Final close-reading verdict
+Four original PDFs are bibliographically identified, their targeted theory/method and conclusions read, and moved to appropriate typed folders with ID preservation and parent readback. Correct scientific status: original byte hash NOT VERIFIED, scanned figures not all independently visualized, statistical study data NOT re-run, legal novelty NOT established. Newly discovered *Metadata based need-to-know view in large-scale video surveillance systems* (Computers & Security 111, 102452, DOI 10.1016/j.cose.2021.102452) is a separate journal article, NOT satisfied by possession of the related DTU dissertation. Register it separately in remaining missing table.
