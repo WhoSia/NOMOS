@@ -27,3 +27,7 @@ The thesis §5.2 requires intersection of the observer's access-purpose EOI with
 
 ### P2-P9.7 — Privacy-aware policy is not automatic entitlement
 The dissertation describes privacy-aware masking as a possible view in authorized contexts without permitted semantic EOIs. Its precise branching depends on implementation policy and request attributes. Our fixed fallback is an authored assumption, not an assertion that all institutions must release a blurred version; the denial branch remains independent.
+
+
+### P2-P9.8 — Role and nested event caveats
+The six synthetic scenarios do not faithfully encode AERBAC role-to-permission assignments, role hierarchies, native XACML three-valued/indeterminate decisions, dynamic environmental attributes, video-region extraction, multiple event-object memberships or overlapping consent/legal bases. The implementation uses prevalidated contextOk rather than computing it, so it MUST NOT be labeled a full XACML replication.
