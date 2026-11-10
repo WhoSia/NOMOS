@@ -19,3 +19,7 @@ Source metadata establishes bibliography only. A publisher abstract may establis
 
 ## P2 advancement
 Only escalate P2 scientific novelty when a clearly articulated distinction survives (a) Barth-style temporal and inference extension, (b) Nissenbaum 2004/2025 contextual inference, (c) Sultan/Jensen purpose propagation, (d) inferential-data-loyalty and (e) independently adjudicated real-case law. No such achievement is presently verified.
+
+
+### P2-P6.6 — Verified title-and-date controls
+The 2025 Engelmann/Nissenbaum preprint has arXiv ID 2507.18253; its abstract directly describes conceptual overfitting, AI inference risks and contextual-integrity response. Chen/Huang's 2026 IDPL article is DOI:10.1093/idpl/ipag020, online published September 25 2026, even though assigned to a December 2026 issue (future relative to this November 10 audit). Martin/Nissenbaum/Shmatikov's No Cookies For You 2025 journal/SSRN metadata criticizes inference-only privacy-enhancing techniques. All three are abstract/metadata only in this turn.
