@@ -1,0 +1,58 @@
+{
+  "schema_version": "p2-p7.1",
+  "date": "2026-11-10",
+  "source_folder": {
+    "name": "00_INTAKE — Literature Radar",
+    "id": "1MLtYh0pv8QUZDReYzRqjDrOjRkSJAD16"
+  },
+  "targets": {
+    "papers": {
+      "name": "10_PAPERS — Canonical Literature Commons",
+      "id": "1D2M4LHcejREhlyp6vTd71xxLLx-6ldUP"
+    },
+    "sources": {
+      "name": "11_SOURCES — Reports, Theses, Books & Primary Materials",
+      "id": "1Ee2UDLahRj4ozlnNUXZcQk6Xsbr1Bqfv"
+    }
+  },
+  "items": [
+    {
+      "ref": "park-2012",
+      "id": "11CUSnooMw5Ty8Kc9WN-Jxed4LRMpJUDJ",
+      "kind": "conference_paper",
+      "year": 2012,
+      "final_parent": "1D2M4LHcejREhlyp6vTd71xxLLx-6ldUP",
+      "doi": "10.1109/PST.2012.6297930"
+    },
+    {
+      "ref": "martin-2025",
+      "id": "19k2Pj3H_DRrR_lnj-LfkS6ncYBkacVQb",
+      "kind": "journal_article_ssrn_copy",
+      "year": 2025,
+      "final_parent": "1D2M4LHcejREhlyp6vTd71xxLLx-6ldUP",
+      "ssrn": "4655228"
+    },
+    {
+      "ref": "sultan-2022",
+      "id": "1_AP8Ly2tG-cKYxXjDffARDPk82v0xpFc",
+      "kind": "phd_thesis",
+      "publication_year": 2022,
+      "cover_place_year": 2021,
+      "final_parent": "1Ee2UDLahRj4ozlnNUXZcQk6Xsbr1Bqfv",
+      "version": "publisher_pdf"
+    },
+    {
+      "ref": "engelmann-2025",
+      "id": "1KXUULKh0uFbQ-MWsI9IjfTXgQK8k-UJY",
+      "kind": "preprint",
+      "year": 2025,
+      "arxiv": "2507.18253v1",
+      "final_parent": "1D2M4LHcejREhlyp6vTd71xxLLx-6ldUP"
+    }
+  ],
+  "move_verified_by_connector_parent_readback": true,
+  "source_byte_sha256_verified": false,
+  "full_page_visual_review": false,
+  "reading": "source text, targeted sections and formal/methodological conclusions",
+  "note": "Original IDs preserved; separate paper and thesis taxonomy, no assumption of other companion article possession."
+}
