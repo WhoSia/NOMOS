@@ -37,3 +37,7 @@ Park's graph-derived access permissions are not a substitute for epistemic const
 
 ### P2-P8.7 — Competitor strength and inherited method
 Martin/Nissenbaum/Shmatikov present real factorial-vignette evidence that contextual purpose matters for perceptions; Sultan's doctoral prototype uses actual XACML/MySQL metadata-based control. The E/K/A/O notation is a conceptual checklist that a competent legal reviewer and extended contextual-integrity rules can already express. Adding four labels is NOT a new formal theorem.
+
+
+### P2-P8.8 — Closed-world exceptions and nulls
+The synthetic model's 'no' means a negative predicate is explicitly stipulated, whereas 'unknown' means no sufficient case record. In real records, absence of a remedy completion certificate must never become empirical noncompliance. In addition, straightforward claims of public legal acts need not instantiate a psychological latent trait K; a domain-specific type system should disable or reinterpret K rather than force a made-up construct warrant.
