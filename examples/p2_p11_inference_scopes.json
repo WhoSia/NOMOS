@@ -1,0 +1,88 @@
+{
+  "schema": "p2-p11.1",
+  "synthetic": true,
+  "source_ids": [
+    "1COybDrFJUN_7rep8d9jREK-qaQQCancV",
+    "1DvFVJWrewCTkuSOU1g2tQ5LN9gmOSCy0"
+  ],
+  "cases": [
+    {
+      "id": "distinct-nonparticipant",
+      "trainingContributors": [
+        "p1",
+        "p2"
+      ],
+      "affectedPerson": "p3",
+      "collector": "C",
+      "processor": "P",
+      "model": {
+        "constructDefined": true,
+        "reliabilityEvidence": false,
+        "convergentEvidence": null,
+        "consequencesReviewed": false
+      },
+      "claim": {
+        "target": "p3",
+        "trait": "hypothetical_risk"
+      }
+    },
+    {
+      "id": "training-participant",
+      "trainingContributors": [
+        "p1",
+        "p2"
+      ],
+      "affectedPerson": "p1",
+      "collector": "C",
+      "processor": "P",
+      "model": {
+        "constructDefined": true,
+        "reliabilityEvidence": true,
+        "convergentEvidence": true,
+        "consequencesReviewed": false
+      },
+      "claim": {
+        "target": "p1",
+        "trait": "hypothetical_risk"
+      }
+    },
+    {
+      "id": "undefined-construct",
+      "trainingContributors": [
+        "p1"
+      ],
+      "affectedPerson": "p2",
+      "collector": "C",
+      "processor": "P",
+      "model": {
+        "constructDefined": false,
+        "reliabilityEvidence": true,
+        "convergentEvidence": true,
+        "consequencesReviewed": true
+      },
+      "claim": {
+        "target": "p2",
+        "trait": "unexplained_label"
+      }
+    },
+    {
+      "id": "understudied-outcome",
+      "trainingContributors": [
+        "p1"
+      ],
+      "affectedPerson": "p9",
+      "collector": "C",
+      "processor": "P",
+      "model": {
+        "constructDefined": true,
+        "reliabilityEvidence": true,
+        "convergentEvidence": true,
+        "consequencesReviewed": null
+      },
+      "claim": {
+        "target": "p9",
+        "trait": "hypothetical_risk"
+      }
+    }
+  ]
+}
