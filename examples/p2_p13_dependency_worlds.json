@@ -1,0 +1,51 @@
+{
+  "schema": "p2-p13.1",
+  "synthetic": true,
+  "worlds": [
+    {
+      "id": "tie-based",
+      "observed": {
+        "affectedPerson": "pB",
+        "selfDataProvided": false,
+        "claim": "trait_X"
+      },
+      "mechanism": "tie",
+      "basis": "hypothetical disclosed relationship",
+      "authority": "unknown"
+    },
+    {
+      "id": "similarity-based",
+      "observed": {
+        "affectedPerson": "pB",
+        "selfDataProvided": false,
+        "claim": "trait_X"
+      },
+      "mechanism": "similarity",
+      "basis": "hypothetical population-level pattern",
+      "authority": "unknown"
+    },
+    {
+      "id": "difference-based",
+      "observed": {
+        "affectedPerson": "pB",
+        "selfDataProvided": false,
+        "claim": "trait_X"
+      },
+      "mechanism": "difference",
+      "basis": "hypothetical exclusion of other candidates",
+      "authority": "unknown"
+    },
+    {
+      "id": "same-tie-explicit-rule",
+      "observed": {
+        "affectedPerson": "pB",
+        "selfDataProvided": false,
+        "claim": "trait_X"
+      },
+      "mechanism": "tie",
+      "basis": "hypothetical disclosed relationship",
+      "authority": "asserted_yes"
+    }
+  ],
+  "note": "Authority fields are unverified synthetic inputs; all person IDs are fictional"
+}
