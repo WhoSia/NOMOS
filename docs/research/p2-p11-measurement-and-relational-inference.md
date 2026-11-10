@@ -23,3 +23,7 @@ If the extended contextual-integrity and standard law audit can represent the fu
 
 ### P2-P11.6 — Reliability and validity non-equivalence
 Jacobs/Wallach §3.1: test–retest reliability addresses stability under comparable circumstances; §3.2: reliability alone cannot establish construct validity. Repeatedly outputting identical risk classifications is not evidence they measure an appropriate construct. The P2-P8 K yes/no axis must be demoted to a documentary-status placeholder, not a measurement conclusion.
+
+
+### P2-P11.7 — Construct validity dimensions
+Jacobs/Wallach §3.2 distinguishes face/content, convergent, discriminant, predictive and consequential aspects. In particular predictive validity is distinct from generic held-out prediction; even a high predictive score for a proxy does not establish the correct interpretation of a person's moral character. Their discussion of essentially contested fairness rejects one fixed technical fairness label as legally/ethically sufficient.
