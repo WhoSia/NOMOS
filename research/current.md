@@ -1,3 +1,13 @@
+# NOMOS-0.885 — Current Research Head (2026-11-11 · P2-P12)
+
+**P2 RESEARCH OPEN / PROVEN SCIENTIFIC NOVELTY AND INDEPENDENT REAL-WORLD CASE OUTCOMES HOLD.** Newly added Drive originals and canonical custody: Jacobs & Wallach (2021) FAccT conference paper, Solow-Niederman (2022) Northwestern University Law Review journal article, Pan/Stakhanova/Ray (2023) ACM Computing Surveys journal review, Gierend et al. (2024) JMIR scoping-review journal article. All four were renamed by source type and moved 00_INTAKE→10_PAPERS with identical original file IDs and post-move parent metadata checks, no duplicate or thesis misclassification, source-byte SHA-256 NOT independently verified.
+
+[P2-P11 measurement and relational-inference reading](../docs/research/p2-p11-measurement-and-relational-inference.md) identifies **Jacobs/Wallach's graded construct validity** and **Solow-Niederman's collector/processor/affected subject inference triangle** as strong preexisting results; previous P2-P8 Boolean K was documentary triage only, not a scientific validity measure. [P2-P12 secure provenance + scoping review](../docs/research/p2-p12-secure-provenance-and-scoping-evidence.md) identifies forged, modified, shuffled and dropped provenance records as long-known threats; Gierend selection 764 hits→624 dedup→66 included (10.6%), 52 included report successful validation of varying strength, NOT field causal impact. Both units added finite synthetic code/tests to CI configuration; final HEAD CI PASS UNVERIFIED, no access to underlying live outcome labels or legal authorization certificates. Prior P1 evidence debt retained.
+
+[Living missing-literature register](../docs/research/p2-missing-literature-register-20261110.md): **7 search-unlocated originals**, changed from 9 by 4 acquisitions and 2 newly identified direct strong rivals (Barocas/Levy 2020 and Viljoen 2021). Source metadata and bibliographic abstracts checked, not full papers read. GitHub human authorship, no new branch, no deleted source, Notion canonical interpretation maintained.
+
+---
+
 # NOMOS-0.885 — Active P2-P10 research (2026-11-11)
 
 **P2-P9** uses Sultan (2022) doctoral thesis §5.2–5.4 to build a *bounded researcher-created* event/object masking toy; it reproduces a **prior-author source requirement**, not the full AERBAC/XACML implementation or a novel NOMOS policy. Six synthetic cases separate physical denial, unknown source purpose, privacy-aware masking and filtered visibility. [Research and fidelity limits](../docs/research/p2-p9-sultan-policy-control.md), [toy code](../tools/p2P9SultanPolicy.mjs), [tests](../tests/test_p2P9SultanPolicy.mjs).
