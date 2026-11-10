@@ -19,3 +19,7 @@ Create explicitly fictional three-role inference scenarios (training data provid
 
 ## Stop condition
 If the extended contextual-integrity and standard law audit can represent the full collector/processor/affected-person triangle and multi-dimensional measurement evidence, withdraw a claimed NOMOS theoretical discovery. This phase demonstrates the need to correct overbroad claims, not a real-world legal violation.
+
+
+### P2-P11.6 — Reliability and validity non-equivalence
+Jacobs/Wallach §3.1: test–retest reliability addresses stability under comparable circumstances; §3.2: reliability alone cannot establish construct validity. Repeatedly outputting identical risk classifications is not evidence they measure an appropriate construct. The P2-P8 K yes/no axis must be demoted to a documentary-status placeholder, not a measurement conclusion.
