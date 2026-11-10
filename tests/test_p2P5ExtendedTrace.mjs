@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {enumerateFiniteTruthTable,extendedContextualTrace,nomosClaimContract} from '../tools/p2P5ExtendedTrace.mjs';
+const x=enumerateFiniteTruthTable();
+assert.equal(x.tests,320);assert.equal(x.mismatches.length,0);assert.ok(x.lawful>0);
+const allow={flow_permitted:true,attribute_derived:true,actor_qualified:true,purpose_allowed:true,claim_scope_supported:true,contest_enabled:true};
+assert.equal(extendedContextualTrace([{type:'judge'}],allow).fullyCompliant,false);
+assert.equal(nomosClaimContract([{type:'send'},{type:'derive'},{type:'judge'}],allow).fullyWarranted,true);
+assert.ok(nomosClaimContract([{type:'send'},{type:'judge'}],allow).judgments[0].missing.includes('derive_before_judgment'));
+assert.equal(nomosClaimContract([{type:'send'},{type:'derive'},{type:'judge'}],{...allow,contest_enabled:null}).fullyWarranted,false);
+console.log(JSON.stringify({tests:x.tests,mismatches:x.mismatches.length,lawful:x.lawful,note:'synthetic, equal-fact comparison'}));
