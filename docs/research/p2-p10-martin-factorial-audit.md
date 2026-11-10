@@ -36,3 +36,7 @@ The PDF text contains the literal inequality 'p < 0.00'. A nonnegative probabili
 
 ### P2-P10.8 — Six surveys do not mean six independent causal outcomes
 The authors' six factorial-vignette survey conditions were administered to different samples of respondents, with 30 hypothetical vignettes per participant. A simple difference of group means is not necessarily the causal effect of using inference independently of all factors, without checking vignette randomization and group differences; subjective appropriateness is not factual wrongdoing or individualized harm.
+
+
+### P2-P10.9 — Strong measurement predecessor
+Jacobs/Wallach (2021) Measurement and Fairness, Selbst et al. (2019) Fairness and Abstraction, Solow-Niederman (2022) Information Privacy and the Inference Economy, and Tay et al. (2022) Machine-Learning Measurement Bias are strong competing frameworks. Their abstracts show that construct validity, social embedding, organizational inference and dataset/feature mismeasurement are studied prior topics. Do not claim all full texts read here. Drive search status for their independent originals is recorded separately.
