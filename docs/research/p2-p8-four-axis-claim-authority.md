@@ -33,3 +33,7 @@ If B1 expert review and extended contextual-integrity methods implement the same
 
 ### P2-P8.6 — Four axes must not be collapsed
 Park's graph-derived access permissions are not a substitute for epistemic construct validity K. Engelmann/Nissenbaum directly problematize construct labels and ground truth. Conversely, a high-quality inference or justified K does not establish the institution's legal authority A, and no combination of K/A proves that a downstream outcome O occurred. Treat each as a distinct evidence question.
+
+
+### P2-P8.7 — Competitor strength and inherited method
+Martin/Nissenbaum/Shmatikov present real factorial-vignette evidence that contextual purpose matters for perceptions; Sultan's doctoral prototype uses actual XACML/MySQL metadata-based control. The E/K/A/O notation is a conceptual checklist that a competent legal reviewer and extended contextual-integrity rules can already express. Adding four labels is NOT a new formal theorem.
