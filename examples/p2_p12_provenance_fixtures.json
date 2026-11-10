@@ -1,0 +1,131 @@
+{
+  "schema": "p2-p12.1",
+  "source": "Pan et al. 2023 §3.3 + Gierend et al. 2024 scoping review; all event data fictional",
+  "review": {
+    "retrieved": 764,
+    "deduplicated": 624,
+    "included": 66,
+    "reportedValidated": 52
+  },
+  "cases": [
+    {
+      "id": "complete-with-reference",
+      "events": [
+        {
+          "id": "a",
+          "seq": 1,
+          "digest": "h1"
+        },
+        {
+          "id": "b",
+          "seq": 2,
+          "digest": "h2"
+        },
+        {
+          "id": "c",
+          "seq": 3,
+          "digest": "h3"
+        }
+      ],
+      "expectedIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "digestReference": {
+        "a": "h1",
+        "b": "h2",
+        "c": "h3"
+      },
+      "attestationVerified": false
+    },
+    {
+      "id": "duplicate-event",
+      "events": [
+        {
+          "id": "a",
+          "seq": 1,
+          "digest": "h1"
+        },
+        {
+          "id": "a",
+          "seq": 2,
+          "digest": "h2"
+        }
+      ],
+      "expectedIds": null,
+      "digestReference": null,
+      "attestationVerified": false
+    },
+    {
+      "id": "chronology-reordered",
+      "events": [
+        {
+          "id": "a",
+          "seq": 3,
+          "digest": "h1"
+        },
+        {
+          "id": "b",
+          "seq": 1,
+          "digest": "h2"
+        }
+      ],
+      "expectedIds": null,
+      "digestReference": null,
+      "attestationVerified": false
+    },
+    {
+      "id": "known-digest-conflict",
+      "events": [
+        {
+          "id": "a",
+          "seq": 1,
+          "digest": "changed"
+        }
+      ],
+      "expectedIds": [
+        "a"
+      ],
+      "digestReference": {
+        "a": "known"
+      },
+      "attestationVerified": false
+    },
+    {
+      "id": "known-missing-event",
+      "events": [
+        {
+          "id": "a",
+          "seq": 1,
+          "digest": "h1"
+        },
+        {
+          "id": "c",
+          "seq": 3,
+          "digest": "h3"
+        }
+      ],
+      "expectedIds": [
+        "a",
+        "b",
+        "c"
+      ],
+      "digestReference": null,
+      "attestationVerified": false
+    },
+    {
+      "id": "self-consistent-unknown",
+      "events": [
+        {
+          "id": "x",
+          "seq": 1,
+          "digest": "hx"
+        }
+      ],
+      "expectedIds": null,
+      "digestReference": null,
+      "attestationVerified": false
+    }
+  ]
+}
