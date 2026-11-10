@@ -24,3 +24,7 @@ Require independent legal rule + source evidence + actor/recipient case identity
 
 ### P2-P13.6 — Tie mechanism has multiple subroutes
 Barocas/Levy §II.A distinguishes passthrough (revealing a relationship), bycatch (unintended third-party data), identification and tie-justified observation. These are *distinct* evidence-generating processes with different risks and potentially different legal responses. A one-bit 'noncontributor' field cannot tell them apart.
+
+
+### P2-P13.7 — Similarity does not require an interpersonal connection
+Barocas/Levy §II.B explains statistical similarity-based dependencies may be socially salient or non-salient. Even with no known social relationship or user-provided records, observer inference may concern Bob. Legal and epistemic grounds therefore cannot be decided from social ties alone.
