@@ -1,0 +1,79 @@
+{
+  "schema": "p2-p6.1",
+  "date": "2026-11-10",
+  "scope": "public metadata and identified original Drive PDFs; no legal evaluation",
+  "sources": [
+    {
+      "id": "engelmann-nissenbaum-2025",
+      "url": "https://arxiv.org/abs/2507.18253",
+      "review_level": "abstract",
+      "topics": [
+        "conceptual_overfitting",
+        "AI_inferential_privacy"
+      ],
+      "drive": "search_not_found"
+    },
+    {
+      "id": "chen-huang-2026",
+      "url": "https://doi.org/10.1093/idpl/ipag020",
+      "review_level": "abstract",
+      "topics": [
+        "inferential_privacy",
+        "data_loyalty"
+      ],
+      "drive": "search_not_found"
+    },
+    {
+      "id": "martin-nissenbaum-shmatikov-2025",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4655228",
+      "review_level": "abstract",
+      "topics": [
+        "privacy_enhancing_claims",
+        "inference_vs_raw_data"
+      ],
+      "drive": "search_not_found"
+    },
+    {
+      "id": "barth-et-al-2006",
+      "url": "https://doi.org/10.1109/SP.2006.32",
+      "review_level": "fulltext",
+      "topics": [
+        "derived_attributes",
+        "temporal_norms"
+      ],
+      "drive": "verified_original_id_1iOiTolBFjwG96ohg9uBDGI6cAXf_09u7"
+    }
+  ],
+  "claims": [
+    {
+      "id": "topic-conceptual",
+      "source_id": "engelmann-nissenbaum-2025",
+      "minimum_level": "abstract",
+      "supported_topic": "conceptual_overfitting"
+    },
+    {
+      "id": "unread-full-claim",
+      "source_id": "engelmann-nissenbaum-2025",
+      "minimum_level": "fulltext",
+      "supported_topic": "conceptual_overfitting"
+    },
+    {
+      "id": "existing-inference",
+      "source_id": "barth-et-al-2006",
+      "minimum_level": "fulltext",
+      "supported_topic": "derived_attributes"
+    },
+    {
+      "id": "duty-loyalty-deep-analysis",
+      "source_id": "chen-huang-2026",
+      "minimum_level": "fulltext",
+      "supported_topic": "data_loyalty"
+    },
+    {
+      "id": "unsupported-legal-result",
+      "source_id": "unverified-court-claim",
+      "minimum_level": "abstract",
+      "supported_topic": "legally_adjudicated"
+    }
+  ]
+}
