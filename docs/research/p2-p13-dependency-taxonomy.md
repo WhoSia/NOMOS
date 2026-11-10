@@ -32,3 +32,7 @@ Barocas/Levy §II.B explains statistical similarity-based dependencies may be so
 
 ### P2-P13.8 — Difference and comparison classes
 Barocas/Levy §II.C catalogs process-of-elimination, anomaly-detection and adverse-inference dependencies. These rely on a relevant comparison set and response/selection rule. An institution's assertion about Bob can vary when the reference set changes even if Bob's direct source data do not.
+
+
+### P2-P13.9 — Viljoen institutional legitimacy is a direct defeater
+Viljoen §IV's Watercorp/Waterorg example distinguishes an individual's exit/payment rights from meaningful participation in governing collective data production. This is already a theory of legitimate institutional power, not merely a data-flow privacy principle. NOMOS must NOT present collective governance legitimacy as its own discovery.
