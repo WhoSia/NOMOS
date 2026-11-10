@@ -40,3 +40,7 @@ The authors' six factorial-vignette survey conditions were administered to diffe
 
 ### P2-P10.9 — Strong measurement predecessor
 Jacobs/Wallach (2021) Measurement and Fairness, Selbst et al. (2019) Fairness and Abstraction, Solow-Niederman (2022) Information Privacy and the Inference Economy, and Tay et al. (2022) Machine-Learning Measurement Bias are strong competing frameworks. Their abstracts show that construct validity, social embedding, organizational inference and dataset/feature mismeasurement are studied prior topics. Do not claim all full texts read here. Drive search status for their independent originals is recorded separately.
+
+
+### P2-P10.10 — Independent replication gate
+To upgrade this unit beyond a source-bounded audit, secure the official instrument, coding, sample labels, coefficients/SE and anonymized respondents if public. Re-run with vignettes clustered under respondents, check contrast signs, compare table estimates and range of reported ratings, then construct claim-level evidence labels. In absence of those inputs P2 science novelty and independent empirical findings remain HOLD, and this work is an audit of published assertions.
