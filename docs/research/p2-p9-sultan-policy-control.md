@@ -23,3 +23,7 @@ Static synthetic fixtures, no actual personal footage, no network/DB/XACML runti
 
 ### P2-P9.6 — Fidelity counterexample
 The thesis §5.2 requires intersection of the observer's access-purpose EOI with the data's collection-purpose EOI. The mixed-traffic fixture would expose two objects under physical-only permissions, but only vehicle_1 under the restricted abstraction. This difference is inherited from Sultan, not produced by NOMOS.
+
+
+### P2-P9.7 — Privacy-aware policy is not automatic entitlement
+The dissertation describes privacy-aware masking as a possible view in authorized contexts without permitted semantic EOIs. Its precise branching depends on implementation policy and request attributes. Our fixed fallback is an authored assumption, not an assertion that all institutions must release a blurred version; the denial branch remains independent.
