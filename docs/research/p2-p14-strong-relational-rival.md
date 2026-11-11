@@ -42,3 +42,7 @@ Any future benchmark must prohibit giving G an independent person-specific legal
 
 ### P2-P14.9 — Collective benefits are positive controls
 Viljoen explicitly discusses socially beneficial data production under a democratically legitimate arrangement. A privacy theory that labels all cross-person inference wrongful would reject beneficial arrangements without engaging democratic legitimacy. Strong rivals support both restraining unjust institutional conduct and allowing legitimate social analysis.
+
+
+### P2-P14.10 — Formal promotion refusal
+P2-P13 and P2-P14 jointly establish a strong historical defeat for generalized third-party-dependency, relational governance and collective-legitimacy originality claims. They do not show a new legal category, performance metric or independently verified downstream person-outcome. Continue P2 only with predeclared real-source, strong-baseline paired disagreement and external adjudication; otherwise fold findings into existing NOMOS lineage.
