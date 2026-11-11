@@ -1,37 +1,37 @@
-# NOMOS-0.885 — Living Missing-Literature Register
-**Updated 2026-11-11 (KST), P2-P12.** Canonical path retains earlier 20261110 suffix for continuity; revision date is given here.
+# NOMOS-0.885 — Living Missing Literature Register
+**Updated: 2026-11-11, P2-P14.** File path retains the original 20261110 suffix for continuity. **SEARCH_NOT_FOUND** means a matching original PDF was not identified in connected Drive by exact bibliographic searches; not confirmed universally absent. Distinct publisher chapters, articles and theses are tracked separately.
 
-**Classification:** SEARCH_NOT_FOUND means exact paper PDF did not emerge from connected Drive filename, author or DOI search. It does NOT prove an original is absent under any alias. RELATED_THESIS_HELD means independently published article/chapter still missing even though related DTU thesis material is held. BIBLIO_ABSTRACT_ONLY means bibliographic record/abstract reviewed, not paper full text.
+## Current independent original works not found — five
 
-## Remaining search-unlocated independent originals — 7
-
-| Priority | Work, genre and stable source | Current status | Research role |
+| Priority | Work / genre | Verified official landing URL | Custody and reading state |
 |---|---|---|---|
-| P0 | Chen & Huang (2026), *Inferential Privacy and the Duty of Data Loyalty*, International Data Privacy Law journal article. https://doi.org/10.1093/idpl/ipag020 | SEARCH_NOT_FOUND / publisher abstract | Inferential data-loyalty duties |
-| P0 | Barocas & Levy (2020), *Privacy Dependencies*, Washington Law Review 95(2), 555–615. https://digitalcommons.law.uw.edu/wlr/vol95/iss2/4/ | SEARCH_NOT_FOUND / journal abstract | Social ties, similarity and difference privacy effects on non-contributors |
-| P0 | Viljoen (2021), *A Relational Theory of Data Governance*, Yale Law Journal 131, 573–654. https://yalelawjournal.org/article/a-relational-theory-of-data-governance | SEARCH_NOT_FOUND / journal abstract | Collective and population-level data interests, governance legitimacy |
-| P1 | Selbst et al. (2019), *Fairness and Abstraction in Sociotechnical Systems*, FAT* conference paper. https://doi.org/10.1145/3287560.3287598 | SEARCH_NOT_FOUND / abstract | Social-technical abstraction traps |
-| P1 | Sultan & Jensen (2021), *Secondary Use Prevention in Large-Scale Data Lakes*, Intelligent Computing III published conference-book chapter. https://doi.org/10.1007/978-3-030-80129-8_64 | RELATED_THESIS_HELD / standalone chapter SEARCH_NOT_FOUND | Provenance purpose propagation |
-| P1 | Sultan & Jensen (2021), *Metadata based need-to-know view in large-scale video surveillance systems*, Computers & Security 111, 102452 journal article. https://doi.org/10.1016/j.cose.2021.102452 | RELATED_THESIS_HELD / standalone journal PDF SEARCH_NOT_FOUND | Semantic event/object permission model |
-| P2 | Tay et al. (2022), *A Conceptual Framework for Investigating and Mitigating Machine-Learning Measurement Bias in Psychological Assessment*, AMPP Science 5(1), journal article. https://doi.org/10.1177/25152459211061337 | SEARCH_NOT_FOUND / abstract | Construct measurement and bias |
+| P0 | Chen & Huang (2026), *Inferential Privacy and the Duty of Data Loyalty*, **journal article** | https://doi.org/10.1093/idpl/ipag020 | SEARCH_NOT_FOUND; publisher abstract only |
+| P1 | Selbst, boyd, Friedler, Venkatasubramanian & Vertesi (2019), *Fairness and Abstraction in Sociotechnical Systems*, **conference paper** | https://doi.org/10.1145/3287560.3287598 | SEARCH_NOT_FOUND; abstract only |
+| P1 | Sultan & Jensen (2021), *Secondary Use Prevention in Large-Scale Data Lakes*, **independently published proceedings chapter** | https://doi.org/10.1007/978-3-030-80129-8_64 | RELATED_THESIS_HELD, independent publisher chapter SEARCH_NOT_FOUND |
+| P1 | Sultan & Jensen (2021), *Metadata based need-to-know view in large-scale video surveillance systems*, *Computers & Security* 111:102452, **journal article** | https://doi.org/10.1016/j.cose.2021.102452 | RELATED_THESIS_HELD, independent publisher journal PDF SEARCH_NOT_FOUND |
+| P2 | Tay et al. (2022), *A Conceptual Framework for Investigating and Mitigating Machine-Learning Measurement Bias in Psychological Assessment*, **journal article** | https://doi.org/10.1177/25152459211061337 | SEARCH_NOT_FOUND; abstract only |
 
-## Newly acquired in P2-P11/P2-P12 — 4 removed from missing
+## Acquired in the current P2-P13/P2-P14 research session (remove from missing)
 
-| Paper | File ID retained | Canonical folder | Status |
+| Work | Type | Original Drive ID | Final folder / reading |
 |---|---|---|---|
-| Jacobs & Wallach (2021), *Measurement and Fairness*, ACM FAccT conference pp.375–385 | `1COybDrFJUN_7rep8d9jREK-qaQQCancV` | `10_PAPERS` | Original PDF text reviewed (sections 2–5); parent rechecked |
-| Solow-Niederman (2022), *Information Privacy and the Inference Economy*, Northwestern University Law Review 117(2):357–424 | `1DvFVJWrewCTkuSOU1g2tQ5LN9gmOSCy0` | `10_PAPERS` | Original journal PDF text reviewed (I–IV and conclusion); parent rechecked |
-| Pan, Stakhanova & Ray (2023), *Data Provenance in Security and Privacy*, ACM Computing Surveys 55(14s), article 323 | `1EqjrTKSu_sn8WabMIr9fJ0oNoHd7-wN4` | `10_PAPERS` | Original review PDF text and key threat/secure-provenance sections reviewed; parent rechecked |
-| Gierend et al. (2024), *Provenance Information for Biomedical Data and Workflows: Scoping Review*, JMIR 26:e51297 | `162KT_4lw9VlJEbt68XXcHmMh2aUyuU3r` | `10_PAPERS` | Original JMIR PDF text and review methodology/selection/validation sections reviewed; parent rechecked |
+| Barocas & Levy (2020), *Privacy Dependencies*, *Washington Law Review* 95(2):555–616 | **Law-review journal article** | `1iZXULrIbMucPspDg1lx5C_qkwh-Bb6Ku` | `10_PAPERS`; full extracted text, major taxonomy/genetics/conclusion sections |
+| Viljoen (2021), *A Relational Theory of Data Governance*, *Yale Law Journal* 131:573–654 | **Law-review feature/article**, not thesis | `1NxsGWDrKF3L13gdmrT1ZVTLJ8XXuKTLV` | `10_PAPERS`; full extracted text, vertical/horizontal relation, governance legitimacy, conclusion |
 
-No new doctoral dissertation in current batch. All four remained `application/pdf` after metadata-only rename/move. **No cryptographic source-byte SHA-256 and no full-page figure-by-figure visual verification were performed.**
+Both original files were moved from `00_INTAKE` by metadata-only renaming, preserving IDs and PDF MIME. The move action returned the `10_PAPERS` parent; independent readback should be recorded separately. **No original PDF SHA-256 computed or all figures inspected visually.** No independent legal or social outcome verification.
 
-## Existing library remains held (do not re-download)
-- Park, Nguyen & Sandhu (2012), ACM/IEEE PST conference paper: `11CUSnooMw5Ty8Kc9WN-Jxed4LRMpJUDJ` in `10_PAPERS`.
-- Martin, Nissenbaum & Shmatikov (2025), journal-layout article: `19k2Pj3H_DRrR_lnj-LfkS6ncYBkacVQb` in `10_PAPERS`.
-- Sultan (2022), DTU **PhD thesis**, 155 pp., official year 2022 despite internal cover 2021: `1_AP8Ly2tG-cKYxXjDffARDPk82v0xpFc` in `11_SOURCES`. Independent journal/chapter editions above remain missing.
-- Engelmann & Nissenbaum (2025), arXiv v1 preprint: `1KXUULKh0uFbQ-MWsI9IjfTXgQK8k-UJY` in `10_PAPERS`.
-- Nissenbaum (2004), contextual integrity: `1NZjrRWp4aooazZGeU-tj7L792agdwnqm`; Barth et al. (2006) contextual norms: `1iOiTolBFjwG96ohg9uBDGI6cAXf_09u7`; Sultan & Jensen (2021), Sensors journal paper: `1cceIx9-bU3GUru4yQrYSmlGKtIRP_BtF`, all in `10_PAPERS`.
+## Previously acquired source originals (do NOT count in missing)
+- Nissenbaum (2004): `1NZjrRWp4aooazZGeU-tj7L792agdwnqm`.
+- Barth et al. (2006): `1iOiTolBFjwG96ohg9uBDGI6cAXf_09u7`.
+- Sultan & Jensen (2021), Sensors: `1cceIx9-bU3GUru4yQrYSmlGKtIRP_BtF`.
+- Park, Nguyen & Sandhu (2012): `11CUSnooMw5Ty8Kc9WN-Jxed4LRMpJUDJ`.
+- Martin, Nissenbaum & Shmatikov (2025): `19k2Pj3H_DRrR_lnj-LfkS6ncYBkacVQb`.
+- Sultan (2022) **DTU PhD thesis**: `1_AP8Ly2tG-cKYxXjDffARDPk82v0xpFc` in `11_SOURCES`; related independent journal/publisher chapter still missing.
+- Engelmann & Nissenbaum (2025), arXiv v1: `1KXUULKh0uFbQ-MWsI9IjfTXgQK8k-UJY`.
+- Jacobs & Wallach (2021): `1COybDrFJUN_7rep8d9jREK-qaQQCancV`.
+- Solow-Niederman (2022): `1DvFVJWrewCTkuSOU1g2tQ5LN9gmOSCy0`.
+- Pan, Stakhanova & Ray (2023): `1EqjrTKSu_sn8WabMIr9fJ0oNoHd7-wN4`.
+- Gierend et al. (2024): `162KT_4lw9VlJEbt68XXcHmMh2aUyuU3r`.
 
-## Change log and epistemic controls
-Previous 2026-11-11 P2-P10 list had **9** missing. Newly acquired **4** (Jacobs, Solow-Niederman, Pan, Gierend). New verified journal targets **2** (Barocas/Levy 2020, Viljoen 2021). **Now 7 search-unlocated independently published works**. Prior missing five retained except the two acquired (Pan and Gierend), leaving Chen, Selbst, two Sultan/Jensen and Tay. No duplicate files created. Search not found is not global absence. Close reading must be a separately tracked state from title verification, tests, and actual conclusion truth. P2 scientific novelty/real-world adjudication remain unproven.
+## Delta and scholarly decision
+Prior missing **7**. Two original article PDFs acquired and canonicalized. New confirmed independent titles added **0** in this batch. Remaining missing **5**. Barocas/Levy already formalize three interpersonal dependency mechanisms, and Viljoen already argues for horizontal relations and democratic legitimacy of data production. **Do not claim NOMOS invented these distinctions.** No empirical claim that NOMOS beats contextual-integrity/relational-governance/expert legal baselines.
