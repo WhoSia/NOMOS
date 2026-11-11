@@ -34,3 +34,7 @@ Barocas/Levy 2020 §II makes privacy dependency type an explicit mechanism dimen
 
 ### P2-P14.7 — Legitimacy cannot be reduced to an operator's consent
 Viljoen 2021 §IV criticizes Watercorp-like governance where households have individual opt-out or compensation but no meaningful role in determining population-level rules. The difference between procedural individual permission and legitimate collective arrangements predates NOMOS. R1 therefore contains a governance-legitimacy feature in addition to ordinary source and use purpose.
+
+
+### P2-P14.8 — Equal information constraints
+Any future benchmark must prohibit giving G an independent person-specific legal warrant not provided to R1. Doing so would measure information access privilege, not inferential originality. In all four toy fixtures sourceLaw is 'unknown' and neither comparator has an independently adjudicated correct answer. Code reports no empirical gain regardless of G's richer schema.
