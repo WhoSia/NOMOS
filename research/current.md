@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-11 / P2-P14
+
+**P2 stage OPEN / independent original theory, external legal adjudication and actual person-outcome gains HOLD.** Two source originals added by user, reviewed and moved by Drive metadata-only operations with original file IDs retained: Barocas/Levy (2020) *Privacy Dependencies*, Washington Law Review 95(2):555–616 (ID `1iZXULrIbMucPspDg1lx5C_qkwh-Bb6Ku`), and Viljoen (2021) *A Relational Theory of Data Governance*, Yale Law Journal 131:573–654 (ID `1NxsGWDrKF3L13gdmrT1ZVTLJ8XXuKTLV`). Both peer-reviewed/legal law-review articles, NOT PhD theses; moved to 10_PAPERS. No source-byte SHA-256 validation.
+
+[P2-P13 dependency taxonomy close-reading](../docs/research/p2-p13-dependency-taxonomy.md): Barocas/Levy's tie/similarity/difference mechanisms and genetic case applications are established prior art. [P2-P14 strong relational rival](../docs/research/p2-p14-strong-relational-rival.md): Viljoen's vertical/horizontal population relations, legitimacy and democratic governance already defeat broad institutional legitimacy novelty. Paired synthetic tests and a preregistered equal-information benchmark cannot establish a real new theorem or measured advantage. Strong legal, contextual integrity and relational baselines remain necessary. [Updated missing-literature table: five standalone works](../docs/research/p2-missing-literature-register-20261110.md), down from seven by two acquired. Prior P1 correction/reclassification evidence debts remain OPEN. CI test registration does NOT imply final-HEAD CI PASS; no independent real recipient/welfare and PDF-byte receipts.
+
+---
+
 # NOMOS-0.885 — Current Research Head (2026-11-11 · P2-P12)
 
 **P2 RESEARCH OPEN / PROVEN SCIENTIFIC NOVELTY AND INDEPENDENT REAL-WORLD CASE OUTCOMES HOLD.** Newly added Drive originals and canonical custody: Jacobs & Wallach (2021) FAccT conference paper, Solow-Niederman (2022) Northwestern University Law Review journal article, Pan/Stakhanova/Ray (2023) ACM Computing Surveys journal review, Gierend et al. (2024) JMIR scoping-review journal article. All four were renamed by source type and moved 00_INTAKE→10_PAPERS with identical original file IDs and post-move parent metadata checks, no duplicate or thesis misclassification, source-byte SHA-256 NOT independently verified.
