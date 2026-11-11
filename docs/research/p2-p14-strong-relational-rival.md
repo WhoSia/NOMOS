@@ -38,3 +38,7 @@ Viljoen 2021 §IV criticizes Watercorp-like governance where households have ind
 
 ### P2-P14.8 — Equal information constraints
 Any future benchmark must prohibit giving G an independent person-specific legal warrant not provided to R1. Doing so would measure information access privilege, not inferential originality. In all four toy fixtures sourceLaw is 'unknown' and neither comparator has an independently adjudicated correct answer. Code reports no empirical gain regardless of G's richer schema.
+
+
+### P2-P14.9 — Collective benefits are positive controls
+Viljoen explicitly discusses socially beneficial data production under a democratically legitimate arrangement. A privacy theory that labels all cross-person inference wrongful would reject beneficial arrangements without engaging democratic legitimacy. Strong rivals support both restraining unjust institutional conduct and allowing legitimate social analysis.
