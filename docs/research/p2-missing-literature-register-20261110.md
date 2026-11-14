@@ -1,5 +1,35 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
+## 2026-11-14 / P2-P16 — Active acquisition table
+
+Search scope: connected Drive by distinctive file-name/author/identifier filters and recent intake listing. A matching edition may still exist under an opaque name. Web-readable materials below remain custody gaps when their matching Drive files were not found.
+
+| Priority | Requested source or edition | Locator | Drive status |
+|---|---|---|---|
+| 1 | CoreLogic joint appendix, vol. 1, ECF 92 (JA-167, 202, 205–206); vol. 4, ECF 95 (JA-684–685) | [Vol. 1](https://www.nhlp.org/wp-content/uploads/Appx-1.pdf), [vol. 4](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf) | Public PDFs read at relevant locators; matching copies unlocated |
+| 1 | CoreLogic district decision ECF 317 (findings 58–60) | [PDF](https://www.nhlp.org/wp-content/uploads/Arroyo-Decision.pdf) | Public PDF read; matching copy unlocated |
+| 1 | CoreLogic complete CHRO settlement (trial Ex. 49) and dated June authorization/reasons | ECF 317 ¶60; JA-202, JA-206 | Underlying sources unlocated in reviewed public materials or Drive |
+| 1 | SafeRent signed settlement ECF 114-1 §3.5 | [PDF](https://www.matenantscreeningsettlement.com/Content/Documents/Settlement%20Agreement.pdf) | Public PDF read; Drive has final approval ECF 135 |
+| 1 | SafeRent §3.5 practice-change certification and an actual post-change report | ECF 114-1 §3.5 and ECF 135 ¶17 | No matched public material or Drive file located |
+| 2 | Agan et al. (2026), *Can You Erase the Mark of a Criminal Record?* journal edition, AEJ: Economic Policy 18(4):423–456 | [AEA](https://doi.org/10.1257/pol.20240830) | Journal PDF unlocated; 2024 NBER WP confirmed and read |
+| 2 | SCHUFA C‑634/21 scoring and joined C‑26/22/C‑64/22 retention judgments | [Scoring](https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=EN), [retention](https://juris.curia.europa.eu/juris/document/document_print.jsf?docid=280428&doclang=EN) | Public court texts read at relevant passages; matching copies unlocated |
+| 2 | Lageson & Corda, *Chasing a Clean Slate*, Harvard JOLT 38(1), Fall 2024 issue label | [Journal PDF](https://jolt.law.harvard.edu/assets/articlePDFs/v38/1-Corda-Lageson.pdf) | Public PDF located; matching copy unlocated |
+| 2 | TransUnion 2025 Form 10-K | [SEC filing](https://www.sec.gov/Archives/edgar/data/1552033/000155203326000012/tru-20251231.htm) | Public filing reviewed at P2-P15; matching copy unlocated |
+| 3 | Chen & Huang, *Inferential Privacy and the Duty of Data Loyalty* | [DOI](https://doi.org/10.1093/idpl/ipag020) | Matching article unlocated |
+| 3 | Sultan & Jensen, *Secondary Use Prevention in Large-Scale Data Lakes* | [Springer](https://doi.org/10.1007/978-3-030-80129-8_64) | Standalone chapter unlocated; related thesis held |
+| 3 | Sultan & Jensen, *Metadata based need-to-know view in large-scale video surveillance systems* | [DOI](https://doi.org/10.1016/j.cose.2021.102452) | Standalone article unlocated; related thesis held |
+
+### Held and confirmed by opening the PDFs
+
+- Lageson & Stewart (2024), Criminology 62:5–34, DOI 10.1111/1745-9125.12359: `1mwQKKCE3cTNM0NnHz_qm4RhWvLkRmJIy`. Supersedes the provisional acquisition priority in P2-P15.
+- Lageson, Adams & Chen (2026), Law & Society Review 60:387–413, DOI 10.1017/lsr.2026.10094: `1S7PQVMqg0HTxRj2eZa_dVLWU1L3HCsgN`.
+- Agan et al. (2024), NBER WP 32394: `1k_xJbqIbLM_Ac3OXGTLNC_55Otx4xB7O`. Keep the journal edition gap separate.
+- Moynihan, Herd & Harvey (2015), JPART 25:43–69, DOI 10.1093/jopart/muu009: `12JKqIrjRmXWM5vH8slfYOng4VLmzDLHd`.
+
+[Research analysis and evidence limits](p2-p16-correction-burden-and-recipient-remedy.md). No new file relocation or PDF byte checksum in this round.
+
+---
+
 ## 2026-11-14 / P2-P15
 
 The previous five-item canonical register now has **three standalone works not located** in accessible Drive searches. Tay et al. was independently located in 10_PAPERS (Drive ID `1cz-63ScHAJwA5al7RCTJ5d8x2TRProji`, DOI 10.1177/25152459211061337). Selbst et al. was in the new intake and is now in 10_PAPERS.
