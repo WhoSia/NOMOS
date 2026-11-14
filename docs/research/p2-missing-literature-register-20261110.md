@@ -1,4 +1,48 @@
 # NOMOS-0.885 — Living Missing Literature Register
+
+## 2026-11-14 / P2-P15
+
+The previous five-item canonical register now has **three standalone works not located** in accessible Drive searches. Tay et al. was independently located in 10_PAPERS (Drive ID `1cz-63ScHAJwA5al7RCTJ5d8x2TRProji`, DOI 10.1177/25152459211061337). Selbst et al. was in the new intake and is now in 10_PAPERS.
+
+| Work | Locator | Drive status |
+|---|---|---|
+| Chen & Huang (2026), *Inferential Privacy and the Duty of Data Loyalty* | [DOI](https://doi.org/10.1093/idpl/ipag020) | Matching PDF not located |
+| Sultan & Jensen (2021), *Secondary Use Prevention in Large-Scale Data Lakes* | [DOI](https://doi.org/10.1007/978-3-030-80129-8_64) | Standalone chapter not located; related thesis held |
+| Sultan & Jensen (2021), *Metadata based need-to-know view in large-scale video surveillance systems* | [DOI](https://doi.org/10.1016/j.cose.2021.102452) | Standalone journal PDF not located; related thesis held |
+
+For the broader reading queue, prioritize Lageson & Stewart, *The Problem with Criminal Records* ([publisher](https://doi.org/10.1111/1745-9125.12359)), Agan's work on record relief and employment, and CJEU SCHUFA (C‑634/21 scoring and joined C‑26/22/C‑64/22 discharge-data retention). The SafeRent ECF 114-1 agreement and TransUnion 2025 Form 10-K were checked on the public web for P2-P15. See [case report](p2-p15-tenant-screening-remedy-evidence.md) for locators. The two algorithmic-recourse author editions below count as works held; final proceedings PDFs were not verified in this intake.
+
+## Intake custody, 2026-11-14
+
+10 papers/preprints and 8 reports/court documents moved from 00_INTAKE by metadata-only rename and move. Destination lists were independently re-read against the preserved original file IDs. No raw-byte SHA-256 comparison was performed.
+
+| File | Original Drive ID | Verified destination |
+|---|---|---|
+| Nelson (2019) — Broken Records Redux — NCLC Report | [1bmtI6ckLe8-In1jortYIGtG4rxObE2u5](https://drive.google.com/file/d/1bmtI6ckLe8-In1jortYIGtG4rxObE2u5/view) | 03_REPORTS_COURTS |
+| Selbst et al. (2019) — Fairness and Abstraction in Sociotechnical Systems — FAccT | [1Em4Nf2jKnzNe-1wb57xsuNMHsilRp1f7](https://drive.google.com/file/d/1Em4Nf2jKnzNe-1wb57xsuNMHsilRp1f7/view) | 10_PAPERS |
+| Kaminski & Urban (2021) — The Right to Contest AI | [14jMAjlDRa15sD8F9vrxckbuQ3vSA42Wi](https://drive.google.com/file/d/14jMAjlDRa15sD8F9vrxckbuQ3vSA42Wi/view) | 10_PAPERS |
+| Citron & Pasquale (2014) — The Scored Society - Due Process for Automated Predictions | [14BsaYesZvlaxo9pMNc0eOl3_sfChXNlE](https://drive.google.com/file/d/14BsaYesZvlaxo9pMNc0eOl3_sfChXNlE/view) | 10_PAPERS |
+| Kaminski (2019) — Binary Governance - Lessons from the GDPR’s Approach to Algorithmic Accountability | [1e8uF1z-rSnNxs2Vi7DYS5BT9izqjNffa](https://drive.google.com/file/d/1e8uF1z-rSnNxs2Vi7DYS5BT9izqjNffa/view) | 10_PAPERS |
+| Wachter, Mittelstadt & Russell (2018) — Counterfactual Explanations Without Opening the Black Box | [1Hu7EKszxSn-VfRlK4HkNGSxAE3jrSq8o](https://drive.google.com/file/d/1Hu7EKszxSn-VfRlK4HkNGSxAE3jrSq8o/view) | 10_PAPERS |
+| Ustun, Spangher & Liu (2019) — Actionable Recourse in Linear Classification — Author Extended Version | [1AqeieCObSC1yAqIA6vaa7LdlcI6DOqte](https://drive.google.com/file/d/1AqeieCObSC1yAqIA6vaa7LdlcI6DOqte/view) | 10_PAPERS |
+| Koh & Liang (2017) — Understanding Black-box Predictions via Influence Functions — ICML | [1yT2SXVw_7n0_EseDLoLigAGHAfHJ5KLd](https://drive.google.com/file/d/1yT2SXVw_7n0_EseDLoLigAGHAfHJ5KLd/view) | 10_PAPERS |
+| Karimi, Schölkopf & Valera — Algorithmic Recourse from Counterfactual Explanations to Interventions — arXiv 2002.06278v4 | [16OQQ8FyRpMnZXmCO6XnJh3KWU7x0V4VQ](https://drive.google.com/file/d/16OQQ8FyRpMnZXmCO6XnJh3KWU7x0V4VQ/view) | 10_PAPERS |
+| Wachter & Mittelstadt (2019) — A Right to Reasonable Inferences | [14_KBtQWAxI4sppuq22Wptd2StAbZIOPL](https://drive.google.com/file/d/14_KBtQWAxI4sppuq22Wptd2StAbZIOPL/view) | 10_PAPERS |
+| FTC & CFPB v. TransUnion Rental Screening Solutions (2023-10-12) — Proposed Stipulated Order — ECF 2-1 | [1YfQvsh_JUsfkkrOIy10jT4mebeQqqGnM](https://drive.google.com/file/d/1YfQvsh_JUsfkkrOIy10jT4mebeQqqGnM/view) | 03_REPORTS_COURTS |
+| FTC & CFPB v. TransUnion Rental Screening Solutions (2023-10-12) — Complaint — ECF 1 | [1bQXFiybpU5HlEJzOUpQMOQTxx8Hlvxgf](https://drive.google.com/file/d/1bQXFiybpU5HlEJzOUpQMOQTxx8Hlvxgf/view) | 03_REPORTS_COURTS |
+| FTC & CFPB v. TransUnion Rental Screening Solutions (2023-10-18) — Entered Stipulated Order — ECF 15 | [1_PxzpLAR0Di-JBh8xxQqInBnTyS2IdmI](https://drive.google.com/file/d/1_PxzpLAR0Di-JBh8xxQqInBnTyS2IdmI/view) | 03_REPORTS_COURTS |
+| CFPB (2022) — Tenant Background Checks Market Report | [1cCvL2py0Zr86SbnO-_P7hdP85IiCep6C](https://drive.google.com/file/d/1cCvL2py0Zr86SbnO-_P7hdP85IiCep6C/view) | 03_REPORTS_COURTS |
+| CFPB (2022) — Consumer Snapshot - Tenant Background Checks | [1ZqiOFJJTg6DDgsQx5i3iBk8iGRu2AFhj](https://drive.google.com/file/d/1ZqiOFJJTg6DDgsQx5i3iBk8iGRu2AFhj/view) | 03_REPORTS_COURTS |
+| Prescott & Starr (2020) — Expungement of Criminal Convictions - An Empirical Study | [17lD1Zetv2C9ptcB4IxcFy09Ome_WDXgk](https://drive.google.com/file/d/17lD1Zetv2C9ptcB4IxcFy09Ome_WDXgk/view) | 10_PAPERS |
+| Connecticut Fair Housing Center v. CoreLogic Rental Property Solutions (2d Cir. 2026-02-20) — Nos. 23-1118 and 23-1166 | [1y5mB6c4Gg--yuHVq2si6u0eqBzBMVMJ_](https://drive.google.com/file/d/1y5mB6c4Gg--yuHVq2si6u0eqBzBMVMJ_/view) | 03_REPORTS_COURTS |
+| Louis v. SafeRent Solutions (D. Mass. 2024-11-20) — Final Approval Order — ECF 135 | [1N2PTcVMLCiq45wwtAB8ZbRTj4g4piV28](https://drive.google.com/file/d/1N2PTcVMLCiq45wwtAB8ZbRTj4g4piV28/view) | 03_REPORTS_COURTS |
+
+The filename `sultan2021.pdf` stayed in 00_INTAKE: the PDF is Massimo Cacciari (2005), *Nomes de lugar: confim*, Revista de Letras 45(1):13–22 (JSTOR 26459823). No relation to the two Sultan & Jensen publication gaps.
+
+---
+
+## Historical snapshot, P2-P14
+
 **Updated: 2026-11-11, P2-P14.** File path retains the original 20261110 suffix for continuity. **SEARCH_NOT_FOUND** means a matching original PDF was not identified in connected Drive by exact bibliographic searches; not confirmed universally absent. Distinct publisher chapters, articles and theses are tracked separately.
 
 ## Current independent original works not found — five
