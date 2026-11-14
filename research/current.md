@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-14 / P2-P16
+
+[P2-P16 research](../docs/research/p2-p16-correction-burden-and-recipient-remedy.md) uses the CoreLogic joint appendix to document testimony of additional record information received in mediation and stipulated reduction of the household rent share to 30% of adjusted income when lease addition was permitted. The exact decision rationale, report-version use, physical move-in date, CHRO settlement exhibit and SafeRent certification remain unverified. Prior work already establishes administrative-burden transfer and opacity in automated expungement. Next research question: whether specific allocations of responsibility for recipient discovery and timely reopening leave missed opportunities invisible in completion-only audits. No independent benchmark or causal effect estimate.
+
+[Updated acquisition table](../docs/research/p2-missing-literature-register-20261110.md) distinguishes the four Drive PDFs verified in P2-P16 from unlocated editions and public case documents. P2 remains open; prior P1 debts remain open.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-14 / P2-P15
 
 P2 research continues. The [tenant screening case comparison](../docs/research/p2-p15-tenant-screening-remedy-evidence.md) adds a documented person-specific rental authorization reversal (CoreLogic), issuer-reported monetary and process implementation (TransUnion), and administrator-reported payment issuance (SafeRent). It does not establish transmission of a corrected report, the cause of the rental authorization, SafeRent score-suppression implementation or comparative advantage over R1. Next evidence targets: CHRO disposition/reasons, versioned report receipt and use, and SafeRent practice-change certification.
