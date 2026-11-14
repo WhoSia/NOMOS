@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-14 / P2-P15
+
+P2 research continues. The [tenant screening case comparison](../docs/research/p2-p15-tenant-screening-remedy-evidence.md) adds a documented person-specific rental authorization reversal (CoreLogic), issuer-reported monetary and process implementation (TransUnion), and administrator-reported payment issuance (SafeRent). It does not establish transmission of a corrected report, the cause of the rental authorization, SafeRent score-suppression implementation or comparative advantage over R1. Next evidence targets: CHRO disposition/reasons, versioned report receipt and use, and SafeRent practice-change certification.
+
+The [custody and literature register](../docs/research/p2-missing-literature-register-20261110.md) tracks 18 relocated PDFs and three unlocated titles from the former five-item canonical shortlist. Original file IDs and destination parents verified; no byte-hash comparison. Prior P1 evidence debts remain open.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-11 / P2-P14
 
 **P2 stage OPEN / independent original theory, external legal adjudication and actual person-outcome gains HOLD.** Two source originals added by user, reviewed and moved by Drive metadata-only operations with original file IDs retained: Barocas/Levy (2020) *Privacy Dependencies*, Washington Law Review 95(2):555–616 (ID `1iZXULrIbMucPspDg1lx5C_qkwh-Bb6Ku`), and Viljoen (2021) *A Relational Theory of Data Governance*, Yale Law Journal 131:573–654 (ID `1NxsGWDrKF3L13gdmrT1ZVTLJ8XXuKTLV`). Both peer-reviewed/legal law-review articles, NOT PhD theses; moved to 10_PAPERS. No source-byte SHA-256 validation.
