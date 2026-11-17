@@ -1,5 +1,31 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
+## 2026-11-17 / P2-P17 — Active acquisition table
+
+Three previous custody gaps are closed. The tables below dated 2026-11-14 are historical snapshots. Remaining statuses inherit the P2-P16 search scope. The 2026-11-17 intake was reviewed for relevant additions; no universal absence is asserted.
+
+| Priority | Requested source or edition | Locator | Drive status |
+|---|---|---|---|
+| 1 | CoreLogic joint appendix, vol. 1, ECF 92 (JA-167, 202, 205–206); vol. 4, ECF 95 (JA-684–685) | [Vol. 1](https://www.nhlp.org/wp-content/uploads/Appx-1.pdf), [vol. 4](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf) | Public PDFs read at relevant locators; matching copies unlocated |
+| 1 | CoreLogic district decision ECF 317 (findings 58–60) | [PDF](https://www.nhlp.org/wp-content/uploads/Arroyo-Decision.pdf) | Public PDF read; matching copy unlocated |
+| 1 | CoreLogic complete CHRO settlement (trial Ex. 49) and dated June authorization/reasons | ECF 317 ¶60; JA-202, JA-206 | Underlying sources unlocated in reviewed public materials or Drive |
+| 1 | SafeRent §3.5 practice-change certification and an actual post-change report | ECF 114-1 §3.5 and ECF 135 ¶17 | No matched public material or Drive file located |
+| 2 | Agan et al. (2026), *Can You Erase the Mark of a Criminal Record?* journal edition, AEJ: Economic Policy 18(4):423–456 | [AEA](https://doi.org/10.1257/pol.20240830) | Journal PDF unlocated; 2024 NBER WP confirmed and read |
+| 2 | SCHUFA C‑634/21 scoring and joined C‑26/22/C‑64/22 retention judgments | [Scoring](https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=EN), [retention](https://juris.curia.europa.eu/juris/document/document_print.jsf?docid=280428&doclang=EN) | Public court texts read at relevant passages; matching copies unlocated |
+| 3 | Chen & Huang, *Inferential Privacy and the Duty of Data Loyalty* | [DOI](https://doi.org/10.1093/idpl/ipag020) | Matching article unlocated |
+| 3 | Sultan & Jensen, *Secondary Use Prevention in Large-Scale Data Lakes* | [Springer](https://doi.org/10.1007/978-3-030-80129-8_64) | Standalone chapter unlocated; related thesis held |
+| 3 | Sultan & Jensen, *Metadata based need-to-know view in large-scale video surveillance systems* | [DOI](https://doi.org/10.1016/j.cose.2021.102452) | Standalone article unlocated; related thesis held |
+
+### Intake verified
+
+- [TransUnion (FY2025) — Form 10-K — SEC Annual Report.pdf](null) — `1Iw1eqSutDbzhzNhV5odyqoaxtdyNOl3o`.
+- [Lageson & Corda (2024) — Chasing a Clean Slate - The Shifting Roles of Privacy and Technology in Criminal Record Expungement Law and Policy.pdf](null) — `1n0OJ8RALYPC9x_ZpcTWcPb86iz3wpEC1`.
+- [Louis v. SafeRent Solutions (D. Mass. 2024-03-28) — Class Action Settlement Agreement and Release — ECF 114-1.pdf](null) — `1KONmZEAi9n3eMboQLq7Yfddf4RjMamyy`.
+
+Each move was metadata-only. Original IDs, sizes and final parent IDs were verified by a fresh metadata read. Newly uploaded `sultan2021.pdf` was Cacciari (2005); its complete Drive-returned raw bytes matched the existing Cacciari canonical PDF `1G7oFZpAeXLZgGUCSD2yDt1DDV2cHMCBb` exactly. It was renamed as a byte-identical duplicate and kept in intake. The two separate Sultan & Jensen works remain unlocated. No SHA-256 values were computed for this round.
+
+---
+
 ## 2026-11-14 / P2-P16 — Active acquisition table
 
 Search scope: connected Drive by distinctive file-name/author/identifier filters and recent intake listing. A matching edition may still exist under an opaque name. Web-readable materials below remain custody gaps when their matching Drive files were not found.
