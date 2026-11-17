@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-17 / P2-P17
+
+[SafeRent output and recipient reliance](../docs/research/p2-p17-screening-output-and-recipient-reliance.md): the filed agreement requires product- and status-conditioned score suppression, with underlying report data and specified exceptions. Certification and sample post-change report evidence remain open. A four-rule monotone binary construction shows that identical report-side changes can either change or preserve decisions. The constructed rules carry no empirical frequency. Lageson & Corda already describe downstream copying and limitations of record clearance. TransUnion's issuer redress statement still lacks person-specific report/decision linkage.
+
+[Acquisition register](../docs/research/p2-missing-literature-register-20261110.md): three Drive custody gaps closed and verified by file ID and destination; a mislabeled Cacciari re-upload matched the canonical PDF byte-for-byte. Nine acquisition rows remain. P2 research and prior P1 evidence debts remain open. No independent comparative or field evaluation yet.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-14 / P2-P16
 
 [P2-P16 research](../docs/research/p2-p16-correction-burden-and-recipient-remedy.md) uses the CoreLogic joint appendix to document testimony of additional record information received in mediation and stipulated reduction of the household rent share to 30% of adjusted income when lease addition was permitted. The exact decision rationale, report-version use, physical move-in date, CHRO settlement exhibit and SafeRent certification remain unverified. Prior work already establishes administrative-burden transfer and opacity in automated expungement. Next research question: whether specific allocations of responsibility for recipient discovery and timely reopening leave missed opportunities invisible in completion-only audits. No independent benchmark or causal effect estimate.
