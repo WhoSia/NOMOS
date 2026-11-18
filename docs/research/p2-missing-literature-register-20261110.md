@@ -1,5 +1,33 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
+## 2026-11-18 / P2-P19 — Active acquisition table
+
+Visible intake and title/identifier searches found no new NOMOS upload in this round. No Drive movement. Fourteen rows retained with updated case references and three added (17 rows total). Public readability and Drive custody remain distinct. Earlier sections are historical snapshots.
+
+| Priority | Requested source or edition | Locator | Drive status |
+|---|---|---|---|
+| 1 | CoreLogic joint appendix, vol. 1, ECF 92 (JA-167, 202, 205–206); vol. 4, ECF 95 (JA-684–685) | [Vol. 1](https://www.nhlp.org/wp-content/uploads/Appx-1.pdf), [vol. 4](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf) | Public PDFs read at relevant locators; matching copies unlocated |
+| 1 | CoreLogic district decision ECF 317 (findings 58–60) | [PDF](https://www.nhlp.org/wp-content/uploads/Arroyo-Decision.pdf) | Public PDF read; matching copy unlocated |
+| 1 | CoreLogic summary-judgment memorandum ECF 194 (2020-08-07), especially p. 22 | [Official PDF](https://www.govinfo.gov/content/pkg/USCOURTS-ctd-3_18-cv-00705/pdf/USCOURTS-ctd-3_18-cv-00705-1.pdf) | Public primary text read at key locators; matching Drive copy unlocated |
+| 1 | CoreLogic complete CHRO settlement (trial Ex. 49) and dated June authorization/reasons | ECF 194 p. 22 cites Dkt. 125-9 Ex. 7; ECF 317 findings 58–60 cites trial Ex. 49; JA-202, JA-206 | Exact agreement entry located; exhibit file and authorization/reasons unlocated in sources reviewed |
+| 1 | SafeRent §3.5 practice-change certification and an actual post-change report | ECF 114-1 §3.5 and ECF 135 ¶17 | No matched public material or Drive file located |
+| 1 | SafeRent amended complaint ECF 15 and motion-to-dismiss order ECF 64 | [Complaint PDF](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/160026.pdf), [order PDF](https://www.justice.gov/d9/2023-08/memo_saferent-final.pdf) | Public texts read; matching Drive edition not located |
+| 1 | Douglas original appeals and Corcoran's dated approval/reasons | ECF 15 ¶¶85–89 and nn. 45–47 | Pleading read; letters and decision not located in sources reviewed |
+| 2 | Agan et al. (2026), *Can You Erase the Mark of a Criminal Record?* journal edition, AEJ: Economic Policy 18(4):423–456 | [AEA](https://doi.org/10.1257/pol.20240830) | Journal PDF unlocated; 2024 NBER WP confirmed and read |
+| 2 | SCHUFA C‑634/21 scoring and joined C‑26/22/C‑64/22 retention judgments | [Scoring](https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=EN), [retention](https://juris.curia.europa.eu/juris/document/document_print.jsf?docid=280428&doclang=EN) | Public court texts read at relevant passages; matching copies unlocated |
+| 2 | Binns & Veale (2021), *Is That Your Final Decision?* | [Published PDF](https://discovery.ucl.ac.uk/id/eprint/10132775/) | Public full text, relevant sections read; Drive PDF not located |
+| 2 | Portland PCC 30.01.086 and the Application and Screening permanent rules | [Official code](https://www.portland.gov/code/30/01/086), [current rule PDF](https://www.portland.gov/phb/documents/hou-306-rental-housing-application-and-screening-permanent-rule/download) | Official live source; code provisions reviewed, no preserved matching Drive copy located |
+| 2 | Philadelphia Renters’ Access Act, Code §§9-810 and 9-1108(4), city guidelines | [Codified text](https://codelibrary.amlegal.com/codes/philadelphia/latest/philadelphia_pa/0-0-0-278115), [city guide](https://www.phila.gov/documents/renters-access-act-tenant-screening-guidelines/) | Public code and guidance available; matching Drive copy unlocated |
+| 2 | Bell & Goldstein (2024), *Initial Evaluation of the City of Philadelphia’s Renters’ Access Act* | [Publisher PDF](https://www.reinvestment.com/wp-content/uploads/2024/10/Reinvestment-Fund-RAA-Report.pdf) | Public evaluation examined; matching Drive PDF unlocated |
+| 3 | Chen & Huang, *Inferential Privacy and the Duty of Data Loyalty* | [DOI](https://doi.org/10.1093/idpl/ipag020) | Matching article unlocated |
+| 3 | Sultan & Jensen, *Secondary Use Prevention in Large-Scale Data Lakes* | [Springer](https://doi.org/10.1007/978-3-030-80129-8_64) | Standalone chapter unlocated; related thesis held |
+| 3 | Sultan & Jensen, *Metadata based need-to-know view in large-scale video surveillance systems* | [DOI](https://doi.org/10.1016/j.cose.2021.102452) | Standalone article unlocated; related thesis held |
+| 3 | Green (2022), *The Flaws of Policies Requiring Human Oversight of Government Algorithms* | [Open access article](https://doi.org/10.1016/j.clsr.2022.105681) | Web article checked; Drive PDF not located |
+
+[Research and evidence limits](p2-p19-carryover-duties-and-housing-clocks.md).
+
+---
+
 ## 2026-11-18 / P2-P18 — Active acquisition table
 
 Nine rows carried from P2-P17 and five new acquisition rows. Recent intake and connected Drive title, author, or identifier searches were checked again; opaque filenames remain possible. Web-readable sources are kept as Drive custody gaps. No new Drive moves.
