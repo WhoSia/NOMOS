@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-18 / P2-P19
+
+[Carryover duties and housing clocks](../docs/research/p2-p19-carryover-duties-and-housing-clocks.md) identifies the CoreLogic conciliation exhibit pointer (Dkt. 125-9, Exhibit 7) from ECF 194 p. 22. That order describes no contractual move-in requirement and narrates a post-hearing move. The agreement text, precise move-in date and recipient decision rationale remain unverified. Portland's rule H creates prior notification and response opportunity for bounded prequalification. Philadelphia §9-810(5) creates a conditional next-comparable-unit offer. Bell and Goldstein's field tests concern inquiry responses; actual subsequent offers and leases are outside their test endpoint.
+
+[Acquisition table](../docs/research/p2-missing-literature-register-20261110.md) now has 17 rows, with three new public sources and the existing agreement row updated. No fresh NOMOS intake visible in connected Drive, no moves. No field benefit estimate or benchmark claim; P1 evidence debts remain open.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-18 / P2-P18
 
 [Reopening and usable housing opportunities](../docs/research/p2-p18-reopening-and-usable-housing-opportunities.md) compares SafeRent pre-settlement pleadings, the CoreLogic district court's earlier-housing counterfactual and Portland's three-month prequalification after a favorable appeal. Three constructed cohorts show identical reversal rates can conceal different reach and usability. No measured agency, housing or comparative effect. SafeRent implementation certification and post-change reports, CoreLogic dated rationale and CHRO exhibit, and Douglas correspondence remain open.
