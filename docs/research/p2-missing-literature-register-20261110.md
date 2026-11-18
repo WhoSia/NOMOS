@@ -1,5 +1,30 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
+## 2026-11-18 / P2-P18 — Active acquisition table
+
+Nine rows carried from P2-P17 and five new acquisition rows. Recent intake and connected Drive title, author, or identifier searches were checked again; opaque filenames remain possible. Web-readable sources are kept as Drive custody gaps. No new Drive moves.
+
+| Priority | Requested source or edition | Locator | Drive status |
+|---|---|---|---|
+| 1 | CoreLogic joint appendix, vol. 1, ECF 92 (JA-167, 202, 205–206); vol. 4, ECF 95 (JA-684–685) | [Vol. 1](https://www.nhlp.org/wp-content/uploads/Appx-1.pdf), [vol. 4](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf) | Public PDFs read at relevant locators; matching copies unlocated |
+| 1 | CoreLogic district decision ECF 317 (findings 58–60) | [PDF](https://www.nhlp.org/wp-content/uploads/Arroyo-Decision.pdf) | Public PDF read; matching copy unlocated |
+| 1 | CoreLogic complete CHRO settlement (trial Ex. 49) and dated June authorization/reasons | ECF 317 ¶60; JA-202, JA-206 | Underlying sources unlocated in reviewed public materials or Drive |
+| 1 | SafeRent §3.5 practice-change certification and an actual post-change report | ECF 114-1 §3.5 and ECF 135 ¶17 | No matched public material or Drive file located |
+| 1 | SafeRent amended complaint ECF 15 and motion-to-dismiss order ECF 64 | [Complaint PDF](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/160026.pdf), [order PDF](https://www.justice.gov/d9/2023-08/memo_saferent-final.pdf) | Public texts read; matching Drive edition not located |
+| 1 | Douglas original appeals and Corcoran's dated approval/reasons | ECF 15 ¶¶85–89 and nn. 45–47 | Pleading read; letters and decision not located in sources reviewed |
+| 2 | Agan et al. (2026), *Can You Erase the Mark of a Criminal Record?* journal edition, AEJ: Economic Policy 18(4):423–456 | [AEA](https://doi.org/10.1257/pol.20240830) | Journal PDF unlocated; 2024 NBER WP confirmed and read |
+| 2 | SCHUFA C‑634/21 scoring and joined C‑26/22/C‑64/22 retention judgments | [Scoring](https://juris.curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=EN), [retention](https://juris.curia.europa.eu/juris/document/document_print.jsf?docid=280428&doclang=EN) | Public court texts read at relevant passages; matching copies unlocated |
+| 2 | Binns & Veale (2021), *Is That Your Final Decision?* | [Published PDF](https://discovery.ucl.ac.uk/id/eprint/10132775/) | Public full text, relevant sections read; Drive PDF not located |
+| 2 | Portland PCC 30.01.086 and the Application and Screening permanent rules | [Official code](https://www.portland.gov/code/30/01/086), [city materials](https://www.portland.gov/phb/rental-services/application-and-screening) | Official live source; code provisions reviewed, no preserved matching Drive copy located |
+| 3 | Chen & Huang, *Inferential Privacy and the Duty of Data Loyalty* | [DOI](https://doi.org/10.1093/idpl/ipag020) | Matching article unlocated |
+| 3 | Sultan & Jensen, *Secondary Use Prevention in Large-Scale Data Lakes* | [Springer](https://doi.org/10.1007/978-3-030-80129-8_64) | Standalone chapter unlocated; related thesis held |
+| 3 | Sultan & Jensen, *Metadata based need-to-know view in large-scale video surveillance systems* | [DOI](https://doi.org/10.1016/j.cose.2021.102452) | Standalone article unlocated; related thesis held |
+| 3 | Green (2022), *The Flaws of Policies Requiring Human Oversight of Government Algorithms* | [Open access article](https://doi.org/10.1016/j.clsr.2022.105681) | Web article checked; Drive PDF not located |
+
+[P2-P18 research](p2-p18-reopening-and-usable-housing-opportunities.md). For evidence of SafeRent implementation, the certification and a qualifying dated report sample remain distinct from the settlement text. Do not obtain or store unnecessary applicant identifiers.
+
+---
+
 ## 2026-11-17 / P2-P17 — Active acquisition table
 
 Three previous custody gaps are closed. The tables below dated 2026-11-14 are historical snapshots. Remaining statuses inherit the P2-P16 search scope. The 2026-11-17 intake was reviewed for relevant additions; no universal absence is asserted.
@@ -18,9 +43,9 @@ Three previous custody gaps are closed. The tables below dated 2026-11-14 are hi
 
 ### Intake verified
 
-- [TransUnion (FY2025) — Form 10-K — SEC Annual Report.pdf](null) — `1Iw1eqSutDbzhzNhV5odyqoaxtdyNOl3o`.
-- [Lageson & Corda (2024) — Chasing a Clean Slate - The Shifting Roles of Privacy and Technology in Criminal Record Expungement Law and Policy.pdf](null) — `1n0OJ8RALYPC9x_ZpcTWcPb86iz3wpEC1`.
-- [Louis v. SafeRent Solutions (D. Mass. 2024-03-28) — Class Action Settlement Agreement and Release — ECF 114-1.pdf](null) — `1KONmZEAi9n3eMboQLq7Yfddf4RjMamyy`.
+- [TransUnion (FY2025) — Form 10-K — SEC Annual Report.pdf](https://drive.google.com/file/d/1Iw1eqSutDbzhzNhV5odyqoaxtdyNOl3o/view) — `1Iw1eqSutDbzhzNhV5odyqoaxtdyNOl3o`.
+- [Lageson & Corda (2024) — Chasing a Clean Slate - The Shifting Roles of Privacy and Technology in Criminal Record Expungement Law and Policy.pdf](https://drive.google.com/file/d/1n0OJ8RALYPC9x_ZpcTWcPb86iz3wpEC1/view) — `1n0OJ8RALYPC9x_ZpcTWcPb86iz3wpEC1`.
+- [Louis v. SafeRent Solutions (D. Mass. 2024-03-28) — Class Action Settlement Agreement and Release — ECF 114-1.pdf](https://drive.google.com/file/d/1KONmZEAi9n3eMboQLq7Yfddf4RjMamyy/view) — `1KONmZEAi9n3eMboQLq7Yfddf4RjMamyy`.
 
 Each move was metadata-only. Original IDs, sizes and final parent IDs were verified by a fresh metadata read. Newly uploaded `sultan2021.pdf` was Cacciari (2005); its complete Drive-returned raw bytes matched the existing Cacciari canonical PDF `1G7oFZpAeXLZgGUCSD2yDt1DDV2cHMCBb` exactly. It was renamed as a byte-identical duplicate and kept in intake. The two separate Sultan & Jensen works remain unlocated. No SHA-256 values were computed for this round.
 
