@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-18 / P2-P18
+
+[Reopening and usable housing opportunities](../docs/research/p2-p18-reopening-and-usable-housing-opportunities.md) compares SafeRent pre-settlement pleadings, the CoreLogic district court's earlier-housing counterfactual and Portland's three-month prequalification after a favorable appeal. Three constructed cohorts show identical reversal rates can conceal different reach and usability. No measured agency, housing or comparative effect. SafeRent implementation certification and post-change reports, CoreLogic dated rationale and CHRO exhibit, and Douglas correspondence remain open.
+
+[Updated acquisition table](../docs/research/p2-missing-literature-register-20261110.md): 14 rows (9 carried, 5 added), Drive rechecked. P2 and P1 evidence debts remain open.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-17 / P2-P17
 
 [SafeRent output and recipient reliance](../docs/research/p2-p17-screening-output-and-recipient-reliance.md): the filed agreement requires product- and status-conditioned score suppression, with underlying report data and specified exceptions. Certification and sample post-change report evidence remain open. A four-rule monotone binary construction shows that identical report-side changes can either change or preserve decisions. The constructed rules carry no empirical frequency. Lageson & Corda already describe downstream copying and limitations of record clearance. TransUnion's issuer redress statement still lacks person-specific report/decision linkage.
