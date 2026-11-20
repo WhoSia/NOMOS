@@ -2,6 +2,8 @@
 
 The unit is a documented case, adjudicating authority and decision question. Treat a replacement decision on the same question as a distinguishable act. Read source text before deciding whether the functional outcome can be compared. Require a defined observation window and indexed initial and later reason texts. A before/after pair of surviving summaries can conceal an omitted reason; code an unobserved reason set as null. Record whether explicit withdrawal was acknowledged, by whom, and at what locator. Chronology and document authenticity remain upstream duties.
 
+Use `reasonCoverage: 'partial'` when the source explicitly discloses an incomplete set of reasons. A claim that a later reason was added requires complete earlier coverage, and a claim that an earlier reason was omitted requires complete later coverage. Each unsupported field returns null. Changes to citations for a disclosed reason present in both lists can still be compared. Existing complete lists keep their prior behavior. [Public-record example and controls](p2-p27-fikre-record.md).
+
 | Observable contrast | Required evidence | Limit |
 |---|---|---|
 | Narrowed or changed reason | Initial and later reason sets are available and a proposition, or a citation for it, changes | Published explanation does not reveal motive or sufficiency |

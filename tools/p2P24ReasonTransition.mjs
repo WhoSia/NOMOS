@@ -8,6 +8,10 @@ function requireId(value) {
 }
 
 function indexReasons(record) {
+  if (record.reasonCoverage !== undefined &&
+      !['complete', 'partial'].includes(record.reasonCoverage)) {
+    throw new TypeError('Expected complete or partial stated-reason coverage');
+  }
   if (record.reasons === null) return null;
   if (!Array.isArray(record.reasons)) throw new TypeError('Expected reasons or null');
   const index = new Map();
@@ -64,9 +68,12 @@ export function assessReasonTransition({ before, after, correction = null, sourc
     : before.outcome === after.outcome ? 'same' : 'different';
   const earlier = indexReasons(before);
   const later = indexReasons(after);
+  // Absence from a partial disclosure cannot establish a newly added or omitted reason.
   const statedReasons = earlier && later ? {
-    added: [...later.keys()].filter(id => !earlier.has(id)),
-    omitted: [...earlier.keys()].filter(id => !later.has(id)),
+    added: before.reasonCoverage === 'partial'
+      ? null : [...later.keys()].filter(id => !earlier.has(id)),
+    omitted: after.reasonCoverage === 'partial'
+      ? null : [...earlier.keys()].filter(id => !later.has(id)),
     changedCitations: [...later].filter(([id, ids]) => {
       const previous = earlier.get(id);
       return previous && (previous.size !== ids.size || [...ids].some(source => !previous.has(source)));
