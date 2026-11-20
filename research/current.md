@@ -1,4 +1,4 @@
-# NOMOS-0.885 — Current research, P2-P35
+# NOMOS-0.885 — Current research, P2-P36
 
 NOMOS asks when an institution can carry an observation forward as an authorized judgment about a person, and what a later correction changes for each recipient. Retention, disclosure, present use, authority to decide and observable consequences require distinct evidence. [Current formal specification](../spec/purpose-bound-record-afterlives-885.md) · [Research genealogy](../docs/genealogy.md).
 
@@ -8,6 +8,9 @@ NOMOS asks when an institution can carry an observation forward as an authorized
 - [Patrick](../docs/research/p2-p32-patrick-opinions-readback.md) distinguishes a mortgage denial, a credit-reporting dispute response and a reported correction. The corrected version delivered to the lender and any later lender decision remain open.
 - [Kashem](../docs/research/p2-p32-kashem-redress.md) separates a recommendation, final decision authority and notice. [Fikre](../docs/research/p2-p32-fikre-authority.md) supplies a communication chain but leaves the individual delisting authority open.
 - [Hayden and Mischel](../docs/research/p2-p28-hayden-mischel.md) distinguish explanations for behavior that conflicts with a prior impression. The [Ko sample-flow audit](../docs/research/p2-p25-ko-study-1.md) identifies a remaining question about how the neutral group entered the analysis. Those studies inform the person-attribution question within their designs.
+
+- [Cortez](../docs/research/p2-p36-cortez-recipient-readback.md) provides a dealership's readback after the reporting agency said the disputed material was absent. The OFAC alert still appeared. The original sale and later report check concern different events.
+- [Federal Water](../docs/research/p2-p29-chenery-agency-dates.md) supplies two published agency orders and separates the 1945 order's session date, filing date and retroactive legal effect.
 
 ## Next research comparison
 
