@@ -10,7 +10,7 @@
 
 ## Already held stronger prior art
 
-- [Fricker (1998), "Rational Authority and Social Power"](https://doi.org/10.1111/1467-8349.00061) explicitly connects credibility norms, epistemic authority and social power; the NOMOS library has the article. Verify journal/DOI against canonical if citing exact bibliographic detail.
+- [Fricker (1998), "Rational Authority and Social Power"](https://doi.org/10.1111/1467-9264.00030) explicitly connects credibility norms, epistemic authority and social power; the NOMOS library has the article. The journal is *Proceedings of the Aristotelian Society* 98(1), pp. 159–178; publisher DOI verified.
 - [Fricker (2007), *Epistemic Injustice: Power and the Ethics of Knowing*](https://global.oup.com/academic/product/epistemic-injustice-9780198237907) develops the testimonial/hermeneutical distinctions; the full book is already held. Do not list it as missing.
 - [Croce & Baghramian (2024), "Experts—Part I"](https://doi.org/10.1111/phc3.13009) and ["Experts—Part II"](https://doi.org/10.1111/phc3.70005) distinguish who counts as an expert, how non-experts identify one, and what epistemic authority testimony can carry; both articles are already held. Professional epistemic authority is not a fresh NOMOS construct.
 
