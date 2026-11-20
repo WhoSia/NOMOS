@@ -1,5 +1,7 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
+The [2026-11-21 P2-P27 follow-up](p2-p24-followup-acquisition.md#active-after-p2-p27--2026-11-21) updates holdings and new evidence needs for the reason-transition track. The 13 housing and data-authority rows retain their P2-P21 statuses.
+
 ## 2026-11-21 / P2-P21 — Active acquisition table
 
 Thirteen rows remain from the prior 29. Sixteen source-work rows are satisfied by the [Drive custody receipt](p2-p21-drive-custody.md). The Binns & Veale OUP Advance Article is accepted as the acquired work under the same DOI. No separate issue-layout PDF is required for the present research. Keep the CoreLogic agreement row as partially resolved. The six case-level evidence needs and the remaining reference/edition gaps are listed below. Earlier tables are historical snapshots.
