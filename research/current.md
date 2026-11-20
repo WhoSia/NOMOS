@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-21 / P2-P34
+
+[Four Drive originals](../docs/research/p2-p32-drive-custody.md) acquired with before-and-after byte equality. [Kashem](../docs/research/p2-p32-kashem-redress.md) separates the redress authority, recommendation and notice. [Fikre](../docs/research/p2-p32-fikre-authority.md) identifies a communicating channel and leaves the individual delisting authority open. The [Federal Register notice](../docs/research/p2-p32-federal-water-notice.md) orders a later hearing and corroborates the earlier SEC chronology; [Patrick's opinions](../docs/research/p2-p32-patrick-opinions-readback.md) identify the evidence and the limits of the procedural holdings.
+
+[Ibrahim's findings](../docs/research/p2-p33-ibrahim-findings.md) establish the originating error and order cross-record cleanup. [Compliance filings](../docs/research/p2-p33-ibrahim-compliance.md) supply a sworn implementation account and dated notice to counsel. Independent record read-back and a later receiving institution's version-specific decision are open. [Pair audit regression](../tests/test_p2P32DecisionAuthority.mjs) guards unidentified authority and recommendations. [Direction](../docs/research/p2-p34-recipient-redecision.md) · [Acquisition register](../docs/research/p2-p24-followup-acquisition.md).
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-21 / P2-P31
 
 [Hayden and Mischel](../docs/research/p2-p28-hayden-mischel.md) distinguish motivation reinterpretation and concealment attributions when subsequent behavior conflicts with an initial impression. The [agency source comparison](../docs/research/p2-p29-agency-action-originals.md) reads the original *Regents* memoranda. [The SEC chronology](../docs/research/p2-p29-chenery-agency-dates.md) replaces the remand-order locator with 18 S.E.C. 231 and records an exact date conflict. [Fikre's packet](../docs/research/p2-p29-fikre-intake.md) holds agency exhibit reproductions and the preliminary reporter opinion.
