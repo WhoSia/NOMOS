@@ -1,5 +1,27 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
+## 2026-11-21 / P2-P21 — Active acquisition table
+
+Thirteen rows remain from the prior 29. Sixteen source-work rows are satisfied by the [Drive custody receipt](p2-p21-drive-custody.md). The Binns & Veale OUP Advance Article is accepted as the acquired work under the same DOI. No separate issue-layout PDF is required for the present research. Keep the CoreLogic agreement row as partially resolved. The six case-level evidence needs and the remaining reference/edition gaps are listed below. Earlier tables are historical snapshots.
+
+| Priority | Work or record | DOI / case identifier | Original or best verified locator | Drive or evidence status |
+|---|---|---|---|---|
+| 1 | CoreLogic conciliation agreement — eighth page and complete independent exhibit | 3:18-cv-00705-VLB · Dkt. 125-9 Ex. 7; app. ECF 95, Exhibit AP | [Vol. 4 from PDF p. 8](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf#page=8) · [ECF 194 p. 22](https://www.govinfo.gov/content/pkg/USCOURTS-ctd-3_18-cv-00705/pdf/USCOURTS-ctd-3_18-cv-00705-1.pdf#page=22) | JA-586–592 preserve internal pp. 1–7, substantive clauses and dated signatures. Internal p. 8 and independent filed exhibit unlocated. |
+| 1 | CoreLogic June 2017 authorization and reasons | 3:18-cv-00705-VLB · ECF 178 stipulation 30; trial JA-684–685 | [Joint Appendix vol. 4](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf) | June 23, 2017 permission corroborated; contemporaneous notice and reasons unlocated |
+| 1 | SafeRent practice-change certification | 1:22-cv-10800-AK · ECF 114-1 §3.5.1; ECF 135 ¶17 | [Settlement documents](https://matenantscreeningsettlement.com/Home/Documents) | Dated certification to counsel unlocated |
+| 1 | SafeRent qualifying post-change screening report | 1:22-cv-10800-AK · ECF 114-1 §§3.5.2–3.5.5 | [Agreement PDF](https://www.matenantscreeningsettlement.com/Content/Documents/Settlement%20Agreement.pdf) | Redacted filed or dated sample unlocated |
+| 1 | Douglas personal and supported appeals | 1:22-cv-10800-AK · ECF 15 ¶¶85–89, nn. 45–47 | [Pleading pp. 22–23](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/160026.pdf#page=22) | Source correspondence unlocated |
+| 1 | Douglas approval notice and reasons | 1:22-cv-10800-AK · ECF 15 ¶89 | [Pleading p. 23](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/160026.pdf#page=23) | Dated decision unlocated |
+| 2 | SCHUFA (Discharge from remaining debts), 2023-12-07 | C‑26/22 and C‑64/22 · ECLI:EU:C:2023:958 | [CJEU full text](https://juris.curia.europa.eu/juris/document/document_print.jsf?cid=3526455&docid=280428&doclang=EN&mode=DOC&occ=first&pageIndex=0&part=1&text=) | Official full text; Drive copy unlocated |
+| 2 | Philadelphia denial notice and third-party records | Philadelphia Code §9-1108(4) · Bill 210329-A | [Current §9-1108](https://codelibrary.amlegal.com/codes/philadelphia/latest/philadelphia_pa/0-0-0-278660) | Official web text located. Intake chapter 9-800 and city guidance reference this section but do not supply the complete codified section. |
+| 2 | Portland applicant evaluation code | PCC 30.01.086(D)(8) | [Official city code](https://www.portland.gov/code/30/01/086) | Official web text located. HOU-3.06 is held separately; a standalone copy of the code provision remains unlocated. |
+| 2 | Agan et al. (2026), Can You Erase the Mark of a Criminal Record? | [10.1257/pol.20240830](https://doi.org/10.1257/pol.20240830) · AEJ: Economic Policy 18(4):423–456 | [AEA full-text access](https://www.aeaweb.org/articles/pdf/doi/10.1257/pol.20240830) | Journal PDF unlocated; [2024 NBER WP held](https://drive.google.com/file/d/1k_xJbqIbLM_Ac3OXGTLNC_55Otx4xB7O/view) |
+| 3 | Xi Chen & Weijie Huang (2026), Inferential Privacy and the Duty of Data Loyalty | [10.1093/idpl/ipag020](https://doi.org/10.1093/idpl/ipag020) · IDPL 16(4):ipag020 | [OUP abstract / access](https://academic.oup.com/idpl/article-abstract/16/4/ipag020/8835517) | Metadata and abstract verified; Drive article unlocated |
+| 3 | Sultan & Jensen (2021), Secondary Use Prevention in Large-Scale Data Lakes | [10.1007/978-3-030-80129-8_64](https://doi.org/10.1007/978-3-030-80129-8_64) · Intelligent Computing, LNNS 285:967–985 | [Springer chapter](https://link.springer.com/chapter/10.1007/978-3-030-80129-8_64) | Related thesis held; chapter copy unlocated |
+| 3 | Sultan & Jensen (2021), Metadata Based Need-to-Know View in Large-Scale Video Surveillance Systems | [10.1016/j.cose.2021.102452](https://doi.org/10.1016/j.cose.2021.102452) · Computers & Security 111:102452 | [DTU bibliographic record](https://orbit.dtu.dk/en/publications/metadata-based-need-to-know-view-in-large-scale-video-surveillanc/) | Related thesis held; standalone article copy unlocated |
+
+---
+
 ## 2026-11-21 / P2-P20 — Active acquisition table
 
 Twenty-nine rows: the previous 17 grouped entries became 26 independently actionable rows, and three European judgments were added. Search covered connected intake, working and canonical holdings by title, DOI, identifier and recent PDF metadata. Links to case sources are locators; a citation to a missing exhibit does not provide its bytes. Academic DOIs resolve to publisher records, and alternate PDF or access links are labeled separately. Historical tables remain below.
