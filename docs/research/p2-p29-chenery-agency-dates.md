@@ -1,0 +1,9 @@
+# P2-P29 — The agency order has its own chronology
+
+[December 27, 1947 Federal Register, 12 FR 8855](https://www.govinfo.gov/content/pkg/FR-1947-12-27/pdf/FR-1947-12-27.pdf) prints the SEC's later notice recounting the reorganization chronology. The Commission records the original 24 September 1941 approval, 10 S.E.C. 200. It describes the February 1945 action as both reapproving the plan as of 24 September 1941 and denying the new amendment request, under Holding Company Act Release 5584. The retroactive approval date belongs to the plan's status and cannot date the later order or its reasons.
+
+The Commission's later notice and *In re Federal Water & Gas Corp.*, [188 F.2d 100 at nn. 3, 6](https://law.justia.com/cases/federal/appellate-courts/F2/188/100/65778/), give 7 February 1945. The Drive U.S. Reports scan, [332 U.S. at 199](https://drive.google.com/file/d/1_U3SULoRpCD7brp1eJpZkvZCbcCjdzw5/view), gives 8 February, as does the [SEC annual report p. 89 n. 68](https://www.sec.gov/files/1944.pdf). Record the discrepancy rather than inferring a specific signing, entry or publication distinction without the original instrument. The chronological order of the 1941 and 1945 acts is established regardless.
+
+The Third Circuit ties the remand action to **18 S.E.C. 231**. This replaces **18 S.E.C. 767** as the acquisition locator in the active register. The Federal Register notice independently anchors the release number and actions. It does not reproduce the full 1945 opinion, findings and orders.
+
+Digitized-volume catalogues for [volume 10](https://play.google.com/store/books/details/United_States_Securities_and_Exchange_Commission_D?id=v0ldjaH2sf4C) and [volume 18](https://play.google.com/store/books/details/United_States_Securities_and_Exchange_Commission_D?id=6wA7AQAAMAAJ) list access to the volumes. Page-level reading and downloadable original files have not been verified.
