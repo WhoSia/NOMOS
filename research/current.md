@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-21 / P2-P24
+
+Three research units are recorded in the [direction note](../docs/research/p2-p24-direction.md). P2-P22 verified and filed three originals, then separated discrediting, coherence shifts during decision formation, and stereotype-preserving subtyping. P2-P23 compared the two Chenery opinions and the Regents record to check when an agency independently redecides an issue and when it offers new grounds for the old action. These are legal-ground contrasts, not person-specific factual correction.
+
+P2-P24 adds an executable [reason and provenance check](../tests/test_p2P24ReasonTransition.mjs), with [paired controls](../tests/test_p2P24ReasonTransitionControls.mjs). It distinguishes stated reasons and changes in citations from a comparison of dispositions and traces declared sources to withdrawn or missing ancestors. No domain-wide independence, legal sufficiency or causal effect is identified. Prior 0.885 debts remain open. Continue with a person-specific factual-correction case with both reason sets and an authenticated version chain. [Acquisition tables](../docs/research/p2-p24-followup-acquisition.md).
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-21 / P2-P21
 
 [Case and origin review](../docs/research/p2-p21-independent-remedy-and-person-judgment.md) recovered the substantive CHRO settlement terms and dated signatures from the image-only pages JA-586–592. The August execution follows WinnResidential's June 23, 2017 authorization. The terms document payment, training and reopening/enforcement, with no move-in obligation in §III. Internal page 8, the manager's original reasons, version-specific use and physical move-in date remain unresolved. The Second Circuit's FHA causation and FCRA disclosure holdings remain scoped to their legal questions.
