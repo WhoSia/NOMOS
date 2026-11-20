@@ -1,0 +1,7 @@
+# P2-P29 — Fikre source packet readback
+
+The [certiorari petition with appendices A–I](https://drive.google.com/file/d/1cWt-5FuX3MZ8wLY8sojiFfGMqbTS0eqg/view) and the [601 U.S. 234 preliminary print](https://drive.google.com/file/d/1HulDICGotzXDQYyeDkMj_OW1LidBjC-U/view) are now held. The 205-page petition contains different kinds of sources. The argument for certiorari is a party submission, while its reproduction of contemporaneous documents in appendices F–H can be read at the relevant document locators.
+
+The 2014 DHS TRIP response (122a–123a) discloses a review and no correction. The 2015 TSA final order (119a–121a) states its public security criterion and responds to the person's denial, while withholding an expressly incomplete part of its factual basis. Courtright's 2019 declaration (117a–118a, ¶¶4–5) confirms counsel notification on 6 May 2016 and separately states the assurance about current information. The 2024 Court opinion, 601 U.S. at 238–244, confirms absence of an accompanying explanation and analyzes voluntary cessation for jurisdiction. It leaves the merits undecided on the record before it. The petition holds a reproduction of the declaration, not the ECF 98 stand-alone notice or a fact-level redecision record.
+
+This remains a real example of an observable status change with incomplete or noncomparable reasons. The later declaration and the earlier TSA order do not become a paired new decision by sharing a case title. [Original docket](https://www.supremecourt.gov/docket/docketfiles/html/public/22-1178.html).
