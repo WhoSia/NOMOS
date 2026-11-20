@@ -1,0 +1,27 @@
+{
+  "dissertation": {
+    "locator": "Ko (2016), pp. 27, 31–32, Table 4",
+    "methodN": 92,
+    "tableN": 124,
+    "residualDf": 120,
+    "groups": [
+      {"id": "negative", "n": 26, "initialMean": 61.08, "initialSd": 21.68, "finalMean": 63.19, "finalSd": 19.40},
+      {"id": "positive", "n": 28, "initialMean": 39.68, "initialSd": 26.23, "finalMean": 45.21, "finalSd": 20.45},
+      {"id": "actual", "n": 38, "initialMean": 51.89, "initialSd": 20.57, "finalMean": 54.55, "finalSd": 18.93},
+      {"id": "neutral", "n": 32, "initialMean": 56.37, "initialSd": 19.49, "finalMean": 56.22, "finalSd": 21.79}
+    ]
+  },
+  "article": {
+    "locator": "Ko and Park (2019), pp. 215, 220, 222–223, Table 3",
+    "reuseDisclosure": "p. 215, lead author's 2016 doctoral data reused to reconstruct the article",
+    "methodN": 92,
+    "tableN": 124,
+    "residualDf": 120,
+    "groups": [
+      {"id": "negative", "n": 26, "initialMean": 61.08, "initialSd": 21.68, "finalMean": 63.19, "finalSd": 19.40},
+      {"id": "positive", "n": 28, "initialMean": 39.68, "initialSd": 26.23, "finalMean": 45.21, "finalSd": 20.45},
+      {"id": "actual", "n": 38, "initialMean": 51.89, "initialSd": 20.57, "finalMean": 54.55, "finalSd": 18.93},
+      {"id": "neutral", "n": 32, "initialMean": 56.37, "initialSd": 19.49, "finalMean": 56.22, "finalSd": 21.79}
+    ]
+  }
+}
