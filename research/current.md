@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-21 / P2-P21
+
+[Case and origin review](../docs/research/p2-p21-independent-remedy-and-person-judgment.md) recovered the substantive CHRO settlement terms and dated signatures from the image-only pages JA-586–592. The August execution follows WinnResidential's June 23, 2017 authorization. The terms document payment, training and reopening/enforcement, with no move-in obligation in §III. Internal page 8, the manager's original reasons, version-specific use and physical move-in date remain unresolved. The Second Circuit's FHA causation and FCRA disclosure holdings remain scoped to their legal questions.
+
+[Drive receipt](../docs/research/p2-p21-drive-custody.md) records 30 verified moves, including 20 non-paper sources, two papers and eight quarantined copies or alternate PDFs. The [13-row active acquisition table](../docs/research/p2-missing-literature-register-20261110.md) keeps unresolved evidence visible. [Chronology check](../tests/test_p2P21RemedyChronology.mjs) tests the limited independent-route distinction. Return to the mainline question of which predicates about a person can travel, with one nonhousing test and a strong equal-information rival. P1 debts, novelty, and actual comparative or field advantage remain open.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-21 / P2-P20
 
 [Access and verified recipient action](../docs/research/p2-p20-access-to-recipient-remedy.md) reads C-203/22, C-154/21 and C-487/21 alongside the two SCHUFA holdings and Philadelphia's denial-notice clock. Score explanation, data copies and recipient identity improve access but do not resolve a version-specific receiver or remedy event. A synthetic enumeration tested six evidence packets over 12 possible histories. No field effectiveness or method advantage measured.
