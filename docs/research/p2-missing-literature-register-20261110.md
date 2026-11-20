@@ -1,6 +1,6 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
-The [2026-11-21 P2-P27 follow-up](p2-p24-followup-acquisition.md#active-after-p2-p27--2026-11-21) updates holdings and new evidence needs for the reason-transition track. The 13 housing and data-authority rows retain their P2-P21 statuses.
+The [2026-11-21 P2-P31 follow-up](p2-p24-followup-acquisition.md#active-after-p2-p31--2026-11-21) updates holdings and evidence needs for the reason-transition track. The 13 housing and data-authority rows retain their P2-P21 statuses.
 
 ## 2026-11-21 / P2-P21 — Active acquisition table
 
