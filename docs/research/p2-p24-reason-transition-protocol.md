@@ -4,6 +4,8 @@ The unit is a documented case, adjudicating authority and decision question. Tre
 
 Use `reasonCoverage: 'partial'` when the source explicitly discloses an incomplete set of reasons. A claim that a later reason was added requires complete earlier coverage, and a claim that an earlier reason was omitted requires complete later coverage. Each unsupported field returns null. Changes to citations for a disclosed reason present in both lists can still be compared. Existing complete lists keep their prior behavior. [Public-record example and controls](p2-p27-fikre-record.md).
 
+For an operative before/after comparison, use the [P2-P31 decision-record entry point](../../tools/p2P31DecisionRecordPair.mjs). The reader assigns roles and act identifiers from the sources. A dated explanation, notice or upstream correction cannot stand in for a later decision. Require two distinct ordered acts in the same scope, keep same-day order unresolved at date precision, and then run the P2-P24 reason and provenance comparison. A conclusion preserved by an actually new decision remains eligible. [Primary contrasts](p2-p29-agency-action-originals.md).
+
 | Observable contrast | Required evidence | Limit |
 |---|---|---|
 | Narrowed or changed reason | Initial and later reason sets are available and a proposition, or a citation for it, changes | Published explanation does not reveal motive or sufficiency |
