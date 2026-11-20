@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-21 / P2-P20
+
+[Access and verified recipient action](../docs/research/p2-p20-access-to-recipient-remedy.md) reads C-203/22, C-154/21 and C-487/21 alongside the two SCHUFA holdings and Philadelphia's denial-notice clock. Score explanation, data copies and recipient identity improve access but do not resolve a version-specific receiver or remedy event. A synthetic enumeration tested six evidence packets over 12 possible histories. No field effectiveness or method advantage measured.
+
+[Acquisition table](../docs/research/p2-missing-literature-register-20261110.md) has 29 rows, made from 17 grouped entries split into 26 plus three new decisions. DOI and ECLI/docket locators are verified at the metadata/source level. An additional mislabeled Cacciari duplicate matched the canonical PDF byte-for-byte and was renamed in the intake folder. Case evidence gaps and earlier P1 debts remain open.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-18 / P2-P19
 
 [Carryover duties and housing clocks](../docs/research/p2-p19-carryover-duties-and-housing-clocks.md) identifies the CoreLogic conciliation exhibit pointer (Dkt. 125-9, Exhibit 7) from ECF 194 p. 22. That order describes no contractual move-in requirement and narrates a post-hearing move. The agreement text, precise move-in date and recipient decision rationale remain unverified. Portland's rule H creates prior notification and response opportunity for bounded prequalification. Philadelphia §9-810(5) creates a conditional next-comparable-unit offer. Bell and Goldstein's field tests concern inquiry responses; actual subsequent offers and leases are outside their test endpoint.
