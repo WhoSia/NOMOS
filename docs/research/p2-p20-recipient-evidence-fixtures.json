@@ -1,0 +1,38 @@
+[
+  {
+    "packet": "Source explanation, data copy and recipient identity",
+    "observations": {}
+  },
+  {
+    "packet": "Delivery confirmed",
+    "observations": {
+      "received": true
+    }
+  },
+  {
+    "packet": "Specific decision evidence of reliance",
+    "observations": {
+      "relied": true
+    }
+  },
+  {
+    "packet": "Reversal via an alternative path with revised file not received",
+    "observations": {
+      "received": false,
+      "reversed": true
+    }
+  },
+  {
+    "packet": "Person-specific usable result on the named review route",
+    "observations": {
+      "usable": true
+    }
+  },
+  {
+    "packet": "Review happened with negative outcome",
+    "observations": {
+      "reopened": true,
+      "reversed": false
+    }
+  }
+]
