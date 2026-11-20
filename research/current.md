@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-21 / P2-P31
+
+[Hayden and Mischel](../docs/research/p2-p28-hayden-mischel.md) distinguish motivation reinterpretation and concealment attributions when subsequent behavior conflicts with an initial impression. The [agency source comparison](../docs/research/p2-p29-agency-action-originals.md) reads the original *Regents* memoranda. [The SEC chronology](../docs/research/p2-p29-chenery-agency-dates.md) replaces the remand-order locator with 18 S.E.C. 231 and records an exact date conflict. [Fikre's packet](../docs/research/p2-p29-fikre-intake.md) holds agency exhibit reproductions and the preliminary reporter opinion.
+
+[Patrick](../docs/research/p2-p30-patrick-correction-chain.md) locates a named downstream denial rationale and separates it from the CRA's dispute response and the reported upstream correction. [Executable decision pairing](../tests/test_p2P31DecisionRecordPair.mjs) uses P2-P24 for distinct ordered acts in the same scope. A post-correction lender reason and version trail remain open. [Direction](../docs/research/p2-p31-grounding-and-direction.md) · [Same-information review sheet](../docs/research/p2-p31-reviewer-codebook.md) · [Intake receipt](../docs/research/p2-p28-drive-custody.md) · [Acquisition gaps](../docs/research/p2-p24-followup-acquisition.md).
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-21 / P2-P27
 
 [Ko's Study 1](../docs/research/p2-p25-ko-study-1.md) and the 2019 article report the same four-group table and the same 92-methods/124-results mismatch. The article discloses doctoral data reuse. The neutral group's provenance is open. [Study 2](../docs/research/p2-p25-ko-study-2.md) and [Study 3](../docs/research/p2-p25-ko-study-3.md) add comparison-arm and endpoint limits. [Drive receipt](../docs/research/p2-p25-drive-custody.md) verifies six placements and the byte hashes of the thesis and Ross article.
