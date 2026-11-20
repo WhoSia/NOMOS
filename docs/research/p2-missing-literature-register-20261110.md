@@ -1,5 +1,47 @@
 # NOMOS-0.885 — Living Missing Literature Register
 
+## 2026-11-21 / P2-P20 — Active acquisition table
+
+Twenty-nine rows: the previous 17 grouped entries became 26 independently actionable rows, and three European judgments were added. Search covered connected intake, working and canonical holdings by title, DOI, identifier and recent PDF metadata. Links to case sources are locators; a citation to a missing exhibit does not provide its bytes. Academic DOIs resolve to publisher records, and alternate PDF or access links are labeled separately. Historical tables remain below.
+
+| Priority | Work or record | DOI / case identifier | Original or best verified locator | Drive or evidence status |
+|---|---|---|---|---|
+| 1 | CoreLogic conciliation agreement | 3:18-cv-00705-VLB · Dkt. 125-9, Ex. 7; trial Ex. 49 cited separately | [ECF 194 p. 22](https://www.govinfo.gov/content/pkg/USCOURTS-ctd-3_18-cv-00705/pdf/USCOURTS-ctd-3_18-cv-00705-1.pdf#page=22) | Exhibit bytes unlocated |
+| 1 | CoreLogic June 2017 authorization and reasons | 3:18-cv-00705-VLB · ECF 178 stipulation 30; trial JA-684–685 | [Joint Appendix vol. 4](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf) | Contemporaneous decision and reasons unlocated |
+| 1 | SafeRent practice-change certification | 1:22-cv-10800-AK · ECF 114-1 §3.5.1; ECF 135 ¶17 | [Settlement documents](https://matenantscreeningsettlement.com/Home/Documents) | Dated certification to counsel unlocated |
+| 1 | SafeRent qualifying post-change screening report | 1:22-cv-10800-AK · ECF 114-1 §§3.5.2–3.5.5 | [Agreement PDF](https://www.matenantscreeningsettlement.com/Content/Documents/Settlement%20Agreement.pdf) | Redacted filed or dated sample unlocated |
+| 1 | Douglas personal and supported appeals | 1:22-cv-10800-AK · ECF 15 ¶¶85–89, nn. 45–47 | [Pleading pp. 22–23](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/160026.pdf#page=22) | Source correspondence unlocated |
+| 1 | Douglas approval notice and reasons | 1:22-cv-10800-AK · ECF 15 ¶89 | [Pleading p. 23](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/160026.pdf#page=23) | Dated decision unlocated |
+| 1 | CoreLogic summary-judgment memorandum (2020-08-07) | 3:18-cv-00705-VLB · ECF 194 | [GovInfo PDF](https://www.govinfo.gov/content/pkg/USCOURTS-ctd-3_18-cv-00705/pdf/USCOURTS-ctd-3_18-cv-00705-1.pdf) | Open PDF; Drive copy unlocated |
+| 1 | CoreLogic bench-trial decision (2023-07-20) | 3:18-cv-00705-VLB · ECF 317 | [NHLP PDF](https://www.nhlp.org/wp-content/uploads/Arroyo-Decision.pdf) | Open PDF; Drive copy unlocated |
+| 1 | CoreLogic joint appendix vol. 1 | 23-1118(L)/23-1166(XAP) · App. ECF 92, JA-1–213 | [Vol. 1 PDF](https://www.nhlp.org/wp-content/uploads/Appx-1.pdf) | Open PDF; Drive copy unlocated |
+| 1 | CoreLogic joint appendix vol. 4 | 23-1118(L)/23-1166(XAP) · App. ECF 95, esp. JA-684–685 | [Vol. 4 PDF](https://www.nhlp.org/wp-content/uploads/Appx-4.pdf) | Open PDF; Drive copy unlocated |
+| 1 | SafeRent amended complaint (2022-08-26) | 1:22-cv-10800-AK · ECF 15 | [Filed PDF](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/160026.pdf) | Open PDF; Drive copy unlocated |
+| 1 | SafeRent motion-to-dismiss order (2023-07-26) | 1:22-cv-10800-AK · ECF 64; 685 F. Supp. 3d 19 | [DOJ PDF](https://www.justice.gov/d9/2023-08/memo_saferent-final.pdf) | Open PDF; Drive copy unlocated |
+| 2 | SCHUFA (Scoring), 2023-12-07 | C‑634/21 · ECLI:EU:C:2023:957 | [CJEU full text](https://juris.curia.europa.eu/juris/document/document.jsf?cid=1505002&docid=280426&doclang=EN&mode=lst&occ=first&pageIndex=0&part=1) | Official full text; Drive copy unlocated |
+| 2 | SCHUFA (Discharge from remaining debts), 2023-12-07 | C‑26/22 and C‑64/22 · ECLI:EU:C:2023:958 | [CJEU full text](https://juris.curia.europa.eu/juris/document/document_print.jsf?cid=3526455&docid=280428&doclang=EN&mode=DOC&occ=first&pageIndex=0&part=1&text=) | Official full text; Drive copy unlocated |
+| 2 | Dun & Bradstreet Austria, 2025-02-27 | C‑203/22 · ECLI:EU:C:2025:117 | [EUR-Lex PDF](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A62022CJ0203) · [CJEU full text](https://juris.curia.europa.eu/juris/document/document.jsf?cid=496400&dir=&docid=295841&doclang=EN&mode=req&occ=first&pageIndex=0&part=1&text=) | New research source; Drive PDF unlocated |
+| 2 | Österreichische Post, 2023-01-12 | C‑154/21 · ECLI:EU:C:2023:3 | [EUR-Lex judgment](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62021CJ0154) | New research source; Drive copy unlocated |
+| 2 | Österreichische Datenschutzbehörde and CRIF, 2023-05-04 | C‑487/21 · ECLI:EU:C:2023:369 | [EUR-Lex judgment](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=ecli%3AECLI%3AEU%3AC%3A2023%3A369) | New research source; Drive copy unlocated |
+| 2 | Philadelphia prospective tenant screening | Philadelphia Code §9-810(4), (5), (9) · Bill 210330-A | [Current §9-810](https://codelibrary.amlegal.com/codes/philadelphia/latest/philadelphia_pa/0-0-0-278115) | Official codified text; Drive copy unlocated |
+| 2 | Philadelphia denial notice and third-party records | Philadelphia Code §9-1108(4) · Bill 210329-A | [Current §9-1108](https://codelibrary.amlegal.com/codes/philadelphia/latest/philadelphia_pa/0-0-0-278660) | Official codified text; Drive copy unlocated |
+| 2 | Philadelphia Fair Housing Commission, Renters’ Access Act tenant screening guidelines | 2021-10-13 · city guidance | [City PDF](https://www.phila.gov/media/20211014090131/Renters-Access-Act-tenant-screening-guidelines-20211013-rev2.pdf) | Open PDF; Drive copy unlocated |
+| 2 | Portland applicant evaluation code | PCC 30.01.086(D)(8) | [Official city code](https://www.portland.gov/code/30/01/086) | Official codified text; Drive copy unlocated |
+| 2 | Portland Application and Screening Permanent Administrative Rule | HOU-3.06 · rule H · city page lists effective 2022-07-29 | [City rule PDF](https://www.portland.gov/phb/documents/hou-306-rental-housing-application-and-screening-permanent-rule/download) | Open PDF; Drive copy unlocated |
+| 2 | Bell & Goldstein (2024), Initial Evaluation of the City of Philadelphia’s Renters’ Access Act | Reinvestment Fund · September 2024; DOI not located | [Evaluation PDF](https://www.reinvestment.com/wp-content/uploads/2024/10/Reinvestment-Fund-RAA-Report.pdf) · [Publisher page](https://www.reinvestment.com/insights/initial-evaluation-of-the-city-of-philadelphias-renters-access-act/) | Open PDF; Drive copy unlocated |
+| 2 | Agan et al. (2026), Can You Erase the Mark of a Criminal Record? | [10.1257/pol.20240830](https://doi.org/10.1257/pol.20240830) · AEJ: Economic Policy 18(4):423–456 | [AEA full-text access](https://www.aeaweb.org/articles/pdf/doi/10.1257/pol.20240830) | Journal PDF unlocated; [2024 NBER WP held](https://drive.google.com/file/d/1k_xJbqIbLM_Ac3OXGTLNC_55Otx4xB7O/view) |
+| 2 | Binns & Veale (2021), Is That Your Final Decision? Multi-Stage Profiling, Selective Effects, and Article 22 of the GDPR | [10.1093/idpl/ipab020](https://doi.org/10.1093/idpl/ipab020) · IDPL 11(4):319–332 | [UCL published PDF](https://discovery.ucl.ac.uk/id/eprint/10132775/8/Binns_Veale_Is%20that%20your%20final%20decision.pdf) | Open PDF; Drive copy unlocated |
+| 3 | Green (2022), The Flaws of Policies Requiring Human Oversight of Government Algorithms | [10.1016/j.clsr.2022.105681](https://doi.org/10.1016/j.clsr.2022.105681) · CLSR 45:105681 | [Author-hosted PDF](https://scholar.harvard.edu/files/bgreen/files/22-clsr.pdf) | Open PDF; Drive copy unlocated |
+| 3 | Xi Chen & Weijie Huang (2026), Inferential Privacy and the Duty of Data Loyalty | [10.1093/idpl/ipag020](https://doi.org/10.1093/idpl/ipag020) · IDPL 16(4):ipag020 | [OUP abstract / access](https://academic.oup.com/idpl/article-abstract/16/4/ipag020/8835517) | Metadata and abstract verified; Drive article unlocated |
+| 3 | Sultan & Jensen (2021), Secondary Use Prevention in Large-Scale Data Lakes | [10.1007/978-3-030-80129-8_64](https://doi.org/10.1007/978-3-030-80129-8_64) · Intelligent Computing, LNNS 285:967–985 | [Springer chapter](https://link.springer.com/chapter/10.1007/978-3-030-80129-8_64) | Related thesis held; chapter copy unlocated |
+| 3 | Sultan & Jensen (2021), Metadata Based Need-to-Know View in Large-Scale Video Surveillance Systems | [10.1016/j.cose.2021.102452](https://doi.org/10.1016/j.cose.2021.102452) · Computers & Security 111:102452 | [DTU bibliographic record](https://orbit.dtu.dk/en/publications/metadata-based-need-to-know-view-in-large-scale-video-surveillanc/) | Related thesis held; standalone article copy unlocated |
+
+The newest file named `sultan2021.pdf` was checked against the Cacciari (2005) canonical PDF by complete raw-byte equality. The intake duplicate was renamed [BYTE IDENTICAL DUPLICATE — Cacciari (2005) — Nomes de Lugar - Confim (2).pdf](https://drive.google.com/file/d/1NiccfMu_Q64bvsPgHk1KDWlyRh7mNeNA/view) and retained in intake. This did not close either Sultan & Jensen gap.
+
+[Corresponding research and limits](p2-p20-access-to-recipient-remedy.md).
+
+---
+
 ## 2026-11-18 / P2-P19 — Active acquisition table
 
 Visible intake and title/identifier searches found no new NOMOS upload in this round. No Drive movement. Fourteen rows retained with updated case references and three added (17 rows total). Public readability and Drive custody remain distinct. Earlier sections are historical snapshots.
