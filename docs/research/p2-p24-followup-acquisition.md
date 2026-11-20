@@ -1,6 +1,21 @@
 # Acquisition gaps for the reason-transition track
 
-## Active after P2-P31 — 2026-11-21
+## Active after P2-P34 — 2026-11-21
+
+[Custody receipt](p2-p32-drive-custody.md) closes the two public-opinion PDF groups for *Patrick* and *Kashem* and supplies the complete 1947 Federal Register issue as corroboration for the SEC row. The original 1941/1945 orders remain open. [Ibrahim](p2-p33-ibrahim-findings.md) adds a public source packet and two distinct evidence targets. Five earlier groups plus three Ibrahim groups remain active. The [housing and data-authority register](p2-missing-literature-register-20261110.md) is separate.
+
+| Priority | Work or record | Identifier or locator | Evidence still needed |
+|---|---|---|---|
+| 1 | Ko (2016) Study 1 and Ko–Park (2019) sample flow | [2016 dissertation](https://drive.google.com/file/d/1YtQ0okj_40wKVt2CxBfW8SlSsAtID9SW/view#page=42), pp. 27, 32; [2019 DOI](https://doi.org/10.53302/kjfp.2019.11.10.3.215), pp. 215, 220, 223 | Correction or aggregate statement documenting the neutral 32 |
+| 1 | SEC original and remand orders for Federal Water | 10 S.E.C. 200; 18 S.E.C. 231, Release 5584; [held 12 FR 8855](https://drive.google.com/file/d/1fDzmbtfsN4nlD2TiJ7bj8nsW06Voq7Zm/view#page=57) | Complete orders and their date stamps; February 7/8 discrepancy remains |
+| 1 | *Fikre* 2016 notice and factual basis | D. Or. 3:13-cv-00899 ECF 98; [601 U.S. 234](https://drive.google.com/file/d/1HulDICGotzXDQYyeDkMj_OW1LidBjC-U/view) | Original notice and any publicly inspectable operative decision identifying the deciding authority and fact-level basis |
+| 1 | *Patrick* dispute, response and mortgage denial exhibits | D.N.J. 1:23-cv-04092 ECF 33-1 Exs. 1–2 and ECF 65-2 Ex. A; [ECF 54](https://drive.google.com/file/d/1ICKCo3iy5OgGVqAbxVOcGQo8ePk75K_f/view#page=16), [ECF 81](https://drive.google.com/file/d/1NMfZddc_eZjUzc-dg0uVjXNpFnl0hH_r/view#page=3) | Standalone legible exhibits |
+| 1 | *Patrick* corrected furnishing and mortgage redecision | Same docket; [ECF 54, p. 18](https://drive.google.com/file/d/1ICKCo3iy5OgGVqAbxVOcGQo8ePk75K_f/view#page=18) | Dated corrected version, its receipt and any later lender decision and reasons |
+| 1 | *Ibrahim* agency implementation detail | N.D. Cal. 3:06-cv-00545-WHA; [ECF 737-1 through 737-5](https://papersplease.org/wp/wp-content/uploads/2014/04/ibrahim-declarations-15apr2014.pdf#page=6) | Readable per-agency declarations and, if available, independent post-change read-back. The exhibit covers and counsel's attestation were inspected. |
+| 1 | *Ibrahim* later recipient outcome | Same docket; [ECF 737-6 to 737-8](https://papersplease.org/wp/wp-content/uploads/2014/04/ibrahim-declarations-15apr2014.pdf#page=36) | Dated recipient decision, record versions and actual reasons following the correction, if observable |
+| 2 | *Ibrahim* public primary packet | [ECF 701-1](https://www.justsecurity.org/wp-content/uploads/2014/02/Ibrahim.Ruling.2.2014.pdf), [ECF 736/737 with exhibits](https://papersplease.org/wp/wp-content/uploads/2014/04/ibrahim-declarations-15apr2014.pdf), [912 F.3d 1147](https://cdn.ca9.uscourts.gov/datastore/opinions/2019/01/02/14-16161.pdf) | Drive copies of the public order, filing packet and en banc fee opinion |
+
+## P2-P31 snapshot — 2026-11-21
 
 [Drive receipt](p2-p28-drive-custody.md) verifies the Hayden–Mischel paper, *Chenery I*, the three-document *Regents* intake, *Fikre* in a preliminary U.S. Reports print and the petition with its appendices. Only *Kashem* carries forward from the public-copy group that included *Fikre*. The three *Patrick* rows track accessible opinions, the exhibits, and version-level evidence. The [separate housing and data-authority table](p2-missing-literature-register-20261110.md) lists 13 outstanding groups.
 
