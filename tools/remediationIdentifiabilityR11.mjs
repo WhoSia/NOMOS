@@ -1,5 +1,6 @@
 // NOMOS R11 — logical countermodel analysis only; no person-level verdicts.
 import { readFileSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
 
 export function completionIdentified(worlds, predicate = w => Boolean(w.latent?.CRA_applied_all)) {
   if (!Array.isArray(worlds) || worlds.length === 0) throw new Error('nonempty possible-world set required');
@@ -19,7 +20,7 @@ export function completionIdentified(worlds, predicate = w => Boolean(w.latent?.
   }));
 }
 
-if (process.argv[1]?.endsWith('remediationIdentifiabilityR11.mjs')) {
+if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
   const path = process.argv[2];
   if (!path) throw new Error('JSON fixture path required');
   const data = JSON.parse(readFileSync(path,'utf8'));
