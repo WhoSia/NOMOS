@@ -1,4 +1,4 @@
-# NOMOS-0.885 — Current research, P2-P36
+# NOMOS-0.885 — Current research, P2-P38
 
 NOMOS asks when an institution can carry an observation forward as an authorized judgment about a person, and what a later correction changes for each recipient. Retention, disclosure, present use, authority to decide and observable consequences require distinct evidence. [Current formal specification](../spec/purpose-bound-record-afterlives-885.md) · [Research genealogy](../docs/genealogy.md).
 
@@ -17,5 +17,11 @@ NOMOS asks when an institution can carry an observation forward as an authorized
 The [cross-case evidence-boundary audit](../docs/research/p2-p37-evidence-boundaries.md) separates (1) correction actually made, (2) recipient version/receipt, (3) authority to use it, (4) reason-specific reliance, (5) a distinct later decision and (6) independently observed outcome. Cortez documents a statement/readback discrepancy, not an established correction-then-redecision failure. Patrick's denial predates the asserted correction. Ibrahim's visa decision and the no-fly remediation are distinct questions. Fikre's messenger is not proof of the deciding official. Reclassification of dates in Federal Water does not redate the historical act. Psychology's falsehood correction is not legally inadmissible-but-true information.
 
 Use the same frozen packets for ordinary provenance audit, domain-specific legal review and the NOMOS protocol, with blind source-based scoring of unsupported causal transitions under equal access/time. The [ranked living missing-evidence register](../docs/research/p2-p37-missing-evidence-register.md) distinguishes held originals from still-unobserved facts. Comparative advantage, legal outcomes and real downstream effectiveness are unverified. [Cross-case direction](../docs/research/p2-p34-recipient-redecision.md) · [Decision-pair tests](../tests/test_p2P31DecisionRecordPair.mjs).
+
+## P2-P38 — Philosophical origin and legitimacy of person-wide inference
+
+The newly read [Rider (2006) and Tripodi (2016)](../docs/research/p2-p38-philosophical-professionalism-and-person-judgment.md) clarify the difference between *genuine philosophical problems and disciplinary evaluation*, and between *epistemic credibility and socially distributed recognition*. Fricker (1998, 2007) and Croce/Baghramian (2024) already address authority, testimony and expert standing. A methodologically justified criticism is not necessarily an institutional injustice; a local critique does not independently warrant a whole-person classification. Rival scholarship rules out novelty claims based on either observation alone.
+
+The research program returns to *L'Étranger* and its action-to-person inference while retaining institutional cases only where they discriminate rival explanations. In this intake, four court PDFs duplicate already held originals **byte-for-byte**, three are alternate derivative copies, and two are distinct philosophy papers. Repeated PDF custody does not expand the sample of independent facts. The full private movement/custody status and refreshed missing-evidence list are recorded in the canonical Notion research page rather than creating a new public audit ledger.
 
 The CFPB's withdrawn 2024 advisory is a historical source. [Source-authority correction](../docs/source-authority-correction-885.md).
