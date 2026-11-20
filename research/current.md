@@ -1,3 +1,11 @@
+# NOMOS-0.885 CURRENT — 2026-11-21 / P2-P27
+
+[Ko's Study 1](../docs/research/p2-p25-ko-study-1.md) and the 2019 article report the same four-group table and the same 92-methods/124-results mismatch. The article discloses doctoral data reuse. The neutral group's provenance is open. [Study 2](../docs/research/p2-p25-ko-study-2.md) and [Study 3](../docs/research/p2-p25-ko-study-3.md) add comparison-arm and endpoint limits. [Drive receipt](../docs/research/p2-p25-drive-custody.md) verifies six placements and the byte hashes of the thesis and Ross article.
+
+[Ross et al.](../docs/research/p2-p26-ross-debriefing.md) provide a discredited-feedback baseline. [Fikre's agency records](../docs/research/p2-p27-fikre-record.md) supply a nonhousing negative control for a changed disposition with incomplete paired reasons. [Study table tests](../tests/test_p2P25StudyTableAudit.mjs) and [partial-disclosure tests](../tests/test_p2P27PartialReasons.mjs) check the bounded documentary claims. [Research direction](../docs/research/p2-p27-direction.md) returns to the authority to reuse a person predicate and proposes a matched comparison against ordinary legal and provenance review. Novelty, independent effectiveness and the [acquisition gaps](../docs/research/p2-p24-followup-acquisition.md) remain open.
+
+---
+
 # NOMOS-0.885 CURRENT — 2026-11-21 / P2-P24
 
 Three research units are recorded in the [direction note](../docs/research/p2-p24-direction.md). P2-P22 verified and filed three originals, then separated discrediting, coherence shifts during decision formation, and stereotype-preserving subtyping. P2-P23 compared the two Chenery opinions and the Regents record to check when an agency independently redecides an issue and when it offers new grounds for the old action. These are legal-ground contrasts, not person-specific factual correction.
