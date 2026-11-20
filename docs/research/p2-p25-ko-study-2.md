@@ -1,0 +1,9 @@
+# P2-P25 — The two alternative explanations in Ko's Study 2
+
+[Ko (2016), pp. 40–58, Tables 8–12](https://drive.google.com/file/d/1YtQ0okj_40wKVt2CxBfW8SlSsAtID9SW/view#page=55).
+
+Study 2-1 used the actual-character stimulus and compared rating each side's arguments to reading them without a recorded rating. The methods again say 92 (p. 41). Table 8 and the ANOVA use 38 and 32, totaling 70 (pp. 44–45). The rating arm repeats Study 1's actual-character cell at both means and standard deviations. The no-rating 32 have means 56.25 and 57.06, different from the Study 1 neutral 32 (56.37 and 56.22). The equal counts cannot supply a control-arm lineage. The evaluation main effect and time-by-evaluation interaction were nonsignificant under this design. The test did not include feedback in the rating arm and does not identify equivalence.
+
+Study 2-2 crossed parallel versus serial presentation with the identity of the side presented to the left or last. Methods p. 50 and the four Table 10 counts (37, 40, 38, 40) account for 155. The prosecution-left parallel cell mirrors Study 1's actual-character cell at both means and standard deviations. The analysis reports a time effect, while the time-by-condition interaction and the final between-condition test were nonsignificant. Two within-cell comparisons change when the prosecution appears last in serial order or right in parallel order. These contrasts are compatible with the author's recency interpretation but do not identify a between-arm recency effect on the final verdict. The differences reported for issue-level ratings justify preserving issue judgments separately from final disposition.
+
+Both comparisons motivate controls for the act of writing an issue rating and for display order. They supply neither a general equivalence finding nor a factual-source correction event.
