@@ -1,0 +1,9 @@
+# P2-P32 — Patrick's two opinions answer two procedural questions
+
+[ECF 54, May 9, 2024](https://drive.google.com/file/d/1ICKCo3iy5OgGVqAbxVOcGQo8ePk75K_f/view) · [ECF 81, October 3, 2024](https://drive.google.com/file/d/1NMfZddc_eZjUzc-dg0uVjXNpFnl0hH_r/view).
+
+ECF 54 pp. 16–18 relies at the amendment stage on the two exhibits cited at ECF 33-1. The question was whether the May 1 dispute was sufficiently identifiable although it did not expressly name the deceased notation. The opinion reasoned that the letter's wording and the act of writing it plausibly gave notice. The May 11 Trans Union response communicated that the deceased notation persisted. The alleged later correct furnishing by Wells Fargo does not erase the plausible intervening failure, and the holding grants leave to amend rather than finding damages, liability or causation.
+
+ECF 81 pp. 2–4 identifies the May 1 Funding Resources denial reason and ECF 65-2 Ex. A. The dispute over the letter's genesis is addressed at pp. 8–14: the court identified other discovery sources, treated the fabrication assertion as speculative, considered privilege and proportionality, and quashed the attorney subpoena. That ruling does not independently verify the definitive version the broker used or resolve the merits of the challenged credit reporting. Keep the reported denial reason in the record with this procedural ceiling.
+
+The two holdings give a useful bridge to the NOMOS issue. A dispute can be intelligible even without exact field wording. Acknowledging or answering it, correcting the furnished fact and deciding again on the corrected record are distinct acts. The documents now close the public opinion copies. The arguments and exhibits used by the opinions, version trail and same-recipient redecision remain separate targets. [Prior chain](p2-p30-patrick-correction-chain.md).
