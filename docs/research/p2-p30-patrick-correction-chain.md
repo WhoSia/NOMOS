@@ -1,0 +1,14 @@
+# P2-P30 — Patrick and the authority of correcting a person-specific factual record
+
+[ECF 54, 9 May 2024](https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-04092/pdf/USCOURTS-njd-1_23-cv-04092-0.pdf) · [ECF 81, 3 October 2024](https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-04092/pdf/USCOURTS-njd-1_23-cv-04092-1.pdf) · D.N.J. 1:23-cv-04092-CPO-EAP.
+
+| Observation | Evidentiary ceiling and locator |
+|---|---|
+| 1 May 2023: Funding Resources issued a letter denying mortgage credit over the reports' deceased notation. | ECF 81 pp. 2–4 identifies the mortgage actor and cites ECF 65-2, Doran Decl. ¶3, Ex. A. ECF 54 p. 3 describes an unspecified mortgage company at pleading stage. ECF 81 also reports dispute about how the application and letter were generated; the discovery ruling is not an adjudication of authenticity, causation or liability. |
+| 1 and 11 May: dispute letter and Trans Union's investigation response. | ECF 54 pp. 16–18 considers the parties' undisputedly authentic submitted documents, ECF 33-1, Doran Decl. ¶¶5–6, Exs. 1–2. The response continued reporting deceased, notwithstanding investigation of the account. A response is evidence of receipt and what was communicated, not agreement with the correction. |
+| Late May: Wells Fargo reportedly corrected the furnishing after Trans Union's response. | ECF 54 pp. 16, 18 quotes proposed Am. Compl. ¶68 and addresses futility. The court treated the possible intervening harm as plausible. The specific corrected transmission, date, CRA receipt, updated report and downstream reconsideration are missing from the inspected record. |
+| October discovery ruling | ECF 81 granted a motion to quash the subpoena for the applicant's lawyer under the discovery framework. It does not supply a refreshed lender decision. |
+
+The case contributes more than a generic status change. A specific factual predicate is at issue, a recipient's adverse reason is located, and the source furnisher's reported correction can be sequenced after the CRA's communication. The initial recipient reason and later upstream correction belong to three roles: furnisher, reporting agency and credit recipient. They do not form a single actor's before/after review. No causal route from the correction to a later denial, approval or usable loan was established by these orders. The filled-in timeline still cannot establish NOMOS's held-out positive criterion.
+
+Target the original denial and dispute/response exhibits, the versioned correction transmission, then the identified recipient's next decision. A later favorable disposition with no stated use should still leave the reliance claim open. The current [FCRA reinvestigation provision](https://uscode.house.gov/us/usc/119-124/t15/s1681i/) supplies an established legal comparator for reinvestigation and correction. This reading concerns the 2024 procedural opinions and does not assert the current disposition of the lawsuit.
