@@ -1,0 +1,14 @@
+# P2-P24 — Audit of stated reasons after correction
+
+The unit is a documented case, adjudicating authority and decision question. Treat a replacement decision on the same question as a distinguishable act. Read source text before deciding whether the functional outcome can be compared. Require a defined observation window and indexed initial and later reason texts. A before/after pair of surviving summaries can conceal an omitted reason; code an unobserved reason set as null. Record whether explicit withdrawal was acknowledged, by whom, and at what locator. Chronology and document authenticity remain upstream duties.
+
+| Observable contrast | Required evidence | Limit |
+|---|---|---|
+| Narrowed or changed reason | Initial and later reason sets are available and a proposition, or a citation for it, changes | Published explanation does not reveal motive or sufficiency |
+| Same result with standing reason | Comparable outcome and the same reason already present in the initial record | Its mere presence does not show the authority could rely on it alone |
+| Later reason cites a derivative of withdrawn evidence | Explicit withdrawal plus linked source locators from later reason to withdrawn ancestor | Shows a tracked dependency, not illegality or actual causal reliance |
+| No path is found | Auditable scope and graph, with missing parents explicitly marked | An empty hit list does not establish real-world independence |
+
+Positive control: the Chenery pair changes the stated type of authority and issues a fresh order; use it to prove a protocol can admit same-outcome replacement. Negative control: Nielsen's explanatory memo preserves the earlier action and states extra reasons; do not code it as a new rescission. Both are legal-ground challenges. Keep factual correction and procedural rejection separate. For the proposed empirical case, compare two records from the same relevant scope with both reason lists, explicit source withdrawal, and the actual version cited. Give the legal/provenance baseline the same files and allow it to follow the same ancestry. An independently adjudicated difference, if found, must be located in the documents.
+
+The runnable [checker](../../tools/p2P24ReasonTransition.mjs) consumes human-coded proposition IDs and source links. It reports outcome comparison, reason IDs added/omitted, changed source citations with an unchanged ID, and reachable withdrawn or unresolved nodes. Null is unobserved. An empty reason list is an affirmative coding decision. Evidence graph roots have an explicit empty parent array; omitted nodes are unresolved, not automatically roots. Names and source relationships are coder assertions. Exact date order, completeness, semantic equivalence, legal permissibility, actual reliance and effects are outside the implementation.
