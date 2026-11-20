@@ -39,3 +39,29 @@ assert.equal(auditDecisionRecordPair({
 assert.throws(() => auditDecisionRecordPair({
   before: order, after: { ...unassigned, authority: undefined },
 }), TypeError);
+
+// The visa refusal is a distinct decision. Neither the January court order
+// nor the April FBI status letter is a visa decision by the receiving actor.
+const visaRefusal = {
+  caseId: 'Ibrahim 3:06-cv-00545-WHA', question: 'visa eligibility',
+  authority: 'Department of State', role: 'decision', actId: '2014-04-14-refusal',
+  date: '2014-04-14', locator: 'ECF 737-6 Ex. A', reasons: null, outcome: 'refused',
+};
+const courtOrder = {
+  ...visaRefusal, question: 'correction of erroneous designations',
+  authority: 'District Court', actId: '2014-01-14-merits-order',
+  date: '2014-01-14', locator: 'ECF 701-1 conclusion A', outcome: 'correction ordered',
+};
+const statusLetter = {
+  ...visaRefusal, question: 'No Fly List status',
+  authority: 'FBI', role: 'notice', actId: null,
+  date: '2014-04-15', locator: 'ECF 737-8', outcome: 'status reported',
+};
+for (const pair of [
+  { before: courtOrder, after: visaRefusal },
+  { before: visaRefusal, after: statusLetter },
+]) {
+  assert.deepEqual(auditDecisionRecordPair(pair), {
+    status: 'scope-mismatch', comparison: null,
+  });
+}
