@@ -1,6 +1,20 @@
 # Acquisition gaps for the reason-transition track
 
-## Active after P2-P27 — 2026-11-21
+## Active after P2-P31 — 2026-11-21
+
+[Drive receipt](p2-p28-drive-custody.md) verifies the Hayden–Mischel paper, *Chenery I*, the three-document *Regents* intake, *Fikre* in a preliminary U.S. Reports print and the petition with its appendices. Only *Kashem* carries forward from the public-copy group that included *Fikre*. The three *Patrick* rows track accessible opinions, the exhibits, and version-level evidence. The [separate housing and data-authority table](p2-missing-literature-register-20261110.md) lists 13 outstanding groups.
+
+| Priority | Work or record | Identifier or locator | Evidence still needed |
+|---|---|---|---|
+| 1 | Ko (2016) Study 1 and Ko–Park (2019) sample flow | [2016 dissertation](https://drive.google.com/file/d/1YtQ0okj_40wKVt2CxBfW8SlSsAtID9SW/view#page=42), pp. 27, 32; [2019 DOI](https://doi.org/10.53302/kjfp.2019.11.10.3.215), pp. 215, 220, 223 | Correction or aggregate statement documenting the neutral 32 |
+| 1 | SEC original and remand orders for Federal Water | 10 S.E.C. 200; **18 S.E.C. 231**, Release 5584; [12 FR 8855](https://www.govinfo.gov/content/pkg/FR-1947-12-27/pdf/FR-1947-12-27.pdf); [188 F.2d 100 n. 6](https://law.justia.com/cases/federal/appellate-courts/F2/188/100/65778/) | Complete orders; exact remand date unresolved between February 7 and 8. The earlier 18 S.E.C. 767 locator is superseded. |
+| 1 | *Fikre*, 2016 notice and factual basis | D. Or. 3:13-cv-00899 ECF 98 p. 1; [601 U.S. 234](https://drive.google.com/file/d/1HulDICGotzXDQYyeDkMj_OW1LidBjC-U/view); [App. F ¶4](https://drive.google.com/file/d/1cWt-5FuX3MZ8wLY8sojiFfGMqbTS0eqg/view#page=151) | Original status notice and any available fact-level basis |
+| 1 | *Patrick* dispute, response and mortgage denial exhibits | D.N.J. 1:23-cv-04092, ECF 33-1 Exs. 1–2 and ECF 65-2 Ex. A; [ECF 54 pp. 16–18](https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-04092/pdf/USCOURTS-njd-1_23-cv-04092-0.pdf#page=16), [ECF 81 pp. 2–4](https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-04092/pdf/USCOURTS-njd-1_23-cv-04092-1.pdf#page=3) | Filed exhibits as readable primary documents |
+| 1 | *Patrick* corrected furnishing and mortgage redecision | Same docket; [ECF 54 p. 18](https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-04092/pdf/USCOURTS-njd-1_23-cv-04092-0.pdf#page=18) | Dated corrected version, receipt and any later lender decision and reasons. Availability of this chain is unconfirmed. |
+| 2 | *Patrick* public judicial packet | [ECF 54](https://www.govinfo.gov/app/details/USCOURTS-njd-1_23-cv-04092/USCOURTS-njd-1_23-cv-04092-0) · [ECF 81](https://www.govinfo.gov/content/pkg/USCOURTS-njd-1_23-cv-04092/pdf/USCOURTS-njd-1_23-cv-04092-1.pdf) | Drive copies of the two inspected opinions |
+| 2 | *Kashem v. Barr* | [941 F.3d 358; 9th Cir. No. 17-35634](https://cdn.ca9.uscourts.gov/datastore/opinions/2019/10/21/17-35634.pdf) | Drive copy of the public opinion |
+
+## P2-P27 snapshot — 2026-11-21
 
 The [Ko dissertation](https://drive.google.com/file/d/1YtQ0okj_40wKVt2CxBfW8SlSsAtID9SW/view), [Ross, Lepper & Hubbard article](https://drive.google.com/file/d/1HMAn90P7rF_dKZV5yvzsK2JLb9WYXq6x/view) and [Chenery II opinion](https://drive.google.com/file/d/1_U3SULoRpCD7brp1eJpZkvZCbcCjdzw5/view) are held. Chenery II was recovered under a raw LOC file name. Remaining statuses reflect connected Drive title, file-name and prior identifier searches. Public access and Drive holdings are recorded separately. The [housing and data-authority register](p2-missing-literature-register-20261110.md) carries its existing evidence gaps.
 
