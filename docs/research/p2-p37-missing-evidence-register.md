@@ -1,4 +1,7 @@
 # NOMOS P2-P37 — Missing evidence and reading priority
+
+> **Historical snapshot, P2-P37.** The current P2-P38 acquisition and custody status is maintained in the [private canonical Notion research page](https://app.notion.com/p/3fcef561cf9281579127e9084ecbc6b9), not as additional public inventory pages. The 2026-11-21 intake consisted of two distinct philosophical journal articles and seven distributions of already-known court documents. It did **not** close any of the nine missing or unobserved evidentiary targets below. One lower-priority philosophical primary-source debt was added: Diego Marconi (2014), *Il mestiere di pensare*, [bibliography](https://philpapers.org/rec/MARIMD-14). Fricker (1998/2007), Rider (2006), Tripodi (2016) and Croce/Baghramian (2024) are already held; do not list them as missing.
+
 **Updated:** 2026-11-21. **Source:** [P2-P37 evidence-boundary analysis](p2-p37-evidence-boundaries.md). Distinguish *missing file* from an *unobserved fact*, and *repository-held original* from a cited original whose bytes were not obtained. All acquisitions below are OPEN unless explicitly marked HELD. This is a research-priority register, not a complete census of the Research OS.
 
 | Rank | Target | Already held / evidence located | Still missing or unobserved | What it would discriminate |
