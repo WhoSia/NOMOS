@@ -73,6 +73,8 @@ jobs:
       - run: node tests/test_p2P21RemedyChronology.mjs
       - run: node tests/test_p2P24ReasonTransition.mjs
       - run: node tests/test_p2P24ReasonTransitionControls.mjs
+      - run: node tests/test_p2P25StudyTableAudit.mjs
+      - run: node tests/test_p2P27PartialReasons.mjs
       - run: node tools/deadlock860.mjs examples/deadlock860_cases.json
       - run: PYTHONPATH=src python -m unittest discover -s tests -v
       - run: PYTHONPATH=src python -m nomos examples/shared_success.json
