@@ -1,13 +1,17 @@
 import { assessReasonTransition } from './p2P24ReasonTransition.mjs';
 
-const scopeFields = ['caseId', 'authority', 'question'];
-const recordRoles = ['decision', 'explanation', 'notice', 'correction'];
+const scopeFields = ['caseId', 'question'];
+const recordRoles = ['decision', 'explanation', 'notice', 'correction', 'recommendation'];
 
 function validateRecord(record) {
   for (const field of [...scopeFields, 'locator']) {
     if (typeof record[field] !== 'string' || !record[field].trim()) {
       throw new TypeError(`Expected a nonempty ${field}`);
     }
+  }
+  if (record.authority !== null &&
+      (typeof record.authority !== 'string' || !record.authority.trim())) {
+    throw new TypeError('Expected the deciding authority or null');
   }
   if (!recordRoles.includes(record.role)) throw new TypeError('Unknown record role');
   if (record.actId !== null &&
@@ -24,18 +28,21 @@ function validateRecord(record) {
   }
 }
 
-// Document roles and act IDs are supplied by the source reader. Titles and stated outcomes
-// cannot establish them. This check compares decisions and does not certify their legal effect.
+// Authority is the deciding body, which may be different from the sender or recommender.
+// Roles, authority and act IDs come from the source reader. This check does not certify legal effect.
 export function auditDecisionRecordPair({ before, after, ...context }) {
   validateRecord(before);
   validateRecord(after);
 
-  if (scopeFields.some(field => before[field] !== after[field])) {
+  const bothAuthoritiesKnown = before.authority !== null && after.authority !== null;
+  if (scopeFields.some(field => before[field] !== after[field]) ||
+      (bothAuthoritiesKnown && before.authority !== after.authority)) {
     return { status: 'scope-mismatch', comparison: null };
   }
   if (after.date < before.date) return { status: 'reversed-order', comparison: null };
   if (before.role !== 'decision') return { status: 'no-earlier-decision', comparison: null };
   if (after.role !== 'decision') return { status: 'no-later-decision', comparison: null };
+  if (!bothAuthoritiesKnown) return { status: 'unresolved-authority', comparison: null };
   if (before.actId === null || after.actId === null) {
     return { status: 'unresolved-act-identity', comparison: null };
   }
