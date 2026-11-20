@@ -1,0 +1,7 @@
+# P2-P32 — Separate the notice, hearing order and relief it reports
+
+[Federal Register, Vol. 12 No. 252, printed pp. 8855–8857](https://drive.google.com/file/d/1fDzmbtfsN4nlD2TiJ7bj8nsW06Voq7Zm/view#page=57) · [GovInfo](https://www.govinfo.gov/content/pkg/FR-1947-12-27/pdf/FR-1947-12-27.pdf#page=57).
+
+The filed PDF is the complete 64-page issue. Printed pp. 8855–8857 reproduce an SEC notice of a filed amended plan and an order for a new hearing organized under File Nos. 54-66, 59-35 and 59-61. The SEC session date is December 18, 1947, the issue was published December 27, and the hearing was set for January 20, 1948. The notice summarizes a proposed liquidation and states that approval requires a further Commission order. Keep the hearing order's operative scheduling scope separate from the merits of liquidation.
+
+The retrospective paragraphs on p. 8855 report the September 24, 1941 approval (10 S.E.C. 200), the later action under Release 5584 as entered on February 7, 1945, reapproval as of September 24, 1941, and denial of a new amendment request. The plan's effective date was October 31, 1941. The earlier ledger already flagged that the U.S. Reports text and an SEC annual report give February 8, and the ordering survives either date. This source is a contemporaneous official publication of a later agency hearing order. Its retrospective narrative is not the text of either underlying SEC order. [Existing date and 18 S.E.C. 231 citation audit](p2-p29-chenery-agency-dates.md).
