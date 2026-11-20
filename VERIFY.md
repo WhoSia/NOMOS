@@ -69,7 +69,7 @@ Both are model-relative only. The 0.865 readback-root rule has not been independ
 
 **v0.8.0**
 
-Current research head: **NOMOS-0.865 OPEN**; preceding **NOMOS-0.864 CLOSED** under bounded synthetic claims (exact-head CI #332 SUCCESS). The historical v0.8.0 version marker above is not a version upgrade assertion.
+The version marker above describes the historical executable checkpoint at 0.865. See the [current research head](research/current.md) for later research and its verification status.
 
 See:
 - `README.md`
