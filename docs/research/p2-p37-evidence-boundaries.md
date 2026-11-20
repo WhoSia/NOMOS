@@ -1,0 +1,51 @@
+# P2-P37 — Where correction evidence stops: transmission, reason and consequence
+
+**Research date:** 2026-11-21. **Scope:** rereading already-held NOMOS materials, not acquiring new documents. **Status:** methodological extension / empirical comparative benefit UNTESTED. The 0.822, 0.850 and 0.864–0.865 lineage already anticipated descendant coverage, receiving operation and independent outcome verification; none of the following is claimed as a new legal doctrine.
+
+## Question and competing explanations
+
+A past person-related representation can survive an apparent correction because:
+1. **Transmission failure:** the relevant downstream copy remained stale (or a claimed upstream correction was never established).
+2. **Cognitive integration/retrieval:** the reviewer received and understood the correction but an obsolete proposition still influenced inference.
+3. **Reason reclassification:** the reviewer accepts the corrected fact but interprets new conduct through a prior person model.
+4. **Authorized persistence:** current law permits the historical record for a specified purpose; an adverse outcome may independently follow lawful information.
+5. **Scope mismatch:** the apparent "later decision" concerns a different question, actor, or legal ground.
+
+Explanations 1–5 are rival mechanisms, not mutually exclusive empirical facts. The evidence packet must establish each transition independently. A later adverse outcome alone cannot select among them.
+
+## Evidence map from held originals
+
+| Dossier and locator | Documented observation | No warranted inference without further evidence |
+|---|---|---|
+| [Cortez, slip pp. 8–13, 17–19](https://drive.google.com/file/d/10iiQUL8CP0wDBnvQ4h8YQ-_hRvnKPnsX/view#page=17) | May 10, 2005 response said the disputed item did not appear; June 3 dealer report still carried an OFAC name alert. The original dealer investigated and delivered the car on the initial transaction date. | Does NOT prove the source was successfully corrected before June 3, that a second financing decision occurred, or that a recipient made a later adverse decision based on the readback. Distinguish HAWK/OFAC report labels. |
+| [Patrick ECF 54 pp.16–18](https://drive.google.com/file/d/1ICKCo3iy5OgGVqAbxVOcGQo8ePk75K_f/view), [ECF 81 pp.2–4](https://drive.google.com/file/d/1NMfZddc_eZjUzc-dg0uVjXNpFnl0hH_r/view) | May 1, 2023 denial reason; May 11 bureau response; later asserted correction by Wells Fargo. The court resolved procedural motions, not the ultimate reporting merits. | No verified corrected version sent to Funding Resources, no observed same-lender reconsideration, no judgment that a corrected report caused approval or denial. |
+| [Ibrahim findings and order](https://drive.google.com/file/d/1DQAOBKNepLvej2iIeI6TG4elamxzyOBF/view), [ECF 737 Ex. A](https://drive.google.com/file/d/1Ra8YwHgJoxOP9BB2pSugbekpxIoWH_9o/view#page=40) | Original erroneous listing judicially found; 2014 order permits removal OR same-paragraph nonreliance annotation; April 14 visa refusal; April 15 institutional compliance filings. | The 14 April refusal is neither proof of use of the erroneous no-fly datum nor evidence that a relevant correction had already reached the consular actor. Visa ground and listing question must stay distinct. |
+| [Fikre petition appendices](https://drive.google.com/file/d/1cWt-5FuX3MZ8wLY8sojiFfGMqbTS0eqg/view), [ECF 105](https://drive.google.com/file/d/1Jfn3kfM5dENH_nLqnwPaBjNCmymT5tVZ/view), [ECF 222](https://drive.google.com/file/d/1DBa9OOZWtjKe55mSIZoqV2EbtCk_txql/view) | March 2015 TSA order; May 6, 2016 message chain; May 9 filing; later mootness dispute and post-remand procedural ruling. | The organization communicating delisting is not thereby the issuer of the operative individual decision. Nor do process developments disclose the specific grounds. |
+| [Federal Water 1941 order](https://drive.google.com/file/d/15prvKUlfW8TseJgpKO4ANs4u4gsv_Cka/view), [1945 order](https://drive.google.com/file/d/1esYHXwVUZjjXSRTFLa4ZnIJQjuusYNXI/view), [SEC annual report](https://drive.google.com/file/d/1s4p-DCAFMN4ksdNwi7co0oSjujNKzcEi/view) | Order session 7 Feb 1945, reasons reportedly issued 8 Feb, Federal Register filed 9 Feb and published 10 Feb; legal as-of date 24 Sep 1941. | A retrospective legal-effective date is not the historical signature, source-use, or reason-formation date. The full findings/opinions are still outstanding. |
+
+**Controls:** Retention with a purpose-limited authorized use is not stale misuse. A same outcome sustained by genuinely independent reasons is not an unsuccessful correction. An unexplained or unpublished reason is UNKNOWN, not evidence of invalid reliance.
+
+## Psychology and law: non-equivalent estimands
+
+- [Hayden & Mischel (1976), experiments I–II](https://drive.google.com/file/d/13NzgqbpT-X3tWgkQrFq1elGlQ3CNk2U5/view): interpretation of a new shown behavior under an initial person impression. Experiment I's effects are mixed; objective behavior remains important. No withdrawn false source, no administrative recipient.
+- [Ko (2016)](https://drive.google.com/file/d/1YtQ0okj_40wKVt2CxBfW8SlSsAtID9SW/view) / [Ko & Park (2019)](https://drive.google.com/file/d/1iJxO19salkx9yQGfArAEhW9G3kYgaUGl/view): the SAME Study 1 dataset, not two replications; method N=92 versus reported four-group N=124 (extra neutral n=32) remains unexplained. The designs did not perform corrective withdrawal.
+- [Wistrich, Guthrie & Rachlinski (2005)](https://drive.google.com/file/d/1tgHyg_5cpSMEqUV52-MF9XNvwCJuFPn6/view): judge scenarios on *inadmissible* information, which may be factually true. Some excluded information affected judgments, but right-to-counsel/confession and probable-cause/search-outcome scenarios did not show the same persistent pattern. These are task-specific contrasts, not universal immunity or universal persistence.
+- [Ecker et al. (2022), author-accepted review](https://drive.google.com/file/d/1JleVO1jsR3wJhqDyX2r8PSQqBKpPTfYa/view): distinguishes failed integration of a falsehood's correction from selective retrieval despite the correction in memory. These are candidate mechanisms, not identified causes of any named litigant's decisions.
+- [Chan et al. (2017), 52 independent samples, N=6,878](https://drive.google.com/file/d/1u_Op1Ah0Zo57NibHuE9MiCI3GQvWVJEQ/view): misinformation effect = exposed versus control; debunking effect = exposed versus corrected; persistence = corrected versus control. The meta-analysis finds a nonzero correction effect and residual influence, and notes more detailed correction correlates with both greater debunking and greater persistence under examined moderators. Do not substitute its population effect sizes for an agency's causal correction rate.
+- [Binns & Veale (2021)](https://drive.google.com/file/d/1qCMJU9E8GYEp0OC4-dnZXuAHj3b01G1_/view): multi-stage selection can place important effects upstream of a final decision. This is a research comparator. Its discussion of GDPR doctrine is dated to 2021; later cases [SCHUFA 2023](https://drive.google.com/file/d/1mwHncHICL3r36MO4HmsyExK9yAsTFazn/view) and [Dun & Bradstreet 2025](https://drive.google.com/file/d/120ArOyU0TsxsQ7brWp0o0srmCoeUss6F/view) must govern contemporary legal interpretation.
+
+Three distinct target estimands: (a) **document-chain integrity**: did a specified recipient have the correct *version* before the next act? (b) **reason use**: did an authorized reviewer continue to cite a withdrawn *warrant* despite receipt? (c) **consequence**: was the person's actual external result changed? Neither (a) nor (b) identifies (c). Study-scoped cognitive differences do not identify (b) in a real case.
+
+## Same-packet rival comparison: pre-registered protocol candidate
+
+Freeze packet versions and issue a blind, source-symmetric task to (i) standard source/provenance audit, (ii) domain-specific legal analysis, and (iii) NOMOS-coded audit. For each source proposition require `source locator, act date, actual authority, question, status (judicial finding / direct artifact / sworn claim / party allegation / theory), version received, reported-versus-verified correction, use permission, stated reason, decision, observed consequence`. Use three-state outcomes for each disputed edge: established, contradicted, unknown, with explicit evidence locators for affirmative or contradictory classification. *No locator* cannot be turned into an affirmative finding.
+
+Pre-specify the adversarial items: (A) Cortez: true readback without proven earlier source correction; (B) Patrick: denial predates correction, with no redecision; (C) Ibrahim: independent visa legal ground; (D) Fikre: messenger versus authority; (E) Federal Water: retroactive legal date versus historical act; (F) lawful narrow reuse and same-outcome independent reason. An ordinary reviewer who correctly separates all of them is a counterexample to a uniqueness claim.
+
+Measure at fixed packet/time budgets: unsupported asserted causal transitions (primary), missing genuine source-to-recipient edges, correct identification of separate decision acts, overbroad claims of impermissibility, and time. Score by blind, independent adjudication against source-located answer keys, preserve disagreements and do not treat NOMOS labels as the truth standard. Pilot results cannot be generalized to real-case effectiveness. A registered independent replication is required before a comparative-advantage claim.
+
+**Kill criteria:** If a straightforward conventional audit matches the NOMOS coding on edge-level precision/recall, position NOMOS as a structured synthesis rather than a distinct discovery. If performance only improves through extra page access or unequal time, reject an algorithmic advantage claim. If none of the real cases supplies verified `corrected version -> recipient's actual post-correction decision -> reason`, explicitly state that person-level correction efficacy remains unobserved.
+
+## Acquisition debts maintained in the canonical P2-P37 register
+
+See [live register](p2-p37-missing-evidence-register.md); do not reclassify a publicly described but not obtained exhibit as held. Unresolved items are ranked by their ability to discriminate transmission failure from cognitive/reason-use persistence; a higher rank is not a promise of availability.
