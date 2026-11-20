@@ -6,6 +6,8 @@ Use `reasonCoverage: 'partial'` when the source explicitly discloses an incomple
 
 For an operative before/after comparison, use the [P2-P31 decision-record entry point](../../tools/p2P31DecisionRecordPair.mjs). The reader assigns roles and act identifiers from the sources. A dated explanation, notice or upstream correction cannot stand in for a later decision. Require two distinct ordered acts in the same scope, keep same-day order unresolved at date precision, and then run the P2-P24 reason and provenance comparison. A conclusion preserved by an actually new decision remains eligible. [Primary contrasts](p2-p29-agency-action-originals.md).
 
+Use `authority: null` for an unverified deciding authority. Use `role: 'recommendation'` for a recommendation even if it comes from an actor involved in earlier decisions. A sender, database operator or general jurisdiction rule cannot fill an individual act's missing issuer. `date` is the operative act or document's actual date, separate from any retroactive effect. [Authority change under the revised procedure](p2-p32-kashem-redress.md).
+
 | Observable contrast | Required evidence | Limit |
 |---|---|---|
 | Narrowed or changed reason | Initial and later reason sets are available and a proposition, or a citation for it, changes | Published explanation does not reveal motive or sufficiency |
