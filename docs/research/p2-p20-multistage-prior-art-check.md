@@ -1,0 +1,7 @@
+# P2-P20 — Prior art threshold for multistage access and remedy
+
+[Binns & Veale (2021), DOI 10.1093/idpl/ipab020](https://discovery.ucl.ac.uk/id/eprint/10132775/), International Data Privacy Law 11(4), 319–332, shows upstream automation can eliminate options presented to nominally human downstream decision makers. Their legal analysis of Article 22 is a direct rival to any claim that NOMOS newly recognized this problem.
+
+[Green (2022), DOI 10.1016/j.clsr.2022.105681](https://doi.org/10.1016/j.clsr.2022.105681), Computer Law & Security Review 45, 105681, addresses human oversight of government algorithms and the risk that a formal human step legitimates a faulty system without demonstrating effectiveness. This is an oversight critique, not new evidence on SafeRent or CoreLogic.
+
+[Wachter, Mittelstadt & Russell (2018), held in Drive](https://drive.google.com/file/d/1Hu7EKszxSn-VfRlK4HkNGSxAE3jrSq8o/view) develops counterfactual explanations. The 2025 Dun & Bradstreet ruling allows data-variation-based explanation as one possible route to intelligibility. A showing that a hypothetical input variation changes a score does not establish actual receipt or use of an edited version by a different actor. The remaining research target is operationally distinguishing access, receiver action, and usable remedy from documents under actual deadlines. No claim that those distinctions are uniformly absent from the broader literature.
