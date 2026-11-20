@@ -1,6 +1,6 @@
 # NOMOS-0.885 P2-P24 — Research decision (2026-11-21)
 
-P2-P22, Distinguishing Belief Persistence, Evidence Reweighting and Subtyping. Read the three newly received originals in [the custody index](p2-p22-source-custody.md). Keep the three prior-art questions separate, including original fact withdrawal, pre-verdict shifts, and reclassification of a group counterexample.
+P2-P22, Distinguishing Belief Persistence, Evidence Reweighting and Subtyping. The source notes cover [belief perseverance](p2-p22-belief-perseverance.md), [coherence shifts](p2-p22-coherence-shifts.md) and [subtyping](p2-p22-subtyping.md). Keep the three prior-art questions separate, including original fact withdrawal, pre-verdict shifts, and reclassification of a group counterexample.
 
 P2-P23, Same Practical Result and New Administrative Grounds. [Chenery and Regents](p2-p23-administrative-reasons.md) demonstrate the legal baseline: the form and source of a new stated reason matter, and a new act is not reducible to a supplemental explanation.
 

@@ -1,6 +1,6 @@
 # NOMOS-0.885 P2-P21 — A changed decision, a settlement, and the warrant of a person claim
 
-2026-11-21. Continues [P2-P20](p2-p20-access-to-recipient-remedy.md). The [source receipt](p2-p21-drive-custody.md) lists the filed copies and their roles.
+2026-11-21. Continues [P2-P20](p2-p20-access-to-recipient-remedy.md).
 
 ## CoreLogic and the separate CHRO route
 
