@@ -19,7 +19,7 @@
 ## Updates since P2-P36
 - Do not keep a generic `Federal Water order original missing` entry. Both order originals are **HELD**; the distinct findings/opinions remain OPEN.
 - Do not call `ECF 737-1–5` missing originals. Their declarations are **HELD** inside ECF 737; independent verification is missing.
-- Wistrich, Ecker and Chan are **HELD**. **P2-P39 correction:** Steblay's full original is also HELD; the earlier OPEN claim was false. The same audit verified the classic Holyoak, Anderson, Ross, Kunda and Hayden psychological originals.
+- Wistrich, Ecker and Chan are **HELD**. **P2-P39 correction:** Steblay's full original is also HELD; the earlier OPEN entry became stale after the PDF was created in Drive at 2026-11-20 22:12 UTC, after the P2-P38 Notion update at 22:06 UTC. It was not necessarily wrong when originally written. The same audit verified the classic Holyoak, Anderson, Ross, Kunda and Hayden psychological originals.
 - *Cortez* is a documented report/statement discrepancy, **not yet** proof of a stale copy *following a successful source correction*, much less a verified second financing decision.
 - *Fikre* May 2016 notice date and later ECF 222 are **HELD**. Later case procedural steps do not close authority or individual rationale.
 - Do not treat the lack of a disclosed redecision as evidence the decisionmaker refused to reconsider: code `NOT OBSERVED`.
